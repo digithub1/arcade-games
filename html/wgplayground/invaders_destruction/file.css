@@ -1,0 +1,12 @@
+body{
+    background: rgb(69,29,64);
+    background: linear-gradient(90deg, rgba(69,29,64,1) 0%, rgba(0,46,51,1) 100%);
+}
+.enter-name-input{
+    color: rgba(69, 29, 64, 1);
+    font-size: 30px;
+    text-indent: 1px;
+    border: 5px solid #1b928d;
+    height: 50px;
+    border-radius: 10px;
+}

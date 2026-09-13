@@ -1,0 +1,17 @@
+{
+	"name": "[WGPlayground]InvadersDestruction",
+	"short_name": "[WGPlayground]InvadersDestruction",
+	"description": "Simple space shooter game",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#441940",
+	"icons": [
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
