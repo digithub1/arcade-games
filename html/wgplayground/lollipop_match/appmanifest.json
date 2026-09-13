@@ -1,0 +1,36 @@
+{
+	"name": "Lollipop Match",
+	"short_name": "Lollipop Match",
+	"description": "The objective of the game is to clear the playing field of lollipops by matching three or more lollipops of the same color. The game is played with a mouse or finger, and the lollipops must be connected in order to be matched. Looking for a fun and addicting match 3 game? Look no further than Lollipop Match 3 Puzzle Online Game! This game features luscious graphics and addictive gameplay that will keep you coming back for more. Match three or more lollipops to clear them from the board and earn points. With each new level, the challenge increases. Can you reach the top of the leaderboard?",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
