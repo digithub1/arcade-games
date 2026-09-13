@@ -1,0 +1,25 @@
+.joystick-container {
+  position: absolute;
+  bottom: 3vh;
+  left: 2vw;
+  width: 150px;
+  height: 150px;
+
+  /* синий берёзовый обод */
+  background: radial-gradient(circle at 30% 30%, #f4f9ff, #cfdff1);
+  border: 2px solid #9fb8d6;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(159, 184, 214, 0.9);
+}
+
+.joystick {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+
+  /* светло-синяя берёза */
+  background: radial-gradient(circle at 30% 30%, #ffffff, #d6e4f2);
+  border-radius: 50%;
+  border: 1px solid #9fb8d6;
+  box-shadow: 0 0 10px rgba(159, 184, 214, 0.9);
+}

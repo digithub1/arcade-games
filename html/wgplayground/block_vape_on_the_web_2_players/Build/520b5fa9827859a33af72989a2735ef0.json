@@ -1,0 +1,16 @@
+{
+"companyName": "ElezthemGames",
+"productName": "RobberyVapeShop2Players",
+"productVersion": "1.0.0.0",
+"dataUrl": "5012731206a0867564622cebf9f778fd.unityweb",
+"wasmCodeUrl": "eb5431a742c6fedf2f73ee72949ffa00.unityweb",
+"wasmFrameworkUrl": "447d68a30f9833756021e324dac54e20.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}

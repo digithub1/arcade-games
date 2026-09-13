@@ -1,0 +1,16 @@
+{
+"companyName": "ElezthemGames",
+"productName": "BaldiVSOlenFront",
+"productVersion": "1.0.0.0",
+"dataUrl": "2500b4984ac2624a74911cf2458e2f47.unityweb",
+"wasmCodeUrl": "c7a573e252644c29d987186fb6c805e6.unityweb",
+"wasmFrameworkUrl": "4cc84c0b9799d747a643e2fb7f8c9b19.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
