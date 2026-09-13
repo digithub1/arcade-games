@@ -1,0 +1,410 @@
+
+
+
+
+
+.quest-panel {
+    position: absolute;
+    left: 46px;
+    top: 56px;
+    width: 352px;
+    height: 800px;
+    --quest-frame-outset: 70px;
+    --quest-frame-size-x: 145%;
+    --quest-frame-size-y: 112%;
+    --quest-frame-offset-x: -4px;
+    --quest-frame-offset-y: 18px;
+    --quest-frame-inset: 18px;
+    --quest-frame-opacity: 1;
+    background: linear-gradient(180deg, rgba(7, 16, 28, 0.78), rgba(7, 16, 28, 0.7));
+    border: 1px solid rgba(155, 210, 240, 0.26);
+    border-radius: 15px;
+    padding: 18px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 22px rgba(5, 10, 18, 0.42);
+    overflow: visible;
+    box-sizing: border-box;
+    isolation: isolate;
+}
+
+.quest-panel::after {
+    content: '';
+    position: absolute;
+    inset: calc(var(--quest-frame-inset, 0px) - var(--quest-frame-outset));
+    background-image: url('../assets/images/quest.png');
+    background-repeat: no-repeat;
+    background-position:
+        calc(50% + var(--quest-frame-offset-x, 0px))
+        calc(50% + var(--quest-frame-offset-y, 0px));
+    background-size:
+        var(--quest-frame-size-x, 100%)
+        var(--quest-frame-size-y, 100%);
+    opacity: var(--quest-frame-opacity, 1);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.quest-panel > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.quest-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(141, 190, 218, 0.35);
+    text-align: center;
+}
+
+.quest-header h3 {
+    margin: 0 0 8px 0;
+    width: 100%;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 800;
+    color: #dff4ff;
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.95),
+        1px 0 0 rgba(0, 0, 0, 0.95),
+        0 -1px 0 rgba(0, 0, 0, 0.95),
+        0 1px 0 rgba(0, 0, 0, 0.95),
+        0 2px 6px rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quest-timer {
+    font-size: 12px;
+    color: #b9ddf2;
+    text-align: center;
+    padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    border: 1px solid rgba(141, 190, 218, 0.3);
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.9),
+        1px 0 0 rgba(0, 0, 0, 0.9),
+        0 -1px 0 rgba(0, 0, 0, 0.9),
+        0 1px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+.quest-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 1 auto;
+    min-height: 0;
+    margin-left: -2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+}
+
+.quest-panel-footer {
+    flex: 0 0 auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid rgba(141, 190, 218, 0.35);
+    position: relative;
+}
+
+.quest-panel-footer::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 8px;
+    border-radius: 999px;
+    background: radial-gradient(circle at center, rgba(171, 218, 246, 0.55) 0%, rgba(171, 218, 246, 0) 75%);
+    pointer-events: none;
+}
+
+.quest-empty {
+    text-align: center;
+    padding: 30px 20px;
+    color: #666;
+}
+
+.quest-empty-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    opacity: 0.5;
+}
+
+.quest-empty-text {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.quest-empty-hint {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+
+.quest-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 8px 9px;
+    margin: 0 4px;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    transition: all 0.3s ease;
+}
+
+.quest-card:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(218, 165, 32, 0.4);
+    transform: translateX(4px);
+}
+
+.quest-card.completed {
+    border-color: rgba(46, 204, 113, 0.3);
+    background: rgba(46, 204, 113, 0.05);
+}
+
+.quest-card.claimed {
+    border-color: rgba(149, 165, 166, 0.3);
+    opacity: 0.7;
+}
+
+.quest-card.difficulty-easy {
+    border-left: 3px solid #2ecc71;
+}
+
+.quest-card.difficulty-medium {
+    border-left: 3px solid #f39c12;
+}
+
+.quest-card.difficulty-hard {
+    border-left: 3px solid #e74c3c;
+}
+
+.quest-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    margin-bottom: 7px;
+}
+
+.quest-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+}
+
+.quest-title-section {
+    flex: 1;
+}
+
+.quest-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 3px;
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.95),
+        1px 0 0 rgba(0, 0, 0, 0.95),
+        0 -1px 0 rgba(0, 0, 0, 0.95),
+        0 1px 0 rgba(0, 0, 0, 0.95);
+}
+
+.quest-description {
+    font-size: 11px;
+    color: #cccccc;
+    line-height: 1.25;
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.9),
+        1px 0 0 rgba(0, 0, 0, 0.9),
+        0 -1px 0 rgba(0, 0, 0, 0.9),
+        0 1px 0 rgba(0, 0, 0, 0.9);
+}
+
+.quest-reward {
+    font-size: 12px;
+    font-weight: bold;
+    color: #9b59b6;
+    background: rgba(155, 89, 182, 0.1);
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.85),
+        1px 0 0 rgba(0, 0, 0, 0.85),
+        0 -1px 0 rgba(0, 0, 0, 0.85),
+        0 1px 0 rgba(0, 0, 0, 0.85);
+}
+
+
+.quest-progress-section {
+    margin-bottom: 7px;
+}
+
+.quest-progress-bar {
+    height: 6px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.quest-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.quest-card.completed .quest-progress-fill {
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+}
+
+.quest-progress-text {
+    font-size: 11px;
+    color: #aaaaaa;
+    text-align: right;
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.88),
+        1px 0 0 rgba(0, 0, 0, 0.88),
+        0 -1px 0 rgba(0, 0, 0, 0.88),
+        0 1px 0 rgba(0, 0, 0, 0.88);
+}
+
+.quest-card.completed .quest-progress-text {
+    color: #2ecc71;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+
+.quest-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quest-btn {
+    padding: 5px 11px;
+    border: 1px solid rgba(180, 196, 214, 0.3);
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: linear-gradient(180deg, rgba(45, 54, 68, 0.86), rgba(30, 36, 46, 0.9));
+    color: #a9b5c6;
+    text-shadow:
+        -1px 0 0 rgba(0, 0, 0, 0.88),
+        1px 0 0 rgba(0, 0, 0, 0.88),
+        0 -1px 0 rgba(0, 0, 0, 0.88),
+        0 1px 0 rgba(0, 0, 0, 0.88);
+}
+
+.quest-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.quest-btn.claim {
+    background: linear-gradient(135deg, #239459, #1d7f4b);
+    border-color: rgba(35, 148, 89, 0.85);
+    color: white;
+    box-shadow: 0 2px 8px rgba(22, 96, 60, 0.45);
+}
+
+.quest-btn.claim:hover {
+    background: linear-gradient(135deg, #1f844f, #196d41);
+    box-shadow: 0 4px 12px rgba(18, 78, 49, 0.55);
+    transform: translateY(-1px);
+}
+
+.quest-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+
+.quest-complete-notification {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    padding: 16px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 8px 32px rgba(46, 204, 113, 0.4);
+    z-index: 2000;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.quest-complete-notification.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.quest-complete-notification .quest-icon {
+    font-size: 28px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.quest-complete-notification .quest-title {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.quest-complete-notification .quest-status {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+}
+
+.quest-reward-notification {
+    position: fixed;
+    top: 100px;
+    right: -200px;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 32px rgba(155, 89, 182, 0.4);
+    z-index: 2000;
+    transition: all 0.3s ease;
+}
+
+.quest-reward-notification.show {
+    right: 20px;
+}
+
+.quest-reward-notification .reward-icon {
+    font-size: 24px;
+}
+
+.quest-reward-notification .reward-text {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+

@@ -1,0 +1,17 @@
+{
+	"name": "Mahjong build farm",
+	"short_name": "Mahjong build farm",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon 1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

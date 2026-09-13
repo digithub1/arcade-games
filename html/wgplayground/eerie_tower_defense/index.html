@@ -1,0 +1,2506 @@
+<html lang="en" class="startup-pending"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Eerie Tower Defense">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/0da4949bb0a604fd5c768bdc0fdb1843/wgplayground/eda2b9376f541f7a609114f41234f9c9.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/0da4949bb0a604fd5c768bdc0fdb1843/wgplayground/84a3fe748e57ffa23c84202f739b7174.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/0da4949bb0a604fd5c768bdc0fdb1843">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/eerie-tower-defense">
+            <meta property="wgp:description" content="Eerie Tower Defense is an atmospheric tower defense game where you protect a central tower from endless enemy waves.">
+            <meta property="wgp:instructions" content="Your goal is to survive as many waves as possible and keep the tower alive. In battle, the tower attacks automatically. Defeating enemies gives you gold, which you spend on run-based upgrades: increase damage, attack speed, survivability, and utility effects. Watch the tower’s HP, choose upgrades based on the current wave, and use active items at the right time. Between runs, spend crystals on permanent upgrades, unlock talents, and improve cards to get stronger starts in future runs. If difficulty spikes, adjust your build and rebalance your focus between damage, crowd control, and defense. The longer you survive, the better your rewards and leaderboard ranking.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/0da4949bb0a604fd5c768bdc0fdb1843/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/0da4949bb0a604fd5c768bdc0fdb1843/wgplayground/5a76591009fc87e9134f9c9047d0bfdc.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJTdHJhdGVneSJ9LHsibmFtZSI6IkNhc3VhbCJ9XSwiY2hhcmFjdGVycyI6W119">
+            <meta property="wgp:pegi" content="3">
+            <meta property="wgp:ads" content="97/0da4949bb0a604fd5c768bdc0fdb1843">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eerie Tower Defense</title>
+    <style>
+        html.startup-pending #mainMenu {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #startupBootstrapOverlay {
+            position: fixed;
+            inset: 0;
+            z-index: 13000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                radial-gradient(circle at 50% 34%, rgba(82, 148, 231, 0.2), rgba(7, 19, 43, 0) 34%),
+                radial-gradient(circle at 50% 50%, rgba(12, 38, 84, 0.38), rgba(7, 16, 28, 0.96) 70%);
+            transition: opacity 0.16s ease, visibility 0.16s ease;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .startup-bootstrap-panel {
+            position: relative;
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            border: 1px solid var(--dc-border-soft, rgba(159, 216, 248, 0.22));
+            background:
+                radial-gradient(circle at 50% 50%, rgba(97, 180, 226, 0.18), rgba(9, 20, 44, 0.03) 44%, transparent 72%),
+                linear-gradient(180deg, var(--dc-bg-top, rgba(7, 16, 28, 0.96)), var(--dc-bg-mid, rgba(6, 17, 30, 0.95)));
+            box-shadow:
+                0 28px 90px rgba(0, 0, 0, 0.42),
+                0 0 0 1px rgba(113, 170, 255, 0.08) inset,
+                0 0 44px rgba(97, 180, 226, 0.12);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .startup-bootstrap-panel::before,
+        .startup-bootstrap-panel::after {
+            content: '';
+            position: absolute;
+            inset: 18px;
+            border-radius: 50%;
+            border: 1px solid rgba(136, 213, 250, 0.12);
+        }
+
+        .startup-bootstrap-panel::after {
+            inset: 48px;
+            border-color: rgba(198, 236, 255, 0.09);
+        }
+
+        .startup-bootstrap-panel-glow {
+            position: absolute;
+            inset: 62px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(97, 180, 226, 0.16), rgba(97, 180, 226, 0.03) 52%, transparent 72%);
+            filter: blur(12px);
+            animation: startup-breathe 2.4s ease-in-out infinite;
+        }
+
+        html.startup-ready #startupBootstrapOverlay {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .startup-shell-core {
+            position: relative;
+            width: 196px;
+            height: 196px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .startup-bootstrap-spinner {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 3px solid rgba(125, 182, 255, 0.08);
+            border-top-color: rgba(198, 236, 255, 0.92);
+            border-right-color: rgba(97, 180, 226, 0.54);
+            box-shadow: 0 0 34px rgba(85, 156, 255, 0.16);
+            animation: startup-spin 1.45s linear infinite;
+        }
+
+        .startup-bootstrap-spinner::after {
+            content: '';
+            position: absolute;
+            inset: 18px;
+            border-radius: 50%;
+            border: 2px solid rgba(125, 182, 255, 0.06);
+            border-bottom-color: rgba(157, 198, 255, 0.72);
+            border-left-color: rgba(97, 180, 226, 0.3);
+            animation: startup-spin-reverse 2.1s linear infinite;
+        }
+
+        .startup-shell-frame {
+            position: absolute;
+            inset: 28px;
+            transform: rotate(45deg);
+            border-radius: 34px;
+            border: 1px solid rgba(198, 236, 255, 0.28);
+            box-shadow: inset 0 0 22px rgba(97, 180, 226, 0.08);
+        }
+
+        .startup-shell-frame::before,
+        .startup-shell-frame::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 28px;
+            height: 28px;
+            margin: -14px 0 0 -14px;
+            border-radius: 10px;
+            border: 1px solid rgba(198, 236, 255, 0.2);
+            background: rgba(97, 180, 226, 0.05);
+        }
+
+        .startup-shell-frame::after {
+            width: 112px;
+            height: 112px;
+            margin: -56px 0 0 -56px;
+            border-radius: 22px;
+            border-color: rgba(136, 213, 250, 0.1);
+        }
+
+        .startup-shell-emblem {
+            position: relative;
+            width: 92px;
+            height: 92px;
+            transform: rotate(45deg);
+            border-radius: 28px;
+            background:
+                linear-gradient(135deg, rgba(209, 242, 255, 0.98), rgba(116, 207, 246, 0.94) 38%, rgba(49, 122, 217, 0.78));
+            box-shadow:
+                0 0 32px rgba(102, 181, 255, 0.42),
+                0 0 64px rgba(97, 180, 226, 0.18),
+                inset 0 0 22px rgba(255, 255, 255, 0.28);
+            animation: startup-pulse 2.1s ease-in-out infinite;
+        }
+
+        .startup-shell-emblem::before,
+        .startup-shell-emblem::after {
+            content: '';
+            position: absolute;
+            inset: 16px;
+            border-radius: 16px;
+            border: 2px solid rgba(234, 247, 255, 0.58);
+        }
+
+        .startup-shell-emblem::after {
+            inset: 31px;
+            border-radius: 12px;
+            background: rgba(230, 246, 255, 0.9);
+            border: 0;
+            box-shadow: 0 0 18px rgba(255, 255, 255, 0.84);
+        }
+
+        .startup-shell-shard {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            transform: rotate(45deg);
+            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(213, 244, 255, 0.94), rgba(88, 171, 243, 0.7));
+            box-shadow: 0 0 16px rgba(97, 180, 226, 0.36);
+            opacity: 0.82;
+        }
+
+        .startup-shell-shard.is-top {
+            top: 10px;
+            left: 50%;
+            margin-left: -11px;
+            animation: startup-float-vertical 2.8s ease-in-out infinite;
+        }
+
+        .startup-shell-shard.is-right {
+            right: 18px;
+            top: 50%;
+            margin-top: -11px;
+            animation: startup-float-horizontal 3.2s ease-in-out infinite;
+        }
+
+        .startup-shell-shard.is-bottom {
+            bottom: 12px;
+            left: 50%;
+            margin-left: -11px;
+            animation: startup-float-vertical 3s ease-in-out infinite reverse;
+        }
+
+        .startup-shell-shard.is-left {
+            left: 18px;
+            top: 50%;
+            margin-top: -11px;
+            animation: startup-float-horizontal 3.4s ease-in-out infinite reverse;
+        }
+
+        .startup-shell-orbit {
+            position: absolute;
+            inset: -4px;
+            animation: startup-spin 5.2s linear infinite;
+        }
+
+        .startup-shell-orbit-dot {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            margin-left: -5px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(196, 233, 255, 0.96), rgba(85, 159, 255, 0.72));
+            box-shadow: 0 0 16px rgba(121, 188, 255, 0.55);
+        }
+
+        .startup-shell-orbit-dot:nth-child(2) {
+            top: auto;
+            bottom: 0;
+            width: 8px;
+            height: 8px;
+            margin-left: -4px;
+            opacity: 0.78;
+        }
+
+        .startup-shell-orbit-dot:nth-child(3) {
+            top: 50%;
+            left: 0;
+            margin: -3px 0 0;
+            width: 6px;
+            height: 6px;
+            opacity: 0.62;
+        }
+
+        .startup-shell-orbit-dot:nth-child(4) {
+            top: 50%;
+            left: auto;
+            right: 0;
+            margin: -3px 0 0;
+            width: 6px;
+            height: 6px;
+            opacity: 0.62;
+        }
+
+        @keyframes startup-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes startup-spin-reverse {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+
+        @keyframes startup-pulse {
+            0%, 100% {
+                transform: rotate(45deg) scale(0.96);
+                box-shadow: 0 0 22px rgba(102, 181, 255, 0.42), inset 0 0 18px rgba(255, 255, 255, 0.22);
+            }
+            50% {
+                transform: rotate(45deg) scale(1.04);
+                box-shadow: 0 0 34px rgba(102, 181, 255, 0.56), inset 0 0 24px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        @keyframes startup-breathe {
+            0%, 100% {
+                transform: scale(0.96);
+                opacity: 0.78;
+            }
+            50% {
+                transform: scale(1.04);
+                opacity: 1;
+            }
+        }
+
+        @keyframes startup-float-vertical {
+            0%, 100% { transform: rotate(45deg) translateY(-3px); }
+            50% { transform: rotate(45deg) translateY(5px); }
+        }
+
+        @keyframes startup-float-horizontal {
+            0%, 100% { transform: rotate(45deg) translateX(-3px); }
+            50% { transform: rotate(45deg) translateX(5px); }
+        }
+    </style>
+    <script>
+        document.documentElement.classList.add('startup-pending');
+        window.__startupUiPending = true;
+        window.__pendingGpInstance = null;
+        window.__gpPlayerReadyResolved = false;
+        window.__startupGameLoadedResolved = false;
+        window.__gpStartupPreloaderStarted = false;
+        window.__gpStartupPreloaderClosed = false;
+        window.__gpPlayerReadyPromise = new Promise((resolve) => {
+            window.__gpResolvePlayerReady = (value) => {
+                if (window.__gpPlayerReadyResolved) {
+                    return;
+                }
+
+                window.__gpPlayerReadyResolved = true;
+                resolve(value);
+            };
+        });
+        window.__startupGameLoadedPromise = new Promise((resolve) => {
+            window.__resolveStartupGameLoaded = () => {
+                if (window.__startupGameLoadedResolved) {
+                    return;
+                }
+
+                window.__startupGameLoadedResolved = true;
+                resolve(true);
+            };
+        });
+
+        window.__releaseStartupUi = function() {
+            if (!window.__startupUiPending) {
+                return;
+            }
+
+            window.__startupUiPending = false;
+            document.documentElement.classList.remove('startup-pending');
+            document.documentElement.classList.add('startup-ready');
+        };
+
+        if (
+            window.location.protocol === 'file:'
+            || window.location.hostname === 'localhost'
+            || window.location.hostname === '127.0.0.1'
+        ) {
+            setTimeout(() => {
+                if (typeof window.__releaseStartupUi === 'function') {
+                    window.__releaseStartupUi();
+                }
+            }, 900);
+        }
+
+        window.__notifyStartupGameLoaded = function() {
+            if (typeof window.__resolveStartupGameLoaded === 'function') {
+                window.__resolveStartupGameLoaded();
+            }
+        };
+
+        window.onGPInit = function(gp) {
+            if (typeof window.__consumeGpInstance === 'function') {
+                window.__consumeGpInstance(gp);
+                return;
+            }
+
+            window.__pendingGpInstance = gp;
+        };
+
+        (function loadGamePushSdkEarly() {
+            const sdkScript = document.createElement('script');
+            sdkScript.async = true;
+            sdkScript.src = 'https://gamepush.com/sdk/gamepush.js?projectId=26801&publicToken=sauvzSQo8W6KE3GyY5WnFOc1BVDgsTAn&callback=onGPInit';
+            sdkScript.onerror = function() {
+                window.dispatchEvent(new CustomEvent('gp:sdk-failed'));
+                if (typeof window.__gpResolvePlayerReady === 'function') {
+                    window.__gpResolvePlayerReady(false);
+                }
+            };
+            document.head.appendChild(sdkScript);
+        })();
+    </script><script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=26801&amp;publicToken=sauvzSQo8W6KE3GyY5WnFOc1BVDgsTAn&amp;callback=onGPInit"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upgrades.css">
+    <link rel="stylesheet" href="css/xp-system.css">
+    <link rel="stylesheet" href="css/active-upgrades.css">
+    <link rel="stylesheet" href="css/quests.css">
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style><script charset="utf-8" data-webpack="game-score-sdk:chunk-9084" src="https://gamepush.com/sdk/platforms/platform.wg.e5214530828d27bc51c3.js" crossorigin="anonymous"></script><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/0da4949bb0a604fd5c768bdc0fdb1843/wgplayground/84a3fe748e57ffa23c84202f739b7174.jpg">
+     <div id="startupBootstrapOverlay" aria-hidden="true">
+         <div class="startup-bootstrap-panel">
+             <div class="startup-bootstrap-panel-glow"></div>
+             <div class="startup-shell-core">
+                 <div class="startup-shell-frame"></div>
+                 <div class="startup-bootstrap-spinner"></div>
+                 <div class="startup-shell-orbit">
+                     <div class="startup-shell-orbit-dot"></div>
+                     <div class="startup-shell-orbit-dot"></div>
+                     <div class="startup-shell-orbit-dot"></div>
+                     <div class="startup-shell-orbit-dot"></div>
+                 </div>
+                 <div class="startup-shell-shard is-top"></div>
+                 <div class="startup-shell-shard is-right"></div>
+                 <div class="startup-shell-shard is-bottom"></div>
+                 <div class="startup-shell-shard is-left"></div>
+                 <div class="startup-shell-emblem"></div>
+             </div>
+         </div>
+     </div>
+
+     <div id="gameLoadingOverlay" class="game-loading-overlay hidden">
+         <div class="game-loading-content">
+             <div class="game-loading-spinner"></div>
+             <div id="gameLoadingText" class="game-loading-text" data-i18n="loadingWorld">Загрузка мира...</div>
+         </div>
+     </div>
+
+     
+     <div id="mainMenu" class="screen active">
+         
+         <div class="main-menu-background"></div>
+         
+         
+         <div class="main-menu-wrapper">
+             
+             <div class="main-menu-content">
+                 
+                 
+                 <div class="menu-container">
+                     
+                     
+                      <div id="questPanel" class="quest-panel">
+                          <div class="quest-header">
+                              <h3 data-i18n="dailyQuests">📜 Ежедневные Квесты</h3>
+                               <button id="btnCloseMobileQuests" class="mobile-main-close" type="button" aria-label="Закрыть" data-i18n-aria-label="ariaClose">✕</button>
+                              <div class="quest-timer" id="questTimer">
+                                  <span data-i18n="refreshIn">Обновление через</span>: <span id="questTimerValue">--</span>
+                              </div>
+                          </div>
+                          <div id="questList" class="quest-list">
+                              
+                          </div>
+                          <div class="quest-panel-footer" aria-hidden="true"></div>
+                      </div>
+
+                     
+                       <div class="menu-center-block">
+                           <div class="main-menu-logo-wrap">
+                                    <img src="assets/images/name.png" class="main-menu-logo" alt="Eerie Tower Defense" data-default-src="assets/images/name.png" data-ru-src="assets/images/Ru_name.png">
+                                 <div class="version-display logo-version-display" id="versionDisplay">v1.9.3</div>
+                           </div>
+                            <p class="subtitle" data-i18n="subtitle">Защити башню от бесконечных волн врагов!</p>
+
+                          <div class="mobile-menu-tabs" id="mobileMenuTabs">
+                              <button id="btnMobileMenuMainTab" class="mobile-menu-tab is-active" type="button" data-i18n="mobileMenuMainTab">⚡ Основное</button>
+                              <button id="btnMobileMenuMoreTab" class="mobile-menu-tab" type="button" data-i18n="mobileMenuMoreTab">🧰 Еще</button>
+                          </div>
+
+                         <div class="mobile-main-shortcuts" id="mobileMainShortcuts">
+                             <button id="btnOpenMobileQuests" class="mobile-shortcut-btn" type="button" data-i18n="mobileMainQuests">📜 Квесты</button>
+                             <button id="btnOpenMobileLeaderboard" class="mobile-shortcut-btn" type="button" data-i18n="mobileMainLeaderboard">🏆 Топ игроков</button>
+                         </div>
+                         
+                           <div class="stats-preview">
+                              <div class="stat">
+                                  <span class="label" data-i18n="crystals">💎 Кристаллы:</span>
+                                  <span id="menuCrystals" class="value">0</span>
+                              </div>
+                              <div class="stat">
+                                  <span class="label" data-i18n="moonSeals">🌙 Лунные печати:</span>
+                                  <span id="menuMoonSeals" class="value">0</span>
+                              </div>
+                               
+                               <div id="bonusDayBadgeCenter" class="bonus-event-badge hidden">
+                                   <div class="bonus-event-icon">✨</div>
+                                  <div class="bonus-event-text" data-i18n="bonusX2">Бонус x2</div>
+                              </div>
+                               <div class="stat">
+                                   <span class="label" data-i18n="bestWave">🎯 Рекорд волн:</span>
+                                   <span id="menuBestWave" class="value">0</span>
+                               </div>
+                           </div>
+
+                          
+                            <button id="btnStart" class="btn btn-primary btn-play-main" data-i18n="btnStart" onclick="if(window.UI&amp;&amp;UI.showStageSelectModal){UI.showStageSelectModal();}">
+                                <span class="play-icon">▶</span>
+                                <span class="play-text" data-i18n="btnStart">Начать игру</span>
+                            </button>
+
+                           <div class="auth-quick-row">
+                               <button id="btnAuth" class="btn btn-auth" data-i18n="btnAuth">🔐 Авторизоваться</button>
+                                <div class="auth-quick-controls">
+                                    <div id="menuChatWrap" class="menu-chat-wrap hidden">
+                                        <button id="btnMenuChat" class="btn btn-sound btn-menu-chat" type="button" data-i18n-title="menuChatButtonTitle" data-i18n-aria-label="menuChatButtonTitle">
+                                            <span class="menu-chat-icon">💬</span>
+                                            <span id="menuChatTotalBadge" class="menu-chat-total-badge hidden"></span>
+                                        </button>
+                                    </div>
+                                    <button id="btnSound" class="btn btn-sound" data-i18n-title="soundToggleTitle">🔊</button>
+                                </div>
+                            </div>
+
+                           <div id="activeBonusesInfo" class="active-bonuses hidden">
+                               <div class="bonus-title" data-i18n="activeBonusesTitle">Активные бонусы</div>
+                               <div id="activeBonusesList" class="bonuses-list"></div>
+                           </div>
+
+                            <div id="seasonPanel" class="season-panel">
+                                <div class="season-panel__header season-panel__header-compact">
+                                    <div class="season-panel__headings">
+                                        <div class="season-panel__eyebrow" data-i18n="seasonTitle">Сезон Тени</div>
+                                        <div id="seasonTierLabel" class="season-panel__title">Ранг 1</div>
+                                    </div>
+                                    <div id="seasonClaimBadge" class="reward-badge hidden" data-i18n="seasonClaimReady">Есть награда</div>
+                                    <button id="btnOpenSeasonModal" class="btn btn-secondary season-panel__claim" data-i18n="seasonOpenBtn">Сезон</button>
+                                </div>
+                                <div class="season-panel__compact-row">
+                                    <span id="seasonXpShortLabel" class="season-panel__compact-label" data-i18n="seasonXpShort">Опыт сезона</span>
+                                    <span id="seasonProgressText" class="season-panel__compact-value">0 / 60</span>
+                                    <span id="seasonNextReward" class="season-panel__compact-next">—</span>
+                                </div>
+                                <div class="season-panel__bar"><div id="seasonProgressFill" class="season-panel__fill"></div></div>
+                            </div>
+
+                           
+                           <div class="castle-menu">
+                             <div class="portal-grid">
+                                  <button id="btnUpgrades" class="btn portal-button" data-mobile-page="main">
+                                      <div class="portal-icon"><img src="assets/images/icon/update.png" alt="Upgrades" class="portal-icon-img"></div>
+                                      <div class="portal-label" data-i18n="btnUpgrades">Улучшения</div>
+                                  </button>
+                                  <button id="btnCards" class="btn portal-button" data-mobile-page="main">
+                                      <div class="portal-icon"><img src="assets/images/icon/card.png" alt="Cards" class="portal-icon-img"></div>
+                                      <div class="portal-label" data-i18n="btnCards">Карточки</div>
+                                  </button>
+                                  <button id="btnShop" class="btn portal-button" data-mobile-page="main">
+                                      <div class="portal-icon"><img src="assets/images/icon/shop.png" alt="Shop" class="portal-icon-img"></div>
+                                      <div class="portal-label" data-i18n="btnShop">Магазин</div>
+                                  </button>
+                                  <button id="btnTalents" class="btn portal-button" data-mobile-page="main">
+                                      <div class="portal-icon"><img src="assets/images/icon/skills.png" alt="Talents" class="portal-icon-img"></div>
+                                      <div class="portal-label" data-i18n="btnTalents">Таланты</div>
+                                  </button>
+                                  <button id="btnHelp" class="btn portal-button" data-mobile-page="more">
+                                      <div class="portal-icon"><img src="assets/images/icon/play.png" alt="Help" class="portal-icon-img"></div>
+                                      <div class="portal-label" data-i18n="helpTitle">Справка</div>
+                                  </button>
+                                    <button id="btnChangelog" class="btn portal-button" data-mobile-page="more">
+                                        <div class="portal-icon"><img src="assets/images/icon/cheng.png" alt="Changelog" class="portal-icon-img"></div>
+                                        <div class="portal-label" data-i18n="changelog">Обновления</div>
+                                    </button>
+                                    <button id="btnAchievements" class="btn portal-button" data-mobile-page="more">
+                                        <div class="portal-icon"><img src="assets/images/icon/achive.png" alt="Achievements" class="portal-icon-img"></div>
+                                        <div class="portal-label" data-i18n="btnAchievements">Достижения</div>
+                                    </button>
+                                   <button id="btnCrystalStore" class="btn portal-button" data-mobile-page="more">
+                                       <div class="portal-icon">💎</div>
+                                       <div class="portal-label" data-i18n="btnCrystalStore">Кристаллы</div>
+                                   </button>
+                                   <button id="btnOptions" class="btn portal-button" data-mobile-page="more">
+                                       <div class="portal-icon">⚙️</div>
+                                       <div class="portal-label" data-i18n="btnOptions">Опции</div>
+                                   </button>
+                              </div>
+                          </div>
+
+                     </div>
+
+                     
+                     <div class="leaderboard-panel">
+                         <div class="leaderboard-header">
+                             <h3 data-i18n="leaderboard">🏆 Топ игроков</h3>
+                               <button id="btnCloseMobileLeaderboard" class="mobile-main-close" type="button" aria-label="Закрыть" data-i18n-aria-label="ariaClose">✕</button>
+                         </div>
+                         <div id="leaderboardContent" class="leaderboard-content">
+                             
+                         </div>
+                     </div>
+
+                 </div> 
+                 
+             </div> 
+         </div> 
+
+         <div id="mobileMainMenuOverlay" class="mobile-main-overlay"></div>
+     </div> 
+
+     
+    <div id="helpScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container help-container">
+                    <div class="help-header">
+                        <h2 data-i18n="helpTitle">❓ Как играть</h2>
+                        <p class="subtitle" data-i18n="helpSubtitle">Короткий гид по старту, бою и прогрессу.</p>
+                        <div class="help-pills">
+                            <span class="help-pill" data-i18n="helpReadTime">~1 мин чтения</span>
+                            <span class="help-pill help-pill-accent" data-i18n="helpGuidePcOnly">Управление: клавиатура + мышь</span>
+                        </div>
+                    </div>
+                    <div class="help-body">
+                        <section class="help-section help-quickstart">
+                            <h3 data-i18n="helpQuickStartTitle">⚡ Быстрый старт за 30 секунд</h3>
+                            <div class="help-quick-grid">
+                                <article class="help-quick-card">
+                                    <span class="help-step">1</span>
+                                    <h4 data-i18n="helpQuickStep1Title">Выбери стадию</h4>
+                                    <p data-i18n="helpQuickStep1Desc">Нажми «Играть», выбери доступную стадию и подтверди запуск.</p>
+                                </article>
+                                <article class="help-quick-card">
+                                    <span class="help-step">2</span>
+                                    <h4 data-i18n="helpQuickStep2Title">Удержи первую волну</h4>
+                                    <p data-i18n="helpQuickStep2Desc">Башня стреляет автоматически, а твоя задача — вовремя покупать апгрейды.</p>
+                                </article>
+                                <article class="help-quick-card">
+                                    <span class="help-step">3</span>
+                                    <h4 data-i18n="helpQuickStep3Title">Усили старт по желанию</h4>
+                                    <p data-i18n="helpQuickStep3Desc">Перед забегом можно взять бонус: +100% золота и XP на первые 5 волн.</p>
+                                </article>
+                                <article class="help-quick-card">
+                                    <span class="help-step">4</span>
+                                    <h4 data-i18n="helpQuickStep4Title">Играй от рекорда</h4>
+                                    <p data-i18n="helpQuickStep4Desc">Цель каждой попытки — пройти дальше, обновить рекорд и прокачать мету.</p>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="help-section">
+                            <h3 data-i18n="helpCoreRulesTitle">🎯 База боя</h3>
+                            <ul class="help-list">
+                                <li data-i18n="helpCoreRule1"><b>Башня стреляет сама:</b> цель выбирается автоматически по ближайшим врагам.</li>
+                                <li data-i18n="helpCoreRule2"><b>Главный риск:</b> если HP башни падает до нуля — забег завершен.</li>
+                                <li data-i18n="helpCoreRule3"><b>Сложность растет волнами:</b> враги плотнее, быстрее и опаснее.</li>
+                                <li data-i18n="helpCoreRule4"><b>Темп решает:</b> не копи золото слишком долго — усиливайся заранее.</li>
+                            </ul>
+                        </section>
+
+                        <section class="help-section">
+                            <h3 data-i18n="helpProgressTitle">🧭 Прогресс и стадии</h3>
+                            <ul class="help-list">
+                                <li data-i18n="helpProgress1"><b>Перед стартом выбирается стадия:</b> она задает базовую сложность текущего забега.</li>
+                                <li data-i18n="helpProgress2"><b>Новые стадии открываются прогрессом:</b> чем выше волна, тем дальше продвижение.</li>
+                                <li data-i18n="helpProgress3"><b>Рекорд волн — ключевой ориентир:</b> он влияет на доступ к системам развития.</li>
+                                <li data-i18n="helpProgress4"><b>Поражение — часть цикла:</b> возвращайся в меню и усиливай билд для следующей попытки.</li>
+                            </ul>
+                        </section>
+
+                        <section class="help-section">
+                            <h3 data-i18n="helpControlsTitle">🎮 Управление (PC)</h3>
+                            <ul class="help-list">
+                                <li data-i18n="helpControl1"><b>Мышь:</b> кликай по кнопкам, панелям и слотам для взаимодействия с UI.</li>
+                                <li data-i18n="helpControl2"><b>1:</b> быстрое переключение на обычные стрелы.</li>
+                                <li data-i18n="helpControl3"><b>5 / 6:</b> использование активных предметов из инвентаря.</li>
+                                <li data-i18n="helpControl4"><b>Пробел / P:</b> пауза и продолжение боя.</li>
+                            </ul>
+                        </section>
+
+                        <section class="help-section">
+                            <h3 data-i18n="helpResourcesTitle">💎 Экономика забега</h3>
+                            <ul class="help-list">
+                                <li data-i18n="helpResGold"><b>Золото 💰:</b> выпадает в бою и тратится только в текущем забеге.</li>
+                                <li data-i18n="helpResCrystals"><b>Кристаллы 💎:</b> мета-валюта для постоянных улучшений и карточек в меню.</li>
+                                <li data-i18n="helpResXp"><b>XP ⭐:</b> усиливает прогрессию внутри забега и ускоряет выход к сильным апгрейдам.</li>
+                            </ul>
+                        </section>
+
+                        <section class="help-section">
+                            <h3 data-i18n="helpTipsTitle">🧠 Практичные советы</h3>
+                            <ul class="help-list">
+                                <li data-i18n="helpTip1">Первые волны играй стабильно: урон и скорострельность обычно выгоднее редких нишевых апгрейдов.</li>
+                                <li data-i18n="helpTip2">Если начинаешь проседать по выживаемости — добавь защиту и контроль, а не только урон.</li>
+                                <li data-i18n="helpTip3">Активные предметы лучше тратить на сложные пики, а не на легкие волны.</li>
+                                <li data-i18n="helpTip4">Следи за ритмом экономики: серия быстрых апгрейдов часто сильнее одного дорогого позднего.</li>
+                                <li data-i18n="helpTip5">Каждый забег должен отвечать на вопрос «что улучшить перед следующим стартом?».</li>
+                            </ul>
+                        </section>
+
+                        <div class="help-callout">
+                            <h4 data-i18n="helpCalloutTitle">💡 Важно перед стартом</h4>
+                            <p data-i18n="helpCalloutDesc">Если хочешь агрессивный старт, используй предзабеговый бонус на первых 5 волнах — это ускоряет разгон экономики и опыта.</p>
+                        </div>
+                    </div>
+                    <div class="upgrade-footer">
+                        <button id="btnBackFromHelp" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="changelogScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+            <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container changelog-container">
+            <div class="changelog-header">
+                <h2 data-i18n="changelog">📜 История обновлений</h2>
+                <button id="btnReplayReleaseAnnouncement" class="btn btn-secondary btn-compact" data-i18n="releaseAnnouncementReplay">Сводка</button>
+            </div>
+            <div class="changelog-body" id="changelogContent"></div>
+            <div class="upgrade-footer">
+                <button id="btnBackFromChangelog" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="stageSelectModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content stage-select-content">
+                    <h2 data-i18n="stageSelectTitle">🧭 Выбор стадии</h2>
+                    <p class="stage-select-subtitle" data-i18n="stageSelectSubtitle">Выбери стадию сложности для забега</p>
+                    <div id="stageSelectGrid" class="stage-select-grid"></div>
+                    <div class="confirm-buttons">
+                        <button id="btnConfirmStageSelect" class="btn btn-primary" data-i18n="btnPlay" onclick="if(window.UI&amp;&amp;UI.startWithStage){UI.startWithStage(UI._pendingStageSelection || (window.SaveManager&amp;&amp;SaveManager.getSelectedStage?SaveManager.getSelectedStage():1));}">Играть</button>
+                        <button id="btnCancelStageSelect" class="btn btn-secondary" data-i18n="btnCancel">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reviveOfferModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content confirm-content">
+                    <h2 data-i18n="reviveOfferTitle">❤️ Последний шанс</h2>
+                    <p data-i18n="reviveOfferDesc">Желаете восстановить 50% HP и продолжить игру?</p>
+                    <div class="confirm-buttons">
+                        <button id="btnReviveOfferYes" class="btn btn-primary" data-i18n="reviveOfferYes">📺 Да, смотреть рекламу</button>
+                        <button id="btnReviveOfferNo" class="btn btn-secondary" data-i18n="reviveOfferNo">Нет, завершить игру</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="preRunBuffModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content confirm-content pre-run-offer-content">
+                    <div class="pre-run-offer-icon">✨</div>
+                    <h2 data-i18n="preRunBuffTitle">Стартовый бонус</h2>
+                    <p data-i18n="preRunBuffDesc">Посмотреть рекламу и получить +100% золота и +100% XP на первые 5 волн?</p>
+                    <div class="pre-run-offer-perks">
+                        <span class="perk-chip" data-i18n="preRunBuffPerkGold">💰 +100% золота</span>
+                        <span class="perk-chip" data-i18n="preRunBuffPerkXp">⭐ +100% XP</span>
+                        <span class="perk-chip" data-i18n="preRunBuffPerkDuration">⏱️ На 5 волн</span>
+                    </div>
+                    <div class="confirm-buttons">
+                        <button id="btnPreRunBuffAccept" class="btn btn-primary" data-i18n="btnWatchAndGet" onclick="if(window.UI&amp;&amp;UI.handlePreRunBuffModalChoice){UI.handlePreRunBuffModalChoice(true);}">Смотреть и получить</button>
+                        <button id="btnPreRunBuffDecline" class="btn btn-secondary" data-i18n="btnSkip" onclick="if(window.UI&amp;&amp;UI.handlePreRunBuffModalChoice){UI.handlePreRunBuffModalChoice(false);}">Пропустить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="eliteEventModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content elite-event-content">
+                    <div class="elite-event-badge" data-i18n="eliteEventBadge">Элитное событие</div>
+                    <h2 id="eliteEventTitle">Событие</h2>
+                    <p id="eliteEventDescription" class="elite-event-description"></p>
+                    <div id="eliteEventChoices" class="elite-event-choices"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="traderChoiceModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content elite-event-content trader-choice-content">
+                    <div class="elite-event-badge" data-i18n="traderChoiceBadge">Сделка торговца</div>
+                    <h2 id="traderChoiceTitle" data-i18n="traderChoiceTitle">Бродячий торговец</h2>
+                    <p id="traderChoiceDescription" class="elite-event-description" data-i18n="traderChoiceSummary">Торговец предлагает несколько сделок. Выбери только одну.</p>
+                    <div id="traderChoiceOptions" class="elite-event-choices trader-choice-options"></div>
+                    <div id="traderRewardedSection" class="trader-rewarded-section hidden">
+                        <div class="elite-event-badge trader-rewarded-badge" data-i18n="traderRewardedBadge">Эксклюзив за рекламу</div>
+                        <h3 id="traderRewardedTitle">📺 Эксклюзивная сделка</h3>
+                        <p id="traderRewardedDescription" class="elite-event-description">Сильное предложение за просмотр рекламы.</p>
+                        <button id="btnTraderRewardedOffer" class="btn btn-primary trader-rewarded-btn" data-i18n="traderRewardedButton">📺 Смотреть и получить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="seasonModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content season-modal-content">
+                    <div class="modal-header">
+                        <h2 data-i18n="seasonTitle">Сезон Тени</h2>
+                        <button id="btnCloseSeasonModal" class="btn-close">✕</button>
+                    </div>
+                    <div class="season-modal-summary">
+                        <div class="season-modal-summary__main">
+                            <div id="seasonModalTierLabel" class="season-modal-rank">Ранг 1</div>
+                            <div id="seasonModalProgressText" class="season-modal-progress">0 / 60</div>
+                        </div>
+                        <button id="btnClaimSeasonReward" class="btn btn-primary season-modal-claim" data-i18n="seasonClaimRewardBtn">Забрать награду</button>
+                    </div>
+                    <div class="season-panel__bar"><div id="seasonModalProgressFill" class="season-panel__fill"></div></div>
+                    <div class="season-modal-card-grid">
+                        <div class="season-panel__metric">
+                            <span class="season-panel__metric-label" data-i18n="seasonAvailableRewardLabel">Доступная награда</span>
+                            <span id="seasonModalAvailableReward" class="season-panel__metric-value">—</span>
+                        </div>
+                        <div class="season-panel__metric">
+                            <span class="season-panel__metric-label" data-i18n="seasonNextRewardLabel">Следующая награда</span>
+                            <span id="seasonModalNextReward" class="season-panel__metric-value">—</span>
+                        </div>
+                    </div>
+                    <div class="season-modal-info" id="seasonHowItWorks" data-i18n="seasonHowItWorks">
+                        Опыт сезона начисляется за каждые 10 волн, выборы в элитных событиях, завершение забега и выполнение сезонных задач.
+                    </div>
+                    <div class="season-modal-missions">
+                        <h3 data-i18n="seasonMissionsTitle">Сезонные задачи</h3>
+                        <div id="seasonMissionList" class="season-panel__missions season-panel__missions-modal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cardBurnConfirmModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content confirm-content card-burn-confirm-content">
+                    <h2 data-i18n="cardBurnConfirmTitle">🔥 Сжечь карту?</h2>
+                    <p id="cardBurnConfirmText" data-i18n="cardBurnConfirmDesc">Карта будет удалена навсегда.</p>
+                    <p class="warning-text" data-i18n="burnCardWarning">Это действие нельзя отменить!</p>
+                    <div class="confirm-buttons">
+                        <button id="btnCancelCardBurn" class="btn btn-secondary" data-i18n="btnCancel">Отмена</button>
+                        <button id="btnConfirmCardBurn" class="btn btn-danger" data-i18n="cardActionBurn">🔥 Сжечь</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cardsSaveOverlay" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content confirm-content cards-save-confirm-content">
+                    <h2 data-i18n="cardsSavingTitle">💾 Сохраняем настройки карточек</h2>
+                    <p data-i18n="cardsSavingDesc">Сохраняем изменения карточек и алтаря. Пожалуйста, подождите...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progressSaveOverlay" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content confirm-content cards-save-confirm-content progress-save-confirm-content">
+                    <h2 data-i18n="progressSavingTitle">☁️ Сохраняем прогресс...</h2>
+                    <p data-i18n="progressSavingDesc">Фиксируем награды и синхронизируем данные с облаком. Пожалуйста, подождите...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="releaseAnnouncementModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content release-announcement-content">
+                    <div class="release-announcement__eyebrow" data-i18n="releaseAnnouncementEyebrow">НОВОЕ ОБНОВЛЕНИЕ</div>
+                    <h2 data-i18n="releaseAnnouncementTitle">Что нового в 1.9.3</h2>
+                    <div class="release-announcement__list">
+                        <div class="release-announcement__item" data-i18n="releaseAnnouncementItem1">👹 Новые поздние враги: циклопы, огры и демоны</div>
+                        <div class="release-announcement__item" data-i18n="releaseAnnouncementItem2">🩸 Новые опасные эффекты: раны, раскол защиты и метки урона</div>
+                        <div class="release-announcement__item" data-i18n="releaseAnnouncementItem3">🏹 Новые уникальные улучшения башни для авто-приоритета и охоты на элиту</div>
+                        <div class="release-announcement__item" data-i18n="releaseAnnouncementItem4">🌙 Добавлены Лунные печати, обмен на кристаллы и стартовый лунный набор</div>
+                    </div>
+                    <div class="confirm-buttons">
+                        <button id="btnReleaseAnnouncementDetails" class="btn btn-secondary" data-i18n="releaseAnnouncementDetails">Подробнее</button>
+                        <button id="btnReleaseAnnouncementClose" class="btn btn-primary" data-i18n="releaseAnnouncementClose">Играть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="compensationModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content release-announcement-content compensation-content">
+                    <div class="release-announcement__eyebrow" data-i18n="compensationEyebrow">КОМПЕНСАЦИЯ</div>
+                    <h2 data-i18n="compensationTitle">Спасибо за терпение</h2>
+                    <p class="compensation-text" data-i18n="compensationDesc">Мы исправили сохранение прогресса после поражения и выхода в меню. В благодарность за терпение заберите компенсацию.</p>
+                    <div class="release-announcement__list compensation-list">
+                        <div class="release-announcement__item" data-i18n="compensationItem1">☁️ Критические сохранения теперь синхронизируются напрямую с облаком</div>
+                        <div class="release-announcement__item" data-i18n="compensationItem2">💎 Компенсация начисляется один раз на профиль</div>
+                    </div>
+                    <div class="compensation-reward" data-i18n="compensationReward">Подарок: 500 кристаллов</div>
+                    <div class="confirm-buttons">
+                        <button id="btnCompensationLater" class="btn btn-secondary" data-i18n="feedbackPromptLater">Позже</button>
+                        <button id="btnClaimCompensation" class="btn btn-primary" data-i18n="compensationClaim">Забрать 500 💎</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="resetConfirmModal" class="modal hidden">
+        <div class="modal-panel modal-content confirm-content">
+            <h2 data-i18n="confirmResetTitle">⚠️ Подтверждение</h2>
+            <p data-i18n="confirmResetDesc">Вы уверены, что хотите сбросить весь прогресс?</p>
+            <p class="warning-text" data-i18n="confirmResetWarning">Это действие нельзя отменить! Будут удалены:</p>
+            <ul class="reset-list">
+                <li data-i18n="resetList1">Все кристаллы</li>
+                <li data-i18n="resetList2">Улучшения</li>
+                <li data-i18n="resetList3">Карточки</li>
+                <li data-i18n="resetList4">Снаряды</li>
+                <li data-i18n="resetList5">Рекорды</li>
+            </ul>
+            <div class="confirm-buttons">
+                <button id="btnCancelReset" class="btn btn-secondary" data-i18n="btnCancel">Отмена</button>
+                <button id="btnConfirmReset" class="btn btn-danger" data-i18n="btnReset">Сбросить</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myPurchasesModal" class="modal hidden">
+        <div class="modal-panel modal-content my-purchases-content">
+            <h2 data-i18n="myPurchasesTitle">🧾 Мои покупки</h2>
+            <div class="my-purchases-section">
+                <h3 data-i18n="myPurchasesPendingTitle">⏳ Ожидают обработки</h3>
+                <div id="myPurchasesPendingList" class="my-purchases-list"></div>
+            </div>
+            <div class="my-purchases-section">
+                <h3 data-i18n="myPurchasesActiveTitle">📦 Активные покупки</h3>
+                <div id="myPurchasesActiveList" class="my-purchases-list"></div>
+            </div>
+            <div class="confirm-buttons">
+                <button id="btnRefreshMyPurchases" class="btn btn-primary" data-i18n="btnRefresh">Обновить</button>
+                <button id="btnCloseMyPurchases" class="btn btn-secondary" data-i18n="btnClose">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="playerProfileModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content player-profile-modal-content" role="dialog" aria-modal="true" aria-labelledby="playerProfileModalTitle">
+                    <div class="player-profile-modal__header">
+                        <div>
+                            <div id="playerProfileModalEyebrow" class="player-profile-modal__eyebrow" data-i18n="playerProfileSelfEyebrow">Личный баннер</div>
+                            <h2 id="playerProfileModalTitle" data-i18n="playerProfileSelfTitle">Мой профиль</h2>
+                        </div>
+                        <button class="btn-close" type="button" data-profile-action="close" aria-label="Закрыть" data-i18n-aria-label="ariaClose">✕</button>
+                    </div>
+                    <div id="playerProfileModalBody" class="player-profile-modal__body"></div>
+                    <div class="confirm-buttons player-profile-modal__actions">
+                        <button id="btnPlayerProfileShop" class="btn btn-primary hidden" type="button" data-profile-action="open-shop" data-i18n="playerProfileOpenShop">Косметика</button>
+                        <button id="btnPlayerProfileLogout" class="btn btn-secondary hidden" type="button" data-profile-action="logout" data-i18n="playerProfileLogout">Выйти</button>
+                        <button class="btn btn-secondary" type="button" data-profile-action="close" data-i18n="btnClose">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedbackModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content feedback-modal-content" role="dialog" aria-modal="true" aria-labelledby="feedbackModalTitle">
+                    <div class="feedback-modal-header">
+                        <h2 id="feedbackModalTitle" data-i18n="feedbackComposeTitle">💎 Crystal Feedback</h2>
+                        <button id="btnCloseFeedbackModal" class="btn-close" type="button" aria-label="Закрыть" data-i18n-aria-label="ariaClose">✕</button>
+                    </div>
+                    <p class="feedback-modal-subtitle" data-i18n="feedbackComposeSubtitle">Напишите, что улучшить в игре. Ответ появится в истории обращений.</p>
+                    <div class="feedback-form">
+                        <label class="feedback-field" for="feedbackTypeSelect">
+                            <span class="feedback-label" data-i18n="feedbackTypeLabel">Тип обращения</span>
+                            <select id="feedbackTypeSelect" class="feedback-input feedback-select">
+                                <option value="SUGGESTION" data-i18n="feedbackTypeSuggestion">💡 Предложение</option>
+                                <option value="ERROR" data-i18n="feedbackTypeError">🐛 Ошибка</option>
+                                <option value="COMPLAINT" data-i18n="feedbackTypeComplaint">⚠️ Проблема</option>
+                                <option value="REVIEW" data-i18n="feedbackTypeReview">⭐ Отзыв</option>
+                            </select>
+                        </label>
+                        <label class="feedback-field" for="feedbackMessageInput">
+                            <span class="feedback-label" data-i18n="feedbackMessageLabel">Ваше сообщение</span>
+                            <textarea id="feedbackMessageInput" class="feedback-input feedback-textarea" rows="6" maxlength="1200" data-i18n-placeholder="feedbackMessagePlaceholder" placeholder="Опишите ситуацию: что произошло, на какой стадии, что ожидали"></textarea>
+                        </label>
+                    </div>
+                    <div class="confirm-buttons feedback-modal-actions">
+                        <button id="btnFeedbackSend" class="btn btn-primary" data-i18n="btnFeedbackSend">Отправить</button>
+                        <button id="btnFeedbackHistory" class="btn btn-secondary" data-i18n="btnOpenFeedbackHistory">История обращений</button>
+                        <button id="btnFeedbackCancel" class="btn btn-secondary" data-i18n="btnCancel">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedbackPromptModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content feedback-prompt-content" role="dialog" aria-modal="true" aria-labelledby="feedbackPromptTitle">
+                    <div class="feedback-modal-header">
+                        <h2 id="feedbackPromptTitle" data-i18n="feedbackPromptTitle">💬 Помогите улучшить игру</h2>
+                        <button id="btnCloseFeedbackPromptModal" class="btn-close" type="button" aria-label="Закрыть" data-i18n-aria-label="ariaClose">✕</button>
+                    </div>
+                    <p class="feedback-modal-subtitle" data-i18n="feedbackPromptSubtitle">Для меня очень важна ваша обратная связь: что улучшить, какие баги вы заметили и что бы вы хотели видеть в игре.</p>
+                    <div class="feedback-prompt-note" data-i18n="feedbackPromptNote">Если хотите, оставьте обращение прямо сейчас — я обязательно это прочитаю.</div>
+                    <div class="confirm-buttons feedback-modal-actions feedback-prompt-actions">
+                        <button id="btnFeedbackPromptSend" class="btn btn-primary" data-i18n="feedbackPromptSend">Оставить обращение</button>
+                        <button id="btnFeedbackPromptLater" class="btn btn-secondary" data-i18n="feedbackPromptLater">Позже</button>
+                        <button id="btnFeedbackPromptNever" class="btn btn-secondary" data-i18n="feedbackPromptNever">Больше не показывать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedbackHistoryModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content feedback-history-modal-content" role="dialog" aria-modal="true" aria-labelledby="feedbackHistoryTitle">
+                    <div class="feedback-modal-header">
+                        <h2 id="feedbackHistoryTitle" data-i18n="feedbackHistoryTitle">📨 История обращений</h2>
+                        <button id="btnCloseFeedbackHistoryModal" class="btn-close" type="button" aria-label="Закрыть" data-i18n-aria-label="ariaClose">✕</button>
+                    </div>
+                    <p class="feedback-modal-subtitle" data-i18n="feedbackHistorySubtitle">Ваши обращения и их статус в поддержке.</p>
+                    <div id="feedbackHistoryList" class="feedback-history-list"></div>
+                    <div class="confirm-buttons feedback-modal-actions feedback-history-actions">
+                        <button id="btnFeedbackHistoryMore" class="btn btn-secondary" data-i18n="btnFeedbackLoadMore">Показать еще</button>
+                        <button id="btnFeedbackHistoryRefresh" class="btn btn-primary" data-i18n="btnRefresh">Обновить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedbackThreadModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content feedback-thread-modal-content" role="dialog" aria-modal="true" aria-labelledby="feedbackThreadTitle">
+                    <div class="feedback-modal-header">
+                        <h2 id="feedbackThreadTitle" data-i18n="feedbackThreadTitle">💬 Переписка по обращению</h2>
+                        <button id="btnCloseFeedbackThreadModal" class="btn-close" type="button" aria-label="Закрыть" data-i18n-aria-label="ariaClose">✕</button>
+                    </div>
+                    <div id="feedbackThreadMeta" class="feedback-thread-meta"></div>
+                    <div id="feedbackThreadMessages" class="feedback-thread-messages"></div>
+                    <div class="feedback-thread-compose">
+                        <textarea id="feedbackThreadMessageInput" class="feedback-input feedback-textarea feedback-thread-input" rows="3" maxlength="1200" data-i18n-placeholder="feedbackThreadPlaceholder" placeholder="Напишите уточнение или ответ"></textarea>
+                        <div class="confirm-buttons feedback-modal-actions feedback-thread-actions">
+                            <button id="btnFeedbackThreadSend" class="btn btn-primary" data-i18n="btnFeedbackThreadSend">Отправить сообщение</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="exitConfirmModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content confirm-content">
+            <h2 data-i18n="exitTitle">⚠️ Выход из игры</h2>
+            <p data-i18n="exitDesc">Вы собираетесь выйти в главное меню. Текущая сессия не сохраняется.</p>
+            <p class="warning-text" data-i18n="exitWarning">⚠️ Внимание: Вы потеряете 35% собранных кристаллов!</p>
+            <div id="exitCrystalsWarning" class="warning-text" style="color: #9b59b6; margin-top: 10px; font-size: 14px;">
+                <span data-i18n="exitCrystalsText">Собранные кристаллы:</span> <span id="exitSessionCrystals">0</span> → <span data-i18n="exitWillLose">потеряете:</span> <span id="exitCrystalsLoss">0</span>
+            </div>
+            <div class="confirm-buttons">
+                <button id="btnCancelExit" class="btn btn-secondary" data-i18n="btnContinueGame">Продолжить игру</button>
+                <button id="btnConfirmExit" class="btn btn-danger" data-i18n="btnExitToMenu">Выйти в меню</button>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="shopScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container shop-container">
+                    <h2 data-i18n="shopTitle">🛒 Магазин</h2>
+                    <p class="subtitle" data-i18n="shopSubtitle">Открой новые рамки и фоны для своей карточки игрока</p>
+
+                    <div class="crystals-display">
+                        💎 <span id="shopCrystals">0</span>
+                    </div>
+
+                    <div class="shop-scroll-area">
+                        <div class="shop-profile-layout">
+                            <section class="shop-profile-preview-panel">
+                                <div class="store-section-title" data-i18n="playerProfilePreviewTitle">Превью профиля</div>
+                                <p class="shop-preview-hint" data-i18n="playerProfilePreviewHint">Так игроки увидят вашу карточку в таблице лидеров.</p>
+                                <div id="shopProfilePreviewCard" class="shop-profile-preview-card"></div>
+                            </section>
+
+                            <div class="shop-profile-catalog">
+                                <section class="shop-category">
+                                    <h3 data-i18n="playerProfileFramesTitle">🛡️ Рамки</h3>
+                                    <div id="shopFramesGrid" class="shop-items"></div>
+                                </section>
+
+                                <section class="shop-category">
+                                    <h3 data-i18n="playerProfileBackgroundsTitle">🌌 Фоны</h3>
+                                    <div id="shopBackgroundsGrid" class="shop-items"></div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upgrade-footer">
+                        <button id="btnBackFromShop" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="crystalStoreScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container shop-container crystal-store-container">
+                    <h2 data-i18n="crystalStoreTitle">💎 Кристаллы</h2>
+                    <p class="subtitle" data-i18n="crystalStoreSubtitle">Покупки и награды за просмотр видео</p>
+
+                    <div class="crystal-store-balances">
+                        <div class="crystals-display">
+                            💎 <span id="crystalStoreCrystals">0</span>
+                        </div>
+                        <div class="crystals-display moonseals-display">
+                            🌙 <span id="crystalStoreMoonSeals">0</span>
+                        </div>
+                    </div>
+
+                    <div class="crystal-store-sections">
+                        <div class="shop-category">
+                            <h3 data-i18n="moonSealsStoreBuyTitle">🌙 Покупка Лунных печатей</h3>
+                            <div id="moonSealsPackagesGrid" class="crystal-packages-grid">
+                                <div class="shop-item crystal-package-card">
+                                    <div class="shop-item-name" data-i18n="loading">Загрузка...</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-category">
+                            <h3 data-i18n="starterMoonBundleTitle">🌙 Стартовый лунный набор</h3>
+                            <div id="starterMoonBundleGrid" class="crystal-packages-grid">
+                                <div class="shop-item crystal-package-card">
+                                    <div class="shop-item-name" data-i18n="loading">Загрузка...</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-category">
+                            <h3 data-i18n="crystalStoreBuyWithMoonSealsTitle">💎 Кристаллы за Лунные печати</h3>
+                            <div id="crystalStorePackagesGrid" class="crystal-packages-grid">
+                                <div class="shop-item crystal-package-card">
+                                    <div class="shop-item-name" data-i18n="loading">Загрузка...</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shop-category crystal-store-actions">
+                            <h3 data-i18n="crystalStoreAdTitle">📺 Бесплатные кристаллы</h3>
+                            <p class="crystal-store-ad-hint" data-i18n="crystalStoreAdDesc">Смотри видео и получай +50 💎</p>
+                            <button id="btnCrystalStoreRewardedAd" class="btn btn-rewarded-ad">
+                                <span data-i18n="watchAdText">📺 Смотреть видео</span>
+                                <span class="reward-caption" data-i18n="adsRewardCaption">Получите +50 💎 за просмотр</span>
+                                <span class="reward-badge">+50 💎</span>
+                            </button>
+                            <button id="btnMyPurchases" class="btn btn-secondary btn-my-purchases" data-i18n="btnMyPurchases">🧾 Мои покупки</button>
+                        </div>
+                    </div>
+
+                    <div class="upgrade-footer">
+                        <button id="btnBackFromCrystalStore" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="upgradeScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container upgrade-container">
+            <div class="upgrade-header">
+                <h2 data-i18n="upgradesTitle">⚡ Постоянные улучшения</h2>
+                <p class="subtitle" data-i18n="upgradesSubtitle">Улучшения сохраняются между играми</p>
+            </div>
+
+            
+            <div id="permanentUpgradesContainer" class="permanent-upgrades-container">
+                <div class="permanent-upgrades-title">
+                    <span class="crystal-icon">💎</span>
+                    <span data-i18n="permCrystalsTitle">Кристаллы:</span>
+                    <span class="crystal-count" id="menuCrystalCountUpgrade">0</span>
+                </div>
+                
+                <div class="permanent-upgrades-tabs">
+                    <button class="perm-tab active" data-category="attack" data-i18n="attack">⚔️ Атака</button>
+                    <button class="perm-tab" data-category="defense" data-i18n="defense">🛡️ Защита</button>
+                    <button class="perm-tab" data-category="utility" data-i18n="utility">⚡ Утилиты</button>
+                </div>
+                
+                <div class="permanent-upgrades-grid" id="permanentUpgradesGrid">
+                    
+                </div>
+            </div>
+
+                <div class="upgrade-footer">
+                    <button id="btnBack" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="optionsScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container options-container">
+                    <h2 data-i18n="optionsTitle">⚙️ Опции</h2>
+                    <p class="subtitle" data-i18n="optionsSubtitle">Настройки доступности и визуала</p>
+
+                    <div class="options-list">
+                        <label class="option-row" for="optDisableShake">
+                            <div class="option-text">
+                                <div class="option-title" data-i18n="optionDisableShake">Отключить тряску экрана</div>
+                                <div class="option-desc" data-i18n="optionDisableShakeDesc">Убирает тряску при получении урона, крите и взрывах</div>
+                            </div>
+                            <input id="optDisableShake" class="option-toggle" type="checkbox">
+                        </label>
+
+                        <label class="option-row" for="optDisableHeavyEffects">
+                            <div class="option-text">
+                                <div class="option-title" data-i18n="optionDisableHeavyEffects">Отключить тяжелые эффекты</div>
+                                <div class="option-desc" data-i18n="optionDisableHeavyEffectsDesc">Убирает вспышки, взрывы и насыщенные частицы</div>
+                            </div>
+                            <input id="optDisableHeavyEffects" class="option-toggle" type="checkbox">
+                        </label>
+
+                        <section class="options-feedback-card" aria-labelledby="feedbackTitle">
+                            <div class="options-feedback-header">
+                                <h3 id="feedbackTitle" class="options-feedback-title" data-i18n="feedbackTitle">💬 Обратная связь</h3>
+                                <p class="options-feedback-desc" data-i18n="feedbackDesc">Сообщите об ошибке, предложении или проблеме с платформой</p>
+                            </div>
+                            <div class="options-feedback-actions">
+                                <button id="btnOpenFeedback" class="btn btn-primary options-feedback-btn" data-i18n="btnOpenFeedback">Написать обращение</button>
+                                <button id="btnOpenFeedbackHistory" class="btn btn-secondary options-feedback-btn options-feedback-btn-secondary" data-i18n="btnOpenFeedbackHistory">История обращений</button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="upgrade-footer">
+                        <button id="btnBackFromOptions" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="talentScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container upgrade-container">
+                    <div class="upgrade-header">
+                        <h2 data-i18n="talentScreenTitle">🌳 Древо талантов</h2>
+                        <p class="subtitle" data-i18n="talentScreenSubtitle">Открывается с 50 волны, +1 очко каждые 25 волн</p>
+                    </div>
+
+                    <div class="permanent-upgrades-container">
+                        <div class="permanent-upgrades-title">
+                            <span class="crystal-icon">✨</span>
+                            <span data-i18n="talentPointsLabel">Очков талантов:</span>
+                            <span class="crystal-count" id="talentPointsCount">0</span>
+                        </div>
+                        <div id="talentProgressHint" class="subtitle talent-progress-hint"></div>
+                        <div class="permanent-upgrades-grid" id="talentTreeGrid"></div>
+                    </div>
+
+                    <div id="talentDetailsDock" class="talent-details talent-details-dock"></div>
+
+                    <div class="upgrade-footer">
+                        <button id="btnBackFromTalents" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="gameScreen" class="screen">
+        <div class="game-container">
+            <canvas id="gameCanvas" width="800" height="600" wg-game-orientation="wg-landscape-game"></canvas>
+            
+            <div class="game-ui">
+                
+                <div class="top-bar">
+                    <div class="resource">
+                        <span class="icon">❤️</span>
+                        <span class="resource-label" data-i18n="health">HP</span>
+                        <span id="health">100/100</span>
+                        <span id="bastionHudIcon" class="status-indicator hidden" title="Последний бастион" data-i18n-title="talent_lastBastion_active">🛡️</span>
+                    </div>
+                    <div class="resource gold-resource" id="goldResource">
+                        <span class="icon">💰</span>
+                        <span class="resource-label" data-i18n="gold">Gold</span>
+                        <span id="gold">0</span>
+                        <div class="resource-tooltip" id="goldTooltip">
+                            <div class="tooltip-line" id="tooltipIncome"></div>
+                            <div class="tooltip-line" id="tooltipCrystals"></div>
+                        </div>
+                    </div>
+                    <div class="resource day-display">
+                        <span class="icon">📅</span>
+                        <span class="resource-label" data-i18n="day">Day</span>
+                        <span id="dayDisplay">1</span>
+                    </div>
+                    <div id="preRunBuffTopStatus" class="resource ad-buff-status hidden">
+                        <span class="icon">✨</span>
+                        <span id="preRunBuffTopText">+100% x5</span>
+                    </div>
+                </div>
+
+                
+                <button id="btnExit" class="btn-exit" title="Выход" data-i18n-title="exit">
+                    <span class="exit-icon">☰</span>
+                </button>
+
+                
+                 <div id="bonusTimersPanel" class="bonus-timers-panel">
+                    <div id="adBoostBadge" class="bonus-timer hidden">
+                        <span class="bonus-icon">📺</span>
+                        <span class="bonus-time" data-i18n="preRunBuffBadgeShort">Буст x2.0</span>
+                    </div>
+                    <div id="damageBoostTimer" class="bonus-timer hidden">
+                        <span class="bonus-icon">⚔️</span>
+                        <div class="bonus-bar">
+                            <div class="bonus-progress" id="damageBoostProgress"></div>
+                        </div>
+                        <span class="bonus-time" id="damageBoostTime">5s</span>
+                    </div>
+                    <div id="speedBoostTimer" class="bonus-timer hidden">
+                        <span class="bonus-icon">⚡</span>
+                        <div class="bonus-bar">
+                            <div class="bonus-progress" id="speedBoostProgress"></div>
+                        </div>
+                        <span class="bonus-time" id="speedBoostTime">5s</span>
+                    </div>
+                    <div id="frenzyTimer" class="bonus-timer hidden">
+                        <span class="bonus-icon">🔥</span>
+                        <div class="bonus-bar">
+                            <div class="bonus-progress" id="frenzyProgress"></div>
+                        </div>
+                        <span class="bonus-time" id="frenzyTime">20s</span>
+                    </div>
+                     <div id="bastionShieldTimer" class="bonus-timer hidden">
+                        <span class="bonus-icon">🛡️</span>
+                        <div class="bonus-bar">
+                            <div class="bonus-progress" id="bastionShieldProgress"></div>
+                        </div>
+                        <span class="bonus-time" id="bastionShieldTime">4s</span>
+                     </div>
+                 </div>
+
+                 <div id="runModifierHud" class="run-modifier-hud hidden"></div>
+                 <div id="runModifierIntro" class="run-modifier-intro hidden"></div>
+                 
+                 
+                 <div class="upgrades-panel-new" id="upgradesPanel">
+                    <div class="upgrade-tabs">
+                        <button class="upgrade-tab active" data-tab="attack">
+                            <span class="tab-icon">⚔️</span>
+                            <span class="tab-name" data-i18n="attack">Атака</span>
+                        </button>
+                        <button class="upgrade-tab" data-tab="defense">
+                            <span class="tab-icon">🛡️</span>
+                            <span class="tab-name" data-i18n="defense">Защита</span>
+                        </button>
+                        <button class="upgrade-tab" data-tab="utility">
+                            <span class="tab-icon">⚡</span>
+                            <span class="tab-name" data-i18n="utility">Утилиты</span>
+                        </button>
+                    </div>
+                    <div class="upgrade-grid" id="upgradeGrid">
+                        
+                    </div>
+                </div>
+
+                <div id="gameQuickControls" class="game-quick-controls">
+                    <button id="btnGameChat" class="ctrl-btn ctrl-chat hidden" type="button" data-i18n-title="menuChatButtonTitle" data-i18n-aria-label="menuChatButtonTitle">
+                        <span class="ctrl-icon">💬</span>
+                        <span id="btnGameChatBadge" class="game-chat-badge hidden"></span>
+                    </button>
+                    <button id="btnGameSound" class="ctrl-btn ctrl-sound" title="Звук" data-i18n-title="soundToggleTitle">
+                        <span class="ctrl-icon" id="btnGameSoundIcon">🔊</span>
+                    </button>
+                </div>
+
+                
+                
+                <div class="bottom-controls">
+                    <button id="btnUpgradesDock" class="ctrl-btn ctrl-upgrades-dock" title="Панель улучшений" data-i18n-title="tooltip_openUpgradesPanel">
+                        <span class="ctrl-icon">⚡</span>
+                    </button>
+                    
+                    <button id="btnOpenGarden" class="ctrl-btn btn-garden hidden" data-i18n-title="gardenTitle" title="Открыть огород" style="display: none !important;">
+                        <span class="ctrl-icon">🌱</span>
+                    </button>
+                    
+                    
+                    <button id="btnBerserk" class="ctrl-btn ctrl-berserk" title="Берсерк" data-i18n-title="btnBerserk" style="display: none;">
+                        <span class="ctrl-icon">🔥</span>
+                        <span class="ctrl-label" id="berserkLabel">⚡</span>
+                    </button>
+                    
+                    
+                    <button id="btnGameSpeed" class="ctrl-btn ctrl-speed" title="Скорость игры" data-i18n-title="tooltip_gameSpeed">
+                        <span class="ctrl-icon">⏩</span>
+                        <span class="ctrl-label">x1.00</span>
+                    </button>
+                    
+                    
+                </div>
+                
+                
+                <div id="gardenModal" class="game-modal hidden" style="display: none !important;">
+                    <div class="game-modal-overlay"></div>
+                    <div class="game-modal-content garden-content">
+                        <div class="game-modal-header">
+                            <h2 data-i18n="gardenTitle">🌱 Мой Огород</h2>
+                            <button id="btnCloseGarden" class="btn-close">✕</button>
+                        </div>
+                        <div class="game-modal-body">
+                            <div class="gardens-info">
+                                <span class="seeds-count">🌱 <span data-i18n="seedsLabel">Семян:</span> <span id="gardenSeedsCount">0</span></span>
+                            </div>
+                            <div class="gardens-container" id="gardensContainer">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="upgradeModalContainer" class="game-modal hidden">
+                    <div class="game-modal-overlay"></div>
+                    <div class="game-modal-content upgrade-selection-content" id="upgradeSelectionModal">
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="gameOverModal" class="modal hidden">
+                <div class="modal-content game-over-content">
+                    <h2 data-i18n="gameOverTitle">💀 Игра окончена!</h2>
+                    <div class="game-over-stats">
+                        <div class="stat-row">
+                            <span class="stat-label" data-i18n="statWaves">🌊 Волн пройдено:</span>
+                            <span id="finalWave" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label" data-i18n="statKills">👻 Врагов уничтожено:</span>
+                            <span id="finalKills" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label" data-i18n="statGold">💰 Всего золота:</span>
+                            <span id="finalGold" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-row highlight">
+                            <span class="stat-label" data-i18n="statCrystals">💎 Кристаллов получено:</span>
+                            <span id="earnedCrystals" class="stat-value crystals">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label" data-i18n="statTime">⏱️ Время игры:</span>
+                            <span id="finalTime" class="stat-value">0:00</span>
+                        </div>
+                        <div class="stat-row personal-best hidden" id="personalBestRow">
+                            <span class="stat-label" data-i18n="newRecord">🏆 Новый рекорд!</span>
+                        </div>
+                        <div class="stat-row hidden" id="stageProgressRow">
+                            <span class="stat-label" id="stageProgressLabel" data-i18n="statStageUnlockProgress">🧭 До следующей стадии:</span>
+                            <span id="stageProgressValue" class="stat-value">0/50</span>
+                        </div>
+                        <div class="stat-row hidden" id="seasonProgressRow">
+                            <span class="stat-label" id="seasonProgressLabel" data-i18n="statSeasonProgress">✨ Season XP:</span>
+                            <span id="seasonProgressValue" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-row" id="eliteChoicesRow">
+                            <span class="stat-label" data-i18n="statEliteChoices">🌘 Элитных выборов:</span>
+                            <span id="finalEliteChoices" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-row" id="traderDealsRow">
+                            <span class="stat-label" data-i18n="statTraderDeals">🤝 Сделок торговца:</span>
+                            <span id="finalTraderDeals" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-row" id="modifierCountRow">
+                            <span class="stat-label" data-i18n="statModifierCount">🧿 Модификаторов забега:</span>
+                            <span id="finalModifierCount" class="stat-value">0</span>
+                        </div>
+                    </div>
+                    <div class="game-over-buttons">
+                        <button id="btnRevive" class="btn btn-secondary hidden" data-i18n="btnReviveHalfHp">❤️ Возродиться (50% HP)</button>
+                        <button id="btnMainMenu" class="btn btn-primary" data-i18n="btnToMenu">🏠 В главное меню</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div id="achievementsScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container achievements-container">
+                    <div class="achievements-modal-header">
+                        <h2 data-i18n="achievementsTitle">🏆 Достижения</h2>
+                    </div>
+                    <div id="achievementsGroups" class="achievements-groups"></div>
+                    <div class="achievements-summary">
+                        <span><span data-i18n="achievementsUnlocked">Получено</span>: <b id="achievementsScreenUnlocked">0</b></span>
+                        <span><span data-i18n="achievementsTotal">Всего</span>: <b id="achievementsScreenTotal">0</b></span>
+                    </div>
+                    <div class="achievements-body">
+                        <div id="achievementsScreenList" class="achievements-list"></div>
+                    </div>
+                    <div class="upgrade-footer">
+                        <button id="btnBackFromAchievements" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="cardsScreen" class="screen screen-scaled">
+        <div class="screen-background"></div>
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="menu-container cards-container">
+            <h2 data-i18n="cardsTitle">🎴 Карточки</h2>
+            <p class="subtitle" data-i18n="cardsSubtitle">Собирай карточки и размещай их в алтаре для бонусов</p>
+            
+            <div class="crystals-display">
+                💎 <span id="cardsCrystals">0</span>
+            </div>
+
+            <div class="cards-section cards-main-layout">
+                <div class="collection-section collection-panel">
+                    <h3 data-i18n="collectionTitle">📚 Коллекция</h3>
+                    <div id="cardsCollection" class="cards-grid"></div>
+                </div>
+
+                <div class="cards-workspace-panel">
+                    <div class="deck-section deck-section-top">
+                        <button id="buyCardBtn" class="buy-card-cta" type="button">
+                            <span class="buy-card-cta-icon">🎴</span>
+                            <span class="buy-card-cta-text" data-i18n="btnBuyCard">Купить карточку</span>
+                            <span class="buy-card-cta-cost">💎 55</span>
+                        </button>
+                    </div>
+
+                    <div class="cards-operating-grid">
+                        <div class="altar-section">
+                            <h3><span data-i18n="altarTitle">⛩️ Алтарь</span> <span class="altar-slots">(<span id="altarCount">0</span>/5)</span></h3>
+                            <div class="altar-description" data-i18n="altarDesc">Карточки в алтаре дают бонусы в игре</div>
+                            <div id="altarSlots" class="altar-slots-container">
+                                <div class="altar-slot empty" data-slot="0"></div>
+                                <div class="altar-slot empty" data-slot="1"></div>
+                                <div class="altar-slot empty" data-slot="2"></div>
+                                <div class="altar-slot empty" data-slot="3"></div>
+                                <div class="altar-slot empty" data-slot="4"></div>
+                            </div>
+                        </div>
+
+                        <div class="forge-section">
+                            <h3>🔨 <span data-i18n="forgeTitle">Кузница</span></h3>
+                            <div class="forge-container">
+                                <div class="forge-slot-group">
+                                    <h4 data-i18n="forgeTargetLabel">Карта для улучшения</h4>
+                                    <div id="forgeTarget" class="forge-slot" data-forge-slot="target"></div>
+                                </div>
+                                <div class="forge-slot-group">
+                                    <h4 data-i18n="forgeSacrificeLabel">Жертвы (до 4)</h4>
+                                    <div class="forge-sacrifice-slots">
+                                        <div id="forgeSacrifice1" class="forge-slot" data-forge-slot="sacrifice1"></div>
+                                        <div id="forgeSacrifice2" class="forge-slot" data-forge-slot="sacrifice2"></div>
+                                        <div id="forgeSacrifice3" class="forge-slot" data-forge-slot="sacrifice3"></div>
+                                        <div id="forgeSacrifice4" class="forge-slot" data-forge-slot="sacrifice4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forge-chance-display" id="forgeChanceDisplay" style="margin: 10px 0; text-align: center; font-size: 1.1em;">
+                                <span data-i18n="forgeChanceLabel">Шанс успеха:</span> <span id="forgeChanceValue" style="font-weight: bold; color: #2ecc71;">0%</span>
+                            </div>
+                            <div class="forge-warning" id="forgeWarning" style="display: none; margin: 10px 0; padding: 10px; background: rgba(231, 76, 60, 0.2); border-radius: 5px; text-align: center;">
+                                <span style="color: #e74c3c;">⚠️ <span data-i18n="forgeWarningRisk">Есть риск провала! Жертвенные карты будут потеряны.</span></span>
+                            </div>
+                            <button id="btnConfirmForge" class="btn btn-primary forge-btn" data-i18n="btnConfirmForge" disabled="">⚡ Кузница</button>
+                        </div>
+                    </div>
+
+                    <div class="altar-effects-section">
+                        <h3 data-i18n="altarEffectsTitle">✨ Активные эффекты алтаря</h3>
+                        <div class="altar-bonuses" id="altarBonuses"></div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="upgrade-footer" style="position: relative; z-index: 101;">
+                    <button id="btnBackFromCards" class="btn btn-secondary btn-back-fixed" data-i18n="btnBack">⬅️ Назад</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="cardDetailModal" class="modal hidden">
+        <div class="screen-wrapper">
+            <div class="screen-content">
+                <div class="modal-panel modal-content card-detail-content">
+            <div class="modal-header">
+                <h2 data-i18n="cardDetailTitle">Детали карты</h2>
+                <button id="btnCloseCardDetail" class="btn-close">✕</button>
+            </div>
+            <div class="modal-body card-detail-body">
+                <div class="card-detail-showcase">
+                    <div class="card-detail-icon-wrap">
+                        <div class="card-detail-icon" id="cardDetailIcon">⚔️</div>
+                    </div>
+                    <div class="card-detail-header-copy">
+                        <div class="card-detail-name" id="cardDetailName">—</div>
+                        <div class="card-detail-rarity" id="cardDetailRarity">—</div>
+                    </div>
+                    <div class="card-detail-description" id="cardDetailDescription">—</div>
+                    <div class="card-detail-bonus" id="cardDetailBonus">—</div>
+                    <div class="card-detail-tags" id="cardDetailTags"></div>
+                    <div class="card-detail-stars-block">
+                        <div class="card-detail-stars-label" data-i18n="cardStarsLabel">Уровень карты</div>
+                        <div class="card-detail-stars" id="cardDetailStars">⭐</div>
+                    </div>
+                </div>
+
+                <div class="card-detail-actions-panel">
+                    <div class="card-detail-actions-title" data-i18n="cardActionsTitle">Действия</div>
+                    <div class="card-detail-actions">
+                        <button id="btnCardActionAltar" class="btn btn-primary" data-i18n="cardActionAltar">📿 Алтарь</button>
+                        <button id="btnCardActionRemoveAltar" class="btn btn-secondary hidden" data-i18n="cardActionRemoveFromAltar">✕ Убрать</button>
+                        <button id="btnCardActionForge" class="btn btn-primary" data-i18n="cardActionForge">🔨 Кузница</button>
+                        <button id="btnCardActionSacrifice" class="btn btn-primary" data-i18n="cardActionSacrifice">⚔️ Жертва</button>
+                        <button id="btnCardActionBurn" class="btn btn-danger" data-i18n="cardActionBurn">🔥 Сжечь</button>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        
+        window._gpInitialized = false;
+        window.__gpGameReadyReported = false;
+        window.__gpBootstrapTimeouts = {
+            playerReadyMs: 3500,
+            preloaderMs: 3000,
+            gameReadyFallbackMs: 20000
+        };
+        window.__gpReadyLockRequired = !(
+            window.location.protocol === 'file:'
+            || window.location.hostname === 'localhost'
+            || window.location.hostname === '127.0.0.1'
+        );
+
+        const awaitGpWithTimeout = async (promiseOrFactory, timeoutMs, label) => {
+            const startedAt = Date.now();
+            let timeoutId = null;
+
+            try {
+                const workPromise = Promise.resolve().then(() => {
+                    if (typeof promiseOrFactory === 'function') {
+                        return promiseOrFactory();
+                    }
+                    return promiseOrFactory;
+                });
+
+                const raceResult = await Promise.race([
+                    workPromise
+                        .then((value) => ({ status: 'resolved', value }))
+                        .catch((error) => ({ status: 'rejected', error })),
+                    new Promise((resolve) => {
+                        timeoutId = setTimeout(() => resolve({ status: 'timeout' }), timeoutMs);
+                    })
+                ]);
+
+                const elapsedMs = Date.now() - startedAt;
+
+                if (raceResult.status === 'timeout') {
+                    console.warn(`⚠️ ${label}: timeout (${elapsedMs}ms)`);
+                    return { ok: false, timeout: true, elapsedMs };
+                }
+
+                if (raceResult.status === 'rejected') {
+                    console.warn(`⚠️ ${label}: rejected (${elapsedMs}ms)`, raceResult.error);
+                    return { ok: false, timeout: false, error: raceResult.error, elapsedMs };
+                }
+
+                console.log(`✅ ${label}: completed (${elapsedMs}ms)`);
+                return { ok: true, timeout: false, value: raceResult.value, elapsedMs };
+            } finally {
+                if (timeoutId) {
+                    clearTimeout(timeoutId);
+                }
+            }
+        };
+
+        window.__gpSetInteractionLocked = (locked) => {
+            let lockOverlay = document.getElementById('gpRuntimeLockOverlay');
+
+            if (!lockOverlay) {
+                lockOverlay = document.createElement('div');
+                lockOverlay.id = 'gpRuntimeLockOverlay';
+                lockOverlay.style.cssText = 'position:fixed;inset:0;z-index:12050;background:rgba(0,0,0,0);pointer-events:auto;cursor:wait;';
+                document.body.appendChild(lockOverlay);
+            }
+
+            lockOverlay.style.display = locked ? 'block' : 'none';
+        };
+
+        if (window.__gpReadyLockRequired) {
+            window.__gpSetInteractionLocked(true);
+
+            setTimeout(() => {
+                if (!window.__gpGameReadyReported && typeof window.__gpSetInteractionLocked === 'function') {
+                    console.warn('⚠️ Failsafe: снимаем блокировку UI, gameReady не был подтвержден вовремя');
+                    window.__gpSetInteractionLocked(false);
+                }
+            }, 20000);
+        }
+        
+        
+        
+        const processGpInit = async (gp) => {
+            if (window._gpInitialized) {
+                console.warn('⚠️ onGPInit вызван повторно, пропускаем');
+                return;
+            }
+
+            if (window.__gpReadyLockRequired && typeof window.__gpSetInteractionLocked === 'function') {
+                window.__gpSetInteractionLocked(true);
+            }
+
+            window._gpInitialized = true;
+            window.__gpPreloaderDone = false;
+            window.__gpLifecyclePaused = Boolean(document.hidden);
+
+            if (window.AudioManager && typeof AudioManager.deferMusicUntilPreloaderFinished === 'function') {
+                AudioManager.deferMusicUntilPreloaderFinished();
+            }
+            
+            console.log('🎮 GamePush SDK callback вызван');
+            
+            
+            window.GP = gp;
+            window.__GP_SDK_INSTANCE = gp;
+            window.gp = gp;
+
+            try {
+                window.dispatchEvent(new CustomEvent('gp:sdk-ready', { detail: { gp } }));
+            } catch (_) {
+                
+            }
+            
+            const gpPlatformType = gp && gp.platform && gp.platform.type ? gp.platform.type : 'unknown';
+            const gpPlatformPayload = gp && gp.platform ? gp.platform : null;
+            window.__GP_PLATFORM_INFO = {
+                type: gpPlatformType,
+                payload: gpPlatformPayload
+            };
+
+            console.log('🌍 Платформа GamePush (type):', gpPlatformType);
+            console.log('🌍 Платформа GamePush (payload):', gpPlatformPayload);
+            console.log('🌍 Язык:', gp.language || 'unknown');
+            console.log('✅ isAllowedOrigin:', gp.isAllowedOrigin);
+
+            if (!window._gpRuntimeHooksBound) {
+                window._gpRuntimeHooksBound = true;
+
+                let lastLifecycleShouldPause = null;
+
+                const isDocumentActive = () => {
+                    const hasFocus = typeof document.hasFocus === 'function' ? document.hasFocus() : true;
+                    return !document.hidden && hasFocus;
+                };
+
+                const isManualPauseActive = () => {
+                    return Boolean(window.Game && Game._manualPauseTriggered);
+                };
+
+                const isUpgradeSelectionActive = () => {
+                    return Boolean(window.Game && Game.xpSystem && Game.xpSystem.isSelectingUpgrade);
+                };
+
+                const isAdPlayingNow = () => {
+                    if (window.AdsManager && typeof AdsManager.isAnyAdPlaying === 'function' && AdsManager.isAnyAdPlaying()) {
+                        return true;
+                    }
+
+                    const ads = gp && gp.ads ? gp.ads : null;
+                    if (!ads) {
+                        return false;
+                    }
+
+                    return Boolean(
+                        ads.isFullscreenPlaying ||
+                        ads.isRewardedPlaying ||
+                        ads.isPreloaderPlaying
+                    );
+                };
+
+                const canResumeFromSdk = () => {
+                    return isDocumentActive()
+                        && !isManualPauseActive()
+                        && !isUpgradeSelectionActive()
+                        && !isAdPlayingNow();
+                };
+
+                const hidePauseOverlay = () => {
+                    const pauseOverlay = document.getElementById('pauseOverlay');
+                    if (pauseOverlay) {
+                        pauseOverlay.classList.add('hidden');
+                    }
+                };
+
+                const showPauseOverlayIfManual = () => {
+                    const isPausedNow = window.Game && typeof Game.isGameplayPaused === 'function'
+                        ? Game.isGameplayPaused()
+                        : Boolean(window.Game && Game.isPaused);
+
+                    if (isManualPauseActive() && isPausedNow && window.UI && typeof UI.showPauseOverlay === 'function') {
+                        UI.showPauseOverlay();
+                    }
+                };
+
+                const applyLocalPauseFallback = (reason) => {
+                    window.__gpLifecyclePaused = true;
+
+                    if (window.AudioManager && typeof AudioManager.pauseAll === 'function') {
+                        AudioManager.pauseAll();
+                    }
+
+                    if (window.Game) {
+                        Game.isPaused = true;
+                    }
+
+                    showPauseOverlayIfManual();
+                    console.log('⏸️ Локальная fallback-пауза:', reason);
+                };
+
+                const applyLocalResumeFallback = (reason) => {
+                    if (!canResumeFromSdk()) {
+                        console.log('▶️ Локальный fallback-resume пропущен (есть блокеры):', reason);
+                        return false;
+                    }
+
+                    window.__gpLifecyclePaused = false;
+                    hidePauseOverlay();
+
+                    if (window.AudioManager && typeof AudioManager.resumeAll === 'function') {
+                        AudioManager.resumeAll();
+                    }
+
+                    if (window.Game) {
+                        Game.isPaused = false;
+                        Game.lastTime = performance.now();
+                    }
+
+                    console.log('▶️ Локальный fallback-resume выполнен:', reason);
+                    return true;
+                };
+
+                const requestSdkPause = (reason) => {
+                    if (typeof gp.pause === 'function') {
+                        try {
+                            gp.pause();
+                            console.log('⏸️ GP pause requested:', reason);
+                            return true;
+                        } catch (error) {
+                            console.warn('⚠️ GP pause request failed:', reason, error);
+                        }
+                    }
+
+                    applyLocalPauseFallback(reason);
+                    return false;
+                };
+
+                const requestSdkResume = (reason) => {
+                    if (!canResumeFromSdk()) {
+                        console.log('▶️ GP resume blocked by guards:', reason);
+                        requestSdkPause('resume_guard:' + reason);
+                        return false;
+                    }
+
+                    if (typeof gp.resume === 'function') {
+                        try {
+                            gp.resume();
+                            console.log('▶️ GP resume requested:', reason);
+                            return true;
+                        } catch (error) {
+                            console.warn('⚠️ GP resume request failed:', reason, error);
+                        }
+                    }
+
+                    return applyLocalResumeFallback(reason);
+                };
+
+                window.__gpRequestPause = requestSdkPause;
+                window.__gpRequestResume = requestSdkResume;
+                window.__gpCanResumeGameplay = canResumeFromSdk;
+
+                if (typeof gp.on === 'function') {
+                    gp.on('pause', () => {
+                        console.log('Pause event from SDK');
+                        window.__gpLifecyclePaused = true;
+
+                        if (window.AudioManager && typeof AudioManager.pauseAll === 'function') {
+                            AudioManager.pauseAll();
+                        }
+
+                        if (window.Game) {
+                            Game.isPaused = true;
+                        }
+
+                        showPauseOverlayIfManual();
+                    });
+
+                    gp.on('resume', () => {
+                        console.log('Resume event from SDK');
+
+                        const exitModal = document.getElementById('exitConfirmModal');
+                        if (exitModal) {
+                            exitModal.classList.add('hidden');
+                        }
+
+                        if (!canResumeFromSdk()) {
+                            if (isManualPauseActive()) {
+                                showPauseOverlayIfManual();
+                            } else {
+                                hidePauseOverlay();
+                            }
+
+                            requestSdkPause('gp_resume_guard');
+                            return;
+                        }
+
+                        window.__gpLifecyclePaused = false;
+                        hidePauseOverlay();
+
+                        if (window.AudioManager && typeof AudioManager.resumeAll === 'function') {
+                            AudioManager.resumeAll();
+                        }
+
+                        if (window.Game) {
+                            Game.isPaused = false;
+                            Game.lastTime = performance.now();
+                        }
+
+                        if (window.UIManager && typeof UIManager.updateBonusDayBadge === 'function') {
+                            setTimeout(() => UIManager.updateBonusDayBadge(), 500);
+                        }
+                    });
+                }
+
+                if (!window._gpVisibilityBridgeBound) {
+                    window._gpVisibilityBridgeBound = true;
+
+                    const syncLifecyclePauseState = (reason) => {
+                        const shouldPause = !isDocumentActive();
+                        if (lastLifecycleShouldPause === shouldPause) {
+                            return;
+                        }
+
+                        lastLifecycleShouldPause = shouldPause;
+
+                        
+                        
+                        
+                        if (window.AudioManager) {
+                            if (shouldPause) {
+                                window.__gpLifecyclePaused = true;
+                                AudioManager._pausedByLifecycle = true;
+                                if (typeof AudioManager.pauseAll === 'function') {
+                                    AudioManager.pauseAll();
+                                }
+                            } else {
+                                AudioManager._pausedByLifecycle = false;
+                                if (canResumeFromSdk() && typeof AudioManager.resumeAll === 'function') {
+                                    AudioManager.resumeAll();
+                                }
+                            }
+                        }
+
+                        if (shouldPause) {
+                            requestSdkPause('lifecycle:' + reason);
+                        } else {
+                            requestSdkResume('lifecycle:' + reason);
+                        }
+                    };
+
+                    document.addEventListener('visibilitychange', () => {
+                        syncLifecyclePauseState('visibilitychange');
+                    });
+
+                    window.addEventListener('pagehide', () => {
+                        syncLifecyclePauseState('pagehide');
+                    });
+
+                    window.addEventListener('pageshow', () => {
+                        syncLifecyclePauseState('pageshow');
+                    });
+
+                    window.addEventListener('blur', () => {
+                        syncLifecyclePauseState('blur');
+                    });
+
+                    window.addEventListener('focus', () => {
+                        syncLifecyclePauseState('focus');
+                    });
+
+                    lastLifecycleShouldPause = !isDocumentActive();
+                    if (lastLifecycleShouldPause) {
+                        requestSdkPause('lifecycle:init');
+                    }
+                }
+
+                if (gp.sounds && typeof gp.sounds.on === 'function') {
+                    gp.sounds.on('mute', () => {
+                        
+                        
+                        if (window.AudioManager && typeof AudioManager.setMutedBySDK === 'function') {
+                            AudioManager.setMutedBySDK(true);
+                        }
+                    });
+
+                    gp.sounds.on('unmute', () => {
+                        
+                        if (window.AudioManager && typeof AudioManager.setMutedBySDK === 'function') {
+                            AudioManager.setMutedBySDK(false);
+                        }
+                    });
+
+                    gp.sounds.on('mute:sfx', () => {
+                        if (window.AudioManager && typeof AudioManager.setSFXMutedBySDK === 'function') {
+                            AudioManager.setSFXMutedBySDK(true);
+                        }
+                    });
+
+                    gp.sounds.on('unmute:sfx', () => {
+                        if (window.AudioManager && typeof AudioManager.setSFXMutedBySDK === 'function') {
+                            AudioManager.setSFXMutedBySDK(false);
+                        }
+                    });
+
+                    gp.sounds.on('mute:music', () => {
+                        if (window.AudioManager && typeof AudioManager.setMusicMutedBySDK === 'function') {
+                            AudioManager.setMusicMutedBySDK(true);
+                        }
+                    });
+
+                    gp.sounds.on('unmute:music', () => {
+                        if (window.AudioManager && typeof AudioManager.setMusicMutedBySDK === 'function') {
+                            AudioManager.setMusicMutedBySDK(false);
+                        }
+                    });
+                }
+            }
+            
+            const finishPreloaderFlow = (() => {
+                let done = false;
+                return () => {
+                    if (done) {
+                        return;
+                    }
+
+                    done = true;
+                    window.__gpPreloaderDone = true;
+                    window.dispatchEvent(new CustomEvent('gp:preloader-finished'));
+                    console.log('✅ Startup preloader flow finished');
+                };
+            })();
+
+            const shouldShowStickyOnStartup = () => {
+                if (window.UI && typeof UI.currentScreen === 'string') {
+                    return UI.currentScreen === 'mainMenu';
+                }
+
+                const mainMenu = document.getElementById('mainMenu');
+                if (!mainMenu) {
+                    return false;
+                }
+
+                const computedStyle = typeof window.getComputedStyle === 'function'
+                    ? window.getComputedStyle(mainMenu)
+                    : null;
+                const isVisibleByStyle = computedStyle
+                    ? (computedStyle.display !== 'none' && computedStyle.visibility !== 'hidden')
+                    : mainMenu.style.display !== 'none';
+
+                return mainMenu.classList.contains('active') || isVisibleByStyle;
+            };
+
+            const showStickyOnStartup = () => {
+                if (!shouldShowStickyOnStartup()) {
+                    return;
+                }
+
+                if (window.AdsManager && typeof AdsManager.isAnyAdPlaying === 'function' && AdsManager.isAnyAdPlaying()) {
+                    setTimeout(showStickyOnStartup, 250);
+                    return;
+                }
+
+                if (window.AdsManager && typeof AdsManager.showStickyBanner === 'function') {
+                    if (!AdsManager.showStickyBanner()) {
+                        setTimeout(showStickyOnStartup, 250);
+                    }
+                    return;
+                }
+
+                const ads = gp && gp.ads ? gp.ads : null;
+                if (ads && typeof ads.showSticky === 'function') {
+                    if (ads.isFullscreenPlaying || ads.isRewardedPlaying || ads.isPreloaderPlaying) {
+                        setTimeout(showStickyOnStartup, 250);
+                        return;
+                    }
+                    try {
+                        ads.showSticky();
+                    } catch (error) {
+                        console.warn('⚠️ Startup sticky banner error:', error);
+                        setTimeout(showStickyOnStartup, 250);
+                    }
+                }
+            };
+
+            const markGameReady = (() => {
+                let done = false;
+                return () => {
+                    if (done) {
+                        return;
+                    }
+
+                    done = true;
+
+                    try {
+                        if (typeof gp.gameStart === 'function') {
+                            gp.gameStart();
+                            console.log('✅ gp.gameStart() вызван (GameReady)');
+                        } else if (typeof gp.gameReady === 'function') {
+                            gp.gameReady();
+                            console.log('✅ gp.gameReady() вызван (legacy fallback)');
+                        } else {
+                            console.log('ℹ️ gp.gameStart/gameReady недоступны в текущей версии SDK');
+                        }
+                    } catch (error) {
+                        console.warn('⚠️ gp.gameStart/gameReady ошибка:', error);
+                    } finally {
+                        window.__gpGameReadyReported = true;
+                        if (window.__gpReadyLockRequired && typeof window.__gpSetInteractionLocked === 'function') {
+                            window.__gpSetInteractionLocked(false);
+                        }
+                        showStickyOnStartup();
+                        if (window.SchedulerManager && typeof SchedulerManager.refresh === 'function') {
+                            setTimeout(() => {
+                                Promise.resolve(SchedulerManager.refresh(true)).catch((error) => {
+                                    console.warn('⚠️ Startup scheduler auto-open failed:', error);
+                                });
+                            }, 180);
+                        }
+                        console.log('✅ Игра отмечена как ready (до разблокировки взаимодействия)');
+                    }
+                };
+            })();
+
+            let playerReadyEventSent = false;
+
+            const dispatchPlayerReady = (success) => {
+                if (playerReadyEventSent) {
+                    return;
+                }
+
+                playerReadyEventSent = true;
+
+                try {
+                    window.dispatchEvent(new CustomEvent('gp:player-ready', {
+                        detail: {
+                            gp,
+                            success: Boolean(success)
+                        }
+                    }));
+                } catch (_) {
+                    
+                }
+            };
+
+            try {
+                const ads = gp && gp.ads ? gp.ads : null;
+
+                let playerReadySuccess = true;
+                try {
+                    if (gp && gp.player && gp.player.ready) {
+                        await gp.player.ready;
+                    }
+                } catch (error) {
+                    playerReadySuccess = false;
+                    console.warn('⚠️ gp.player.ready завершился с ошибкой:', error);
+                }
+
+                if (typeof window.__gpResolvePlayerReady === 'function') {
+                    window.__gpResolvePlayerReady(playerReadySuccess);
+                }
+                dispatchPlayerReady(playerReadySuccess);
+
+            } catch (error) {
+                console.warn('⚠️ Startup цепочка перед gameReady завершилась с ошибкой:', error);
+                if (typeof window.__gpResolvePlayerReady === 'function') {
+                    window.__gpResolvePlayerReady(false);
+                }
+                dispatchPlayerReady(false);
+            } finally {
+                await awaitGpWithTimeout(
+                    () => window.__startupGameLoadedPromise,
+                    window.__gpBootstrapTimeouts.gameReadyFallbackMs,
+                    'startup game loaded'
+                );
+
+                if (window.LocalizationManager && typeof LocalizationManager.whenReady === 'function') {
+                    try {
+                        await LocalizationManager.whenReady();
+                    } catch (error) {
+                        console.warn('⚠️ Не удалось дождаться локализации перед показом UI:', error);
+                    }
+                }
+
+                if (typeof window.__releaseStartupUi === 'function') {
+                    window.__releaseStartupUi();
+                }
+
+                await new Promise((resolve) => {
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(resolve);
+                    });
+                });
+
+                const ads = gp && gp.ads ? gp.ads : null;
+                const canShowPreloader = ads
+                    && typeof ads.showPreloader === 'function'
+                    && ads.isPreloaderAvailable !== false;
+
+                if (canShowPreloader) {
+                    window.__gpStartupPreloaderStarted = true;
+
+                    await awaitGpWithTimeout(
+                        () => ads.showPreloader(),
+                        window.__gpBootstrapTimeouts.preloaderMs + 4000,
+                        'gp.ads.showPreloader'
+                    );
+
+                    window.__gpStartupPreloaderClosed = true;
+                } else {
+                    console.log('ℹ️ Startup preloader недоступен, пропущен');
+                    window.__gpStartupPreloaderClosed = true;
+                }
+
+                finishPreloaderFlow();
+
+                markGameReady();
+            }
+            console.log('✅ Игра готова (preloader завершён, gameReady отправлен до разблокировки UI)');
+            
+        };
+
+        window.__consumeGpInstance = (gp) => {
+            Promise.resolve(processGpInit(gp)).catch((error) => {
+                console.error('❌ processGpInit failed:', error);
+                if (typeof window.__gpResolvePlayerReady === 'function') {
+                    window.__gpResolvePlayerReady(false);
+                }
+            });
+        };
+
+        if (window.__pendingGpInstance) {
+            const pendingGp = window.__pendingGpInstance;
+            window.__pendingGpInstance = null;
+            window.__consumeGpInstance(pendingGp);
+        }
+    </script><div id="gpRuntimeLockOverlay" style="position: fixed; inset: 0px; z-index: 12050; background: rgba(0, 0, 0, 0); pointer-events: auto; cursor: wait; display: block;"></div>
+
+    
+    <script src="js/save.js"></script>
+    <script src="js/debugLogger.js"></script>
+    <script src="js/config/BalanceConfig.js"></script>
+    <script src="js/config/BalanceRuntime.js"></script>
+    <script src="js/mathUtils.js"></script>
+    <script src="js/StageThemes.js"></script>
+    <script src="js/RunModifiers.js"></script>
+    <script src="js/EliteEvents.js"></script>
+    <script src="js/SeasonSystem.js"></script>
+    <script src="js/objectPool.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/canvasCache.js"></script>
+    <script src="js/localization.js"></script>
+    <script src="js/profileCosmetics.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/purchases.js"></script>
+    <script src="js/achievements.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/CardEffects.js"></script>
+    <script src="js/projectile.js"></script>
+    <script src="js/arrow.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/trader.js"></script>
+    <script src="js/gardenSystem.js"></script>
+    <script src="js/waveManager.js"></script>
+    <script src="js/enemy.js"></script>
+    
+    <script src="js/upgrades/UpgradeDefinitions.js"></script>
+    <script src="js/upgrades/InGameUpgrades.js"></script>
+    <script src="js/upgrades/PermanentUpgradeManager.js"></script>
+    <script src="js/talents/TalentTreeManager.js"></script>
+    <script src="js/Upgrades.js"></script>
+    <script src="js/ActiveUpgradesPanel.js"></script>
+    <script src="js/UpgradeEffects.js"></script>
+    <script src="js/XPSystem.js"></script>
+    <script src="js/QuestSystem.js"></script>
+    <script src="js/QuestUI.js"></script>
+    <script src="js/leaderboard.js"></script>
+    <script src="js/BirdSystem.js"></script>
+    <script src="js/DaySystem.js"></script>
+    <script src="js/tower.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/schedulers.js"></script>
+
+
+
+
+</body></html>
