@@ -1,0 +1,11 @@
+.input-name{
+    background-color: transparent !important;
+    border: none;
+    font-size: 20px !important;
+    padding: 10px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+.input-name:focus{
+    outline: none;
+}

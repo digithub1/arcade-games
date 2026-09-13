@@ -1,0 +1,383 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Bus Escape: Traffic Jam">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/49eb32f672c0055591434da3fc95cee2/wgplayground/afe5d4e99d1f7a86fc605563ee76e650.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/49eb32f672c0055591434da3fc95cee2/wgplayground/06313757d1c53050357aef23e83b7dbc.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/49eb32f672c0055591434da3fc95cee2">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/games104/bus-escape-traffic-jam">
+            <meta property="wgp:description" content="Get Ready for Bus Color Jam - The Ultimate Parking Puzzle Challenge. If you’re a fan of bus driving games, parking game jams, and car puzzles, then this is a perfect game for mental exercise and strategic thinking">
+            <meta property="wgp:instructions" content="How to play:- Tap to move cars, each car go in only 1 direction- Plan your moves carefully as the parking slot is limited- Guide the buses out of the gridlocked bus out jam.- Each type of car can carry 4 - 6 8 stickmen, so strategize your moves to tackle challenging sort puzzles.- Ensure every passenger gets to their matching buses- Stuck in jam? Power up a booster to secure a victory with ease">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/49eb32f672c0055591434da3fc95cee2/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="1080">
+            <meta property="wgp:height" content="1920">
+            <meta property="wgp:rwidth" content="9">
+            <meta property="wgp:rheight" content="16">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0.56">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJQdXp6bGVzIn0seyJuYW1lIjoiTW90b2Jpa2UgJiBCaWtlIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="h1qu4ufgepomm24u/49eb32f672c0055591434da3fc95cee2">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+ 
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Bus Escape</title>
+<link rel="stylesheet" href="TemplateData/style.css">
+	<style>
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;500&display=swap');	
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;500&family=MuseoModerno:wght@600&display=swap');
+
+		html,
+		body {
+			background: #000;
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			padding: 0;
+			margin: 0;
+		}
+
+		div#gameContainer {
+			background: transparent !important;
+			position: absolute;
+		}
+
+		div#gameContainer canvas {
+			position: absolute;
+		}
+
+		div#gameContainer canvas[data-pixel-art="true"] {
+			position: absolute;
+			image-rendering: optimizeSpeed;
+			image-rendering: -webkit-crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -o-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: optimize-contrast;
+			image-rendering: pixelated;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
+	</style>
+<script src="gamepush.js"></script></head>
+
+<body>
+	<div id="gameContainer" style="width: 314px; height: 558px; top: 0px; left: 93px;">
+		<canvas id="unity-canvas" data-pixel-art="" style="background: linear-gradient(to right, white, white 0.362205%, transparent 0.362205%, transparent) center center / 100% 1rem no-repeat; width: 314px; height: 558px;"></canvas>
+
+<table width="100%" height="70%"> 
+    <tbody><tr>
+        <td class="height" style="text-align: center; vertical-align: middle;">
+            <img src="logo.png" width="250" height="50">
+    <br><p id="loading-txt" style="text-align: center; font-family: 'MuseoModerno', cursive;color: white;font-size: 40px;margin-top: 0px;margin-bottom: 0px;">Loading...</p>	<br>
+        </td>
+
+    </tr>
+</tbody></table>
+		<script src="Build/Bus Escap wg.loader.js"></script>
+		
+                    
+		<script>
+			var canvas = document.querySelector("#unity-canvas");
+			var config = {
+				dataUrl: "Build/Bus Escap wg.data",
+				frameworkUrl: "Build/Bus Escap wg.framework.js",
+				codeUrl: "Build/Bus Escap wg.wasm",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "puzzlejoy",
+				productName: "Bus Escape",
+				productVersion: "0.1.0",
+			};
+			var scaleToFit;
+			try {
+				scaleToFit = !!JSON.parse("");
+			} catch (e) {
+				scaleToFit = true;
+			}
+			function progressHandler(progress) {
+				var percent = progress * 100 + '%';
+				canvas.style.background = 'linear-gradient(to right, white, white ' + percent + ', transparent ' + percent + ', transparent) no-repeat center';
+				canvas.style.backgroundSize = '100% 1rem';
+			}
+			function onResize() {
+				var container = canvas.parentElement;
+				var w;
+				var h;
+
+				if (scaleToFit) {
+					w = window.innerWidth;
+					h = window.innerHeight;
+
+					var r = 1920 / 1080;
+
+					if (w * r > window.innerHeight) {
+						w = Math.min(w, Math.ceil(h / r));
+					}
+					h = Math.floor(w * r);
+				} else {
+					w = 1080;
+					h = 1920;
+				}
+
+				container.style.width = canvas.style.width = w + "px";
+				container.style.height = canvas.style.height = h + "px";
+				container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
+				container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
+			}
+			createUnityInstance(canvas, config, progressHandler).then(function (instance) {
+				canvas = instance.Module.canvas;
+				onResize();
+			});
+			window.addEventListener('resize', onResize);
+			onResize();
+		</script>
+	</div><script src="Build/Bus Escap wg.framework.js"></script>
+
+
+
+
+
+</body></html>
