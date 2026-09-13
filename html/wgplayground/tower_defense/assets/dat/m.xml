@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+    <strings>
+
+        <string id="INSTRUCTIONS" index="7">
+            <en>INSTRUCTIONS</en>
+            <es>INSTRUCCIONES</es>
+            <de>ANWEISUNGEN</de>
+            <it>ISTRUZIONI</it>
+            <fr>INSTRUCTIONS</fr>
+            <ru>ИНСТРУКЦИИ</ru>
+            <pt>INSTRUÇÕES</pt>
+            <nl>INSTRUKTIONER</nl>
+            <no>BRUKSANVISNING</no>
+        </string>
+
+        <string id="RESET">
+            <en>RESET</en>
+            <es>RESTABLECER</es>
+            <de>ZURÜCKSETZEN</de>
+            <it>AZZERA</it>
+            <fr>RÉINITIALISER</fr>
+            <ru>ПОВТОРНАЯ УСТАНОВКА</ru>
+            <pt>RETOMAR</pt>
+            <nl>ÅTERSTÄLLA</nl>
+            <no>NULLSTILLE</no>
+        </string>
+
+        <string id="CONFIRM_RESET">
+            <en>RESET?\n\nYOUR CURRENT GAME\nPROGRESS WILL BE LOST.</en>
+            <es>¿RESTABLECER?\n\nSE PERDERÁ EL'\nPROGRESO ACTUAL.</es>
+            <de>ZURÜCKSETZEN?\n\nDEIN AKTUELLER\nSPIELFORTSCHRITT\nWIRD GELÖSCHT.</de>
+            <it>AZZERA?\n\nI TUOI PROGRESSI DI\nGIOCO ATTUALI\nANDRANNO PERDUTI.</it>
+            <fr>RÉINITIALISER?\n\nVOTRE PROGRESSION ACTUELLE\nDANS LE JEU SERA PERDUE.</fr>
+            <ru>СБРОСИТЬ?\n\nВАШ ТЕКУЩИЙ ИГРОВОЙ\nПРОГРЕСС БУДЕТ ПОТЕРЯН.</ru>
+            <pt>RETOMAR?\n\nA TUA ACTUAL EVOLUÇÃO DO\nJOGO SERÁ PERDIDA!</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="CONTINUE" index="85">
+            <en>CONTINUE</en>
+            <es>CONTINUAR</es>
+            <de>WEITER</de>
+            <it>CONTINUARE</it>
+            <fr>CONTINUER</fr>
+            <ru>ПРОДОЛЖИТЬ</ru>
+            <pt>CONTINUAR</pt>
+            <nl>FORTSÄTTA</nl>
+            <no>FORTSETTE</no>
+        </string>
+
+        <string id="RESTART" index="89">
+            <en>RESTART</en>
+            <es>REINICIAR</es>
+            <de>NEUSTART</de>
+            <it>RIAVVIARE</it>
+            <fr>RECOMMENCER</fr>
+            <ru>ЗАПУСТИТЬ СНОВА</ru>
+            <pt>REINICIAR</pt>
+            <nl>OMSTART</nl>
+            <no>OMSTART</no>
+        </string>
+
+        <string id="RESTART_QUESTION" index="89">
+            <en>RESTART?</en>
+            <es>¿REINICIAR?</es>
+            <de>NEUSTART?</de>
+            <it>RIAVVIARE?</it>
+            <fr>RECOMMENCER?</fr>
+            <ru>ЗАПУСТИТЬ СНОВА?</ru>
+            <pt>REINICIAR?</pt>
+        </string>
+
+        <string id="LANGUAGES">
+            <en>LANGUAGES</en>
+            <de>SPRACHEN</de>
+            <es>IDIOMAS</es>
+            <fr>LANGUES</fr>
+            <br>IDIOMAS</br>
+            <it>LINGUE</it>
+            <pt>LÍNGUAS</pt>
+            <ru>ЯЗЫК</ru>
+            <nl>SPRÅK</nl>
+        </string>
+
+        <string id="PAUSED" index="7">
+            <en>Paused</en>
+            <es>Pausa</es>
+            <de>Angehalten</de>
+            <it>Pausa</it>
+            <fr>Pause</fr>
+            <ru>Пауза</ru>
+            <pt>Pausado</pt>
+            <nl>Pauzeren</nl>
+            <no>Pauset</no>
+        </string>
+
+        <string id="TAP_TO_PLAY">
+            <en>TAP TO PLAY</en>
+            <es>TOQUE PARA JUGAR</es>
+            <de>BERÜHRE UM ZU SPIELEN</de>
+            <it>TOCCA PER GIOCARE</it>
+            <fr>APPUYEZ POUR JOUER</fr>
+            <ru>Нажмите, чтобы играть</ru>
+            <pt>TOQUE PARA JOGAR</pt>
+            <nl>TRYCK FÖR ATT SPELA</nl>
+            <no>Tapp for å spille</no>
+        </string>
+
+        <string id="CLAIM">
+            <en>CLAIM</en>
+            <es>RECLAMACIÓN</es>
+            <de>ANSPRUCH</de>
+            <it>RICHIESTA</it>
+            <fr>PRÉTENDRE</fr>
+            <ru>ЗАПРОС</ru>
+            <pt>AFIRMAÇÃO</pt>
+            <nl>KRAV</nl>
+            <no>KRAV</no>
+        </string>
+
+        <string id="BACK">
+            <en>BACK</en>
+            <es>ATRÁS</es>
+            <de>ZURÜCK</de>
+            <it>INDIETRO</it>
+            <fr>RETOUR</fr>
+            <ru>НАЗАД</ru>
+            <pt>VOLTAR</pt>
+            <nl>TILLBAKA</nl>
+            <no>TILBAKE</no>
+        </string>
+
+        <string id="SETTINGS">
+            <en>SETTINGS</en>
+            <es>AJUSTES</es>
+            <de>EINSTELLUNGEN</de>
+            <it>IMPOSTAZIONI</it>
+            <fr>PARAMÈTRES</fr>
+            <ru>НАСТРОЙКИ</ru>
+            <pt>DEFINIÇÕES</pt>
+            <nl>INSTÄLLNINGAR</nl>
+            <no>INNSTILLINGER</no>
+        </string>
+
+        <string id="YES">
+            <en>YES</en>
+            <sk>ÁNO</sk>
+            <es>SÍ</es>
+            <de>JA</de>
+            <it>SÌ</it>
+            <fr>OUI</fr>
+            <ru>ДА</ru>
+            <pt>SIM</pt>
+            <nl>JA</nl>
+            <no>JA</no>
+        </string>
+
+        <string id="NO">
+            <en>NO</en>
+            <sk>NIE</sk>
+            <es>NO</es>
+            <de>NEIN</de>
+            <it>NO</it>
+            <fr>NON</fr>
+            <ru>НЕТ</ru>
+            <pt>NÃO</pt>
+            <nl>NEJ</nl>
+            <no>NEI</no>
+        </string>
+
+        <string id="TOWER_NAME_ARCHER">
+            <en>Arrow tower</en>
+            <es>Torre de flechas</es>
+            <de>Bogenschützenturm</de>
+            <it>Torre delle frecce</it>
+            <fr>Tour de flèche</fr>
+            <ru>Башня лучников</ru>
+            <pt>Torre de seta</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_DESC_ARCHER">
+            <en>A single target fast shooting tower</en>
+            <es>Dispara rápido a un solo objetivo</es>
+            <de>Schnell auf Einzelziele schießender Turm</de>
+            <it>Una torre che scocca frecce veloci contro un singolo bersaglio</it>
+            <fr>Tour à tir rapide sur cible unique</fr>
+            <ru>Быстрая стрельбы по одной цели</ru>
+            <pt>Torre de tiro rápido de alvo único</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_NAME_STONE">
+            <en>Cannon Tower</en>
+            <es>Torre de cañones</es>
+            <de>Kanonenturm</de>
+            <it>Torre dei cannoni</it>
+            <fr>Tour de canon</fr>
+            <ru>Пушечная башня</ru>
+            <pt>Torre de canhão</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_DESC_STONE">
+            <en>A mighty tower with area of effect damage</en>
+            <es>Torre potente que provoca daños en una zona</es>
+            <de>Mächtiger Turm mit Flächenschaden</de>
+            <it>Una potente torre che provoca danni in una determinata area</it>
+            <fr>Tour puissante avec dégâts à zone d'effet</fr>
+            <ru>Могучая башня с впечатляющей областью поражения</ru>
+            <pt>Uma torre poderosa que causa danos</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_NAME_MAGIC">
+            <en>Magic tower</en>
+            <es></es>
+            <de></de>
+            <it></it>
+            <fr></fr>
+            <ru></ru>
+            <pt></pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_DESC_MAGIC">
+            <en>Basic magic tower that can be upgraded into multiple elements</en>
+            <es></es>
+            <de></de>
+            <it></it>
+            <fr></fr>
+            <ru></ru>
+            <pt></pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_NAME_ICE">
+            <en>Ice tower</en>
+            <es>Torre de hielo</es>
+            <de>Eisturm</de>
+            <it>Torre di ghiaccio</it>
+            <fr>Tour de glace</fr>
+            <ru>Ледяная башня</ru>
+            <pt>Torre de gelo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_DESC_ICE">
+            <en>Chilling tower with a chance to slow multiple targets at once</en>
+            <es>Congela al enemigo y puede alcanzar a varios objetivos a la vez</es>
+            <de>Einfrierturm mit einer Chance, mehrere Ziele auf einmal zu verlangsamen</de>
+            <it>Una torre agghiacciante che può rallentare più bersagli contemporaneamente</it>
+            <fr>Tour glaçante avec une chance de ralentir plusieurs cibles d'un coup</fr>
+            <ru>Ледяная башня с возможностью замедлить сразу несколько целей</ru>
+            <pt>Torre de resfriamento com a chance de desacelerar vários alvos ao mesmo tempo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_NAME_FIRE">
+            <en>Fire Tower</en>
+            <es>Torre de fuego</es>
+            <de>Feuerturm</de>
+            <it>Torre di fuoco</it>
+            <fr>Tour de feu</fr>
+            <ru>Огненная башня</ru>
+            <pt>Torre de fogo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_DESC_FIRE">
+            <en>Blazing tower with a chance to burn the target</en>
+            <es>Torre en llamas con probabilidades de chamuscar al enemigo</es>
+            <de>Flammenturm mit einer Chance, das Ziel zu verbrennen</de>
+            <it>Una torre fiammeggiante che può bruciare il bersaglio</it>
+            <fr>Tour brûlante avec une chance de brûler la cible</fr>
+            <ru>Пылающая башня с шансом сжечь цель</ru>
+            <pt>Torre em chamas com a chance de queimar o alvo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_NAME_LIGHTNING">
+            <en>Lightning Tower</en>
+            <es>Torre de rayo</es>
+            <de>Blitzturm</de>
+            <it>Torre del fulmine</it>
+            <fr>Tour d'éclair</fr>
+            <ru>Молниеносная башня</ru>
+            <pt>Torre relâmpago</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TOWER_DESC_LIGHTNING">
+            <en>A very fast attacking tower with a chance to stun the target</en>
+            <es>Ataque muy rápido, con probabilidades de paralizar al enemigo</es>
+            <de>Sehr schnell angreifender Turm mit der Chance, das Ziel zu lähmen</de>
+            <it>Una torre d'attacco molto veloce che può stordire il bersaglio</it>
+            <fr>Tour à attaque très rapide avec une chance d'étourdir la cible</fr>
+            <ru>Очень быстрая атакующая башня с шансом оглушение цели</ru>
+            <pt>Torre de ataque muito rápido com a chance de atordoar o alvo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SPELL_NAME_ICE">
+            <en>Ice field</en>
+            <es>Campo de hielo</es>
+            <de>Eisfeld</de>
+            <it>Campo di ghiaccio</it>
+            <fr>Champ de glace</fr>
+            <ru>Ледяное поле</ru>
+            <pt>Campo de gelo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SPELL_DESC_ICE">
+            <en>Magic spell with low damage but a strong slowing efect in an area</en>
+            <es>Conjuro mágico que provoca poco daño pero ralentiza a los enemigos de una zona</es>
+            <de>Magischer Zauber mit niedrigem Schaden, aber einem starken Verlangsamungseffekt in einem Gebiet</de>
+            <it>Incantesimo che infligge pochi danni ma che rallenta di molto i bersagli in un'area</it>
+            <fr>Sort magique avec de faibles dégâts mais un fort effet de ralentissement dans une zone</fr>
+            <ru>Магическое заклинание с низким уроном, но сильным замедляющим эффектом в области</ru>
+            <pt>Feitiço mágico com baixo dano, mas um forte efeito de desaceleração em uma área</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SPELL_NAME_FIRE">
+            <en>Fire blast</en>
+            <es>Explosión ardiente</es>
+            <de>Feuerstrahl</de>
+            <it>Esplosione di fuoco</it>
+            <fr>Trait de feu</fr>
+            <ru>Огненный взрыв</ru>
+            <pt>Explosão de fogo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SPELL_DESC_FIRE">
+            <en>Strong magic spell that burns enemies in a small area</en>
+            <es>Potente conjuro mágico que quema a los enemigos de una zona</es>
+            <de>Starker Zauber, der Gegner in einem kleinen Gebiet verbrennt</de>
+            <it>Un potente incantesimo che brucia i nemici in una piccola area</it>
+            <fr>Sort magique puissant qui brûle les ennemis dans une petite zone</fr>
+            <ru>Сильное магическое заклинание, сжигающее врагов на небольшой площади</ru>
+            <pt>Feitiço mágico forte que queima inimigos em uma pequena área</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SPELL_NAME_POISON">
+            <en>Poison rain</en>
+            <es>Lluvia venenosa</es>
+            <de>Giftregen</de>
+            <it>Pioggia velenosa</it>
+            <fr>Pluie de poison</fr>
+            <ru>Ядовитый дождь</ru>
+            <pt>Chuva venenosa</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SPELL_DESC_POISON">
+            <en>Toxic spell that damages enemies over time</en>
+            <es>Conjuro tóxico que provoca daño a los enemigos paulatinamente</es>
+            <de>Giftzauber, der Gegnern mit der Zeit Schaden zufügt</de>
+            <it>Incantesimo tossico che infligge danni ai nemici nel corso del tempo</it>
+            <fr>Sort toxique qui endommage les ennemis au fil du temps</fr>
+            <ru>Ядовитое заклинание, которое наносит урон врагам в течение определенного времени</ru>
+            <pt>Feitiço tóxico que danifica os inimigos ao longo do tempo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="LEVEL_COMPLETED">
+            <en>LEVEL\nCOMPLETED</en>
+            <es>NIVEL\nCOMPLETADO</es>
+            <de>LEVEL\nABGESCHLOSSEN</de>
+            <it>LIVELLO\nCOMPLETATO</it>
+            <fr>NIVEAU\nNTERMINÉ</fr>
+            <ru>УРОВЕНЬ\nПРОЙДЕН</ru>
+            <pt>NÍVEL\nCOMPLETO</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="LEVEL_FAILED">
+            <en>LEVEL\nFAILED</en>
+            <es>NIVEL\nFALLIDO</es>
+            <de>LEVEL NICHT\nGESCHAFFT</de>
+            <it>LIVELLO\nFALLITO</it>
+            <fr>NIVEAU\nÉCHOUÉ</fr>
+            <ru>УРОВЕНЬ\nПРОВАЛЕН</ru>
+            <pt>NÍVEL\nFRACASSADO</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TRY_AGAIN">
+            <en>Oops!\nTry again!</en>
+            <es>¡Ups!\nInténtalo de nuevo</es>
+            <de>Oh, nein!\nVersuch es noch einmal!</de>
+            <it>Ops!\nRiprova!</it>
+            <fr>Oups!\nRéessayez!</fr>
+            <ru>Ой!\nПопробуй еще раз!</ru>
+            <pt>Opa!\nTente novamente</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="GOOD_JOB">
+            <en>Good job!\nLet's move on to the next level</en>
+            <es>¡Muy bien!\nPasemos al siguiente nivel</es>
+            <de>Sehr gut!\nAuf zum nächsten Level</de>
+            <it>Ottimo lavoro!\nAndiamo al prossimo livello!</it>
+            <fr>Beau travail!\nPassons au niveau suivant</fr>
+            <ru>Хорошая робота!\nПереходи на следующий уровень</ru>
+            <pt>Ótimo!\nVamos para o próximo nível</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TUTORIAL_INDICATOR">
+            <en>Tap here to call enemy wave early</en>
+            <es>Toca aquí para llamar a la oleada de enemigos antes</es>
+            <de>Tippe hier, um die feindliche Welle früher anzurufen</de>
+            <it>Tocca qui per chiamare in anticipo l'ondata di nemici</it>
+            <fr>Appuyez ici pour appeler la vague d'ennemis en avance</fr>
+            <ru>Нажмите здесь, чтобы вызвать волну противника раньше</ru>
+            <pt>Toque aqui para chamar a onda de inimigos mais cedo</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TUTORIAL_BUILDSPOT">
+            <en>Build towers to kill enemies!</en>
+            <es>¡Construye torres para acabar con los enemigos!</es>
+            <de>Baue Türme, um Feinde zu töten!</de>
+            <it>Costruisci torri per uccidere i nemici!</it>
+            <fr>Construisez des tours pour tuer les ennemis!</fr>
+            <ru>Стройте башни, чтобы убивать врагов!</ru>
+            <pt>Construa torres para matar inimigos!</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TUTORIAL_BUILD_SELECT">
+            <en>Choose type of tower</en>
+            <es>Elige el tipo de torre</es>
+            <de>Wähle den Turmtyp</de>
+            <it>Scegli il tipo di torre</it>
+            <fr>Choisissez le type de tour</fr>
+            <ru>Выберите тип башни</ru>
+            <pt>Escolha o tipo de torre</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="TUTORIAL_BUILD_CONFIRM">
+            <en>Tap to build</en>
+            <es>Toca para construir</es>
+            <de>Tippe, zum Erstellen auf</de>
+            <it>Tocca per costruire</it>
+            <fr>Appuyez pour bâtir</fr>
+            <ru>Нажмите, чтобы построить</ru>
+            <pt>Toque para construir</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="FAST">
+            <en>fast</en>
+            <es>rápido</es>
+            <de>schnell</de>
+            <it>veloce</it>
+            <fr>rapide</fr>
+            <ru>быстро</ru>
+            <pt>rápido</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="NORMAL">
+            <en>normal</en>
+            <es>normal</es>
+            <de>normal</de>
+            <it>normale</it>
+            <fr>normal</fr>
+            <ru>обычный</ru>
+            <pt>normal</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SLOW">
+            <en>slow</en>
+            <es>lento</es>
+            <de>langsam</de>
+            <it>lento</it>
+            <fr>lent</fr>
+            <ru>медленный</ru>
+            <pt>lento</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="INSTR_A">
+            <en>Build towers to kill enemies!</en>
+            <es>¡Construye torres para acabar con los enemigos!</es>
+            <de>Baue Türme, um Feinde zu töten!</de>
+            <it>Costruisci torri per uccidere i nemici!</it>
+            <fr>Construisez des tours pour tuer les ennemis!</fr>
+            <ru>Стройте башни, чтобы убивать врагов!</ru>
+            <pt>Construa torres para matar inimigos!</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="INSTR_B">
+            <en>Earn gold from fallen enemies</en>
+            <es>Consigue oro de los enemigos caídos</es>
+            <de>Verdiene Gold von gefallenen Feinden</de>
+            <it>Ottieni oro dai nemici caduti</it>
+            <fr>Gagnez de l'or des ennemis tombés au combat</fr>
+            <ru>Зарабатывайте золото с павших врагов</ru>
+            <pt>Obtenha ouro de inimigos caídos</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="INSTR_C">
+            <en>Build more towers and upgrade them to protect your castle!</en>
+            <es>¡Construye más torres y mejóralas para proteger el castillo!</es>
+            <de>Baue mehr Türme und verbessere sie, um dein Schloss zu schützen!</de>
+            <it>Costruisci altre torri e aggiornale per proteggere il castello!</it>
+            <fr>Construisez plus de tours et améliorez-les pour protéger votre château!</fr>
+            <ru>Стройте больше башен и улучшайте их, чтобы защитить свой замок!</ru>
+            <pt>Construa mais torres e atualize-as para proteger seu castelo!</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="SELL_TOWER">
+            <en>Sell tower</en>
+            <es>Vender torre</es>
+            <de>Turm verkaufen</de>
+            <it>Vendi torre</it>
+            <fr>Vendre la tour</fr>
+            <ru>Продам башню</ru>
+            <pt>Vender torre</pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+        <string id="VOID">
+            <en></en>
+            <es></es>
+            <de></de>
+            <it></it>
+            <fr></fr>
+            <ru></ru>
+            <pt></pt>
+            <nl></nl>
+            <no></no>
+        </string>
+
+<!--
+        stale ešte nerata score
+        viem ta poprosit do result screenu nahodit len pre potešenie hrača, kolko penazi za level zarobil a kolko mobiek zabil?
+        preklad k tomu:
+        Enemies Killed
+        Zabitý nepriatelia
+        Enemies Killed
+        Getötete Feinde
+        Enemigos muertos
+        Ennemis éliminés
+        Nemici uccisi
+        Inimigos mortos
+        Убито врагов
+        Coins Gained
+        Získané mince
+        Coins Gained
+        Erhaltene Münzen
+        Monedas obtenidas
+        Pièces amassées
+        Monete ottenute
+        Moedas obtidas
+        Получено монет
+        keby sa niekedy v buducnosti robila dorabka tak som chcel na to nadviazať achievemnty
+-->
+
+    </strings>
+</stringresources>

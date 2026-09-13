@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "bush.png",
+	"frame": {"x":1,"y":188,"w":35,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":21},
+	"sourceSize": {"w":35,"h":21}
+},
+{
+	"filename": "decor_1.png",
+	"frame": {"x":79,"y":148,"w":51,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":39},
+	"sourceSize": {"w":51,"h":39}
+},
+{
+	"filename": "decor_2.png",
+	"frame": {"x":161,"y":1,"w":90,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":87},
+	"sourceSize": {"w":90,"h":87}
+},
+{
+	"filename": "decor_3.png",
+	"frame": {"x":218,"y":90,"w":31,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":72},
+	"sourceSize": {"w":31,"h":72}
+},
+{
+	"filename": "decor_4.png",
+	"frame": {"x":218,"y":164,"w":30,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":32},
+	"sourceSize": {"w":30,"h":32}
+},
+{
+	"filename": "decor_5.png",
+	"frame": {"x":1,"y":1,"w":158,"h":145},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":158,"h":145},
+	"sourceSize": {"w":158,"h":145}
+},
+{
+	"filename": "dot.png",
+	"frame": {"x":1,"y":148,"w":76,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":38},
+	"sourceSize": {"w":76,"h":38}
+},
+{
+	"filename": "fence.png",
+	"frame": {"x":132,"y":175,"w":61,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":28},
+	"sourceSize": {"w":61,"h":28}
+},
+{
+	"filename": "stone.png",
+	"frame": {"x":38,"y":188,"w":35,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":21},
+	"sourceSize": {"w":35,"h":21}
+},
+{
+	"filename": "tree.png",
+	"frame": {"x":161,"y":90,"w":55,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":55,"h":83},
+	"sourceSize": {"w":55,"h":83}
+},
+{
+	"filename": "tree_2.png",
+	"frame": {"x":132,"y":148,"w":24,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+	"sourceSize": {"w":24,"h":16}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "landset_wood_decors.png",
+	"format": "RGBA8888",
+	"size": {"w":252,"h":210},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:67c278257cf9bd1692f9abe414250662:694907bcf81df3573ecc792a9ba1fc9a:830c78e642310e153d1f13b80b435cd2$"
+}
+}
