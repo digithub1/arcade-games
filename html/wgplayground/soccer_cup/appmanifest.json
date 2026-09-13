@@ -1,0 +1,42 @@
+{
+	"name": "Soccer Cup",
+	"short_name": "Soccer Cup",
+	"description": "Soccer Cup is an enjoyable football control game where players guide a ball by touching the screen. Jump and navigate across various tiles to score by landing the ball into a hole and collecting trophies. With 60 levels to explore, the game offers a mix of challenges and fun.  While some levels feature similar tile types, others introduce 2 or 3 tile variations at once, adding depth and variety to the gameplay. With no time limit, players can progress at their own pace, making Soccer Cup a relaxing yet engaging experience for all ages.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Snowfall",
+	"short_name": "Snowfall",
+	"description": "The Snowfall Online Jump Action game is a great choice for anyone looking for a fun and challenging way to spend their free time. With its simple controls and easy-to-learn gameplay, the game is perfect for players of all ages and skill levels.Whether you're a seasoned gamer or just starting out, the Snowfall Online Jump Action game is sure to provide you with hours of entertainment.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

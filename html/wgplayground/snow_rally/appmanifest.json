@@ -1,0 +1,10 @@
+{
+	"name": "Snow Rally",
+	"short_name": "Snow Rally",
+	"description": "Pilote por montanhas de neve nesse jogo de corrida baseado nas leis da física! Jogue de graça!\n\nEnfrente os desafios únicos de subir em locais nos locais mais perigosos, inóspitos e gélidos do mundo. Mostre que és o melhor motorista dominando as estradas de gelo!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": []
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Snowcraft - 2 Player",
+	"short_name": "Snowcraft - 2 Player",
+	"description": "Snowcraft - 2 Player",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "200x200",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

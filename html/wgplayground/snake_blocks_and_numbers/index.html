@@ -1,0 +1,544 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Snake, Blocks and Numbers">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/effd17e577c7b1b69f1cb641396be68c/wgplayground/6c5bd42ea704a7f932fb4a21ab825aa0.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/effd17e577c7b1b69f1cb641396be68c/wgplayground/45f4027e54f7ae86ed5673c8fa655e51.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/effd17e577c7b1b69f1cb641396be68c">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/bestgamesfreeplay/snake-blocks-and-numbers">
+            <meta property="wgp:description" content="Snake, Blocks and Numbers is an addictive hyper-casual game. It is easy to control but also very challenging. Crawl as far as you can and collect points to grow your length. Gather stars to unlock many cool snake skins. A global leaderboard is supported. Play now and raise your name on the leaderboard!">
+            <meta property="wgp:instructions" content="Dragging your mouse or finger to move your snake.Collect points to grow, and avoid colliding with the blocks which have big numbers.Gather stars to unlock new cool snake skins in the Shop.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/effd17e577c7b1b69f1cb641396be68c/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/effd17e577c7b1b69f1cb641396be68c/wgplayground/video6.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiRHJhZ2dpbmcgeW91ciBtb3VzZSBvciBmaW5nZXIgdG8gbW92ZSB5b3VyIHNuYWtlLiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUifSx7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOlt7Im5hbWUiOiJTbmFreSIsImltYWdlIjoiaHR0cHM6XC9cL3Njb3V0LndnaW1hZ2VyLmNvbVwvd181MFwvaHR0cHM6XC9cL3N0YXRpYy53Z3BsYXlncm91bmQuY29tXC9jaGFyYWN0ZXJzXC9hMDE5MjYxZjJjMmE2ZTBjODI3ZjZkNWVhMmY4NTU1OC5qcGcifV19">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="87/effd17e577c7b1b69f1cb641396be68c">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <title>Snake, Blocks and Numbers</title>
+    <link rel="icon" type="image/x-icon" href="media/graphics/misc/16x16.png">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <meta property="og:image" content="https://bestgamesfreeplay.com/demo/snake-bocks-and-numbers/media/graphics/misc/512x512.png">
+    <meta property="og:description" content="Snake, Blocks and Numbers is one of the most addictive games. It is easy to control but also very challenging. Global leaderboard is supported. Many cool snake skins to unlock. Play now!">
+
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="game.css?v=1693044916">
+    <script type="text/javascript" src="game.js?v=1693044916"></script><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style>
+    <link rel="manifest" href="manifest.json">
+
+<style type="text/css">@font-face {font-family: 'title';src: url('media/fonts/futura-bold.woff') format('woff'),url('media/fonts/futura-bold.ttf') format('truetype');}@font-face {font-family: 'text';src: url('media/fonts/josefinsans-bold.woff') format('woff'),url('media/fonts/josefinsans-bold.ttf') format('truetype');}</style><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202609080101/gpt" rel="compression-dictionary"><script src="gamepush.js"></script></head>
+
+<body onload="setTimeout(function(){window.scrollTo(0,1)},1);" class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/effd17e577c7b1b69f1cb641396be68c/wgplayground/45f4027e54f7ae86ed5673c8fa655e51.jpg">
+    <!--body-->
+    <div id="xloader" style="background: none; width: 897px; height: 617px;">
+        <div id="game"><canvas id="canvas" width="1570" height="1080" wg-game-orientation="wg-landscape-game" style="width: 897px; height: 617px; left: 0px; top: 0px;"></canvas></div>
+        <div id="play" class="play" onclick="" style="width: 897px; height: 617px; left: 0px; top: 0px;"></div>
+    </div>
+
+    <!-- LEADERBOARD -->
+        <div id="leaderboard" class="overlay">
+            <div class="popupBox">
+                <span class="close">×</span>
+                <div class="popupTitle text-Leaderboard" style="padding-right: 2em;">LEADERBOARD</div>
+                <div class="popupMsg lb-content">
+                    <div class="row lb-header">
+                        <div class="column lb-rank text-Rank">Rank</div>
+                        <div class="column lb-username text-Username">Username</div>
+                        <div class="column lb-score text-Score">Max Length</div>
+                    </div>
+                    <div id="lb-data">
+                        <div class="row">
+                            <div class="column lb-rank">1</div>
+                            <div class="column lb-username">User A</div>
+                            <div class="column lb-score">100,000</div>
+                        </div>
+                        <div class="row lb-currentUser">
+                            <div class="column lb-rank">2</div>
+                            <div class="column lb-username">User B</div>
+                            <div class="column lb-score">80,000</div>
+                        </div>
+                        <div class="row">
+                            <div class="column lb-rank">3</div>
+                            <div class="column lb-username">User C</div>
+                            <div class="column lb-score">1,000</div>
+                        </div>
+                    </div>
+                    <div class="lb-footer" id="lb-footer-1">
+                        <div><u class="text-YourResult" style="padding-right: 2.5em;">Your Result:</u></div>
+                        <div class="row lb-currentUser">
+                            <div class="column lb-rank">98</div>
+                            <div class="column lb-username">User B</div>
+                            <div class="column lb-score">80,000</div>
+                        </div>
+                    </div>
+                    <div class="lb-footer" id="lb-footer-2" style="padding-right: 1.5em;">
+                        <div class="text-Join">Join The Leaderboard?</div>
+                        <input type="text" id="username" placeholder="Enter a Username" maxlength="20"> <input type="button" class="button" value="Submit" id="submit">
+                    </div>
+                    <div id="adjustSpace"></div>
+                </div>
+            </div>
+        </div>
+    <!-- END LEADERBOARD -->
+
+    <!-- SNACKBAR -->
+    <div id="snackbar">Hello</div>
+
+
+
+
+</body></html>
