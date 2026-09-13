@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Roboto Chic";
+  src: url("../Assets/Fonts/Roboto-Latin-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: "Roboto Chic", Roboto, Arial, sans-serif;
+  background: #20151d;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background:
+    radial-gradient(circle at 50% 30%, #5e3652 0%, #2f202b 40%, #171116 100%);
+}
+
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+#game-shell {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+#game {
+  display: block;
+  width: min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
+  max-width: 100vw;
+  max-height: 100vh;
+  outline: none;
+  background: #241a22;
+  box-shadow: 0 0 80px rgb(0 0 0 / 55%);
+  image-rendering: auto;
+  touch-action: none;
+  cursor: default;
+}
+
+#rotate-message,
+#fatal-error {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: none;
+  place-items: center;
+  padding: 24px;
+  background: rgb(31 20 29 / 92%);
+  color: #fff8ef;
+  text-align: center;
+}
+
+.rotate-card,
+#fatal-error {
+  gap: 10px;
+  flex-direction: column;
+}
+
+.rotate-card {
+  display: flex;
+  align-items: center;
+  padding: 24px 30px;
+  border: 2px solid #deb06e;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #7e2f63, #4d2451);
+  box-shadow: 0 18px 50px rgb(0 0 0 / 35%);
+}
+
+.rotate-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+#fatal-error[hidden] {
+  display: none !important;
+}
+
+#fatal-error:not([hidden]) {
+  display: flex;
+}
+
+@media (orientation: portrait) and (max-width: 900px) {
+  #rotate-message {
+    display: grid;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #game {
+    scroll-behavior: auto;
+  }
+}

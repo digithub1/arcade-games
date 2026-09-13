@@ -1,0 +1,162 @@
+<html lang="ru"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Snake 67: Save the Apple">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/261688afed437b4f9b2be2f96f72e3eb/wgplayground/5779f3d9492dcd9c207b49c065e4bf21.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/261688afed437b4f9b2be2f96f72e3eb/wgplayground/aa5af3926943d777fcadc06a7605d710.gif" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/261688afed437b4f9b2be2f96f72e3eb">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/snake-67-save-the-apple">
+            <meta property="wgp:description" content="Control a battle snake and protect the giant apple from waves of garden pests. Move across the field, block enemies, use the snake body for defense, and choose upgrades after waves. Each run helps you survive longer, build stronger combinations, and unlock new options.">
+            <meta property="wgp:instructions" content="Control the snake with WASD or arrow keys on desktop, and use the on-screen controls on mobile. Your goal is to stop pests from reaching the apple. Move around the field, block enemies with the snake body, survive waves, and choose upgrades between attacks.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/261688afed437b4f9b2be2f96f72e3eb/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/261688afed437b4f9b2be2f96f72e3eb/wgplayground/91c4995a79ba2423349715e643d96116.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/261688afed437b4f9b2be2f96f72e3eb/wgplayground/21e966cda2ad3f69591847466700f6e7.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJXIjoiIiwiQSI6IiIsIlMiOiIiLCJEIjoiIiwiTGVmdCBNb3VzZSI6IiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/261688afed437b4f9b2be2f96f72e3eb">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Змейка 67: Спаси яблоко</title>
+  <script type="module" crossorigin="" src="./assets/index-DwKm1HWK.js"></script>
+  <link rel="modulepreload" crossorigin="" href="./assets/SnakePathHistory-DHKqARzW.js">
+  <link rel="modulepreload" crossorigin="" href="./assets/touchControls-DIqn9bUG.js">
+  <link rel="modulepreload" crossorigin="" href="./assets/RewardedAdTransactionOwner-vGUN9swe.js">
+  <link rel="stylesheet" crossorigin="" href="./assets/index-B41L732C.css">
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><link rel="stylesheet" crossorigin="" href="https://play.wgplayground.com/static/261688afed437b4f9b2be2f96f72e3eb/assets/studio-ui-BnHG3gFk.css"><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/261688afed437b4f9b2be2f96f72e3eb/wgplayground/aa5af3926943d777fcadc06a7605d710.gif">
+<main class="layout">
+    <section class="stage">
+      <canvas id="gameBackdrop" width="1120" height="700" aria-hidden="true" wg-game-orientation="wg-landscape-game"></canvas>
+      <canvas id="game" width="1120" height="700" aria-label="Игровое поле"></canvas>
+
+      <div class="upgrade-overlay" id="upgradeOverlay" data-ui-story="upgrade">
+        <div class="upgrade-modal evolution-break">
+          <div class="upgrade-fx-viewport" aria-hidden="true">
+            <canvas class="upgrade-fx-canvas" id="upgradeFxCanvas" aria-hidden="true"></canvas>
+          </div>
+          <div class="upgrade-story" aria-hidden="true">
+            <i class="is-root" data-story-tier="signature"></i>
+            <i class="is-vine" data-story-tier="support"></i>
+            <i class="is-graft-thread" data-story-tier="signature"></i>
+            <i class="is-dew" data-story-tier="support"></i>
+            <i class="is-pollen" data-story-tier="support"></i>
+          </div>
+          <div class="choice-head">
+            <div>
+              <div class="evolution-eyebrow" id="upgradeEyebrow">УСИЛЕНИЕ</div>
+              <h2 id="upgradeTitle">Выбери усиление</h2>
+              <p id="upgradeSubtitle">Выбери усиление до конца забега.</p>
+            </div>
+            <div class="choice-status" id="recapAdvice">Яблоко 100/100</div>
+          </div>
+
+          <div class="build-preview" id="buildPreview" aria-label="Змейка после выбора">
+            <div class="build-preview-title">ЗМЕЙКА-ЗАЩИТНИЦА</div>
+            <div class="build-preview-scene">
+              <canvas id="buildPreviewCanvas" width="840" height="92" aria-label="Предпросмотр змейки"></canvas>
+              <div class="upgrade-celebration" id="upgradeCelebration" aria-hidden="true">
+                <div class="upgrade-burst upgrade-burst-a"></div>
+                <div class="upgrade-burst upgrade-burst-b"></div>
+                <div class="upgrade-celebration-kicker" id="celebrationKicker">УСИЛЕНИЕ</div>
+                <div class="upgrade-celebration-title" id="celebrationTitle">Усиление получено</div>
+                <div class="upgrade-celebration-subtitle" id="celebrationSubtitle"></div>
+              </div>
+            </div>
+            <div class="preview-hint" id="previewHint"></div>
+          </div>
+
+          <div class="upgrade-list" id="upgradeList" data-ui-scroll-sound=""></div>
+        </div>
+      </div>
+
+      <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    </section>
+</main>
+
+
+
+
+
+
+</body></html>
