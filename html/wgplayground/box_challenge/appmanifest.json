@@ -1,0 +1,37 @@
+{
+	"name": "Box Challenge",
+	"short_name": "Box Challenge",
+	"description": "Solve engaging puzzles and master the Box Challenge! Train your brain with this addictive game. The ultimate puzzle game that will put your problem-solving skills to the test! Prepare to embark on a captivating journey filled with challenging puzzles and addictive gameplay. Train your brain and have a blast with this popular and SEO optimized game!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

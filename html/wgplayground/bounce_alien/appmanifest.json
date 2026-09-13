@@ -1,0 +1,36 @@
+{
+	"name": "Bounce Alien",
+	"short_name": "Bounce Alien",
+	"description": "Bounce Alien Jump is a platformer game that can be played for free online. The objective of the game is to help the alien character bounce its way to the end of each level. There are obstacles and enemies along the way, so players must use their reflexes and timing to navigate through the challenges.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

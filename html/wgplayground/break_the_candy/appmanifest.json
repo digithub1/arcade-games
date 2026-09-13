@@ -1,0 +1,36 @@
+{
+	"name": "Break The Candy",
+	"short_name": "Break The Candy",
+	"description": "Break The Candy is an online game where the objective is to, well, break the candy. You can play by yourself or with friends, and there are multiple levels to keep you challenged. The game is designed to be fun and easy to pick up, but with enough depth to keep you coming back for more.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
