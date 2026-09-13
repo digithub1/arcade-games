@@ -1,0 +1,42 @@
+{
+	"name": "Weapon Master",
+	"short_name": "Weapon Master",
+	"description": "Weapon Master is an action-packed game where players wield a variety of powerful weapons to battle waves of enemies and bosses. Master different combat styles, upgrade your arsenal, and unleash devastating attacks to conquer each challenge. With fast-paced gameplay, dynamic environments, and strategic weapon choices, only the true Weapon Master will emerge victorious!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
