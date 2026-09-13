@@ -1,0 +1,11 @@
+{
+	"name": "Arrows – Puzzle Escape",
+	"short_name": "Arrows – Puzzle Escape",
+	"description": "Arrows – Puzzle Escape",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#212236",
+	"icons": [],
+	"screenshots": []
+}
