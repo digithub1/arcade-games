@@ -1,0 +1,36 @@
+{
+	"name": "Egg Collector",
+	"short_name": "Egg Collector",
+	"description": "Get ready to run, jump, and collect eggs with Egg Collector - the online runner game that will keep you on your toes! Play now and see how many eggs you can collect in this exciting, fast-paced adventure. Are you looking for a new online game to play? Look no further than Egg Collector! This exciting runner game challenges you to collect as many eggs as possible while dodging obstacles and enemies. With its colorful graphics, fast-paced gameplay, and endless levels to explore, Egg Collector is the ultimate game for anyone who loves a good challenge. So why not give it a try today?",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

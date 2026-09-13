@@ -1,0 +1,42 @@
+{
+	"name": "Emoji Blush",
+	"short_name": "Emoji Blush",
+	"description": "Match emojis, merge and win! Enjoy endless fun with the Emoji Blush Game. Play now! Get ready for endless fun with Emoji Blush Game, the ultimate match and merge experience! Dive into a world of colorful emojis where your goal is to match, merge, and score big. With each level, the challenges get more exciting, and the fun never stops!  Explore thousands of unique emoji designs and test your puzzle-solving skills as you progress through hundreds of levels. With Emoji Blush Game, you'll enjoy daily challenges, special power-ups, and exciting rewards to help you on your journey. Perfect for all ages, this match and merge game combines fun with focus, creating a truly enjoyable and addictive gameplay experience.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Eid Dour Game",
+	"short_name": "Eid Dour Game",
+	"description": "Eid Dour Game is a fun Eid-Themed Endless Runner Game. In this hilarious chase, a man is being followed by a lively cow down a road. Your goal is to help the man keep running while dodging various obstacles. Eid Dour brings the spirit of Eid to your screen. A perfect Eid Game for everyone",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
