@@ -1,0 +1,16 @@
+{
+  "name": "Cake Link Master",
+  "short_name": "Cake Link Master",
+  "description": "Cake Link Master is a fun and relaxing puzzle game where you connect matching cakes with a line. The line can turn up to two times but cannot cross other tiles. With 60 levels that get harder as you progress, the game is sweet, simple, and perfect for quick breaks or brain training.",
+  "start_url": "index.html",
+  "background_color": "white",
+  "theme_color": "white",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "icons": [
+    {"src": "icon-256.png", "sizes": "256x256", "type": "image/png"},
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icon-128.png", "sizes": "128x128", "type": "image/png"}
+  ]
+}
