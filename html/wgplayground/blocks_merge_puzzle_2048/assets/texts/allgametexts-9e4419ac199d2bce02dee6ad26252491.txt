@@ -1,0 +1,2080 @@
+@newBlockStr
+    &0
+        Новый блок
+    &1
+        New block
+    &2
+        Nuevo bloque
+    &3
+        Neuer Block
+    &4
+        Новий блок
+    &5
+        Yeni blok
+    &6
+        Novo bloco
+@newYearStr
+    &0
+        Новый год
+    &1
+        New year
+    &2
+        Año Nuevo
+    &3
+        Neujahr
+    &4
+        Новий рік
+    &5
+        Yılbaşı
+    &6
+        Ano Novo
+@movesStr
+    &0
+        ходов
+    &1
+        moves
+    &2
+        se mueve
+    &3
+        bewegt sich
+    &4
+        ходів
+    &5
+        hareketler
+    &6
+        movimentos
+@maxMovesStr
+    &0
+        Максимум ходов
+    &1
+        Maximum moves
+    &2
+        Movimientos máximos
+    &3
+        Maximale Bewegungen
+    &4
+        Максимум ходів
+    &5
+        Maksimum hamle
+    &6
+        Movimentos máximos
+@noMovesStr
+    &0
+        Кончились ходы
+    &1
+        The movements have ended
+    &2
+        Quedarse sin movimientos
+    &3
+        Keine Bewegung mehr
+    &4
+        Закінчилися рухи
+    &5
+        Hareketlerin tükenmesi
+    &6
+        Ficando sem movimentos
+@TRAVELING
+    &0
+        ПУТЕШЕСТВИЕ
+    &1
+        TRAVELING
+    &2
+        DE VIAJE
+    &3
+        REISEN
+    &4
+        ПОДОРОЖІ
+    &5
+        SEYAHAT
+    &6
+        VIAJANDO
+@buyStr
+    &0
+        Купить
+    &1
+        Buy
+    &2
+        Comprar
+    &3
+        Kaufen
+    &4
+        Придбати
+    &5
+        Satın almak
+    &6
+        Comprar
+@shopStr
+    &0
+        Магазин
+    &1
+        Shop
+    &2
+        Comercio
+    &3
+        Geschäft
+    &4
+        Магазин
+    &5
+        Magaza
+    &6
+        Comprar
+@levelCompliteStr
+    &0
+        Уровень пройден
+    &1
+        Level complite
+    &2
+        Nivel completo
+    &3
+        Level abgeschlossen
+    &4
+        Рівень завершено
+    &5
+        Seviye tamamlandı
+    &6
+        Nível completo
+@backStr
+    &0
+        Назад
+    &1
+        Back
+    &2
+        Atrás
+    &3
+        Zurück
+    &4
+        Назад
+    &5
+        Geri
+    &6
+        Voltar
+@unlockedText
+    &0
+        Разблокирован новый
+        режим игры
+    &1
+        Unlocked new
+        game mode
+    &2
+        Nuevo desbloqueado
+        modo de juego
+    &3
+        Neu freigeschaltet
+        Spielmodus
+    &4
+        Розблоковано новий
+        режим гри
+    &5
+        Yeni kilidi açıldı
+        oyun modu
+    &6
+        Desbloqueado novo
+        modo de jogo
+@lockedStandardText
+    &0
+        Минимумальный рекорд
+        в стандартной игре
+    &1
+        Minimum record
+        in standard game
+    &2
+        Registro mínimo
+        en juego estándar
+    &3
+        Mindestrekord
+        im Standardspiel
+    &4
+        Мiнiмумальний рекорд
+        у стандартнiй грi
+    &5
+        Asgari kayıt
+        standart oyunda
+    &6
+        Registro mínimo
+        no jogo padrão
+@lockedText
+    &0
+        Минимум 10 уровней
+        в режиме ИССЛЕДОВАНИЕ
+    &1
+        Minimum 10 levels
+        in EXPLORE mode
+    &2
+        Mínimo 10 niveles
+        en modo de EXPLORAR
+    &3
+        Mindestens 10 Level
+        im ERKUNDEN
+    &4
+        Мiнiмум 10 рiвнiв
+        у режимi ДОСЛiДЖЕННЯ
+    &5
+        Minimum 10 seviye
+        KEŞFETMEK modunda
+    &6
+        Mínimo 10 níveis
+        em modo de EXPLORAR
+@helpStr
+    &0
+        Помочь
+    &1
+        Help
+    &2
+        Ayuda
+    &3
+        Helfen
+    &4
+        Довiдка
+    &5
+        Yardım
+    &6
+        Ajuda
+@RACE
+    &0
+        ГОНКА
+    &1
+        RACE
+    &2
+        CARRERA
+    &3
+        WETTRENNEN
+    &4
+        ГОНКА
+    &5
+        IRK
+    &6
+        CORRIDA
+@resultStr
+    &0
+        результат
+    &1
+        result
+    &2
+        resultado
+    &3
+        ergebnis
+    &4
+        результат
+    &5
+        sonuç
+    &6
+        resultado
+@newStr
+    &0
+        новый
+    &1
+        new
+    &2
+        nuevo
+    &3
+        neu
+    &4
+        новий
+    &5
+        yeni
+    &6
+        novo
+@RESCUE
+    &0
+        СПАСЕНИЕ
+    &1
+        RESCUE
+    &2
+        RESCATE
+    &3
+        RETTUNG
+    &4
+        РЯТУВАННЯ
+    &5
+        KURTARMAK
+    &6
+        RESGATAR
+@collectionStr
+    &0
+        Коллекция
+    &1
+        Collection
+    &2
+        Recopilación
+    &3
+        Sammlung
+    &4
+        Колекцiя
+    &5
+        Toplamak
+    &6
+        Coleção
+@collectStr
+    &0
+        Забрать
+    &1
+        Collect
+    &2
+        Recolectar
+    &3
+        Sammeln
+    &4
+        Збирати
+    &5
+        Toplamak
+    &6
+        Coletar
+@PUZZLES
+    &0
+        ПАЗЛЫ
+    &1
+        PUZZLES
+    &2
+        ROMPECABEZAS
+    &3
+        RATSEL
+    &4
+        ПАЗЛИ
+    &5
+        BULMACALAR
+    &6
+        QUEBRA-CABEÇAS
+@loginDescriptionStr
+    &0
+        Вход позволит вам
+        сохранять свой прогресс
+        и просматривать списки
+        лидеров.
+    &1
+        Login will allow you
+        save your progress
+        and view lists
+        leaders.
+    &2
+        Iniciar sesión te
+        permitirá guarda tu
+        progreso y ver listas
+        líderes.
+    &3
+        Die Anmeldung ermöglicht
+        es Ihnen Speichern Sie
+        Ihren Fortschritt und
+        Listen anzeigen Führer.
+    &4
+        Логiн дозволить вам
+        зберегти свiй прогрес
+        i переглядати списки
+        керiвники.
+    &5
+        Giriş yapmanıza izin
+        verecek ilerlemeni kaydet
+        ve listeleri görüntüleyin
+        liderler.
+    &6
+        O login permitirá que você
+        salve seu progresso
+        e ver listas
+        líderes.
+@yanStr
+    &0
+        Ян
+    &1
+        Yan
+    &2
+        Yan
+    &3
+        Yan
+    &4
+        Yan
+    &5
+        Yan
+    &6
+        Yan
+@loginStr
+    &0
+        Вход в аккаунт
+    &1
+        Login
+    &2
+        Acceso
+    &3
+        Anmeldung
+    &4
+        Логiн
+    &5
+        Giriş yapmak
+    &6
+        Conecte-se
+@boosterStr
+    &0
+        Получить бустер
+    &1
+        Get booster
+    &2
+        Obtener refuerzo
+    &3
+        Holen Booster
+    &4
+        Отримайте бустери
+    &5
+        Takviyeler alın
+    &6
+        Obtenha reforços
+@ARCADE
+    &0
+        АРКАДА
+    &1
+        ARCADE
+    &2
+        ARCADA
+    &3
+        ARKADE
+    &4
+        АРКАДНА
+    &5
+        OYUN MAKİNESİ
+    &6
+        VIDEOGAMES
+@conditionsStr
+    &0
+        Условия победы
+    &1
+        Victory conditions
+    &2
+        Condiciones de victoria
+    &3
+        Siegbedingungen
+    &4
+        Умови перемоги
+    &5
+        Zafer Koşulları
+    &6
+        Condições de Vitória
+@congratulationsStr
+    &0
+        ПОЗДРАВЛЯЕМ!
+    &1
+        CONGRATULATIONS!
+    &2
+        FELICIDADES!
+    &3
+        GLÜCKWUNSCH!
+    &4
+        ВiТАЮ!
+    &5
+        TEBRIKLER!
+    &6
+        PARABÉNS!
+@bombExplodedStr
+    &0
+        Бомба взорвалась
+    &1
+        The bomb exploded
+    &2
+        La bomba explotó
+    &3
+        Die bombe explodierte
+    &4
+        Бомба вибухнула
+    &5
+        Bomba patladı
+    &6
+        A bomba explodiu
+@timerOverStr
+    &0
+        Время истекло
+    &1
+        Time is up
+    &2
+        El tiempo ha terminado
+    &3
+        Die zeit ist um
+    &4
+        Час минув
+    &5
+        Zaman doldu
+    &6
+        O tempo acabou
+@noSpaceStr
+    &0
+        Не осталось места
+    &1
+        No space left
+    &2
+        No hay espacio
+    &3
+        Kein platz frei
+    &4
+        Не залишилося мiсця
+    &5
+        Boş yer kalmadı
+    &6
+        Não sobrou espaço
+@shadowStr
+    &0
+        тени фигур
+    &1
+        shadows
+    &2
+        oscuridad
+    &3
+        schatten
+    &4
+        тiнi фiгур
+    &5
+        gölgeler
+    &6
+        sombras
+@gameOverStr
+    &0
+        Игра Окончена
+    &1
+        Game Over
+    &2
+        Juego Terminado
+    &3
+        Spiel Vorbei
+    &4
+        Гра Завершена
+    &5
+        Oyun Bitti
+    &6
+        Fim de Jogo
+@EXPLORE
+    &0
+        ИССЛЕДОВАНИЕ
+    &1
+        EXPLORE
+    &2
+        EXPLORAR
+    &3
+        ERKUNDEN
+    &4
+        ДОСЛiДЖЕННЯ
+    &5
+        KEŞFETMEK
+    &6
+        EXPLORAR
+@STANDARD
+    &0
+        СТАНДАРТНАЯ
+    &1
+        STANDARD
+    &2
+        ESTÁNDAR
+    &3
+        STANDARD
+    &4
+        СТАНДАРТ
+    &5
+        STANDART
+    &6
+        PADRÃO
+@CLASSIC
+    &0
+        КЛАССИКА
+    &1
+        CLASSIC
+    &2
+        CLÁSICO
+    &3
+        KLASSISCH
+    &4
+        КЛАСИКА
+    &5
+        KLASİK
+    &6
+        CLÁSSICO
+@PLUS
+    &0
+        ПРОДВИНУТАЯ
+    &1
+        PLUS
+    &2
+        MÁS
+    &3
+        PLUS
+    &4
+        РОЗВИШЕНИЙ
+    &5
+        ARTI
+    &6
+        MAIS
+@BOMB
+    &0
+        БОМБА
+    &1
+        BOMB
+    &2
+        BOMBA
+    &3
+        BOMBE
+    &4
+        БОМБА
+    &5
+        BOMBA
+    &6
+        BOMBEAR
+@SURVIVAL
+    &0
+        ВЫЖИВАНИЕ
+    &1
+        SURVIVAL
+    &2
+        SUPERVIVENCIA
+    &3
+        ÜBERLEBEN
+    &4
+        ВИЖИВАННЯ
+    &5
+        HAYATTA KALMA
+    &6
+        SOBREVIVÊNCIA
+@HEXA
+    &0
+        ХЕКС ПОЛЕ
+    &1
+        HEXA
+    &2
+        HEXAGONAL
+    &3
+        HEXFELD
+    &4
+        ХЕКС ПОЛЕ
+    &5
+        ALTIGEN ALAN
+    &6
+        HEX
+@nightStr
+    &0
+        тёмная тема
+    &1
+        dark scheme
+    &2
+        esquema oscuro
+    &3
+        dunkles schema
+    &4
+        темна схема
+    &5
+        karanlık düzen
+    &6
+        esquema escuro
+@replaceStr
+    &0
+        заменить
+    &1
+        replace
+    &2
+        reemplazar
+    &3
+        ersetzen
+    &4
+        замiнити
+    &5
+        hepsini
+    &6
+        substituir
+@allStr
+    &0
+        все
+    &1
+        all
+    &2
+        todo
+    &3
+        alle
+    &4
+        все
+    &5
+        değiştir
+    &6
+        todos
+@exitStr
+    &0
+        Выход
+    &1
+        Exit
+    &2
+        Salida
+    &3
+        Ausfahrt
+    &4
+        Вихiд
+    &5
+        çıkış
+    &6
+        Saída
+@fromGameStr
+    &0
+        из игры
+    &1
+        from game
+    &2
+        del juego
+    &3
+        vom spiel
+    &4
+        з гри
+    &5
+        oyundan
+    &6
+        do jogo
+@homeStr
+    &0
+        Главная
+    &1
+        Home
+    &2
+        Hogar
+    &3
+        Heim
+    &4
+        Головна
+    &5
+        Ev
+    &6
+        Lar
+@replayStr
+    &0
+        Заново
+    &1
+        Replay
+    &2
+        Repetición
+    &3
+        Wiederholung
+    &4
+        Заново
+    &5
+        Tekrar oynat
+    &6
+        Repetir
+@freeStr
+    &0
+        беспратно
+    &1
+        free
+    &2
+        gratis
+    &3
+        frei
+    &4
+        безкоштовно
+    &5
+        özgür
+    &6
+        livre
+@openStr
+    &0
+        Открыть
+    &1
+        Open
+    &2
+        Abierto
+    &3
+        Offen
+    &4
+        Вiдкрити
+    &5
+        Açık
+    &6
+        Abrir
+@refreshStr
+    &0
+        обновить
+    &1
+        refresh
+    &2
+        actualizar
+    &3
+        aktual
+    &4
+        оновити
+    &5
+        yenile
+    &6
+        atualizar
+@continueStr
+    &0
+        продолжить
+    &1
+        continue
+    &2
+        continuar
+    &3
+        weitermachen
+    &4
+        продовжувати
+    &5
+        devam etmek
+    &6
+        continuar
+@playStr
+    &0
+        ИГРАТЬ
+    &1
+        PLAY
+    &2
+        JUGAR
+    &3
+        SPIELEN
+    &4
+        ГРАТИ
+    &5
+        OYNAMAK
+    &6
+        JOGAR
+@upgradeStr
+    &0
+        улучшение
+    &1
+        upgrade
+    &2
+        mejora
+    &3
+        aktualisierung
+    &4
+        оновлення
+    &5
+        güncelleme
+    &6
+        atualizar
+@bestStr
+    &0
+        лучший
+    &1
+        best
+    &2
+        el mejor
+    &3
+        beste
+    &4
+        найкращий
+    &5
+        en iyi
+    &6
+        melhor
+@prizeStr
+    &0
+        приз
+    &1
+        prize
+    &2
+        premio
+    &3
+        Preis-
+    &4
+        приз
+    &5
+        ödül
+    &6
+        prêmio
+@lotteryStr
+    &0
+        лотерея
+    &1
+        lottery
+    &2
+        lotería
+    &3
+        lotterie
+    &4
+        лотерея
+    &5
+        piyango
+    &6
+        loteria
+@flyStr
+    &0
+        полёт
+    &1
+        fly
+    &2
+        mosca
+    &3
+        fliegen
+    &4
+        лiтати
+    &5
+        uçuş
+    &6
+        voo
+@shootStr
+    &0
+        стрельба
+    &1
+        shoot
+    &2
+        disparo
+    &3
+        schießen
+    &4
+        стрiляти
+    &5
+        film çekmek
+    &6
+        atirar
+@recordStr
+    &0
+        рекорд
+    &1
+        record
+    &2
+        registro
+    &3
+        schallplatte
+    &4
+        запис
+    &5
+        kayıt
+    &6
+        registro
+@attackStr
+    &0
+        Атака
+    &1
+        Attack
+    &2
+        Ataque
+    &3
+        Attacke
+    &4
+        Атака
+    &5
+        Saldırı
+    &6
+        Ataque
+@lowGraphStr
+    &0
+        Упрощённая графика
+    &1
+        Low graphics
+    &2
+        Gráficos bajos
+    &3
+        Niedrige Grafik
+    &4
+        Низька графiка
+    &5
+        Düşük grafikler
+    &6
+        Gráficos baixos
+@musicStr
+    &0
+        Музыка
+    &1
+        Music
+    &2
+        Música
+    &3
+        Musik
+    &4
+        Музика
+    &5
+        Müzik
+    &6
+        Música
+@soundStr
+    &0
+        Звук
+    &1
+        Sound
+    &2
+        Sonar
+    &3
+        Klang
+    &4
+        Звук
+    &5
+        Ses
+    &6
+        Som
+@oneSkinStr
+    &0
+        скин
+    &1
+        skin
+    &2
+        piele
+    &3
+        Haut
+    &4
+        скiн
+    &5
+        deri
+    &6
+        pele
+@spinStr
+    &0
+        крутить
+    &1
+        spin
+    &2
+        girar
+    &3
+        drehen
+    &4
+        крутити
+    &5
+        büküm
+    &6
+        torção
+@styleStr
+    &0
+        стиль
+    &1
+        style
+    &2
+        estilo
+    &3
+        stil
+    &4
+        стиль
+    &5
+        stil
+    &6
+        estilo
+@livesStr
+    &0
+        Жизни
+    &1
+        Lives
+    &2
+        Vidas
+    &3
+        Leben
+    &4
+        Життя
+    &5
+        Hayatlar
+    &6
+        Vidas
+@useSkinStr
+    &0
+        Установить
+    &1
+        Set
+    &2
+        Instalar
+    &3
+        Satz
+    &4
+        Встановити
+    &5
+        Düzenlemek
+    &6
+        Instalar
+@claimStr
+    &0
+        Забрать
+    &1
+        Claim
+    &2
+        Afirmar
+    &3
+        Anspruch
+    &4
+        Забрати
+    &5
+        İddia
+    &6
+        Alegar
+@claimx2Str
+    &0
+        Забрать x2
+    &1
+        Claim x2
+    &2
+        Afirmar x2
+    &3
+        Anspruch x2
+    &4
+        Забрати x2
+    &5
+        İddia x2
+    &6
+        Alegar x2
+@claimx3Str
+    &0
+        Забрать x3
+    &1
+        Claim x3
+    &2
+        Afirmar x3
+    &3
+        Anspruch x3
+    &4
+        Забрати x3
+    &5
+        İddia x3
+    &6
+        Alegar x3
+@dailyRewardStr
+    &0
+        Ежедневная Награда
+    &1
+        Daily Reward
+    &2
+        Recompensa Diaria
+    &3
+        Tägliche Belohnung
+    &4
+        Щоденна Нагорода
+    &5
+        Günlük ödül
+    &6
+        Recompensa diária
+@allLevelsStr
+    &0
+        Уровни открыты
+    &1
+        Levels Unlocked
+    &2
+        Niveles desbloqueados
+    &3
+        Ebenen freigeschaltet
+    &4
+        Рiвнi вiдкритi
+    &5
+        Kilitsiz Düzeyler
+    &6
+        Níveis Desbloqueados
+@unlimitLivesStr
+    &0
+        Безлимитные жизни
+    &1
+        Unlimited Lives
+    &2
+        Vidas ilimitadas
+    &3
+        Unbegrenzte Leben
+    &4
+        Безлiмiтнi життя
+    &5
+        Limitsiz yaşamlar
+    &6
+        Vidas ilimitadas
+@removeAdsStr
+    &0
+        Без рекламы
+    &1
+        Remove Ads
+    &2
+        Quitar anuncios
+    &3
+        Anzeigen entfernen
+    &4
+        Без реклами
+    &5
+        Reklamsız
+    &6
+        Sem anúncios
+@randomStr
+    &0
+        случайный скин
+    &1
+        random skin
+    &2
+        piel aleatoria
+    &3
+        zufällige Haut
+    &4
+        випадковий скiн
+    &5
+        rastgele cilt
+    &6
+        pele aleatória
+@coinOneStr
+    &0
+        монет
+    &1
+        coins
+    &2
+        monedas
+    &3
+        münzen
+    &4
+        монет
+    &5
+        paralar
+    &6
+        moedas
+@coinStr
+    &0
+        монеты
+    &1
+        coins
+    &2
+        monedas
+    &3
+        münzen
+    &4
+        монети
+    &5
+        paralar
+    &6
+        moedas
+@starStr
+    &0
+        звёзды
+    &1
+        stars
+    &2
+        estrellas
+    &3
+        sterne
+    &4
+        зiрки
+    &5
+        yıldızlar
+    &6
+        estrelas
+@skinsStr
+    &0
+        скины
+    &1
+        skins
+    &2
+        pieles
+    &3
+        häute
+    &4
+        скiни
+    &5
+        deriler
+    &6
+        peles
+@packStr
+    &0
+        акция
+    &1
+        pack
+    &2
+        paquete
+    &3
+        pack
+    &4
+        акцiя
+    &5
+        ambalaj
+    &6
+        pacote
+@tryStr
+    &0
+        пробовать
+    &1
+        try
+    &2
+        tratar
+    &3
+        versuchen
+    &4
+        пробувати
+    &5
+        denemek
+    &6
+        tentar
+@moveStr
+    &0
+        движение
+    &1
+        move
+    &2
+        muevete
+    &3
+        bewegung
+    &4
+        рух
+    &5
+        taşınmak
+    &6
+        mover
+@jumpStr
+    &0
+        прыжок
+    &1
+        bounce
+    &2
+        bote
+    &3
+        prallen
+    &4
+        стрибок
+    &5
+        sıçrama
+    &6
+        quicar
+@skipWordStr
+    &0
+        пропустить
+    &1
+        skip
+    &2
+        saltar
+    &3
+        überspringen
+    &4
+        пропустити
+    &5
+        atlamak
+    &6
+        pular
+@rescueWordStr
+    &0
+        спасти
+    &1
+        rescue
+    &2
+        rescate
+    &3
+        rettung
+    &4
+        врятувати
+    &5
+        kurtarmak
+    &6
+        resgatar
+@levelStr
+    &0
+        Уровень
+    &1
+        Level
+    &2
+        Nivel
+    &3
+        Stufe
+    &4
+        Piвень
+    &5
+        Seviye
+    &6
+        Nível
+@youStr
+    &0
+        Вы
+    &1
+        You
+    &2
+        Ustedes
+    &3
+        Sie
+    &4
+        Ви
+    &5
+        Sen
+    &6
+        Você
+@lostStr
+    &0
+        проиграли
+    &1
+        lost
+    &2
+        perdido
+    &3
+        verloren
+    &4
+        програли
+    &5
+        kayıp
+    &6
+        perdido
+@winnerStr
+    &0
+        Победа!
+    &1
+        Victory!
+    &2
+        Victoria!
+    &3
+        Sieg!
+    &4
+        Перемога!
+    &5
+        Zafer!
+    &6
+        Vitória!
+@lostGameStr
+    &0
+        Поражение!
+    &1
+        Lost!
+    &2
+        Fracaso!
+    &3
+        Hat verloren!
+    &4
+        Поразка!
+    &5
+        Kayıp!
+    &6
+        Perdido!
+@rescueStr
+    &0
+        Спасти или
+    &1
+        Rescue or
+    &2
+        Rescatar o
+    &3
+        Rettung bzw
+    &4
+        Врятувати або
+    &5
+        Kurtarma veya
+    &6
+        Resgate ou
+@skipLevelStr
+    &0
+        пропустить уровень
+    &1
+        skip level
+    &2
+        saltar nivel
+    &3
+        ebene überspringen
+    &4
+        пропустити рiвень
+    &5
+        seviye atlama
+    &6
+        pular nível
+@pauseStr
+    &0
+        Пауза
+    &1
+        Pause
+    &2
+        Pausa
+    &3
+        Pause
+    &4
+        Пауза
+    &5
+        Duraklat
+    &6
+        Pausa
+@goldStr
+    &0
+        золота
+    &1
+        gold
+    &2
+        oro
+    &3
+        gold
+    &4
+        золота
+    &5
+        altın
+    &6
+        ouro
+@lockedStr
+    &0
+        заблокировано
+    &1
+        blocked
+    &2
+        obstruido
+    &3
+        verstopft
+    &4
+        заблоковано
+    &5
+        engellendi
+    &6
+        bloqueado
+@rateStr
+    &0
+        оценить
+    &1
+        rate
+    &2
+        calificar
+    &3
+        bewertung
+    &4
+        оцiнити
+    &5
+        oran
+    &6
+        avaliar
+@takeStr
+    &0
+        забрать
+    &1
+        take
+    &2
+        llevar
+    &3
+        nehmen
+    &4
+        забрать
+    &5
+        almak
+    &6
+        pegar
+@cancelStr
+    &0
+        отмена
+    &1
+        cancel
+    &2
+        cancelar
+    &3
+        abbrechen
+    &4
+        скасування
+    &5
+        iptal etmek
+    &6
+        cancelar
+@watchStr
+    &0
+        смотреть
+    &1
+        watch
+    &2
+        reloj
+    &3
+        uhr
+    &4
+        дивитися
+    &5
+        kol saati
+    &6
+        assistir
+@loadingStr
+    &0
+        загрузка...
+    &1
+        loading...
+    &2
+        sobreprima...
+    &3
+        wird geladen...
+    &4
+        завантаження...
+    &5
+        Yükleniyor...
+    &6
+        carregando...
+@settingsStr
+    &0
+        настройки
+    &1
+        settings
+    &2
+        ajustes
+    &3
+        einstellungen
+    &4
+        налаштування
+    &5
+        ayarlar
+    &6
+        configurações
+@restoreStr
+    &0
+        восстановить
+    &1
+        restore
+    &2
+        restaurar
+    &3
+        wiederherstellen
+    &4
+        вiдновити
+    &5
+        eski haline getirmek
+    &6
+        restaurar
+@purchaseStr
+    &0
+        покупки
+    &1
+        purchases
+    &2
+        compras
+    &3
+        einkäufe
+    &4
+        покупки
+    &5
+        alımlar
+    &6
+        compras
+@justStr
+    &0
+        всего
+    &1
+        just
+    &2
+        sólo
+    &3
+        gerade
+    &4
+        всього
+    &5
+        sadece
+    &6
+        apenas
+@premiumStr
+    &0
+        премиум
+    &1
+        premium
+    &2
+        premium
+    &3
+        prämie
+    &4
+        премиум
+    &5
+        ödül
+    &6
+        prêmio
+@premiumText
+    &0
+        стань премиум-игроком
+        без рекламы,
+        бесконечные жизни,
+        все уровни открыты!
+    &1
+        become a premium user
+        no ads,
+        unlimited lives,
+        all levels unlocked!
+    &2
+        convertirse en un usuario premium
+        sin anuncios,
+        vidas ilimitadas,
+        todos los niveles desbloqueados!
+    &3
+        premium-Nutzer werden
+        keine Werbung,
+        unbegrenzte Leben,
+        alle Ebenen freigeschaltet!
+    &4
+        стань премiум-гравцем
+        Без реклами,
+        нескiнченнi життя,
+        всi рiвнi вiдкритi!
+    &5
+        premium kullanıcı ol
+        reklamsız,
+        limitsiz yaşamlar,
+        tüm seviyelerin kilidi açıldı!
+    &6
+        torne-se um usuário premium
+        sem anúncios,
+        vidas ilimitadas,
+        todos os níveis desbloqueados!
+@tryMaskText
+    &0
+        вам не хватает звезд,
+        но вы можете попробовать
+        данный скин
+        посмотрев рекламу
+    &1
+        you do not have enough
+        stars, but you can
+        try this skin by
+        watch video
+    &2
+        no tienes suficiente
+        estrellas, pero puedes
+        prueba esta piel por
+        ver video
+    &3
+        sie haben nicht genug
+        sterne, aber du kannst
+        probieren sie diesen skin aus
+        schau video
+    &4
+        вам не вистачає зiрок,
+        але ви можете спробувати
+        даний скiн
+        подивившись рекламу
+    &5
+        sende yeterince yok
+        yıldızlar, ama yapabilirsin
+        bu cildi dene
+        video izle
+    &6
+        você não tem o suficiente
+        estrelas, mas você pode
+        tente esta pele por
+        Assista vídeo
+@noVideoStr
+    &0
+        видео не доступно
+    &1
+        video not available
+    &2
+        vídeo no disponible
+    &3
+        videos nicht verfügbar
+    &4
+        вiдео не доступне
+    &5
+        video kullanılamıyor
+    &6
+        vídeo não disponível
+@newSkinAvailableStr
+    &0
+        Доступен новый скин!
+    &1
+        New skin available!
+    &2
+        ¡Nueva piel disponible!
+    &3
+        Neuer Skin verfügbar!
+    &4
+        Доступний новий скiн!
+    &5
+        Yeni cilt mevcut!
+    &6
+        Nova pele disponível!
+@noLiveText
+    &0
+        со временем жизни
+        восстанавливаются.
+        посмотри рекламу и
+        пополни их сразу.
+        или стань премиум и
+        получи бесконечные жизни.
+    &1
+        lives are restoring
+        at times.
+        watch a video to refill
+        them right away.
+        or go premium for
+        unlimited lives.
+    &2
+        vidas están restaurando
+        a veces.
+        mira un video para recargar
+        ellos de inmediato.
+        o vuélvete premium por
+        vidas ilimitadas.
+    &3
+        leben stellen sich wieder
+        her manchmal.
+        Sehen Sie sich ein Video zum
+        nachfüllen an sie sofort.
+        oder gehen Sie Premium für
+        unbegrenzte Leben.
+    &4
+        з часом життя
+        вiдновлюються.
+        подивися рекламу та
+        поповни їх одразу.
+        або стань премiум i
+        отримай нескiнченнi життя.
+    &5
+        hayatlar geri geliyor
+        bazen
+        doldurmak için bir video izleyin
+        onları hemen.
+        veya premium'a geçin
+        limitsiz yaşamlar.
+    &6
+        vidas estão restaurando
+        às vezes.
+        assista a um vídeo para reabastecer
+        eles imediatamente.
+        ou vá premium para
+        vidas ilimitadas.
+@adTextOpenLevel
+    &0
+        вы можете открыть
+        уровень, за просмотр
+        короткого видео ролика,
+        или стань премиум и
+        открой все уровни.
+    &1
+        you can unlock
+        level, for watching a
+        short ad video clip,
+        or go premium for
+        unlock all levels.
+    &2
+        puedes desbloquear
+        nivel, para ver un
+        videoclip de anuncio corto,
+        o vuélvete premium por
+        desbloquear todos los niveles.
+    &3
+        kannst du entsperren
+        ebene, zum ansehen a
+        kurzer werbevideoclip,
+        oder gehen sie premium für
+        schalte alle level frei.
+    &4
+        ви можете вiдкрити
+        рiвень, за перегляд
+        короткого вiдео ролика,
+        або стань премiум i
+        вiдкрий усi рiвнi.
+    &5
+        kilidini açabilirsin
+        düzeyde, izlemek için
+        kısa reklam video klibi,
+        veya premium'a geçin
+        tüm seviyelerin kilidini aç.
+    &6
+        você pode desbloquear
+        nível, para assistir a um
+        videoclipe de anúncio curto,
+        ou vá premium para
+        desbloquear todos os níveis.
+@endGameText
+    &0
+        Спасибо за ваш интерес к игре!
+        В будущем планируется добавление
+        новых уровней.
+        Пожалуйста помогите проекту
+        и поставьте оценку в
+        магазине приложений.
+    &1
+        Thanks for your interest
+        in the game!
+        More levels are planned
+        in the future.
+        Please help the project and
+        rate it in the store.
+    &2
+        Gracias por tu interés
+        ¡en el juego!
+        Se planean más niveles.
+        en el futuro.
+        Por favor ayude al proyecto y
+        califícalo en la tienda.
+    &3
+        Danke für ihr interesse
+        im spiel!
+        Weitere level sind geplant
+        in der zukunft.
+        Bitte helfen sie dem projekt und
+        bewerten sie es im geschäft.
+    &4
+        Дякуємо за ваш iнтерес до гри!
+        У майбутньому планується додавання
+        нових рiвнiв.
+        Будь ласка, допоможiть проекту
+        i поставте оцiнку в
+        магазин додаткiв.
+    &5
+        İlginiz için teşekkürler
+        oyunda!
+        Daha fazla seviye planlanıyor
+        gelecekte.
+        Lütfen projeye yardım edin ve
+        mağazada derecelendirin.
+    &6
+        Obrigado pelo seu interesse
+        no jogo!
+        Mais níveis são planejados
+        no futuro.
+        Ajude o projeto e
+        avalie na loja.
+@premiumText
+    &0
+        стань премиум-игроком
+        бесконечные жизни,
+        без рекламы,
+        все уровни открыты!
+    &1
+        become a premium user
+        unlimited lives,
+        no ads,
+        all levels unlocked!
+    &2
+        convertirse en un usuario
+        premium vidas ilimitadas,
+        sin anuncios, todos
+        los niveles desbloqueados!
+    &3
+        Premium-nutzer werden
+        unbegrenzte leben,
+        keine werbung,
+        alle ebenen freigeschaltet!
+    &4
+        стань премiум-гравцем
+        нескiнченнi життя,
+        Без реклами,
+        всi рiвнi вiдкритi!
+    &5
+        premium kullanıcı ol
+        limitsiz yaşamlar,
+        reklamsız,
+        tüm seviyelerin kilidi açıldı!
+    &6
+        torne-se um usuário premium
+        vidas ilimitadas,
+        sem anúncios,
+        todos os níveis desbloqueados!
+@needStarsText
+    &0
+        недостаточно звезд для
+        перехода на
+        следующие уровни
+    &1
+        not enough stars
+        to progress to the
+        next levels
+    &2
+        no hay suficientes estrellas
+        para progresar a la
+        siguientes niveles
+    &3
+        nicht genug sterne
+        zum fortschritt
+        nächsten ebenen
+    &4
+        недостатньо зiрок для
+        переходу на
+        наступнi рiвнi
+    &5
+        yeterli yıldız yok
+        ilerlemek için
+        sonraki seviyeler
+    &6
+        não há estrelas suficientes
+        progredir para o
+        próximos níveis
+@adText
+    &0
+        получить жизнь
+        за просмотр
+        короткого видео ролика?
+    &1
+        get a life
+        for watching a
+        short ad video clip?
+    &2
+        consigue una vida
+        por ver un
+        videoclip de anuncio corto?
+    &3
+        hast du nichts anderes zu tun
+        zum ansehen a
+        kurzer werbevideoclip?
+    &4
+        отримати життя
+        за перегляд
+        короткого вiдео ролика?
+    &5
+        bir hayat bul
+        izlemek için
+        kısa reklam video klibi?
+    &6
+        arranjar uma vida
+        por assistir um
+        videoclipe de anúncio curto?
+@takeTwoLivesText
+    &0
+        получить ДВЕ жизни
+        за просмотр
+        короткого видео ролика?
+    &1
+        get a TWO lifes
+        for watching a
+        short ad video clip?
+    &2
+        conseguir DOS vidas
+        por ver un
+        videoclip de anuncio corto?
+    &3
+        holen sie sich ein ZWEI Leben
+        zum ansehen a
+        kurzer werbevideoclip?
+    &4
+        отримати ДВi життя
+        за перегляд
+        короткого вiдео ролика?
+    &5
+        İKİ can al
+        izlemek için
+        kısa reklam video klibi?
+    &6
+        ganhar DUAS vidas
+        por assistir um
+        videoclipe de anúncio curto?
+@rescueSkipText
+    &0
+        вы можете возродить
+        героя или пропустить
+        уровень, за просмотр
+        короткого видео ролика?
+    &1
+        you can rescue
+        ball or skip
+        level, for watching a
+        short ad video clip?
+    &2
+        puedes rescatar
+        bola o salto
+        nivel, para ver un
+        videoclip de anuncio corto?
+    &3
+        du kannst retten
+        ball oder sprung
+        ebene, zum ansehen a
+        kurzer werbevideoclip?
+    &4
+        ви можете вiдродити
+        героя або пропустити
+        рiвень, за перегляд
+        короткого вiдео ролика?
+    &5
+        kurtarabilirsin
+        top veya atlama
+        düzeyde, izlemek için
+        kısa reklam video klibi?
+    &6
+        você pode resgatar
+        bola ou pular
+        nível, para assistir a um
+        videoclipe de anúncio curto?
+@noLiveTextGold
+    &0
+         со временем жизни
+         восстанавливаются.
+         посмотри рекламу или
+         заплати золотом и
+         пополни их сразу.
+    &1
+         lives are restoring
+         at times.
+         watch a video or
+         pay gold to refill
+         them right away.
+    &2
+         vidas están restaurando
+         a veces.
+         ver un video o
+         paga oro para recargar
+         ellos de inmediato.
+    &3
+         Leben stellen sich wieder her
+         manchmal.
+         ein Video ansehen bzw
+         Gold zum Nachfüllen bezahlen
+         sie sofort.
+    &4
+         життя вiдновлюється
+         iнколи.
+         подивитися вiдео або
+         заплатити золото для поповнення
+         їх одразу.
+    &5
+         hayatlar geri geliyor
+         bazen
+         video izle ya
+         doldurmak için altın öde
+         onları hemen.
+    &6
+         vidas estão restaurando
+         às vezes.
+         assistir a um vídeo ou
+         pagar ouro para reabastecer
+         eles imediatamente.
+@

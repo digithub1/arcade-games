@@ -1,0 +1,879 @@
+<html style="overflow: hidden;"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Blocks Merge Puzzle 2048">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/9d2099edb40502ed10eced7a0011abeb/wgplayground/85a17b3dacf290609ebf902ae06f1496.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/9d2099edb40502ed10eced7a0011abeb/wgplayground/4543537fe596a2932565532cd1ccaa63.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/9d2099edb40502ed10eced7a0011abeb">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/blocks-merge-puzzle-2048">
+            <meta property="wgp:description" content="Blocks Merge Puzzle 2048: play in two modes — &quot;Hexagon&quot; and &quot;Classic&quot;. Merge numbers, compete on the leaderboard!">
+            <meta property="wgp:instructions" content="- Move and place blocks on the game board.  - Merge identical numbers to earn points.  - Plan ahead and use bonuses to handle challenging moves.  - Keep merging numbers to increase your score and avoid filling the board.  - Compete for the top spot on the leaderboard!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/9d2099edb40502ed10eced7a0011abeb/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/9d2099edb40502ed10eced7a0011abeb/wgplayground/30da6e6a53a1633becdbf709c09283cc.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXN1YWwifSx7Im5hbWUiOiJBcmNhZGUifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="3">
+            <meta property="wgp:ads" content="97/9d2099edb40502ed10eced7a0011abeb">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+              <title>Puzzle Blocks</title>
+              <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+              <meta id="gameViewport" name="viewport" content="width=device-width initial-scale=1">
+              <link href="styles.css" rel="stylesheet" type="text/css">
+
+              <script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=27309&amp;publicToken=PnhY6ucwAZ8qVKvYL1roPiVRcwTf3ifa&amp;callback=onGPInit"></script>
+
+              <script>
+                     //var player = null;
+                     var autorized = false;
+                     var leaderboards;
+                     var gamePush;
+
+                     var preloaderShowed = false;
+
+                     var ysdk = null;
+
+                     let myPurchases = [];
+
+                     console.log('gamePush init start');
+
+                     window.onGPInit = function (gp) 
+                     {
+                            gamePush = gp;
+
+                            console.log('gamePush init complete');
+
+                            // Все возможности GamePush доступны здесь
+
+                            if (gameCreated && !startGamePushInit)
+                            {
+                                   InitYandex();
+                            }
+                     }
+
+                     var gameCreated = false;
+                     //var gameLoaded = false;
+                     var startGamePushInit = false;
+
+                     function InitYandex()
+                     {
+                            gameCreated = true;
+
+                            console.log('game created');
+
+                            //if (gameLoaded && !startGamePushInit)
+                            {
+                                   //startGamePushInit = true;
+                                   
+                                   
+
+                                   //window.onGPInit = async (gp) =>
+                                   if (gamePush != null)
+                                   {
+                                          //gamePush = gp;
+
+                                          startGamePushInit = true;
+
+                                          var lang = gamePush.language;
+
+                                          console.log(lang);
+
+                                          document.SetLanguage(lang);
+
+                                          gamePush.changeLanguage(lang);
+
+                                          if (gamePush.platform.type === 'YANDEX')
+                                          {
+                                                 ysdk = gamePush.platform.getNativeSDK();
+                                                 
+                                                 document.setYandexServer();
+                                          }
+
+                                          if (gamePush.platform.isBackendAllowed) 
+                                          {
+                                                 console.log("Бэкенд разрешен");
+                                          } else {
+                                                 document.backendDisabled();
+                                          }
+
+                                          gwtDocument = document;
+
+                                          initPlayer().then(()=>
+                                          {
+                                                 initCallbacks();
+                                                 
+                                                 if (gamePush.sounds.isMuted)
+                                                        document.muteAll();
+
+                                                 if (gamePush.sounds.isSFXMuted)
+                                                        document.muteSounds();
+                                                 
+                                                 if (gamePush.sounds.isMusicMuted)
+                                                        document.muteMusic();
+                                                 
+                                                 document.setTimeToInterstitial('60');
+                                                 document.setAlternativeShowAds('no');
+                                                 document.setPauseAfterReward('no');
+                                                 document.setHomeAds('yes');
+
+                                                 console.log('type - ' + gamePush.platform.type);
+                                          });
+                                   }
+                            }
+                     }
+
+                     function sendMuteMusic()
+                     {
+                            gamePush.sounds.muteMusic();
+                     }
+
+                     function sendMuteSound()
+                     {
+                            gamePush.sounds.muteSFX();
+                     }
+
+                     function sendUnmuteMusic()
+                     {
+                            gamePush.sounds.unmuteMusic();
+                     }
+
+                     function sendUnmuteSound()
+                     {
+                            gamePush.sounds.unmuteSFX();
+                     }
+
+                     function initCallbacks()
+                     {
+                            initSoundCallbacks();
+                            initAdsCallbacks();
+                     }
+
+                     function initAdsCallbacks()
+                     {
+                            gamePush.ads.on('rewarded:start', () => 
+                            {
+                                   console.log('OnStartAd');
+                                   document.OnStartAd();
+                            });
+                            // Закончился показ
+                            gamePush.ads.on('rewarded:close', (success) => 
+                            {
+                                   console.log('onCloseAd');
+
+                                   console.log('success - ' + success);
+
+                                   if (success)
+                                          document.rewardOk();
+                                   
+                                   document.onCloseAd();
+                            });
+                            // Получена награда
+                            gamePush.ads.on('rewarded:reward', () => 
+                            {
+                                   console.log('rewardOk');
+                                   //document.rewardOk()
+                            });
+
+                            gamePush.ads.on('fullscreen:start', () => 
+                            {
+                                   console.log('OnStartAd');
+                                   document.OnStartAd();
+                            });
+                            // Закончился показ
+                            gamePush.ads.on('fullscreen:close', (success) => 
+                            {
+                                   console.log('onCloseAd');
+                                   document.onCloseAd();
+                            });
+                     }
+
+                     function initSoundCallbacks()
+                     {
+                            // Выключили звук
+                            gamePush.sounds.on('mute', () => {
+                                   document.muteAll();
+                            });
+                            // Выключили звуковые эффекты
+                            gamePush.sounds.on('mute:sfx', () => {
+                                   document.muteSounds();
+                            });
+                            // Выключили музыку
+                            gamePush.sounds.on('mute:music', () => {
+                                   document.muteMusic();
+                            });
+
+                            // Включили звук
+                            gamePush.sounds.on('unmute', () => {
+                                   document.unmuteAll();
+                            });
+                            // Включили звуковые эффекты
+                            gamePush.sounds.on('unmute:sfx', () => {
+                                   document.unmuteSounds();
+                            });
+                            // Включили музыку звуковые эффекты
+                            gamePush.sounds.on('unmute:music', () => {
+                                    document.unmuteMusic();
+                            });
+                     }
+
+
+
+                     function setLanguage(lang)
+                     {
+                            console.log('changeLanguage - ' + lang);
+
+                            gamePush.changeLanguage(lang);
+                     }
+
+                     function GameReady()
+                     {
+                            gamePush.gameStart();
+
+                            console.log('GameReady');
+                     }
+
+                     function gameplayStart()
+                     {
+                            gamePush.gameplayStart();
+
+                            console.log('gameplayStart');
+                     }
+
+                     function gameplayStop()
+                     {
+                            gamePush.gameplayStop();
+
+                            console.log('gameplayStop');
+                     }
+                         
+
+                     async function initPlayer() 
+                     {
+                            console.log('initPlayer start');
+
+                            await gamePush.player.ready;
+
+                            var loginIn = gamePush.player.isLoggedIn;
+
+                            if (!loginIn)
+                            {
+                                   console.log('not autorize');
+
+                                   document.CanLogin();
+
+                                   if (ysdk == null && gamePush.platform.isSecretCodeAuthAvailable)
+                                   {
+                                          document.setSecretCode(gamePush.player.get('secretCode'));
+                                   }
+
+                                   if (!preloaderShowed)
+                                   {
+                                          gamePush.player.on('login', (success) => 
+                                          {
+                                                 initPlayer();
+                                          });
+                                          
+                                          startAdsForPlayer();
+                                   }
+                            }
+                            else
+                            {
+                                   OnPlayerAutorized();
+                            }
+                     }
+
+                     function TryAutorize()
+                     {
+                            gamePush.player.login();
+                     }
+
+                     function OnPlayerAutorized()
+                     {
+                             autorized = true;
+
+                            if (ysdk != null)
+                            {
+                                   ysdk.getLeaderboards().then(_lb => leaderboards = _lb);
+                                   //leaderboards = ysdk.leaderboards;
+
+                                   ysdk.getPlayer({ scopes: true }).then(_player => 
+                                   {
+                                          player = _player;
+                                          ReadPayments().then(()=>
+                                          {
+                                                 document.AutorizeOk();
+
+                                                 ReadPlayerData();
+
+                                                 console.log('autorize ok');
+                                                
+                                          });
+                                   });
+                            }
+                            else
+                            {
+                                   ReadPayments().then(()=>
+                                   {
+                                          document.AutorizeOk();
+
+                                          ReadPlayerData();
+
+                                          console.log('autorize ok');
+                                   });
+                            }
+                     }
+
+                     function GetLeaderboard(name)
+                     {
+                            console.log('get leaderboard - ' + name);
+
+                            if (ysdk != null)
+                            {
+                                   leaderboards.getLeaderboardEntries(name, { quantityTop: 10, includeUser: true })
+                                   .then(res => {
+                                          console.log(res);
+
+                                          const jsonStr = JSON.stringify(res);
+
+                                          console.log(jsonStr);
+
+                                          document.SetLeaderboardData(jsonStr);
+                                   });
+                            }
+                            else
+                            {
+                                   gamePush.leaderboard.openScoped({
+                                          tag: name,
+                                          variant: name,
+                                          withMe: 'last',
+                                          // Показать N ближайших игроков сверху и снизу, максимум 10
+                                          showNearest: 5,
+                                   });
+                            }
+                     }
+
+                     function SetLeaderboardScore(name, myScore)
+                     {
+                            console.log(name + ': set score - ' + myScore);
+
+                            if (ysdk != null)
+                            {
+                                   leaderboards.setLeaderboardScore(name, myScore);
+                            }
+                            
+                            gamePush.leaderboard.publishRecord({
+                                   tag: name,
+                                   variant: name,
+                                   record: {
+                                          rating: myScore,
+                                   },
+                            });
+                     }
+
+                     function ReadPlayerData()
+                     {
+                            console.log('read data');
+
+                            const jsonStr = gamePush.player.get('json');
+
+                            console.log(jsonStr);
+                            document.ReadData(jsonStr);
+
+                            if ((jsonStr == null || jsonStr.length == 0) && ysdk != null)
+                            {
+                                   ysdk.getPlayer({ scopes: true }).then(player => 
+                                   {
+                                          player.getData().then(data => 
+                                          {
+                                                 console.log(data.json);
+                                                 document.ReadData(data.json);
+                                          
+                                          });
+                                   });
+                            }
+                     }
+
+                     async function SaveData(data)
+                     {
+                            //if (autorized)
+                            {
+                                   console.log('try save data');
+
+                                   console.log(data);
+
+                                   /*if (ysdk != null && player != null)
+                                   {
+                                          let dataForSave = 
+                                          {
+                                                 json: data
+                                          }
+
+
+                                          player.setData(dataForSave).then(() => {
+                                                 console.log('yandex save data complete');
+                                          });
+                                   }
+                                   else*/
+                                   {
+                                          gamePush.player.set('json', data);
+
+                                          await gamePush.player.sync();
+
+                                          console.log('save data complete');
+                                   }
+                            }
+                     }
+
+                            
+                     async function ReadPayments()
+                     {
+                            console.log('read payments');
+
+                            if (gamePush.payments.isAvailable) 
+                            {
+                                   const result = await gamePush.payments.fetchProducts();
+
+                                   console.log('payments active');
+
+                                   document.SetPaymentsActive();
+
+                                   // Результат ответа
+                                   const {
+                                   // Список продуктов
+                                   products,
+                                   // Список покупок игрока
+                                   playerPurchases,
+                                   } = result;
+
+                                   myPurchases = playerPurchases;
+
+                                   products.forEach(product => {
+                                          console.log(`Товар: ${product.name}, Цена: ${product.price} ${product.currency}`);
+
+                                          var price = product.price + ' ' + product.currencySymbol;
+
+                                          console.log(product.tag + " : " + price);
+
+                                          document.setProductPrice(product.tag, price);
+                                   });
+
+                                   const hasNoAds = playerPurchases.some(purchase => purchase.tag === 'disableAds');
+
+                                   if (hasNoAds) {
+                                          document.DisableAds();
+                                          console.log('disable asd');
+                                   }
+                                   else
+                                   {
+                                          startAdsForPlayer();
+                                   }
+
+                                   gamePush.payments.on('purchase', ({ product, purchase }) => 
+                                   {
+                                          console.log(product);
+                                          console.log(purchase);
+
+                                          if (product.tag === 'disableAds')
+                                          {
+                                                 document.DisableAds();    
+                                                 HideBanner(); 
+                                                 console.log('PurchaseOk'); 
+                                          }
+                                          else
+                                          {
+                                                 document.PurchaseOk(product.tag, product.id);    
+                                                 console.log('PurchaseOk');
+                                          }
+                                   });
+                            }
+                            else
+                            {
+                                   console.log('payments NOT active');
+                                   startAdsForPlayer();
+                            }
+                     }
+
+                     function startAdsForPlayer()
+                     {
+                            preloaderShowed = true;
+
+                            document.EnableAds();
+
+                            if (gamePush.ads.isFullscreenAvailable)
+                            {
+                                   gamePush.ads.showPreloader();
+                            }
+
+                            if (gamePush.ads.isStickyAvailable)
+                            {
+                                   gamePush.ads.showSticky();
+                            }
+                     }
+
+                     function ConsumePurchase(token)
+                     {
+                            gamePush.payments.consume({ id: token });
+
+                            //payments.consumePurchase(token);
+                     }
+
+                     function RestoreMoneyPurchases()
+                     {
+                            console.log('RestoreMoneyPurchases');
+
+                            myPurchases.forEach(sendMoneyPurchase);
+
+                            console.log('RestoreMoneyPurchases complete');
+
+                            //payments.getPurchases().then(purchases => purchases.forEach(sendMoneyPurchase));
+                     }
+
+
+                     function sendMoneyPurchase(purchase) 
+                     {
+                            if (purchase.tag !== 'disableAds') 
+                            {
+                                console.log(purchase.tag + " : " + purchase.payload);
+
+                                document.PurchaseOk(purchase.tag, purchase.productId);
+                            }
+                     }
+
+                     function Purchase(shopId)
+                     {
+                            gamePush.payments.purchase({ tag: shopId });
+                     }
+
+                     function CheckLang()
+                     {
+                            
+                     }
+
+                     async function ShowReviewDialog()
+                     {
+                            if (gamePush.app.canRequestReview) 
+                            {
+                                   if (gamePush.app.isAlreadyReviewed) 
+                                   {
+                                          const result = await gamePush.app.requestReview();
+
+                                          const { success, rating, error } = result;
+
+                                          if (success) 
+                                          {
+                                                 console.log(rating);
+
+                                                 // пример работы с рейтингом
+                                                 /*switch (rating) {
+                                                        case 5:
+                                                        showWindow('Мы очень рады, что вам понравилась игра!');
+                                                        break;
+                                                        case 4:
+                                                        case 3:
+                                                        // в том числе, если нельзя узнать оценку
+                                                        case 0:
+                                                        showWindow('Спасибо за отзыв!');
+                                                        break;
+                                                        case 2:
+                                                        case 1:
+                                                        showWindow('Будем стараться лучше!');
+                                                 }*/
+                                          }
+                                          
+                                   }
+                            }
+                     }
+
+                     function checkRewardLoading()
+                     {
+                            if (gamePush.ads.isRewardedAvailable)
+                                   document.rewardLoaded();
+                     }
+
+                     function checkInterstitialLoading()
+                     {
+                            if (gamePush.ads.isFullscreenAvailable)
+                                   document.interstitialLoaded();
+                     }
+                     
+                     function ShowBanner()
+                     {
+                            //window.ysdk.adv.showBannerAdv();
+
+                     }    
+
+                     function HideBanner()
+                     {
+                            gamePush.ads.closeSticky();
+                     }    
+             
+                     function ShowAd() 
+                     {
+                            gamePush.ads.showFullscreen();
+                     }
+
+                     function ShowAdReward() 
+                     {
+                            gamePush.ads.showRewardedVideo();
+
+                     }
+
+                     function toggleFullscreen() {    
+                        var canvas = document.getElementsByTagName("canvas")[0];
+                        canvas.requestFullscreen();
+                    }
+
+                </script>
+                <style>
+
+                     body {
+                         
+                       /* Убираем лонгтап на IOS */
+                       -webkit-touch-callout:none;
+                       -webkit-user-select:none;
+                       -khtml-user-select:none;
+                       -moz-user-select:none;
+                       -ms-user-select:none;
+                       user-select:none;
+                       -webkit-tap-highlight-color:rgba(0,0,0,0);
+  
+                     }
+
+                   </style>
+       <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><link rel="stylesheet" href="https://play.wgplayground.com/static/9d2099edb40502ed10eced7a0011abeb/html/gwt/chrome/chrome.css"><script src="https://play.wgplayground.com/static/9d2099edb40502ed10eced7a0011abeb/html/F5DBC5E9FBC72E599E5538D3F1C71AC8.cache.js"></script><style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><style>.gp-gamedistribution-sticky{display:flex;justify-content:center;position:fixed;left:50%;transform:translateX(-50%);z-index:100;max-height:90px;max-width:728px;overflow:hidden}.gp-gamedistribution-sticky__creative{position:relative;height:90px;width:728px;max-width:100vw}.gp-gamedistribution-sticky_top{top:0}.gp-gamedistribution-sticky_bottom{bottom:0}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202609080101/gpt" rel="compression-dictionary"><script esp-signal="true" src="https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js"></script></head>
+
+       <body class="wgNoLoader" style="margin: 0px;"><img class="splash-bg fadein" src="https://static.wgplayground.com/9d2099edb40502ed10eced7a0011abeb/wgplayground/4543537fe596a2932565532cd1ccaa63.jpg">
+              <div align="center" id="embed-html"><table cellspacing="0" cellpadding="0" style="width: 1440px; height: 699px;"><tbody><tr><td align="center" style="vertical-align: middle;"><canvas width="2880" height="1398" style="width: 1440px; height: 699px;"></canvas></td></tr></tbody></table></div>
+              <script type="text/javascript" src="html/html.nocache.js"></script>
+       
+
+
+
+       <script>
+              function handleMouseDown(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                window.focus();
+              }
+
+              function handleMouseUp(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+              }
+              document.addEventListener('contextmenu', event => event.preventDefault());
+              document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+              document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+       </script>
+
+<div id="gs-gamedistribution"></div><div class="gs-global-loader" style="display: none;"><div class="gs-loader false">
+        <div class="gs-loader__outter"></div>
+        <div class="gs-loader__inner"></div>
+    </div></div><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"></body><ins id="gpt_unit_/1002212/WGPLGRD/AP-RW_0" data-google-query-id="CNztpu-W65YDFfLvoAIdtmITRA" style="display: none !important;"><div id="google_ads_iframe_/1002212/WGPLGRD/AP-RW_0__container__" style="border: 0pt; display: inline-block; width: 1440px; height: 699px;"></div></ins></html>
