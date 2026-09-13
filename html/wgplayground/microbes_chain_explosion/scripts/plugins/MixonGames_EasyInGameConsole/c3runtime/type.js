@@ -1,0 +1,1 @@
+"use strict";{const o=globalThis.C3;o.Plugins.MixonGames_EasyInGameConsole.Type=class extends globalThis.ISDKObjectTypeBase{constructor(){super()}Release(){super.Release()}OnCreate(){}}}

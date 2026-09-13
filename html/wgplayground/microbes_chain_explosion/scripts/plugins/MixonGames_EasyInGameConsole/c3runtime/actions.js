@@ -1,0 +1,1 @@
+"use strict";globalThis.C3.Plugins.MixonGames_EasyInGameConsole.Acts={RegisterCommand(e,s,i,t){this.registerCommand(e,s,i,t)},Open(){this.open()},Close(){this.close()},Print(e){this.print(e)},Clear(){this.clear()},ChangeKey(e){this.changeKey(e)},Enable(){this.enable()},Disable(){this.disble()}};

@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'ComicSans'; /* Name to refer to the font */
+    src: url('../fonts/Comic Sans MS.ttf') format('truetype'); /* Path to the TTF file and format */
+    font-weight: normal; /* Specify weight (normal, bold, etc.) */
+    font-style: normal; /* Specify style (normal, italic, etc.) */
+}
+
+
+body{
+    background: rgb(69,29,64)!important;
+    background: url("./texture.jpg") repeat !important;
+}
+#leaderboard{
+    max-height: 65vh;
+    overflow: auto;
+    background: linear-gradient(to bottom, #e0f7fa, #b3e5fc); /* Blue gradient background */
+    border-radius: 15px; /* Round corners for the entire table */
+}
+#leaderboard .loading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0288d1;
+    font-family: 'ComicSans', Arial, sans-serif; /* Adds a fun cartoonish font */
+}
+#leaderboard table tr.your-user {
+    background-color: #4c60af8a;
+    font-weight: bolder;
+    color: white;
+}
+
+#leaderboard table {
+    width: 100%;
+    max-height: 100%;
+    border-collapse: separate; /* Allows space between borders for stylistic purposes */
+    border-spacing: 5px; /* Creates a gap between cells */
+    margin: 20px 0; /* Adds spacing around the table */
+    font-size: 16px; /* For readability */
+    font-family: 'ComicSans', Arial, sans-serif;/* Adds a fun cartoonish font */
+    padding: 10px; /* Adds padding inside the table */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cartoon-style shadow effect */
+}
+
+#leaderboard th,
+#leaderboard td {
+    border: 2px solid #0288d1; /* Adds bold borders with a bright blue color */
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 15px; /* Comfortable padding for each cell */
+    color: #1a237e; /* Dark blue text for visibility */
+    background-color: #e1f5fe; /* Light blue for cells */
+    border-radius: 10px; /* Soft rounded corners for each cell */
+}
+#leaderboard td:nth-child(odd),#leaderboard th:nth-child(odd){
+    text-align: left;
+}
+
+#leaderboard th {
+    font-weight: bold;
+    text-transform: uppercase; /* Bold capitalized headers */
+    background: linear-gradient(to right, #0288d1, #03a9f4); /* Stylish blue gradient header background */
+    color: white; /* White contrast for header text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect under header cells */
+}
+
+#leaderboard tr:nth-child(even) td {
+    background-color: #bbdefb; /* Alternating light-blue rows */
+}
+
+#leaderboard tr:hover td {
+    background-color: #81d4fa; /* Highlighted row on hover with a brighter blue */
+    color: #ffffff; /* White text for hovered rows */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+#leaderboard td.highlight {
+    background-color: #29b6f6; /* Special highlighted cell */
+    color: #ffffff; /* White text for emphasis */
+    font-weight: bold;
+}
+
+/* Customize specific rows like user-highlighted row */
+#leaderboard tr.your-user td {
+    background-color: #4fc3f7; /* Distinct highlighted user row */
+    font-weight: bold;
+    color: #ffffff;
+}

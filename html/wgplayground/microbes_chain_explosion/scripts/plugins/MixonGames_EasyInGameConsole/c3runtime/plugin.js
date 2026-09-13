@@ -1,0 +1,1 @@
+"use strict";{const o=globalThis.C3,n="MixonGames_EasyInGameConsole";o.Plugins.MixonGames_EasyInGameConsole=class extends globalThis.ISDKDOMPluginBase{constructor(){super({domComponentId:n})}Release(){super.Release()}}}

@@ -1,0 +1,1 @@
+"use strict";globalThis.C3.Plugins.MixonGames_EasyInGameConsole.Exps={GetParam(a,s){if(!this._lastCommand.hasOwnProperty("params")||!this._lastCommand.params.hasOwnProperty(a)||void 0===this._lastCommand.params[a])return"undefined";const n=this._lastCommand.params[a];return"number"===s?n.includes(".")?parseFloat(n):parseInt(n,10):n}};

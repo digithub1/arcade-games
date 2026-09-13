@@ -1,0 +1,1 @@
+"use strict";globalThis.C3.Plugins.MixonGames_EasyInGameConsole.Cnds={OnCommand(n){return n===this._lastCommand.command},OnOpen(){return!0},OnClose(){return!0},IsOpen(){return this._isOpen},OnAction(n){return n===this._lastAction}};
