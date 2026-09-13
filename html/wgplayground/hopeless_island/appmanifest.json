@@ -1,0 +1,36 @@
+{
+	"name": "Hopeless Island",
+	"short_name": "Hopeless Island",
+	"description": "Looking for an exciting action game to keep you entertained? Check out Hopeless Island: Survival Hero. In this game, you play as a brave warrior who must fight for survival on a dangerous island. Use your skills and defend against the savage attacks to escape the island and survive. The mission is not easy, but with careful planning and quick reflexes, you just might make it out alive. Hopeless Island: Survival Hero is free to play on any Devices.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
