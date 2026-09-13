@@ -1,0 +1,17 @@
+{
+	"name": "Kitty Kuro Lab Escape",
+	"short_name": "Kitty Kuro Lab Escape",
+	"description": "Kitty Kuro Lab Escape",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

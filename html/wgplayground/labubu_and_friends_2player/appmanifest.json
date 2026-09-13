@@ -1,0 +1,17 @@
+{
+	"name": "Labubu and Friends - 2Player",
+	"short_name": "Labubu and Friends - 2Player",
+	"description": "Labubu and Friends - 2Player",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

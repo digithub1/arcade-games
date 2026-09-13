@@ -1,0 +1,36 @@
+{
+	"name": "Kinja Run On the Wall",
+	"short_name": "Kinja Run On the Wall",
+	"description": "The Kinja King is a brave soul who ventured into a path full of Ghost. This world's first runner and shoot-em-up game requires you to run and dodge Stone. Ghosts are a common enemy in video games, but in this case, they pose a serious threat to our Kinja King. Our brave hero will need to use all their agility and quick reflexes to run and dodge the stones that the ghosts are throwing.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

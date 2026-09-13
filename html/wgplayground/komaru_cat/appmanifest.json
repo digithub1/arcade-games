@@ -1,0 +1,11 @@
+{
+	"name": "Komaru_pet_simulator",
+	"short_name": "Komaru_pet_simulator",
+	"description": "Komaru_best_version",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}
