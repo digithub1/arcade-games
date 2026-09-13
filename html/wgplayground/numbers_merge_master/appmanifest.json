@@ -1,0 +1,12 @@
+{
+	"name": "Numbers",
+	"short_name": "Numbers",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#005050",
+	"icons": [],
+	"screenshots": [],
+	"theme_color": "#005050"
+}

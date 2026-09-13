@@ -1,0 +1,407 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Paws Off My Clues!">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/0435d18f3e7251aacdb560fb6305ef4d/wgplayground/15afa5741d00ef562d7022d5613933e6.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/0435d18f3e7251aacdb560fb6305ef4d/wgplayground/1450c4a82d359d58779e416dbe8d2da0.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/0435d18f3e7251aacdb560fb6305ef4d">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/paws-off-my-clues">
+            <meta property="wgp:description" content="Explore unique locations filled with hidden objects and unexpected mysteries. From sunny beaches to the ancient ruins of Persia, every corner of this fluffy world comes to life as you hunt for hidden treasures.Watch as the cats go about their lives, adding charm and humor to the atmosphere, while you search through their delightful mess. Solve puzzles, progress through levels, and become the ultimate hidden object master!">
+            <meta property="wgp:instructions" content="Choose a level from the vibrant and detailed locations.Carefully scan the screen to spot hidden objects.Complete the level by finding all listed items and move on to the next exciting scene.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/0435d18f3e7251aacdb560fb6305ef4d/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJQdXp6bGVzIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/0435d18f3e7251aacdb560fb6305ef4d">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true">
+
+	<link rel="preload" href="cocos-js/cc.js" as="script">
+
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+			background-color: #000;
+			overflow: hidden;
+			touch-action: none;
+			-webkit-touch-callout: none; /* iOS Safari */
+			-webkit-user-select: none; /* Safari */
+			-khtml-user-select: none; /* Konqueror HTML */
+			-moz-user-select: none; /* Old versions of Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */	
+		}
+		#GameDiv, #Cocos3dGameContainer, #GameCanvas {
+		  width: 100%;
+		  height: 100%;
+		}
+		#GameDiv:focus, #Cocos3dGameContainer:focus, #GameCanvas:focus {
+		  outline: none;
+		}
+		
+		#GameCanvas {
+		  visibility: hidden;
+		}
+	</style>
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style><style>.gp-gamedistribution-sticky{display:flex;justify-content:center;position:fixed;left:50%;transform:translateX(-50%);z-index:100;max-height:90px;max-width:728px;overflow:hidden}.gp-gamedistribution-sticky__creative{position:relative;height:90px;width:728px;max-width:100vw}.gp-gamedistribution-sticky_top{top:0}.gp-gamedistribution-sticky_bottom{bottom:0}</style></head>
+
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/0435d18f3e7251aacdb560fb6305ef4d/wgplayground/1450c4a82d359d58779e416dbe8d2da0.jpg">
+	<div id="GameDiv">
+		<div id="Cocos3dGameContainer">
+			<canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0" width="500" height="558" wg-game-orientation="wg-portrait-game" style="aspect-ratio: 0.896057 / 1;"></canvas>
+		</div>
+	</div>
+	<script src="src/system.bundle.js"></script>
+	<script src="src/import-map.json" type="systemjs-importmap"></script>
+
+	<script>
+		let cc = null;
+		let __GameLanguage = "en";
+
+		const FIRST_SYNC_DELAY_MS = 1000;
+		const SYNC_INTERVAL_MS = 4000;
+		const FIRST_INTERSTITIAL_GAMEPLAY_MS = 60000;
+		const INTERSTITIAL_COOLDOWN_MS = 60000;
+
+		let syncReadyAt = 0;
+		let lastSyncAt = 0;
+		let syncTimer = null;
+		let syncInProgress = false;
+		let storageDirty = false;
+		let gameplayElapsedMs = 0;
+		let gameplayStartedAt = 0;
+		let lastInterstitialAt = 0;
+		let gameLoadedSent = false;
+
+		const getGameplayElapsedMs = () =>
+			gameplayElapsedMs + (gameplayStartedAt ? Date.now() - gameplayStartedAt : 0);
+
+		const cleanupStorage = (storage) => {
+			let removed = 0;
+
+			for (const key of Object.keys(storage)) {
+				if (storage[key] === "") {
+					delete storage[key];
+					removed++;
+					continue;
+				}
+
+				const match = key.match(/^zdx:gameSave_(\d+)_(\d+)$/);
+				if (!match) continue;
+
+				const chapter = Number(match[1]);
+				const level = Number(match[2]);
+				const currentLevel = Number(storage[`zdx:chapter${chapter}_curLevel`] || 0);
+
+				if (currentLevel > 0 && level < currentLevel) {
+					delete storage[key];
+					removed++;
+				}
+			}
+
+			return removed;
+		};
+
+		const writeStorageSnapshot = () => {
+			window.gp.player.set("game", JSON.stringify(window.gpStorage || {}));
+		};
+
+		const runStorageSync = async () => {
+			syncTimer = null;
+			if (!storageDirty || syncInProgress || !window.gp) return;
+
+			storageDirty = false;
+			syncInProgress = true;
+			lastSyncAt = Date.now();
+
+			try {
+				await window.gp.player.sync();
+				console.log("GamePush storage synced");
+			} catch (error) {
+				storageDirty = true;
+				console.warn("GamePush sync error:", error);
+			} finally {
+				syncInProgress = false;
+				if (storageDirty) scheduleStorageSync();
+			}
+		};
+
+		const scheduleStorageSync = () => {
+			storageDirty = true;
+			if (!window.gp || syncTimer || syncInProgress) return;
+
+			const now = Date.now();
+			const nextAllowedAt = lastSyncAt
+				? lastSyncAt + SYNC_INTERVAL_MS
+				: syncReadyAt + FIRST_SYNC_DELAY_MS;
+
+			syncTimer = setTimeout(runStorageSync, Math.max(0, nextAllowedAt - now));
+		};
+
+		const saveStorage = () => {
+			writeStorageSnapshot();
+			scheduleStorageSync();
+		};
+
+
+		const H5Manager = {
+			isOnline: () => false,
+			isStoreAvailable: false,
+			init: () => {},
+
+			gameLoaded: () => {
+				if (gameLoadedSent) return;
+				gameLoadedSent = true;
+				console.log("Игра загружена");
+				window.gp.gameStart();
+			},
+
+			gameplayStart: () => {
+				if (gameplayStartedAt) return;
+				gameplayStartedAt = Date.now();
+				console.log("Игра начата");
+				window.gp.gameplayStart();
+			},
+
+			gameplayStop: () => {
+				if (!gameplayStartedAt) return;
+				gameplayElapsedMs += Date.now() - gameplayStartedAt;
+				gameplayStartedAt = 0;
+				console.log("Игра остановлена");
+				window.gp.gameplayStop();
+			},
+
+			setItem: (key, value) => {
+				if (!window.gpStorage) window.gpStorage = {};
+				window.gpStorage[key] = String(value);
+				saveStorage();
+			},
+
+			getItem: (key) => {
+				if (!window.gpStorage || !(key in window.gpStorage)) return null;
+				return window.gpStorage[key];
+			},
+
+			removeItem: (key) => {
+				if (!window.gpStorage || !(key in window.gpStorage)) return;
+				delete window.gpStorage[key];
+				saveStorage();
+			},
+
+			clearStorage: () => {
+				window.gpStorage = {};
+				saveStorage();
+			},
+
+			showRewarded: async (callback) => {
+				console.log("Реворд реклама");
+				try {
+					const success = await window.gp.ads.showRewardedVideo();
+					if (success) callback?.suCallback?.();
+					else callback?.failCallback?.();
+				} catch (error) {
+					console.error("Ошибка rewarded рекламы:", error);
+					callback?.errCallback?.(error);
+				} finally {
+					callback?.closeCallback?.();
+				}
+			},
+
+			showInterstitial: async (onClose) => {
+				const onboardingDone =
+					window.gpStorage?.["zdx:enterGuide:1"] === "true" ||
+					window.gpStorage?.["zdx:enterGuide:1"] === true;
+
+				if (!onboardingDone) {
+					console.log("Interstitial пропущен: onboarding ещё не завершён");
+					onClose?.();
+					return false;
+				}
+
+				const gameplayMs = getGameplayElapsedMs();
+				if (gameplayMs < FIRST_INTERSTITIAL_GAMEPLAY_MS) {
+					console.log("Interstitial пропущен: игрового времени", Math.floor(gameplayMs / 1000), "сек.");
+					onClose?.();
+					return false;
+				}
+
+				const now = Date.now();
+				if (lastInterstitialAt && now - lastInterstitialAt < INTERSTITIAL_COOLDOWN_MS) {
+					console.log("Interstitial пропущен: cooldown");
+					onClose?.();
+					return false;
+				}
+
+				lastInterstitialAt = now;
+				console.log("Межстраничная реклама");
+
+				try {
+					return await window.gp.ads.showFullscreen();
+				} catch (error) {
+					console.error("Ошибка межстраничной рекламы:", error);
+					return false;
+				} finally {
+					onClose?.();
+				}
+			},
+
+			processUnconsumedPurchases: () => {}
+		};
+
+		window.H5Manager = H5Manager;
+
+		window.onGPInit = async (gpInstance) => {
+			const canvas = document.getElementById("GameCanvas");
+
+			try {
+				window.gp = gpInstance;
+
+				const supportedLanguages = ["en", "ru"];
+				const sdkLang = String(gpInstance.language || "en").split("-")[0];
+				if (supportedLanguages.includes(sdkLang)) __GameLanguage = sdkLang;
+
+				gpInstance.ads.showSticky()
+					.catch((error) => console.warn("GamePush sticky error:", error));
+
+				gpInstance.ads.showPreloader()
+					.catch((error) => console.warn("GamePush preloader error:", error))
+					.finally(() => { canvas.style.visibility = "visible"; });
+
+				await gpInstance.player.ready;
+				syncReadyAt = Date.now();
+
+				const rawData = gpInstance.player.get("game");
+				let parsed = {};
+				if (rawData) {
+					try {
+						parsed = JSON.parse(rawData);
+					} catch (error) {
+						console.error("КРИТИЧЕСКАЯ ОШИБКА: gpStorage повреждён", error);
+						throw error;
+					}
+				}
+
+				if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+					throw new Error("Некорректный формат gpStorage");
+				}
+
+				window.gpStorage = parsed;
+				const removed = cleanupStorage(window.gpStorage);
+				if (removed > 0) {
+					console.log(`GamePush cleanup: удалено ${removed} устаревших записей`);
+					saveStorage();
+				}
+				console.log("gpStorage", window.gpStorage);
+
+				cc = await System.import("./cocos-js/cc.js");
+				await cc.game.init({
+					debugMode: cc.DebugMode.NONE,
+					settingsPath: "src/settings.json",
+					effectSettingsPath: "",
+					overrideSettings: { profiling: { showFPS: false } },
+				});
+
+				cc.game.run();
+			} catch (error) {
+				console.error("GamePush init failed:", error);
+				canvas.style.visibility = "visible";
+			}
+		};
+
+		const gameCanvas = document.getElementById("GameCanvas");
+		const parentElement = gameCanvas.parentElement;
+		const { width, height } = parentElement.getBoundingClientRect();
+		gameCanvas.width = width;
+		gameCanvas.height = height;
+
+		window.Analytics = {};
+	</script>
+	<script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=23750&amp;publicToken=d3roqy0n9wQT24FL5bFsP6whVtrUOFcd&amp;callback=onGPInit"></script>
+
+
+
+
+</body></html>

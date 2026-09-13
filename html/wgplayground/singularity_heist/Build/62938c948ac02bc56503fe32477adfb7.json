@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "NinjaSword",
+"productVersion": "0.1",
+"dataUrl": "a7e86d81bbaa05f8abb938dc0068da19.unityweb",
+"wasmCodeUrl": "a97ec8413126e443a50c52464be03c15.unityweb",
+"wasmFrameworkUrl": "8aff7b87104f6b9fb27efe651c92ee79.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
