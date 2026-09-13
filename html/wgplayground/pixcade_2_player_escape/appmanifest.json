@@ -1,0 +1,17 @@
+{
+	"name": "Pixcade 2 Player Escape",
+	"short_name": "Pixcade 2 Player Escape",
+	"description": "Pixcade 2 Player Escape",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

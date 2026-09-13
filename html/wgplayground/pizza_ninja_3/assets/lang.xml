@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+<languages>
+<language>en</language>
+<language>fr</language>
+<language>de</language>
+<language>es</language>
+<language>pt</language>
+<language>it</language>
+<language>ru</language>
+</languages>
+<strings>
+<string id="1">
+<en>en</en>
+<fr>fr</fr>
+<de>de</de>
+<es>es</es>
+<pt>pt</pt>
+<it>it</it>
+<ru>ru</ru>
+</string>
+<string id="2">
+<en>LOADING...</en>
+<fr>CHARGEMENT...</fr>
+<de>LADEN...</de>
+<es>CARGANDO...</es>
+<pt>A CARREGAR...</pt>
+<it>CARICAMENTO...</it>
+    <ru></ru>
+</string>
+<string id="3">
+<en>ENABLE SOUNDS?</en>
+<fr>ALLUMER LA MUSIQUE?</fr>
+<de>MUSIK EINSCHALTEN?</de>
+<es>¿ENCENDER LA MÚSICA?</es>
+<pt>LIGAR SONS?</pt>
+<it>ATTIVARE SONORO?</it>
+    <ru></ru>
+</string>
+<string id="4">
+<en>PLAY</en>
+<fr>JOUER</fr>
+<de>SPIEL</de>
+<es>JUEGO</es>
+<pt>JOGA</pt>
+<it>GIOCA</it>
+    <ru>ИГРАТЬ</ru>
+</string>
+<string id="5">
+<en>INSTRUCTIONS</en>
+<fr>INSTRUCTIONS</fr>
+<de>ANLEITUNG</de>
+<es>INSTRUCCIONES</es>
+<pt>INSTRUÇÕES</pt>
+<it>ISTRUZIONI</it>
+    <ru>ИНСТРУКЦИИ</ru>
+</string>
+<string id="6">
+<en>Languages</en>
+<fr>Langues</fr>
+<de>Sprachen</de>
+<es>Idiomas</es>
+<pt>Línguas</pt>
+<it>LINGUE</it>
+    <ru>ЯЗЫКИ</ru>
+</string>
+<string id="7">
+<en>MENU</en>
+<fr>MENU</fr>
+<de>MENÜ</de>
+<es>MENÚ</es>
+<pt>MENU</pt>
+<it>MENU</it>
+    <ru>МЕНЮ</ru>
+</string>
+<string id="8">
+<en>ABOUT</en>
+<fr>A PROPOS</fr>
+<de>ÜBER SPIEL</de>
+<es>ACERCA DE</es>
+<pt>SOBRE</pt>
+<it>INFO</it>
+    <ru>ОБ ИГРЕ</ru>
+</string>
+<string id="9">
+<en>LEVEL</en>
+<fr>NIVEAU</fr>
+<de>LEVEL</de>
+<es>NIVEL</es>
+<pt>NÍVEL</pt>
+<it>LIVELLO</it>
+    <ru>УРОВЕНЬ</ru>
+</string>
+<string id="10">
+<en>GAME OVER!</en>
+<fr>FIN DU JEU!</fr>
+<de>SPIELENDE!</de>
+<es>¡FIN DEL JUEGO!</es>
+<pt>FIM DE JOGO!</pt>
+<it>GAME OVER!</it>
+    <ru>ИГРА ОКОНЧЕНА!</ru>
+</string>
+<string id="11">
+<en>CONGRATULATIONS!</en>
+<fr>FÉLICITATIONS!</fr>
+<de>GRATULATION!</de>
+<es>¡ENHORABUENA!</es>
+<pt>PARABÉNS!</pt>
+<it>CONGRATULAZIONI!</it>
+    <ru>ПОЗДРАВЛЯЕМ!</ru>
+</string>
+<string id="12">
+<en>MAIN MENU?</en>
+<fr>MENU PRINCIPAL?</fr>
+<de>HAUPTMENÜ?</de>
+<es>¿MENÚ PRINCIPAL?</es>
+<pt>MENU PRINCIPAL?</pt>
+<it>MENU PRINCIPALE?</it>
+    <ru>ГЛАВНОЕ МЕНЮ?</ru>
+</string>
+<string id="13">
+<en>RESTART</en>
+<fr>RECOMMENCER</fr>
+<de>NEUSTART</de>
+<es>REINICIAR</es>
+<pt>REINICIE</pt>
+<it>RIAVVIA</it>
+    <ru>ЗАПУСТИТЬ СНОВА</ru>
+</string>
+<string id="14">
+<en>Rotate your device please</en>
+<fr>Tournez votre appareil s'il vous plaît</fr>
+<de>Drehe dein Gerät um</de>
+<es>Por favor, gira tu móvil</es>
+<pt>Rodar o seu aparelho, por favor</pt>
+<it>Ruota il dispositivo</it>
+    <ru>ПОЖАЛУЙСТА, ПОВЕРНИТЕ СВОЁ УСТРОЙСТВО</ru>
+</string>
+<string id="19">
+<en>ROUND</en>
+<fr>ÉTAPE</fr>
+<de>RUNDE</de>
+<es>RONDA</es>
+<pt>RODADA</pt>
+<it>ROUND</it>
+    <ru>РАУНД</ru>
+</string>
+<string id="20">
+<en>SCORE:</en>
+<fr>SCORE:</fr>
+<de>SCORE:</de>
+<es>PUNTOS:</es>
+<pt>ESCORE:</pt>
+<it>PUNTEGGIO:</it>
+    <ru>КОЛИЧЕСТВО\nОЧКОВ:</ru>
+</string>
+<string id="21">
+<en>TIME:</en>
+<fr>TEMPS:</fr>
+<de>ZEIT:</de>
+<es>TIEMPO:</es>
+<pt>TEMPO:</pt>
+<it>TEMPO:</it>
+    <ru>ВРЕМЯ:</ru>
+</string>
+<string id="22">
+<en>RESTART?</en>
+<fr>RECOMMENCER?</fr>
+<de>NEUSTART?</de>
+<es>¿REINICIAR?</es>
+<pt>REINICIE?</pt>
+<it>RIAVVIARE?</it>
+    <ru>ЗАПУСТИТЬ СНОВА?</ru>
+</string>
+<string id="23">
+<en>MORE GAMES</en>
+<fr>PLUS DE JEUX</fr>
+<de>MEHR SPIELE</de>
+<es>MÁS JUEGOS</es>
+<pt>MAIS JOGOS</pt>
+<it>ALTRI GIOCHI</it>
+    <ru>БОЛЬШЕ ИГР</ru>
+</string>
+<string id="29">
+<en>SOUND </en>
+<fr>SON </fr>
+<de>TON </de>
+<es>SONIDO </es>
+<pt>SOM </pt>
+<it>SONORO </it>
+    <ru>ЗВУК </ru>
+</string>
+<string id="30">
+<en>OFF</en>
+<fr>NON</fr>
+<de>AUS</de>
+<es>NO</es>
+<pt>DESLIGAR</pt>
+<it>OFF</it>
+    <ru>ВЫКЛЮЧЕН</ru>
+</string>
+<string id="31">
+<en>ON</en>
+<fr>OUI</fr>
+<de>AN</de>
+<es>SI</es>
+<pt>LIGAR</pt>
+<it>ON</it>
+    <ru>ВКЛЮЧЕН</ru>
+</string>
+<string id="32">
+<en>ARCADE</en>
+<fr>ARCADE</fr>
+<de>ARKADE</de>
+<es>ARCADE</es>
+<pt>ARCADE</pt>
+<it>ARCADE</it>
+    <ru>АРКАДА</ru>
+</string>
+<string id="33">
+<en>CHALLENGE</en>
+<fr>DÉFI</fr>
+<de>AUFGABE</de>
+<es>DESAFÍO</es>
+<pt>DESAFIO</pt>
+<it>SFIDA</it>
+    <ru>ВЫЗОВ</ru>
+</string>
+<string id="34">
+<en>MEMORY</en>
+<fr>MÉMOIRE</fr>
+<de>GEDÄCHTNIS</de>
+<es>MEMORIA</es>
+<pt>MEMÓRIA</pt>
+<it>MEMORIA</it>
+    <ru>ПАМЯТЬ</ru>
+</string>
+<string id="35">
+<en>LIFE LOST!</en>
+<fr>VIE PERDUE!</fr>
+<de>LEBEN VERLOREN!</de>
+<es>¡HAS PERDIDO LA VIDA!</es>
+<pt>VOCÊ PERDEU A VIDA!</pt>
+<it>VITA PERSA!</it>
+    <ru>ПОТЕРЯЛИ ЖИЗНЬ!</ru>
+</string>
+<string id="36">
+<en>LIVES</en>
+<fr>VIES</fr>
+<de>LEBEN</de>
+<es>VIDAS</es>
+<pt>VIDAS</pt>
+<it>VITE</it>
+    <ru>ЖИЗНИ</ru>
+</string>
+<string id="37">
+<en>FINAL CHALLENGE</en>
+<fr>LE DERNIER DÉFI</fr>
+<de>LETZTE AUFGABE</de>
+<es>DESAFÍO FINAL</es>
+<pt>DESAFIO FINAL</pt>
+<it>SFIDA FINALE</it>
+    <ru>ЗАКЛЮЧИТЕЛЬНЫЙ ВЫЗОВ</ru>
+</string>
+<string id="38">
+<en>BEST:</en>
+<fr>RECORD:</fr>
+<de>REKORD:</de>
+<es>RECORD:</es>
+<pt>MELHOR:</pt>
+<it>MIGLIOR:</it>
+    <ru>ЛУЧШИЙ:</ru>
+</string>
+<string id="39">
+<en>BONUS:</en>
+<fr>BONUS:</fr>
+<de>BONUS:</de>
+<es>BONIFICACIÓN:</es>
+<pt>BÔNUS:</pt>
+<it>BONUS:</it>
+    <ru>БОНУС:</ru>
+</string>
+<string id="40">
+<en>BETTER LUCK NEXT TIME!</en>
+<fr>BONNE CHANCE LA PROCHAIN FOIS!</fr>
+<de>VIEL GLÜCK BEIM NÄCHSTEN MAL!</de>
+<es>¡MÁS SUERTE LA PRÓXIMA VEZ!</es>
+<pt>MELHOR SORTE NA PRÓXIMA VEZ!</pt>
+<it>AVRAI PIŮ FORTUNA LA PROSSIMA VOLTA!</it>
+    <ru>ПОВЕЗЕТ В СЛЕДУЮЩИЙ РАЗ!</ru>
+</string>
+<string id="41">
+<en>FIASCO!</en>
+<fr>PERDU!</fr>
+<de>FIASKO!</de>
+<es>¡FIASCO!</es>
+<pt>FIASCO!</pt>
+<it>FIASCO!</it>
+    <ru>НЕУДАЧА!</ru>
+</string>
+<string id="42">
+<en>TRY AGAIN!</en>
+<fr>ESSAYEZ DE NOUVEAU!</fr>
+<de>VERSUCHE ES NOCH MAL!</de>
+<es>¡INTÉNTALO DE NUEVO!</es>
+<pt>TENTE OUTRA VEZ!</pt>
+<it>RIPROVA!</it>
+    <ru>ПОПРОБУЙТЕ СНОВА!</ru>
+</string>
+<string id="44">
+<en>CHOP </en>
+<fr>TRANCHEZ </fr>
+<de>SCHNEIDE </de>
+<es>¡CORTA </es>
+<pt>PIQUE </pt>
+<it>TAGLIA </it>
+    <ru>НАРЕЗАЙТЕ</ru>
+</string>
+<string id="45">
+<en>IN </en>
+<fr>EN </fr>
+<de>IN </de>
+<es>POR </es>
+<pt>DENTRO DE </pt>
+<it>TRA </it>
+    <ru>ЗА </ru>
+</string>
+<string id="46">
+<en> SECONDS!</en>
+<fr> SECONDS!</fr>
+<de> SEKUNDEN!</de>
+<es> SEGUNDOS!</es>
+<pt> SEGUNDOS!</pt>
+<it> SECONDI!</it>
+    <ru> СЕКУНД!</ru>
+</string>
+<string id="48">
+<en>CHOP NINJA HARD PIZZA!</en>
+<fr>DONNEZ TOUT CE QUE VOUS AVEZ!</fr>
+<de>SCHNEIDE NINJA HARTE PIZZA!</de>
+<es>¡CORTA DURA NINJA PIZZA!</es>
+<pt>PIQUE UMA NINJA PIZZA DURA!</pt>
+<it>GRANDE NINJA AFFETTA-PIZZA!</it>
+    <ru>НИНДЗЯ НАРЕЗАЕТ ТЯЖЕЛУЮ ПИЦУ!</ru>
+</string>
+<string id="49">
+<en>NEW BEST SCORE!</en>
+<fr>NOUVEAU MEILLEUR SCORE!</fr>
+<de>NEUE HÖCHSTLEISTUNG!</de>
+<es>¡LA MEJOR PUNTUACIÓN NUEVA!</es>
+<pt>NOVA MELHOR PONTUAÇÃO!</pt>
+<it>NUOVO RECORD!</it>
+    <ru>НОВЫЙ ЛУЧШИЙ СЧЕТ!</ru>
+</string>
+<string id="50">
+<en>CONTINUE?</en>
+<fr>CONTINUER?</fr>
+<de>WEITER?</de>
+<es>¿CONTINUAR?</es>
+<pt>CONTINUAR?</pt>
+<it>CONTINUARE?</it>
+    <ru>ПРОДОЛЖИТЬ?</ru>
+</string>
+<string id="51">
+<en>WELL DONE!</en>
+<fr>BON TRAVAIL!</fr>
+<de>WUNDERBAR!</de>
+<es>¡EXCELENTE!</es>
+<pt>ÓTIMO!</pt>
+<it>BEN FATTO!</it>
+    <ru>ОТЛИЧНО СРАБОТАНО!</ru>
+</string>
+<string id="52">
+<en>NOW GO FOR THE SILVER CUP!</en>
+<fr>LA COUPE D`ARGENT VOUS ATTEND!</fr>
+<de>HOL DIR JETZT DEN SILBERPOKAL!</de>
+<es>¡AHORA CONSIGUE EL TROFEO DE PLATA!</es>
+<pt>AGORA GANHE O COPO DE PRATA!</pt>
+<it>ORA PUNTA ALLA COPPA D'ARGENTO!</it>
+    <ru>ИДЕТЕ НА СЕРЕБРЯНЫЙ КУБОК!</ru>
+</string>
+<string id="54">
+<en>NOW GO FOR THE GOLDEN CUP!</en>
+<fr>LA COUPE D`OR VOUS ATTEND!</fr>
+<de>HOL DIR JETZT DEN GOLDPOKAL!</de>
+<es>¡AHORA CONSIGUE EL TROFEO DE ORO!</es>
+<pt>AGORA GANHE O COPO DE OURO!</pt>
+<it>ORA PUNTA ALLA COPPA D'ORO!</it>
+    <ru>ИДЕТЕ НА ЗОЛОТОЙ КУБОК!</ru>
+</string>
+<string id="55">
+<en>GREAT JOB!</en>
+<fr>BIEN JOUÉ!</fr>
+<de>GUTE ARBEIT!</de>
+<es>¡BUEN TRABAJO!</es>
+<pt>BOM TRABALHO!</pt>
+<it>OTTIMO LAVORO!</it>
+    <ru>ХОРОШАЯ РАБОТА!</ru>
+</string>
+<string id="56">
+<en>THE GOLDEN TROPHY IS YOURS!</en>
+<fr>VOUS OBTENEZ LE TROPHÉE D`OR!</fr>
+<de>DER GOLDPOKAL GEHÖRT DIR!</de>
+<es>¡EL TROFEO DE ORO ES TUYO!</es>
+<pt>O TROFÉU DE OURO É SEU!</pt>
+<it>IL TROFEO D'ORO Č TUO!</it>
+    <ru>ЗОЛОТОЙ ТРОФЕЙ - ВАШ!</ru>
+</string>
+<string id="58">
+<en>GET 2 STARS IN EACH LEVEL!</en>
+<fr>GAGNEZ 2 ÉTOILES DANS CHAQUE ÉTAPE!</fr>
+<de>SAMMLE 2 STERNE IN JEDER STUFE!</de>
+<es>¡CONSIGUE 2 ESTRELLAS EN CADA RONDA!</es>
+<pt>GANHE 2 ESTRELAS EM CADA RODADA!</pt>
+<it>OTTIENI 2 STELLE IN OGNI LIVELLO!</it>
+    <ru>ПОЛУЧИТЕ ПО 2 ЗВЕЗДЫ НА КАЖДОМ УРОВНЕ!</ru>
+</string>
+<string id="60">
+<en>GET 3 STARS IN EACH LEVEL!</en>
+<fr>GAGNEZ 3 ÉTOILES DANS CHAQUE ÉTAPE!</fr>
+<de>SAMMLE 3 STERNE IN JEDER STUFE!</de>
+<es>¡CONSIGUE 3 ESTRELLAS EN CADA RONDA!</es>
+<pt>GANHE 3 ESTRELAS EM CADA RODADA!</pt>
+<it>OTTIENI 3 STELLE IN OGNI LIVELLO!</it>
+    <ru>ПОЛУЧИТЕ ПО 3 ЗВЕЗДЫ НА КАЖДОМ УРОВНЕ!</ru>
+</string>
+<string id="62">
+<en>ALL STARS! NINJA MEMORY!</en>
+<fr>TOUTES LES ÉTOILES! MÉMOIRE D`UN NINJA!</fr>
+<de>ALLE STERNE! NINJA-GEDÄCHTNIS!</de>
+<es>¡TODAS ESTRELLAS! ¡MEMORIA DEL NINJA!</es>
+<pt>TODAS AS ESTRELAS! MEMÓRIA DE NINJA!</pt>
+<it>TUTTE LE STELLE! MEMORIA NINJA!</it>
+    <ru>ВСЕ ЗВЁЗДЫ! НИНДЗЯ ПАМЯТЬ!</ru>
+</string>
+<string id="63">
+<en>AIM:\n\nORDERS WHIZZ IN AND INGREDIENTS NEED CHOPPING! HELP CHEF MARO TO CHOP ALL HE NEEDS FOR THE BEST PIZZAS!\n\nIN INFINITE ARCADE MODE TRY TO SURVIVE AS LONG AS YOU CAN. DON`T MISS GLOWING BONUS INGREDIENTS TO HELP YOU.\n\nIN CHALLENGE MODE YOU MUST CHOP YOUR WAY AND BEAT THE MANY MINIGAMES. CAN YOU GET THE GOLDEN CUP?\n\nIN MEMORY MODE YOU MUST CHOP ONLY INGREDIENTS NEEDED FOR THE GIVEN RECIPE.\n\nBUT WHATEVER YOU DO, DON`T CHOP THE RANDOM BOMBS!\n\nIT`S CHOPTIME!</en>
+<fr>BUT:\n\nLES COMMANDES AFFLUENT ET IL FAUT COUPER LES INGRÉDIENTS! AIDE CHEF MARIO Á TRANCHER LES INGRÉDIENTS LES MEILLEURES PIZZAS!\n\nEN MODE ARCADE INFINI, ESSAYEZ DE SURVIVRE AUSSI LONGTEMPS QUE POSSIBLE. N`OUBLIEZ PAS LES BONS INGRÉDIENTS BONUS QUI VOUS AIDERONS À AVANCER.\n\nEN MODE DÉFI, AFFRONTEZ LES NOMBREUX MINI JEUX AFIN D`OBTENIR LA COUPE D`OR.\n\nEN MODE MÉMOIRE, VOUS DEVEZ SUIVRE UNE RECETTE EN NE DÉCOUPANT QUE CERTAINS INGRÉDIENTS.\n\nQUEL QUE SOIT LE MODE, NE JAMAIS TRANCHER LES BOMBES!</fr>
+<de>ZIEL:\n\nBESTELLUNGEN SAMMELN SICH UND ZUTATEN MÜSSEN GESCHNITTEN WERDEN! HILF MARO DABEI, ALLES, WAS ER FÜR EINE PIZZA BRAUCHT, ZU SCHNEIDEN!\n\nIM UNENDLICHEN ARKADENMODUS MUSST DU VERSUCHEN, SO LANGE WIE MÖGLICH ZU ÜBERLEBEN. VERPASSE DIE LEUCHTENDEN BONUSZUTATEN NICHT, DIE SEHR HILFSREICH SIND.\n\nIM AUFGABENMODUS MUSST DU MEHRERE ZUFÄLLIGE MINISPIELE SCHAFFEN. KANNST DU DEN GOLDPOKAL GEWINNEN?\n\nIM GEDÄCHTNISMODUS MUSST DU NUR DIE ZUTATEN SCHNEIDEN, DIE IM REZEPT SIND.\n\nWAS AUCH IMMER DU MACHST, SCHNEIDE NICHT IN DIE BOMBEN, DIE ZUFÄLLIG AUFTAUCHEN!\n\nRAN AN DIE ZUTATEN!</de>
+<es>OBJETIVO DE JUEGO:\n\n¡LOS PEDIDOS VUELAN Y HAY QUE CORTAR LOS INGREDIENTES! ¡AYUDA AL CHEF MARO CORTAR TODO LO NECESARIO PARA LAS MEJORES PIZZAS!\n\nEN EL MODO INFINITO DE ARCADE INTENTAS AGUANTAR EL MAYOR TIEMPO POSIBLE. NO DEJES ESCAPAR LOS INGREDIENTES BRILLANTES DE BONIFICACIÓN QUE TE AYUDARÁN.\n\nEN EL MODO DE DESAFÍO DEBES PASAR CORTANDO POR VARIOS NIVELES DE MINIJUEGOS AL AZAR. ¿ERES CAPAZ CONSEGUIR LA COPA DE ORO?\n\nEN MODO DE MEMORIA DEBES CORTAR SÓLO LOS INGREDIENTES NECESARIOS PARA LA RECETA DADA.\n\n¡HAGAS LO QUE HAGAS, NO CORTES NINGÚNA BOMBA!\n\n¡ES HORA DE CORTAR!</es>
+<pt>OBJETIVO DO JOGO:\n\nAS ORDENS ESTÃO VOANDO NO AR E OS INGREDIENTES DEVEM SER PICADOS! AJUDA O COZINHEIRO CHEFE MARO A CORTAR TUDO O QUE PRECISA PARA AS MELHORES PIZZAS!\n\nTENTE RESISTIR O MAIOR TEMPO POSSÍVEL NO MODO ARCADE INFINITO. NÃO PERCA OS BRILHANTES INGREDIENTES DE BÔNUS, QUE VÃO AJUDÁ-LO.\n\nNO MODO DE DESAFIOS VOCĘ DEVE CORTAR O SEU CAMINHO ATRAVÉS DE VÁRIOS NÍVEIS DE MINIJOGOS ALEATÓRIOS. CONSEGUE GANHAR O COPO DE OURO?\n\nNO MODO DE MEMÓRIA VOCĘ TEM QUE CORTAR SOMENTE OS INGREDIENTES NECESSÁRIOS PARA A RECEITA DETERMINADA.\n\nFAÇA O QUE FIZER, NÃO CORTE A BOMBA!\n\nÉ HORA DE CORTAR!</pt>
+<it>OBIETTIVO:\n\nGLI ORDINI ARRIVANO UNO DOPO L'ALTRO E BISOGNA TAGLIARE GLI INGREDIENTI! AIUTA LO CHEF MARIO A TAGLIARE TUTTO CIŇ DI CUI HA BISOGNO PER REALIZZARE LE PIZZE PIŮ BUONE DI TUTTE!\n\nNELLA MODALITŔ ARCADE INFINITA, PROVA A SOPRAVVIVERE FINCHÉ PUOI. NON FARTI SFUGGIRE GLI INGREDIENTI BONUS LUCCICANTI, TI SARANNO UTILI.\n\nNELLA MODALITŔ SFIDA DOVRAI FARTI STRADA AFFETTANDO A DESTRA E A MANCA E SUPERARE I TANTI MINIGIOCHI. RIUSCIRAI A CONQUISTARE LA COPPA D'ORO?\n\nNELLA MODALITŔ MEMORIA DOVRAI TAGLIARE SOLO GLI INGREDIENTI NECESSARI PER LA RICETTA.\n\nMA QUALSIASI COSA FAI, NON TAGLIARE LE BOMBE CHE SPUNTANO A CASACCIO!\n\nČ IL MOMENTO DI TAGLIARE!</it>
+    <ru>ЦЕЛЬ:\n\nНАРЕЗАЙТЕ НУЖНЫЕ ИГРЕДИЕНТЫ ДЛЯ ЗАКАЗА. ПОМОГИТЕ ШЕФ-ПОВАРУ МАРУ, ВЫБРАТЬ ВСЁ ЧТО ЕМУ НУЖНО ДЛЯ ЛУЧШИХ ПИЦЦ!\n\nВ БЕСКОНЕЧНОМ АРКАДНОМ РЕЖИМЕ ПЫТАЙТЕСЬ ВЫЖИТЬ КАК МОЖНО ДОЛЬШЕ. НЕ ПРОПУСКАЙТЕ СВЕТЯЩИЕСЯ БОНУСНЫЕ ИНГРЕДИЕНТЫ, ОНИ ВАМ МОГУТ ПОМОЧЬ. \n\n В РЕЖИМЕ ВЫЗОВ ВЫ МОЖЕТЕ ВЫБРАТЬ СВОЙ ПУТЬ И ПОБЕДИТЬ В МИНИ-ИГРАХ. ВЫ ХОТИТЕ ПОЛУЧИТЬ ЗОЛОТОЙ КУБОК? \n\n В РЕЖИМЕ ПАМЯТЬ ВЫ ДОЛЖНЫ НАРЕЗАТЬ ИНГРЕДИЕНТЫ КОТОРЫЕ НЕОБХОДИМЫ ДЛЯ ДАННОГО РЕЦЕПТА. \n\n В ЛЮБОМ РЕЖИМЕ НЕЛЬЗЯ ВЗРЫВАТЬ СЛУЧАЙНЫЕ БОМБЫ! \n\n А ТЕПЕРЬ ВРЕМЯ РЕЗАТЬ! </ru>
+</string>
+<string id="64">
+<en>CONTROLS:\n\nSLICE YOUR FINGER THROUGH EACH INGREDIENT TO CHOP IT! NAVIGATE THROUGH MENU BY TAPPING MENU ITEMS.</en>
+<fr>COMMANDES:\n\nGLISSEZ VOTRE DOIGT SUR CHAQUE INGRÉDIENT POUR LE COUPER! NAVIGUEZ DANS LE MENU EN APPUYANT SUR LES ÉLÉMENTS.</fr>
+<de>STEUERUNG:\n\nGLEITE MIT DEM FINGER ÜBER DAS DISPLAY, UM ZU SCHNEIDEN! NAVIGIERE DURCH DRÜCKEN DER MENÜ-ELEMENTE DURCH DAS MENÜ.</de>
+<es>CONTROL:\n\n¡CORTA CON DEDO LOS INGREDIENTES! NAVEGA A TRAVÉS DE LOS ÍTEMS DEL MENÚ.</es>
+<pt>CONTROLES:\n\nCORTE COM O DEDO ATRAVÉS DOS INGREDIENTES! NAVEGUE ATRAVÉS DO MENU TOCANDO NOS ITENS DO MENU.</pt>
+<it>COMANDI:\n\nFAI SCORRERE IL DITO SUGLI INGREDIENTI PER TAGLIARLI! NAVIGA NEL MENU TOCCANDO LE VOCI DEL MENU.</it>
+    <ru>КАК УПРАВЛЯТЬ:\n\nНАРЕЗАЙТЕ ИНГРЕДИЕНТЫ С ПОМОЩЬЮ СВОИХ ПАЛЬЦЕВ! ДЛЯ НАВИГАЦИИ ПО МЕНЮ, ВЫБИРАЙТЕ ПУНКТЫ МЕНЮ.</ru>
+</string>
+<string id="65">
+<en>SWIPE WITH FINGER TO CHOP!\nDON`T LET THE GOOD STUFF FALL!\nDON`T HIT ANY BOMB!</en>
+<fr>GLISSEZ VOTRE DOIGT SUR CHAQUE INGRÉDIENT POUR LE COUPER!\nNE LAISSEZ PAS TOMBER LES BONS INGRÉDIENTS!\nNE COUPEZ PAS LES BOMBES!</fr>
+<de>GLEITE MIT DEM FINGER ÜBER DAS DISPLAY, UM ZU SCHNEIDEN!\nLASS DIE GUTEN SACHEN NICHT RUNTERFALLEN!\nTRIFF DIE BOMBEN NICHT!</de>
+<es>¡RESBALA CON EL DEDO PARA CORTAR!\n¡NO PERMITAS QUE SE CAIGAN LAS ESPECIAS!\n¡NO DES CON NINGÚNA BOMBA!</es>
+<pt>DESLIZE O DEDO PARA CORTAR!\nNÃO DEIXE OS INGREDIENTES CAIR!\nNÃO BATA A BOMBA!</pt>
+<it>FAI SCORRERE IL DITO PER TAGLIARE!\nNON FAR CADERE GLI INGREDIENTI!\nNON COLPIRE LE BOMBE!</it>
+    <ru>ВОДИТЕ ПАЛЬЦЕМ ПО ЭКРАНУ, ЧТОБЫ НАРЕЗАТЬ! ПРОДУКТЫ НЕ ДОЛЖНЫ УПАСТЬ ВНИЗ! НЕ ВЗРЫВАЙТЕ БОМБЫ!</ru>
+</string>
+<string id="66">
+<en>ACHIEVE THE GOAL OF EACH STAGE.\n\nDON`T HIT ANY BOMB!</en>
+<fr>RÉALISEZ L`OBJECTIF DE CHAQUE ÉTAPE.\n\nNE TOUCHEZ PAS LES BOMBES!</fr>
+<de>ERREICHE DAS ZIEL IN JEDER STUFE!\n\nTRIFF KEINE BOMBE!</de>
+<es>CUMPLE CON LOS OBJETIVOS EN DIFERENTES NIVELES.\n\n¡NO DES CON NINGÚNA BOMBA!</es>
+<pt>CUMPRA OS OBJETIVOS EM CADA NÍVEL.\n\nNÃO BATA A BOMBA!</pt>
+<it>RAGGIUNGI L'OBIETTIVO DI OGNI LIVELLO.\n\nNON COLPIRE LE BOMBE!</it>
+    <ru>ВЫПОЛНИТЕ ЦЕЛЬ КАЖДОГО ЭТАПА. \n\n НЕ ВЗРЫВАЙТЕ БОМБЫ!</ru>
+</string>
+<string id="67">
+<en>CHOP ONLY INGREDIENTS NEEDED FOR THE RECIPE!</en>
+<fr>TRANCHEZ UNIQUEMENT LES INGRÉDIENTS DE LA RECETTE!</fr>
+<de>SCHNEIDE NUR ZUTATEN AUS DEM REZEPT!</de>
+<es>¡CORTA SÓLO LOS INGREDIENTES NECESARIOS PARA LA RECETA!</es>
+<pt>CORTE APENAS INGREDIENTES NECESSÁRIOS PARA A RECEITA!</pt>
+<it>TAGLIA SOLO GLI INGREDIENTI NECESSARI PER LA RICETTA!</it>
+    <ru>НАРЕЗАЙТЕ ТОЛЬКО ИНГРЕДИЕНТЫ, КОТОРЫЕ НЕОБХОДИМЫ ДЛЯ РЕЦЕПТА!</ru>
+</string>
+<string id="68">
+<en>Tap to continue</en>
+<fr>Touchez pour continuer</fr>
+<de>Zum Fortfahren berühren</de>
+<es>Toca para continuar</es>
+<pt>Toca para continuar</pt>
+<it>Tocca per continuare</it>
+    <ru>НАЖМИТЕ, ЧТОБЫ ПРОДОЛЖИТЬ</ru>
+</string>
+<string id="69">
+<en>Great score!\nBut you can do better!</en>
+<fr>Joli score !\nPouvez-vous faire encore mieux ?</fr>
+<de>Gutes Ergebnis,\ndu kannst es aber sicher besser!</de>
+<es>¡Excelente puntuación!\n¡Pero lo puedes hacer mejor!</es>
+<pt>Grande pontuação!\nMas você pode fazer melhor!</pt>
+<it>Ottimo punteggio! Ma puoi fare di meglio!</it>
+    <ru>ОТЛИЧНЫЙ СЧЕТ! \ НО ВЫ МОЖЕТЕ ПОЛУЧИТЬ БОЛЬШЕ!</ru>
+</string>
+<string id="70">
+<en>OUT OF TIME!</en>
+<fr>PLUS DE TEMPS!</fr>
+<de>ZEIT ABGELAUFEN!</de>
+<es>¡NO QUEDA TIEMPO!</es>
+<pt>TEMPO ESGOTADO!</pt>
+<it>TEMPO ESAURITO!</it>
+    <ru>ВРЕМЯ ВЫШЛО!</ru>
+</string>
+</strings>
+</stringresources>
