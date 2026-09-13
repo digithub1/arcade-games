@@ -1,0 +1,36 @@
+{
+	"name": "B-Baller",
+	"short_name": "B-Baller",
+	"description": "B-Baller is an online arcade basketball game that is perfect for anyone who loves the sport. The game is easy to pick up and play, and it is a great way to pass the time. B-Baller is an online arcade basketball game that lets you compete against other players from around the world. With its fast-paced gameplay and easy-to-use controls, B-Baller is perfect for any fan of basketball.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

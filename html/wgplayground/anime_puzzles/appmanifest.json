@@ -1,0 +1,31 @@
+{
+	"name": "Jigsaw Puzzle - Anime",
+	"short_name": "Jigsaw Puzzle - Anime",
+	"description": "Relax, have fun and train your brain with Jigsaw - NATURE, a classic puzzle game.\n\nJigsaw - NATURE offers several free and premium puzzles. You can even create your own puzzles from pictures and photos of your family.\n\nEach piece of our jigsaw puzzles is unique, they have been individually created and designed to ensure that everyone who loves jigsaw puzzles has fun.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/splash.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	]
+}

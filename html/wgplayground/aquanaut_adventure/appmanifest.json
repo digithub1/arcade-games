@@ -1,0 +1,36 @@
+{
+	"name": "Aquanaut Adventure",
+	"short_name": "Aquanaut Adventure",
+	"description": "Dive into the depths of the ocean and embark on an exciting adventure full of challenges and discoveries. Aquanaut Adventure: Underwater Quest is an immersive game that takes you on an exciting journey through the depths of the ocean. Explore underwater caves, ancient ruins, and hidden treasures as you encounter a variety of marine creatures and challenges along the way.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

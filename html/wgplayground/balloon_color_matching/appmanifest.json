@@ -1,0 +1,36 @@
+{
+	"name": "Balloon Color Matching",
+	"short_name": "Balloon Color Matching",
+	"description": "To pop balloons and surpass top scores, match their colors! Your ability to match colors will be tested by the entertaining and addictive game balloon color matching. Match balloons of the same color and pop them to earn the best score possible in the game. Just tap the balloons to change their color and match them with others of the same color to begin playing. Your score will increase as you match and pop more balloons. The game has a straightforward but addictive gameplay that will keep you occupied for a long time. Balloon Color Matching is the ideal game for you if you're seeking for a stimulating puzzle game or a fun way to kill time. ",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

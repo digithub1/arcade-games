@@ -1,0 +1,10 @@
+{
+	"name": "Arkanoid Bricks",
+	"short_name": "Arkanoid Bricks",
+	"description": "Play fun games online",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": []
+}
