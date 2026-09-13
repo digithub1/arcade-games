@@ -1,0 +1,36 @@
+{
+	"name": "Survival Commando",
+	"short_name": "Survival Commando",
+	"description": "Survival Commando is a top-down shooter. Top-Down Shooter Survival Games is an action game with a lot of adrenaline. It is a shooting game, and you must survive in the midst of zombies. In this exciting game, you will have to go through a series of levels, which will get harder as you go.  Do you love playing top-down shooter games? It's a zombie outbreak! Solve exciting puzzles while fighting to stay alive in this action shooter game. Planned levels range from tense zombie shootouts to relaxing walks along steep cliffs with breathtaking views as you try to spot the easiest path ahead. Is it an ideal day out? No, but it sure is fun! Try your hand at some amazing motorcycle stunts while saving the world.You can play it on your PC or on your mobile phone. ",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

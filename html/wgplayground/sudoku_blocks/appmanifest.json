@@ -1,0 +1,36 @@
+{
+	"name": "Sudoku Blocks",
+	"short_name": "Sudoku Blocks",
+	"description": "Sudoku Blocks Puzzle is an online game that challenges you to put together blocks of numbers in the correct order. This game is free to play, and it is a great way to sharpen your mind. The game starts with some of the blocks filled in, and you must use logic to figure out which numbers go in the remaining empty blocks. Sudoku Blocks is a great test of your reasoning and problem-solving skills, and it's also a lot of fun! Sudoku Blocks is the perfect game for you! With its simple rules and addictive gameplay, Sudoku Blocks will keep you entertained for hours. And best of all, it's free to play!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Super Bike Racing",
+	"short_name": "Super Bike Racing",
+	"description": "Super bike racing free online games - play free Superbike racing games.Little Johnny loves SuperBike Racing free online games and so do his friends! Join them now in this game where you control a bike with arrow keys. Complete the challenges and win! Want to have an entertaining time? Then, get a lot of fun with Super Bike Racing! The game has fantastic graphics and offers you a whole new experience of bike racing. Run through the tracks at high speed in this super bike race! Ride into action on your Superbike! Gear up, strap in and race against players from around the globe in this fast-paced arcade racing game. Tight turnings, steep hills, open plains – you have to master them all! Select from a variety of bike designs and customize them to your heart’s desire - this is your chance to make that perfect machine.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

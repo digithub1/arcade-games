@@ -1,0 +1,10 @@
+{
+	"name": "Super Maksim World",
+	"short_name": "Super Maksim World",
+	"description": "Um divertido e desafiador jogo de plataforma baseado no maior clássico do gênero.\n\nAjude Maksim a passar 4 nívels desafiadores. Colete rublos para conseguir mais pontos!\n\nComo jogar:\nMobile - Controles touch.\nDesktop - Tecla A para correr, Tecla S para saltar, setas para se mover.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

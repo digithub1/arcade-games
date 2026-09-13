@@ -1,0 +1,36 @@
+{
+	"name": "Sun or Moon",
+	"short_name": "Sun or Moon",
+	"description": "Fight your enemies in a war across many galaxies and constellations. In this game, you need to find the best strategy for each constellation that you are playing. You will have different types of planets with different levels of difficulty which all contribute to making up the time limit that is given on every level. It's not just about fighting but also strategizing as well because only by finding out what works can one win against their opponents and move on to higher levels where they face tougher challenges.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

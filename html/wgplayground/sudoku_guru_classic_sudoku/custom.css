@@ -1,0 +1,60 @@
+
+#unity-container {
+	padding-bottom: 0px;
+	max-width: 720px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px 0px #ababab;
+	/*style="height: calc(100% + -106px);"*/
+	/*border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;*/
+}
+
+.light {
+	background-color: #f9f9f9;
+}
+
+#unity-progress-bar-empty {
+	width: 30%;
+}
+
+@media(max-width: 991px){
+	#unity-progress-bar-empty {
+		width: 50%;
+	}
+}
+
+@media(min-width: 2400px){
+	#unity-container {
+		max-width: 900px;
+	}
+}
+
+@media(min-width: 3440px){
+	#unity-container {
+		max-width: 1000px;
+	}
+}
+
+@media(min-width: 3442px){
+	#unity-container {
+		max-width: 1100px;
+	}
+}
+
+@media(min-width: 3840px){
+	#unity-container {
+		max-width: 1400px;
+	}
+}
+
+@media(min-width: 4000px){
+	#unity-container {
+		max-width: 1500px;
+	}
+}
+
+@media(min-width: 5000px){
+	#unity-container {
+		max-width: 2000px;
+	}
+}

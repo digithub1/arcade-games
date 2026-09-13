@@ -1,0 +1,1213 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Super-Snake">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/d6b7243a15f652c15b7179665d2bd4e0/wgplayground/bgr_d849ec2ea93b3ccc216675784716dce1.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/d6b7243a15f652c15b7179665d2bd4e0/wgplayground/018dccb97e60bd1b980cd43eeff2d08a.jpg" gravity="center top">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/d6b7243a15f652c15b7179665d2bd4e0">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/super-snake">
+            <meta property="wgp:description" content="A completely new “Snake” with addictive gameplay! You haven't played this before.The game has 100 levels. I’m almost sure that no one will complete them all, but theoretically it is possible to do so, because... The difficulty will increase smoothly from level to level.Compete to see who can reach what level!">
+            <meta property="wgp:instructions" content="The snake moves without stopping, and you only change the direction of its movement.Snake control: WASD or ←↕→Exit to menu: EscapeConfirm in menu: Enter">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/d6b7243a15f652c15b7179665d2bd4e0/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJBIjoiIiwiUyI6IiIsIkQiOiIiLCJXIjoiIiwiRW50ZXIiOiIiLCImZGFycjsiOiIiLCImcmFycjsiOiIiLCImbGFycjsiOiIiLCImdWFycjsiOiIiLCJFU0MiOiIifQ==">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUifSx7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="2">
+            <meta property="wgp:ads" content="97/d6b7243a15f652c15b7179665d2bd4e0">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Змейка</title>
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style></head>
+
+<body class="wgNoLoader">
+    <div id="scoreboard">
+        <div id="snake_length_wrapper">
+            <div id="snake_length_text"></div>
+            <div id="snake_length_value"></div>
+            <div id="snake_length_target_value"></div>
+        </div>
+        <div id="current_level_wrapper">
+            <div id="current_level_text"></div>
+            <div id="current_level_value"></div>
+        </div>
+        <div id="timer_wrapper">
+            <div id="timer_text"></div>
+            <div id="timer_value"></div>
+        </div>
+        <div id="settings_wrapper">
+            <img id="settings_sounds" src="assets/images/sound_on.png" alt="">
+            <img id="settings_music" src="assets/images/music_on.png" alt="">
+            <img id="settings_pause" src="assets/images/pause.png" alt="">
+        </div>
+    </div>
+    <div id="canvas_wrapper">
+        <canvas id="canvas"></canvas>
+        <canvas id="canvas_background"></canvas>
+    </div>
+
+    <!-- Окна (Стартовое, Как играть, Настройки, Пауза, GameOver) -->
+
+    <div id="window_start" class="window_background" style="display: flex;">
+
+        <div class="window" style="padding-bottom: 1.8vh">
+            <img id="window_start_image_snake_background" src="assets/images/snake_background.png" alt="">
+
+            <div style="
+                width: 100%;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                align-items: end;
+            ">
+                <img src="assets/images/leaderboard.png" class="leaderboard heart" alt="" style="margin-top: -9vh; margin-right: -1.8vh;">
+            </div>
+
+
+            <p id="window_start_title_1" class="window_title" style="font-size: 3.0vh; margin-top: 1.2vh; margin-bottom: -0.3vh;">
+            </p>
+            <p id="window_start_title_2" class="window_title_super_snake" style="margin-bottom: 0.7vh">
+            </p>
+
+            <button id="window_start_button_start_game" type="button" class="button breathable_button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="window_start_button_start_game_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                        </span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_start_button_change_difficulty" type="button" class="button button_backgoung_green" tabindex="-1">
+            </button>
+
+            <button id="window_start_button_how_to_play" type="button" class="button" tabindex="-1">
+            </button>
+
+            <button id="window_start_button_settings" type="button" class="button button_backgoung_green" tabindex="-1">
+            </button>
+
+        </div>
+    </div>
+
+    <div id="window_newGame_areYouSure" class="window_background" style="display: none;">
+        <div class="window">
+            <p id="window_newGame_areYouSure_title_1" class="window_title" style="font-size: 2.5vh">
+                Вы уверены, что хотите начать новую игру?title.textContent = 'Выбор уровня:';
+            </p>
+
+            <p id="window_newGame_areYouSure_title_2" class="window_title" style="font-size: 2.5vh">
+                Ваш текущий результат будет сброшен.
+            </p>
+
+            <button id="window_newGame_areYouSure_button_1" type="button" class="button button_backgoung_green breathable_button" style="margin-top: 2.5vh; width: 25vh;" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_newGame_areYouSure_button_1_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Уверен</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_newGame_areYouSure_button_2" type="button" class="button" style="width: 25vh;" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_newGame_areYouSure_button_2_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Назад</span>
+                        <img src="assets/images/esc.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="window_how_to_play" class="window_background" style="display: none;">
+        <div class="window" style="width: 60vh;">
+            <p id="window_how_to_play_title" class="window_title" style="
+                font-size: 3.5vh;
+                margin-top: -0.5vh;
+                ">
+                Как играть?
+            </p>
+            <p id="window_how_to_play_text_1" class="window_how_to_play_text" style="font-size: 2vh; margin-top: 1.1vh">
+                Управление:
+            </p>
+            <div style="display: flex; position: relative">
+                <img src="assets/images/wasd.png" alt="" style="height: 9vh">
+                <span id="window_how_to_play_text_2" class="window_how_to_play_text" style="padding: auto; padding-top: 1.6vh; font-size: 1.6vh;">или</span>
+                <img src="assets/images/arrows.png" alt="" style="height: 9vh">
+
+                <div style="position: relative;
+                margin-top: 0vh;
+                margin-left: 3vh;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                ">
+                    <img src="assets/images/esc.png" alt="" style="height: 4vh;">
+                    <span id="window_how_to_play_text_3" class="window_how_to_play_text" style="
+                        margin-top: 0.5vh; 
+                        margin-left: 0vh; 
+                        font-size: 1.7vh;
+                        text-align: center;
+                        line-height: 2vh;
+                        ">
+                        - выход в меню.</span>
+                </div>
+            </div>
+
+
+            <p id="window_how_to_play_text_4" class="window_game_over_text" style="font-size: 1.9vh; line-height: 1.9vh;
+            margin-top: 2.2vh;">
+                Цель игры: пройти все 100 уровней.
+
+                С каждым уровнем игра будет плавно усложняться и дойти до 100-уровня у вас
+                врядли получится, но теоретически это возможно сделать, поэтому попытайтесь, вдруг именно вам это
+                удастся.
+                На каждом уровне нужно вырастить змейку до определённой длины. Чтобы змейка росла, ешьте яблоки. В игре
+                также есть таймер, по истечении которого игра остановится. Чтобы время не заканчивалось собирайте
+                часики.
+                Вы также можете в меню игры изменить сложность, если вам слишком легко играть или наоборот тяжело. Игра
+                настроена так, что изменение сложности преимуществ никаких не даёт. Более высокий уровень сложности лишь
+                ускоряет игру, но зато больше вознаграждает.
+
+                Удачи!
+            </p>
+
+            <button id="window_how_to_play_button" type="button" class="button breathable_button" style="margin-top: 0vh; margin-bottom: -1vh; width: 20vh;" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_how_to_play_button_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Назад</span>
+                        <img src="assets/images/esc.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="window_settings" class="window_background" style="display: none;">
+        <div class="window">
+            <p id="window_settings_title" class="window_title" style="font-size: 4.3vh;">Настройки</p>
+
+            <div class="window_settings_sounds_and_music_wrapper">
+                <img id="window_settings_sounds" src="assets/images/sound_on.png" class="hover_scale breathable_button" alt="">
+
+                <div>
+                    <p id="window_settings_text_1">Громкость звуков</p>
+                    <input type="range" id="window_settings_sounds_range" value="50" min="0" max="100" step="1">
+                </div>
+            </div>
+
+            <div class="window_settings_sounds_and_music_wrapper">
+                <img id="window_settings_music" src="assets/images/music_on.png" class="hover_scale breathable_button" alt="">
+
+                <div>
+                    <p id="window_settings_text_2">Громкость музыки</p>
+                    <input type="range" id="window_settings_music_range" value="50" min="0" max="100" step="1">
+                </div>
+            </div>
+
+            <div class="window_settings_sounds_and_music_wrapper" style="display: flex;
+            align-items: center;
+            margin-bottom: -1.3vh;
+            font-size: 2.3vh;
+            ">
+
+                <div id="snakeColors" style="text-align: right; margin-right: 1.5vh; line-height: 2.6vh;">
+                    Выберите<br>цвет змейки:
+                </div>
+
+
+                <div class="snakeColors_dropdown">
+                    <div class="snakeColors_dropdown_select breathable_button">
+                    </div>
+                    <ul class="snakeColors_dropdown_list">
+                    </ul>
+                </div>
+            </div>
+
+            <div id="snakeColors_text_2" class="window_settings_sounds_and_music_wrapper" style="
+                font-size: 1.6vh;
+                margin-top: 0.7vh;
+                text-align: center;
+                margin-bottom: 0.5vh;
+                ">
+                (новые цвета будут открываться по мере прохождения уровней)
+            </div>
+
+            <button id="window_settings_button" type="button" class="button breathable_button" style="width: 20vh; margin-top: 3vh;" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_settings_button_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Назад</span>
+                        <img src="assets/images/esc.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="window_pause" class="window_background" style="display: none;">
+        <div class="window">
+
+            <div style="
+                width: 100%;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                align-items: end;
+            ">
+                <img src="assets/images/leaderboard.png" class="leaderboard heart" alt="">
+            </div>
+
+
+            <p id="window_pause_title" class="window_title" style="margin-bottom: 0.6vh; margin-top: -1vh;">
+                -= Пауза =-
+            </p>
+            <button id="window_pause_button_continue_game" type="button" class="button breathable_button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_pause_button_continue_game_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    line-height: 2.7vh;
+                                ">
+                            Продолжить игру</span>
+                        <img src="assets/images/esc.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_pause_button_ads_cut_self" type="button" class="button button_backgoung_green" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <div style="display: flex;">
+                            <span id="window_pause_button_adv" style="
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1.7vh;
+                                    ">
+                                Посмотреть рекламу (восстановить длину змейки)
+                                <span id="window_pause_button_adv_value" style="font-size: 2vh"></span></span>
+                        </div>
+                        <img src="assets/images/play_ads.png" class="imgButton_on_buttons_3_lines" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_pause_button_restart_game" type="button" class="button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_pause_button_restart_game_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    line-height: 2.7vh;
+                                ">
+                            Рестарт уровня</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_pause_button_select_level" type="button" class="button button_backgoung_green" tabindex="-1">
+                Выбрать уровень
+            </button>
+
+            <button id="window_pause_button_change_difficulty" type="button" class="button" tabindex="-1">
+                Изменить сложность
+            </button>
+
+            <button id="window_pause_button_how_to_play" type="button" class="button button_backgoung_green" tabindex="-1">
+                Как играть?
+            </button>
+
+            <button id="window_pause_button_settings" type="button" class="button" tabindex="-1">
+                Настройки
+            </button>
+        </div>
+    </div>
+
+    <div id="window_gameover" class="window_background" style="display: none;">
+        <div class="window">
+
+            <div style="
+                width: 100%;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                align-items: end;
+            ">
+                <img src="assets/images/leaderboard.png" class="leaderboard heart" alt="">
+            </div>
+
+            <p id="window_gameover_title" class="window_title" style="margin-bottom: 1vh; font-size: 4.2vh;">
+                Время вышло!
+            </p>
+
+
+            <button id="windows_gameover_button_ads_time_is_up" type="button" class="button button_backgoung_green breathable_button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="windows_gameover_button_ads_time_is_up_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    font-size: 1.7vh;
+                                ">
+                            Посмотри рекламу и продолжишь игру (добавится
+                            +20 секунд)</span>
+                        <img src="assets/images/play_ads.png" class="imgButton_on_buttons_3_lines" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_gameover_button_ads_death" type="button" class="button button_backgoung_green breathable_button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="window_gameover_button_ads_death_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    font-size: 1.8vh;
+                                ">
+                            Продолжить игру (посмотреть рекламу)</span>
+                        <img src="assets/images/play_ads.png" class="imgButton_on_buttons_2_lines" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_gameover_button_restart_game" type="button" class="button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="window_gameover_button_restart_game_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    line-height: 2.6vh;
+                                ">
+                            Рестарт уровня</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_gameover_button_select_level" type="button" class="button button_backgoung_green" tabindex="-1">
+                Выбрать уровень
+            </button>
+
+            <button id="window_gameover_button_change_difficulty" type="button" class="button" tabindex="-1">
+                Изменить сложность
+            </button>
+
+            <button id="window_gameover_button_how_to_play" type="button" class="button button_backgoung_green" tabindex="-1">
+                Как играть?
+            </button>
+
+            <button id="window_gameover_button_settings" type="button" class="button" tabindex="-1">
+                Настройки
+            </button>
+        </div>
+    </div>
+
+    <div id="window_snake_died" class="window_background" style="display: none;">
+        <div class="window" style="width: 30vh">
+            <p id="window_snake_died_title" class="window_title" style="font-size: 3.5vh">
+                Змейка погибла!
+            </p>
+            <p id="window_snake_died_text" class="window_game_over_text">
+                Ваша змейка умерла от голода. Её длина сократилась до нуля.
+                Чтобы она могла жить, ей нужно постоянно кушать яблоки.
+            </p>
+
+            <button id="window_snake_died_button_restart_game" type="button" style="margin-top: 0.5vh" class="button breathable_button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_snake_died_button_restart_game_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    line-height: 2.7vh;
+                                ">
+                            Начать новую игру</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_2_lines" alt="">
+                    </div>
+                </div>
+            </button>
+
+            <button id="window_snake_died_button_change_difficulty" type="button" class="button button_backgoung_green" tabindex="-1">
+                Изменить сложность
+            </button>
+
+            <button id="window_snake_died_button_how_to_play" type="button" class="button" tabindex="-1">
+                Как играть?
+            </button>
+
+            <button id="window_snake_died_button_settings" type="button" class="button button_backgoung_green" tabindex="-1">
+                Настройки
+            </button>
+        </div>
+    </div>
+
+    <div id="window_difficulty" class="window_background" style="display: none;">
+        <div class="window" style="width: 30vh">
+            <p id="window_difficulty_title_1" class="window_title" style="font-size: 3.1vh; margin-top: 0vh">
+                Выбери сложность:
+            </p>
+
+            <p id="window_difficulty_text" class="window_game_over_text" style="margin-bottom: 1vh">
+                Чем выше сложность, тем быстрее идёт время, но зато быстрее
+                растёт змейка.
+            </p>
+            <button id="difficulty_6" type="button" class="button_difficulty_name" tabindex="-1">
+                Элита
+            </button>
+            <button id="difficulty_5" type="button" class="button_difficulty_name" tabindex="-1">
+                Мастер
+            </button>
+            <button id="difficulty_4" type="button" class="button_difficulty_name" tabindex="-1">
+                Тяжёлый
+            </button>
+            <button id="difficulty_3" type="button" class="button_difficulty_name" tabindex="-1">
+                Средний
+            </button>
+            <button id="difficulty_2" type="button" class="button_difficulty_name" tabindex="-1">
+                Лёгкий
+            </button>
+            <button id="difficulty_1" type="button" class="button_difficulty_name" tabindex="-1">
+                Новичок
+            </button>
+
+            <button id="window_difficulty_button_back" type="button" class="button breathable_button" style="width: 21vh; margin-top: 3vh;" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto">
+                        <span id="window_difficulty_button_back_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Назад</span>
+                        <img src="assets/images/esc.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Окна подсказок -->
+
+    <div id="window_tooltip_first_start_game" class="window_background" style="display: none;">
+        <div class="window" style="display: flex">
+            <p id="window_tooltip_first_start_game_text_1" class="window_how_to_play_text" style="
+                        font-size: 2.5vh;
+                        margin-top: 0vh;
+                        margin-bottom: 2vh;
+                    ">
+                Управление:
+            </p>
+            <div style="display: flex; position: relative">
+                <img src="assets/images/wasd.png" alt="" style="width: 15vh">
+                <span id="window_tooltip_first_start_game_text_2" class="window_how_to_play_text" style="padding: auto; padding-top: 1.5vh">или</span>
+                <img src="assets/images/arrows.png" alt="" style="width: 15vh">
+            </div>
+            <div style="display: flex; position: relative; margin-top: 3vh">
+                <img src="assets/images/esc.png" alt="" style="width: 6.3vh">
+                <span id="window_tooltip_first_start_game_text_3" class="window_how_to_play_text" style="margin-top: 1vh; margin-left: 1vh">
+                    - выход в меню.</span>
+            </div>
+
+            <button id="window_tooltip_first_start_game_button" type="button" class="window_tooltip_button breathable_button" style="margin-top: 3.0vh;" tabindex="-1">
+                Понятно
+            </button>
+        </div>
+    </div>
+
+
+
+    <div id="window_tooltip_cut_self" class="window_background" style="display: none;">
+        <div class="window" style="display: flex; width: 50vh">
+            <div style="display: flex">
+                <div style="display: flex; margin: 0 auto">
+                    <p id="window_tooltip_cut_self_title" class="window_tooltip_title">
+                        Подсказка
+                    </p>
+                    <img src="assets/images/lamp.png" alt="" class="window_tooltip_title_img">
+                </div>
+            </div>
+
+            <p id="window_tooltip_cut_self_text" class="window_tooltip_text">
+                Если змейка откусила себе хвост или столкнулась с ножницами, можно
+                вернуть прежнюю длину змейки посмотрев рекламу (лимит 1 раз за игру). Для
+                этого во время игры выйдите в меню (нажмите ESC).
+            </p>
+
+            <button id="window_tooltip_cut_self_button" type="button" class="window_tooltip_button breathable_button" style="margin-top: 0.5vh;" tabindex="-1">
+                Понятно
+            </button>
+        </div>
+    </div>
+
+    <div id="window_tooltip_apples" class="window_background" style="background-color: rgba(0, 0, 0, 0); display: none;">
+        <div class="window" style="display: flex; width: 50vh">
+            <div style="display: flex">
+                <div style="display: flex; margin: 0 auto">
+                    <p id="window_tooltip_apples_title" class="window_tooltip_title">
+                        Подсказка
+                    </p>
+                    <img src="assets/images/lamp.png" alt="" class="window_tooltip_title_img">
+                </div>
+            </div>
+
+            <img src="assets/images/apples.png" style="
+                                    height: 4vh;
+                                    margin-top: 2vh;
+                                " alt="">
+
+            <p id="window_tooltip_apples_text" class="window_tooltip_text">
+                Чем больше цифра на яблоке, тем больший прирост оно даст змейке.<br><br>
+                На панели вверху показана длина вашей змейки:<br>
+                <b>Левое число</b> - текущая длина.<br>
+                <b>Правое число</b> - длина которую нужно набрать чтобы выиграть уровень.
+            </p>
+
+            <button id="window_tooltip_apples_button" type="button" class="window_tooltip_button breathable_button" tabindex="-1">
+                Понятно
+            </button>
+        </div>
+    </div>
+
+    <div id="window_tooltip_scissors" class="window_background" style="display: none;">
+        <div class="window" style="display: flex; width: 50vh">
+            <div style="display: flex">
+                <div style="display: flex; margin: 0 auto">
+                    <p id="window_tooltip_scissors_title" class="window_tooltip_title">
+                        Подсказка
+                    </p>
+                    <img src="assets/images/lamp.png" alt="" class="window_tooltip_title_img">
+                </div>
+            </div>
+
+            <img src="assets/images/scissor.png" style="
+                                    height: 4vh;
+                                    margin-top: 1vh;
+                                    margin-bottom: -1vh;
+                                " alt="">
+
+            <p id="window_tooltip_scissors_text" class="window_tooltip_text">
+                Ножницы отрезают определённый процент от длины змейки.
+            </p>
+
+            <button id="window_tooltip_scissors_button" type="button" style="margin-top: -1vh;" class="window_tooltip_button breathable_button" tabindex="-1">
+                Понятно
+            </button>
+        </div>
+    </div>
+
+    <div id="window_tooltip_appleWithPercent" class="window_background" style="display: none;">
+        <div class="window" style="display: flex; width: 50vh">
+            <div style="display: flex">
+                <div style="display: flex; margin: 0 auto">
+                    <p id="window_tooltip_appleWithPercent_title" class="window_tooltip_title">
+                        Подсказка
+                    </p>
+                    <img src="assets/images/lamp.png" alt="" class="window_tooltip_title_img">
+                </div>
+            </div>
+
+            <img src="assets/images/apple.png" style="
+                                    height: 4vh;
+                                    margin-top: 1vh;
+                                    margin-bottom: -1vh;
+                                " alt="">
+
+            <p id="window_tooltip_appleWithPercent_text" class="window_tooltip_text">
+                Яблоко со знаком % добавляет к длине вашей змейки определённый процент от текущей длины.
+            </p>
+
+            <button id="window_tooltip_appleWithPercent_button" type="button" class="window_tooltip_button breathable_button" tabindex="-1">
+                Понятно
+            </button>
+        </div>
+    </div>
+
+    <div id="window_tooltip_clocks" class="window_background" style="background-color: rgba(0, 0, 0, 0); display: none;">
+        <div class="window" style="display: flex; width: 50vh">
+            <div style="display: flex">
+                <div style="display: flex; margin: 0 auto">
+                    <p id="window_tooltip_clocks_title" class="window_tooltip_title">
+                        Подсказка
+                    </p>
+                    <img src="assets/images/lamp.png" alt="" class="window_tooltip_title_img">
+                </div>
+            </div>
+
+            <img src="assets/images/clocks.png" style="
+                                    height: 4vh;
+                                    margin-top: 2vh;
+                                " alt="">
+
+            <p id="window_tooltip_clocks_text" class="window_tooltip_text">
+                Следите за таймером, чтобы он не закончился. Для этого собирайте часики с временем.
+                Чем больше цифра на часиках, тем больше времени они добавят к таймеру.
+            </p>
+
+            <button id="window_tooltip_clocks_button" type="button" class="window_tooltip_button breathable_button" tabindex="-1">
+                Понятно
+            </button>
+        </div>
+    </div>
+
+    <div id="window_tooltip_about100Levels" class="window_background" style="z-index: 3; display: none;">
+        <div class="window" style="display: flex; width: 50vh">
+
+            <p id="window_tooltip_about100Levels_text" class="window_tooltip_text" style="margin-top: 0.5vh;">
+                В игре 100 уровней!
+
+                С каждым уровнем игра будет постепенно усложняться, и дойти до
+                последнего уровня практически нереально, но теоретически всё же возможно, поэтому
+                попробуйте, вдруг именно у вас получится.
+
+                В меню игры вы так же можете изменить сложность, если вдруг вам тяжело играть, либо наоборот легко.
+                На высоком уровне сложности играть сложнее, но зато эффективнее. И наоборот.
+                Удачи вам в покорении всех 100 уровней!
+            </p>
+
+            <button id="window_tooltip_about100Levels_button" type="button" class="window_tooltip_button breathable_button" tabindex="-1">
+                Продолжить
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Окна появляющиеся сразу после показа рекламы -->
+
+    <div id="window_after_ads_time_is_up" class="window_background" style="display: none;">
+        <div class="window" style="display: flex">
+            <p id="window_after_ads_time_is_up_text" class="window_game_over_text" style="font-size: 2.2vh; margin-top: 1vh;">
+                Вам добавлено +20 секунд.
+            </p>
+
+            <button id="window_after_ads_time_is_up_button" type="button" class="button button_backgoung_green breathable_button" style="margin-top: 1vh; width: 33vh" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="window_after_ads_time_is_up_button_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Продолжить игру</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="window_after_ads_death" class="window_background" style="display: none;">
+        <div class="window" style="display: flex">
+            <button id="window_after_ads_death_button" type="button" class="button button_backgoung_green breathable_button" style="margin-top: 0vh; width: 33vh" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="window_after_ads_death_button_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Продолжить игру</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="window_after_ads_cut_self" class="window_background" style="display: none;">
+        <div class="window" style="display: flex">
+            <p id="window_after_ads_cut_self_text" style="
+                        font-family: Blogger_Sans, sans-serif;
+                        font-size: 2.2vh;
+                        margin-top: 1vh;
+                        color: #29582c;
+                    ">
+                Длина змейки
+                <span style="font-size: 2.5vh; font-weight: bold"></span>
+                восстановлена.
+            </p>
+
+            <button id="window_after_ads_cut_self_button" type="button" class="button button_backgoung_green breathable_button" style="margin-top: 1.0vh; width: 33vh" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="window_after_ads_cut_self_button_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                ">
+                            Продолжить игру</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_1_line" alt="">
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="window_levels" class="window_background" style="display: none;">
+        <div id="window_levels_inside" class="window" style="display: flex;">
+
+        </div>
+    </div>
+
+    <div id="window_after_selected_level" class="window_background" style="display: none;">
+        <div id="window_after_selected_level_inside" class="window" style="
+            display: flex;
+            margin: 0 auto;
+            position: relative;
+            ">
+
+        </div>
+    </div>
+
+    <div id="window_level_completed" class="window_background" style="display: none;">
+        <div id="window_level_completed_inside" class="window" style="display: flex;">
+
+            <div style="
+                width: 100%;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                align-items: end;
+            ">
+                <img src="assets/images/leaderboard.png" class="leaderboard heart" alt="">
+            </div>
+
+            <p id="window_level_completed_title" class="window_title" style="font-size: 3.4vh; margin-bottom: 1.5vh;">
+                Уровень пройден!
+            </p>
+
+            <button id="window_level_completed_button_next_level" type="button" class="button breathable_button" tabindex="-1">
+                <div style="display: flex">
+                    <div style="display: flex; margin: 0 auto; align-items: center;">
+                        <span id="window_level_completed_button_next_level_span" style="
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    line-height: 2.6vh;
+                                    font-size: 2.1vh;
+                                ">
+                            Следующий уровень</span>
+                        <img src="assets/images/enter.png" class="imgButton_on_buttons_2_lines" alt="">
+                    </div>
+                </div>
+            </button>
+
+
+            <button id="window_level_completed_button_select_level" type="button" class="button button_backgoung_green" tabindex="-1">
+                Выбрать уровень
+            </button>
+
+            <button id="window_level_completed_button_change_difficulty" type="button" class="button" tabindex="-1">
+                Сложность
+            </button>
+
+            <button id="window_level_completed_button_how_to_play" type="button" class="button button_backgoung_green" tabindex="-1">
+                Как играть?
+            </button>
+
+            <button id="window_level_completed_button_settings" type="button" class="button" tabindex="-1">
+                Настройки
+            </button>
+
+        </div>
+    </div>
+
+    <div id="window_colorUnlocked" class="window_background" style="display: none;">
+        <div class="window" style="display: flex;">
+            <div style="display: flex;">
+                <p id="window_colorUnlocked_title" class="window_title" style="font-size: 2.6vh;">
+                    Разблокирован новый цвет змейки
+                </p>
+                <div id="window_colorUnlocked_color"></div>
+            </div>
+            <p id="window_colorUnlocked_text" class="window_game_over_text">
+                Цвет змейки можно поменять в меню настроек.<br>
+                Для этого во время игры выйдите в меню (нажать Esc)<br>
+                и выберите Настройки.
+            </p>
+            <button id="window_colorUnlocked_button" type="button" class="button" style="margin-top: 0.5vh; width: 40vh;" tabindex="-1">
+                ОК
+            </button>
+        </div>
+    </div>
+
+
+    <div id="canvas_tutorial_wrapper" style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    ">
+        <canvas id="canvas_tutorial"></canvas>
+    </div>
+
+
+
+
+
+    <div style="display: none">
+        <img id="image_apples_1_9" src="assets/images/apples.png" alt="">
+        <img id="image_apple" src="assets/images/apple.png" alt="">
+        <img id="image_clocks_1_9" src="assets/images/clocks.png" alt="">
+        <img id="image_shit" src="assets/images/shit.png" alt="">
+        <img id="image_death" src="assets/images/death.png" alt="">
+        <img id="image_scissor" src="assets/images/scissor.png" alt="">
+        <img id="image_lock" src="assets/images/lock.png" alt="">
+    </div>
+    <script src="game.js"></script>
+
+
+
+    <script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=12825&amp;publicToken=uCeXYsX8lBnEx09bsyIc0S6XgklJZaRk&amp;callback=onGPInit">
+        </script>
+
+
+
+
+
+</body></html>

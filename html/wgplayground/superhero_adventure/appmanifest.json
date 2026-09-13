@@ -1,0 +1,36 @@
+{
+	"name": "Superhero Adventure",
+	"short_name": "Superhero Adventure",
+	"description": "Superhero Adventure Online Shooting Game is an online game that lets you play as a superhero. You can choose to play as a superhero or a villain, and you can use your powers to fight other players. The game features an extensive character customization system, allowing you to create the perfect superhero or villain for your playstyle. Superhero Adventure Online Shooting Game is a fast-paced and action-packed game that will keep you coming back for more.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

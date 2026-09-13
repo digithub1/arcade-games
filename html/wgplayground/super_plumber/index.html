@@ -1,0 +1,367 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Super Plumber">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/9e8ff2a6af4e7664d8c709d4ccb64216/wgplayground/07906f23cad3a8233f2ee812739e64d1.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/9e8ff2a6af4e7664d8c709d4ccb64216/wgplayground/c4bb49428f810cb988b33b262d527edf.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/9e8ff2a6af4e7664d8c709d4ccb64216">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/new-kids-games/super-plumber">
+            <meta property="wgp:description" content="In the game Super Plumber, you will help a young plumber repair an urban water supply. Before you on the screen you will see a certain area where the integrity of the pipes is broken. You will need to carefully examine everything. You can twist certain elements in space in any direction. To do this, you just need to click on them with the mouse. Expose them so that the objects are interconnected. As soon as you restore the integrity of the pipes, water will go through them and they will give you glasses.">
+            <meta property="wgp:instructions" content="Use mouse or touch on the screen!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/9e8ff2a6af4e7664d8c709d4ccb64216/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="1920">
+            <meta property="wgp:height" content="1080">
+            <meta property="wgp:rwidth" content="16">
+            <meta property="wgp:rheight" content="9">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="1.78">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJQdXp6bGVzIn0seyJuYW1lIjoiQXJjYWRlIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="59/9e8ff2a6af4e7664d8c709d4ccb64216">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Super Plumber</title>
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json">
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png">
+	<meta name="HandheldFriendly" content="true">
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png">
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+	
+<!-- WG Universal Tag -->
+
+
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><script src="offlineClient.js"></script><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head> 
+ 
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/9e8ff2a6af4e7664d8c709d4ccb64216/wgplayground/c4bb49428f810cb988b33b262d527edf.jpg"> 
+	<div id="fb-root"></div>
+	
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}
+	})();
+	</script>
+	
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv" style="width: 797px; height: 558px; margin-left: 0px; margin-top: 0px;">
+	
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="1594" height="1116" wg-game-orientation="wg-landscape-game" style="width: 797px; height: 558px;">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+			<br><br><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br>
+			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br>
+			<a href="http://www.google.com/chrome/">Google Chrome</a><br>
+			<a href="http://www.apple.com/safari/download/">Apple Safari</a></h1>
+		</canvas>
+		
+	<canvas width="1594" height="1116" style="width: 797px; height: 558px; top: 0px; left: 0px; position: absolute;"></canvas></div>
+	
+	<!-- Pages load faster with scripts at the bottom -->
+	
+	<!-- Construct 2 exported games require jQuery. -->
+	<script src="jquery-3.4.1.min.js"></script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<script src="c2runtime.js"></script>
+
+    <script>
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{			
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		function OnRegisterSWError(e)
+		{
+			console.warn("Failed to register service worker: ", e);
+		};
+		
+		// Runtime calls this global method when ready to start caching (i.e. after startup).
+		// This registers the service worker which caches resources for offline support.
+		window.C2_RegisterSW = function C2_RegisterSW()
+		{
+			if (!navigator.serviceWorker)
+				return;		// no SW support, ignore call
+			
+			try {
+				navigator.serviceWorker.register("sw.js", { scope: "./" })
+				.then(function (reg)
+				{
+					console.log("Registered service worker on " + reg.scope);
+				})
+				.catch(OnRegisterSWError);
+			}
+			catch (e)
+			{
+				OnRegisterSWError(e);
+			}
+		};
+    </script>
+
+
+ 
+ </body></html>

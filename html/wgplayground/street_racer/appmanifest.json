@@ -1,0 +1,36 @@
+{
+	"name": "Street Racer",
+	"short_name": "Street Racer",
+	"description": "Speed Racer Online is a racing game for people who want to try their hand at the most exciting sports games. Blow up everything in your path as you race through dangerous obstacles. With the help of fast-moving characters, win the race and reach new levels!  To race or not to race? With the new Speed Racer Online game, you have all of the tools you need to become a professional fighter, featuring dangerous obstacles and high-octane action as you speed through opponents. Race yourself against other players online, comparing score cards and challenging them next time!  Speed Racer Online is a great choice for those who love to have fun and try their hand at sports games without putting themselves at the risk of getting physically damaged. Race through the difficult courses and take out all the obstructions around you using powerful machines, which are your characters. As you reach higher levels of skill, you can win over new challenges.  Speed Racer is a fun online game that lets you race through different levels and compete against other characters and online players to see who's got what it takes to win this exciting sport. Challenge yourself, race through obstacles and blow stuff up while driving at lightning speed with your cars to reach the finish line first!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Super Frog Adventure",
+	"short_name": "Super Frog Adventure",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

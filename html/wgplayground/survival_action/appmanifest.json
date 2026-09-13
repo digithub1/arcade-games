@@ -1,0 +1,36 @@
+{
+	"name": "Survival Action",
+	"short_name": "Survival Action",
+	"description": "The survival action online game Survival Action is a free-to-play game that allows players to compete in the world of survival action. A multiplayer video game entitled Survival Action offers free online service. Players can try surviving in extreme circumstances. The survival action video game Survival Action is a free-to-play video game that challenges players to survive in the world of survival action.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

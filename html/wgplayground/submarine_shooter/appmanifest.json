@@ -1,0 +1,36 @@
+{
+	"name": "Submarine Shooter",
+	"short_name": "Submarine Shooter",
+	"description": "Submarine Shooter is an online free shooting game. Submarine Shooter is an online shooting game where players can control a submarine and battle against other players in real-time. Submarine Shooter is an online shooting game that you can play for free. In this game, you will take control of a submarine and your goal is to destroy as many enemy as possible.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
