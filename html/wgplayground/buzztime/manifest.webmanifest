@@ -1,0 +1,9 @@
+{
+  "name":"BuzzTime",
+  "short_name":"BuzzTime",
+  "start_url":"./index.html",
+  "display":"fullscreen",
+  "orientation":"portrait",
+  "background_color":"#04050c",
+  "theme_color":"#04050c"
+}
