@@ -1,0 +1,17 @@
+{
+	"name": "Worms",
+	"short_name": "Worms",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#55cb82",
+	"icons": [
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
