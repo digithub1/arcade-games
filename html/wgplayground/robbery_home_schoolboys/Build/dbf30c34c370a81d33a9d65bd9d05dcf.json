@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Rob Schoolboy's House",
+"productVersion": "0.1",
+"dataUrl": "48083fde8d05159bd37cd9bdb1f94490.unityweb",
+"wasmCodeUrl": "712ed610cc41995f01ce96a5fc4e21e2.unityweb",
+"wasmFrameworkUrl": "a3c0df7f7ca7e42ef81d66270c70ab27.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
