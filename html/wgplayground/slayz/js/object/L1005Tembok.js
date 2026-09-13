@@ -1,0 +1,106 @@
+(function(){
+// Put user code here //
+ 
+//  End of user code  //
+
+game.object.L1005Tembok = me.Sprite.extend({
+	init: function(x, y, settings = {}){
+		settings.texture = "america";
+		settings.image = game.textureMap.get(settings.texture);
+		var tempSprite = game.util.__populateAtlasIndices([
+			"L1005tembok blkng"
+		], settings);
+		settings.framewidth = settings.framewidth || 585;
+		settings.frameheight = settings.frameheight || 122;
+		settings.anchorPoint = {
+			x: 0.5,
+			y: 0.5
+		};
+
+        // Put user code here //
+        
+        //  End of user code  //
+
+		x += me.game.viewport.width*0.5;
+		y += me.game.viewport.height*0.5;
+		this._super(me.Sprite, 'init', [x, y, settings]);
+
+		this.alpha = 1;
+		this.floating = true;
+		this.alwaysUpdate = true;
+		this.updateWhenPaused = false;
+		this.isPersistent = false;
+		this.isKinematic = false;
+
+		this.body = new me.Body(this);
+		this.body.addShape( me.pool.pull("me.Polygon", 0, 0, [me.pool.pull("me.Vector2d", 69, 31), me.pool.pull("me.Vector2d", 59, 85), me.pool.pull("me.Vector2d", 6, 90), me.pool.pull("me.Vector2d", 0, 0), me.pool.pull("me.Vector2d", 585, 0), me.pool.pull("me.Vector2d", 585, 86), me.pool.pull("me.Vector2d", 530, 87), me.pool.pull("me.Vector2d", 528, 17), me.pool.pull("me.Vector2d", 468, 21), me.pool.pull("me.Vector2d", 466, 94), me.pool.pull("me.Vector2d", 375, 91), me.pool.pull("me.Vector2d", 388, 9), me.pool.pull("me.Vector2d", 197, 13), me.pool.pull("me.Vector2d", 214, 100), me.pool.pull("me.Vector2d", 124, 104), me.pool.pull("me.Vector2d", 133, 28), ]) );
+		this.body.collisionType = game.collisionTypes.ALL_OBJECT;
+		this.body.setCollisionMask(game.collisionTypes.ALL_OBJECT);
+		this.body.gravity.y = 0;
+		this.var = {};
+
+        // Put user code here //
+        game.util.scale(this, 2);
+        this.body.collisionType = game.collisionTypes.OBSTACLE;
+		this.body.setCollisionMask(game.collisionTypes.PELURU);
+		
+        this.body.getShape().translate(-this.width/2, -this.height/2);
+        
+        // console.log(this.width, this.height);
+        this.sfx = ["sfx-bullet-impact-1","sfx-bullet-impact-2","sfx-bullet-impact-3"];
+        //  End of user code  //
+	},
+
+	update: function(dt){
+		var drawNextFrame = this._super(me.Sprite, 'update', [dt]);
+
+		this.body.update();
+		me.collision.check(this);
+		drawNextFrame = drawNextFrame || this.body.vel.x !== 0 || this.body.vel.y !== 0;
+        // Put user code here //
+        
+        //  End of user code  //
+		return drawNextFrame;
+	},
+
+	onCollision : function(response, other) {
+		var isSolid = true;
+        // Put user code here //
+        isSolid = false;
+        if(other.body.collisionType === game.collisionTypes.PELURU){
+            var item = this.sfx[Math.floor(Math.random()*this.sfx.length)];
+            me.audio.play(item, false, null, game.user.userData.sound.SFX);
+        }
+        //  End of user code  //
+		return isSolid;
+	},
+
+	draw : function(renderer, rect) {
+		this._super(me.Sprite, 'draw', [renderer, rect]);
+        // Put user code here //
+        
+        //  End of user code  //
+	},
+
+	onActivateEvent : function() {
+        // Put user code here //
+        
+        //  End of user code  //
+	},
+
+	onDeactivateEvent : function() {
+
+        // Put user code here //
+        
+        //  End of user code  //
+	},
+
+    // Put user code here //
+    
+    //  End of user code  //
+});
+
+// Put user code here //
+ 
+//  End of user code  //
+})();
