@@ -1,0 +1,16 @@
+{
+"companyName": "Terminator1998",
+"productName": "sbw2",
+"productVersion": "0.1",
+"dataUrl": "ed6f8b1069133aecf39b8203201a39d2.unityweb",
+"wasmCodeUrl": "5999e1c43bffdee5cc00c35a3c10c182.unityweb",
+"wasmFrameworkUrl": "8eb15e67f46da07d1b41043947dacfc5.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
