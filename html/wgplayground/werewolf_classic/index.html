@@ -1,0 +1,742 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Werewolf Classic">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/fae948dc89d9f0e90957d72572552300/wgplayground/18bea9e6de139dbc1dd4e95416ac81fb.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/fae948dc89d9f0e90957d72572552300/wgplayground/989c66c625ba5b7dc3d9c09eea33f2a4.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/fae948dc89d9f0e90957d72572552300">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/palash/werewolf-classic">
+            <meta property="wgp:description" content="Werewolf Classic is an interactive online multiplayer social deduction game inspired by the classic open source party game Werewolf / Mafia.Players take on hidden roles—such as Villagers, Werewolves, Detective, Doctor, and more. During the night, Werewolves eliminate unsuspecting villagers, while special roles use their abilities to protect or investigate. When day breaks, players discuss in real-time, share suspicions, and vote to eliminate suspected Werewolves before the village is overrun!Key Features:- Real-time online multiplayer rooms (Public &amp; Private custom games)- Diverse character roles with unique abilities- In-game real-time chat &amp; voting system- English and Russian localization support- Fast-paced, thrilling social deduction gameplay">
+            <meta property="wgp:instructions" content="Controls:- Mouse / Touch: Click or tap buttons to navigate menus, select targets, and cast votes.- Keyboard: Type in the chat box during the discussion phase and press Enter to talk.How to Play:1. Join a Quick Play room or create a custom game with your friends.2. At game start, you will be secretly assigned a role (Villager, Werewolf, Seer, Doctor, etc.).3. Night Phase: Werewolves choose a villager to eliminate, while special roles use their abilities.4. Day Phase: Read the night report, discuss with fellow players in live chat, deduce who the Werewolves are, and vote to eliminate suspects before time runs out!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/fae948dc89d9f0e90957d72572552300/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/fae948dc89d9f0e90957d72572552300/wgplayground/378281ec819a7ce25f12bf1d921de20f.m3u8" ar="portrait">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/fae948dc89d9f0e90957d72572552300/wgplayground/da65743ab4eef131a8247ab5d4692359.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiU2VsZWN0IGFjdGlvbnMsIHZvdGUsIGFuZCBuYXZpZ2F0ZSBtZW51cyIsIlJpZ2h0IE1vdXNlIjoiIiwiTW91c2UgV2hlZWwiOiJTY3JvbGwgY2hhdCBsb2ciLCIxIjoiIiwiMiI6IiIsIjMiOiIiLCI0IjoiIiwiNSI6IiIsIjYiOiIiLCI3IjoiIiwiOCI6IiIsIjkiOiIiLCIwIjoiIiwiLSI6IiIsIisiOiIiLCJCYWNrc3BhY2UiOiIiLCJ8IjoiIiwifSI6IiIsIlAiOiIiLCJPIjoiIiwiVSI6IiIsIkkiOiIiLCJ7IjoiIiwiWSI6IiIsIlQiOiIiLCJSIjoiIiwiRSI6IiIsIlciOiIiLCJRIjoiIiwiQSI6IiIsIkNBUFNMT0NLIjoiIiwiUyI6IiIsIkQiOiIiLCJGIjoiIiwiRyI6IiIsIkgiOiIiLCJKIjoiIiwiSyI6IiIsIkwiOiIiLCI6IjoiIiwiJnF1b3Q7IjoiIiwiRW50ZXIiOiIiLCJSU2hpZnQiOiIiLCJcLyI6IiIsIi4iOiIiLCIsIjoiIiwiTSI6IiIsIk4iOiIiLCJCIjoiIiwiViI6IiIsIkMiOiIiLCJYIjoiIiwiWiI6IiIsIkxTaGlmdCI6IiIsIlNwYWNlIjoiRm9yIFR5aW5nIiwifiI6IiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJNdWx0aXBsYXllciJ9LHsibmFtZSI6IlNvY2lhbCJ9XSwiY2hhcmFjdGVycyI6W119">
+            <meta property="wgp:pegi" content="2">
+            <meta property="wgp:ads" content="oyk8hanwd3oj3jem/fae948dc89d9f0e90957d72572552300">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Werewolf Classic</title>
+    <meta name="description" content="Werewolf Classic — Online multiplayer social deduction game. Play with friends as villagers or werewolves in this thrilling party game.">
+    <link rel="icon" href="./assets/favicon-CnwSfCc5.ico" type="image/x-icon">
+    
+    <!-- Fonts and libraries are now bundled locally via Vite -->
+
+    <!-- Styles -->
+    
+  <script type="module" crossorigin="" src="./assets/main-D6ozNgxO.js"></script>
+  <link rel="stylesheet" crossorigin="" href="./assets/main-Bn1CqMe6.css">
+
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><script src="gamepush.js"></script></head>
+<body class="wgNoLoader">
+    <div id="game-container"></div>
+    
+    
+    
+    <div id="ui-layer">
+        <!-- Screens will be toggled by JS -->
+        
+        <!-- Loading Screen -->
+        <div id="screen-loading" class="screen active">
+            <h1 class="logo-text">
+                WEREWOLF<br>
+                <span class="logo-subtext">CLASSIC</span>
+            </h1>
+            <div class="loader"></div>
+            <p id="loading-text" data-i18n="loadingText">Connecting to servers...</p>
+        </div>
+
+        <!-- Main Menu -->
+        <div id="screen-menu" class="screen hidden">
+            <div style="position: absolute; top: 20px; right: 20px; z-index: 10;">
+                <div id="google-login-btn" class="hidden"></div>
+            </div>
+            
+            <h1 class="logo-text">
+                WEREWOLF<br>
+                <span class="logo-subtext">CLASSIC</span>
+            </h1>
+            <div class="menu-box">
+                <!-- Profile Display Box -->
+                <div id="btn-open-account" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 15px; padding: 10px; border-radius: 12px; background: var(--surface-light); cursor: pointer; border: 2px solid transparent; transition: border-color 0.2s;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='transparent'">
+                    <div class="avatar-preview" style="width: 50px; height: 50px; flex-shrink: 0; border-radius: 50%; background: var(--surface); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--primary);">
+                        <img id="display-avatar-img" src="" style="width: 100%; height: 100%; object-fit: cover;" alt="Avatar" referrerpolicy="no-referrer">
+                    </div>
+                    <div style="text-align: left; flex-grow: 1;">
+                        <h3 id="display-username" style="margin: 0; font-size: 1.2rem; color: var(--text);">Loading...</h3>
+                        <span id="display-account-status" data-i18n="guestAccount" style="font-size: 0.8rem; color: var(--text-muted);">Guest Account</span>
+                    </div>
+                    <div style="font-size: 1.5rem; color: var(--text-muted);">⚙️</div>
+                </div>
+                <button id="btn-quick-play" data-i18n="quickPlay" class="btn quick-play-btn">⚡ Quick Play</button>
+                <button id="btn-custom-games" data-i18n="customGames" class="btn primary">🎮 Custom Games</button>
+                <button id="btn-how-to-play" data-i18n="howToPlayBtn" class="btn secondary" style="border-color: var(--success); color: var(--success);">📖 How to Play &amp; Role Guide</button>
+            </div>
+            
+            <!-- CrazyGames Banner Ad Container (320x50 Mobile) -->
+            <div id="cg-banner-container" class="hidden" style="width: 320px; height: 50px; margin: 10px auto 0 auto;"></div>
+            
+            <div style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;">
+                <button id="btn-lang-toggle" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: var(--text-main); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">🌐 <span id="lang-toggle-text">🌐 EN / RU</span></button>
+                <span style="color: var(--text-muted); font-size: 0.9rem;">·</span>
+                <a href="#" id="btn-privacy-policy" data-i18n="privacyPolicy" style="color: var(--text-muted); text-decoration: underline; font-size: 0.9rem;">Privacy Policy</a>
+                <span style="color: var(--text-muted); font-size: 0.9rem;">·</span>
+                <a href="#" id="btn-credits" data-i18n="credits" style="color: var(--text-muted); text-decoration: underline; font-size: 0.9rem;">Credits</a>
+            </div>
+        </div>
+
+        <!-- Custom Games Screen -->
+        <div id="screen-custom-games" class="screen hidden">
+            <h2 data-i18n="customGamesTitle">Custom Games</h2>
+            <button id="btn-custom-back" data-i18n="back" class="btn-icon back-btn">Back</button>
+            <div class="menu-box">
+                <button id="btn-play" data-i18n="publicRooms" class="btn primary">Public Rooms</button>
+                <button id="btn-create-room" data-i18n="createRoom" class="btn secondary">Create Room</button>
+                <button id="btn-join-private" data-i18n="joinPrivate" class="btn secondary">Join Private Room</button>
+            </div>
+        </div>
+
+        <!-- Account Section Modal -->
+        <div id="modal-account" class="htplay-modal hidden" style="z-index: 900;">
+            <div class="htplay-box" style="max-width: 400px; text-align: center;">
+                <button id="btn-close-account" class="htplay-close">✕</button>
+                <h2 data-i18n="accountSettings">Account Settings</h2>
+                
+                <div id="account-logged-in-view" class="hidden">
+                    <div id="btn-change-avatar" class="avatar-preview" style="width: 80px; height: 80px; margin: 0 auto 15px auto; flex-shrink: 0; border-radius: 50%; background: var(--surface-light); cursor: pointer; border: 2px solid var(--primary); display: flex; align-items: center; justify-content: center; overflow: hidden;" title="Change Avatar" data-i18n-title="clickAvatarToChange">
+                        <img id="menu-avatar-img" src="" style="width: 100%; height: 100%; object-fit: cover;" alt="Avatar" referrerpolicy="no-referrer">
+                    </div>
+                    <p data-i18n="clickAvatarToChange" style="font-size: 0.8rem; color: var(--text-muted); margin-top: -10px; margin-bottom: 15px;">Click avatar to change</p>
+                    
+                    <input type="text" id="input-username" data-i18n-placeholder="enterUniqueUsername" placeholder="Enter Unique Username" maxlength="12" style="margin-bottom: 10px; text-align: center; font-size: 1.2rem; font-weight: bold;">
+                    
+                    <p id="quota-text" style="font-size: 0.9rem; color: var(--success); margin-bottom: 15px;">Free Changes: 4/4 (Refills every 15 days)</p>
+                    
+                    <button id="btn-save-account" data-i18n="saveChanges" class="btn primary">Save Changes</button>
+                    <button id="btn-save-account-ad" data-i18n="watchAdToSave" class="btn hidden" style="background: linear-gradient(45deg, #FF9800, #F44336); color: white;">Watch Ad to Save 🎬</button>
+                    <p id="ad-info-text" data-i18n="adInfoText" class="hidden" style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">You have exhausted your 4 free changes. Watch an ad to change your name!</p>
+                    
+                    <hr style="border: none; border-top: 1px solid var(--surface-light); margin: 20px 0;">
+                    <!-- Since Google login renders an iframe, we will dynamically append it here in JS when opened -->
+                    <button id="btn-logout" data-i18n="logout" class="btn" style="background: var(--danger); color: white;">Logout</button>
+                </div>
+                
+                <div id="account-guest-view">
+                    <div id="btn-change-guest-avatar" class="avatar-preview" style="width: 80px; height: 80px; margin: 0 auto 10px auto; flex-shrink: 0; border-radius: 50%; background: var(--surface-light); border: 2px solid var(--primary); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                        <img id="guest-avatar-img" src="" style="width: 100%; height: 100%; object-fit: cover;" alt="Avatar">
+                    </div>
+                    
+                    <input type="text" id="input-guest-username" disabled="" placeholder="Guest Username" maxlength="12" style="margin-bottom: 12px; text-align: center; font-size: 1.1rem; font-weight: bold; width: 100%; max-width: 250px; opacity: 0.75; cursor: not-allowed; background: rgba(255,255,255,0.05); color: var(--text-muted);">
+                    
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0 auto 15px auto; max-width: 280px; line-height: 1.4;">
+                        🔒 Sign in to customize your username, unlock unique avatars, and save progress!
+                    </p>
+
+                    <button id="btn-save-guest-account" class="btn primary hidden" style="margin: 0 auto 15px auto; display: none; width: 100%; max-width: 200px;">Save Profile</button>
+
+                    <div id="guest-google-login-btn" style="margin: 0 auto 10px auto; display: inline-block;"></div>
+                    <button id="btn-poki-login" data-i18n="loginPoki" class="btn primary hidden" style="margin: 0 auto 10px auto; display: block; width: 100%; max-width: 200px;">Login with Poki</button>
+                    <button id="btn-cg-login" data-i18n="loginCG" class="btn primary hidden" style="margin: 0 auto 10px auto; display: block; width: 100%; max-width: 200px;">Login with CrazyGames</button>
+                    <button id="btn-yandex-login" data-i18n="loginYandex" class="btn primary hidden" style="margin: 0 auto 10px auto; display: block; width: 100%; max-width: 200px;">Login with Yandex</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Avatar Selection Modal -->
+        <div id="modal-avatar-select" class="htplay-modal hidden" style="z-index: 1000;">
+            <div class="htplay-box" style="max-width: 500px; text-align: center;">
+                <button id="btn-close-avatar-modal" class="htplay-close">✕</button>
+                <h2 data-i18n="chooseAvatar">Choose an Avatar</h2>
+                <div id="avatar-grid" class="htplay-content" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; max-height: 60vh; overflow-y: auto; padding: 10px;">
+                    <!-- Avatar images will be injected here via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- How to Play Modal (Moved to root for global access) -->
+        <div id="modal-how-to-play" class="htplay-modal hidden">
+            <div class="htplay-box">
+                <button id="btn-close-htplay" class="htplay-close">✕</button>
+                <h2 data-i18n="howToPlayTitle" style="text-align:center; color: var(--primary); margin-bottom: 1rem;">📖 How to Play</h2>
+                <div id="htplay-content-body" class="htplay-content">
+                    <!-- Content rendered dynamically by ui.js based on i18n language -->
+                </div>
+                <button id="btn-close-htplay-bottom" data-i18n="gotIt" class="btn primary" style="margin-top: 1rem;">Got it!</button>
+            </div>
+        </div>
+
+        <!-- Privacy Policy Modal -->
+        <div id="modal-privacy" class="htplay-modal hidden">
+            <div class="htplay-box">
+                <button id="btn-close-privacy" class="htplay-close">✕</button>
+                <h2 data-i18n="privacyPolicy" style="text-align:center; color: var(--primary); margin-bottom: 1rem;">Privacy Policy</h2>
+                <!-- Content is injected dynamically by ui.js based on build platform -->
+                <div id="privacy-body" class="htplay-content"></div>
+                <button id="btn-close-privacy-bottom" data-i18n="close" class="btn primary" style="margin-top: 1rem;">Close</button>
+            </div>
+        </div>
+
+        <!-- Credits Modal -->
+        <div id="modal-credits" class="htplay-modal hidden">
+            <div class="htplay-box" style="max-width: 480px;">
+                <button id="btn-close-credits" class="htplay-close">✕</button>
+                <h2 data-i18n="credits" style="text-align:center; color: var(--primary); margin-bottom: 1rem;">🎖️ Credits</h2>
+                <div class="htplay-content">
+                    <div class="htplay-section">
+                        <h3>🎵 Music</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="padding: 6px 0; border-bottom: 1px solid var(--surface-light);"><strong>FreeMusicForVideo</strong> <span style="color: var(--text-muted); font-size: 0.85rem;">via Pixabay</span></li>
+                            <li style="padding: 6px 0;"><strong>Universfield</strong> <span style="color: var(--text-muted); font-size: 0.85rem;">via Pixabay</span></li>
+                        </ul>
+                    </div>
+                    <div class="htplay-section">
+                        <h3>🔊 Sound Effects</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="padding: 6px 0; border-bottom: 1px solid var(--surface-light);"><strong>Gavin Mogensen</strong> <span style="color: var(--text-muted); font-size: 0.85rem;">via Pixabay</span></li>
+                            <li style="padding: 6px 0; border-bottom: 1px solid var(--surface-light);"><strong>floraphonic</strong> <span style="color: var(--text-muted); font-size: 0.85rem;">via Pixabay</span></li>
+                            <li style="padding: 6px 0;"><strong>David Dumais</strong> <span style="color: var(--text-muted); font-size: 0.85rem;">via Pixabay</span></li>
+                        </ul>
+                    </div>
+                    <div class="htplay-section">
+                        <h3>🖥️ UI Framework</h3>
+                        <p style="margin: 0;"><strong>Phaser.js</strong></p>
+                    </div>
+                    <div class="htplay-section" style="border-bottom: none;">
+                        <h3>👨‍💻 Developer</h3>
+                        <p style="margin: 0;"><strong>Palash Gajbhiye</strong></p>
+                    </div>
+                </div>
+                <button id="btn-close-credits-bottom" data-i18n="close" class="btn primary" style="margin-top: 1rem;">Close</button>
+            </div>
+        </div>
+
+        <!-- Ad Confirmation Modal -->
+        <div id="modal-ad-confirm" class="htplay-modal hidden">
+            <div class="htplay-box" style="width: 90%; max-width: 350px; text-align: center; padding: 25px;">
+                <button id="btn-close-ad-confirm" class="htplay-close">✕</button>
+                <h2 data-i18n="privateRoom" style="color: var(--primary); margin-bottom: 0.5rem;">Private Room</h2>
+                <div class="htplay-content" style="border: none; background: transparent; padding: 0;">
+                    <p data-i18n="privateRoomReqMsg" style="margin-bottom: 1.5rem; font-size: 1rem; color: var(--text-main);">Watch a short ad to unlock this feature.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <button id="btn-cancel-ad" data-i18n="cancel" class="btn secondary" style="margin-bottom: 0; flex: 1; min-width: 100px;">Cancel</button>
+                        <button id="btn-watch-ad" data-i18n="watchAd" class="btn reward-btn" style="margin-bottom: 0; flex: 1; padding: 13px 10px; font-size: 0.95rem; white-space: nowrap;">Watch Ad 🎬</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Report Player Modal -->
+        <div id="modal-report-player" class="htplay-modal hidden" style="z-index: 1100;">
+            <div class="htplay-box" style="max-width: 400px; text-align: left; padding: 25px;">
+                <button id="btn-close-report" class="htplay-close">✕</button>
+                <h2 data-i18n="reportPlayer" style="text-align: center; color: var(--danger); margin-bottom: 1rem; font-family: var(--font-heading);">🚩 Report Player</h2>
+                
+                <div class="form-box" style="background: transparent; border: none; padding: 0; max-width: none; box-shadow: none; align-items: flex-start;">
+                    <label for="report-select-player" data-i18n="selectPlayer">Player to Report</label>
+                    <select id="report-select-player" style="margin-bottom: 12px; max-width: none;">
+                        <option value="" disabled="" selected="" data-i18n="selectPlayer">Select a player</option>
+                    </select>
+
+                    <label for="report-select-reason" data-i18n="reason">Reason</label>
+                    <select id="report-select-reason" style="margin-bottom: 12px; max-width: none;">
+                        <option value="" disabled="" selected="" data-i18n="selectReason">Select a reason</option>
+                        <option value="toxicity" data-i18n="reasonToxicity">Toxicity / Harassment</option>
+                        <option value="cheating" data-i18n="reasonCheating">Cheating / Teaming</option>
+                        <option value="inappropriate" data-i18n="reasonInappropriate">Inappropriate Name / Avatar</option>
+                        <option value="spam" data-i18n="reasonSpam">Spam / Chat Flood</option>
+                        <option value="other" data-i18n="reasonOther">Other / Trolling</option>
+                    </select>
+
+                    <label for="report-text-details" data-i18n="additionalDetails">Additional Details (Optional)</label>
+                    <textarea id="report-text-details" data-i18n-placeholder="describeHappened" placeholder="Describe what happened..." maxlength="200" style="width: 100%; height: 60px; padding: 10px; border-radius: 8px; border: 1px solid rgba(51, 65, 85, 0.8); background-color: rgba(15, 23, 42, 0.8); color: var(--text-main); font-family: var(--font-body); font-size: 0.9rem; margin-bottom: 12px; resize: none; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='rgba(51, 65, 85, 0.8)'"></textarea>
+
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 15px; width: 100%;">
+                        <input type="checkbox" id="check-block-local" style="width: 16px; height: 16px; cursor: pointer;">
+                        <label for="check-block-local" data-i18n="muteBlockCheck" style="margin-bottom: 0; cursor: pointer; color: var(--text-main); font-weight: 500; font-size: 0.9rem;">Mute &amp; Block this player locally</label>
+                    </div>
+
+                    <div style="background: rgba(15, 23, 42, 0.5); padding: 10px; border-radius: 8px; border: 1px solid rgba(51, 65, 85, 0.4); margin-bottom: 15px; width: 100%;">
+                        <label id="label-report-captcha" style="color: var(--text-main); font-weight: bold; margin-bottom: 6px;">Solve: 5 + 3 = ?</label>
+                        <input type="text" id="input-report-captcha" data-i18n-placeholder="answerPlaceholder" placeholder="Answer" style="margin-bottom: 0; padding: 8px 12px; font-size: 0.95rem; max-width: 120px;">
+                    </div>
+
+                    <p data-i18n="reportNotice" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 15px; border-left: 2px solid var(--danger); padding-left: 8px;">
+                        ⚠️ By submitting this report, a screenshot of the game board and the last 20 chat messages will be uploaded to our moderation database for verification.
+                    </p>
+
+                    <button id="btn-submit-report" data-i18n="submitReport" class="btn primary" style="max-width: none; background: linear-gradient(135deg, var(--danger), #b91c1c); box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4); margin-bottom: 0;">Submit Report</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moderator Panel Modal -->
+        <div id="modal-mod-panel" class="htplay-modal hidden" style="z-index: 1050;">
+            <div class="htplay-box" style="max-width: 700px; width: 95%; text-align: left; padding: 25px;">
+                <button id="btn-close-mod" class="htplay-close">✕</button>
+                <h2 style="text-align: center; color: var(--primary); margin-bottom: 1.5rem; font-family: var(--font-heading);">🛡️ Moderator Tools</h2>
+                
+                <!-- Mod Authentication View -->
+                <div id="mod-auth-view" style="display: flex; flex-direction: column; align-items: center; width: 100%; gap: 10px;">
+                    <p style="text-align: center; color: var(--text-muted); margin-bottom: 10px;">Enter moderator passcodes in sequence to access reports.</p>
+                    <input type="password" id="input-mod-passcode-1" placeholder="Passcode 1" style="text-align: center; font-size: 1.1rem; letter-spacing: 2px; padding: 10px; width: 100%; max-width: 250px; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(51, 65, 85, 0.8); border-radius: 8px; color: white;">
+                    <input type="password" id="input-mod-passcode-2" placeholder="Passcode 2" style="text-align: center; font-size: 1.1rem; letter-spacing: 2px; padding: 10px; width: 100%; max-width: 250px; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(51, 65, 85, 0.8); border-radius: 8px; color: white;">
+                    <input type="password" id="input-mod-passcode-3" placeholder="Passcode 3" style="text-align: center; font-size: 1.1rem; letter-spacing: 2px; padding: 10px; width: 100%; max-width: 250px; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(51, 65, 85, 0.8); border-radius: 8px; color: white;">
+                    <button id="btn-mod-login" class="btn primary" style="max-width: 200px; margin-top: 10px;">Unlock</button>
+                </div>
+
+                <!-- Mod Reports View -->
+                <div id="mod-reports-view" class="hidden" style="width: 100%; display: flex; flex-direction: column; height: 60vh;">
+                    <h3 style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.07); padding-bottom: 5px;">Recent Player Reports</h3>
+                    <div id="mod-reports-list" style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; padding-right: 5px;">
+                        <!-- Report items injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Room Browser -->
+        <div id="screen-browser" class="screen hidden">
+            <h2 data-i18n="publicRooms">Public Rooms</h2>
+            <button id="btn-browser-back" data-i18n="back" class="btn-icon back-btn">Back</button>
+            <div id="room-list" class="scrollable-list">
+                <!-- Room items injected here -->
+            </div>
+        </div>
+
+        <!-- Create Room Screen -->
+        <div id="screen-create" class="screen hidden">
+            <h2 data-i18n="createRoom">Create Room</h2>
+            <button id="btn-create-back" data-i18n="back" class="btn-icon back-btn">Back</button>
+            <div class="form-box">
+                <label><span data-i18n="roomName">Room Name</span> <input type="text" id="input-room-name" data-i18n-placeholder="myRoom" placeholder="My Room" maxlength="20"></label>
+                <label><span data-i18n="maxPlayers">Max Players</span>
+                    <select id="select-max-players">
+                        <option value="4">4 Players</option>
+                        <option value="6">6 Players</option>
+                        <option value="8" selected="">8 Players</option>
+                        <option value="12">12 Players</option>
+                    </select>
+                </label>
+                <div id="pc-only-warning" data-i18n="pcOnlyWarning" class="hidden" style="font-size: 0.85em; color: var(--danger); margin-top: -10px; margin-bottom: 10px;">Rooms with &gt; 10 players are PC only.</div>
+                <label><span data-i18n="gameMode">Game Mode</span>
+                    <select id="select-game-mode">
+                        <option value="fast" selected="" data-i18n="fastMode">⚡ Fast Mode</option>
+                        <option value="normal" data-i18n="normalMode">⏱️ Normal Mode</option>
+                    </select>
+                </label>
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 300px; margin-bottom: 10px; margin-top: 5px;">
+                    <span data-i18n="privateRoom" style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">Private Room</span>
+                    <label class="switch" style="margin-bottom: 0;">
+                        <input type="checkbox" id="check-private">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div id="private-room-req-msg" class="hidden" style="font-size: 0.85em; color: var(--text-muted); margin-bottom: 20px; width: 100%; max-width: 300px; text-align: center;">
+                    Watch a short video to create a Private Room
+                </div>
+                <button id="btn-confirm-create" class="btn primary">Create</button>
+            </div>
+        </div>
+
+        <!-- Join Private Room Screen -->
+        <div id="screen-join" class="screen hidden">
+            <h2 data-i18n="joinRoomTitle">Join Room</h2>
+            <button id="btn-join-back" data-i18n="back" class="btn-icon back-btn">Back</button>
+            <div class="form-box">
+                <input type="text" id="input-join-code" data-i18n-placeholder="enterRoomCode" placeholder="Enter Room Code">
+                <button id="btn-confirm-join" data-i18n="join" class="btn primary">Join</button>
+            </div>
+        </div>
+
+        <!-- Lobby Screen -->
+        <div id="screen-lobby" class="screen hidden">
+            <div class="header-bar">
+                <div class="header-bar-top">
+                    <button id="btn-leave-lobby" data-i18n="leaveLobby" class="btn-icon back-btn">← Leave</button>
+                    <span id="lobby-room-code" class="badge clickable" title="Click to copy invite link" style="cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">Code: ABCD 📋</span>
+                </div>
+                <h2 id="lobby-room-name">Room Name</h2>
+            </div>
+            
+            <!-- Compact Dynamic Settings Ribbon -->
+            <div id="lobby-settings-ribbon" class="lobby-settings-ribbon">
+                <div class="ribbon-item">
+                    <span data-i18n="gameMode" class="ribbon-label">Game Mode:</span>
+                    <span id="lobby-game-mode-val" class="ribbon-value">⚡ Fast Mode</span>
+                </div>
+                <div class="ribbon-item">
+                    <span data-i18n="roomPrivacy" class="ribbon-label">Room Privacy:</span>
+                    <div class="ribbon-control">
+                        <label id="lobby-privacy-toggle-wrapper" class="switch">
+                            <input type="checkbox" id="lobby-privacy-checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="lobby-privacy-val" class="ribbon-value">🔓 Public</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lobby-content">
+                <div class="players-panel">
+                    <h3><span data-i18n="players">Players</span> (<span id="lobby-player-count">1</span>/<span id="lobby-player-max">8</span>)</h3>
+                    <div id="lobby-player-list" class="player-grid">
+                        <!-- Player avatars injected here -->
+                    </div>
+                </div>
+                
+                <div class="chat-panel">
+                    <div id="lobby-chat-messages" class="chat-messages"></div>
+                    <div class="chat-input-area game-bottom-area">
+                        <input type="text" id="lobby-chat-input" data-i18n-placeholder="typeMessage" placeholder="Type a message..." maxlength="100">
+                        <button id="btn-lobby-send" class="btn-square">
+                            <img src="assets/images/icon_send.svg" alt="Send" onerror="this.onerror=null; this.outerHTML='➤';">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lobby-footer">
+                <button id="btn-start-game" data-i18n="startGame" class="btn primary hidden">Start Game</button>
+                <p id="lobby-waiting-text" data-i18n="waitingForHost">Waiting for host to start...</p>
+            </div>
+        </div>
+
+        <!-- In-Game UI Overlay -->
+        <div id="screen-game" class="screen hidden pointer-events-none">
+            
+            <div class="game-layout-container pointer-events-auto">
+
+                <!-- TOP WRAPPER -->
+                <div id="game-top-wrapper" class="bg-day">
+                    <!-- TOP ROW -->
+                    <div class="game-top-area">
+                        <button id="btn-leave-game" class="top-corner-btn left" onclick="if(confirm('Are you sure you want to leave the game?')) window.UI?.leaveRoom()">
+                            <img src="assets/images/icon_leave.svg" alt="Leave" onerror="this.onerror=null; this.outerHTML='🚪';">
+                        </button>
+                        <div class="top-center-stack">
+                            <div id="game-header">
+                                <h2 id="phase-title">Day Phase</h2>
+                                <div id="persistent-role-display" class="hidden"></div>
+                            </div>
+                        </div>
+                        <button id="btn-info-game" class="top-corner-btn right">
+                            <img src="assets/images/icon_info.svg" alt="Info" onerror="this.onerror=null; this.outerHTML='ℹ️';">
+                        </button>
+                    </div>
+                    
+                    <div id="phase-timer">00:00</div>
+                </div>
+
+                <!-- MIDDLE ROW -->
+                <div class="game-middle-area">
+                    <div id="players-left" class="players-column"></div>
+                    <div class="game-center">
+                        <div id="game-chat-messages" class="chat-messages"></div>
+                    </div>
+                    <div id="players-right" class="players-column"></div>
+                </div>
+
+                <!-- BOTTOM ROW -->
+                <div class="game-bottom-area">
+                    <button id="btn-emote" class="btn-square">
+                        <img src="assets/images/icon_emote.svg" alt="Emote" onerror="this.onerror=null; this.outerHTML='😀';">
+                    </button>
+                    <input type="text" id="game-chat-input" data-i18n-placeholder="discuss" placeholder="Discuss..." maxlength="100">
+                    <button id="btn-game-send" class="btn-square">
+                        <img src="assets/images/icon_send.svg" alt="Send" onerror="this.onerror=null; this.outerHTML='➤';">
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Role Card (3D Flip Animation) -->
+            <div id="role-card-modal" class="modal hidden pointer-events-auto">
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="role-card-inner">
+                        <div class="flip-card-front">
+                            <!-- Show back of card initially -->
+                            <img src="assets/images/card_back.webp" alt="Card Back" onerror="this.src=''; this.style.backgroundColor='#333';">
+                        </div>
+                        <div class="flip-card-back">
+                            <!-- Replace src dynamically -->
+                            <img id="role-card-img" src="" alt="Role" onerror="this.src=''; this.style.backgroundColor='#111';" style="background-color: rgb(17, 17, 17);">
+                            <h1 id="role-card-title">Villager</h1>
+                            <p id="role-card-desc">Find the werewolves.</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn-close-role" data-i18n="gotIt" class="btn primary mt-3 hidden">Got it</button>
+            </div>
+
+            <!-- Death Card Animation Modal -->
+            <div id="death-card-modal" class="modal hidden pointer-events-auto" style="z-index: 200;">
+                <h1 id="death-card-header" data-i18n="playerDied" style="color: red; text-shadow: 2px 2px 4px black; margin-bottom: 20px;">PLAYER DIED</h1>
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="death-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/images/card_back.webp" alt="Card Back" onerror="this.src=''; this.style.backgroundColor='#333';">
+                        </div>
+                        <div class="flip-card-back" style="position: relative;">
+                            <img id="death-card-img" style="filter: grayscale(100%); background-color: rgb(17, 17, 17);" src="" alt="Role" onerror="this.src=''; this.style.backgroundColor='#111';">
+                            <div id="death-card-scratch" class="death-scratch hidden"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="btn-skip-action" data-i18n="skipAction" class="btn secondary hidden pointer-events-auto" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 100;">Skip Action</button>
+        </div>
+
+        <!-- Results / End Game -->
+        <div id="screen-results" class="screen hidden">
+            <h1 id="results-title">Villagers Win!</h1>
+            <div id="results-content"></div>
+            <button id="btn-return-lobby" data-i18n="returnToLobby" class="btn primary">Return to Lobby</button>
+        </div>
+
+        <!-- Ban Lockout Screen -->
+        <div id="screen-banned" class="screen hidden" style="background: linear-gradient(185deg, #111, #020202); z-index: 99999; pointer-events: auto;">
+            <h1 data-i18n="accountSuspended" style="color: var(--danger); font-family: var(--font-heading); font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 900; margin-bottom: 1.5rem; text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);">🚫 Account Suspended</h1>
+            <div class="menu-box" style="max-width: 450px; border-color: rgba(239, 68, 68, 0.3); background: rgba(20, 10, 10, 0.8);">
+                <p data-i18n="bannedNotice" style="font-size: 1.1rem; margin-bottom: 15px; color: var(--text-main); text-align: center;">Your access to Werewolf Classic has been suspended due to community guidelines violation.</p>
+                <div style="background: rgba(0,0,0,0.5); padding: 15px; border-radius: 8px; border: 1px solid rgba(239, 68, 68, 0.2); width: 100%; margin-bottom: 20px; text-align: left;">
+                    <p style="margin-bottom: 8px; font-size: 0.9rem; color: var(--text-muted);"><span data-i18n="reasonLabel">Reason:</span> <strong id="ban-reason-text" style="color: var(--text-main);">Spreading hate / toxicity</strong></p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);"><span data-i18n="suspendedUntil">Suspended until:</span> <strong id="ban-until-text" style="color: var(--text-main);">Loading...</strong></p>
+                </div>
+                <p data-i18n="contactSupport" style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">If you believe this is an error, please contact support.</p>
+            </div>
+        </div>
+
+        <!-- Custom Context Menu for Player Cards -->
+        <div id="player-context-menu" class="hidden" style="position: fixed; z-index: 2000; background: var(--bg-panel); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); padding: 5px; width: 160px; pointer-events: auto;">
+            <button class="context-menu-item" id="btn-context-report" style="width: 100%; text-align: left; padding: 8px 10px; background: transparent; border: none; color: white; cursor: pointer; border-radius: 4px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background='transparent'">
+                <span>🚩</span> <span data-i18n="reportPlayer">Report Player</span>
+            </button>
+            <button class="context-menu-item" id="btn-context-block" style="width: 100%; text-align: left; padding: 8px 10px; background: transparent; border: none; color: white; cursor: pointer; border-radius: 4px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background='transparent'">
+                <span>🚫</span> <span data-i18n="muteAndBlock">Mute &amp; Block</span>
+            </button>
+            <button class="context-menu-item hidden" id="btn-context-kick" style="width: 100%; text-align: left; padding: 8px 10px; background: transparent; border: none; color: var(--danger); cursor: pointer; border-radius: 4px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;" onmouseover="this.style.background='rgba(239,68,68,0.15)'" onmouseout="this.style.background='transparent'">
+                <span>🚪</span> <span data-i18n="kickPlayer">Kick Player</span>
+            </button>
+        </div>
+
+        <!-- Notification Toast -->
+        <div id="toast-container" class="pointer-events-auto"></div>
+    </div>
+
+    <!-- Scripts -->
+
+
+
+
+</body></html>
