@@ -1,0 +1,8 @@
+body{
+    background-image: url(./lawn3.jpg);
+}
+canvas {
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
