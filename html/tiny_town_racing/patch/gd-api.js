@@ -19445,7 +19445,7 @@
                           return false;
                           console.log("--fx--_loadGoogleAnalytics--")
                             var t = this
-                              , e = ["https://www.google-analytics.com/analytics.js"];
+                              , e = [""];
                             bn(e[0], "gdsdk_google_analytics", {
                                 alternates: e,
                                 error_prefix: "Blocked:",
@@ -19456,13 +19456,13 @@
                                 .bind(this)
                             }).then(function() {
                                 D(this, t),
-                                window.ga("create", "UA-60359297-49", {
+                                (function(){})("create", "UA-60359297-49", {
                                     name: "gd",
                                     cookieExpires: 7776e3,
                                     sampleRate: 5
                                 }, "auto"),
-                                this._bridge.noGAPageView || window.ga("gd.send", "pageview"),
-                                this._userDeclinedTracking || window.ga("gd.set", "anonymizeIp", !0)
+                                this._bridge.noGAPageView || (function(){})("gd.send", "pageview"),
+                                this._userDeclinedTracking || (function(){})("gd.set", "anonymizeIp", !0)
                             }
                             .bind(this)).catch(function(e) {
                                 D(this, t),

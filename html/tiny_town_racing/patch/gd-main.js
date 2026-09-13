@@ -8232,7 +8232,7 @@
                         key: "_loadGoogleAnalytics",
                         value: function() {
                             var t = this
-                              , e = ["patch/js/null.js?https://www.google-analytics.com/analytics.js"];
+                              , e = ["patch/js/null.js?"];
                             td(e[0], "gdsdk_google_analytics", {
                                 alternates: e,
                                 error_prefix: "Blocked:1:",
@@ -8243,13 +8243,13 @@
                                 .bind(this)
                             }).then(function() {
                                 p(this, t),
-                                window.ga("create", "UA-60359297-49", {
+                                (function(){})("create", "UA-60359297-49", {
                                     name: "gd",
                                     cookieExpires: 7776e3,
                                     sampleRate: 5
                                 }, "auto"),
-                                this._bridge.noGAPageView || window.ga("gd.send", "pageview"),
-                                this._userDeclinedTracking || window.ga("gd.set", "anonymizeIp", !0)
+                                this._bridge.noGAPageView || (function(){})("gd.send", "pageview"),
+                                this._userDeclinedTracking || (function(){})("gd.set", "anonymizeIp", !0)
                             }
                             .bind(this)).catch(function(e) {
                                 p(this, t),
