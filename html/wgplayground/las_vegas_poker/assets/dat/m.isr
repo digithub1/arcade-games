@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+	<languages>
+		<language>en</language>
+		<language>sk</language>
+		<language>es</language>
+		<language>de</language>
+		<language>fr</language>
+		<language>pt</language>
+		<language>it</language>
+	</languages>
+	<strings>
+		<string id="1" index="0">
+			<en>en</en>
+			<sk>sk</sk>
+			<es>es</es>
+			<de>de</de>
+			<fr>fr</fr>
+			<pt>pt</pt>
+			<it>it</it>
+		</string>
+		<string id="10" index="8">
+			<en>VERSION</en>
+			<sk>VERZIA</sk>
+			<es>VERSIÓN</es>
+			<de>VERSION</de>
+			<fr>VERSION</fr>
+			<pt>VERSÃO</pt>
+			<it>VERSIONE</it>
+			<ru>ВЕРСИЯ</ru>
+		</string>
+		<string id="PLAYER" index="35">
+			<en>PLAYER</en>
+			<sk/>
+			<es>JUGADOR</es>
+			<de>SPIELER</de>
+			<fr>JOUEUR</fr>
+			<pt>JOGADOR</pt>
+			<it>GIOCATORE</it>
+			<ru>ИГРОК</ru>
+		</string>
+		<string id="35" index="37">
+			<en>HANDS</en>
+			<sk/>
+			<es>MANOS</es>
+			<de>PARTIEN</de>
+			<fr>MAINS</fr>
+			<pt>MÃOS</pt>
+			<it>MANI</it>
+			<ru>РАЗДАЧ</ru>
+		</string>
+		<string id="POT" index="38">
+			<en>POT</en>
+			<sk>POT long</sk>
+			<es>EL BOTE</es>
+			<de>DER POT</de>
+			<fr>LE POT</fr>
+			<pt>O POTE</pt>
+			<it>PIATTO</it>
+			<ru>БАНК</ru>
+		</string>
+		<string id="37" index="39">
+			<en>POT</en>
+			<sk>POT short</sk>
+			<es>BOTE</es>
+			<de>POT</de>
+			<fr>POT</fr>
+			<pt>POTE</pt>
+			<it>POT</it>
+			<ru>БАНК</ru>
+		</string>
+		<string id="38" index="40">
+			<en>YOU</en>
+			<sk/>
+			<es>USTED</es>
+			<de>DU</de>
+			<fr>TU</fr>
+			<pt>VOCÊ</pt>
+			<it>TU</it>
+			<ru>ВЫ</ru>
+		</string>
+		<string id="FOLD" index="48">
+			<en>FOLD</en>
+			<sk/>
+			<es>FOLD</es>
+			<de>FOLD</de>
+			<fr>FOLD</fr>
+			<pt>FOLD</pt>
+			<it>FOLD</it>
+			<ru>СКИНУТЬ</ru>
+		</string>
+		<string id="CHECK" index="49">
+			<en>CHECK</en>
+			<sk/>
+			<es>CHECK</es>
+			<de>CHECK</de>
+			<fr>CHECK</fr>
+			<pt>CHECK</pt>
+			<it>CHECK</it>
+			<ru>ПРОПУСТИТЬ</ru>
+		</string>
+		<string id="BET" index="50">
+			<en>BET</en>
+			<sk/>
+			<es>BET</es>
+			<de>BET</de>
+			<fr>BET</fr>
+			<pt>BET</pt>
+			<it>BET</it>
+			<ru>ПОСТАВИТЬ</ru>
+		</string>
+		<string id="CALL" index="51">
+			<en>CALL</en>
+			<sk/>
+			<es>CALL</es>
+			<de>CALL</de>
+			<fr>CALL</fr>
+			<pt>CALL</pt>
+			<it>CALL</it>
+			<ru>УРАВНЯТЬ</ru>
+		</string>
+		<string id="RAISE" index="52">
+			<en>RAISE</en>
+			<sk/>
+			<es>RAISE</es>
+			<de>RAISE</de>
+			<fr>RAISE</fr>
+			<pt>RAISE</pt>
+			<it>RAISE</it>
+			<ru>ПОВЫСИТЬ</ru>
+		</string>
+		<string id="ALL_IN" index="53">
+			<en>ALL IN</en>
+			<sk/>
+			<es>ALL IN</es>
+			<de>ALL IN</de>
+			<fr>ALL IN</fr>
+			<pt>ALL IN</pt>
+			<it>ALL IN</it>
+			<ru>ВА-БАНК</ru>
+		</string>
+		<string id="60" index="55">
+			<en>CHOOSE THE NUMBER OF THE OPPONENTS</en>
+			<sk/>
+			<es>ELIGE EL NÚMERO DE RIVALES</es>
+			<de>WÄHLE DIE ZAHL DER GEGNER</de>
+			<fr>CHOISISSEZ LE NOMBRE DES ADVERSAIRES</fr>
+			<pt>ESCOLHA O NÚMERO DE OPONENTES</pt>
+			<it>SCEGLI IL NUMERO DEGLI AVVERSARI</it>
+			<ru>ВЫБЕРИТЕ КОЛИЧЕСТВО ИГРОКОВ</ru>
+		</string>
+		<string id="61" index="56">
+			<en>CHOOSE BLINDS</en>
+			<sk/>
+			<es>ELIGE APUESTAS A CIEGAS</es>
+			<de>WÄHLE DIE EINSÄTZE</de>
+			<fr>CHOISISSEZ LES BLINDS</fr>
+			<pt>ESCOLHA APOSTAS CEGAS</pt>
+			<it>SCEGLI I BUI</it>
+			<ru>ВЫБЕРИТЕ "СЛЕПУЮ" СТАВКУ</ru>
+		</string>
+		<string id="62" index="57">
+			<en>WIN</en>
+			<sk>(oni) vyhravaju</sk>
+			<es>GANAN</es>
+			<de>GEWINNEN</de>
+			<fr>REMPORTENT</fr>
+			<pt>GANHAR</pt>
+			<it>VINCONO</it>
+			<ru>ВЫИГРЫШ</ru>
+		</string>
+		<string id="WINS" index="58">
+			<en>WINS</en>
+			<sk>(on) vyhrava</sk>
+			<es>GANA</es>
+			<de>GEWINNT</de>
+			<fr>REMPORTE</fr>
+			<pt>GANHA</pt>
+			<it>VINCE</it>
+			<ru>ВЫИГРАЛ</ru>
+		</string>
+		<string id="64" index="59">
+			<en>WIN THE GAME!</en>
+			<sk>(oni) vyhravaju hru</sk>
+			<es>GANAN LA PARTIDA!</es>
+			<de>GEWINNEN DAS SPIEL!</de>
+			<fr>REMPORTENT LA PARTIE!</fr>
+			<pt>GANHAR O JOGO!</pt>
+			<it>VINCONO LA PARTITA!</it>
+			<ru>ВЫИГРЫВАЕТ ИГРУ!</ru>
+		</string>
+		<string id="WINS_THE_GAME" index="60">
+			<en>WINS THE GAME!</en>
+			<sk>(on) vyhrava hru</sk>
+			<es>GANA LA PARTIDA!</es>
+			<de>GEWINNT DAS SPIEL!</de>
+			<fr>REMPORTE LA PARTIE!</fr>
+			<pt>GANHA O JOGO!</pt>
+			<it>VINCE LA PARTITA!</it>
+			<ru>ВЫИГРЫВАЕТ ИГРУ!</ru>
+		</string>
+		<string id="LOSES_THE_GAME" index="61">
+			<en>LOSES THE GAME!</en>
+			<sk>(on) prehrava hru</sk>
+			<es>PIERDE LA PARTIDA!</es>
+			<de>VERLIERT DAS SPIEL!</de>
+			<fr>PERDANT LA PARTIE!</fr>
+			<pt>PERDE O JOGO!</pt>
+			<it>PERDE LA PARTITA!</it>
+			<ru>ПРОИГРЫВАЕТ ИГРУ!</ru>
+		</string>
+		<string id="660000" index="62">
+			<en>LOSE THE GAME!</en>
+			<sk>x</sk>
+			<es>PIERDE LA PARTIDA!</es>
+			<de>VERLIERT DAS SPIEL!</de>
+			<fr>PERDANT LA PARTIE!</fr>
+			<pt>PERDE O JOGO!</pt>
+			<it>PERDONO LA PARTITA!</it>
+			<ru>ИГРА ПРОИГРАНА!</ru>
+		</string>
+		<string id="67" index="63">
+			<en>WITH KICKER</en>
+			<sk>s kicker kartou ...</sk>
+			<es>CON LA CARTA KICKER</es>
+			<de>MIT EINEM KICKER</de>
+			<fr>AVEC KICKER</fr>
+			<pt>COM KICKER</pt>
+			<it>CON IL KICKER</it>
+			<ru>С КИКЕРОМ</ru>
+		</string>
+		<string id="68" index="64">
+			<en>AND</en>
+			<sk/>
+			<es>Y</es>
+			<de>UND</de>
+			<fr>ET</fr>
+			<pt>E</pt>
+			<it>E</it>
+			<ru>И</ru>
+		</string>
+		<string id="69" index="65">
+			<en/>
+			<sk>inverted exclamation mark (only ES)</sk>
+			<es>¡</es>
+			<de/>
+			<fr/>
+			<pt/>
+			<it/>
+		</string>
+		<string id="80" index="68">
+			<en>ACE</en>
+			<sk/>
+			<es>AS</es>
+			<de>ASS</de>
+			<fr>AS</fr>
+			<pt>ÁS</pt>
+			<it>ASSO</it>
+			<ru>ТУЗ</ru>
+		</string>
+		<string id="81" index="69">
+			<en>TWO</en>
+			<sk/>
+			<es>DOS</es>
+			<de>ZWEI</de>
+			<fr>DEUX</fr>
+			<pt>DOIS</pt>
+			<it>DUE</it>
+			<ru>ДВОЙКА</ru>
+		</string>
+		<string id="82" index="70">
+			<en>THREE</en>
+			<sk/>
+			<es>TRES</es>
+			<de>DREI</de>
+			<fr>TROIS</fr>
+			<pt>TRÊS</pt>
+			<it>TRE</it>
+			<ru>ТРОЙКА</ru>
+		</string>
+		<string id="83" index="71">
+			<en>FOUR</en>
+			<sk/>
+			<es>CUATRO</es>
+			<de>VIER</de>
+			<fr>QUATRE</fr>
+			<pt>QUATRO</pt>
+			<it>QUATTRO</it>
+			<ru>ЧЕТВЁРКА</ru>
+		</string>
+		<string id="84" index="72">
+			<en>FIVE</en>
+			<sk/>
+			<es>CINCO</es>
+			<de>FÜNF</de>
+			<fr>CINQ</fr>
+			<pt>CINCO</pt>
+			<it>CINQUE</it>
+			<ru>ПЯТЁРКА</ru>
+		</string>
+		<string id="85" index="73">
+			<en>SIX</en>
+			<sk/>
+			<es>SEIS</es>
+			<de>SECHS</de>
+			<fr>SIX</fr>
+			<pt>SEIS</pt>
+			<it>SEI</it>
+			<ru>ШЕСТЁРКА</ru>
+		</string>
+		<string id="86" index="74">
+			<en>SEVEN</en>
+			<sk/>
+			<es>SIETE</es>
+			<de>SIEBEN</de>
+			<fr>SEPT</fr>
+			<pt>SETE</pt>
+			<it>SETTE</it>
+			<ru>СЕМЕРКА</ru>
+		</string>
+		<string id="87" index="75">
+			<en>EIGHT</en>
+			<sk/>
+			<es>OCHO</es>
+			<de>ACHT</de>
+			<fr>HUIT</fr>
+			<pt>OITO</pt>
+			<it>OTTO</it>
+			<ru>ВОСЬМЕРКА</ru>
+		</string>
+		<string id="88" index="76">
+			<en>NINE</en>
+			<sk/>
+			<es>NUEVE</es>
+			<de>NEUN</de>
+			<fr>NEUF</fr>
+			<pt>NOVE</pt>
+			<it>NOVE</it>
+			<ru>ДЕВЯТКА</ru>
+		</string>
+		<string id="89" index="77">
+			<en>TEN</en>
+			<sk/>
+			<es>DIEZ</es>
+			<de>ZEHN</de>
+			<fr>DIX</fr>
+			<pt>DEZ</pt>
+			<it>DIECI</it>
+			<ru>ДЕСЯТКА</ru>
+		</string>
+		<string id="90" index="78">
+			<en>JACK</en>
+			<sk/>
+			<es>JOTA</es>
+			<de>BUBE</de>
+			<fr>VALET</fr>
+			<pt>VALETE</pt>
+			<it>FANTE</it>
+			<ru>ВАЛЕТ</ru>
+		</string>
+		<string id="91" index="79">
+			<en>QUEEN</en>
+			<sk/>
+			<es>DAMA</es>
+			<de>DAME</de>
+			<fr>REINE</fr>
+			<pt>DAMA</pt>
+			<it>REGINA</it>
+			<ru>ДАМА</ru>
+		</string>
+		<string id="92" index="80">
+			<en>KING</en>
+			<sk/>
+			<es>REY</es>
+			<de>KÖNIG</de>
+			<fr>ROI</fr>
+			<pt>REI</pt>
+			<it>RE</it>
+			<ru>КОРОЛЬ</ru>
+		</string>
+		<string id="HIGH_CARD" index="82">
+			<en>HIGH</en>
+			<sk/>
+			<es>HIGH</es>
+			<de>HIGH</de>
+			<fr>HIGH</fr>
+			<pt>HIGH</pt>
+			<it>HIGH</it>
+			<ru>СТАРШАЯ КАРТА</ru>
+		</string>
+		<string id="PAIR" index="83">
+			<en>ONE PAIR</en>
+			<sk/>
+			<es>PAREJA</es>
+			<de>EIN PAAR</de>
+			<fr>UNE PAIRE</fr>
+			<pt>ONE PAIR</pt>
+			<it>COPPIA</it>
+			<ru>ОДНА ПАРА</ru>
+		</string>
+		<string id="TWO_PAIR" index="84">
+			<en>TWO PAIR</en>
+			<sk/>
+			<es>DOBLE PAREJA</es>
+			<de>ZWEI PAARE</de>
+			<fr>DEUX PAIRES</fr>
+			<pt>TWO PAIR</pt>
+			<it>DOPPIA COPPIA</it>
+			<ru>ДВЕ ПАРЫ</ru>
+		</string>
+		<string id="THREE_OF_A_KIND" index="85">
+			<en>THREE OF A KIND</en>
+			<sk/>
+			<es>TRÍO</es>
+			<de>DRILLING</de>
+			<fr>BRELAN</fr>
+			<pt>THREE OF A KIND</pt>
+			<it>TRIS</it>
+			<ru>СЕТ</ru>
+		</string>
+		<string id="STRAIGHT" index="86">
+			<en>STRAIGHT</en>
+			<sk/>
+			<es>ESCALERA</es>
+			<de>STRASSE</de>
+			<fr>SUITE</fr>
+			<pt>STRAIGHT</pt>
+			<it>SCALA</it>
+			<ru>СТРИТ</ru>
+		</string>
+		<string id="105" index="87">
+			<en>FLUSH</en>
+			<sk/>
+			<es>COLOR</es>
+			<de>FLUSH</de>
+			<fr>COULEUR</fr>
+			<pt>FLUSH</pt>
+			<it>COLORE</it>
+			<ru>ФЛЭШ</ru>
+		</string>
+		<string id="FULL_HOUSE" index="88">
+			<en>FULL HOUSE</en>
+			<sk/>
+			<es>FULL</es>
+			<de>FULL HOUSE</de>
+			<fr>MAIN PLEINE</fr>
+			<pt>FULL HOUSE</pt>
+			<it>FULL</it>
+			<ru>ФУЛЛ-ХАУС</ru>
+		</string>
+		<string id="107" index="89">
+			<en>FOUR OF A KIND</en>
+			<sk/>
+			<es>PÓQUER</es>
+			<de>VIERLING</de>
+			<fr>CARRÉ</fr>
+			<pt>FOUR OF A KIND</pt>
+			<it>POKER</it>
+			<ru>КАРЕ</ru>
+		</string>
+		<string id="STRAIGHT_FLUSH" index="90">
+			<en>STRAIGHT FLUSH</en>
+			<sk/>
+			<es>ESCALERA DE COLOR</es>
+			<de>STRAIGHT FLUSH</de>
+			<fr>QUINTE-COULEUR</fr>
+			<pt>STRAIGHT FLUSH</pt>
+			<it>SCALA A COLORE</it>
+			<ru>СТРИТ-ФЛЭШ</ru>
+		</string>
+		<string id="ROYAL_FLUSH" index="91">
+			<en>ROYAL FLUSH</en>
+			<sk/>
+			<es>ESCALERA REAL</es>
+			<de>ROYAL FLUSH</de>
+			<fr>QUINTE ROYALE</fr>
+			<pt>ROYAL FLUSH</pt>
+			<it>SCALA REALE</it>
+			<ru>РОЯЛ-ФЛЭШ</ru>
+		</string>
+		<string id="110" index="93">
+			<en>LEVEL</en>
+			<sk/>
+			<es>NIVEL</es>
+			<de>LEVEL</de>
+			<fr>NIVEAU</fr>
+			<pt>NÍVEL</pt>
+			<it>LIVELLO</it>
+			<ru>УРОВЕНЬ</ru>
+		</string>
+		<string id="111" index="94">
+			<en>XP</en>
+			<sk/>
+			<es>EXP</es>
+			<de>XP</de>
+			<fr>XP</fr>
+			<pt>EXP</pt>
+			<it>XP</it>
+			<ru>ОПЫТ</ru>
+		</string>
+		<string id="112" index="95">
+			<en>GAMES PLAYED</en>
+			<sk/>
+			<es>PARTIDAS JUGADAS</es>
+			<de>GESPIELTE SPIELE</de>
+			<fr>PARTIES JOUÉES</fr>
+			<pt>JOGOS JOGADOS</pt>
+			<it>PARTITE GIOCATE</it>
+			<ru>СЫГРАНО ИГР</ru>
+		</string>
+		<string id="113" index="96">
+			<en>GAMES WON</en>
+			<sk/>
+			<es>PARTIDAS GANADAS</es>
+			<de>GEWONNENE SPIELE</de>
+			<fr>PARTIES REMPORTÉES</fr>
+			<pt>JOGOS GANHOS</pt>
+			<it>PARTITE VINTE</it>
+			<ru>ВЫИГРАНО ИГР</ru>
+		</string>
+		<string id="114" index="97">
+			<en>HANDS PLAYED</en>
+			<sk/>
+			<es>MANOS JUGADAS</es>
+			<de>GESPIELTE HÄNDE</de>
+			<fr>MAINS JOUÉES</fr>
+			<pt>MÃOS JOGADOS</pt>
+			<it>MANI GIOCATE</it>
+			<ru>РАЗДАЧ СЫГРАНО</ru>
+		</string>
+		<string id="115" index="98">
+			<en>HANDS WON</en>
+			<sk/>
+			<es>MANOS GANADAS</es>
+			<de>GEWONNENE HÄNDE</de>
+			<fr>MAINS REMPORTÉES</fr>
+			<pt>MÃOS GANHAS</pt>
+			<it>MANI VINTE</it>
+			<ru>РАЗДАЧ ВЫИГРАНО</ru>
+		</string>
+		<string id="116" index="99">
+			<en>MOST HANDS WON IN A ROW</en>
+			<sk>x</sk>
+			<es/>
+			<de/>
+			<fr/>
+			<pt/>
+			<it/>
+			<ru>РАЗДАЧ ВЫИГРАНО ПОДРЯД</ru>
+		</string>
+		<string id="117" index="100">
+			<en>BIGGEST WIN</en>
+			<sk/>
+			<es>MAYOR GANANCIA</es>
+			<de>GRÖSSTER SIEG</de>
+			<fr>PLUS GROS GAIN</fr>
+			<pt>GANHO MAIOR</pt>
+			<it>VINCITA PIÙ GRANDE</it>
+			<ru>НАИБОЛЬШИЙ ВЫИГРЫШ</ru>
+		</string>
+		<string id="118" index="101">
+			<en>TIME PLAYED</en>
+			<sk/>
+			<es>TIEMPO JUGADO</es>
+			<de>GESPIELTE ZEIT</de>
+			<fr>TEMPS DE JEU</fr>
+			<pt>TEMPO DE JOGO</pt>
+			<it>TEMPO GIOCATO</it>
+			<ru>СЫГРАНО РАЗ</ru>
+		</string>
+		<string id="119" index="102">
+			<en>ACHIEVEMENTS</en>
+			<sk/>
+			<es>LOGROS</es>
+			<de>ERFOLGE</de>
+			<fr>SUCCÈS</fr>
+			<pt>FEITOS</pt>
+			<it>OBIETTIVI</it>
+			<ru>ДОСТИЖЕНИЯ</ru>
+		</string>
+		<string id="120" index="103">
+			<en>WIN WITH</en>
+			<sk/>
+			<es>GANAR CON</es>
+			<de>GEWINNE MIT</de>
+			<fr>GAGNEZ AVEC</fr>
+			<pt>GANHAR COM</pt>
+			<it>VINCI CON</it>
+			<ru>ВЫИГРАНО С</ru>
+		</string>
+		<string id="1210000" index="104">
+			<en>WON IN A ROW</en>
+			<sk>x</sk>
+			<es>GANADAS/-OS EN FILA</es>
+			<de>NACHEINANDER GEWONNEN</de>
+			<fr>REMPORTÉES À LA SUITE</fr>
+			<pt>VENCIDAS/-OS EM UMA LINHA</pt>
+			<it>VITTORIE CONSECUTIVE OTTENUTE</it>
+			<ru>ВЫИГРАНО ПОДРЯД</ru>
+		</string>
+		<string id="121" index="105">
+			<en>WINS IN A ROW</en>
+			<sk/>
+			<es>VICTORIAS SEGUIDAS</es>
+			<de>SIEGE HINTEREINANDER</de>
+			<fr>VICTOIRES CONSÉCUTIFS</fr>
+			<pt>GANHA EM UMA FILEIRA</pt>
+			<it>VITTORIE CONSECUTIVE</it>
+			<ru>ВЫИГРАНО ПОДРЯД</ru>
+		</string>
+		<string id="122" index="106">
+			<en>SELECT YOUR CHARACTER</en>
+			<sk/>
+			<es>SELECCIONA TU PERSONAJE</es>
+			<de>WÄHLE DEINEN CHARAKTER</de>
+			<fr>SÉLECTIONNER PERSONNAGE</fr>
+			<pt>ESCOLHE O TEU PERSONAGEM</pt>
+			<it>SELEZIONA IL PERSONAGGIO</it>
+			<ru>ВЫБЕРИТЕ ВАШЕГО ПЕРСОНАЖА</ru>
+		</string>
+		
+		<string id="PLAY" index="13">
+			<en>PLAY</en>
+			<de>SPIELEN</de>
+			<es>JUGAR</es>
+			<fr>JOUER</fr>
+			<it>GIOCA</it>
+			<pt>JOGAR</pt>
+			<ru>ИГРА</ru>
+		</string>
+		<string id="TOURNAMENTS" index="106">
+			<en>Tournaments</en>
+			<de>Turniere</de>
+			<es>Torneos</es>
+			<fr>Tournois</fr>
+			<it>Tornei</it>
+			<pt>Torneios</pt>
+			<ru>Турниры</ru>
+		</string>
+		<string id="OPEN_PLAY" index="106">
+			<en>Open play</en>
+			<de>Offenes Spiel</de>
+			<es>Juego abierto</es>
+			<fr>Jeu ouvert</fr>
+			<it>Gioco aperto</it>
+			<pt>Jogo aberto</pt>
+			<ru>Открытая игра</ru>
+		</string>
+		<string id="OPEN_PLAY_H" index="106">
+			<en>Open poker game</en>
+			<de>Öffnen Sie das Pokerspiel</de>
+			<es>Abre el juego de póker</es>
+			<fr>Ouvrez une partie de poker</fr>
+			<it>Aprire il gioco del poker</it>
+			<pt>Jogo de pôquer aberto</pt>
+			<ru>Откройте игру в покер</ru>
+		</string>
+		<string id="TOURNAMENTS_WON" index="106">
+			<en>Tournaments won:</en>
+			<de>Gewonnene Turniere:</de>
+			<es>Torneos ganados:</es>
+			<fr>JTournois gagnés:</fr>
+			<it>Tornei vinti:</it>
+			<pt>Torneios ganhos:</pt>
+			<ru>Выигранные турниры:</ru>
+		</string>
+		<string id="MAX_PL" index="106">
+			<en>Max number of players</en>
+			<de>Maximale Anzahl von Spielern</de>
+			<es>Número máximo de jugadores</es>
+			<fr>Nombre maximal de joueurs</fr>
+			<it>Numero massimo di giocatori</it>
+			<pt>Número máximo de jogadores</pt>
+			<ru>Максимальное количество игроков</ru>
+		</string>
+		<string id="BUY_IN" index="106">
+			<en>Buy in: </en>
+			<de>Einkaufen: </de>
+			<es>Compra: </es>
+			<fr>Achat de parts: </fr>
+			<it>Acquisto: </it>
+			<pt>Comprar em: </pt>
+			<ru>Приобретение: </ru>
+		</string>
+		<string id="PRICE_POOL" index="106">
+			<en>Prize pool: </en>
+			<de>Preispool: </de>
+			<es>Bolsa de premios: </es>
+			<fr>Cagnotte: </fr>
+			<it>Montepremi: </it>
+			<pt>Pool de prêmios: </pt>
+			<ru>Призовой фонд: </ru>
+		</string>
+		<string id="TOTAL_HEADER" index="106">
+			<en>Total: </en>
+			<de>Gesamt: </de>
+			<es>Total: </es>
+			<fr>Total: </fr>
+			<it>Totale: </it>
+			<pt>Total: </pt>
+			<ru>Итого: </ru>
+		</string>
+		<string id="DAILY" index="106">
+			<en>Daily Reward </en>
+			<de>Tagesbelohnung</de>
+			<es>Recompensa diaria</es>
+			<fr>Récompense quotidienne</fr>
+			<it>Ricompensa giornaliera</it>
+			<pt>Recompensa diária</pt>
+			<ru>Ежедневная награда</ru>
+		</string>
+		<string id="BLIND" index="106">
+			<en>Blind</en>
+			<de>Blind</de>
+			<es>Ciega</es>
+			<fr>Blind</fr>
+			<it>Buio</it>
+			<pt>APOSTA CEGA</pt>
+			<ru>Блайнд</ru>
+		</string>
+		<string id="CLAIM" index="106">
+			<en>Claim</en>
+			<de>Abholen</de>
+			<es>Canjear</es>
+			<fr>Réclamer</fr>
+			<it>Riscuoti</it>
+			<pt>Reivindicar</pt>
+			<ru>ПОЛУЧИТЬ</ru>
+		</string>
+		<string id="UNLOCK" index="106">
+			<en>Win(X)tournaments</en>
+			<de>Gewinne (X) Turniere</de>
+			<es>Ganar (X) torneos</es>
+			<fr>Gagner (X) tournois</fr>
+			<it>Vincere (X) tornei</it>
+			<pt>Ganhar (X) torneios</pt>
+			<ru>Выиграть (X) турниров</ru>
+		</string>
+		<string id="SMALL_BLIND" index="106">
+			<en>SMALL BLIND</en>
+			<de>SMALL BLIND</de>
+			<es>CIEGA PEQUEÑA</es>
+			<fr>GROSSE BLIND</fr>
+			<it>PICCOLO BUIO</it>
+			<pt>APOSTA CEGA PEQUENA</pt>
+			<ru>Малый блайнд</ru>
+		</string>
+		<string id="BIG_BLIND" index="106">
+			<en>BIG BLIND</en>
+			<de>BIG BLIND</de>
+			<es>CIEGA GRANDE</es>
+			<fr>PETITE BLIND</fr>
+			<it>GRANDE BUIO</it>
+			<pt>APOSTA CEGA GRANDE</pt>
+			<ru>Большой блайнд</ru>
+		</string>
+		<string id="ROYAL_FLUSH">
+			<en>ROYAL FLUSH</en>
+			<de>ROYAL FLUSH</de>
+			<es>ESCALERA REAL</es>
+			<fr>QUINTE FLUSH ROYALE</fr>
+			<it>SCALA REALE</it>
+			<pt>ROYAL FLUSH</pt>
+			<ru>Флеш-рояль</ru>
+		</string>
+			<string id="STRAIGHT_FLUSH">
+			<en>STRAIGHT FLUSH</en>
+			<de>STRAIGHT FLUSH</de>
+			<es>ESCALERA DE COLOR</es>
+			<fr>QUINTE FLUSH</fr>
+			<it>SCALA COLORE</it>
+			<pt>STRAIGHT FLUSH</pt>
+			<ru>Стрит-флеш</ru>
+		</string>
+		<string id="FOUR_OF_A_KIND">
+			<en>FOUR OF A KIND</en>
+			<de>VIERLING</de>
+			<es>PÓQUER</es>
+			<fr>CARRÉ</fr>
+			<it>POKER</it>
+			<pt>PÓQUER</pt>
+			<ru>Каре</ru>
+		</string>
+		<string id="FULL_HOUSE">
+			<en>FULL HOUSE</en>
+			<de>FULL HOUSE</de>
+			<es>FULL</es>
+			<fr>MAIN PLEINE</fr>
+			<it>FULL</it>
+			<pt>FULL HOUSE</pt>
+			<ru>Фулл-хаус</ru>
+		</string>
+		<string id="FLUSH">
+			<en>FLUSH</en>
+			<de>FLUSH</de>
+			<es>COLOR</es>
+			<fr>COULEUR</fr>
+			<it>COLORE</it>
+			<pt>FLUSH</pt>
+			<ru>Флеш</ru>
+		</string>
+		<string id="STRAIGHT">
+			<en>STRAIGHT</en>
+			<de>STRASSE</de>
+			<es>ESCALERA</es>
+			<fr>SUITE</fr>
+			<it>SCALA</it>
+			<br>STRAIGHT</br>
+			<ru>Стрит</ru>
+		</string>
+		<string id="THREE_OF_A_KIND">
+			<en>THREE OF A KIND</en>
+			<de>DRILLING</de>
+			<es>TRÍO</es>
+			<fr>BRELAN</fr>
+			<it>TRIS</it>
+			<pt>TRIO</pt>
+			<ru>Сет</ru>
+		</string>
+		<string id="TWO_PAIR">
+			<en>TWO PAIR</en>
+			<de>ZWEI PAARE</de>
+			<es>DOS PAREJAS</es>
+			<fr>DEUX PAIRES</fr>
+			<it>DUE COPPIE</it>
+			<pt>DOIS PARES</pt>
+			<ru>Две пары</ru>
+		</string>
+		<string id="PAIR">
+			<en>PAIR</en>
+			<de>EIN PAAR</de>
+			<es>UNA PAREJA</es>
+			<fr>UNE PAIRE</fr>
+			<it>COPPIA</it>
+			<pt>UM PAR</pt>
+			<ru>Пара</ru>
+		</string>
+		<string id="HIGH_CARD">
+			<en>HIGH CARD</en>
+			<de>HIGH CARD</de>
+			<es>CARTA ALTA</es>
+			<fr>CARTE ÉLEVÉE</fr>
+			<it>CARTA ALTA</it>
+			<pt>CARTA ALTA</pt>
+			<ru>Старшая карта</ru>
+		</string>
+		<string id="QUIT_HEADER">
+			<en>Are you sure?</en>
+			<de>Sicher?</de>
+			<es>¿Seguro?</es>
+			<fr>Vous êtes sûr(e)?</fr>
+			<it>Confermi?</it>
+			<pt>Tem certeza?</pt>
+			<ru>Ты уверен?</ru>
+		</string>
+		<string id="QUIT_CONFIRM">
+			<en>Current progress will be lost.</en>
+			<de>Dein aktueller Fortschritt wird gelöscht.</de>
+			<es>Perderás el progreso actual.</es>
+			<fr>Votre progression actuelle sera perdue.</fr>
+			<it>Perderai i progressi attuali.</it>
+			<pt>O progresso atual será perdido.</pt>
+			<ru>Текущий прогресс будет потерян.</ru>
+		</string>
+		<string id="WINNER">
+			<en>Winner</en>
+			<de>Gewinner</de>
+			<es>Ganador</es>
+			<fr>Gagnant</fr>
+			<it>Vincitore</it>
+			<pt>Vencedor</pt>
+			<ru>Победитель</ru>
+		</string>
+		<string id="HAND_RANK">
+			<en>Hand rankings</en>
+			<de>REIHENFOLGE DER HÄNDE</de>
+			<es>CLASIFICACIONES DE LA MANO</es>
+			<fr>CLASSEMENT MAINS</fr>
+			<it>CLASSIFICA DELLE MANI</it>
+			<pt>CLASSIFICAÇÃO DAS MÃOS</pt>
+			<ru>Комбинации карт в порядке убывания</ru>
+		</string>
+		<string id="INST_HEAD_SOLO">
+			<en>Open poker game:</en>
+			<de>Öffnen Sie das Pokerspiel:</de>
+			<es>Abre el juego de póker:</es>
+			<fr>Ouvrez une partie de poker:</fr>
+			<it>Aprire il gioco del poker:</it>
+			<pt>Jogo de pôquer aberto:</pt>
+			<ru>Откройте игру в покер:</ru>
+		</string>
+		<string id="INST_SOLO">
+			<en>Set your custom game rules. You can leave the table anytime.</en>
+			<de>Legen Sie Ihre eigenen Spielregeln fest. Sie können den Tisch jederzeit verlassen.</de>
+			<es>Establece tus reglas de juego personalizadas. Puedes abandonar la mesa en cualquier momento.</es>
+			<fr>Définissez vos propres règles de jeu. Vous pouvez quitter la table à tout moment.</fr>
+			<it>Imposta le tue regole di gioco personalizzate. È possibile lasciare il tavolo in qualsiasi momento.</it>
+			<pt>Defina suas regras de jogo personalizadas. Você pode deixar a mesa a qualquer momento.</pt>
+			<ru>Установите свои собственные правила игры. Вы можете покинуть стол в любое время.</ru>
+		</string>
+		<string id="INST_HEAD_TOURNAMENT">
+			<en>Tournament game:</en>
+			<de>Turnierspiel:</de>
+			<es>Juego de torneo:</es>
+			<fr>Jeu de tournoi:</fr>
+			<it>Torneo:</it>
+			<pt>Jogo de Torneio:</pt>
+			<ru>Турнирная игра:</ru>
+		</string>
+		<string id="INST_TOURNAMENT">
+			<en>Beat all opponents at the table to win the prize.</en>
+			<de>Schlagen Sie alle Gegner am Tisch, um den Preis zu gewinnen.</de>
+			<es>Vence a todos los oponentes de la mesa para ganar el premio.</es>
+			<fr>Battez tous les adversaires à la table pour gagner le prix.</fr>
+			<it>Battere tutti gli avversari al tavolo per vincere il premio.</it>
+			<pt>Derrote todos os adversários na mesa para ganhar o prêmio.</pt>
+			<ru>Обыграйте всех соперников за столом, чтобы выиграть приз.</ru>
+		</string>
+		<string id="BASE_INS">
+			<en>Play poker to earn money. Spend money in various tournaments. Unlock profile avatars by winning tournaments. The game is using Texas hold´em rules.</en>
+			<de>Poker spielen, um Geld zu verdienen. Geld in verschiedenen Turnieren ausgeben. Profil-Avatare durch Gewinnen von Turnieren freischalten. Das Spiel verwendet Texas Hold'em-Regeln.</de>
+			<es>Jugar al póquer para ganar dinero. Gasta dinero en varios torneos. Desbloquea los avatares del perfil ganando torneos. El juego utiliza las reglas del Texas hold'em.</es>
+			<fr>Jouer au poker pour gagner de l'argent. Dépensez de l'argent dans divers tournois. Débloquez des avatars de profil en gagnant des tournois. Le jeu utilise les règles du Texas hold'em.</fr>
+			<it>Giocare a poker per guadagnare denaro. Spendere denaro in vari tornei. Sbloccare gli avatar del profilo vincendo i tornei. Il gioco utilizza le regole del Texas hold'em.</it>
+			<pt>Jogar pôquer para ganhar dinheiro. Gastar dinheiro em vários torneios. Desbloquear avatares de perfil ao vencer torneios. O jogo está usando as regras do Texas hold'em.</pt>
+			<ru>Играйте в покер, чтобы заработать деньги. Тратьте деньги в различных турнирах. Разблокируйте аватары профиля, выигрывая турниры. Игра ведется по правилам техасского холдема.</ru>
+		</string>
+		<string id="YOU_WIN">
+			<en>You win!</en>
+			<de>Du hast gewonnen!</de>
+			<es>!Has ganado!</es>
+			<fr>Vous avez gagné!</fr>
+			<it>Ottimo lavoro!</it>
+			<pt>Ganhou!</pt>
+			<ru>Ты победил!</ru>
+		</string>
+		<string id="YOU_LOST">
+			<en>You lost!</en>
+            <de>Du hast verloren!</de>
+            <es>¡Has perdido!</es>
+            <fr>Vous avez perdu!</fr>
+            <it>Hai perso!</it>
+            <pt>Você perdeu!</pt>
+            <ru>Вы проиграли!</ru>
+		</string>
+		<string id="WATCH_AD">
+			<en>Watch ad</en>
+            <de>Anzeige ansehen</de>
+            <es>Ver anuncio</es>
+            <fr>Regarder la publicité</fr>
+            <it>Guarda la pubblicità</it>
+            <pt>Assista ao anúncio</pt>
+            <ru>Смотреть рекламу</ru>
+		</string>
+		<string id="LOBBY">
+			<en>Lobby</en>
+            <de>Lobby</de>
+            <es>Vestíbulo</es>
+            <fr>Lobby</fr>
+            <it>Lobby</it>
+            <pt>Lobby</pt>
+            <ru>Лобби</ru>
+		</string>
+		<string id="HR">
+			<en>HAND RANKINGS</en>
+            <de>REIHENFOLGE DER HÄNDE</de>
+            <es>CLASIFICACIONES DE LA MANO</es>
+            <fr>CLASSEMENT MAINS</fr>
+            <it>CLASSIFICA DELLE MANI</it>
+            <pt>CLASSIFICAÇÃO DAS MÃOS</pt>
+            <ru>Комбинации карт</ru>
+		</string>
+	</strings>
+</stringresources>
