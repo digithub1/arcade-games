@@ -1,0 +1,753 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Mahjong connect tiles">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/932436aea917b9035aaa8b38a2109593/wgplayground/7878414d499fdc6ebbad29a4732679f0.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/932436aea917b9035aaa8b38a2109593/wgplayground/d4eafb8852553508804ce65c60ef9e18.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/932436aea917b9035aaa8b38a2109593">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/mahjong-connect-tiles">
+            <meta property="wgp:description" content="Mahjong connect tiles - Classic Tile Matching Puzzle GameLarge, clear tiles and easy-to-use controlsBeautiful Traditional DesignStress-Free Experience">
+            <meta property="wgp:instructions" content="Your goal is to remove all tiles from the board by matching them in pairs. The mechanics are simple, but require thoughtful moves.Basic Rules:1) Find two identical tiles2) Move one tile or group of tiles in any direction: left, right, up, or down3) Tiles form a pair when:• They are adjacent to each other• They are in a line with no other tiles between them4) The pair automatically disappears from the boardTip: Think several moves ahead – success requires strategy!Game Help:Hint – Highlights an available pair if you can't see the moves.Shuffle – Shuffles the tiles when the combinations run out, opening up new possibilities.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/932436aea917b9035aaa8b38a2109593/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/932436aea917b9035aaa8b38a2109593/wgplayground/1ecda403ad0eebad3cceb308a75fe8fa.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXN1YWwifSx7Im5hbWUiOiJQdXp6bGVzIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="3">
+            <meta property="wgp:ads" content="97/932436aea917b9035aaa8b38a2109593">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+              <title>Mahjong connect tiles</title>
+              <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+              <meta id="gameViewport" name="viewport" content="width=device-width initial-scale=1">
+              <link href="styles.css" rel="stylesheet" type="text/css">
+
+              <script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=26710&amp;publicToken=Ru1nj0uhjOy9GTbQl2PC9IrukqzCquii&amp;callback=onGPInit"></script>
+              
+              <script>
+                     var autorized = false;
+                     var leaderboards;
+                     var gamePush;
+
+                     var preloaderShowed = false;
+
+                     var ysdk = null;
+
+                     let myPurchases = [];
+
+                     var gameCreated = false;
+                     var startGamePushInit = false;
+
+                     console.log('gamePush init start');
+
+                     window.onGPInit = function (gp) 
+                     {
+                            gamePush = gp;
+
+                            console.log('gamePush init complete');
+
+                            // Все возможности GamePush доступны здесь
+
+                            if (gameCreated && !startGamePushInit)
+                            {
+                                   InitYandex();
+                            }
+                     }
+
+                     function InitYandex()
+                     {
+                            gameCreated = true;
+
+                            console.log('game created');
+
+                            //if (gameLoaded && !startGamePushInit)
+                            {
+                                   //startGamePushInit = true;
+                                   
+                                   
+
+                                   //window.onGPInit = async (gp) =>
+                                   if (gamePush != null)
+                                   {
+                                          //gamePush = gp;
+
+                                          startGamePushInit = true;
+
+                                          var lang = gamePush.language;
+
+                                          console.log(lang);
+
+                                          document.SetLanguage(lang);
+
+                                          gamePush.changeLanguage(lang);
+
+                                          if (gamePush.platform.type === 'YANDEX')
+                                          {
+                                                 ysdk = gamePush.platform.getNativeSDK();
+                                                 
+                                                 document.setYandexServer();
+                                          }
+
+                                          if (gamePush.platform.isBackendAllowed) 
+                                          {
+                                                 console.log("Бэкенд разрешен");
+                                          } else {
+                                                 document.backendDisabled();
+                                          }
+
+                                          initPlayer().then(()=>
+                                          {
+                                                 initCallbacks();
+                                                 
+                                                 if (gamePush.sounds.isMuted)
+                                                        document.muteAll();
+                                                 else
+                                                        document.unmuteAll();
+
+                                                 if (gamePush.sounds.isSFXMuted)
+                                                        document.muteSounds();
+                                                 
+                                                 if (gamePush.sounds.isMusicMuted)
+                                                        document.muteMusic();
+
+                                                 document.setMinSecondsToInterstitial('60');   
+                                                 
+                                                 checkInterstitialLoading();
+                                                 checkRewardLoading();
+                                                 
+                                                 console.log('type - ' + gamePush.platform.type);
+                                          });
+                                   }
+                            }
+                     }
+
+                     function sendMuteMusic()
+                     {
+                            gamePush.sounds.muteMusic();
+                     }
+
+                     function sendMuteSound()
+                     {
+                            gamePush.sounds.muteSFX();
+                     }
+
+                     function sendUnmuteMusic()
+                     {
+                            gamePush.sounds.unmuteMusic();
+                     }
+
+                     function sendUnmuteSound()
+                     {
+                            gamePush.sounds.unmuteSFX();
+                     }
+
+                     function initCallbacks()
+                     {
+                            initSoundCallbacks();
+                            initAdsCallbacks();
+                     }
+
+                     function initAdsCallbacks()
+                     {
+                            gamePush.ads.on('rewarded:start', () => 
+                            {
+                                   console.log('OnStartAd');
+                                   document.OnStartAd();
+                            });
+                            // Закончился показ
+                            gamePush.ads.on('rewarded:close', (success) => 
+                            {
+                                   console.log('onCloseAd');
+
+                                   console.log('success - ' + success);
+
+                                   if (success)
+                                          document.OnRewardOK();
+                                   
+                                   document.OnCloseAd();
+                            });
+                            // Получена награда
+                            gamePush.ads.on('rewarded:reward', () => 
+                            {
+                                   console.log('rewardOk');
+                                   //document.rewardOk()
+                            });
+
+                            gamePush.ads.on('fullscreen:start', () => 
+                            {
+                                   console.log('OnStartAd');
+                                   document.OnStartAd();
+                            });
+                            // Закончился показ
+                            gamePush.ads.on('fullscreen:close', (success) => 
+                            {
+                                   console.log('onCloseAd');
+                                   document.OnCloseAd();
+                            });
+                     }
+
+
+                     function initSoundCallbacks()
+                     {
+                            // Выключили звук
+                            gamePush.sounds.on('mute', () => {
+                                   document.muteAll();
+                            });
+                            // Выключили звуковые эффекты
+                            gamePush.sounds.on('mute:sfx', () => {
+                                   document.muteSounds();
+                            });
+                            // Выключили музыку
+                            gamePush.sounds.on('mute:music', () => {
+                                   document.muteMusic();
+                            });
+
+                            // Включили звук
+                            gamePush.sounds.on('unmute', () => {
+                                   document.unmuteAll();
+                            });
+                            // Включили звуковые эффекты
+                            gamePush.sounds.on('unmute:sfx', () => {
+                                   document.unmuteSounds();
+                            });
+                            // Включили музыку звуковые эффекты
+                            gamePush.sounds.on('unmute:music', () => {
+                                    document.unmuteMusic();
+                            });
+                     }
+
+                     function setLanguage(lang)
+                     {
+                            console.log('changeLanguage - ' + lang);
+
+                            gamePush.changeLanguage(lang);
+                     }
+
+                     function GameReady()
+                     {
+                            gamePush.gameStart();
+
+                            console.log('GameReady');
+                     }
+
+                     function gameplayStart()
+                     {
+                            gamePush.gameplayStart();
+
+                            console.log('gameplayStart');
+                     }
+
+                     function gameplayStop()
+                     {
+                            gamePush.gameplayStop();
+
+                            console.log('gameplayStop');
+                     }
+
+                     async function ShowReviewDialog()
+                     {
+                            if (gamePush.app.canRequestReview) 
+                            {
+                                   if (gamePush.app.isAlreadyReviewed) 
+                                   {
+                                          const result = await gamePush.app.requestReview();
+
+                                          const { success, rating, error } = result;
+
+                                          if (success) 
+                                          {
+                                                 console.log(rating);
+
+                                                 // пример работы с рейтингом
+                                                 /*switch (rating) {
+                                                        case 5:
+                                                        showWindow('Мы очень рады, что вам понравилась игра!');
+                                                        break;
+                                                        case 4:
+                                                        case 3:
+                                                        // в том числе, если нельзя узнать оценку
+                                                        case 0:
+                                                        showWindow('Спасибо за отзыв!');
+                                                        break;
+                                                        case 2:
+                                                        case 1:
+                                                        showWindow('Будем стараться лучше!');
+                                                 }*/
+                                          }
+                                          
+                                   }
+                            }
+                     }
+
+                     async function initPlayer() 
+                     {
+                            console.log('initPlayer start');
+
+                            await gamePush.player.ready;
+
+                            var loginIn = gamePush.player.isLoggedIn;
+
+                            if (!loginIn)
+                            {
+                                   console.log('not autorize');
+
+                                   document.CanLogin();
+
+                                   if (ysdk == null && gamePush.platform.isSecretCodeAuthAvailable)
+                                   {
+                                          document.setSecretCode(gamePush.player.get('secretCode'));
+                                   }
+
+                                   ReadPlayerData();
+
+                                   if (!preloaderShowed)
+                                   {
+                                          gamePush.player.on('login', (success) => 
+                                          {
+                                                 initPlayer();
+                                          });
+                                          
+                                          startAdsForPlayer();
+                                   }
+                            }
+                            else
+                            {
+                                   OnPlayerAutorized();
+                            }
+                     }
+
+                     function TryAutorize()
+                     {
+                            gamePush.player.login();
+                     }
+
+
+                     function OnPlayerAutorized()
+                     {
+                            autorized = true;
+
+                            if (ysdk != null)
+                            {
+                                   ysdk.getLeaderboards().then(_lb => leaderboards = _lb);
+
+                                   ysdk.getPlayer({ scopes: true }).then(_player => 
+                                   {
+                                          player = _player;
+                                          ReadPayments().then(()=>
+                                          {
+                                                 document.AutorizeOk();
+
+                                                 ReadPlayerData();
+
+                                                 console.log('autorize ok');
+                                                
+                                          });
+                                   });
+                            }
+                            else
+                            {
+                                   ReadPayments().then(()=>
+                                   {
+                                          document.AutorizeOk();
+
+                                          ReadPlayerData();
+
+                                          console.log('autorize ok');
+                                   });
+                            }
+                     }
+
+                     function ReadPlayerData()
+                     {
+                            console.log('read data');
+
+                            const jsonStr = gamePush.player.get('json');
+
+                            console.log(jsonStr);
+                            
+                            if ((jsonStr == null || jsonStr.length < 10) && ysdk != null && autorized)
+                            {
+                                   ysdk.getPlayer({ scopes: true }).then(player => 
+                                   {
+                                          player.getData().then(data => 
+                                          {
+                                                 console.log(data.json);
+                                                 document.ReadData(data.json);
+                                          
+                                          });
+                                   });
+                            }
+                            else
+                            {
+                                   document.ReadData(jsonStr);
+                            }
+                     }
+
+                     function showLeaderboard(name)
+                     {
+                            console.log('get leaderboard - ' + name);
+
+                            /*if (ysdk != null)
+                            {
+                                   leaderboards.getLeaderboardEntries(name, { quantityTop: 10, includeUser: true })
+                                   .then(res => {
+                                          console.log(res);
+
+                                          const jsonStr = JSON.stringify(res);
+
+                                          console.log(jsonStr);
+
+                                          document.SetLeaderboardData(jsonStr);
+                                   });
+                            }
+                            else*/
+                            {
+                                   gamePush.leaderboard.openScoped({
+                                          tag: name,
+                                          variant: name,
+                                          withMe: 'last',
+                                          // Показать N ближайших игроков сверху и снизу, максимум 10
+                                          showNearest: 5,
+                                   });
+                            }
+                     }
+
+                     function setLeaderboardScore(name, myScore)
+                     {
+                            console.log(name + ': set score - ' + myScore);
+
+                            if (ysdk != null)
+                            {
+                                   leaderboards.setLeaderboardScore(name, myScore);
+                            }
+                            //else
+                            {
+                                   gamePush.leaderboard.publishRecord({
+                                          tag: name,
+                                          variant: name,
+                                          record: {
+                                                 rating: myScore,
+                                          },
+                                   });
+                            }
+                     }
+
+                     async function ReadPayments()
+                     {
+                            console.log('read payments');
+
+                            if (gamePush.payments.isAvailable) 
+                            {
+                                   const result = await gamePush.payments.fetchProducts();
+
+                                   console.log('payments active');
+
+                                   document.SetPaymentsActive();
+
+                                   // Результат ответа
+                                   const {
+                                   // Список продуктов
+                                   products,
+                                   // Список покупок игрока
+                                   playerPurchases,
+                                   } = result;
+
+                                   myPurchases = playerPurchases;
+
+                                   products.forEach(product => {
+                                          console.log(`Товар: ${product.name}, Цена: ${product.price} ${product.currency}`);
+
+                                          var price = product.price + ' ' + product.currencySymbol;
+
+                                          console.log(product.tag + " : " + price);
+
+                                          document.setProductPrice(product.tag, price);
+                                   });
+
+                                   const hasNoAds = playerPurchases.some(purchase => purchase.tag === 'disableAds');
+
+                                   if (hasNoAds) {
+                                          document.DisableAds();
+                                          console.log('disable asd');
+                                   }
+                                   else
+                                   {
+                                          startAdsForPlayer();
+                                   }
+
+                                   gamePush.payments.on('purchase', ({ product, purchase }) => 
+                                   {
+                                          console.log(product);
+                                          console.log(purchase);
+
+                                          if (product.tag === 'disableAds')
+                                          {
+                                                 document.DisableAds();    
+                                                 HideBanner(); 
+                                                 console.log('PurchaseOk'); 
+                                          }
+                                          else
+                                          {
+                                                 document.PurchaseOk(product.tag, product.id);    
+                                                 console.log('PurchaseOk');
+                                          }
+                                   });
+                            }
+                            else
+                            {
+                                   console.log('payments NOT active');
+                                   startAdsForPlayer();
+                            }
+                     }
+
+                     function logString(str)
+                     {
+                            console.log(str);
+                     }
+
+                     function startAdsForPlayer()
+                     {
+                            preloaderShowed = true;
+
+                            document.EnableAds();
+
+                            if (gamePush.ads.isFullscreenAvailable)
+                            {
+                                   gamePush.ads.showPreloader();
+                            }
+
+                            if (gamePush.ads.isStickyAvailable)
+                            {
+                                   gamePush.ads.showSticky();
+                            }
+                     }
+
+                     function ConsumePurchase(token)
+                     {
+                            gamePush.payments.consume({ id: token });
+
+                            //payments.consumePurchase(token);
+                     }
+
+                     function RestoreMoneyPurchases()
+                     {
+                            console.log('RestoreMoneyPurchases');
+
+                            myPurchases.forEach(sendMoneyPurchase);
+
+                            console.log('RestoreMoneyPurchases complete');
+
+                            //payments.getPurchases().then(purchases => purchases.forEach(sendMoneyPurchase));
+                     }
+
+
+                     function sendMoneyPurchase(purchase) 
+                     {
+                            if (purchase.tag !== 'disableAds') 
+                            {
+                                console.log(purchase.tag + " : " + purchase.payload);
+
+                                document.PurchaseOk(purchase.tag, purchase.productId);
+                            }
+                     }
+
+                     function Purchase(shopId)
+                     {
+                            gamePush.payments.purchase({ tag: shopId });
+                     }
+
+                     function CheckLang()
+                     {
+                            
+                     }
+
+                     function showBanner()
+                     {
+                            //window.ysdk.adv.showBannerAdv();
+
+                     }    
+
+                     async function SaveData(data)
+                     {
+                            //if (autorized)
+                            {
+                                   console.log('try save data');
+
+                                   console.log(data);
+
+                                   /*if (ysdk != null && player != null)
+                                   {
+                                          let dataForSave = 
+                                          {
+                                                 json: data
+                                          }
+
+
+                                          player.setData(dataForSave).then(() => {
+                                                 console.log('yandex save data complete');
+                                          });
+                                   }
+                                   else*/
+                                   {
+                                          gamePush.player.set('json', data);
+
+                                          await gamePush.player.sync({ storage: 'preferred' });
+
+                                          console.log('save data complete');
+                                   }
+                            }
+                     }
+
+            
+                     function HideBanner()
+                     {
+                            gamePush.ads.closeSticky();
+                     }    
+             
+                     function ShowAd() 
+                     {
+                            gamePush.ads.showFullscreen();
+                     }
+
+                     function ShowAdReward() 
+                     {
+                            gamePush.ads.showRewardedVideo();
+
+                     }
+
+                     function checkRewardLoading()
+                     {
+                            if (gamePush != null && gamePush.ads.isRewardedAvailable)
+                                   document.rewardLoaded();
+                     }
+
+                     function checkInterstitialLoading()
+                     {
+                            if (gamePush != null && gamePush.ads.isFullscreenAvailable)
+                                   document.interstitialLoaded();
+                     }
+
+                </script><style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style>
+
+            <style>
+
+                #fake_textarea{
+                    position:fixed;
+                    top:0;
+                    left:0;
+                    width:1px;
+                    height:1px;
+                    opacity:0;
+                }
+
+            </style>
+       <link rel="stylesheet" href="https://play.wgplayground.com/static/932436aea917b9035aaa8b38a2109593/html/gwt/chrome/chrome.css"><script src="https://play.wgplayground.com/static/932436aea917b9035aaa8b38a2109593/html/7D330E292D77CC2A452AE20C3E60BA7E.cache.js"></script><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><style>.gp-gamedistribution-sticky{display:flex;justify-content:center;position:fixed;left:50%;transform:translateX(-50%);z-index:100;max-height:90px;max-width:728px;overflow:hidden}.gp-gamedistribution-sticky__creative{position:relative;height:90px;width:728px;max-width:100vw}.gp-gamedistribution-sticky_top{top:0}.gp-gamedistribution-sticky_bottom{bottom:0}</style></head>
+
+       <body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/932436aea917b9035aaa8b38a2109593/wgplayground/d4eafb8852553508804ce65c60ef9e18.jpg">
+              <div align="center" id="embed-html"></div>
+              <script type="text/javascript" src="html/html.nocache.js"></script>
+       
+
+
+
+       <textarea id="fake_textarea"></textarea>
+
+       <script>
+
+        function ShowKeyboard()
+        {
+            /*var target = document.getElementsByTagName("fake_textarea")[0]; 
+
+            if (event.target != target) 
+            { 
+                target.focus();
+                target.click(); 
+            }*/
+
+               /*$('#fake_textarea').val('').focus().select().on('input', function(){
+                    $('#div_content').text(this.value);
+                });*/
+
+        };
+
+        //
+
+</body></html>
