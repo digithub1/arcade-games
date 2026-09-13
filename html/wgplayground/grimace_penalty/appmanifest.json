@@ -1,0 +1,36 @@
+{
+	"name": "Grimace Penalty",
+	"short_name": "Grimace Penalty",
+	"description": "Grimace Penalty Goal Game is a fun and challenging game where you take on the role of Grimace, the iconic McDonald's character, as he attempts to score a penalty goal against a hapless goalie. To score a goal, you need to time your shot carefully and aim for the right spot in the goal. The goalie will move around, so you need to be quick and accurate if you want to succeed.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
