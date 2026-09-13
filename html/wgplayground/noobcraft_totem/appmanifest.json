@@ -1,0 +1,17 @@
+{
+	"name": "NoobCraft Totem",
+	"short_name": "NoobCraft Totem",
+	"description": "NoobCraft Totem",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "200x200",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

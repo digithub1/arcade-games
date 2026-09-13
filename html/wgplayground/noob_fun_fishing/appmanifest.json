@@ -1,0 +1,11 @@
+{
+	"name": "Noob fun fishing",
+	"short_name": "Noob fun fishing",
+	"description": "Catch all the fish with Noob - from small to very large, normal and predatory. Upgrade your fishing rod, buy and upgrade your boat, use modifiers for your fishing rod. Open the catalog of all the fish in the game.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Noob Race Against Time",
+	"short_name": "Noob Race Against Time",
+	"description": "Noob Race Against Time",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

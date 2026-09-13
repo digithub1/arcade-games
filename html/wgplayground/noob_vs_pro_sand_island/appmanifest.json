@@ -1,0 +1,16 @@
+{
+	"name": "Noob vs Pro Sand island",
+	"short_name": "Noob vs Pro Sand island",
+	"description": "Noob vs Pro Sand island",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
