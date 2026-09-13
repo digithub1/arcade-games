@@ -1,0 +1,1 @@
+const t={containerWidth:2e3,containerHeight:2e3,rows:10,cols:10,get carVelocity(){return 1e3},get blockWidth(){return this.containerWidth/this.rows},editorTileWidth:Math.min(600,document.body.clientWidth)/12};export{t as configuration};

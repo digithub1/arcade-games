@@ -1,0 +1,1 @@
+const t={viewRatioDefault:.75,viewRatioFlattened:.75,fieldRatio:1,cardRatio:1,cardCollisionVertical:0,cardCollisionHorizontal:0,getInlinePadding(){return Math.min(50,window.innerWidth*.05)},getBlockPadding(){return Math.min(30,window.innerWidth*.05)}};export{t as visuallConf};

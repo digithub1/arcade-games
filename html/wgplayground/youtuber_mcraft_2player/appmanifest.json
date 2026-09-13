@@ -1,0 +1,17 @@
+{
+	"name": "Youtuber Mcraft 2Player",
+	"short_name": "Youtuber Mcraft 2Player",
+	"description": "Youtuber Mcraft 2Player",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
