@@ -1,0 +1,31 @@
+{
+  "bundles": [
+    {
+      "name": "default",
+      "assets": []
+    },
+    {
+      "name": "logic-game",
+      "assets": [
+        {
+          "alias": [
+            "logic-game/game-atlas",
+            "game-atlas"
+          ],
+          "src": [
+            "logic-game/game-atlas-iNBTWQ@0.5x.webp.json",
+            "logic-game/game-atlas-I7Xbeg.png.json",
+            "logic-game/game-atlas-geBEow@0.5x.png.json",
+            "logic-game/game-atlas-9heDTA.webp.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true,
+              "tps": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

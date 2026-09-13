@@ -1,0 +1,36 @@
+{
+	"name": "Turtle Math",
+	"short_name": "Turtle Math",
+	"description": "Turtle Math is an online math game that tests your knowledge of basic math facts. Answer each question as quickly as possible, and see how many you can get right! The Turtle Math Online Math True and False Game is a great way for kids to learn math. This game is designed to help kids learn to identify true and false statements.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

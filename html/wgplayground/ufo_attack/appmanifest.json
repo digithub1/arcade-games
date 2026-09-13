@@ -1,0 +1,37 @@
+{
+	"name": "UFO Attack",
+	"short_name": "UFO Attack",
+	"description": "UFO Attack is an online shooting game where you defend against invading aliens! Use your mouse to aim and shoot at the UFOs, and try to stay alive for as long as possible. Can you beat your high score? Play now and find out!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
