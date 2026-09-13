@@ -1,0 +1,16 @@
+{
+	"name": "Crap Attack WG",
+	"short_name": "Crap Attack WG",
+	"description": "Classic Action Platformer Game",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "414x414",
+			"type": "image/png"
+		}
+	]
+}

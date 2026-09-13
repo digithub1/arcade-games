@@ -1,0 +1,36 @@
+{
+	"name": "Crazy Egg",
+	"short_name": "Crazy Egg",
+	"description": "WOW, crazy eggs clearly is a fun game that everyone loves. Play the CrazyEggs game for free online today! Crazy Eggs is a fun, fast-paced puzzle game that you can enjoy on your smartphone, tablet or computer! Embark on a railroad journey full of explosive action and colorful challenges for one low price. Have fun for free online with CrazyEggs. This addicting game is FUN and easy to play. Earn points by clicking on squares and buying upgrades as you explore this strange castle of numbers!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

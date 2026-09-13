@@ -1,0 +1,36 @@
+{
+	"name": "Crazy Driver Police Chase WG",
+	"short_name": "Crazy Driver Police Chase WG",
+	"description": "Crazy Driver Police Chase is a FREE multiplayer browser-based car driving game where users can experience the Fast and Furious Cars like a cop! If you love car driving police games, then Crazy Driver Police Chase is the ride for you. There are a lot of other driving police games out there, but very few can compare to the hilarity, drama, and action that's packed into every mission in this game. If you like playing police car driving games, then this one is just for you! Going as fast as possible with a police car and having a crazy car chase with some bad drivers is what every cop dreams about. Well, you’ll get that in the Crazy Driver Police Chase game! There are 10 different obstacles for you to overcome. Don’t forget to collect the bonus coins on your way!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

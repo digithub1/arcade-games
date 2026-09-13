@@ -1,0 +1,36 @@
+{
+	"name": "Cowboy Brawl WGPlayground",
+	"short_name": "Cowboy Brawl WGPlayground",
+	"description": "A fun brawl with Cowboys and squirt guns. Play against the computer or friend and try and knock your opponent off of the ledge.  If you think cowboys riding horses on top of a box car is wacky, just wait until you try and control your cowboy's horse.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

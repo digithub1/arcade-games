@@ -1,0 +1,36 @@
+{
+	"name": "Crazy Truck WG",
+	"short_name": "Crazy Truck WG",
+	"description": "Hill climbing is a tough challenge, but with the right truck it can be a fun and thrilling experience. \"Crazy Truck Online Hill Climbing Games\" offers a variety of trucks to choose from, each with their own strengths and weaknesses. Players must use their skills to navigate the truck up the hill, avoiding obstacles and mastering the terrain. With exciting gameplay and beautiful graphics, \"Crazy Truck Online Hill Climbing Games\" is the perfect game for any truck-lover looking for a challenge.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
