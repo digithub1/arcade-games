@@ -1,0 +1,10 @@
+{
+	"name": "Skulls vs Zombies",
+	"short_name": "Skulls vs Zombies",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

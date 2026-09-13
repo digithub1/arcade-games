@@ -1,0 +1,41 @@
+{
+	"name": "Skibidi Toilet Shooter",
+	"short_name": "Skibidi Toilet Shooter",
+	"description": "Skibidi Toilet Shooter is a fast-paced, action-packed shooting game in which you must use your abilities to demolish the nasty skibidi toilets. It is up to you to stop these toilets from taking over the world after they arrived on Earth with the intention of doing so.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

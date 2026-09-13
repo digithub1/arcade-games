@@ -1,0 +1,36 @@
+{
+	"name": "Skibidi Toilet Platform Jump",
+	"short_name": "Skibidi Toilet Platform Jump",
+	"description": "Skibidi Toilet: Platform Jump Game is a challenging and fun game where you control a toilet that must jump and avoid obstacles to reach the end of the level. The game features a variety of levels, each with its own unique challenges. You'll need to use your skills and reflexes to navigate the levels and avoid falling off the platforms.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
