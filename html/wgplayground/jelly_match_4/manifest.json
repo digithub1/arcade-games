@@ -1,0 +1,27 @@
+{
+  "name": "Jelly Match 4",
+  "short_name": "Jelly Match 4",
+  "description": "Pick block sets from left panel and drop them on the board to make a horizontal or vertical row of 4 similar blocks.",
+  "start_url": "index.html",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display": "fullscreen",
+  "orientation": "landscape",  
+  "icons": [
+  {
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}

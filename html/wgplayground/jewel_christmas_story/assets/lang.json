@@ -1,0 +1,758 @@
+{
+  "stringresources": {
+    "strings": {
+      "string": [
+        {
+          "-id": "MissionCollectKey",
+          "en": "Collect [X] [Y] Ornaments.",
+          "de": "Sammle [X] [Y] Ornamente.",
+          "es": "Recoge [X] Ornamentos de [Y].",
+          "fr": "Collectez [X] ornements de [Y].",
+          "it": "Raccogliere [X] [Y] Ornamenti.",
+          "br": "Coletar [X] [Y] Ornamentos.",
+          "ru": "Соберите [X] [Y] украшений."
+        },
+        {
+          "-id": "MissionCLearLvlKey",
+          "en": "Clear [X] levels",
+          "de": "Schaffe [X] Level",
+          "es": "Supera [X] de niveles",
+          "fr": "Passez [X] niveaux",
+          "it": "Supera [X] di livelli",
+          "br": "Limpar [X] níveis",
+          "ru": "Пройдите [X] уровней"
+        },
+        {
+          "-id": "MissionDailyLogKey",
+          "en": "Daily login reward",
+          "de": "Tägliche Login-Belohnung",
+          "es": "Recompensa diaria de inicio de sesión",
+          "fr": "Récompense quotidienne de connexion",
+          "it": "Premio di accesso giornaliero",
+          "br": "Recompensa de login diário",
+          "ru": "Ежедневное вознаграждение за вход"
+        },
+        {
+          "-id": "MissionClearStonesKey",
+          "en": "Clear [X] Biscuits",
+          "de": "Löschen Sie [X] Kekse",
+          "es": "Borrar [X] Galletas",
+          "fr": "Effacer [X] Biscuits",
+          "it": "Cancellare [X] Biscotti",
+          "br": "Claros [X] Biscoitos",
+          "ru": "Очистить [X] Печенье"
+        },
+        {
+          "-id": "MissionLocksKey",
+          "en": "Clear [X] Gelatines",
+          "de": "Löschen Sie [X] Gelatine",
+          "es": "Borrar [X] Gelatinas",
+          "fr": "Effacer [X] Gélatines",
+          "it": "Cancella [X] Gelatine",
+          "br": "Clear [X] Gelatinas",
+          "ru": "Очистить [X] Желатин"
+        },
+        {
+          "-id": "MissionBlocksKey",
+          "en": "Clear [X] Snow Piles",
+          "de": "Löschen Sie [X] Schneehaufen",
+          "es": "Borrar [X] Montones de nieve",
+          "fr": "Effacer [X] Piles de neige",
+          "it": "Cancella [X] mucchietti di neve",
+          "br": "Limpar [X] Pilhas de Neve",
+          "ru": "Очистить [X] снежные кучи"
+        },
+        {
+          "-id": "MissionMailKey",
+          "en": "Collect [X] Envelopes",
+          "de": "Sammeln Sie [X] Briefumschläge",
+          "es": "Recoger [X] Sobres",
+          "fr": "Collectionnez [X] Enveloppes",
+          "it": "Raccogliere [X] Buste",
+          "br": "Recolher [X] Envelopes",
+          "ru": "Собрать [X] Конверты"
+        },
+        {
+          "-id": "MissionDropperKey",
+          "en": "Collect [X] Teddy Bears",
+          "de": "Sammeln [X] Teddybären",
+          "es": "Recoger [X] Ositos de peluche",
+          "fr": "Collectionnez [X] Ours en peluche",
+          "it": "Raccogliere [X] Orsacchiotti",
+          "br": "Colecionar [X] Ursinhos de pelúcia",
+          "ru": "Собрать [X] Плюшевые мишки"
+        },
+        {
+          "-id": "MissionPieKey",
+          "en": "Collect [X] Muffins",
+          "de": "Sammle [X] Muffins",
+          "es": "Recoger [X] Magdalenas",
+          "fr": "Ramasser [X] Muffins",
+          "it": "Raccogliere [X] Muffin",
+          "br": "Recolher [X] Muffins",
+          "ru": "Собрать [X] кексы"
+        },
+        {
+          "-id": "MissionCarpetKey",
+          "en": "Spread Carpet over [X] tiles",
+          "de": "Teppich über [X] Fliesen verteilen",
+          "es": "Esparcir alfombra sobre [X] baldosas",
+          "fr": "Étendre la moquette sur [X] carreaux",
+          "it": "Distribuisci tappeto su [X] piastrelle",
+          "br": "Espalhe o tapete sobre [X] azulejos",
+          "ru": "Расстелите ковер на [X] плиток"
+        },
+        {
+          "-id": "MissionSpreaderKey",
+          "en": "Clear [X] Chocolate",
+          "de": "Lösche [X] Schokolade",
+          "es": "Despejar [X] chocolates",
+          "fr": "Effacer [X] chocolats",
+          "it": "Eliminare [X] cioccolato",
+          "br": "Chocolate [X] transparente",
+          "ru": "Очистить [X] шоколад"
+        },
+        {
+          "-id": "MissionBoxKey",
+          "en": "Open [X] Presents",
+          "de": "Öffne [X] Geschenke",
+          "es": "Abrir [X] Regalos",
+          "fr": "Ouvrir [X] cadeaux",
+          "it": "Aprire [X] regali",
+          "br": "Aberto [X] Apresenta",
+          "ru": "Открыть [X] подарков"
+        },
+        {
+          "-id": "GoalsKey",
+          "en": "Goals",
+          "de": "Ziele:",
+          "es": "Objetivos:",
+          "fr": "Objectifs :",
+          "it": "Obiettivi:",
+          "br": "Objectivos:",
+          "ru": "Цели:"
+        },
+        {
+          "-id": "SelectBoosterKey",
+          "en": "Select booster",
+          "de": "Booster auswählen",
+          "es": "Selecciona un potenciador",
+          "fr": "Choisir un booster",
+          "it": "Seleziona il booster",
+          "br": "Selecione o impulsionador",
+          "ru": "Выберите бустер"
+        },
+        {
+          "-id": "SpinKey",
+          "en": "Spin",
+          "de": "Drehen",
+          "es": "Girar",
+          "fr": "Tourner",
+          "it": "Gira",
+          "br": "Girar",
+          "ru": "ВРАЩАТЬ"
+        },
+        {
+          "-id": "TutorialKey",
+          "en": "Tutorial",
+          "de": "Tutorial",
+          "es": "Tutorial",
+          "fr": "Tutoriel",
+          "it": "Tutorial",
+          "br": "Tutorial",
+          "ru": "РУКОВОДСТВО"
+        },
+        {
+          "-id": "TargetKey",
+          "en": "Targets",
+          "de": "Ziele",
+          "es": "Objetivos",
+          "fr": "Cibles",
+          "it": "Obiettivi",
+          "br": "Metas",
+          "ru": "Цели"
+        },
+        {
+          "-id": "MovesKey",
+          "en": "Moves",
+          "de": "Züge",
+          "es": "Movimientos",
+          "fr": "Coups",
+          "it": "Mosse",
+          "br": "Movimentos",
+          "ru": "ХОДОВ"
+        },
+        {
+          "-id": "ContinueQuestionTextKey",
+          "en": "Continue?",
+          "de": "Weiter?",
+          "es": "¿Continuar?",
+          "fr": "Continuer ?",
+          "it": "Continuare?",
+          "br": "Continuar?",
+          "ru": "Продолжить?"
+        },
+        {
+          "-id": "AddXmovesKey",
+          "en": "Add [X] moves to keep playing!",
+          "de": "[X] Züge hinzufügen, um weiterzuspielen!",
+          "es": "¡Añade [X] movimientos para seguir jugando!",
+          "fr": "Ajoutez [X] coups pour continuer à jouer !",
+          "it": "Aggiungi [X] mosse per continuare a giocare!",
+          "br": "Adicione [X] movimentos para continuar jogando!",
+          "ru": "Добавьте [X] ходов, чтобы продолжить игру!"
+        },
+        {
+          "-id": "AwesomeWinKey",
+          "en": "Sweet win!",
+          "de": "Süßer Gewinn!",
+          "es": "¡Dulce victoria!",
+          "fr": "Une belle victoire !",
+          "it": "Dolce vittoria!",
+          "br": "Doce vitória!",
+          "ru": "Сладкая победа!"
+        },
+        {
+          "-id": "LevelFailedKey",
+          "en": "Level failed",
+          "de": "Level nicht geschafft",
+          "es": "Nivel fallido",
+          "fr": "Niveau échoué",
+          "it": "Livello fallito",
+          "br": "Nível fracassado",
+          "ru": "УРОВЕНЬ ПРОВАЛЕН!"
+        },
+        {
+          "-id": "MissionKey",
+          "en": "Missions",
+          "de": "Aufgaben",
+          "es": "Misiones",
+          "fr": "Missions",
+          "it": "Missioni",
+          "br": "Missões",
+          "ru": "Миссии"
+        },
+        {
+          "-id": "RewardKey",
+          "en": "Rewards",
+          "de": "Belohnungen",
+          "es": "Recompensas",
+          "fr": "Récompenses",
+          "it": "Ricompense",
+          "br": "Prêmios",
+          "ru": "Награды"
+        },
+        {
+          "-id": "RankRewardKey",
+          "en": "Rank reward",
+          "de": "Rang Belohnung",
+          "es": "Recompensa de rango",
+          "fr": "Récompense de rang",
+          "it": "Premio di rango",
+          "br": "Recompensa de nível",
+          "ru": "Награда за ранг"
+        },
+        {
+          "-id": "ReachRankKey",
+          "en": "Reach rank",
+          "de": "Rang erreichen",
+          "es": "Alcanzar el rango",
+          "fr": "Atteindre le rang",
+          "it": "Raggiungi il grado",
+          "br": "Posição de alcance",
+          "ru": "Достичь ранга"
+        },
+        {
+          "-id": "BoostHammerTitleKey",
+          "en": "Hammer",
+          "de": "Hammer",
+          "es": "Martillo",
+          "fr": "Marteau",
+          "it": "Martello",
+          "br": "Martelo",
+          "ru": "Молоток"
+        },
+        {
+          "-id": "BoostWandTitleKey",
+          "en": "Gloves",
+          "de": "Handschuhe",
+          "es": "Guantes",
+          "fr": "Gants",
+          "it": "Guanti",
+          "br": "Luvas",
+          "ru": "Перчатки"
+        },
+        {
+          "-id": "BoostSawTitleKey",
+          "en": "Scissors",
+          "de": "Schere",
+          "es": "Tijeras",
+          "fr": "Ciseaux",
+          "it": "Forbici",
+          "br": "Tesoura",
+          "ru": "Ножницы"
+        },
+        {
+          "-id": "BoostSlingTitleKey",
+          "en": "Rocket",
+          "de": "Rakete",
+          "es": "Cohete",
+          "fr": "Fusée",
+          "it": "Razzo",
+          "br": "Foguete",
+          "ru": "Ракета"
+        },
+        {
+          "-id": "BoostBombTitleKey",
+          "en": "Dynamite",
+          "de": "Dynamit",
+          "es": "Dinamita",
+          "fr": "Dynamite",
+          "it": "Dinamite",
+          "br": "Dinamite",
+          "ru": "Динамит"
+        },
+        {
+          "-id": "BoostSpectrumTitleKey",
+          "en": "Spectrum",
+          "de": "Spektrum",
+          "es": "Espectro",
+          "fr": "Spectre",
+          "it": "Spettro",
+          "br": "Spectrum",
+          "ru": "Спектр"
+        },
+        {
+          "-id": "BoosterGuideKey",
+          "en": "Booster Guide",
+          "de": "Booster-Anleitung",
+          "es": "Guía de refuerzo",
+          "fr": "Guide Booster",
+          "it": "Guida al Booster",
+          "br": "Guia do Propulsor",
+          "ru": "Руководство по бустерам"
+        },
+        {
+          "-id": "BoostHammerDescKey",
+          "en": "Choose one colourful Ornament to strike.",
+          "de": "Wähle ein farbenfrohes Ornament, das du anschlagen möchtest.",
+          "es": "Elige un Ornamento de color para golpear.",
+          "fr": "Choisissez un ornement coloré à frapper.",
+          "it": "Scegliete un ornamento colorato da colpire.",
+          "br": "Escolha um ornamento colorido para atacar.",
+          "ru": "Выберите один разноцветный орнамент для удара."
+        },
+        {
+          "-id": "BoostWandDescKey",
+          "en": "Gloves can swap any two adjacent Ornaments or similar objects even without creating a match.",
+          "de": "Die Handschuhe können zwei benachbarte Ornamente oder ähnliche Objekte vertauschen, auch ohne ein Streichholz zu erzeugen.",
+          "es": "Los guantes pueden intercambiar dos Ornamentos adyacentes u objetos similares incluso sin crear una coincidencia.",
+          "fr": "Les gants peuvent échanger deux ornements ou objets similaires adjacents, même sans créer de correspondance.",
+          "it": "I guanti possono scambiare due ornamenti adiacenti o oggetti simili, anche senza creare una corrispondenza.",
+          "br": "As luvas podem trocar quaisquer dois ornamentos adjacentes ou objetos similares, mesmo sem criar um fósforo.",
+          "ru": "Перчатки могут поменять местами любые два соседних Орнамента или похожие предметы даже без создания пары."
+        },
+        {
+          "-id": "BoostSawDescKey",
+          "en": "Scissors can cut any obstacle in the way.",
+          "de": "Die Schere kann jedes Hindernis im Weg durchschneiden.",
+          "es": "Las tijeras pueden cortar cualquier obstáculo en el camino.",
+          "fr": "Les ciseaux peuvent couper tout obstacle sur le chemin.",
+          "it": "Le forbici possono tagliare qualsiasi ostacolo.",
+          "br": "As tesouras podem cortar qualquer obstáculo no caminho.",
+          "ru": "Ножницы могут разрезать любое препятствие на пути."
+        },
+        {
+          "-id": "BoostSlingDescKey",
+          "en": "Choose one row to strike everything in it!",
+          "de": "Wähle eine Reihe, um alles in ihr zu zerstören!",
+          "es": "Elige una fila para golpear todo lo que hay en ella.",
+          "fr": "Choisissez une rangée et frappez tout ce qui s'y trouve !",
+          "it": "Scegliete una fila per colpire tutto ciò che contiene!",
+          "br": "Escolha uma fileira para golpear tudo que há nela!",
+          "ru": "Выберите один ряд, чтобы поразить все в нем!"
+        },
+        {
+          "-id": "BoostBombDescKey",
+          "en": "Choose one kind of obstacle and strike all of them!",
+          "de": "Wähle eine Art von Hindernis und schlage alle!",
+          "es": "Elige un tipo de obstáculo y golpéalo todo.",
+          "fr": "Choisissez un type d'obstacle et frappez-les tous !",
+          "it": "Scegliete un tipo di ostacolo e colpiteli tutti!",
+          "br": "Escolha um tipo de obstáculo e bata em todos eles!",
+          "ru": "Выберите один вид препятствия и поразите все!"
+        },
+        {
+          "-id": "BoostSpectrumDescKey",
+          "en": "The Spectrum can turn an Ornament into a Rainbow Bomb.",
+          "de": "Das Spektrum kann ein Ornament in eine Regenbogenbombe verwandeln.",
+          "es": "El Espectro puede convertir un Adorno en una Bomba Arco Iris.",
+          "fr": "Le Spectre peut transformer un ornement en bombe arc-en-ciel.",
+          "it": "Lo Spettro può trasformare un Ornamento in una Bomba Arcobaleno.",
+          "br": "O Spectrum pode transformar um Ornamento em uma Bomba Arco-Íris.",
+          "ru": "Спектр может превратить орнамент в радужную бомбу."
+        },
+        {
+          "-id": "LevelKey",
+          "en": "Level",
+          "de": "Level",
+          "es": "Nivel",
+          "fr": "Niveau",
+          "it": "Livello",
+          "br": "Nível",
+          "ru": "Уровень"
+        },
+        {
+          "-id": "WhiteColorKey",
+          "en": "White",
+          "de": "Weiß",
+          "es": "Blanco",
+          "fr": "Blanc",
+          "it": "Bianco",
+          "br": "Branco",
+          "ru": "Белый"
+        },
+        {
+          "-id": "YellowColorKey",
+          "en": "Gold",
+          "de": "Gold",
+          "es": "Oro",
+          "fr": "Or",
+          "it": "Oro",
+          "br": "Ouro",
+          "ru": "Золотой"
+        },
+        {
+          "-id": "OrangeColorKey",
+          "en": "Orange",
+          "de": "Orange",
+          "es": "Naranja",
+          "fr": "Orange",
+          "it": "Arancione",
+          "br": "Laranja",
+          "ru": "Оранжевый"
+        },
+        {
+          "-id": "BlueColorKey",
+          "en": "Blue",
+          "de": "Blau",
+          "es": "Azul",
+          "fr": "Bleu",
+          "it": "Blu",
+          "br": "Azul",
+          "ru": "Голубой"
+        },
+        {
+          "-id": "PinkColorKey",
+          "en": "Pink",
+          "de": "Rosa",
+          "es": "Rosa",
+          "fr": "Rose",
+          "it": "Rosa",
+          "br": "Pink",
+          "ru": "Розовый"
+        },
+        {
+          "-id": "GreenColorKey",
+          "en": "Green",
+          "de": "Grün",
+          "es": "Verde",
+          "fr": "Vert",
+          "it": "Verde",
+          "br": "Verde",
+          "ru": "Зеленый"
+        },
+        {
+          "-id": "RedColorKey",
+          "en": "Red",
+          "de": "Rot",
+          "es": "Rojo",
+          "fr": "Rouge",
+          "it": "Rosso",
+          "br": "Vermelho",
+          "ru": "Красный"
+        },
+        {
+          "-id": "SpecialOfferForKey",
+          "en": "Special offer for:",
+          "de": "Sonderangebot für:",
+          "es": "Oferta especial para:",
+          "fr": "Offre spéciale pour:",
+          "it": "Offerta speciale per:",
+          "br": "Oferta especial para:",
+          "ru": "Специальное предложение за:"
+        },
+        {
+          "-id": "Tut1Key",
+          "en": "Swap adjacent Ornaments to match triplets of the same colour to collect them. Collect Ornaments of the target colour to complete the level.",
+          "de": "Tausche benachbarte Ornamente aus, um Drillinge der gleichen Farbe zu sammeln. Sammle Ornamente in der Zielfarbe, um das Level zu beenden.",
+          "es": "Intercambia ornamentos adyacentes para hacer coincidir trillizos del mismo color y recogerlos. Recoge los adornos del color deseado para completar el nivel.",
+          "fr": "Intervertissez les ornements adjacents pour faire correspondre des triplets de la même couleur et les collecter. Collectez les ornements de la couleur cible pour terminer le niveau.",
+          "it": "Scambiate gli ornamenti adiacenti per abbinare le triplette dello stesso colore e raccoglierle. Raccogliete gli ornamenti del colore desiderato per completare il livello.",
+          "br": "Troque os ornamentos adjacentes para combinar trigêmeos da mesma cor para coletá-los. Coletar Ornamentos da cor alvo para completar o nível.",
+          "ru": "Меняйте местами соседние орнаменты, чтобы собрать тройки одинакового цвета. Соберите орнаменты заданного цвета, чтобы завершить уровень."
+        },
+        {
+          "-id": "Tut2Key",
+          "en": "Collect pieces of Muffins by matching Ornaments near them.",
+          "de": "Sammle Muffins ein, indem du Ornamente in ihrer Nähe zusammenbringst.",
+          "es": "Recoge los trozos de magdalenas haciendo coincidir los adornos cercanos a ellos.",
+          "fr": "Récupérez des morceaux de muffins en associant des ornements près d'eux.",
+          "it": "Raccogliere pezzi di muffin abbinando gli ornamenti vicini.",
+          "br": "Colete pedaços de Muffins combinando Ornamentos próximos a eles.",
+          "ru": "Собирайте кусочки кексов, совмещая орнаменты рядом с ними."
+        },
+        {
+          "-id": "Tut3Key",
+          "en": "Remove Snow Piles by matching Ornaments above them.",
+          "de": "Entferne Schneehaufen, indem du Ornamente über ihnen anordnest.",
+          "es": "Elimina los montones de nieve emparejando los adornos que hay sobre ellos.",
+          "fr": "Retirez les tas de neige en faisant correspondre les ornements au-dessus d'eux.",
+          "it": "Rimuovere i mucchi di neve abbinando gli ornamenti sopra di essi.",
+          "br": "Remova as pilhas de neve combinando Ornamentos acima delas.",
+          "ru": "Убирайте снежные кучи, совмещая орнаменты над ними."
+        },
+        {
+          "-id": "Tut4Key",
+          "en": "Collect Teddy Bears by dropping them to the bottom of the level.",
+          "de": "Sammle Teddybären, indem du sie auf den Boden des Levels fallen lässt.",
+          "es": "Recoge los osos de peluche dejándolos caer al fondo del nivel.",
+          "fr": "Récupérer les ours en peluche en les faisant tomber au bas du niveau.",
+          "it": "Raccogliere gli orsetti facendoli cadere in fondo al livello.",
+          "br": "Coletar ursinhos de pelúcia, deixando-os cair no fundo do nível.",
+          "ru": "Собирайте плюшевых мишек, опуская их в нижнюю часть уровня."
+        },
+        {
+          "-id": "Tut5Key",
+          "en": "Collect Envelopes by matching Ornaments near mailboxes. They never run out.",
+          "de": "Sammle Briefumschläge, indem du Ornamente in der Nähe von Briefkästen abgleichst. Sie gehen nie aus.",
+          "es": "Recoge los sobres haciendo coincidir los adornos cerca de los buzones. Nunca se acaban.",
+          "fr": "Récupérer des enveloppes en faisant correspondre des ornements près des boîtes aux lettres. Elles ne s'épuisent jamais.",
+          "it": "Raccogliete le buste abbinando gli ornamenti alle cassette della posta. Non finiscono mai.",
+          "br": "Coletar Envelopes combinando Ornamentos perto das caixas de correio. Eles nunca se esgotam.",
+          "ru": "Собирайте конверты, совмещая орнаменты возле почтовых ящиков. Они никогда не заканчиваются."
+        },
+        {
+          "-id": "Tut6Key",
+          "en": "Remove Presents by matching Ornaments near them.",
+          "de": "Entferne Geschenke, indem du Ornamente in ihrer Nähe abgleichst.",
+          "es": "Elimina los regalos emparejando los adornos cerca de ellos.",
+          "fr": "Enlever les cadeaux en faisant correspondre les ornements près d'eux.",
+          "it": "Rimuovere i regali abbinando gli ornamenti vicino ad essi.",
+          "br": "Remover Presentes, combinando Ornamentos próximos a eles.",
+          "ru": "Уберите подарки, совместив орнаменты рядом с ними."
+        },
+        {
+          "-id": "Tut7Key",
+          "en": "Remove Gelatine by matching Ornaments inside them.",
+          "de": "Entferne Gelatine, indem du Ornamente in ihnen findest.",
+          "es": "Elimina la gelatina emparejando los adornos que hay en su interior.",
+          "fr": "Retirer la gélatine en faisant correspondre les ornements à l'intérieur.",
+          "it": "Rimuovere la Gelatina abbinando gli ornamenti al loro interno.",
+          "br": "Remover gelatina combinando Ornamentos dentro deles.",
+          "ru": "Уберите желатин, совместив орнаменты внутри них."
+        },
+        {
+          "-id": "Tut8Key",
+          "en": "Spread Carpet over free tiles by making matches including a Carpet.",
+          "de": "Verteile Teppich über freie Felder, indem du Streichhölzer mit einem Teppich zusammenbringst.",
+          "es": "Extiende la alfombra sobre las baldosas libres haciendo coincidir los adornos con una alfombra.",
+          "fr": "Répandez de la moquette sur les tuiles libres en faisant des correspondances incluant une moquette.",
+          "it": "Distribuire il Tappeto sulle piastrelle libere abbinando gli ornamenti a un Tappeto.",
+          "br": "Espalhe o tapete sobre os azulejos livres fazendo fósforos, incluindo um tapete.",
+          "ru": "Расстелите ковер на свободных плитках, делая совпадения, включая ковер."
+        },
+        {
+          "-id": "Tut9Key",
+          "en": "Remove Chocolate by matching Ornaments near it. Chocolate spreads over a tile each turn when not hit.",
+          "de": "Entferne Schokolade, indem du Ornamente in ihrer Nähe kombinierst. Die Schokolade breitet sich in jeder Runde über ein Feld aus, wenn sie nicht getroffen wird.",
+          "es": "Elimina el chocolate haciendo coincidir adornos cerca de él. El chocolate se extiende sobre una baldosa en cada turno cuando no es golpeado.",
+          "fr": "Retirez le chocolat en associant des ornements à proximité. Le chocolat s'étend sur une tuile à chaque tour lorsqu'il n'est pas touché.",
+          "it": "Rimuovere il Cioccolato abbinando gli Ornamenti vicino ad esso. Il cioccolato si diffonde su una tessera a ogni turno quando non viene colpito.",
+          "br": "Remover chocolate, fazendo fósforos correspondentes perto dele. O chocolate se espalha sobre um ladrilho a cada volta quando não for atingido.",
+          "ru": "Уберите Шоколад, совместив Орнаменты рядом с ним. Шоколад распространяется на плитку каждый ход, если он не сбит."
+        },
+        {
+          "-id": "Tut10Key",
+          "en": "Collect Biscuits by exploding Bombs through them.",
+          "de": "Sammle Kekse, indem du Bomben durch sie hindurch explodieren lässt.",
+          "es": "Recoge galletas haciendo explotar bombas a través de ellas.",
+          "fr": "Récupérer des biscuits en faisant exploser des bombes à travers eux.",
+          "it": "Raccogliere i Biscotti facendo esplodere le Bombe attraverso di essi.",
+          "br": "Colete biscoitos explodindo bombas através deles.",
+          "ru": "Соберите печенье, взрывая бомбы в них."
+        },
+        {
+          "-id": "InstructionsContent1Key",
+          "en": "Swap adjacent Ornaments to match triplets of the same colour to collect them. Matching 4 or 5 spawns Bombs.",
+          "de": "Tausche benachbarte Ornamente, um Drillinge der gleichen Farbe zu sammeln. Bei 4 oder 5 Übereinstimmungen werden Bomben erzeugt.",
+          "es": "Intercambia adornos adyacentes para hacer coincidir trillizos del mismo color y recogerlos. Si consigues 4 o 5, aparecerán bombas.",
+          "fr": "Intervertissez les ornements adjacents pour faire correspondre des triplets de la même couleur et les collecter. Si vous en associez 4 ou 5, des bombes apparaîtront.",
+          "it": "Scambiate gli ornamenti adiacenti per abbinare le triplette dello stesso colore e raccoglierle. Se si abbinano 4 o 5 pezzi, si generano bombe.",
+          "br": "Troque os Ornamentos adjacentes para combinar com trigêmeos da mesma cor para coletá-los. Combinem com 4 ou 5 bombas spawns.",
+          "ru": "Меняйте местами соседние Орнаменты, чтобы собрать тройки одного цвета. При совпадении 4 или 5 штук появляются бомбы."
+        },
+        {
+          "-id": "InstructionsContent2Key",
+          "en": "Collect the target items to complete each level. Complete missions to earn rewards and progress your rank to unlock more levels.",
+          "de": "Sammle die Zielobjekte ein, um jedes Level zu beenden. Schließe Missionen ab, um Belohnungen zu erhalten und in deinem Rang aufzusteigen, um weitere Level freizuschalten.",
+          "es": "Recoge los objetos objetivo para completar cada nivel. Completa las misiones para ganar recompensas y progresar en tu rango para desbloquear más niveles.",
+          "fr": "Collectez les objets cibles pour terminer chaque niveau. Accomplissez des missions pour gagner des récompenses et progresser dans votre rang pour débloquer plus de niveaux.",
+          "it": "Raccogliete gli oggetti target per completare ogni livello. Completate le missioni per ottenere ricompense e avanzare di grado per sbloccare altri livelli.",
+          "br": "Colete os itens de destino para completar cada nível. Complete as missões para ganhar recompensas e progredir em sua classificação para desbloquear mais níveis.",
+          "ru": "Собирайте целевые предметы, чтобы завершить каждый уровень. Выполняйте задания, чтобы заработать награды и повысить свой ранг, чтобы открыть новые уровни."
+        },
+        {
+          "-id": "InstructionsContent3Key",
+          "en": "Check the spinning wheel for free rewards, and shop offers to spend your earned coins.",
+          "de": "Sieh dir das Drehrad an, um kostenlose Belohnungen zu erhalten, und kaufe ein, um deine verdienten Münzen auszugeben.",
+          "es": "Consulta la rueda giratoria para obtener recompensas gratuitas, y las ofertas de las tiendas para gastar las monedas ganadas.",
+          "fr": "Vérifiez la roue qui tourne pour obtenir des récompenses gratuites, et les offres d'achat pour dépenser vos pièces gagnées.",
+          "it": "Controllate la ruota che gira per ottenere premi gratuiti e le offerte dei negozi per spendere le monete guadagnate.",
+          "br": "Verifique a roda giratória para obter recompensas grátis, e faça compras para gastar suas moedas ganhas.",
+          "ru": "Проверяйте вращающееся колесо, чтобы получить бесплатные награды, и предложения магазинов, чтобы потратить заработанные монеты."
+        },
+        {
+          "-id": "TimeAttackKey",
+          "en": "Time Attack!",
+          "de": "Zeitangriff!",
+          "es": "¡Ataque de tiempo!",
+          "fr": "Attaque contre le temps !",
+          "it": "Attacco al tempo!",
+          "br": "Ataque de tempo!",
+          "ru": "Атака временем!"
+        },
+        {
+          "-id": "TimeKey",
+          "en": "Time",
+          "de": "Zeit",
+          "es": "Tiempo",
+          "fr": "Temps",
+          "it": "Tempo",
+          "br": "Tempo",
+          "ru": "Время"
+        },
+        {
+          "-id": "SpecialOfferKey",
+          "en": "Special offer!",
+          "de": "Sonderangebot!",
+          "es": "Oferta especial",
+          "fr": "Offre spéciale !",
+          "it": "Offerta speciale!",
+          "br": "Oferta especial!",
+          "ru": "Специальное\nпредложение!"
+        },
+        {
+          "-id": "NoThanksKey",
+          "en": "No thanks!",
+          "de": "Nein Danke!",
+          "es": "¡No gracias!",
+          "fr": "Non merci !",
+          "it": "No grazie!",
+          "br": "Não, obrigado!",
+          "ru": "Нет, спасибо!"
+        },
+        {
+          "-id": "WatchAdKey",
+          "en": "Watch ad",
+          "de": "Anzeige ansehen",
+          "es": "Ver anuncio",
+          "fr": "Regarder la publicité",
+          "it": "Guarda l'annuncio",
+          "br": "Assista ao anúncio",
+          "ru": "Смотреть рекламу"
+        },
+        {
+          "-id": "SettingsKey",
+          "en": "Settings",
+          "de": "Einstellungen",
+          "es": "Ajustes",
+          "fr": "Paramètres",
+          "it": "Impostazioni",
+          "br": "Configurações",
+          "ru": "Настройки"
+        },
+        {
+          "-id": "NextKey",
+          "en": "Next",
+          "de": "Weiter",
+          "es": "Siguiente",
+          "fr": "Suivant",
+          "it": "Avanti",
+          "br": "Seguinte",
+          "ru": "Следующий"
+        },
+        {
+          "-id": "ClaimKey",
+          "en": "Claim",
+          "de": "Fordern Sie",
+          "es": "Reclamar",
+          "fr": "Réclamer",
+          "it": "Richiesta",
+          "br": "Reivindicação",
+          "ru": "Заявка"
+        },
+        {
+          "-id": "InstructionsTitleKey",
+          "en": "Instructions",
+          "de": "Anleitung",
+          "es": "Instrucciones",
+          "fr": "Instructions",
+          "it": "Istruzioni",
+          "br": "Instruções",
+          "ru": "Инструкция"
+        },
+        {
+          "-id": "NoMoreMovesKey",
+          "en": "NO MORE\nMOVES",
+          "de": "Keine Züge\nmehr",
+          "es": "no más\nmovimientos",
+          "fr": "À court\nde coups",
+          "it": "Mosse\nesaurite",
+          "br": "Acabaram-se\nos movimentos",
+          "ru": "Больше нет\nходов"
+        },
+        {
+          "-id": "GreatKey",
+          "en": "Great!",
+          "de": "Super!",
+          "es": "¡Genial!",
+          "fr": "Magnifique!",
+          "it": "Ottimo!",
+          "br": "Ótimo!",
+          "ru": "Отлично"
+        },
+        {
+          "-id": "PerfectKey",
+          "en": "Perfect!",
+          "de": "Perfekt!",
+          "es": "¡Perfecto!",
+          "fr": "Parfait!",
+          "it": "Perfetto!",
+          "br": "Perfeito!",
+          "ru": "Идеально"
+        },
+        {
+          "-id": "ExcellentKey",
+          "en": "Excellent!",
+          "de": "AUSGEZEICHNET!",
+          "es": "¡Excelente!",
+          "fr": "EXCELLENT!",
+          "it": "ECCELLENTE!",
+          "br": "EXCELENTE!",
+          "ru": "Прекрасно"
+        },
+        {
+          "-id": "MoreGames",
+          "en": "MORE GAMES",
+          "de": "MEHR SPIELE",
+          "es": "MÁS JUEGOS",
+          "fr": "PLUS DE JEUX",
+          "it": "ALTRI GIOCHI",
+          "br": "MAIS JOGOS",
+          "ru": "БОЛЬШЕ ИГР"
+        }
+      ]
+    }
+  }
+}

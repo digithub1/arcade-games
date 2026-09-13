@@ -1,0 +1,36 @@
+{
+	"name": "Injection Invasion",
+	"short_name": "Injection Invasion",
+	"description": "Got fear of injections! In this game Injection Invasion, The little boy has very big fear for injection. He has been running and jumping around to avoid the injection. The game has a very simple concept but it’s fun to play. Help the little boy to avoid the injection. You can use the mouse or the keyboard key arrows to play the game. ",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

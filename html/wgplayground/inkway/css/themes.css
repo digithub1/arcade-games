@@ -1,0 +1,241 @@
+/**
+ * INKWAY — World Themes
+ * =====================
+ * Per-world visual overrides applied to game screen.
+ */
+
+/* ══════════════════════════════════════
+   WORLD 1 — THE NOTEBOOK
+   ══════════════════════════════════════ */
+
+.theme-notebook {
+    --theme-bg: var(--w1-bg);
+    --theme-bg-alt: var(--w1-bg-alt);
+    --theme-ink: var(--w1-ink);
+    --theme-accent: var(--w1-accent);
+}
+
+.theme-notebook .canvas-container {
+    background: var(--w1-bg);
+}
+
+/* ══════════════════════════════════════
+   WORLD 2 — THE BLACKBOARD
+   ══════════════════════════════════════ */
+
+.theme-blackboard {
+    --theme-bg: var(--w2-bg);
+    --theme-bg-alt: var(--w2-bg-alt);
+    --theme-ink: var(--w2-ink);
+    --theme-accent: var(--w2-accent);
+}
+
+.theme-blackboard .canvas-container {
+    background: var(--w2-bg);
+    background-image:
+        /* Subtle chalk dust texture */
+        radial-gradient(ellipse at 20% 30%, var(--w2-chalk) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, var(--w2-chalk) 0%, transparent 50%);
+}
+
+.theme-blackboard .game-hud,
+.theme-blackboard .game-ink-row,
+.theme-blackboard .game-toolbar {
+    background: rgba(30, 58, 30, 0.85);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.theme-blackboard .hud-level-name,
+.theme-blackboard .ink-label,
+.theme-blackboard .ink-percent,
+.theme-blackboard .game-timer,
+.theme-blackboard .tool-label,
+.theme-blackboard .btn-tool {
+    color: var(--w2-ink);
+}
+
+.theme-blackboard .btn-tool.active {
+    background: rgba(232, 200, 64, 0.15);
+    border-color: var(--w2-accent);
+    color: var(--w2-accent);
+}
+
+.theme-blackboard .hud-btn {
+    color: var(--w2-ink);
+}
+
+/* ══════════════════════════════════════
+   WORLD 3 — THE BLUEPRINT
+   ══════════════════════════════════════ */
+
+.theme-blueprint {
+    --theme-bg: var(--w3-bg);
+    --theme-bg-alt: var(--w3-bg-alt);
+    --theme-ink: var(--w3-ink);
+    --theme-accent: var(--w3-accent);
+}
+
+.theme-blueprint .canvas-container {
+    background: var(--w3-bg);
+    background-image:
+        /* Grid */
+        linear-gradient(var(--w3-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--w3-grid) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.theme-blueprint .game-hud,
+.theme-blueprint .game-ink-row,
+.theme-blueprint .game-toolbar {
+    background: rgba(10, 30, 61, 0.9);
+    border-color: rgba(77, 201, 246, 0.1);
+}
+
+.theme-blueprint .hud-level-name,
+.theme-blueprint .ink-label,
+.theme-blueprint .ink-percent,
+.theme-blueprint .game-timer,
+.theme-blueprint .tool-label,
+.theme-blueprint .btn-tool {
+    color: var(--w3-ink);
+}
+
+.theme-blueprint .btn-tool.active {
+    background: rgba(77, 201, 246, 0.12);
+    border-color: var(--w3-ink);
+    color: var(--w3-ink);
+}
+
+.theme-blueprint .hud-btn {
+    color: var(--w3-ink);
+}
+
+/* ══════════════════════════════════════
+   WORLD 4 — THE WATERCOLOR
+   ══════════════════════════════════════ */
+
+.theme-watercolor {
+    --theme-bg: var(--w4-bg);
+    --theme-bg-alt: var(--w4-bg-alt);
+    --theme-ink: var(--w4-ink);
+    --theme-accent: var(--w4-accent);
+}
+
+.theme-watercolor .canvas-container {
+    background: var(--w4-bg);
+    background-image:
+        radial-gradient(ellipse at 15% 25%, var(--w4-wash1) 0%, transparent 60%),
+        radial-gradient(ellipse at 85% 75%, var(--w4-wash2) 0%, transparent 60%),
+        radial-gradient(ellipse at 50% 50%, rgba(255, 200, 150, 0.04) 0%, transparent 70%);
+}
+
+/* ══════════════════════════════════════
+   WORLD 5 — THE NEON SHEET
+   ══════════════════════════════════════ */
+
+.theme-neon {
+    --theme-bg: var(--w5-bg);
+    --theme-bg-alt: var(--w5-bg-alt);
+    --theme-ink: var(--w5-ink);
+    --theme-accent: var(--w5-accent);
+}
+
+.theme-neon .canvas-container {
+    background: var(--w5-bg);
+    background-image:
+        /* Subtle grid */
+        linear-gradient(var(--w5-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--w5-grid) 1px, transparent 1px),
+        /* Neon glow spots */
+        radial-gradient(ellipse at 30% 40%, var(--w5-glow) 0%, transparent 40%),
+        radial-gradient(ellipse at 70% 60%, rgba(255, 7, 58, 0.05) 0%, transparent 40%);
+    background-size: 48px 48px, 48px 48px, 100% 100%, 100% 100%;
+}
+
+.theme-neon .game-hud,
+.theme-neon .game-ink-row,
+.theme-neon .game-toolbar {
+    background: rgba(8, 8, 12, 0.92);
+    border-color: rgba(57, 255, 20, 0.08);
+}
+
+.theme-neon .hud-level-name,
+.theme-neon .ink-label,
+.theme-neon .ink-percent,
+.theme-neon .game-timer,
+.theme-neon .tool-label,
+.theme-neon .btn-tool {
+    color: var(--w5-ink);
+}
+
+.theme-neon .btn-tool.active {
+    background: rgba(57, 255, 20, 0.1);
+    border-color: var(--w5-ink);
+    color: var(--w5-ink);
+    box-shadow: 0 0 8px rgba(57, 255, 20, 0.15);
+}
+
+.theme-neon .hud-btn {
+    color: var(--w5-ink);
+}
+
+.theme-neon .ink-bar-fill {
+    box-shadow: 0 0 6px var(--w5-ink);
+}
+
+/* ══════════════════════════════════════
+   WORLD 6 — THE SKETCHBOOK
+   ══════════════════════════════════════ */
+
+.theme-sketchbook {
+    --theme-bg: var(--w6-bg);
+    --theme-bg-alt: var(--w6-bg-alt);
+    --theme-ink: var(--w6-ink);
+    --theme-accent: var(--w6-accent);
+}
+
+.theme-sketchbook .canvas-container {
+    background: var(--w6-bg);
+    background-image:
+        /* Paper grain */
+        repeating-linear-gradient(
+            45deg,
+            var(--w6-paper) 0px,
+            var(--w6-paper) 1px,
+            transparent 1px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            var(--w6-paper) 0px,
+            var(--w6-paper) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+}
+
+.theme-sketchbook .game-hud,
+.theme-sketchbook .game-ink-row,
+.theme-sketchbook .game-toolbar {
+    background: rgba(61, 43, 31, 0.88);
+    border-color: rgba(240, 220, 192, 0.1);
+}
+
+.theme-sketchbook .hud-level-name,
+.theme-sketchbook .ink-label,
+.theme-sketchbook .ink-percent,
+.theme-sketchbook .game-timer,
+.theme-sketchbook .tool-label,
+.theme-sketchbook .btn-tool {
+    color: var(--w6-ink);
+}
+
+.theme-sketchbook .btn-tool.active {
+    background: rgba(212, 168, 67, 0.12);
+    border-color: var(--w6-accent);
+    color: var(--w6-accent);
+}
+
+.theme-sketchbook .hud-btn {
+    color: var(--w6-ink);
+}

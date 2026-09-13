@@ -1,0 +1,97 @@
+/**
+ * INKWAY — Typography
+ * ===================
+ * Font sizes, weights, and text styles.
+ */
+
+.game-logo,
+.splash-logo,
+.menu-logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(48px, 12vw, 80px);
+    letter-spacing: 3px;
+    color: var(--theme-ink);
+}
+
+.screen-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(22px, 5vw, 32px);
+    color: var(--clr-text);
+}
+
+.modal-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(26px, 6vw, 38px);
+    color: var(--clr-text);
+    text-align: center;
+}
+
+.world-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(18px, 4vw, 28px);
+}
+
+.level-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(14px, 3vw, 20px);
+}
+
+.hud-level-name {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: clamp(14px, 3vw, 18px);
+    color: var(--clr-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-label,
+.btn-play-text,
+.launch-text,
+.tool-label {
+    font-family: var(--font-ui);
+    font-weight: 700;
+}
+
+.ink-label,
+.ink-percent,
+.timer-label,
+.game-timer {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.stat-value {
+    font-family: var(--font-ui);
+    font-weight: 700;
+}
+
+.body-text,
+.fail-message,
+.dialog-message,
+.setting-label {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.caption {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--clr-text-muted);
+}
+
+.splash-tagline,
+.menu-tagline {
+    font-family: var(--font-body);
+    font-size: clamp(14px, 3vw, 20px);
+    color: var(--clr-text-muted);
+    letter-spacing: 1px;
+}
