@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>War Of Tanks</title>
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #111;
+      position: fixed;
+    }
+    #unity-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+    #unity-canvas {
+      width: 100%;
+      height: 100%;
+      background: #151515;
+    }
+    canvas:focus {
+      outline: none;
+    }
+  </style>
+
+  <!-- 100% Offline GamePush Mock: Zero ads, instant reward callbacks, local saves -->
+  <script src="gamepush.js"></script>
+
+  <script>
+    // Suppress benign unhandled rejections from engine
+    (function () {
+      function benignReason(reason) {
+        if (!reason) return false;
+        var msg = typeof reason === 'object' && reason.message != null ? String(reason.message) : String(reason);
+        return msg === 'cancel' || msg === 'user_not_logged_in' || msg === 'user_canceled_the_order' ||
+               msg === 'User canceled the order.' || msg === 'Decoding failed' || msg === 'User denied' ||
+               msg === 'payment_rejected' || msg === 'purchase_window_closed' || msg === 'No ads' ||
+               msg === 'client_error' || msg === 'Timeout 2000ms exceeded';
+      }
+      window.addEventListener('unhandledrejection', function (e) {
+        if (!benignReason(e.reason)) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+      }, true);
+    })();
+
+    // Prevent default arrow key scrolling
+    window.addEventListener("keydown", function(e) {
+      if (["ArrowUp","ArrowDown","ArrowLeft","ArrowRight","Space"].indexOf(e.code) > -1) {
+        e.preventDefault();
+      }
+    }, false);
+  </script>
+</head>
+<body>
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" width="1920" height="1080"></canvas>
+  </div>
+  <div id="loading-cover">
+    <div id="unity-loading-bar">
+      <div id="unity-logo"><img src="logo.png" alt="War Of Tanks Logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+      <div class="spinner" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script>
+    const buildUrl = "Build";
+    const loaderUrl = buildUrl + "/62f34c2551e23c09385b33abf25786bb.loader.js";
+    const config = {
+      dataUrl: buildUrl + "/f26d6657c11f38a325949ed338d86683.data.unityweb",
+      workerUrl: buildUrl + "/f26d6657c11f38a325949ed338d86683.data.unityweb",
+      frameworkUrl: buildUrl + "/42e479954d94063d77c6139da0a60cf7.framework.js.unityweb",
+      codeUrl: buildUrl + "/25d56b1766f0f403d54d49fd85c27ede.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "Treasure Hunters",
+      productName: "War Of Tanks",
+      productVersion: "1.7.2",
+      errorHandler: function (message) {
+        console.error("Unity WebGL runtime error:", message);
+        return true;
+      },
+      showBanner: function (message, type) {
+        var logger = type === "error" ? console.error : type === "warning" ? console.warn : console.log;
+        logger("[Unity WebGL]", message);
+      },
+    };
+
+    const container = document.querySelector("#unity-container");
+    const canvas = document.querySelector("#unity-canvas");
+    const loadingCover = document.querySelector("#loading-cover");
+    const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+    const progressBarFull = document.querySelector("#unity-progress-bar-full");
+    const spinner = document.querySelector('.spinner');
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+    }
+
+    loadingCover.style.display = "";
+
+    // Disable context menu on canvas
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    function FocusGame() {
+      window.focus();
+      canvas.focus();
+    }
+
+    window.addEventListener('pointerdown', FocusGame);
+    window.addEventListener('touchstart', FocusGame);
+
+    const unityLoader = document.createElement("script");
+    unityLoader.src = loaderUrl;
+    unityLoader.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        spinner.style.display = "none";
+        progressBarEmpty.style.display = "";
+        progressBarFull.style.width = `${100 * progress}%`;
+      }).then((unityInstance) => {
+        window.unityInstance = unityInstance;
+        loadingCover.style.display = "none";
+        FocusGame();
+        console.log("[OfflinePatch] War Of Tanks loaded successfully and running 100% offline!");
+      }).catch((message) => {
+        console.error("Unity WebGL startup error:", message);
+      });
+    };
+    document.body.appendChild(unityLoader);
+  </script>
+</body>
+</html>
