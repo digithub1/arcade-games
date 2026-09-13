@@ -1,0 +1,256 @@
+{
+  "frames": {
+    "backet_bg.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 950,
+        "h": 295
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 950,
+        "h": 295
+      },
+      "sourceSize": {
+        "w": 950,
+        "h": 295
+      }
+    },
+    "backet_block.png": {
+      "frame": {
+        "x": 1180,
+        "y": 208,
+        "w": 197,
+        "h": 203
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 197,
+        "h": 203
+      },
+      "sourceSize": {
+        "w": 197,
+        "h": 203
+      }
+    },
+    "backet.png": {
+      "frame": {
+        "x": 1180,
+        "y": 0,
+        "w": 204,
+        "h": 206
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 204,
+        "h": 206
+      },
+      "sourceSize": {
+        "w": 204,
+        "h": 206
+      }
+    },
+    "buster_from_plate.png": {
+      "frame": {
+        "x": 952,
+        "y": 0,
+        "w": 226,
+        "h": 225
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 226,
+        "h": 225
+      },
+      "sourceSize": {
+        "w": 226,
+        "h": 225
+      }
+    },
+    "buster_to_backet.png": {
+      "frame": {
+        "x": 952,
+        "y": 227,
+        "w": 226,
+        "h": 225
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 226,
+        "h": 225
+      },
+      "sourceSize": {
+        "w": 226,
+        "h": 225
+      }
+    },
+    "cap_icon.png": {
+      "frame": {
+        "x": 797,
+        "y": 391,
+        "w": 78,
+        "h": 58
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 78,
+        "h": 58
+      },
+      "sourceSize": {
+        "w": 78,
+        "h": 58
+      }
+    },
+    "header_bg.png": {
+      "frame": {
+        "x": 0,
+        "y": 297,
+        "w": 489,
+        "h": 151
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 489,
+        "h": 151
+      },
+      "sourceSize": {
+        "w": 489,
+        "h": 151
+      }
+    },
+    "pause_button.png": {
+      "frame": {
+        "x": 491,
+        "y": 297,
+        "w": 152,
+        "h": 154
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 152,
+        "h": 154
+      },
+      "sourceSize": {
+        "w": 152,
+        "h": 154
+      }
+    },
+    "plate_block.png": {
+      "frame": {
+        "x": 1379,
+        "y": 208,
+        "w": 152,
+        "h": 159
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 152,
+        "h": 159
+      },
+      "sourceSize": {
+        "w": 152,
+        "h": 159
+      }
+    },
+    "plate.png": {
+      "frame": {
+        "x": 645,
+        "y": 297,
+        "w": 150,
+        "h": 152
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 150,
+        "h": 152
+      }
+    },
+    "reward_icon.png": {
+      "frame": {
+        "x": 1379,
+        "y": 369,
+        "w": 96,
+        "h": 78
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 78
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 78
+      }
+    },
+    "tag.png": {
+      "frame": {
+        "x": 797,
+        "y": 297,
+        "w": 121,
+        "h": 92
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 92
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 92
+      }
+    }
+  },
+  "animations": {},
+  "meta": {
+    "app": "spritesheet_builder.html",
+    "version": "1.0",
+    "image": "game_ui.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1531,
+      "h": 452
+    },
+    "scale": "1"
+  }
+}
