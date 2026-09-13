@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "EscapeFromAfrica",
+"productVersion": "0.1",
+"dataUrl": "1e9e74eb2175eca69443585fe4a3f976.unityweb",
+"wasmCodeUrl": "f124269ebf273cc7415fd9e5aca28bea.unityweb",
+"wasmFrameworkUrl": "0fda14d0544b3fd5f9f7a64ed80526f8.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
