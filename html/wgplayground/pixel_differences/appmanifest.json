@@ -1,0 +1,11 @@
+{
+	"name": "Pixel Differences",
+	"short_name": "Pixel Differences",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}
