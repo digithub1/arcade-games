@@ -1,0 +1,17 @@
+{
+	"name": "Bunny Goal",
+	"short_name": "Bunny Goal",
+	"description": "unny Goal is an addictive, family-friendly puzzle game where players guide a cute bunny through a series of challenging mazes to reach its carrot-filled goal! Use your wits to navigate tricky obstacles, clever traps, and moving platforms. Each level presents new puzzles, from sliding blocks to hidden pathways, making every playthrough unique and engaging. With vibrant visuals and smooth controls, Bunny Goal offers hours of fun for players of all ages.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

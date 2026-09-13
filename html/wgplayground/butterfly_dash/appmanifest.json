@@ -1,0 +1,36 @@
+{
+	"name": "Butterfly Dash",
+	"short_name": "Butterfly Dash",
+	"description": "Fly, dodge, and collect nectar in this thrilling butterfly adventure game.  Get ready to soar through the sky and embark on a thrilling butterfly adventure! In Butterfly Dash Adventure, you'll take control of a beautiful butterfly as you fly through a stunning world filled with obstacles, enemies, and plenty of sweet nectar to collect. With simple but addictive gameplay, you'll need quick reflexes and expert timing to dodge obstacles and collect as much nectar as possible.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

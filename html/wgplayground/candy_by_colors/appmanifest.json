@@ -1,0 +1,36 @@
+{
+	"name": "Candy by Colors",
+	"short_name": "Candy by Colors",
+	"description": "The \"Color Pumpkin Match Online Game\" is a game that helps players improve their color-matching skills. The game is simple to play and can be played by anyone. Looking for a fun online game to play this fall? Color Pumpkin Match is the perfect game for you! In this game, you need to match the pumpkins of the same color. The faster you match the pumpkins, the higher your score will be. So put your matching skills to the test and see how high you can score in Color Pumpkin Match!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

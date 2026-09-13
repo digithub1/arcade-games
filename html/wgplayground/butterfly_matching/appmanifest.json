@@ -1,0 +1,36 @@
+{
+	"name": "Butterfly Matching",
+	"short_name": "Butterfly Matching",
+	"description": "Butterflies are some of the most beautiful creatures in the world. They come in all shapes and sizes, and each one is unique. That's why we've created Butterfly Matching, an online puzzle game that celebrates these amazing animals! In Butterfly Matching, you'll be challenged to match pairs of butterflies as quickly as you can. The catch is that you'll need to pay close attention to the details of each butterfly in order to find its perfect match. With hundreds of butterflies to choose from, you're sure to find a challenge that's just right for you!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

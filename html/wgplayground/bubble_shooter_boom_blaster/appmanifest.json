@@ -1,0 +1,36 @@
+{
+	"name": "Bubble Shooter Boom Blaster",
+	"short_name": "Bubble Shooter Boom Blaster",
+	"description": "Play the best bubble shooter game online for free! We are the best bubble shooter game online for free. We offer you the most amazing online game experience.Bubble Shooter Boom Blaster is an awesome bubble shooting game with a new twist! Match 3 bubbles or more to blast them. This is a new and improved version of the popular Bubble Shooter game. It's a lot of fun, so try it out for yourself! Bubble Shooter Boom Blaster is an amazing bubble shooter game with a new twist on the classic bubble shooter game. It is more than just a bubble shooter game, it is a bubble bursting game with many levels and challenges. Come play the original and best Bubble Shooter online for free! Great graphics and effects make this game a blast to play. Shoot bubbles, solve puzzles, clear the board and win levels!\n",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

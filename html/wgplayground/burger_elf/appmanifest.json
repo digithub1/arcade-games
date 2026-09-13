@@ -1,0 +1,36 @@
+{
+	"name": "Burger Elf",
+	"short_name": "Burger Elf",
+	"description": "Burger Elf is an adventure game that you can play online. In this game, you take on the role of a burger elf who must jump his way through various obstacles to reach the finish line.  Burger Elf Jump Adventure Online game is an exciting and challenging game that will test your skills and reflexes. In this game, you must help the Burger Elf jump over obstacles and reach the end of each level. The game is suitable for all ages and will provide hours of fun.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
