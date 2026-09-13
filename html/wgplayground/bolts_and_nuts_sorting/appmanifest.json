@@ -1,0 +1,12 @@
+{
+	"name": "Болты и Гайки - Сортировка",
+	"short_name": "Болты и Гайки - Сортировка",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#332d6e",
+	"icons": [],
+	"screenshots": [],
+	"theme_color": "#332d6e"
+}
