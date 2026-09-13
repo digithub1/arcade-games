@@ -1,0 +1,36 @@
+{
+	"name": "Warrior Kingdom",
+	"short_name": "Warrior Kingdom",
+	"description": "Warrior Kingdom is an action RPG for one person. You will guide your character through the game, fighting enemies and completing tasks. The game includes a number of different weapons and armor, as well as spells and abilities. To battle the enemies and save the kingdom, you must employ all of your skills.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

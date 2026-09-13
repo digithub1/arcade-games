@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Lapsus Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lapsus Pro'), url('https://fonts.cdnfonts.com/s/55500/LapsusPro-Bold.woff') format('woff');
+}
+
+
