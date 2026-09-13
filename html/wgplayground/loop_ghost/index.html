@@ -1,0 +1,663 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Loop Ghost">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/7ab4c86c1cb5ba9dc453a63d14f9f40f.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/d82135390f1f077763bec09e4501ec9e.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/2c65883c1f27f6c9221f7f24ad98dd05">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/loop-ghost">
+            <meta property="wgp:description" content="Your past is your greatest ally.A mistake isn't failure — it's a setup for your next move.Every time a cycle ends, your actions are recorded — and a ghost of your past self stays on the level, replaying every step. Every cycle. Until you escape.Press two buttons at once?Block a laser with a mirror while walking through a door?Plan it several cycles ahead.What awaits you:- 70+ levels with increasing difficulty — from simple one-cycle puzzles to complex multi-cycle combinations- Two difficulty modes (timed cycles and unlimited time)- Level editor — create your own puzzles- Buttons, doors, portals, conveyors, lasers, mirrors — each mechanic changes the rules- Hunt for the perfect solution in the fewest cyclesThink in cycles. Act precisely. Escape.">
+            <meta property="wgp:instructions" content="Goal: Reach the exit tile on each level.Time Loops:When a cycle ends, a ghost clone appears that replays your exact moves from that cycle. Use your clones to cooperate with yourself: one clone holds a button while you walk through the door it opens.Game Objects:- Buttons &amp; Doors — step on a button to open a linked door. The door stays open only while the button is held.- Push Blocks — push blocks onto buttons to hold them. Blocks stay in place between cycles.- Lasers — red beams that reset your current cycle on contact. Use blocks or mirrors for cover.- Mirrors &amp; Levers — mirrors reflect lasers. Step on a lever to rotate its linked mirror.- Portals — paired tiles that teleport you (and lasers!) to the other side.- Conveyors — moving tiles that push you in a set direction.- Enemies — moving hazards that patrol the level. Push blocks into them to redirect their path.Star Rating:Each level awards 1-3 stars based on how few cycles you use. Collect stars to unlock new level packs.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/da30f107888b84c2b4a9f6b42f428ad6.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/b3b356ddb50deca8b3908280c0f08bea.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIiwiVyI6IiIsIlEiOiIiLCJBIjoiIiwiUyI6IiIsIkQiOiIiLCJTcGFjZSI6IiIsIiZsYXJyOyI6IiIsIiZyYXJyOyI6IiIsIiZ1YXJyOyI6IiIsIiZkYXJyOyI6IiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUifSx7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/2c65883c1f27f6c9221f7f24ad98dd05">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Loop Ghost</title>
+  
+  
+  <style type="text/css">@font-face {font-family:Russo One;font-style:normal;font-weight:400;src:url(/cf-fonts/s/russo-one/5.2.7/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:block;}@font-face {font-family:Russo One;font-style:normal;font-weight:400;src:url(/cf-fonts/s/russo-one/5.2.7/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:block;}@font-face {font-family:Russo One;font-style:normal;font-weight:400;src:url(/cf-fonts/s/russo-one/5.2.7/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:400;src:url(/cf-fonts/v/exo-2/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:400;src:url(/cf-fonts/v/exo-2/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:400;src:url(/cf-fonts/v/exo-2/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:400;src:url(/cf-fonts/v/exo-2/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:400;src:url(/cf-fonts/v/exo-2/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:600;src:url(/cf-fonts/v/exo-2/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:600;src:url(/cf-fonts/v/exo-2/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:600;src:url(/cf-fonts/v/exo-2/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:600;src:url(/cf-fonts/v/exo-2/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:600;src:url(/cf-fonts/v/exo-2/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:700;src:url(/cf-fonts/v/exo-2/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:700;src:url(/cf-fonts/v/exo-2/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:700;src:url(/cf-fonts/v/exo-2/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:700;src:url(/cf-fonts/v/exo-2/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:block;}@font-face {font-family:Exo 2;font-style:normal;font-weight:700;src:url(/cf-fonts/v/exo-2/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:500;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/cyrillic/500/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:500;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/cyrillic-ext/500/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:500;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/latin-ext/500/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:500;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/vietnamese/500/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:block;}@font-face {font-family:IBM Plex Mono;font-style:normal;font-weight:500;src:url(/cf-fonts/s/ibm-plex-mono/5.2.7/latin/500/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:block;}</style>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%; height: 100%; overflow: hidden; background: #050508;
+      overscroll-behavior: none;
+      touch-action: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -webkit-text-size-adjust: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    #game-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    canvas { display: block; width: 100% !important; height: 100% !important; touch-action: none; -webkit-user-drag: none; }
+
+    /* ── Editor UI (positioned over canvas via JS) ── */
+    #editor-ui {
+      display: none;
+      position: fixed;
+      pointer-events: none;
+      font-family: monospace;
+      color: #ccc;
+      z-index: 10;
+      --ed-topbar-h: 7%;
+      --ed-statusbar-h: 4.5%;
+      --ed-sidebar-w: 18%;
+      --ed-sidebar-h: calc(100% - var(--ed-topbar-h) - var(--ed-statusbar-h));
+    }
+    #editor-ui > * { pointer-events: auto; }
+
+    /* Top bar — 7% of canvas height */
+    #editor-topbar {
+      position: absolute; top: 0; left: 0; right: 0;
+      height: var(--ed-topbar-h);
+      background: color-mix(in srgb, var(--ed-bg, #050508) 95%, transparent);
+      border-bottom: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      display: flex; align-items: center; gap: 6px;
+      padding: 0 8px;
+      overflow: hidden;
+    }
+    #editor-topbar label { color: var(--ed-text-body, #888); font-size: 12px; white-space: nowrap; }
+    #editor-topbar input, #editor-topbar select {
+      background: color-mix(in srgb, var(--ed-wall, #1a1a2e) 50%, transparent);
+      border: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      color: var(--ed-text-body, #ccc);
+      padding: 3px 5px; font-family: monospace; font-size: 12px;
+      width: 48px; border-radius: 3px;
+    }
+    #editor-topbar input.name-input { width: 100px; }
+    #editor-topbar button {
+      background: color-mix(in srgb, var(--ed-wall, #1a1a2e) 50%, transparent);
+      border: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      color: var(--ed-exit, #ffd740);
+      padding: 5px 10px; cursor: pointer; font-family: monospace; font-size: 12px;
+      border-radius: 3px; white-space: nowrap;
+      touch-action: manipulation; -ms-touch-action: manipulation;
+      -webkit-touch-callout: none; user-select: none;
+    }
+    #editor-topbar button:hover { background: var(--ed-wall, #252540); color: var(--ed-text-button, #fff); }
+    #editor-topbar button .btn-icon { margin-right: 2px; font-size: 10px; }
+    #editor-topbar .back-btn {
+      background: none; border: none; color: var(--ed-text-body, #8888aa); font-size: 13px;
+      cursor: pointer; padding: 4px 8px; font-family: monospace;
+    }
+    #editor-topbar .back-btn:hover { color: var(--ed-text-button, #ccc); }
+    #editor-topbar .topbar-sep {
+      width: 1px; height: 60%; background: color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent); margin: 0 4px;
+    }
+
+    /* Sidebar — 18% of canvas width, between topbar and statusbar */
+    #editor-sidebar {
+      position: absolute; top: var(--ed-topbar-h); left: 0;
+      width: var(--ed-sidebar-w);
+      bottom: var(--ed-statusbar-h);
+      background: color-mix(in srgb, var(--ed-bg, #050508) 95%, transparent);
+      border-right: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      padding: 6px;
+      overflow-y: auto;
+    }
+    #editor-sidebar .tool-btn {
+      display: block; width: 100%; text-align: left;
+      background: none; border: 1px solid transparent; color: var(--ed-text-body, #aaa);
+      padding: 8px 10px; cursor: pointer; font-family: monospace; font-size: 14px;
+      border-radius: 4px; margin-bottom: 2px;
+      touch-action: manipulation; -ms-touch-action: manipulation;
+      -webkit-touch-callout: none; user-select: none;
+    }
+    #editor-sidebar .tool-btn:hover { background: color-mix(in srgb, var(--ed-wall, #1a1a2e) 50%, transparent); color: var(--ed-text-button, #fff); }
+    #editor-sidebar .tool-btn .tool-icon {
+      display: inline-block; width: 18px; text-align: center; margin-right: 4px;
+    }
+    [data-tool="wall"] .tool-icon { color: var(--ed-wall, #1a1a2e); text-shadow: 0 0 2px var(--ed-wall, #252540); }
+    [data-tool="floor"] .tool-icon { color: var(--ed-floor-border, #252540); }
+    [data-tool="player"] .tool-icon { color: var(--ed-player-body, #fffae6); }
+    [data-tool="exit"] .tool-icon { color: var(--ed-exit, #ffd740); }
+    [data-tool="button"] .tool-icon { color: #1565c0; }
+    [data-tool="laser_button"] .tool-icon { color: #42a5f5; }
+    [data-tool="door"] .tool-icon { color: #e65100; }
+    [data-tool="pushblock"] .tool-icon { color: #616161; }
+    [data-tool="conveyor"] .tool-icon { color: #69f0ae; }
+    [data-tool="laser"] .tool-icon { color: var(--ed-hazard, #f44336); }
+    [data-tool="mirror"] .tool-icon { color: #e0e0e0; }
+    [data-tool="lever"] .tool-icon { color: #f0e0c0; }
+    [data-tool="eraser"] .tool-icon { color: var(--ed-hazard, #f44336); }
+    #editor-sidebar .tool-btn.active { border-color: var(--ed-exit, #ffd740); color: var(--ed-exit, #ffd740); }
+    #editor-sidebar .section-label { color: var(--ed-text-body, #555); font-size: 11px; margin: 8px 0 3px 2px; opacity: 0.6; }
+    #editor-sidebar select, #editor-sidebar input {
+      background: color-mix(in srgb, var(--ed-wall, #1a1a2e) 50%, transparent);
+      border: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      color: var(--ed-text-body, #ccc);
+      padding: 5px; font-family: monospace; font-size: 13px;
+      width: 100%; border-radius: 3px; margin-bottom: 3px;
+    }
+    #editor-sidebar label.movable-label {
+      display: block; padding: 6px 10px; font-size: 13px; cursor: pointer;
+      color: var(--ed-text-body, #ccc);
+    }
+    #editor-sidebar label.movable-label input { width: auto; margin-right: 4px; }
+
+    /* Share modal */
+    #ed-share-modal {
+      display: none;
+      position: fixed; inset: 0; z-index: 100;
+      background: rgba(0,0,0,0.75);
+      align-items: center; justify-content: center;
+    }
+    #ed-share-modal.open { display: flex; }
+    #ed-share-box {
+      background: color-mix(in srgb, var(--ed-bg, #050508) 97%, white);
+      border: 1px solid color-mix(in srgb, var(--ed-wall, #3a3a5c) 60%, transparent);
+      border-radius: 6px;
+      padding: 18px;
+      width: min(640px, 90vw);
+      max-height: 80vh;
+      display: flex; flex-direction: column; gap: 10px;
+      font-family: monospace;
+    }
+    #ed-share-box h3 {
+      color: var(--ed-exit, #ffd740); font-size: 14px; font-weight: normal; margin: 0;
+    }
+    #ed-share-box textarea {
+      flex: 1; min-height: 280px; max-height: 50vh;
+      background: var(--ed-bg, #070710);
+      border: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      color: var(--ed-text-title, #a0d8ef);
+      font-family: monospace; font-size: 12px; padding: 8px;
+      resize: vertical; border-radius: 3px; outline: none;
+    }
+    #ed-share-hint {
+      font-size: 11px; color: var(--ed-text-body, #666); opacity: 0.6;
+    }
+    #ed-share-error {
+      font-size: 11px; color: var(--ed-hazard, #f44336); min-height: 16px;
+    }
+    #ed-share-box .share-actions {
+      display: flex; gap: 8px; align-items: center;
+    }
+    #ed-share-apply {
+      background: #1a3020 !important; border-color: #2e7d32 !important; color: #69f0ae !important;
+    }
+    #ed-share-apply:hover { background: #2e7d32 !important; color: #fff !important; }
+    #ed-share-box button {
+      background: color-mix(in srgb, var(--ed-wall, #1a1a2e) 50%, transparent);
+      border: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      color: var(--ed-exit, #ffd740);
+      padding: 6px 14px; cursor: pointer; font-family: monospace; font-size: 12px;
+      border-radius: 3px;
+    }
+    #ed-share-box button:hover { background: var(--ed-wall, #252540); color: var(--ed-text-button, #fff); }
+    #ed-share-copy.copied { color: #69f0ae; border-color: #69f0ae; }
+
+    /* Keyboard focus styles */
+    #editor-sidebar .tool-btn:focus {
+      outline: none;
+      background: color-mix(in srgb, var(--ed-wall, #1a1a2e) 50%, transparent);
+      border-color: var(--ed-exit, #ffd740);
+      color: var(--ed-text-button, #fff);
+    }
+    #editor-sidebar select:focus,
+    #editor-sidebar input:focus {
+      outline: 2px solid var(--ed-exit, #ffd740);
+      outline-offset: -1px;
+    }
+    #editor-topbar input:focus,
+    #editor-topbar button:focus {
+      outline: 2px solid var(--ed-exit, #ffd740);
+    }
+    #ed-status-mode {
+      color: var(--ed-exit, #ffd740);
+      font-weight: bold;
+      min-width: 80px;
+    }
+
+    /* Status bar — 4.5% of canvas height */
+    #editor-statusbar {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: var(--ed-statusbar-h);
+      background: color-mix(in srgb, var(--ed-bg, #050508) 95%, transparent);
+      border-top: 1px solid color-mix(in srgb, var(--ed-wall, #252540) 60%, transparent);
+      display: flex; align-items: center; gap: 12px;
+      padding: 0 10px;
+      font-size: 11px; color: var(--ed-text-body, #666); opacity: 0.7;
+    }
+
+    /* Portrait editor layout: bottom tool panel + larger controls */
+    #editor-ui[data-layout="portrait"] {
+      --ed-topbar-h: 14%;
+      --ed-statusbar-h: 6%;
+      --ed-sidebar-w: 100%;
+      --ed-sidebar-h: 34%;
+    }
+    #editor-ui[data-layout="portrait"] #editor-topbar {
+      flex-wrap: wrap;
+      align-content: center;
+      gap: 8px;
+      padding: 6px 8px;
+      overflow-y: auto;
+    }
+    #editor-ui[data-layout="portrait"] #editor-topbar label { font-size: 14px; }
+    #editor-ui[data-layout="portrait"] #editor-topbar > span[style*="flex:1"] { display: none; }
+    #editor-ui[data-layout="portrait"] #editor-topbar .topbar-sep { display: none; }
+    #editor-ui[data-layout="portrait"] #editor-topbar input,
+    #editor-ui[data-layout="portrait"] #editor-topbar select,
+    #editor-ui[data-layout="portrait"] #editor-topbar button {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+    #editor-ui[data-layout="portrait"] #editor-topbar input { width: 56px; }
+    #editor-ui[data-layout="portrait"] #editor-topbar input.name-input { width: 132px; }
+    #editor-ui[data-layout="portrait"] #editor-sidebar {
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: var(--ed-statusbar-h);
+      width: 100%;
+      height: var(--ed-sidebar-h);
+      border-right: none;
+      border-top: 1px solid #252540;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-content: start;
+      gap: 6px 8px;
+      padding: 8px;
+      overflow: auto;
+    }
+    #editor-ui[data-layout="portrait"] #editor-sidebar .section-label,
+    #editor-ui[data-layout="portrait"] #editor-sidebar #ed-direction-section,
+    #editor-ui[data-layout="portrait"] #editor-sidebar #ed-laser-mode-section,
+    #editor-ui[data-layout="portrait"] #editor-sidebar #ed-block-size-section,
+    #editor-ui[data-layout="portrait"] #editor-sidebar #ed-mirror-orientation-section,
+    #editor-ui[data-layout="portrait"] #editor-sidebar #ed-movable-section,
+    #editor-ui[data-layout="portrait"] #editor-sidebar #ed-connections,
+    #editor-ui[data-layout="portrait"] #editor-sidebar #ed-add-conn {
+      grid-column: 1 / -1;
+    }
+    #editor-ui[data-layout="portrait"] #editor-sidebar .section-label { font-size: 13px; margin: 6px 0 0 2px; }
+    #editor-ui[data-layout="portrait"] #editor-sidebar .tool-btn {
+      font-size: 15px;
+      padding: 10px 10px;
+      margin-bottom: 0;
+    }
+    #editor-ui[data-layout="portrait"] #editor-sidebar select,
+    #editor-ui[data-layout="portrait"] #editor-sidebar input,
+    #editor-ui[data-layout="portrait"] #editor-sidebar label.movable-label {
+      font-size: 14px;
+      padding: 8px;
+    }
+    #editor-ui[data-layout="portrait"] #editor-statusbar {
+      font-size: 13px;
+      gap: 10px;
+      padding: 0 8px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+  </style>
+  <script type="module" src="./index-3WKxB_kC.js"></script>
+  <link rel="modulepreload" href="./phaser-DXXWZowi.js">
+<style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.gp-gamedistribution-sticky{display:flex;justify-content:center;position:fixed;left:50%;transform:translateX(-50%);z-index:100;max-height:90px;max-width:728px;overflow:hidden}.gp-gamedistribution-sticky__creative{position:relative;height:90px;width:728px;max-width:100vw}.gp-gamedistribution-sticky_top{top:0}.gp-gamedistribution-sticky_bottom{bottom:0}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202609080101/gpt" rel="compression-dictionary"><script esp-signal="true" src="https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js"></script><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/2c65883c1f27f6c9221f7f24ad98dd05/wgplayground/d82135390f1f077763bec09e4501ec9e.jpg">
+  <div id="game-container"><canvas width="2880" height="1398" style="margin-left: 0px; margin-top: 0px; outline: none; aspect-ratio: 2.06009 / 1;" tabindex="0"></canvas></div>
+  <div id="editor-ui">
+    <div id="editor-topbar">
+      <button id="ed-back" class="back-btn">&lt; <span data-i18n="editor.btn.back">Back</span></button>
+      <span class="topbar-sep"></span>
+      <label data-i18n="editor.label.name">Name:</label><input class="name-input" id="ed-name" value="New Level">
+      <label data-i18n="editor.label.width">W:</label><input type="number" id="ed-width" value="9" min="5" max="20">
+      <label data-i18n="editor.label.height">H:</label><input type="number" id="ed-height" value="7" min="3" max="15">
+      <label data-i18n="editor.label.time">Time:</label><input type="number" id="ed-cycle" value="12" min="3" max="60">
+      <label data-i18n="editor.label.max">Max:</label><input type="number" id="ed-max" value="3" min="1" max="8">
+      <label data-i18n="editor.label.ideal">Ideal:</label><input type="number" id="ed-ideal" value="2" min="1" max="8">
+      <span style="flex:1"></span>
+      <button id="ed-test"><span class="btn-icon">▶</span> <span data-i18n="editor.btn.test">Test</span></button>
+      <button id="ed-save"><span class="btn-icon">✓</span> <span data-i18n="editor.btn.save">Save</span></button>
+      <button id="ed-share"><span class="btn-icon">⇅</span> <span data-i18n="editor.btn.share">Import/Export</span></button>
+    </div>
+    <div id="editor-sidebar">
+      <div class="section-label" data-i18n="editor.section.tiles">TILES</div>
+      <button class="tool-btn active" data-tool="wall"><span class="tool-icon">█</span>1: <span data-i18n="editor.tool.wall">Wall</span></button>
+      <button class="tool-btn" data-tool="floor"><span class="tool-icon">░</span>2: <span data-i18n="editor.tool.floor">Floor</span></button>
+      <div class="section-label" data-i18n="editor.section.entities">ENTITIES</div>
+      <button class="tool-btn" data-tool="player"><span class="tool-icon">■</span>3: <span data-i18n="editor.tool.player">Player</span></button>
+      <button class="tool-btn" data-tool="exit"><span class="tool-icon">★</span>4: <span data-i18n="editor.tool.exit">Exit</span></button>
+      <button class="tool-btn" data-tool="button"><span class="tool-icon">●</span>5: <span data-i18n="editor.tool.button">Button</span></button>
+      <button class="tool-btn" data-tool="laser_button"><span class="tool-icon">◇</span>B: <span data-i18n="editor.tool.laser_button">Laser Btn</span></button>
+      <button class="tool-btn" data-tool="door"><span class="tool-icon">■</span>6: <span data-i18n="editor.tool.door">Door</span></button>
+      <button class="tool-btn" data-tool="pushblock"><span class="tool-icon">▦</span>7: <span data-i18n="editor.tool.block">Block</span></button>
+      <button class="tool-btn" data-tool="conveyor"><span class="tool-icon">▶</span>8: <span data-i18n="editor.tool.conveyor">Conveyor</span></button>
+      <button class="tool-btn" data-tool="laser"><span class="tool-icon">─</span>9: <span data-i18n="editor.tool.laser">Laser</span></button>
+      <button class="tool-btn" data-tool="mirror"><span class="tool-icon">▵</span>0: <span data-i18n="editor.tool.mirror">Mirror</span></button>
+      <button class="tool-btn" data-tool="lever"><span class="tool-icon">◆</span>L: <span data-i18n="editor.tool.lever">Lever</span></button>
+      <button class="tool-btn" data-tool="portal"><span class="tool-icon" style="color:#2979ff">◎</span>P: Portal</button>
+      <div class="section-label">ENEMIES</div>
+      <button class="tool-btn" data-tool="enemy4"><span class="tool-icon" style="color:#ff1744">✚</span>=: Enemy ✚</button>
+      <button class="tool-btn" data-tool="enemy8"><span class="tool-icon" style="color:#ff5252">✱</span>\: Enemy ✱</button>
+      <div class="section-label" data-i18n="editor.section.other">OTHER</div>
+      <button class="tool-btn" data-tool="eraser"><span class="tool-icon">✕</span>-: <span data-i18n="editor.tool.eraser">Eraser</span></button>
+      <div id="ed-direction-section" style="display:none;">
+        <div class="section-label" data-i18n="editor.section.direction">DIRECTION</div>
+        <select id="ed-direction">
+          <option value="up" data-i18n="editor.dir.up">Up</option>
+          <option value="down" data-i18n="editor.dir.down">Down</option>
+          <option value="left" data-i18n="editor.dir.left">Left</option>
+          <option value="right" selected="" data-i18n="editor.dir.right">Right</option>
+        </select>
+      </div>
+      <div id="ed-laser-mode-section" style="display:none;">
+        <div class="section-label">LASER MODE</div>
+        <select id="ed-laser-mode">
+          <option value="continuous" selected="">Continuous</option>
+          <option value="railgun">Railgun</option>
+        </select>
+        <div id="ed-railgun-opts" style="display:none; margin-top:4px;">
+          <label style="font-size:11px; color:#aaa;">Interval (sec):</label>
+          <input type="number" id="ed-fire-interval" value="3" min="1" max="30" step="1" style="width:50px;">
+        </div>
+      </div>
+      <div id="ed-block-size-section" style="display:none;">
+        <div class="section-label">BLOCK SIZE</div>
+        <select id="ed-block-size">
+          <option value="1x1" selected="">1×1</option>
+          <option value="2x1">2×1 (horiz)</option>
+          <option value="1x2">1×2 (vert)</option>
+          <option value="3x1">3×1 (horiz)</option>
+          <option value="1x3">1×3 (vert)</option>
+        </select>
+      </div>
+      <div id="ed-mirror-orientation-section" style="display:none;">
+        <div class="section-label">ORIENTATION</div>
+        <select id="ed-mirror-orientation">
+          <option value="\" selected="">\ backslash</option>
+          <option value="/">/ forward</option>
+        </select>
+      </div>
+      <div id="ed-movable-section" style="display:none;">
+        <div class="section-label" data-i18n="editor.section.movable">MOVABLE</div>
+        <label class="movable-label"><input type="checkbox" id="ed-movable"> <span data-i18n="editor.label.movable">Movable</span></label>
+      </div>
+      <div class="section-label" data-i18n="editor.section.connections">CONNECTIONS</div>
+      <div id="ed-connections"></div>
+      <button class="tool-btn" id="ed-add-conn" data-i18n="editor.btn.add_conn">+ Connection</button>
+    </div>
+    <div id="editor-statusbar">
+      <span id="ed-status-mode"></span>
+      <span id="ed-status-tool">Tool: Wall</span>
+      <span id="ed-status-pos">Pos: -</span>
+      <span id="ed-status-entities">Entities: 0</span>
+    </div>
+  </div>
+  <div id="ed-share-modal">
+    <div id="ed-share-box">
+      <h3 data-i18n="editor.share.title">Import / Export — JSON</h3>
+      <div id="ed-share-hint" data-i18n="editor.share.hint">Edit or paste a level JSON below, then click Apply.</div>
+      <textarea id="ed-share-json" spellcheck="false"></textarea>
+      <div id="ed-share-error"></div>
+      <div class="share-actions">
+        <button id="ed-share-copy" data-i18n="editor.share.copy">Copy to clipboard</button>
+        <span style="flex:1"></span>
+        <button id="ed-share-apply" data-i18n="editor.share.apply">Apply</button>
+        <button id="ed-share-close" data-i18n="editor.share.close">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // Block browser context menu (right-click / long-press)
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+  </script>
+  <script>
+    // Block iOS Safari pinch-to-zoom and Android gesture zoom
+    (function() {
+      function blockGesture(e) { e.preventDefault(); }
+      document.addEventListener('gesturestart',  blockGesture, { passive: false });
+      document.addEventListener('gesturechange', blockGesture, { passive: false });
+      document.addEventListener('gestureend',    blockGesture, { passive: false });
+
+      // Block multi-touch pinch via touchmove (cross-browser)
+      // Single-touch is NOT blocked — joystick/tap still works
+      document.addEventListener('touchmove', function(e) {
+        if (e.touches.length >= 2) e.preventDefault();
+      }, { passive: false });
+    })();
+  </script>
+
+  <!-- GamePush SDK -->
+  <script async="" src="https://gs.eponesh.com/sdk/game-score.js?projectId=22245&amp;publicToken=AagWf9DeVrfmCA9S8eBxGTI7i89zpk0K&amp;callback=onGPInit"></script>
+  <script>
+    function onGPInit(gp) {
+      window._gamepush = gp;
+      var ready = (gp.player && gp.player.ready) ? gp.player.ready : Promise.resolve();
+      window._gamepushReady = Promise.resolve(ready).catch(function() {});
+    }
+  </script>
+
+
+
+
+<div id="gs-gamedistribution"></div><div class="gs-global-loader" style="display: none;"><div class="gs-loader false">
+        <div class="gs-loader__outter"></div>
+        <div class="gs-loader__inner"></div>
+    </div></div><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"></body></html>
