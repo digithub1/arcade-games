@@ -1,0 +1,99 @@
+{
+  "name": "Skate Hooligans",
+  "short_name": "Hooligans",
+  "description": "Cowabunga! Little hooligans are on the way! Choose your hero and arrange an amazing disorder ^_^ Collect coins, buy cool skateboards, open new locations and get scores as much as you can.",
+  "screenshots": [
+    {
+     "src": "../img/screen1w.jpg",
+      "sizes": "960x540",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Downtown"
+    },
+    {
+      "src": "../img/screen2w.jpg",
+      "sizes": "960x540",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Subway"
+    },
+    {
+      "src": "../img/screen3w.jpg",
+      "sizes": "960x540",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Amusement Park"
+    },
+    {
+      "src": "../img/screen4w.jpg",
+      "sizes": "960x540",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Airport"
+    },
+    {
+      "src": "../img/screen5w.jpg",
+      "sizes": "960x540",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Bridge"
+    },
+    {
+      "src": "../img/screen1.jpg",
+      "sizes": "540x960",
+      "type": "image/jpg",
+      "label": "Downtown"
+    },
+    {
+      "src": "../img/screen2.jpg",
+      "sizes": "540x960",
+      "type": "image/jpg",
+      "label": "Subway"
+    },
+    {
+      "src": "../img/screen3.jpg",
+      "sizes": "540x960",
+      "type": "image/jpg",
+      "label": "Amusement Park"
+    },
+    {
+      "src": "../img/screen4.jpg",
+      "sizes": "540x960",
+      "type": "image/jpg",
+      "label": "Airport"
+    },
+    {
+      "src": "../img/screen5.jpg",
+      "sizes": "540x960",
+      "type": "image/jpg",
+      "label": "Taxi"
+    }
+  ],
+  "icons": [
+    {
+      "src": "../img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+	  "id": "/hooligans/"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#44cdf4",
+  "id": "/hooligans/",
+  "start_url": "/hooligans/?homescreen=1",
+  "display": "fullscreen",
+  "orientation": "any",
+  "gcm_sender_id": "103953800507"
+}
