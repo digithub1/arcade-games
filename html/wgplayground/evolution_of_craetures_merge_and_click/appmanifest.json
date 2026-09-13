@@ -1,0 +1,10 @@
+{
+	"name": "Evolution of creatures merge and click",
+	"short_name": "Evolution of creatures merge and click",
+	"description": "top1 game",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": []
+}

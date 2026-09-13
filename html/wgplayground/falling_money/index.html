@@ -1,0 +1,357 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Falling Money">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/5bccf19b1e9de9672cd8017e54ec6673/wgplayground/c43e495788b0d2d49a495bcc31137f80.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/5bccf19b1e9de9672cd8017e54ec6673/wgplayground/152dafe3ff36898ee92f82bdb310fc76.jpg" gravity="center bottom">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/5bccf19b1e9de9672cd8017e54ec6673">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/mathnook/falling-money">
+            <meta property="wgp:description" content="Get the correct amount of U.S. coins in the piggy bank without going over the amount requested on each level. Watch out for the &quot;skull and crossbones&quot; coins as they will drain all of the money from the piggy bank and you'll have to start collecting coins all over again.">
+            <meta property="wgp:instructions" content="Move the piggy bank right and left to avoid the coins you don't want and to catch the ones you want. Get the target amount on each level without going over to complete the level.Keyboard: Use the left and right arrow keys or the &quot;A&quot; and &quot;D' keys to move right and left.Touch: Use the onscreen left and right green arrows to move right and left.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/5bccf19b1e9de9672cd8017e54ec6673/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="720">
+            <meta property="wgp:height" content="480">
+            <meta property="wgp:rwidth" content="3">
+            <meta property="wgp:rheight" content="2">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="1.5">
+            <meta property="wgp:controls" content="eyJBIjoiIiwiRCI6IiIsIiZsYXJyOyI6IiIsIiZyYXJyOyI6IiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJFZHVjYXRpb25hbCJ9XSwiY2hhcmFjdGVycyI6W119">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="51/5bccf19b1e9de9672cd8017e54ec6673">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+<meta charset="UTF-8">
+<title>Falling Money</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta name="generator" content="Scirra Construct">
+
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="icon" type="image/png" href="icons/icon-256.png">
+
+<link rel="stylesheet" href="style.css">
+
+
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><script type="module" src="https://play.wgplayground.com/game/5bccf19b1e9de9672cd8017e54ec6673/scripts/c3runtime.js"></script><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/5bccf19b1e9de9672cd8017e54ec6673/wgplayground/152dafe3ff36898ee92f82bdb310fc76.jpg">
+
+<script>
+if (location.protocol.substr(0, 4) === "file")
+{
+	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+}
+</script>
+	<script src="box2d.wasm.js"></script>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	<script src="scripts/register-sw.js" type="module"></script>
+
+
+
+
+<canvas style="display: none;"></canvas><div class="c3-screen-reader-text" aria-live="polite"></div></body></html>

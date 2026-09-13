@@ -1,0 +1,17 @@
+{
+	"name": "Escape Noob",
+	"short_name": "Escape Noob",
+	"description": "Escape Noob",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

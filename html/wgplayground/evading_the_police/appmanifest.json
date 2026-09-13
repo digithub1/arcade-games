@@ -1,0 +1,36 @@
+{
+	"name": "Evading The Police",
+	"short_name": "Evading The Police",
+	"description": "Evading The Police is an online game where you help the character avoid the police. The game is set in a city environment and you must use your agility and speed to escape the police. The graphics are good and the gameplay is smooth. This is a great game to play if you are looking for something to do online. Jump, run, and hide from the police in this exciting online game! See how long you can last while avoiding capture in Evading The Police. Play now for free!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
