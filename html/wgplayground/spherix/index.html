@@ -1,0 +1,4264 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="SPHERIX">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/545e4e81e833ea2e9cd4db1a6b400a8e/wgplayground/d472cac59f3f05586c4d9f2e8339546f.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/545e4e81e833ea2e9cd4db1a6b400a8e/wgplayground/5c5611f2fbe4bc3cac1581f291a36e2c.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/545e4e81e833ea2e9cd4db1a6b400a8e">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/spherix">
+            <meta property="wgp:description" content="Roll through 25 unique worlds in this exciting 3D maze adventure! Dodge enemies, collect coins, and find the exit. Use arrow keys to move and SPACE to jump over enemies.">
+            <meta property="wgp:instructions" content="CONTROLS:• Arrow keys (↑↓←→) or WASD - Move the ball• SPACE - Jump over enemies• I - Show instructionsTIPS:• Collect golden coins for +10 points• Avoid red enemies - they take lives!• Use SPACE to jump over enemies when cornered• Find hearts ❤️ to restore health• Look for the green exit to complete each level• Power-ups give temporary speed boost or shieldThe maze gets bigger each level - plan your route carefully!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/545e4e81e833ea2e9cd4db1a6b400a8e/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyImbGFycjsiOiIiLCImdWFycjsiOiIiLCImcmFycjsiOiIiLCImZGFycjsiOiIiLCJBIjoiIiwiVyI6IiIsIlMiOiIiLCJEIjoiIiwiSSI6IiIsIlNwYWNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUifSx7Im5hbWUiOiJQdXp6bGVzIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/545e4e81e833ea2e9cd4db1a6b400a8e">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPHERIX - 3D Maze Adventure</title>
+
+    <!-- POLYFILL - MUST BE FIRST INLINE SCRIPT (for OK Games/VK Games strict mode) -->
+    <script>
+    (function() {
+        if (!Object.prototype.__defineGetter__) {
+            Object.defineProperty(Object.prototype, '__defineGetter__', {
+                value: function(prop, func) {
+                    Object.defineProperty(this, prop, { get: func, configurable: true });
+                },
+                writable: true,
+                configurable: true
+            });
+        }
+        if (!Object.prototype.__defineSetter__) {
+            Object.defineProperty(Object.prototype, '__defineSetter__', {
+                value: function(prop, func) {
+                    Object.defineProperty(this, prop, { set: func, configurable: true });
+                },
+                writable: true,
+                configurable: true
+            });
+        }
+        console.log('[Polyfill] __defineGetter__ loaded:', typeof Object.prototype.__defineGetter__);
+    })();
+    </script>
+
+    <!-- Libraries -->
+    <script src="Three.js"></script><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style>
+    <script src="Box2dWeb.min.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="maze.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a1a;
+            font-family: 'Orbitron', sans-serif;
+            overflow: hidden;
+            color: white;
+        }
+
+        #hud {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 15px 25px;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            pointer-events: none;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 100%);
+        }
+
+        .hud-item {
+            background: rgba(0, 255, 255, 0.1);
+            border: 2px solid rgba(0, 255, 255, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        #level { font-size: 1.5rem; font-weight: bold; color: #00ffff; }
+        #score { font-size: 1.2rem; color: #ffff00; }
+        #timer { font-size: 1.8rem; font-weight: bold; color: #00ff88; font-family: monospace; }
+        #lives { font-size: 1.5rem; }
+
+        #main-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, #1a1a3a 0%, #0a0a1a 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 200;
+        }
+
+        .menu-title {
+            font-size: 5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #00ffff, #00ff88, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5)); }
+            to { filter: drop-shadow(0 0 40px rgba(0, 255, 136, 0.8)); }
+        }
+
+        .menu-subtitle {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 50px;
+        }
+
+        .menu-btn {
+            background: linear-gradient(135deg, #00ffff 0%, #00ff88 100%);
+            border: none;
+            padding: 15px 60px;
+            font-size: 1.3rem;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            color: #0a0a1a;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .menu-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+        }
+
+        .menu-btn.secondary {
+            background: transparent;
+            border: 2px solid #00ffff;
+            color: #00ffff;
+        }
+
+        #instructions {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.95);
+            border: 2px solid #00ffff;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            z-index: 300;
+            display: none;
+            max-width: 400px;
+        }
+
+        #instructions h2 { color: #00ffff; margin-bottom: 20px; }
+        #instructions p { color: #ccc; line-height: 1.8; margin-bottom: 15px; }
+
+        .key {
+            display: inline-block;
+            background: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 5px 12px;
+            margin: 2px;
+            font-family: monospace;
+        }
+
+        #victory-screen {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 250;
+        }
+
+        .victory-title {
+            font-size: 3rem;
+            color: #00ff88;
+            margin-bottom: 20px;
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .victory-stats { font-size: 1.5rem; color: #fff; margin: 10px 0; }
+
+        #help {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            z-index: 100;
+        }
+    </style>
+
+    <script>
+        // =====================================================
+        // DEBUG MODE - Comprehensive Logging System
+        // =====================================================
+        console.log('');
+        console.log('╔════════════════════════════════════════╗');
+        console.log('║        GAME DEBUG MODE ACTIVE          ║');
+        console.log('╚════════════════════════════════════════╝');
+        console.log('');
+        console.log('Available debug commands:');
+        console.log('  window.debugInfo()   - Show current state');
+        console.log('  window.testRestart() - Test 10x restart');
+        console.log('  window.testSound()   - Toggle all sounds');
+        console.log('');
+
+        // Debug frame counter
+        var gameLoopCounter = 0;
+
+        var camera, scene, renderer, light;
+        var maze, mazeMesh, mazeDimension = 21;
+        var planeMesh, ballMesh, ballRadius = 0.25;
+        var keyAxis = [0, 0];
+        var ironTexture, planeTexture, brickTexture;
+        var gameState = 'menu';
+
+        // Skóre a životy
+        var score = 0;
+        var lives = 3;
+        var level = 1;
+        var startTime = 0;
+        var levelTime = 0;
+
+        // Nepřátelé, mince a power-upy
+        var enemies = [];
+        var coins = [];
+        var powerups = [];
+        var hearts = []; // Léčivá srdíčka v bludišti
+        var maxLives = 5; // Maximální počet životů
+        var isInvincible = false;
+        var invincibleTimer = 0;
+        var speedBoost = 1.0;
+        var speedBoostTimer = 0;
+
+        // Skok schopnost pro přeskočení nepřátel
+        var jumpCooldown = 0;
+        var jumpMaxCooldown = 60; // 1 sekunda cooldown (60 fps)
+        var isJumping = false;
+        var jumpTimer = 0;
+        var jumpDuration = 25; // 0.4 sekundy skok
+        var jumpKeyPressed = false;
+        var jumpKeyWasPressed = false;
+
+        // Box2D zkratky
+        var b2World = Box2D.Dynamics.b2World;
+        var b2FixtureDef = Box2D.Dynamics.b2FixtureDef;
+        var b2BodyDef = Box2D.Dynamics.b2BodyDef;
+        var b2Body = Box2D.Dynamics.b2Body;
+        var b2CircleShape = Box2D.Collision.Shapes.b2CircleShape;
+        var b2PolygonShape = Box2D.Collision.Shapes.b2PolygonShape;
+        var b2Vec2 = Box2D.Common.Math.b2Vec2;
+        var wWorld, wBall;
+
+        function loadTextures() {
+            ironTexture = THREE.ImageUtils.loadTexture('ball.png');
+            planeTexture = THREE.ImageUtils.loadTexture('concrete.png');
+            brickTexture = THREE.ImageUtils.loadTexture('brick.png');
+        }
+
+        function createPhysicsWorld() {
+            wWorld = new b2World(new b2Vec2(0, 0), true);
+
+            var bodyDef = new b2BodyDef();
+            bodyDef.type = b2Body.b2_dynamicBody;
+            bodyDef.position.Set(1, 1);
+            wBall = wWorld.CreateBody(bodyDef);
+
+            var fixDef = new b2FixtureDef();
+            fixDef.density = 1.0;
+            fixDef.friction = 0.0;
+            fixDef.restitution = 0.25;
+            fixDef.shape = new b2CircleShape(ballRadius);
+            wBall.CreateFixture(fixDef);
+
+            bodyDef.type = b2Body.b2_staticBody;
+            fixDef.shape = new b2PolygonShape();
+            fixDef.shape.SetAsBox(0.5, 0.5);
+
+            for (var i = 0; i < maze.dimension; i++) {
+                for (var j = 0; j < maze.dimension; j++) {
+                    if (maze[i][j]) {
+                        bodyDef.position.x = i;
+                        bodyDef.position.y = j;
+                        wWorld.CreateBody(bodyDef).CreateFixture(fixDef);
+                    }
+                }
+            }
+        }
+
+        // Different maze styles per level - 25 unique themes
+        function getMazeStyle(lvl) {
+            var styles = [
+                // Level 1: Brick Dungeon
+                { color: 0xaa4444, emissive: 0x220000, fogColor: 0x0a0a1a, name: 'Dungeon', type: 'dungeon' },
+                // Level 2: Ice Palace
+                { color: 0x4488cc, emissive: 0x001133, fogColor: 0x0a1a2a, name: 'Ice Palace', type: 'ice' },
+                // Level 3: Forest Temple
+                { color: 0x44aa44, emissive: 0x002200, fogColor: 0x0a1a0a, name: 'Forest Temple', type: 'forest' },
+                // Level 4: Volcanic Cave
+                { color: 0xcc6622, emissive: 0x331100, fogColor: 0x1a0a0a, name: 'Volcano', type: 'volcano' },
+                // Level 5: Dark Castle
+                { color: 0x8844aa, emissive: 0x110022, fogColor: 0x1a0a1a, name: 'Dark Castle', type: 'castle' },
+                // Level 6: Golden Temple
+                { color: 0xccaa44, emissive: 0x222200, fogColor: 0x1a1a0a, name: 'Golden Temple', type: 'gold' },
+                // Level 7: Underwater Palace
+                { color: 0x2288aa, emissive: 0x001122, fogColor: 0x051520, name: 'Underwater Palace', type: 'underwater' },
+                // Level 8: Desert Ruins
+                { color: 0xddaa66, emissive: 0x332200, fogColor: 0x1a1508, name: 'Desert Ruins', type: 'desert' },
+                // Level 9: Crystal Cavern
+                { color: 0xee55ee, emissive: 0x330033, fogColor: 0x150515, name: 'Crystal Cavern', type: 'crystal' },
+                // Level 10: Sky Citadel
+                { color: 0xaaccff, emissive: 0x112244, fogColor: 0x0a1525, name: 'Sky Citadel', type: 'sky' },
+                // Level 11: Shadow Labyrinth
+                { color: 0x333344, emissive: 0x0a0a15, fogColor: 0x050508, name: 'Shadow Labyrinth', type: 'shadow' },
+                // Level 12: Fire Temple
+                { color: 0xff4400, emissive: 0x441100, fogColor: 0x1a0800, name: 'Fire Temple', type: 'fire' },
+                // Level 13: Mossy Cliffs
+                { color: 0x558844, emissive: 0x112208, fogColor: 0x0a120a, name: 'Mossy Cliffs', type: 'moss' },
+                // Level 14: Copper Mines
+                { color: 0xbb7744, emissive: 0x331808, fogColor: 0x120a05, name: 'Copper Mines', type: 'copper' },
+                // Level 15: Marble Palace
+                { color: 0xeeeeff, emissive: 0x222233, fogColor: 0x151518, name: 'Marble Palace', type: 'marble' },
+                // Level 16: Toxic Swamp
+                { color: 0x88cc22, emissive: 0x224400, fogColor: 0x0a1505, name: 'Toxic Swamp', type: 'toxic' },
+                // Level 17: Ruby Shrine
+                { color: 0xcc2244, emissive: 0x330011, fogColor: 0x150508, name: 'Ruby Shrine', type: 'ruby' },
+                // Level 18: Storm Tower
+                { color: 0x6688aa, emissive: 0x112233, fogColor: 0x080a12, name: 'Storm Tower', type: 'storm' },
+                // Level 19: Obsidian Fortress
+                { color: 0x222233, emissive: 0x080810, fogColor: 0x020204, name: 'Obsidian Fortress', type: 'obsidian' },
+                // Level 20: Emerald Grove
+                { color: 0x22cc88, emissive: 0x083318, fogColor: 0x051508, name: 'Emerald Grove', type: 'emerald' },
+                // Level 21: Bronze Arena
+                { color: 0xcc8844, emissive: 0x331808, fogColor: 0x120a05, name: 'Bronze Arena', type: 'bronze' },
+                // Level 22: Polar Express
+                { color: 0xccddff, emissive: 0x223344, fogColor: 0x101520, name: 'Polar Express', type: 'polar' },
+                // Level 23: Hell Gate
+                { color: 0xaa2200, emissive: 0x440800, fogColor: 0x150400, name: 'Hell Gate', type: 'hell' },
+                // Level 24: Sapphire Temple
+                { color: 0x2244cc, emissive: 0x081133, fogColor: 0x050815, name: 'Sapphire Temple', type: 'sapphire' },
+                // Level 25: Victory Hall
+                { color: 0xffdd44, emissive: 0x443308, fogColor: 0x151208, name: 'Victory Hall', type: 'victory' }
+            ];
+            var index = (lvl - 1) % styles.length; // Each level different style, then cycles
+            return styles[index];
+        }
+
+        // Vytvořit geometrii zdi podle stylu - profesionální 3D modely
+        function createWallGeometry(style, i, j, field) {
+            var group = new THREE.Object3D();
+            var seed = (i * 1000 + j) % 100; // Konzistentní náhodnost
+
+            switch(style.type) {
+                case 'ice':
+                    // Ledové krystaly - více vrstev a detailů
+                    // Základní blok s fazetami
+                    var baseGeom = new THREE.CubeGeometry(0.85, 0.85, 0.75);
+                    var baseMesh = new THREE.Mesh(baseGeom);
+                    baseMesh.position.set(i, j, 0.38);
+                    group.add(baseMesh);
+
+                    // Druhá vrstva - menší, posunutá
+                    var layer2 = new THREE.CubeGeometry(0.7, 0.7, 0.2);
+                    var layer2Mesh = new THREE.Mesh(layer2);
+                    layer2Mesh.position.set(i + (seed % 10 - 5) * 0.01, j + (seed % 7 - 3) * 0.01, 0.8);
+                    layer2Mesh.rotation.z = seed * 0.01;
+                    group.add(layer2Mesh);
+
+                    // Ledové krystaly - hroty
+                    var numSpikes = 2 + (seed % 3);
+                    for (var s = 0; s < numSpikes; s++) {
+                        var spikeH = 0.25 + (seed % 30) * 0.01;
+                        var spikeGeom = new THREE.CylinderGeometry(0, 0.08 + s * 0.02, spikeH, 5);
+                        var spike = new THREE.Mesh(spikeGeom);
+                        var sx = i + ((seed + s * 17) % 40 - 20) * 0.015;
+                        var sy = j + ((seed + s * 23) % 40 - 20) * 0.015;
+                        spike.position.set(sx, sy, 0.85 + spikeH / 2);
+                        spike.rotation.x = Math.PI / 2;
+                        spike.rotation.z = s * 0.5;
+                        group.add(spike);
+                    }
+
+                    // Malé krystalky na stranách
+                    if (seed % 3 === 0) {
+                        var smallCrystal = new THREE.OctahedronGeometry(0.08, 0);
+                        var sc = new THREE.Mesh(smallCrystal);
+                        sc.position.set(i + 0.4, j, 0.5);
+                        group.add(sc);
+                    }
+                    break;
+
+                case 'forest':
+                    // Lesní chrám - starobylé kameny s vegetací
+                    // Hlavní kámen - nepravidelný
+                    var stoneH = 0.65 + (seed % 25) * 0.012;
+                    var stoneGeom = new THREE.CubeGeometry(0.9, 0.9, stoneH);
+                    var stone = new THREE.Mesh(stoneGeom);
+                    stone.position.set(i, j, stoneH / 2);
+                    stone.rotation.z = (seed % 20 - 10) * 0.008;
+                    group.add(stone);
+
+                    // Vrchní deska - erodovaná
+                    var topGeom = new THREE.CubeGeometry(0.95, 0.95, 0.1);
+                    var top = new THREE.Mesh(topGeom);
+                    top.position.set(i, j, stoneH + 0.05);
+                    top.rotation.z = (seed % 30 - 15) * 0.005;
+                    group.add(top);
+
+                    // Mech/vegetace na vrchu
+                    if (seed % 2 === 0) {
+                        var mossGeom = new THREE.SphereGeometry(0.12, 8, 6);
+                        var moss = new THREE.Mesh(mossGeom);
+                        moss.position.set(i + (seed % 20 - 10) * 0.02, j + (seed % 15 - 7) * 0.02, stoneH + 0.1);
+                        moss.scale.set(1, 1, 0.4);
+                        group.add(moss);
+                    }
+
+                    // Malé kamínky u základny
+                    for (var r = 0; r < 2; r++) {
+                        if ((seed + r) % 3 === 0) {
+                            var rubbleGeom = new THREE.SphereGeometry(0.08, 6, 6);
+                            var rubble = new THREE.Mesh(rubbleGeom);
+                            rubble.position.set(i + (r === 0 ? 0.35 : -0.35), j + ((seed + r) % 10 - 5) * 0.03, 0.06);
+                            rubble.scale.set(1, 0.8, 0.6);
+                            group.add(rubble);
+                        }
+                    }
+
+                    // Popínavá rostlina na zdi
+                    if (seed % 4 === 0) {
+                        for (var v = 0; v < 3; v++) {
+                            var vineGeom = new THREE.SphereGeometry(0.04, 6, 6);
+                            var vine = new THREE.Mesh(vineGeom);
+                            vine.position.set(i + 0.42, j + (v - 1) * 0.15, 0.2 + v * 0.2);
+                            group.add(vine);
+                        }
+                    }
+                    break;
+
+                case 'volcano':
+                    // Sopečná jeskyně - drsné skály s lávovými detaily
+                    // Hlavní skála - nepravidelná
+                    var rockH = 0.55 + (seed % 35) * 0.012;
+                    var rockGeom = new THREE.CubeGeometry(0.95, 0.95, rockH);
+                    var rock = new THREE.Mesh(rockGeom);
+                    rock.position.set(i, j, rockH / 2);
+                    group.add(rock);
+
+                    // Vrcholové kameny - rozeklaná skála
+                    var numPeaks = 1 + (seed % 3);
+                    for (var p = 0; p < numPeaks; p++) {
+                        var peakH = 0.15 + (seed % 20) * 0.01;
+                        var peakGeom = new THREE.CylinderGeometry(0.05, 0.2, peakH, 5);
+                        var peak = new THREE.Mesh(peakGeom);
+                        peak.position.set(
+                            i + ((seed + p * 13) % 50 - 25) * 0.012,
+                            j + ((seed + p * 17) % 50 - 25) * 0.012,
+                            rockH + peakH / 2
+                        );
+                        peak.rotation.x = Math.PI / 2;
+                        peak.rotation.y = p * 1.2;
+                        group.add(peak);
+                    }
+
+                    // Výčnělky na stranách
+                    for (var b = 0; b < 2; b++) {
+                        if ((seed + b) % 2 === 0) {
+                            var bumpGeom = new THREE.SphereGeometry(0.12, 6, 6);
+                            var bump = new THREE.Mesh(bumpGeom);
+                            var bx = i + (b === 0 ? 0.4 : -0.4);
+                            var by = j + ((seed + b) % 20 - 10) * 0.02;
+                            bump.position.set(bx, by, 0.25 + (seed % 20) * 0.015);
+                            bump.scale.set(0.8, 0.8, 1.2);
+                            group.add(bump);
+                        }
+                    }
+
+                    // Lávové praskliny (malé zářící proužky) - simulované geometrií
+                    if (seed % 3 === 0) {
+                        var crackGeom = new THREE.CubeGeometry(0.03, 0.5, 0.02);
+                        var crack = new THREE.Mesh(crackGeom);
+                        crack.position.set(i + 0.3, j, rockH + 0.01);
+                        group.add(crack);
+                    }
+                    break;
+
+                case 'castle':
+                    // Temný hrad - gotická architektura
+                    // Hlavní zeď
+                    var wallGeom = new THREE.CubeGeometry(0.95, 0.95, 0.85);
+                    var wall = new THREE.Mesh(wallGeom);
+                    wall.position.set(i, j, 0.425);
+                    group.add(wall);
+
+                    // Kamenné bloky - horizontální členění
+                    for (var layer = 0; layer < 3; layer++) {
+                        var lineGeom = new THREE.CubeGeometry(1.0, 0.03, 0.03);
+                        var line = new THREE.Mesh(lineGeom);
+                        line.position.set(i, j + 0.47, 0.2 + layer * 0.25);
+                        group.add(line);
+                    }
+
+                    // Cimbuří - střídavě s mezerami
+                    if ((i + j) % 2 === 0) {
+                        var crenelGeom = new THREE.CubeGeometry(0.35, 0.35, 0.3);
+                        var crenel = new THREE.Mesh(crenelGeom);
+                        crenel.position.set(i, j, 1.0);
+                        group.add(crenel);
+
+                        // Špička na cimbuří
+                        var tipGeom = new THREE.CylinderGeometry(0, 0.12, 0.15, 4);
+                        var tip = new THREE.Mesh(tipGeom);
+                        tip.position.set(i, j, 1.22);
+                        tip.rotation.x = Math.PI / 2;
+                        group.add(tip);
+                    }
+
+                    // Dekorativní reliéf na zdi
+                    if (seed % 5 === 0) {
+                        var reliefGeom = new THREE.CubeGeometry(0.25, 0.05, 0.25);
+                        var relief = new THREE.Mesh(reliefGeom);
+                        relief.position.set(i, j + 0.48, 0.5);
+                        group.add(relief);
+                    }
+                    break;
+
+                case 'gold':
+                    // Zlatý chrám - propracované sloupy s ornamenty
+                    // Hlavní sloup - kanelovaný efekt (více válců)
+                    var mainPillar = new THREE.CylinderGeometry(0.32, 0.36, 0.9, 12);
+                    var pillar = new THREE.Mesh(mainPillar);
+                    pillar.position.set(i, j, 0.45);
+                    pillar.rotation.x = Math.PI / 2;
+                    group.add(pillar);
+
+                    // Kanelury (drážky) na sloupu
+                    for (var k = 0; k < 8; k++) {
+                        var flute = new THREE.CylinderGeometry(0.04, 0.04, 0.85, 6);
+                        var fluteM = new THREE.Mesh(flute);
+                        var angle = (k / 8) * Math.PI * 2;
+                        fluteM.position.set(
+                            i + Math.cos(angle) * 0.28,
+                            j + Math.sin(angle) * 0.28,
+                            0.45
+                        );
+                        fluteM.rotation.x = Math.PI / 2;
+                        group.add(fluteM);
+                    }
+
+                    // Dórská hlavice - echinus a abakus
+                    var echinusGeom = new THREE.CylinderGeometry(0.38, 0.32, 0.1, 16);
+                    var echinus = new THREE.Mesh(echinusGeom);
+                    echinus.position.set(i, j, 0.95);
+                    echinus.rotation.x = Math.PI / 2;
+                    group.add(echinus);
+
+                    var abacusGeom = new THREE.CubeGeometry(0.55, 0.55, 0.08);
+                    var abacus = new THREE.Mesh(abacusGeom);
+                    abacus.position.set(i, j, 1.04);
+                    group.add(abacus);
+
+                    // Základna sloupu - torus a deska
+                    var baseTorusGeom = new THREE.TorusGeometry(0.35, 0.05, 8, 16);
+                    var baseTorus = new THREE.Mesh(baseTorusGeom);
+                    baseTorus.position.set(i, j, 0.05);
+                    group.add(baseTorus);
+
+                    var basePlateGeom = new THREE.CubeGeometry(0.5, 0.5, 0.05);
+                    var basePlate = new THREE.Mesh(basePlateGeom);
+                    basePlate.position.set(i, j, 0.01);
+                    group.add(basePlate);
+
+                    // Zdobný prstenec uprostřed sloupu
+                    var ringGeom = new THREE.TorusGeometry(0.34, 0.03, 8, 16);
+                    var ring = new THREE.Mesh(ringGeom);
+                    ring.position.set(i, j, 0.45);
+                    group.add(ring);
+                    break;
+
+                default: // dungeon
+                    // Dungeon - cihlové zdi s detaily
+                    // Hlavní blok
+                    var brickGeom = new THREE.CubeGeometry(0.98, 0.98, 0.95);
+                    var brick = new THREE.Mesh(brickGeom);
+                    brick.position.set(i, j, 0.475);
+                    group.add(brick);
+
+                    // Horizontální spáry mezi cihlami
+                    for (var row = 0; row < 3; row++) {
+                        var jointGeom = new THREE.CubeGeometry(1.0, 0.03, 0.02);
+                        var joint = new THREE.Mesh(jointGeom);
+                        joint.position.set(i, j + 0.49, 0.15 + row * 0.28);
+                        group.add(joint);
+                    }
+
+                    // Vertikální spáry (střídavě)
+                    for (var col = 0; col < 2; col++) {
+                        var vjGeom = new THREE.CubeGeometry(0.03, 1.0, 0.02);
+                        var vj = new THREE.Mesh(vjGeom);
+                        vj.position.set(i + (col === 0 ? -0.25 : 0.25), j, 0.28 + (seed % 2) * 0.28);
+                        group.add(vj);
+                    }
+
+                    // Občasný poškozený roh
+                    if (seed % 6 === 0) {
+                        var chipGeom = new THREE.CubeGeometry(0.15, 0.15, 0.2);
+                        var chip = new THREE.Mesh(chipGeom);
+                        chip.position.set(i + 0.42, j + 0.42, 0.85);
+                        chip.rotation.z = 0.3;
+                        group.add(chip);
+                    }
+                    break;
+            }
+
+            // Pro nové typy použijeme varianty existujících stylů s různými detaily
+            if (!group.children.length) {
+                var h = 0.6 + (seed % 30) * 0.015;
+
+                // Základní blok pro všechny nové typy
+                var baseG = new THREE.CubeGeometry(0.9, 0.9, h);
+                var baseM = new THREE.Mesh(baseG);
+                baseM.position.set(i, j, h / 2);
+                group.add(baseM);
+
+                // Specifické detaily podle typu
+                switch(style.type) {
+                    case 'underwater':
+                        // Podmořský - vlnité tvary, korály
+                        var coralGeom = new THREE.SphereGeometry(0.15, 8, 8);
+                        for (var c = 0; c < 2 + (seed % 2); c++) {
+                            var coral = new THREE.Mesh(coralGeom);
+                            coral.position.set(i + ((seed + c * 11) % 30 - 15) * 0.02, j + ((seed + c * 7) % 30 - 15) * 0.02, h + 0.1);
+                            coral.scale.set(1, 1, 1.5);
+                            group.add(coral);
+                        }
+                        break;
+                    case 'desert':
+                        // Pouštní - pískovcové bloky
+                        var sandGeom = new THREE.CubeGeometry(0.92, 0.92, 0.08);
+                        for (var d = 0; d < 3; d++) {
+                            var sand = new THREE.Mesh(sandGeom);
+                            sand.position.set(i, j, 0.1 + d * 0.25);
+                            sand.rotation.z = (seed % 10 - 5) * 0.01;
+                            group.add(sand);
+                        }
+                        break;
+                    case 'crystal':
+                        // Krystalová - velké krystaly
+                        var crystalGeom = new THREE.OctahedronGeometry(0.2, 0);
+                        for (var cr = 0; cr < 3; cr++) {
+                            var crystal = new THREE.Mesh(crystalGeom);
+                            crystal.position.set(i + ((seed + cr * 13) % 40 - 20) * 0.015, j + ((seed + cr * 17) % 40 - 20) * 0.015, h + 0.15);
+                            crystal.rotation.z = cr * 0.7;
+                            crystal.scale.set(0.8, 0.8, 1.5);
+                            group.add(crystal);
+                        }
+                        break;
+                    case 'sky':
+                        // Nebeská - oblaka, lehké tvary
+                        var cloudGeom = new THREE.SphereGeometry(0.18, 8, 8);
+                        if (seed % 2 === 0) {
+                            var cloud = new THREE.Mesh(cloudGeom);
+                            cloud.position.set(i + (seed % 20 - 10) * 0.02, j, h + 0.2);
+                            cloud.scale.set(1.5, 1, 0.6);
+                            group.add(cloud);
+                        }
+                        break;
+                    case 'shadow':
+                        // Stínový - rozeklané hrany
+                        var shardGeom = new THREE.CylinderGeometry(0, 0.1, 0.3, 4);
+                        for (var sh = 0; sh < 4; sh++) {
+                            var shard = new THREE.Mesh(shardGeom);
+                            var shAngle = (sh / 4) * Math.PI * 2 + seed * 0.1;
+                            shard.position.set(i + Math.cos(shAngle) * 0.35, j + Math.sin(shAngle) * 0.35, h);
+                            shard.rotation.x = Math.PI / 2;
+                            group.add(shard);
+                        }
+                        break;
+                    case 'fire':
+                        // Ohnivý - plamínky nahoře
+                        var flameGeom = new THREE.ConeGeometry(0.08, 0.25, 6);
+                        for (var f = 0; f < 3 + (seed % 2); f++) {
+                            var flame = new THREE.Mesh(flameGeom);
+                            flame.position.set(i + ((seed + f * 11) % 40 - 20) * 0.015, j + ((seed + f * 13) % 40 - 20) * 0.015, h + 0.12);
+                            flame.rotation.x = Math.PI;
+                            group.add(flame);
+                        }
+                        break;
+                    case 'moss':
+                    case 'emerald':
+                        // Mechový/Smaragdový - kulaté detaily
+                        var mossG = new THREE.SphereGeometry(0.1, 8, 6);
+                        for (var m = 0; m < 4; m++) {
+                            var mossM = new THREE.Mesh(mossG);
+                            mossM.position.set(i + ((seed + m * 7) % 40 - 20) * 0.02, j + ((seed + m * 11) % 40 - 20) * 0.02, h + 0.05);
+                            mossM.scale.set(1, 1, 0.5);
+                            group.add(mossM);
+                        }
+                        break;
+                    case 'copper':
+                    case 'bronze':
+                        // Měděné/Bronzové - kovové prstence
+                        var ringG = new THREE.TorusGeometry(0.35, 0.04, 6, 12);
+                        var ringM = new THREE.Mesh(ringG);
+                        ringM.position.set(i, j, h * 0.5);
+                        group.add(ringM);
+                        break;
+                    case 'marble':
+                        // Mramorový - hladké sloupy
+                        var pillarG = new THREE.CylinderGeometry(0.35, 0.38, h, 12);
+                        var pillarM = new THREE.Mesh(pillarG);
+                        pillarM.position.set(i, j, h / 2);
+                        pillarM.rotation.x = Math.PI / 2;
+                        group.children = []; // Nahradit základní blok
+                        group.add(pillarM);
+                        // Hlavice
+                        var capG = new THREE.CylinderGeometry(0.42, 0.35, 0.1, 12);
+                        var capM = new THREE.Mesh(capG);
+                        capM.position.set(i, j, h + 0.05);
+                        capM.rotation.x = Math.PI / 2;
+                        group.add(capM);
+                        break;
+                    case 'toxic':
+                        // Toxická - bubliny
+                        var bubbleG = new THREE.SphereGeometry(0.1, 8, 8);
+                        for (var bu = 0; bu < 3; bu++) {
+                            var bubble = new THREE.Mesh(bubbleG);
+                            bubble.position.set(i + ((seed + bu * 9) % 30 - 15) * 0.02, j + ((seed + bu * 13) % 30 - 15) * 0.02, h + 0.1 + bu * 0.08);
+                            bubble.scale.set(1 - bu * 0.2, 1 - bu * 0.2, 1 - bu * 0.2);
+                            group.add(bubble);
+                        }
+                        break;
+                    case 'ruby':
+                    case 'sapphire':
+                        // Rubínová/Safírová - drahokamy
+                        var gemG = new THREE.OctahedronGeometry(0.18, 0);
+                        var gem = new THREE.Mesh(gemG);
+                        gem.position.set(i, j, h + 0.15);
+                        gem.rotation.z = seed * 0.1;
+                        group.add(gem);
+                        break;
+                    case 'storm':
+                        // Bouřková - hranaté tvary
+                        var boltG = new THREE.CubeGeometry(0.05, 0.05, 0.4);
+                        for (var bo = 0; bo < 2; bo++) {
+                            var bolt = new THREE.Mesh(boltG);
+                            bolt.position.set(i + (bo === 0 ? 0.3 : -0.3), j, h + 0.2);
+                            bolt.rotation.z = (bo === 0 ? 0.3 : -0.3);
+                            group.add(bolt);
+                        }
+                        break;
+                    case 'obsidian':
+                        // Obsidiánová - ostré hrany
+                        var obsG = new THREE.CylinderGeometry(0.05, 0.15, 0.35, 4);
+                        for (var ob = 0; ob < 4; ob++) {
+                            var obs = new THREE.Mesh(obsG);
+                            var obAngle = (ob / 4) * Math.PI * 2;
+                            obs.position.set(i + Math.cos(obAngle) * 0.3, j + Math.sin(obAngle) * 0.3, h + 0.15);
+                            obs.rotation.x = Math.PI / 2;
+                            group.add(obs);
+                        }
+                        break;
+                    case 'polar':
+                        // Polární - sněhové čepice
+                        var snowG = new THREE.SphereGeometry(0.4, 8, 6);
+                        var snow = new THREE.Mesh(snowG);
+                        snow.position.set(i, j, h + 0.1);
+                        snow.scale.set(1, 1, 0.3);
+                        group.add(snow);
+                        break;
+                    case 'hell':
+                        // Pekelná - trny a rohy
+                        var hornG = new THREE.ConeGeometry(0.08, 0.35, 5);
+                        for (var ho = 0; ho < 2; ho++) {
+                            var horn = new THREE.Mesh(hornG);
+                            horn.position.set(i + (ho === 0 ? 0.25 : -0.25), j, h + 0.15);
+                            horn.rotation.x = Math.PI + (ho === 0 ? 0.2 : -0.2);
+                            group.add(horn);
+                        }
+                        break;
+                    case 'victory':
+                        // Vítězná - koruna nahoře
+                        var crownG = new THREE.CylinderGeometry(0.3, 0.35, 0.15, 8);
+                        var crown = new THREE.Mesh(crownG);
+                        crown.position.set(i, j, h + 0.08);
+                        crown.rotation.x = Math.PI / 2;
+                        group.add(crown);
+                        // Zuby koruny
+                        for (var z = 0; z < 5; z++) {
+                            var toothG = new THREE.ConeGeometry(0.06, 0.15, 4);
+                            var tooth = new THREE.Mesh(toothG);
+                            var tAngle = (z / 5) * Math.PI * 2;
+                            tooth.position.set(i + Math.cos(tAngle) * 0.25, j + Math.sin(tAngle) * 0.25, h + 0.22);
+                            tooth.rotation.x = Math.PI;
+                            group.add(tooth);
+                        }
+                        break;
+                }
+            }
+
+            return group;
+        }
+
+        function generateMazeMesh(field) {
+            var style = getMazeStyle(level);
+            var dummy = new THREE.Geometry();
+
+            for (var i = 0; i < field.dimension; i++) {
+                for (var j = 0; j < field.dimension; j++) {
+                    if (field[i][j]) {
+                        var wallGroup = createWallGeometry(style, i, j, field);
+                        // Merge všechny meshe z grupy do dummy
+                        for (var k = 0; k < wallGroup.children.length; k++) {
+                            THREE.GeometryUtils.merge(dummy, wallGroup.children[k]);
+                        }
+                    }
+                }
+            }
+
+            // Materiál podle stylu
+            var useTexture = (style.type === 'dungeon' || style.type === 'castle');
+            var material = new THREE.MeshPhongMaterial({
+                map: useTexture ? brickTexture : null,
+                color: style.color,
+                emissive: style.emissive,
+                specular: style.type === 'ice' ? 0x666666 : (style.type === 'gold' ? 0xffaa00 : 0x222222),
+                shininess: style.type === 'ice' ? 80 : (style.type === 'gold' ? 60 : 10),
+                transparent: style.type === 'ice',
+                opacity: style.type === 'ice' ? 0.85 : 1.0
+            });
+
+            return new THREE.Mesh(dummy, material);
+        }
+
+        function createRenderWorld() {
+            scene = new THREE.Scene();
+
+            // Styl podle levelu - barva mlhy
+            var style = getMazeStyle(level);
+            scene.fog = new THREE.Fog(style.fogColor, 5, 30);
+            renderer.setClearColor(style.fogColor);
+
+            // Ambientní světlo s nádechem barvy levelu
+            var ambient = new THREE.AmbientLight(0x404040);
+            scene.add(ambient);
+
+            // Bodové světlo na míčku
+            light = new THREE.PointLight(0xffffff, 1);
+            light.position.set(1, 1, 1.3);
+            scene.add(light);
+
+            // Míček
+            var g = new THREE.SphereGeometry(ballRadius, 32, 16);
+            var m = new THREE.MeshPhongMaterial({
+                map: ironTexture,
+                specular: 0x888888,
+                shininess: 100
+            });
+            ballMesh = new THREE.Mesh(g, m);
+            ballMesh.position.set(1, 1, ballRadius);
+            scene.add(ballMesh);
+
+            // Kamera
+            var aspect = window.innerWidth / window.innerHeight;
+            camera = new THREE.PerspectiveCamera(60, aspect, 1, 1000);
+            camera.position.set(1, 1, 5);
+            scene.add(camera);
+
+            // Bludiště
+            mazeMesh = generateMazeMesh(maze);
+            scene.add(mazeMesh);
+
+            // Podlaha
+            g = new THREE.PlaneGeometry(mazeDimension * 10, mazeDimension * 10, mazeDimension, mazeDimension);
+            planeTexture.wrapS = planeTexture.wrapT = THREE.RepeatWrapping;
+            planeTexture.repeat.set(mazeDimension * 5, mazeDimension * 5);
+            m = new THREE.MeshPhongMaterial({map: planeTexture});
+            planeMesh = new THREE.Mesh(g, m);
+            planeMesh.position.set((mazeDimension - 1) / 2, (mazeDimension - 1) / 2, 0);
+            planeMesh.rotation.set(Math.PI / 2, 0, 0);
+            scene.add(planeMesh);
+
+            // Výstupní značka (zelený prstenec)
+            var exitGeom = new THREE.TorusGeometry(0.4, 0.1, 8, 16);
+            var exitMat = new THREE.MeshBasicMaterial({color: 0x00ff88, transparent: true, opacity: 0.8});
+            var exitMesh = new THREE.Mesh(exitGeom, exitMat);
+            exitMesh.position.set(mazeDimension - 1, mazeDimension - 2, 0.5);
+            exitMesh.rotation.y = Math.PI / 2;
+            scene.add(exitMesh);
+
+            // Přidat nepřátele, mince, power-upy a srdíčka
+            createEnemies();
+            createCoins();
+            createPowerups();
+            createHearts();
+        }
+
+        // Najít volné pozice v bludišti
+        function findEmptyPositions(count, minDistanceFromStart) {
+            minDistanceFromStart = minDistanceFromStart || 0;
+            var positions = [];
+            for (var i = 2; i < mazeDimension - 2; i++) {
+                for (var j = 2; j < mazeDimension - 2; j++) {
+                    if (!maze[i][j] && !(i === 1 && j === 1)) {
+                        // Vzdálenost od startu (hráč začíná na 1,1)
+                        var distFromStart = Math.sqrt((i - 1) * (i - 1) + (j - 1) * (j - 1));
+                        if (distFromStart >= minDistanceFromStart) {
+                            positions.push({x: i, y: j, dist: distFromStart});
+                        }
+                    }
+                }
+            }
+            // Zamíchat a vybrat
+            positions.sort(function() { return Math.random() - 0.5; });
+            return positions.slice(0, count);
+        }
+
+        // Různé typy nepřátel podle levelu
+        // Enemy types
+        var ENEMY_TYPES = {
+            // Basic slow enemy - random movement
+            basic: {
+                name: 'Crawler',
+                color: 0xff4444,
+                emissive: 0x441111,
+                light: 0xff4444,
+                size: 0.18,
+                speed: 0.01,
+                spikes: 6,
+                eyeColor: 0xffff00,
+                behavior: 'random'
+            },
+            // Fast enemy - smaller but quick
+            speedy: {
+                name: 'Dasher',
+                color: 0x00ffff,
+                emissive: 0x004444,
+                light: 0x00ffff,
+                size: 0.14,
+                speed: 0.025,
+                spikes: 4,
+                eyeColor: 0xffffff,
+                behavior: 'random'
+            },
+            // Chaser - follows the player
+            chaser: {
+                name: 'Hunter',
+                color: 0xff00ff,
+                emissive: 0x440044,
+                light: 0xff00ff,
+                size: 0.22,
+                speed: 0.014,
+                spikes: 10,
+                eyeColor: 0xff0000,
+                behavior: 'chase'
+            },
+            // Guard - patrols area and chases when player gets close
+            guard: {
+                name: 'Guardian',
+                color: 0xffaa00,
+                emissive: 0x442200,
+                light: 0xffaa00,
+                size: 0.25,
+                speed: 0.018,
+                spikes: 8,
+                eyeColor: 0xff6600,
+                behavior: 'guard',
+                guardRadius: 4
+            },
+            // Ghost - can pass through walls temporarily
+            ghost: {
+                name: 'Phantom',
+                color: 0xaaaaff,
+                emissive: 0x222244,
+                light: 0x8888ff,
+                size: 0.2,
+                speed: 0.012,
+                spikes: 0,
+                eyeColor: 0xffffff,
+                behavior: 'ghost',
+                transparent: true
+            },
+            // Jumper - teleports to locations
+            jumper: {
+                name: 'Hopper',
+                color: 0x44ff44,
+                emissive: 0x114411,
+                light: 0x44ff44,
+                size: 0.16,
+                speed: 0.008,
+                spikes: 5,
+                eyeColor: 0x00ff00,
+                behavior: 'jump'
+            },
+            // Tank - big and slow
+            tank: {
+                name: 'Colossus',
+                color: 0x888888,
+                emissive: 0x222222,
+                light: 0xaaaaaa,
+                size: 0.32,
+                speed: 0.006,
+                spikes: 14,
+                eyeColor: 0xff0000,
+                behavior: 'patrol'
+            }
+        };
+
+        // Rozhodnout jaké nepřátele přidat podle levelu
+        function getEnemyTypesForLevel(lvl) {
+            var types = [];
+            // Základní nepřátelé vždy
+            var numBasic = Math.min(2 + Math.floor(lvl / 3), 4);
+            for (var b = 0; b < numBasic; b++) types.push('basic');
+
+            // Rychlý od levelu 2
+            if (lvl >= 2) types.push('speedy');
+            if (lvl >= 4) types.push('speedy');
+
+            // Pronásledovatel od levelu 3
+            if (lvl >= 3) types.push('chaser');
+
+            // Strážce od levelu 4
+            if (lvl >= 4) types.push('guard');
+
+            // Duch od levelu 5
+            if (lvl >= 5) types.push('ghost');
+
+            // Skokánek od levelu 6
+            if (lvl >= 6) types.push('jumper');
+
+            // Tank od levelu 7
+            if (lvl >= 7) types.push('tank');
+
+            // Další pronásledovatel od levelu 8
+            if (lvl >= 8) types.push('chaser');
+
+            return types;
+        }
+
+        // Vytvořit nepřátele (různé typy podle levelu)
+        function createEnemies() {
+            enemies = [];
+            var enemyTypes = getEnemyTypesForLevel(level);
+            var positions = findEmptyPositions(enemyTypes.length + 5, 5).slice(0, enemyTypes.length);
+
+            for (var i = 0; i < Math.min(positions.length, enemyTypes.length); i++) {
+                var typeName = enemyTypes[i];
+                var type = ENEMY_TYPES[typeName];
+                var enemyGroup = new THREE.Object3D();
+
+                // Tělo
+                var bodyGeom = new THREE.SphereGeometry(type.size, 16, 12);
+                var bodyMat = new THREE.MeshPhongMaterial({
+                    color: type.color,
+                    emissive: type.emissive,
+                    specular: 0xffffff,
+                    shininess: type.transparent ? 100 : 50,
+                    transparent: type.transparent || false,
+                    opacity: type.transparent ? 0.6 : 1.0
+                });
+                var body = new THREE.Mesh(bodyGeom, bodyMat);
+                enemyGroup.add(body);
+
+                // Ostny
+                if (type.spikes > 0) {
+                    var spikeMat = new THREE.MeshPhongMaterial({color: type.emissive});
+                    for (var s = 0; s < type.spikes; s++) {
+                        var spikeLen = type.size * 0.6;
+                        var spikeGeom = new THREE.CylinderGeometry(0, 0.04, spikeLen, 4);
+                        var spike = new THREE.Mesh(spikeGeom, spikeMat);
+                        var angle = (s / type.spikes) * Math.PI * 2;
+                        spike.position.set(Math.cos(angle) * type.size * 0.8, 0, Math.sin(angle) * type.size * 0.8);
+                        spike.rotation.z = Math.PI / 2;
+                        spike.rotation.y = angle;
+                        enemyGroup.add(spike);
+                    }
+                }
+
+                // Speciální efekty podle typu
+                if (typeName === 'ghost') {
+                    // Duch má průhlednou auru
+                    var auraGeom = new THREE.SphereGeometry(type.size * 1.5, 12, 12);
+                    var auraMat = new THREE.MeshBasicMaterial({
+                        color: 0xaaaaff,
+                        transparent: true,
+                        opacity: 0.2
+                    });
+                    var aura = new THREE.Mesh(auraGeom, auraMat);
+                    enemyGroup.add(aura);
+                } else if (typeName === 'jumper') {
+                    // Skokánek má pružiny
+                    var springMat = new THREE.MeshPhongMaterial({color: 0x228822});
+                    for (var sp = 0; sp < 2; sp++) {
+                        var springGeom = new THREE.CylinderGeometry(0.04, 0.06, 0.15, 8);
+                        var spring = new THREE.Mesh(springGeom, springMat);
+                        spring.position.set(sp === 0 ? -0.08 : 0.08, 0, -type.size);
+                        enemyGroup.add(spring);
+                    }
+                } else if (typeName === 'tank') {
+                    // Tank má pancíř
+                    var armorGeom = new THREE.TorusGeometry(type.size * 0.7, 0.06, 8, 16);
+                    var armorMat = new THREE.MeshPhongMaterial({color: 0x555555, specular: 0x999999});
+                    var armor = new THREE.Mesh(armorGeom, armorMat);
+                    enemyGroup.add(armor);
+                    var armor2 = new THREE.Mesh(armorGeom, armorMat);
+                    armor2.rotation.x = Math.PI / 2;
+                    enemyGroup.add(armor2);
+                } else if (typeName === 'guard') {
+                    // Strážce má štít
+                    var shieldGeom = new THREE.CylinderGeometry(0.15, 0.18, 0.05, 6);
+                    var shieldMat = new THREE.MeshPhongMaterial({color: 0xcc8800, specular: 0xffaa00});
+                    var shield = new THREE.Mesh(shieldGeom, shieldMat);
+                    shield.position.set(0, type.size * 1.1, 0);
+                    shield.rotation.x = Math.PI / 2;
+                    enemyGroup.add(shield);
+                }
+
+                // Oči
+                var eyeMat = new THREE.MeshBasicMaterial({color: type.eyeColor});
+                var eyeGeom = new THREE.SphereGeometry(type.size * 0.2, 8, 8);
+                var leftEye = new THREE.Mesh(eyeGeom, eyeMat);
+                leftEye.position.set(-type.size * 0.4, type.size * 0.5, type.size * 0.7);
+                enemyGroup.add(leftEye);
+                var rightEye = new THREE.Mesh(eyeGeom, eyeMat);
+                rightEye.position.set(type.size * 0.4, type.size * 0.5, type.size * 0.7);
+                enemyGroup.add(rightEye);
+
+                // Světlo
+                var enemyLight = new THREE.PointLight(type.light, 0.5, 3);
+                enemyGroup.add(enemyLight);
+
+                var cellX = positions[i].x;
+                var cellY = positions[i].y;
+
+                if (maze[cellX] && maze[cellX][cellY]) continue;
+
+                enemyGroup.position.set(cellX, cellY, type.size);
+
+                // Pohybové vlastnosti
+                enemyGroup.userData = {
+                    type: typeName,
+                    typeData: type,
+                    targetX: cellX,
+                    targetY: cellY,
+                    homeX: cellX, // Pro strážce
+                    homeY: cellY,
+                    lastDirX: 0,
+                    lastDirY: 0,
+                    speed: type.speed + level * 0.001,
+                    jumpTimer: 0,
+                    jumpHeight: 0,
+                    ghostPhase: false,
+                    ghostTimer: 0,
+                    alerted: false // Pro strážce
+                };
+
+                scene.add(enemyGroup);
+                enemies.push(enemyGroup);
+            }
+        }
+
+        // Vytvořit mince (zlaté rotující objekty)
+        function createCoins() {
+            coins = [];
+            var numCoins = 3 + level;
+            var positions = findEmptyPositions(numCoins + 10).slice(5); // Vynechat pozice pro nepřátele
+
+            for (var i = 0; i < Math.min(numCoins, positions.length); i++) {
+                // Ověřit, že pozice je volná
+                var cellX = positions[i].x;
+                var cellY = positions[i].y;
+                if (maze[cellX] && maze[cellX][cellY]) continue;
+
+                var coinGroup = new THREE.Object3D();
+
+                // Mince (zploštělý válec)
+                var coinGeom = new THREE.CylinderGeometry(0.12, 0.12, 0.03, 16);
+                var coinMat = new THREE.MeshPhongMaterial({
+                    color: 0xffd700,
+                    emissive: 0x553300,
+                    specular: 0xffff00,
+                    shininess: 100
+                });
+                var coin = new THREE.Mesh(coinGeom, coinMat);
+                coin.rotation.x = Math.PI / 2;
+                coinGroup.add(coin);
+
+                // Hvězda uprostřed
+                var starMat = new THREE.MeshBasicMaterial({color: 0xffff00});
+                var starGeom = new THREE.OctahedronGeometry(0.05, 0);
+                var star = new THREE.Mesh(starGeom, starMat);
+                coinGroup.add(star);
+
+                // Světlo
+                var coinLight = new THREE.PointLight(0xffd700, 0.3, 2);
+                coinGroup.add(coinLight);
+
+                coinGroup.position.set(positions[i].x, positions[i].y, 0.3);
+                coinGroup.userData = { collected: false, value: 10 };
+
+                scene.add(coinGroup);
+                coins.push(coinGroup);
+            }
+        }
+
+        // Vytvořit power-upy
+        function createPowerups() {
+            powerups = [];
+            if (level < 2) return; // Power-upy od levelu 2
+
+            var numPowerups = Math.min(Math.floor(level / 2), 3);
+            var positions = findEmptyPositions(numPowerups + 20).slice(15);
+
+            var types = ['speed', 'shield', 'points'];
+
+            for (var i = 0; i < Math.min(numPowerups, positions.length); i++) {
+                // Ověřit, že pozice je volná
+                var cellX = positions[i].x;
+                var cellY = positions[i].y;
+                if (maze[cellX] && maze[cellX][cellY]) continue;
+
+                var type = types[i % types.length];
+                var powerupGroup = new THREE.Object3D();
+
+                // Základní krystal
+                var crystalGeom = new THREE.OctahedronGeometry(0.15, 0);
+                var color, emissive;
+
+                switch(type) {
+                    case 'speed':
+                        color = 0x00ffff;
+                        emissive = 0x004444;
+                        break;
+                    case 'shield':
+                        color = 0xff00ff;
+                        emissive = 0x440044;
+                        break;
+                    case 'points':
+                        color = 0x00ff00;
+                        emissive = 0x004400;
+                        break;
+                }
+
+                var crystalMat = new THREE.MeshPhongMaterial({
+                    color: color,
+                    emissive: emissive,
+                    transparent: true,
+                    opacity: 0.8,
+                    specular: 0xffffff,
+                    shininess: 100
+                });
+                var crystal = new THREE.Mesh(crystalGeom, crystalMat);
+                powerupGroup.add(crystal);
+
+                // Rotující prstenec
+                var ringGeom = new THREE.TorusGeometry(0.2, 0.02, 8, 16);
+                var ringMat = new THREE.MeshBasicMaterial({color: color, transparent: true, opacity: 0.5});
+                var ring = new THREE.Mesh(ringGeom, ringMat);
+                powerupGroup.add(ring);
+
+                // Světlo
+                var powerupLight = new THREE.PointLight(color, 0.5, 3);
+                powerupGroup.add(powerupLight);
+
+                powerupGroup.position.set(positions[i].x, positions[i].y, 0.35);
+                powerupGroup.userData = { collected: false, type: type };
+
+                scene.add(powerupGroup);
+                powerups.push(powerupGroup);
+            }
+        }
+
+        // Vytvořit 3D tvar srdce pomocí parametrické křivky
+        function createHeartShape(scale) {
+            var heartShape = new THREE.Shape();
+            var x = 0, y = 0;
+            scale = scale || 0.05;
+
+            // Parametrická křivka srdce
+            heartShape.moveTo(x, y + scale * 2);
+            heartShape.bezierCurveTo(x, y + scale * 3.5, x - scale * 2.5, y + scale * 3.5, x - scale * 2.5, y + scale * 2);
+            heartShape.bezierCurveTo(x - scale * 2.5, y + scale * 0.5, x, y - scale * 1, x, y - scale * 3);
+            heartShape.bezierCurveTo(x, y - scale * 1, x + scale * 2.5, y + scale * 0.5, x + scale * 2.5, y + scale * 2);
+            heartShape.bezierCurveTo(x + scale * 2.5, y + scale * 3.5, x, y + scale * 3.5, x, y + scale * 2);
+
+            return heartShape;
+        }
+
+        // Vytvořit léčivá srdíčka (vzácná)
+        function createHearts() {
+            hearts = [];
+
+            // Srdíčka se objevují od levelu 2, max 1-2 za level
+            var numHearts = level >= 2 ? (level >= 5 ? 2 : 1) : 0;
+            if (numHearts === 0) return;
+
+            // Srdíčka jsou daleko od startu - jsou vzácná
+            var positions = findEmptyPositions(numHearts + 25, 8).slice(0, numHearts);
+
+            for (var i = 0; i < positions.length; i++) {
+                var cellX = positions[i].x;
+                var cellY = positions[i].y;
+                if (maze[cellX] && maze[cellX][cellY]) continue;
+
+                var heartGroup = new THREE.Object3D();
+
+                // 3D extrudované srdce
+                var heartShape = createHeartShape(0.04);
+                var extrudeSettings = {
+                    amount: 0.08,
+                    bevelEnabled: true,
+                    bevelThickness: 0.02,
+                    bevelSize: 0.015,
+                    bevelSegments: 3,
+                    steps: 1
+                };
+                var heartGeom = new THREE.ExtrudeGeometry(heartShape, extrudeSettings);
+
+                var heartMat = new THREE.MeshPhongMaterial({
+                    color: 0xff2255,
+                    emissive: 0x660022,
+                    specular: 0xffaaaa,
+                    shininess: 100
+                });
+
+                var heartMesh = new THREE.Mesh(heartGeom, heartMat);
+                heartMesh.rotation.x = -Math.PI / 2;
+                heartMesh.rotation.z = Math.PI;
+                heartMesh.position.z = 0.04;
+                heartMesh.scale.set(1.2, 1.2, 1.2);
+                heartGroup.add(heartMesh);
+
+                // Vnitřní záře
+                var innerGlowMat = new THREE.MeshBasicMaterial({
+                    color: 0xff6688,
+                    transparent: true,
+                    opacity: 0.6
+                });
+                var innerGlowGeom = new THREE.SphereGeometry(0.12, 16, 16);
+                var innerGlow = new THREE.Mesh(innerGlowGeom, innerGlowMat);
+                heartGroup.add(innerGlow);
+
+                // Vnější záře
+                var outerGlowMat = new THREE.MeshBasicMaterial({
+                    color: 0xff3366,
+                    transparent: true,
+                    opacity: 0.2
+                });
+                var outerGlowGeom = new THREE.SphereGeometry(0.25, 16, 16);
+                var outerGlow = new THREE.Mesh(outerGlowGeom, outerGlowMat);
+                heartGroup.add(outerGlow);
+
+                // Rotující částice kolem srdce
+                for (var p = 0; p < 6; p++) {
+                    var particleMat = new THREE.MeshBasicMaterial({
+                        color: 0xffaacc,
+                        transparent: true,
+                        opacity: 0.8
+                    });
+                    var particleGeom = new THREE.SphereGeometry(0.02, 8, 8);
+                    var particle = new THREE.Mesh(particleGeom, particleMat);
+                    var angle = (p / 6) * Math.PI * 2;
+                    particle.position.set(Math.cos(angle) * 0.2, Math.sin(angle) * 0.2, 0);
+                    particle.userData = particle.userData || {};
+                    particle.userData.orbitAngle = angle;
+                    particle.userData.orbitSpeed = 0.03 + Math.random() * 0.02;
+                    heartGroup.add(particle);
+                }
+
+                // Silné světlo
+                var heartLight = new THREE.PointLight(0xff3366, 1.0, 4);
+                heartGroup.add(heartLight);
+
+                heartGroup.position.set(cellX, cellY, 0.35);
+                heartGroup.userData = { collected: false };
+
+                scene.add(heartGroup);
+                hearts.push(heartGroup);
+            }
+        }
+
+        // Kontrola, zda je buňka mřížky volná (není zeď)
+        function isCellFree(gridX, gridY) {
+            if (gridX < 0 || gridX >= mazeDimension || gridY < 0 || gridY >= mazeDimension) {
+                return false;
+            }
+            return !maze[gridX][gridY];
+        }
+
+        // Najít možné směry pohybu z buňky mřížky
+        function getValidDirections(gridX, gridY) {
+            var dirs = [];
+
+            // Kontrola sousedních buněk - musí být volné
+            if (isCellFree(gridX, gridY + 1)) dirs.push({dx: 0, dy: 1});  // Nahoru
+            if (isCellFree(gridX, gridY - 1)) dirs.push({dx: 0, dy: -1}); // Dolů
+            if (isCellFree(gridX + 1, gridY)) dirs.push({dx: 1, dy: 0});  // Doprava
+            if (isCellFree(gridX - 1, gridY)) dirs.push({dx: -1, dy: 0}); // Doleva
+
+            return dirs;
+        }
+
+        // Aktualizovat nepřátele - pohyb po celém bludišti
+        function updateEnemies() {
+            for (var i = 0; i < enemies.length; i++) {
+                var enemy = enemies[i];
+                var data = enemy.userData;
+                var behavior = data.typeData.behavior;
+
+                // Vzdálenost k hráči
+                var toPlayerX = ballMesh.position.x - enemy.position.x;
+                var toPlayerY = ballMesh.position.y - enemy.position.y;
+                var distToPlayer = Math.sqrt(toPlayerX * toPlayerX + toPlayerY * toPlayerY);
+
+                // Speciální chování podle typu
+                if (behavior === 'jump') {
+                    // Skokánek - skáče na místa
+                    data.jumpTimer++;
+                    if (data.jumpTimer > 90) { // Každých 1.5s
+                        data.jumpTimer = 0;
+                        data.jumpHeight = 0.8;
+                        // Nový cíl - náhodná volná buňka v dosahu
+                        var jumpRange = 3;
+                        var possibleTargets = [];
+                        for (var jx = -jumpRange; jx <= jumpRange; jx++) {
+                            for (var jy = -jumpRange; jy <= jumpRange; jy++) {
+                                var tx = Math.round(enemy.position.x) + jx;
+                                var ty = Math.round(enemy.position.y) + jy;
+                                if (isCellFree(tx, ty)) {
+                                    possibleTargets.push({x: tx, y: ty});
+                                }
+                            }
+                        }
+                        if (possibleTargets.length > 0) {
+                            var target = possibleTargets[Math.floor(Math.random() * possibleTargets.length)];
+                            data.targetX = target.x;
+                            data.targetY = target.y;
+                        }
+                    }
+                    // Skok animace
+                    if (data.jumpHeight > 0) {
+                        data.jumpHeight -= 0.03;
+                        enemy.position.z = data.typeData.size + Math.sin(data.jumpHeight * Math.PI) * 0.5;
+                        // Rychlý pohyb během skoku
+                        var jdx = data.targetX - enemy.position.x;
+                        var jdy = data.targetY - enemy.position.y;
+                        var jdist = Math.sqrt(jdx * jdx + jdy * jdy);
+                        if (jdist > 0.1) {
+                            enemy.position.x += (jdx / jdist) * 0.08;
+                            enemy.position.y += (jdy / jdist) * 0.08;
+                        }
+                    } else {
+                        enemy.position.z = data.typeData.size;
+                    }
+                } else if (behavior === 'ghost') {
+                    // Duch - občas projde zdí směrem k hráči
+                    data.ghostTimer++;
+                    if (data.ghostTimer > 180) { // Každé 3s
+                        data.ghostTimer = 0;
+                        data.ghostPhase = !data.ghostPhase;
+                    }
+                    // Pulzující průhlednost
+                    var opacity = data.ghostPhase ? 0.3 : 0.6;
+                    enemy.children[0].material.opacity = opacity + Math.sin(Date.now() * 0.01) * 0.1;
+
+                    if (data.ghostPhase && distToPlayer < 5) {
+                        // Pohyb přímo k hráči (ignoruje zdi)
+                        enemy.position.x += (toPlayerX / distToPlayer) * data.speed * 1.5;
+                        enemy.position.y += (toPlayerY / distToPlayer) * data.speed * 1.5;
+                    }
+                } else if (behavior === 'guard') {
+                    // Strážce - hlídá oblast, pronásleduje když se hráč přiblíží
+                    var guardRadius = data.typeData.guardRadius || 4;
+                    var distToHome = Math.sqrt(
+                        Math.pow(enemy.position.x - data.homeX, 2) +
+                        Math.pow(enemy.position.y - data.homeY, 2)
+                    );
+
+                    if (distToPlayer < guardRadius) {
+                        data.alerted = true;
+                    } else if (distToHome < 1) {
+                        data.alerted = false;
+                    }
+
+                    // Změna barvy očí když je ve střehu
+                    if (data.alerted) {
+                        enemy.children[enemy.children.length - 3].material.color.setHex(0xff0000);
+                        enemy.children[enemy.children.length - 2].material.color.setHex(0xff0000);
+                    } else {
+                        enemy.children[enemy.children.length - 3].material.color.setHex(data.typeData.eyeColor);
+                        enemy.children[enemy.children.length - 2].material.color.setHex(data.typeData.eyeColor);
+                    }
+                }
+
+                // Standardní pohyb (pokud není skok)
+                if (behavior !== 'jump' || data.jumpHeight <= 0) {
+                    var targetCellX = Math.round(data.targetX);
+                    var targetCellY = Math.round(data.targetY);
+
+                    var dx = targetCellX - enemy.position.x;
+                    var dy = targetCellY - enemy.position.y;
+                    var distToTarget = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distToTarget < 0.05) {
+                        enemy.position.x = targetCellX;
+                        enemy.position.y = targetCellY;
+
+                        var dirs = getValidDirections(targetCellX, targetCellY);
+
+                        if (dirs.length > 0) {
+                            var validDirs = dirs.filter(function(d) {
+                                return dirs.length === 1 || !(d.dx === -data.lastDirX && d.dy === -data.lastDirY);
+                            });
+                            if (validDirs.length === 0) validDirs = dirs;
+
+                            var chosen;
+
+                            // Různé strategie výběru směru
+                            if (behavior === 'chase' || (behavior === 'guard' && data.alerted)) {
+                                // Pronásledovatel nebo aktivovaný strážce
+                                validDirs.sort(function(a, b) {
+                                    var scoreA = a.dx * toPlayerX + a.dy * toPlayerY;
+                                    var scoreB = b.dx * toPlayerX + b.dy * toPlayerY;
+                                    return scoreB - scoreA;
+                                });
+                                chosen = validDirs[0];
+                            } else if (behavior === 'guard' && !data.alerted) {
+                                // Strážce se vrací domů
+                                var toHomeX = data.homeX - enemy.position.x;
+                                var toHomeY = data.homeY - enemy.position.y;
+                                validDirs.sort(function(a, b) {
+                                    var scoreA = a.dx * toHomeX + a.dy * toHomeY;
+                                    var scoreB = b.dx * toHomeX + b.dy * toHomeY;
+                                    return scoreB - scoreA;
+                                });
+                                chosen = validDirs[0];
+                            } else if (behavior === 'patrol') {
+                                // Tank - preferuje dlouhé chodby
+                                if (data.lastDirX !== 0 || data.lastDirY !== 0) {
+                                    var sameDirOption = validDirs.find(function(d) {
+                                        return d.dx === data.lastDirX && d.dy === data.lastDirY;
+                                    });
+                                    chosen = sameDirOption || validDirs[Math.floor(Math.random() * validDirs.length)];
+                                } else {
+                                    chosen = validDirs[Math.floor(Math.random() * validDirs.length)];
+                                }
+                            } else {
+                                // Náhodný pohyb
+                                chosen = validDirs[Math.floor(Math.random() * validDirs.length)];
+                            }
+
+                            data.lastDirX = chosen.dx;
+                            data.lastDirY = chosen.dy;
+
+                            var newTargetX = targetCellX + chosen.dx;
+                            var newTargetY = targetCellY + chosen.dy;
+
+                            if (isCellFree(newTargetX, newTargetY) || (behavior === 'ghost' && data.ghostPhase)) {
+                                data.targetX = newTargetX;
+                                data.targetY = newTargetY;
+                            }
+                        }
+                    } else if (behavior !== 'ghost' || !data.ghostPhase) {
+                        // Plynulý pohyb k cíli
+                        var currentSpeed = data.speed;
+                        if (behavior === 'guard' && data.alerted) currentSpeed *= 1.5;
+
+                        var moveX = (dx / distToTarget) * currentSpeed;
+                        var moveY = (dy / distToTarget) * currentSpeed;
+                        enemy.position.x += moveX;
+                        enemy.position.y += moveY;
+                    }
+                }
+
+                // Rotace podle typu
+                if (behavior === 'tank') {
+                    enemy.rotation.z += 0.02;
+                    enemy.rotation.y += 0.01;
+                } else if (behavior === 'speedy' || data.type === 'speedy') {
+                    enemy.rotation.z += 0.1;
+                    enemy.rotation.y += 0.08;
+                } else {
+                    enemy.rotation.z += 0.05;
+                    enemy.rotation.y += 0.03;
+                }
+
+                // Kolize s hráčem
+                var collisionDist = data.typeData.size + 0.2;
+                if (distToPlayer < collisionDist && !isInvincible && !isJumping) {
+                    lives--;
+                    console.log('Player hit! Lives remaining: ' + lives);
+                    isInvincible = true;
+                    invincibleTimer = 120;
+                    playSound('hit');
+
+                    // Okamžitě aktualizovat UI srdíček
+                    document.getElementById('lives').innerHTML = '❤️'.repeat(Math.max(0, lives));
+
+                    if (lives <= 0) {
+                        playSound('death');
+                        gameState = 'gameover';
+                    }
+                }
+            }
+        }
+
+        // Aktualizovat mince
+        function updateCoins() {
+            for (var i = 0; i < coins.length; i++) {
+                var coin = coins[i];
+                if (coin.userData.collected) continue;
+
+                // Rotace
+                coin.rotation.z += 0.05;
+                coin.position.z = 0.3 + Math.sin(Date.now() * 0.005 + i) * 0.05;
+
+                // Kolize s hráčem
+                var dx = coin.position.x - ballMesh.position.x;
+                var dy = coin.position.y - ballMesh.position.y;
+                var dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < 0.35) {
+                    coin.userData.collected = true;
+                    scene.remove(coin);
+                    score += coin.userData.value;
+                    playSound('collect');
+                }
+            }
+        }
+
+        // Aktualizovat power-upy
+        function updatePowerups() {
+            for (var i = 0; i < powerups.length; i++) {
+                var powerup = powerups[i];
+                if (powerup.userData.collected) continue;
+
+                // Rotace a plovení
+                powerup.rotation.y += 0.03;
+                powerup.rotation.x += 0.02;
+                powerup.position.z = 0.35 + Math.sin(Date.now() * 0.003 + i * 2) * 0.1;
+
+                // Kolize s hráčem
+                var dx = powerup.position.x - ballMesh.position.x;
+                var dy = powerup.position.y - ballMesh.position.y;
+                var dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < 0.4) {
+                    powerup.userData.collected = true;
+                    scene.remove(powerup);
+                    playSound('powerup');
+
+                    switch(powerup.userData.type) {
+                        case 'speed':
+                            speedBoost = 1.5;
+                            speedBoostTimer = 300; // 5 sekund
+                            break;
+                        case 'shield':
+                            isInvincible = true;
+                            invincibleTimer = 300;
+                            break;
+                        case 'points':
+                            score += 50;
+                            break;
+                    }
+                }
+            }
+
+            // Časovače
+            if (speedBoostTimer > 0) {
+                speedBoostTimer--;
+                if (speedBoostTimer <= 0) speedBoost = 1.0;
+            }
+            if (invincibleTimer > 0) {
+                invincibleTimer--;
+                if (invincibleTimer <= 0) isInvincible = false;
+            }
+
+            // Blikání při nezranitelnosti
+            if (isInvincible) {
+                ballMesh.visible = (Math.floor(Date.now() / 100) % 2 === 0);
+            } else {
+                ballMesh.visible = true;
+            }
+        }
+
+        // Aktualizovat srdíčka
+        function updateHearts() {
+            for (var i = 0; i < hearts.length; i++) {
+                var heart = hearts[i];
+                if (heart.userData.collected) continue;
+
+                // Rotace srdce
+                heart.rotation.z += 0.015;
+
+                // Pulzování
+                var pulse = 1 + Math.sin(Date.now() * 0.006) * 0.12;
+                heart.scale.set(pulse, pulse, pulse);
+
+                // Vznášení
+                heart.position.z = 0.35 + Math.sin(Date.now() * 0.003 + i) * 0.1;
+
+                // Rotující částice kolem srdce
+                for (var c = 0; c < heart.children.length; c++) {
+                    var child = heart.children[c];
+                    if (child.userData && child.userData.orbitAngle !== undefined) {
+                        child.userData.orbitAngle += child.userData.orbitSpeed;
+                        var radius = 0.2 + Math.sin(Date.now() * 0.004) * 0.05;
+                        child.position.x = Math.cos(child.userData.orbitAngle) * radius;
+                        child.position.y = Math.sin(child.userData.orbitAngle) * radius;
+                        child.position.z = Math.sin(child.userData.orbitAngle * 2) * 0.1;
+                    }
+                }
+
+                // Kolize s hráčem
+                var dx = heart.position.x - ballMesh.position.x;
+                var dy = heart.position.y - ballMesh.position.y;
+                var dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < 0.4) {
+                    heart.userData.collected = true;
+                    scene.remove(heart);
+                    playSound('heart');
+
+                    // Přidat život (max 5)
+                    if (lives < maxLives) {
+                        lives++;
+                    } else {
+                        // Pokud má max životů, dát bonus body
+                        score += 100;
+                    }
+                }
+            }
+        }
+
+        function updatePhysicsWorld() {
+            var lv = wBall.GetLinearVelocity();
+            lv.Multiply(0.95);
+            wBall.SetLinearVelocity(lv);
+
+            // Jump cooldown
+            if (jumpCooldown > 0) jumpCooldown--;
+
+            // Kontrola skoku - reaguje okamžitě na stisk Space
+            if (jumpKeyPressed && !jumpKeyWasPressed && jumpCooldown <= 0 && !isJumping) {
+                isJumping = true;
+                jumpTimer = jumpDuration;
+                jumpCooldown = jumpMaxCooldown;
+                jumpKeyWasPressed = true; // Zabránit opakovanému skoku při držení
+                playSound('jump');
+            }
+
+            // Jump timer
+            if (isJumping) {
+                jumpTimer--;
+                if (jumpTimer <= 0) {
+                    isJumping = false;
+                }
+            }
+
+            var force = 0.25 * speedBoost;
+            var f = new b2Vec2(keyAxis[0] * wBall.GetMass() * force, keyAxis[1] * wBall.GetMass() * force);
+            wBall.ApplyImpulse(f, wBall.GetPosition());
+            keyAxis = [0, 0];
+
+            wWorld.Step(1 / 60, 8, 3);
+        }
+
+        function updateRenderWorld() {
+            var stepX = wBall.GetPosition().x - ballMesh.position.x;
+            var stepY = wBall.GetPosition().y - ballMesh.position.y;
+            ballMesh.position.x += stepX;
+            ballMesh.position.y += stepY;
+
+            // Skok - koule se zvedne do vzduchu (sinusová křivka)
+            if (isJumping) {
+                var jumpProgress = 1 - (jumpTimer / jumpDuration);
+                var jumpHeight = Math.sin(jumpProgress * Math.PI) * 1.5; // Max výška 1.5
+                ballMesh.position.z = ballRadius + jumpHeight;
+            } else {
+                ballMesh.position.z = ballRadius; // Normální výška
+            }
+
+            var tempMat = new THREE.Matrix4();
+            tempMat.makeRotationAxis(new THREE.Vector3(0, 1, 0), stepX / ballRadius);
+            tempMat.multiplySelf(ballMesh.matrix);
+            ballMesh.matrix = tempMat;
+            tempMat = new THREE.Matrix4();
+            tempMat.makeRotationAxis(new THREE.Vector3(1, 0, 0), -stepY / ballRadius);
+            tempMat.multiplySelf(ballMesh.matrix);
+            ballMesh.matrix = tempMat;
+            ballMesh.rotation.getRotationFromMatrix(ballMesh.matrix);
+
+            camera.position.x += (ballMesh.position.x - camera.position.x) * 0.1;
+            camera.position.y += (ballMesh.position.y - camera.position.y) * 0.1;
+            camera.position.z += (5 - camera.position.z) * 0.1;
+            light.position.x = camera.position.x;
+            light.position.y = camera.position.y;
+            light.position.z = camera.position.z - 3.7;
+        }
+
+        // =====================================================
+        // RESTART GAME (Without page reload)
+        // Properly cleans up and resets game state
+        // =====================================================
+
+        function cleanupGame() {
+            console.log('');
+            console.log('🧹 ═══════════════════════════════════════');
+            console.log('🧹 [CLEANUP] Starting cleanup...');
+            console.log('   Current state: gameState=' + gameState);
+
+            // Count objects before cleanup
+            var enemyCount = enemies.length;
+            var coinCount = coins.length;
+            var powerupCount = powerups.length;
+            var heartCount = hearts.length;
+
+            console.log('   📦 Objects to clean:');
+            console.log('      Enemies: ' + enemyCount);
+            console.log('      Coins: ' + coinCount);
+            console.log('      Powerups: ' + powerupCount);
+            console.log('      Hearts: ' + heartCount);
+
+            // Stop any music
+            console.log('   🎵 Stopping music...');
+            stopMusic();
+
+            // Clear enemies
+            for (var i = 0; i < enemies.length; i++) {
+                if (enemies[i] && enemies[i].mesh && scene) {
+                    scene.remove(enemies[i].mesh);
+                    if (enemies[i].light) scene.remove(enemies[i].light);
+                }
+            }
+            enemies = [];
+            console.log('   ✅ Enemies cleared');
+
+            // Clear coins
+            for (var i = 0; i < coins.length; i++) {
+                if (coins[i] && scene) {
+                    scene.remove(coins[i]);
+                }
+            }
+            coins = [];
+            console.log('   ✅ Coins cleared');
+
+            // Clear powerups
+            for (var i = 0; i < powerups.length; i++) {
+                if (powerups[i] && powerups[i].mesh && scene) {
+                    scene.remove(powerups[i].mesh);
+                    if (powerups[i].light) scene.remove(powerups[i].light);
+                }
+            }
+            powerups = [];
+            console.log('   ✅ Powerups cleared');
+
+            // Clear hearts
+            for (var i = 0; i < hearts.length; i++) {
+                if (hearts[i] && hearts[i].mesh && scene) {
+                    scene.remove(hearts[i].mesh);
+                }
+            }
+            hearts = [];
+            console.log('   ✅ Hearts cleared');
+
+            // Clear Box2D world
+            if (wWorld) {
+                var bodyCount = 0;
+                var body = wWorld.GetBodyList();
+                while (body) {
+                    var nextBody = body.GetNext();
+                    wWorld.DestroyBody(body);
+                    body = nextBody;
+                    bodyCount++;
+                }
+                console.log('   ✅ Box2D bodies destroyed: ' + bodyCount);
+            }
+
+            // Clear scene if exists
+            if (scene) {
+                var sceneChildren = scene.children.length;
+                while (scene.children.length > 0) {
+                    scene.remove(scene.children[0]);
+                }
+                console.log('   ✅ Scene children removed: ' + sceneChildren);
+            }
+
+            console.log('');
+            console.log('✅ [CLEANUP] Complete!');
+            console.log('   Memory status: enemies=' + enemies.length + ', coins=' + coins.length + ', powerups=' + powerups.length);
+            console.log('🧹 ═══════════════════════════════════════');
+            console.log('');
+        }
+
+        function restartGame() {
+            console.log('');
+            console.log('🔄 ═══════════════════════════════════════');
+            console.log('🔄 [RESTART] Game restart initiated');
+            console.log('   Current gameState: ' + gameState);
+            console.log('   Current score: ' + score);
+            console.log('   Current level: ' + level);
+            console.log('   Current lives: ' + lives);
+            console.log('   Frame count: ' + gameLoopCounter);
+            console.log('🔄 ═══════════════════════════════════════');
+
+            // Hide all screens - with null checks
+            var gameoverScreen = document.getElementById('gameover-screen');
+            var levelcompleteScreen = document.getElementById('levelcomplete-screen');
+            var victoryScreen = document.getElementById('victory-screen');
+            var pauseMenu = document.getElementById('pause-menu');
+            var mainMenu = document.getElementById('main-menu');
+
+            if (gameoverScreen) {
+                gameoverScreen.style.display = 'none';
+                console.log('   ✅ gameover-screen hidden');
+            } else {
+                console.warn('   ⚠️ [RESTART] Element not found: gameover-screen');
+            }
+
+            if (levelcompleteScreen) {
+                levelcompleteScreen.style.display = 'none';
+                console.log('   ✅ levelcomplete-screen hidden');
+            } else {
+                console.warn('   ⚠️ [RESTART] Element not found: levelcomplete-screen');
+            }
+
+            if (victoryScreen) {
+                victoryScreen.style.display = 'none';
+                console.log('   ✅ victory-screen hidden');
+            } else {
+                console.warn('   ⚠️ [RESTART] Element not found: victory-screen');
+            }
+
+            if (pauseMenu) {
+                pauseMenu.style.display = 'none';
+                console.log('   ✅ pause-menu hidden');
+            }
+
+            if (mainMenu) {
+                mainMenu.style.display = 'none';
+                console.log('   ✅ main-menu hidden');
+            }
+
+            // Cleanup previous game
+            cleanupGame();
+
+            // Reset all game variables
+            score = 0;
+            lives = 3;
+            level = 1;
+            mazeDimension = 21;
+            canContinueFromDeath = true;
+            isInvincible = false;
+            invincibleTimer = 0;
+            speedBoost = 1.0;
+            speedBoostTimer = 0;
+            jumpCooldown = 0;
+            isJumping = false;
+            jumpTimer = 0;
+            jumpKeyPressed = false;
+            jumpKeyWasPressed = false;
+            keyAxis = [0, 0];
+            startTime = 0;
+            levelTime = 0;
+            gameLoopCounter = 0; // Reset frame counter
+
+            console.log('');
+            console.log('🔄 [RESTART] Variables reset:');
+            console.log('   score: ' + score);
+            console.log('   lives: ' + lives);
+            console.log('   level: ' + level);
+            console.log('   mazeDimension: ' + mazeDimension);
+            console.log('   gameLoopCounter: ' + gameLoopCounter);
+
+            // Show HUD - with null check
+            var hudElement = document.getElementById('hud');
+            if (hudElement) {
+                hudElement.style.display = 'flex';
+                console.log('   ✅ HUD shown');
+            } else {
+                console.warn('   ⚠️ [RESTART] Element not found: hud');
+            }
+
+            // Show extra life button - with null check
+            var extraLifeBtn = document.getElementById('extra-life-btn');
+            if (extraLifeBtn) {
+                if (lives < maxLives) {
+                    extraLifeBtn.style.display = 'block';
+                    console.log('   ✅ extra-life-btn shown');
+                } else {
+                    extraLifeBtn.style.display = 'none';
+                }
+            } else {
+                console.warn('   ⚠️ [RESTART] Element not found: extra-life-btn');
+            }
+
+            // Start game loop
+            gameState = 'initialize';
+            console.log('');
+            console.log('✅ [RESTART] Game restarted successfully!');
+            console.log('   gameState: ' + gameState);
+            console.log('   Starting gameLoop...');
+            console.log('🔄 ═══════════════════════════════════════');
+            console.log('');
+            requestAnimationFrame(gameLoop);
+        }
+
+        function startGame() {
+            // Initialize audio on first interaction
+            initAudio();
+            if (audioManager) {
+                audioManager.init();
+            }
+            // Initialize sound state from GamePush
+            initSoundState();
+
+            document.getElementById('main-menu').style.display = 'none';
+            document.getElementById('hud').style.display = 'flex';
+            score = 0;
+            lives = 3;
+            level = 1;
+            mazeDimension = 21; // Větší bludiště
+            canContinueFromDeath = true; // Reset continue ability
+            gameState = 'initialize';
+            // Show extra life button if not at max lives
+            if (lives < maxLives) {
+                document.getElementById('extra-life-btn').style.display = 'block';
+            }
+            gameLoop();
+        }
+
+        function gameLoop() {
+            // Increment frame counter
+            gameLoopCounter++;
+
+            // Log status every 120 frames (~2 seconds at 60fps) during play state
+            if (gameState === 'play' && gameLoopCounter % 120 === 0) {
+                console.log('⚙️  [GAMELOOP] Frame ' + gameLoopCounter + ' | State: ' + gameState + ' | Enemies: ' + enemies.length + ' | Coins: ' + coins.length + ' | Score: ' + score + ' | Lives: ' + lives);
+            }
+
+            // Log state transitions
+            var previousState = gameState;
+
+            switch (gameState) {
+                case 'initialize':
+                    console.log('🎮 [GAMELOOP] State: initialize | Generating maze...');
+                    maze = generateSquareMaze(mazeDimension);
+                    maze[mazeDimension - 1][mazeDimension - 2] = false;
+                    createPhysicsWorld();
+                    createRenderWorld();
+                    camera.position.set(1, 1, 5);
+                    light.position.set(1, 1, 1.3);
+                    light.intensity = 0;
+                    startTime = Date.now();
+                    updateHUD();
+                    gameState = 'fade in';
+                    console.log('🎮 [GAMELOOP] Maze created: ' + mazeDimension + 'x' + mazeDimension);
+                    console.log('🎮 [GAMELOOP] Spawned: ' + enemies.length + ' enemies, ' + coins.length + ' coins, ' + powerups.length + ' powerups');
+                    break;
+
+                case 'fade in':
+                    light.intensity += 0.1 * (1.0 - light.intensity);
+                    renderer.render(scene, camera);
+                    if (Math.abs(light.intensity - 1.0) < 0.05) {
+                        light.intensity = 1.0;
+                        trackLevelStart(level); // GamePush analytics
+                        gameState = 'play';
+                        console.log('🎮 [GAMELOOP] Fade in complete → State: play');
+                    }
+                    break;
+
+                case 'play':
+                    updatePhysicsWorld();
+                    updateRenderWorld();
+                    updateEnemies();
+                    updateCoins();
+                    updatePowerups();
+                    updateHearts();
+                    updateHUD();
+                    renderer.render(scene, camera);
+
+                    var mazeX = Math.floor(ballMesh.position.x + 0.5);
+                    var mazeY = Math.floor(ballMesh.position.y + 0.5);
+                    if (mazeX == mazeDimension && mazeY == mazeDimension - 2) {
+                        var timeBonus = Math.max(0, 100 - levelTime);
+                        var levelBonus = 100 + timeBonus;
+                        score += levelBonus;
+                        trackLevelComplete(level); // GamePush analytics
+                        console.log('🏆 [GAMELOOP] Level ' + level + ' complete! Bonus: ' + levelBonus + ' | Total score: ' + score);
+                        // Increment level BEFORE showing screen
+                        level++;
+                        mazeDimension += 4;
+                        // Show level complete screen with option to double coins
+                        showLevelCompleteScreen(levelBonus);
+                    }
+                    break;
+
+                case 'gameover':
+                    console.log('💀 [GAMELOOP] State: gameover | Final score: ' + score + ' | Final level: ' + level);
+                    document.getElementById('gameover-screen').style.display = 'flex';
+                    document.getElementById('final-score').innerHTML = score;
+                    document.getElementById('final-level').innerHTML = level;
+                    document.getElementById('extra-life-btn').style.display = 'none';
+                    console.log('🛑 [GAMELOOP] Loop stopped (gameover)');
+                    return; // Zastavit smyčku
+
+                case 'levelcomplete':
+                    // Wait for player to choose (handled by buttons)
+                    renderer.render(scene, camera);
+                    requestAnimationFrame(gameLoop);
+                    return;
+
+                case 'fade out':
+                    updatePhysicsWorld();
+                    updateRenderWorld();
+                    light.intensity += 0.1 * (0.0 - light.intensity);
+                    renderer.render(scene, camera);
+                    if (Math.abs(light.intensity - 0.0) < 0.1) {
+                        light.intensity = 0.0;
+                        renderer.render(scene, camera);
+                        gameState = 'initialize';
+                        console.log('🎮 [GAMELOOP] Fade out complete → State: initialize (next level)');
+                    }
+                    break;
+            }
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        function onResize() {
+            if (renderer && camera) {
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+            }
+        }
+
+        function onMoveKey(axis) {
+            keyAxis = axis.slice(0);
+        }
+
+        window.onload = function() {
+            // Načíst textury
+            loadTextures();
+
+            // Vytvořit renderer
+            renderer = new THREE.WebGLRenderer({antialias: true});
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setClearColor(0x0a0a1a);
+            document.body.appendChild(renderer.domElement);
+
+            // Ovládání
+            KeyboardJS.bind.axis('left', 'right', 'down', 'up', onMoveKey);
+            KeyboardJS.bind.axis('h', 'l', 'j', 'k', onMoveKey);
+            KeyboardJS.bind.axis('a', 'd', 's', 'w', onMoveKey);
+            window.addEventListener('resize', onResize);
+
+            // Space pro skok - sledování stavu klávesy
+            document.addEventListener('keydown', function(e) {
+                if (e.code === 'Space') {
+                    e.preventDefault();
+                    jumpKeyPressed = true;
+                }
+            });
+            document.addEventListener('keyup', function(e) {
+                if (e.code === 'Space') {
+                    jumpKeyPressed = false;
+                    jumpKeyWasPressed = false; // Reset pro další skok
+                }
+            });
+
+            // Instrukce
+            KeyboardJS.bind.key('i', function() { document.getElementById('instructions').style.display = 'block'; },
+                                    function() { document.getElementById('instructions').style.display = 'none'; });
+
+            // Play button
+            document.getElementById('btn-play').onclick = startGame;
+            document.getElementById('btn-instructions').onclick = function() {
+                document.getElementById('instructions').style.display = 'block';
+            };
+        };
+    </script>
+<style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style><style>.gp-gamedistribution-sticky{display:flex;justify-content:center;position:fixed;left:50%;transform:translateX(-50%);z-index:100;max-height:90px;max-width:728px;overflow:hidden}.gp-gamedistribution-sticky__creative{position:relative;height:90px;width:728px;max-width:100vw}.gp-gamedistribution-sticky_top{top:0}.gp-gamedistribution-sticky_bottom{bottom:0}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202609080101/gpt" rel="compression-dictionary"></head>
+
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/545e4e81e833ea2e9cd4db1a6b400a8e/wgplayground/5c5611f2fbe4bc3cac1581f291a36e2c.jpg">
+    <!-- Main Menu -->
+    <div id="main-menu">
+        <h1 class="menu-title">SPHERIX</h1>
+        <p class="menu-subtitle" data-i18n="subtitle">Roll through 25 unique worlds</p>
+        <div id="progress-display" style="margin: 15px 0; padding: 15px 25px; background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.3); border-radius: 15px; display: none;">
+            <div style="font-size: 0.9rem; color: #00ff88;"><span data-i18n="bestScore">Best Score</span>: <span id="menu-highscore">0</span></div>
+            <div style="font-size: 0.9rem; color: #00ffff; margin-top: 5px;"><span data-i18n="maxLevel">Max Level</span>: <span id="menu-maxlevel">1</span></div>
+        </div>
+        <button id="btn-play" class="menu-btn" data-i18n="play">PLAY</button>
+        <button id="btn-instructions" class="menu-btn secondary" data-i18n="howToPlay">HOW TO PLAY</button>
+        <!-- Language Switcher Dropdown -->
+        <div id="lang-switcher" style="margin-top: 30px; position: relative;">
+            <select id="lang-select" onchange="changeLanguage(this.value)" style="
+                appearance: none;
+                -webkit-appearance: none;
+                background: rgba(0,255,255,0.15);
+                border: 2px solid #00ffff;
+                padding: 10px 40px 10px 15px;
+                border-radius: 25px;
+                cursor: pointer;
+                font-family: 'Orbitron', sans-serif;
+                font-size: 0.9rem;
+                color: #fff;
+                transition: all 0.3s;
+                min-width: 160px;
+                text-align: center;
+                outline: none;
+                box-shadow: 0 0 15px rgba(0,255,255,0.3);
+            ">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="zh">中文</option>
+                <option value="pt">Português</option>
+                <option value="ko">한국어</option>
+                <option value="ja">日本語</option>
+                <option value="ru">Русский</option>
+                <option value="tr">Türkçe</option>
+                <option value="ar">العربية</option>
+                <option value="hi">हिन्दी</option>
+                <option value="id">Indonesia</option>
+            </select>
+            <span style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #00ffff;">▼</span>
+        </div>
+        <style>
+            #lang-select:hover {
+                background: rgba(0,255,255,0.25);
+                box-shadow: 0 0 25px rgba(0,255,255,0.5);
+            }
+            #lang-select option {
+                background: #0a0a1a;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </div>
+
+    <!-- HUD -->
+    <div id="hud">
+        <div class="hud-item" id="level">Level 1 - Dungeon</div>
+        <div class="hud-item" id="timer">0:00</div>
+        <div class="hud-item" id="score">Score: 0</div>
+        <div class="hud-item" id="lives">❤️❤️❤️</div>
+        <button id="extra-life-btn" onclick="watchAdForExtraLife()" style="background: linear-gradient(135deg, #ff6600, #ff9900); border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 0.9rem; color: #fff; pointer-events: auto; display: none;">📺 +1 ❤️</button>
+        <button id="sound-btn" onclick="toggleSound()" style="background: rgba(0,255,255,0.2); border: 2px solid #00ffff; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 1.2rem; color: #fff; pointer-events: auto;">🔊</button>
+    </div>
+
+    <!-- Instructions -->
+    <div id="instructions">
+        <h2 data-i18n="instructionsTitle">How to Play</h2>
+        <p data-i18n="instructionsNav">Navigate the ball through the maze to the exit.</p>
+        <p>
+            <span class="key">↑</span>
+            <span class="key">↓</span>
+            <span class="key">←</span>
+            <span class="key">→</span>
+            or
+            <span class="key">W</span>
+            <span class="key">A</span>
+            <span class="key">S</span>
+            <span class="key">D</span>
+        </p>
+        <p style="color: #ffd700;" data-i18n="instructionsCoins">🪙 Collect coins (+10 points)</p>
+        <p style="color: #ff0000;" data-i18n="instructionsEnemies">👹 Avoid enemies!</p>
+        <p style="color: #ff00ff;"><span class="key">SPACE</span> <span data-i18n="instructionsJump">= Jump (leap over enemies)</span></p>
+        <p style="color: #00ffff;" data-i18n="instructionsPowerups">💎 Power-ups: speed, shield, points</p>
+        <p style="color: #ff3366;" data-i18n="instructionsHearts">❤️ Hearts restore life (max 5)</p>
+        <p data-i18n="instructionsExit" data-i18n-html="true">Find the <span style="color: #00ff88;">green exit</span>!</p>
+        <button class="menu-btn" onclick="document.getElementById('instructions').style.display='none'" data-i18n="gotIt">GOT IT</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameover-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: none; flex-direction: column; justify-content: center; align-items: center; z-index: 300;">
+        <h2 style="font-size: 4rem; color: #ff4444; margin-bottom: 30px; text-shadow: 0 0 20px #ff0000;" data-i18n="gameOver">GAME OVER</h2>
+        <p style="font-size: 1.5rem; color: #fff; margin: 10px;"><span data-i18n="levelReached">Level reached:</span> <span id="final-level" style="color: #00ffff;">1</span></p>
+        <p style="font-size: 1.5rem; color: #fff; margin: 10px;"><span data-i18n="score">Score</span>: <span id="final-score" style="color: #ffd700;">0</span></p>
+        <button class="menu-btn" onclick="watchAdToContinue()" style="margin-top: 30px; background: linear-gradient(135deg, #ff6600 0%, #ff9900 100%);" data-i18n="watchAdContinue">📺 WATCH AD &amp; CONTINUE</button>
+        <button class="menu-btn secondary" onclick="restartGame()" style="margin-top: 10px;" data-i18n="playAgain">PLAY AGAIN</button>
+    </div>
+
+    <!-- Level Complete Screen -->
+    <div id="levelcomplete-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: none; flex-direction: column; justify-content: center; align-items: center; z-index: 300;">
+        <h2 style="font-size: 3rem; color: #00ff88; margin-bottom: 20px; text-shadow: 0 0 20px #00ff88;" data-i18n="levelComplete">LEVEL COMPLETE!</h2>
+        <p style="font-size: 1.5rem; color: #fff; margin: 10px;"><span data-i18n="level">Level</span>: <span id="completed-level" style="color: #00ffff;">1</span></p>
+        <p style="font-size: 1.5rem; color: #fff; margin: 10px;"><span data-i18n="score">Score</span>: <span id="level-score" style="color: #ffd700;">0</span></p>
+        <p style="font-size: 1.2rem; color: #ff9900; margin: 20px;"><span data-i18n="bonus">Bonus:</span> +<span id="level-bonus" style="color: #ffd700;">0</span> <span data-i18n="points">points</span></p>
+        <button class="menu-btn" onclick="watchAdForDoubleCoins()" style="margin-top: 20px; background: linear-gradient(135deg, #ff6600 0%, #ff9900 100%);" data-i18n="watchAd2x">📺 WATCH AD FOR 2x COINS</button>
+        <button class="menu-btn secondary" onclick="continueToNextLevel()" style="margin-top: 10px;" data-i18n="continue">CONTINUE →</button>
+    </div>
+
+    <!-- Help -->
+    <div id="help" data-i18n="helpText">Press I for instructions | SPACE = Jump (leap over enemies)</div>
+
+    <!-- GamePush SDK -->
+    <script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=25560&amp;publicToken=YhhUlbVdl5ksd5NZsvQwN10iS9Vgfel2&amp;callback=onGPInit"></script>
+    <script>
+        // =====================================================
+        // GAMEPUSH SDK - COMPLETE INTEGRATION
+        // =====================================================
+
+        // GamePush sound state - MUST listen to platform mute status
+        var isSFXMuted = false;
+        var isMusicMuted = false;
+        // Legacy variable for backwards compatibility
+        var isSoundMuted = false;
+
+        // =====================================================
+        // DEBUG HELPER FUNCTIONS
+        // =====================================================
+        window.debugInfo = function() {
+            console.log('');
+            console.log('📊 ═══════════════════════════════════════');
+            console.log('📊 Current Game State:');
+            console.log('📊 ═══════════════════════════════════════');
+            console.log({
+                gameState: gameState,
+                score: score,
+                lives: lives,
+                level: level,
+                isSoundMuted: isSoundMuted,
+                enemies: enemies.length,
+                coins: coins.length,
+                powerups: powerups.length,
+                hearts: hearts.length,
+                isInvincible: isInvincible,
+                speedBoost: speedBoost,
+                isJumping: isJumping,
+                frameCount: gameLoopCounter,
+                audioInitialized: audioManager ? audioManager.isInitialized : false
+            });
+            console.log('📊 ═══════════════════════════════════════');
+            console.log('');
+        };
+
+        window.testRestart = function() {
+            console.log('');
+            console.log('🧪 ═══════════════════════════════════════');
+            console.log('🧪 Starting 10x restart stress test...');
+            console.log('🧪 ═══════════════════════════════════════');
+            var count = 0;
+            var interval = setInterval(function() {
+                count++;
+                console.log('🧪 Test restart ' + count + '/10');
+                restartGame();
+                if (count >= 10) {
+                    clearInterval(interval);
+                    console.log('');
+                    console.log('✅ ═══════════════════════════════════════');
+                    console.log('✅ Restart stress test complete!');
+                    console.log('✅ ═══════════════════════════════════════');
+                    window.debugInfo();
+                }
+            }, 2000);
+        };
+
+        window.testSound = function() {
+            console.log('');
+            console.log('🧪 ═══════════════════════════════════════');
+            console.log('🧪 Testing sound toggles...');
+            console.log('🧪 ═══════════════════════════════════════');
+            console.log('🧪 Step 1: Toggle sound OFF');
+            toggleSound();
+            setTimeout(function() {
+                console.log('🧪 Step 2: Toggle sound ON');
+                toggleSound();
+            }, 1500);
+            setTimeout(function() {
+                console.log('🧪 Step 3: Toggle sound OFF');
+                toggleSound();
+            }, 3000);
+            setTimeout(function() {
+                console.log('🧪 Step 4: Toggle sound ON');
+                toggleSound();
+                console.log('');
+                console.log('✅ Sound toggle test complete!');
+            }, 4500);
+        };
+        var pendingLevelBonus = 0;
+        var canContinueFromDeath = true;
+
+        // GamePush SDK initialization
+        window.onGPInit = async function(gp) {
+            console.log('GamePush SDK initialized');
+
+            // Store gp globally FIRST
+            window.gp = gp;
+
+            // IMPORTANT: Call gameStart IMMEDIATELY to signal game is ready
+            gp.gameStart();
+            console.log('gameStart called');
+
+            // Detect and apply language from GamePush
+            detectLanguage();
+            applyTranslations();
+            updateLanguageButtons();
+            console.log('Language initialized: ' + currentLanguage + ' (gp.language: ' + gp.language + ')');
+
+            // Initialize sound state from GamePush SDK
+            initSoundState();
+
+            // CRITICAL: Listen to GamePush sound mute/unmute events
+            // The platform can mute sounds externally and the game MUST react
+            if (gp.sounds) {
+                // Listen for mute event from platform
+                gp.sounds.on('mute', function() {
+                    console.log('🔇 [GP EVENT] Platform muted sounds');
+                    isSFXMuted = gp.sounds.isSFXMuted || false;
+                    isMusicMuted = gp.sounds.isMusicMuted || false;
+                    isSoundMuted = isSFXMuted || isMusicMuted;
+                    console.log('   isSFXMuted: ' + isSFXMuted + ', isMusicMuted: ' + isMusicMuted);
+
+                    // Stop music if music is muted
+                    if (isMusicMuted && audioManager) {
+                        audioManager.stopMusic();
+                    }
+
+                    // Update UI button
+                    var btn = document.getElementById('sound-btn');
+                    if (btn) btn.innerHTML = (isSFXMuted && isMusicMuted) ? '🔇' : (isMusicMuted ? '🎵❌' : (isSFXMuted ? '🔊❌' : '🔊'));
+                });
+
+                // Listen for unmute event from platform
+                gp.sounds.on('unmute', function() {
+                    console.log('🔊 [GP EVENT] Platform unmuted sounds');
+                    isSFXMuted = gp.sounds.isSFXMuted || false;
+                    isMusicMuted = gp.sounds.isMusicMuted || false;
+                    isSoundMuted = isSFXMuted || isMusicMuted;
+                    console.log('   isSFXMuted: ' + isSFXMuted + ', isMusicMuted: ' + isMusicMuted);
+
+                    // Update UI button
+                    var btn = document.getElementById('sound-btn');
+                    if (btn) btn.innerHTML = (isSFXMuted && isMusicMuted) ? '🔇' : (isMusicMuted ? '🎵❌' : (isSFXMuted ? '🔊❌' : '🔊'));
+                });
+
+                console.log('✅ GamePush sound event listeners registered');
+            }
+
+            // Load saved progress from player
+            try {
+                await gp.player.ready;
+                console.log('Player ready, loading progress');
+                var progress = loadProgress();
+                // Zobrazit progress v menu
+                if (progress.highScore > 0 || progress.maxLevel > 1) {
+                    document.getElementById('menu-highscore').innerHTML = progress.highScore;
+                    document.getElementById('menu-maxlevel').innerHTML = progress.maxLevel;
+                    document.getElementById('progress-display').style.display = 'block';
+                }
+            } catch(e) {
+                console.log('Player not ready:', e);
+            }
+
+            // Show preloader ad
+            try {
+                await gp.ads.showPreloader();
+            } catch(e) {
+                console.log('Preloader skipped');
+            }
+
+            // Show sticky banner
+            try {
+                gp.ads.showSticky();
+            } catch(e) {
+                console.log('Sticky skipped');
+            }
+        };
+
+        // =====================================================
+        // SOUND CONTROL (Required by GamePush)
+        // Uses GamePush SDK gp.sounds methods
+        // =====================================================
+
+        // Audio manager instance (will be created on first interaction)
+        var audioManager = null;
+
+        // Initialize audio system
+        function initAudio() {
+            if (!audioManager) {
+                audioManager = {
+                    musicVolume: 0.5,
+                    sfxVolume: 0.7,
+                    musicContext: null,
+                    currentMusic: null,
+                    music: {},
+                    sounds: {},
+                    isInitialized: false,
+
+                    init: function() {
+                        if (this.isInitialized) return;
+                        try {
+                            this.musicContext = new (window.AudioContext || window.webkitAudioContext)();
+                            this.createSounds();
+                            this.isInitialized = true;
+                            console.log('Audio system initialized');
+                        } catch(e) {
+                            console.log('Audio init error:', e);
+                        }
+                    },
+
+                    createSounds: function() {
+                        var self = this;
+                        var ctx = this.musicContext;
+
+                        // Click sound
+                        this.sounds.click = function() {
+                            if (!ctx || isSFXMuted) return;
+                            var osc = ctx.createOscillator();
+                            var gain = ctx.createGain();
+                            osc.connect(gain);
+                            gain.connect(ctx.destination);
+                            osc.type = 'sine';
+                            osc.frequency.setValueAtTime(800, ctx.currentTime);
+                            osc.frequency.exponentialRampToValueAtTime(400, ctx.currentTime + 0.1);
+                            gain.gain.setValueAtTime(self.sfxVolume * 0.3, ctx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.1);
+                            osc.start(ctx.currentTime);
+                            osc.stop(ctx.currentTime + 0.1);
+                        };
+
+                        // Collect coin sound
+                        this.sounds.collect = function() {
+                            if (!ctx || isSFXMuted) return;
+                            var osc = ctx.createOscillator();
+                            var gain = ctx.createGain();
+                            osc.connect(gain);
+                            gain.connect(ctx.destination);
+                            osc.type = 'sine';
+                            osc.frequency.setValueAtTime(523.25, ctx.currentTime);
+                            osc.frequency.setValueAtTime(659.25, ctx.currentTime + 0.05);
+                            osc.frequency.setValueAtTime(783.99, ctx.currentTime + 0.1);
+                            gain.gain.setValueAtTime(self.sfxVolume * 0.3, ctx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.2);
+                            osc.start(ctx.currentTime);
+                            osc.stop(ctx.currentTime + 0.2);
+                        };
+
+                        // Powerup sound
+                        this.sounds.powerup = function() {
+                            if (!ctx || isSFXMuted) return;
+                            for (var i = 0; i < 3; i++) {
+                                var osc = ctx.createOscillator();
+                                var gain = ctx.createGain();
+                                osc.connect(gain);
+                                gain.connect(ctx.destination);
+                                osc.type = 'square';
+                                var baseFreq = 200 + i * 200;
+                                osc.frequency.setValueAtTime(baseFreq, ctx.currentTime + i * 0.1);
+                                osc.frequency.exponentialRampToValueAtTime(baseFreq * 2, ctx.currentTime + i * 0.1 + 0.1);
+                                gain.gain.setValueAtTime(self.sfxVolume * 0.2, ctx.currentTime + i * 0.1);
+                                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.1 + 0.15);
+                                osc.start(ctx.currentTime + i * 0.1);
+                                osc.stop(ctx.currentTime + i * 0.1 + 0.15);
+                            }
+                        };
+
+                        // Hit/damage sound
+                        this.sounds.hit = function() {
+                            if (!ctx || isSFXMuted) return;
+                            var osc = ctx.createOscillator();
+                            var gain = ctx.createGain();
+                            osc.connect(gain);
+                            gain.connect(ctx.destination);
+                            osc.type = 'sawtooth';
+                            osc.frequency.setValueAtTime(150, ctx.currentTime);
+                            osc.frequency.exponentialRampToValueAtTime(30, ctx.currentTime + 0.3);
+                            gain.gain.setValueAtTime(self.sfxVolume * 0.5, ctx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+                            osc.start(ctx.currentTime);
+                            osc.stop(ctx.currentTime + 0.3);
+                        };
+
+                        // Death sound
+                        this.sounds.death = function() {
+                            if (!ctx || isSFXMuted) return;
+                            for (var i = 0; i < 5; i++) {
+                                var osc = ctx.createOscillator();
+                                var gain = ctx.createGain();
+                                osc.connect(gain);
+                                gain.connect(ctx.destination);
+                                osc.type = 'sawtooth';
+                                var freq = 400 - i * 60;
+                                osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.1);
+                                osc.frequency.exponentialRampToValueAtTime(freq * 0.5, ctx.currentTime + i * 0.1 + 0.15);
+                                gain.gain.setValueAtTime(self.sfxVolume * 0.4, ctx.currentTime + i * 0.1);
+                                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.1 + 0.15);
+                                osc.start(ctx.currentTime + i * 0.1);
+                                osc.stop(ctx.currentTime + i * 0.1 + 0.15);
+                            }
+                        };
+
+                        // Victory sound
+                        this.sounds.victory = function() {
+                            if (!ctx || isSFXMuted) return;
+                            var notes = [523.25, 659.25, 783.99, 1046.50];
+                            notes.forEach(function(freq, i) {
+                                var osc = ctx.createOscillator();
+                                var gain = ctx.createGain();
+                                osc.connect(gain);
+                                gain.connect(ctx.destination);
+                                osc.type = 'sine';
+                                osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.15);
+                                gain.gain.setValueAtTime(self.sfxVolume * 0.4, ctx.currentTime + i * 0.15);
+                                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.15 + 0.3);
+                                osc.start(ctx.currentTime + i * 0.15);
+                                osc.stop(ctx.currentTime + i * 0.15 + 0.3);
+                            });
+                        };
+
+                        // Heart pickup sound
+                        this.sounds.heart = function() {
+                            if (!ctx || isSFXMuted) return;
+                            var notes = [523.25, 659.25, 783.99];
+                            notes.forEach(function(freq, i) {
+                                var osc = ctx.createOscillator();
+                                var gain = ctx.createGain();
+                                osc.connect(gain);
+                                gain.connect(ctx.destination);
+                                osc.type = 'sine';
+                                osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.08);
+                                gain.gain.setValueAtTime(self.sfxVolume * 0.25, ctx.currentTime + i * 0.08);
+                                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.08 + 0.3);
+                                osc.start(ctx.currentTime + i * 0.08);
+                                osc.stop(ctx.currentTime + i * 0.08 + 0.3);
+                            });
+                        };
+
+                        // Jump sound
+                        this.sounds.jump = function() {
+                            if (!ctx || isSFXMuted) return;
+                            var osc = ctx.createOscillator();
+                            var gain = ctx.createGain();
+                            osc.connect(gain);
+                            gain.connect(ctx.destination);
+                            osc.type = 'sine';
+                            osc.frequency.setValueAtTime(200, ctx.currentTime);
+                            osc.frequency.exponentialRampToValueAtTime(600, ctx.currentTime + 0.15);
+                            gain.gain.setValueAtTime(self.sfxVolume * 0.3, ctx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.2);
+                            osc.start(ctx.currentTime);
+                            osc.stop(ctx.currentTime + 0.2);
+                        };
+
+                        // Create background music
+                        this.createMusic();
+                    },
+
+                    createMusic: function() {
+                        var self = this;
+                        var ctx = this.musicContext;
+
+                        this.music.game = {
+                            oscillators: [],
+                            gainNode: null,
+                            isPlaying: false,
+                            intervalId: null,
+
+                            start: function() {
+                                if (this.isPlaying || isMusicMuted || !ctx) return;
+                                var gainNode = ctx.createGain();
+                                gainNode.connect(ctx.destination);
+                                gainNode.gain.setValueAtTime(self.musicVolume * 0.1, ctx.currentTime);
+                                this.gainNode = gainNode;
+
+                                // Bass drone
+                                var bass = ctx.createOscillator();
+                                bass.type = 'triangle';
+                                bass.frequency.setValueAtTime(65.41, ctx.currentTime);
+                                var bassGain = ctx.createGain();
+                                bassGain.gain.setValueAtTime(0.4, ctx.currentTime);
+                                bass.connect(bassGain);
+                                bassGain.connect(gainNode);
+                                bass.start();
+                                this.oscillators.push(bass);
+
+                                // Rhythmic pulse
+                                var playPulse = function() {
+                                    if (!self.music.game.isPlaying || isMusicMuted) return;
+                                    var pulse = ctx.createOscillator();
+                                    pulse.type = 'sine';
+                                    pulse.frequency.setValueAtTime(261.63, ctx.currentTime);
+                                    var pulseGain = ctx.createGain();
+                                    pulseGain.gain.setValueAtTime(0.2, ctx.currentTime);
+                                    pulseGain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+                                    pulse.connect(pulseGain);
+                                    pulseGain.connect(gainNode);
+                                    pulse.start();
+                                    pulse.stop(ctx.currentTime + 0.3);
+                                };
+
+                                this.intervalId = setInterval(playPulse, 1000);
+                                this.isPlaying = true;
+                            },
+
+                            stop: function() {
+                                this.oscillators.forEach(function(osc) {
+                                    try { osc.stop(); } catch(e) {}
+                                });
+                                this.oscillators = [];
+                                if (this.intervalId) {
+                                    clearInterval(this.intervalId);
+                                    this.intervalId = null;
+                                }
+                                this.isPlaying = false;
+                            }
+                        };
+                    },
+
+                    playSound: function(name) {
+                        // CRITICAL: Check isSFXMuted for sound effects (GamePush requirement)
+                        console.log('🔊 [SFX] Attempting: "' + name + '" | sfxMuted: ' + isSFXMuted + ' | init: ' + this.isInitialized);
+                        if (!this.isInitialized) {
+                            console.log('🔇 [SFX] Skipped (not initialized): "' + name + '"');
+                            return;
+                        }
+                        // Check GamePush isSFXMuted status
+                        if (isSFXMuted) {
+                            console.log('🔇 [SFX] Skipped (SFX muted by platform): "' + name + '"');
+                            return;
+                        }
+                        if (this.sounds[name]) {
+                            try {
+                                this.sounds[name]();
+                                console.log('✅ [SFX] Playing: "' + name + '"');
+                            } catch(e) {
+                                console.log('❌ [SFX] Error playing "' + name + '":', e);
+                            }
+                        } else {
+                            console.log('⚠️  [SFX] Sound not found: "' + name + '"');
+                        }
+                    },
+
+                    playMusic: function(name) {
+                        // CRITICAL: Check isMusicMuted for music (GamePush requirement)
+                        console.log('🎵 [MUSIC] Attempting: "' + name + '" | musicMuted: ' + isMusicMuted);
+                        // Check GamePush isMusicMuted status
+                        if (isMusicMuted) {
+                            console.log('🔇 [MUSIC] Skipped (Music muted by platform): "' + name + '"');
+                            return;
+                        }
+                        this.stopMusic();
+                        if (this.music[name]) {
+                            this.music[name].start();
+                            console.log('✅ [MUSIC] Playing: "' + name + '"');
+                        } else {
+                            console.log('⚠️  [MUSIC] Music not found: "' + name + '"');
+                        }
+                    },
+
+                    stopMusic: function() {
+                        console.log('🎵 [MUSIC] Stopping all music...');
+                        for (var key in this.music) {
+                            if (this.music[key] && this.music[key].stop) {
+                                this.music[key].stop();
+                                console.log('🎵 [MUSIC] Stopped: "' + key + '"');
+                            }
+                        }
+                    },
+
+                    setMuted: function(muted) {
+                        console.log('🔧 [AUDIO] setMuted called: ' + muted);
+                        if (muted) {
+                            this.stopMusic();
+                        }
+                    }
+                };
+            }
+        }
+
+        // Play sound effect (helper function)
+        function playSound(name) {
+            if (audioManager && audioManager.isInitialized) {
+                audioManager.playSound(name);
+            }
+        }
+
+        // Play music (helper function)
+        function playMusic(name) {
+            if (audioManager && audioManager.isInitialized) {
+                audioManager.playMusic(name);
+            }
+        }
+
+        // Stop music (helper function)
+        function stopMusic() {
+            if (audioManager) {
+                audioManager.stopMusic();
+            }
+        }
+
+        function toggleSound() {
+            console.log('');
+            console.log('🔘 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            console.log('🔘 [TOGGLE] Sound button clicked');
+            console.log('   Previous state: SFX=' + (isSFXMuted ? 'MUTED' : 'ON') + ', Music=' + (isMusicMuted ? 'MUTED' : 'ON'));
+
+            // Toggle both SFX and Music together (user button toggles all)
+            var newMuteState = !(isSFXMuted && isMusicMuted);
+            isSFXMuted = newMuteState;
+            isMusicMuted = newMuteState;
+            isSoundMuted = newMuteState;
+
+            var btn = document.getElementById('sound-btn');
+
+            console.log('   New state: SFX=' + (isSFXMuted ? 'MUTED' : 'ON') + ', Music=' + (isMusicMuted ? 'MUTED' : 'ON'));
+
+            if (newMuteState) {
+                btn.innerHTML = '🔇';
+                // Use GamePush SDK sound methods - mute both SFX and Music
+                if (window.gp && window.gp.sounds) {
+                    try {
+                        window.gp.sounds.mute();
+                        console.log('   ✅ GamePush sounds muted (SFX + Music)');
+                    } catch(e) {
+                        console.log('   ❌ GamePush sound mute error:', e);
+                    }
+                } else {
+                    console.log('   ⚠️  GamePush sounds not available');
+                }
+                // Stop internal audio
+                if (audioManager) {
+                    audioManager.setMuted(true);
+                    console.log('   ✅ Internal audio muted');
+                }
+            } else {
+                btn.innerHTML = '🔊';
+                // Use GamePush SDK sound methods - unmute both SFX and Music
+                if (window.gp && window.gp.sounds) {
+                    try {
+                        window.gp.sounds.unmute();
+                        console.log('   ✅ GamePush sounds unmuted (SFX + Music)');
+                    } catch(e) {
+                        console.log('   ❌ GamePush sound unmute error:', e);
+                    }
+                } else {
+                    console.log('   ⚠️  GamePush sounds not available');
+                }
+            }
+
+            // Save to localStorage as backup
+            try {
+                localStorage.setItem('spherix_sfxMuted', isSFXMuted);
+                localStorage.setItem('spherix_musicMuted', isMusicMuted);
+                localStorage.setItem('spherix_soundMuted', isSoundMuted);
+                console.log('   💾 Saved to localStorage: SFX=' + isSFXMuted + ', Music=' + isMusicMuted);
+            } catch(e) {
+                console.log('   ⚠️  localStorage save failed:', e);
+            }
+
+            console.log('🔘 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            console.log('');
+        }
+
+        // Initialize sound state from GamePush on load
+        // CRITICAL: Must read isSFXMuted and isMusicMuted from GamePush
+        function initSoundState() {
+            console.log('');
+            console.log('🔧 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            console.log('🔧 [INIT] Initializing sound state...');
+
+            var loadedFrom = 'default';
+
+            // CRITICAL: Read GamePush sound status - isSFXMuted and isMusicMuted
+            if (window.gp && window.gp.sounds) {
+                try {
+                    // Read the specific mute states that GamePush requires
+                    isSFXMuted = window.gp.sounds.isSFXMuted || false;
+                    isMusicMuted = window.gp.sounds.isMusicMuted || false;
+                    // Legacy combined state
+                    isSoundMuted = isSFXMuted || isMusicMuted;
+                    loadedFrom = 'GamePush';
+                    console.log('   📥 Loaded from GamePush:');
+                    console.log('      isSFXMuted: ' + isSFXMuted);
+                    console.log('      isMusicMuted: ' + isMusicMuted);
+                    console.log('      isSoundMuted (combined): ' + isSoundMuted);
+                } catch(e) {
+                    console.log('   ⚠️  GamePush sound state error:', e);
+                }
+            } else {
+                console.log('   ⚠️  GamePush sounds not available');
+            }
+
+            // Try localStorage as fallback
+            if (loadedFrom === 'default') {
+                try {
+                    var lsSFXMuted = localStorage.getItem('spherix_sfxMuted');
+                    var lsMusicMuted = localStorage.getItem('spherix_musicMuted');
+                    var lsMuted = localStorage.getItem('spherix_soundMuted');
+
+                    if (lsSFXMuted !== null) {
+                        isSFXMuted = lsSFXMuted === 'true';
+                    } else if (lsMuted !== null) {
+                        isSFXMuted = lsMuted === 'true';
+                    }
+
+                    if (lsMusicMuted !== null) {
+                        isMusicMuted = lsMusicMuted === 'true';
+                    } else if (lsMuted !== null) {
+                        isMusicMuted = lsMuted === 'true';
+                    }
+
+                    isSoundMuted = isSFXMuted || isMusicMuted;
+                    loadedFrom = 'localStorage';
+                    console.log('   📥 Loaded from localStorage:');
+                    console.log('      isSFXMuted: ' + isSFXMuted);
+                    console.log('      isMusicMuted: ' + isMusicMuted);
+                } catch(e) {
+                    console.log('   ⚠️  localStorage read failed:', e);
+                }
+            }
+
+            // Update UI
+            var btn = document.getElementById('sound-btn');
+            if (btn) {
+                if (isSFXMuted && isMusicMuted) {
+                    btn.innerHTML = '🔇';
+                } else if (isMusicMuted) {
+                    btn.innerHTML = '🎵❌';
+                } else if (isSFXMuted) {
+                    btn.innerHTML = '🔊❌';
+                } else {
+                    btn.innerHTML = '🔊';
+                }
+                console.log('   ✅ UI button updated');
+            }
+
+            // If music is muted from start, make sure we don't play music
+            if (isMusicMuted && audioManager) {
+                audioManager.stopMusic();
+            }
+
+            console.log('');
+            console.log('   ✅ [INIT] Final state:');
+            console.log('      isSFXMuted: ' + isSFXMuted);
+            console.log('      isMusicMuted: ' + isMusicMuted);
+            console.log('      isSoundMuted (combined): ' + isSoundMuted);
+            console.log('      loadedFrom: ' + loadedFrom);
+            console.log('🔧 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            console.log('');
+        }
+
+        // =====================================================
+        // PLAYER PROGRESS (Save/Load) - using GamePush Cloud Saves
+        // =====================================================
+
+        async function saveProgress() {
+            console.log('saveProgress called: score=' + score + ', level=' + level);
+            try {
+                // Uložit do GamePush cloud saves
+                if (window.gp && window.gp.player) {
+                    console.log('GamePush player available, saving...');
+
+                    // Uložit pouze nejvyšší skóre a nejvyšší level
+                    var currentHighScore = window.gp.player.get('score') || 0;
+                    var currentMaxLevel = window.gp.player.get('level') || 1;
+                    console.log('Current cloud values: score=' + currentHighScore + ', level=' + currentMaxLevel);
+
+                    // Vždy nastavit aktuální hodnoty (ne jen vyšší)
+                    window.gp.player.set('score', Math.max(score, currentHighScore));
+                    window.gp.player.set('level', Math.max(level, currentMaxLevel));
+                    console.log('Values set, syncing...');
+
+                    // Synchronizovat s cloudem
+                    await window.gp.player.sync();
+                    console.log('Progress saved to cloud: score=' + Math.max(score, currentHighScore) + ', level=' + Math.max(level, currentMaxLevel));
+                } else {
+                    console.log('GamePush not available, using localStorage');
+                    // Záloha do localStorage pokud GamePush není dostupný
+                    localStorage.setItem('spherix_score', score);
+                    localStorage.setItem('spherix_level', level);
+                    console.log('Progress saved to localStorage: score=' + score + ', level=' + level);
+                }
+            } catch(e) {
+                console.log('Save error:', e);
+                // Záloha do localStorage při chybě
+                try {
+                    localStorage.setItem('spherix_score', score);
+                    localStorage.setItem('spherix_level', level);
+                } catch(e2) {}
+            }
+        }
+
+        function loadProgress() {
+            try {
+                var savedScore = 0;
+                var savedLevel = 1;
+
+                // Načíst z GamePush cloud saves
+                if (window.gp && window.gp.player) {
+                    savedScore = parseInt(window.gp.player.get('score')) || 0;
+                    savedLevel = parseInt(window.gp.player.get('level')) || 1;
+                    console.log('Progress loaded from cloud: score=' + savedScore + ', level=' + savedLevel);
+                } else {
+                    // Záloha z localStorage
+                    savedScore = parseInt(localStorage.getItem('spherix_score')) || 0;
+                    savedLevel = parseInt(localStorage.getItem('spherix_level')) || 1;
+                    console.log('Progress loaded from localStorage: score=' + savedScore + ', level=' + savedLevel);
+                }
+
+                return { highScore: savedScore, maxLevel: savedLevel };
+            } catch(e) {
+                console.log('Load error:', e);
+                return { highScore: 0, maxLevel: 1 };
+            }
+        }
+
+        // =====================================================
+        // LANGUAGE SYSTEM (EN/RU) - GamePush SDK Integration
+        // =====================================================
+
+        var currentLanguage = 'en'; // Default language
+
+        // Translations dictionary - 14 languages
+        var translations = {
+            en: {
+                // Menu
+                subtitle: 'Roll through 25 unique worlds',
+                play: 'PLAY',
+                howToPlay: 'HOW TO PLAY',
+                bestScore: 'Best Score',
+                maxLevel: 'Max Level',
+
+                // HUD
+                level: 'Level',
+                score: 'Score',
+
+                // Instructions
+                instructionsTitle: 'How to Play',
+                instructionsNav: 'Navigate the ball through the maze to the exit.',
+                instructionsCoins: '🪙 Collect coins (+10 points)',
+                instructionsEnemies: '👹 Avoid enemies!',
+                instructionsJump: '= Jump (leap over enemies)',
+                instructionsPowerups: '💎 Power-ups: speed, shield, points',
+                instructionsHearts: '❤️ Hearts restore life (max 5)',
+                instructionsExit: 'Find the <span style="color: #00ff88;">green exit</span>!',
+                gotIt: 'GOT IT',
+
+                // Game Over
+                gameOver: 'GAME OVER',
+                levelReached: 'Level reached:',
+                watchAdContinue: '📺 WATCH AD & CONTINUE',
+                playAgain: 'PLAY AGAIN',
+
+                // Level Complete
+                levelComplete: 'LEVEL COMPLETE!',
+                bonus: 'Bonus:',
+                points: 'points',
+                watchAd2x: '📺 WATCH AD FOR 2x COINS',
+                continue: 'CONTINUE →',
+
+                // Help
+                helpText: 'Press I for instructions | SPACE = Jump (leap over enemies)',
+
+                // Alerts
+                continueOnce: 'You can only continue once per game!'
+            },
+            ru: {
+                // Menu
+                subtitle: 'Пройдите 25 уникальных миров',
+                play: 'ИГРАТЬ',
+                howToPlay: 'КАК ИГРАТЬ',
+                bestScore: 'Лучший счёт',
+                maxLevel: 'Макс. уровень',
+
+                // HUD
+                level: 'Уровень',
+                score: 'Очки',
+
+                // Instructions
+                instructionsTitle: 'Как играть',
+                instructionsNav: 'Проведите шар через лабиринт к выходу.',
+                instructionsCoins: '🪙 Собирайте монеты (+10 очков)',
+                instructionsEnemies: '👹 Избегайте врагов!',
+                instructionsJump: '= Прыжок (перепрыгните врагов)',
+                instructionsPowerups: '💎 Бонусы: скорость, щит, очки',
+                instructionsHearts: '❤️ Сердца восстанавливают жизнь (макс. 5)',
+                instructionsExit: 'Найдите <span style="color: #00ff88;">зелёный выход</span>!',
+                gotIt: 'ПОНЯТНО',
+
+                // Game Over
+                gameOver: 'ИГРА ОКОНЧЕНА',
+                levelReached: 'Достигнут уровень:',
+                watchAdContinue: '📺 РЕКЛАМА = ПРОДОЛЖИТЬ',
+                playAgain: 'ИГРАТЬ СНОВА',
+
+                // Level Complete
+                levelComplete: 'УРОВЕНЬ ПРОЙДЕН!',
+                bonus: 'Бонус:',
+                points: 'очков',
+                watchAd2x: '📺 РЕКЛАМА = 2x МОНЕТЫ',
+                continue: 'ДАЛЕЕ →',
+
+                // Help
+                helpText: 'Нажмите I для инструкций | SPACE = Прыжок',
+
+                // Alerts
+                continueOnce: 'Продолжить можно только один раз за игру!'
+            },
+            fr: {
+                // Menu
+                subtitle: 'Traversez 25 mondes uniques',
+                play: 'JOUER',
+                howToPlay: 'COMMENT JOUER',
+                bestScore: 'Meilleur score',
+                maxLevel: 'Niveau max',
+
+                // HUD
+                level: 'Niveau',
+                score: 'Score',
+
+                // Instructions
+                instructionsTitle: 'Comment jouer',
+                instructionsNav: 'Guidez la balle à travers le labyrinthe jusqu\'à la sortie.',
+                instructionsCoins: '🪙 Collectez des pièces (+10 points)',
+                instructionsEnemies: '👹 Évitez les ennemis !',
+                instructionsJump: '= Saut (sautez par-dessus les ennemis)',
+                instructionsPowerups: '💎 Bonus : vitesse, bouclier, points',
+                instructionsHearts: '❤️ Les cœurs restaurent la vie (max 5)',
+                instructionsExit: 'Trouvez la <span style="color: #00ff88;">sortie verte</span> !',
+                gotIt: 'COMPRIS',
+
+                // Game Over
+                gameOver: 'GAME OVER',
+                levelReached: 'Niveau atteint :',
+                watchAdContinue: '📺 PUB = CONTINUER',
+                playAgain: 'REJOUER',
+
+                // Level Complete
+                levelComplete: 'NIVEAU TERMINÉ !',
+                bonus: 'Bonus :',
+                points: 'points',
+                watchAd2x: '📺 PUB = 2x PIÈCES',
+                continue: 'CONTINUER →',
+
+                // Help
+                helpText: 'Appuyez sur I pour les instructions | ESPACE = Saut',
+
+                // Alerts
+                continueOnce: 'Vous ne pouvez continuer qu\'une fois par partie !'
+            },
+            it: {
+                // Menu
+                subtitle: 'Rotola attraverso 25 mondi unici',
+                play: 'GIOCA',
+                howToPlay: 'COME GIOCARE',
+                bestScore: 'Miglior punteggio',
+                maxLevel: 'Livello max',
+
+                // HUD
+                level: 'Livello',
+                score: 'Punti',
+
+                // Instructions
+                instructionsTitle: 'Come giocare',
+                instructionsNav: 'Guida la palla attraverso il labirinto fino all\'uscita.',
+                instructionsCoins: '🪙 Raccogli monete (+10 punti)',
+                instructionsEnemies: '👹 Evita i nemici!',
+                instructionsJump: '= Salta (salta sopra i nemici)',
+                instructionsPowerups: '💎 Power-up: velocità, scudo, punti',
+                instructionsHearts: '❤️ I cuori ripristinano la vita (max 5)',
+                instructionsExit: 'Trova l\'<span style="color: #00ff88;">uscita verde</span>!',
+                gotIt: 'CAPITO',
+
+                // Game Over
+                gameOver: 'GAME OVER',
+                levelReached: 'Livello raggiunto:',
+                watchAdContinue: '📺 GUARDA PUB = CONTINUA',
+                playAgain: 'RIGIOCA',
+
+                // Level Complete
+                levelComplete: 'LIVELLO COMPLETATO!',
+                bonus: 'Bonus:',
+                points: 'punti',
+                watchAd2x: '📺 PUB = 2x MONETE',
+                continue: 'CONTINUA →',
+
+                // Help
+                helpText: 'Premi I per istruzioni | SPAZIO = Salta',
+
+                // Alerts
+                continueOnce: 'Puoi continuare solo una volta per partita!'
+            },
+            de: {
+                // Menu
+                subtitle: 'Rolle durch 25 einzigartige Welten',
+                play: 'SPIELEN',
+                howToPlay: 'SPIELANLEITUNG',
+                bestScore: 'Bestpunktzahl',
+                maxLevel: 'Max. Level',
+
+                // HUD
+                level: 'Level',
+                score: 'Punkte',
+
+                // Instructions
+                instructionsTitle: 'Spielanleitung',
+                instructionsNav: 'Führe den Ball durch das Labyrinth zum Ausgang.',
+                instructionsCoins: '🪙 Sammle Münzen (+10 Punkte)',
+                instructionsEnemies: '👹 Vermeide Feinde!',
+                instructionsJump: '= Sprung (überspringe Feinde)',
+                instructionsPowerups: '💎 Power-ups: Geschwindigkeit, Schild, Punkte',
+                instructionsHearts: '❤️ Herzen stellen Leben wieder her (max 5)',
+                instructionsExit: 'Finde den <span style="color: #00ff88;">grünen Ausgang</span>!',
+                gotIt: 'VERSTANDEN',
+
+                // Game Over
+                gameOver: 'GAME OVER',
+                levelReached: 'Erreichtes Level:',
+                watchAdContinue: '📺 WERBUNG = WEITERSPIELEN',
+                playAgain: 'NOCHMAL SPIELEN',
+
+                // Level Complete
+                levelComplete: 'LEVEL GESCHAFFT!',
+                bonus: 'Bonus:',
+                points: 'Punkte',
+                watchAd2x: '📺 WERBUNG = 2x MÜNZEN',
+                continue: 'WEITER →',
+
+                // Help
+                helpText: 'I für Anleitung | LEERTASTE = Sprung',
+
+                // Alerts
+                continueOnce: 'Du kannst nur einmal pro Spiel fortfahren!'
+            },
+            es: {
+                // Menu
+                subtitle: 'Rueda por 25 mundos únicos',
+                play: 'JUGAR',
+                howToPlay: 'CÓMO JUGAR',
+                bestScore: 'Mejor puntuación',
+                maxLevel: 'Nivel máx',
+
+                // HUD
+                level: 'Nivel',
+                score: 'Puntos',
+
+                // Instructions
+                instructionsTitle: 'Cómo jugar',
+                instructionsNav: 'Guía la bola a través del laberinto hasta la salida.',
+                instructionsCoins: '🪙 Recoge monedas (+10 puntos)',
+                instructionsEnemies: '👹 ¡Evita a los enemigos!',
+                instructionsJump: '= Salto (salta sobre los enemigos)',
+                instructionsPowerups: '💎 Power-ups: velocidad, escudo, puntos',
+                instructionsHearts: '❤️ Los corazones restauran vida (máx 5)',
+                instructionsExit: '¡Encuentra la <span style="color: #00ff88;">salida verde</span>!',
+                gotIt: 'ENTENDIDO',
+
+                // Game Over
+                gameOver: 'FIN DEL JUEGO',
+                levelReached: 'Nivel alcanzado:',
+                watchAdContinue: '📺 VER ANUNCIO = CONTINUAR',
+                playAgain: 'JUGAR DE NUEVO',
+
+                // Level Complete
+                levelComplete: '¡NIVEL COMPLETADO!',
+                bonus: 'Bonus:',
+                points: 'puntos',
+                watchAd2x: '📺 ANUNCIO = 2x MONEDAS',
+                continue: 'CONTINUAR →',
+
+                // Help
+                helpText: 'Pulsa I para instrucciones | ESPACIO = Salto',
+
+                // Alerts
+                continueOnce: '¡Solo puedes continuar una vez por partida!'
+            },
+            zh: {
+                // Menu
+                subtitle: '穿越25个独特世界',
+                play: '开始游戏',
+                howToPlay: '游戏说明',
+                bestScore: '最高分',
+                maxLevel: '最高关卡',
+
+                // HUD
+                level: '关卡',
+                score: '分数',
+
+                // Instructions
+                instructionsTitle: '游戏说明',
+                instructionsNav: '引导球穿过迷宫到达出口。',
+                instructionsCoins: '🪙 收集金币 (+10分)',
+                instructionsEnemies: '👹 躲避敌人！',
+                instructionsJump: '= 跳跃（跳过敌人）',
+                instructionsPowerups: '💎 道具：加速、护盾、加分',
+                instructionsHearts: '❤️ 爱心恢复生命（最多5个）',
+                instructionsExit: '找到<span style="color: #00ff88;">绿色出口</span>！',
+                gotIt: '知道了',
+
+                // Game Over
+                gameOver: '游戏结束',
+                levelReached: '达到关卡：',
+                watchAdContinue: '📺 看广告继续',
+                playAgain: '重新开始',
+
+                // Level Complete
+                levelComplete: '关卡完成！',
+                bonus: '奖励：',
+                points: '分',
+                watchAd2x: '📺 看广告获得2倍金币',
+                continue: '继续 →',
+
+                // Help
+                helpText: '按I查看说明 | 空格 = 跳跃',
+
+                // Alerts
+                continueOnce: '每局游戏只能继续一次！'
+            },
+            pt: {
+                // Menu
+                subtitle: 'Role por 25 mundos únicos',
+                play: 'JOGAR',
+                howToPlay: 'COMO JOGAR',
+                bestScore: 'Melhor pontuação',
+                maxLevel: 'Nível máx',
+
+                // HUD
+                level: 'Nível',
+                score: 'Pontos',
+
+                // Instructions
+                instructionsTitle: 'Como jogar',
+                instructionsNav: 'Guie a bola pelo labirinto até a saída.',
+                instructionsCoins: '🪙 Colete moedas (+10 pontos)',
+                instructionsEnemies: '👹 Evite os inimigos!',
+                instructionsJump: '= Pular (pule sobre os inimigos)',
+                instructionsPowerups: '💎 Power-ups: velocidade, escudo, pontos',
+                instructionsHearts: '❤️ Corações restauram vida (máx 5)',
+                instructionsExit: 'Encontre a <span style="color: #00ff88;">saída verde</span>!',
+                gotIt: 'ENTENDI',
+
+                // Game Over
+                gameOver: 'FIM DE JOGO',
+                levelReached: 'Nível alcançado:',
+                watchAdContinue: '📺 ASSISTIR = CONTINUAR',
+                playAgain: 'JOGAR NOVAMENTE',
+
+                // Level Complete
+                levelComplete: 'NÍVEL COMPLETO!',
+                bonus: 'Bônus:',
+                points: 'pontos',
+                watchAd2x: '📺 ASSISTIR = 2x MOEDAS',
+                continue: 'CONTINUAR →',
+
+                // Help
+                helpText: 'Pressione I para instruções | ESPAÇO = Pular',
+
+                // Alerts
+                continueOnce: 'Você só pode continuar uma vez por jogo!'
+            },
+            ko: {
+                // Menu
+                subtitle: '25개의 독특한 세계를 탐험하세요',
+                play: '시작',
+                howToPlay: '게임 방법',
+                bestScore: '최고 점수',
+                maxLevel: '최고 레벨',
+
+                // HUD
+                level: '레벨',
+                score: '점수',
+
+                // Instructions
+                instructionsTitle: '게임 방법',
+                instructionsNav: '공을 미로를 통해 출구로 안내하세요.',
+                instructionsCoins: '🪙 코인 수집 (+10점)',
+                instructionsEnemies: '👹 적을 피하세요!',
+                instructionsJump: '= 점프 (적을 뛰어넘기)',
+                instructionsPowerups: '💎 파워업: 속도, 방패, 점수',
+                instructionsHearts: '❤️ 하트로 생명 회복 (최대 5)',
+                instructionsExit: '<span style="color: #00ff88;">초록색 출구</span>를 찾으세요!',
+                gotIt: '알겠어요',
+
+                // Game Over
+                gameOver: '게임 오버',
+                levelReached: '도달한 레벨:',
+                watchAdContinue: '📺 광고 = 계속하기',
+                playAgain: '다시 하기',
+
+                // Level Complete
+                levelComplete: '레벨 완료!',
+                bonus: '보너스:',
+                points: '점',
+                watchAd2x: '📺 광고 = 코인 2배',
+                continue: '계속 →',
+
+                // Help
+                helpText: 'I = 설명 | 스페이스 = 점프',
+
+                // Alerts
+                continueOnce: '게임당 한 번만 계속할 수 있습니다!'
+            },
+            ja: {
+                // Menu
+                subtitle: '25のユニークな世界を転がろう',
+                play: 'プレイ',
+                howToPlay: '遊び方',
+                bestScore: 'ベストスコア',
+                maxLevel: '最高レベル',
+
+                // HUD
+                level: 'レベル',
+                score: 'スコア',
+
+                // Instructions
+                instructionsTitle: '遊び方',
+                instructionsNav: 'ボールを迷路の出口まで導いてください。',
+                instructionsCoins: '🪙 コインを集める (+10ポイント)',
+                instructionsEnemies: '👹 敵を避けよう！',
+                instructionsJump: '= ジャンプ（敵を飛び越える）',
+                instructionsPowerups: '💎 パワーアップ：スピード、シールド、ポイント',
+                instructionsHearts: '❤️ ハートでライフ回復（最大5）',
+                instructionsExit: '<span style="color: #00ff88;">緑の出口</span>を見つけよう！',
+                gotIt: 'わかった',
+
+                // Game Over
+                gameOver: 'ゲームオーバー',
+                levelReached: '到達レベル：',
+                watchAdContinue: '📺 広告を見て続ける',
+                playAgain: 'もう一度',
+
+                // Level Complete
+                levelComplete: 'レベルクリア！',
+                bonus: 'ボーナス：',
+                points: 'ポイント',
+                watchAd2x: '📺 広告 = コイン2倍',
+                continue: '続ける →',
+
+                // Help
+                helpText: 'I = 説明 | スペース = ジャンプ',
+
+                // Alerts
+                continueOnce: '1ゲームにつき1回だけ続けられます！'
+            },
+            tr: {
+                // Menu
+                subtitle: '25 benzersiz dünyada yuvarlan',
+                play: 'OYNA',
+                howToPlay: 'NASIL OYNANIR',
+                bestScore: 'En iyi skor',
+                maxLevel: 'Maks. seviye',
+
+                // HUD
+                level: 'Seviye',
+                score: 'Skor',
+
+                // Instructions
+                instructionsTitle: 'Nasıl Oynanır',
+                instructionsNav: 'Topu labirentten çıkışa yönlendir.',
+                instructionsCoins: '🪙 Altın topla (+10 puan)',
+                instructionsEnemies: '👹 Düşmanlardan kaç!',
+                instructionsJump: '= Zıpla (düşmanların üstünden atla)',
+                instructionsPowerups: '💎 Güçlendiriciler: hız, kalkan, puan',
+                instructionsHearts: '❤️ Kalpler can yeniler (maks 5)',
+                instructionsExit: '<span style="color: #00ff88;">Yeşil çıkışı</span> bul!',
+                gotIt: 'ANLADIM',
+
+                // Game Over
+                gameOver: 'OYUN BİTTİ',
+                levelReached: 'Ulaşılan seviye:',
+                watchAdContinue: '📺 REKLAM İZLE = DEVAM ET',
+                playAgain: 'TEKRAR OYNA',
+
+                // Level Complete
+                levelComplete: 'SEVİYE TAMAMLANDI!',
+                bonus: 'Bonus:',
+                points: 'puan',
+                watchAd2x: '📺 REKLAM = 2x ALTIN',
+                continue: 'DEVAM →',
+
+                // Help
+                helpText: 'I = Talimatlar | BOŞLUK = Zıpla',
+
+                // Alerts
+                continueOnce: 'Oyun başına sadece bir kez devam edebilirsin!'
+            },
+            ar: {
+                // Menu
+                subtitle: 'تدحرج عبر 25 عالماً فريداً',
+                play: 'العب',
+                howToPlay: 'كيف تلعب',
+                bestScore: 'أفضل نتيجة',
+                maxLevel: 'أعلى مستوى',
+
+                // HUD
+                level: 'المستوى',
+                score: 'النقاط',
+
+                // Instructions
+                instructionsTitle: 'كيف تلعب',
+                instructionsNav: 'وجّه الكرة عبر المتاهة إلى المخرج.',
+                instructionsCoins: '🪙 اجمع العملات (+10 نقاط)',
+                instructionsEnemies: '👹 تجنب الأعداء!',
+                instructionsJump: '= قفز (اقفز فوق الأعداء)',
+                instructionsPowerups: '💎 تعزيزات: سرعة، درع، نقاط',
+                instructionsHearts: '❤️ القلوب تستعيد الحياة (حد أقصى 5)',
+                instructionsExit: 'ابحث عن <span style="color: #00ff88;">المخرج الأخضر</span>!',
+                gotIt: 'فهمت',
+
+                // Game Over
+                gameOver: 'انتهت اللعبة',
+                levelReached: 'المستوى الذي وصلت إليه:',
+                watchAdContinue: '📺 شاهد إعلان = استمر',
+                playAgain: 'العب مجدداً',
+
+                // Level Complete
+                levelComplete: 'اكتمل المستوى!',
+                bonus: 'مكافأة:',
+                points: 'نقاط',
+                watchAd2x: '📺 إعلان = ضعف العملات',
+                continue: 'استمر →',
+
+                // Help
+                helpText: 'I = التعليمات | مسافة = قفز',
+
+                // Alerts
+                continueOnce: 'يمكنك الاستمرار مرة واحدة فقط لكل لعبة!'
+            },
+            hi: {
+                // Menu
+                subtitle: '25 अनोखी दुनियाओं में लुढ़को',
+                play: 'खेलें',
+                howToPlay: 'कैसे खेलें',
+                bestScore: 'सर्वश्रेष्ठ स्कोर',
+                maxLevel: 'अधिकतम स्तर',
+
+                // HUD
+                level: 'स्तर',
+                score: 'स्कोर',
+
+                // Instructions
+                instructionsTitle: 'कैसे खेलें',
+                instructionsNav: 'गेंद को भूलभुलैया से निकास तक ले जाएं।',
+                instructionsCoins: '🪙 सिक्के इकट्ठा करें (+10 अंक)',
+                instructionsEnemies: '👹 दुश्मनों से बचें!',
+                instructionsJump: '= कूदें (दुश्मनों के ऊपर से कूदें)',
+                instructionsPowerups: '💎 पावर-अप: गति, ढाल, अंक',
+                instructionsHearts: '❤️ दिल जीवन बहाल करते हैं (अधिकतम 5)',
+                instructionsExit: '<span style="color: #00ff88;">हरा निकास</span> खोजें!',
+                gotIt: 'समझ गया',
+
+                // Game Over
+                gameOver: 'खेल खत्म',
+                levelReached: 'पहुंचा स्तर:',
+                watchAdContinue: '📺 विज्ञापन = जारी रखें',
+                playAgain: 'फिर से खेलें',
+
+                // Level Complete
+                levelComplete: 'स्तर पूरा!',
+                bonus: 'बोनस:',
+                points: 'अंक',
+                watchAd2x: '📺 विज्ञापन = 2x सिक्के',
+                continue: 'जारी रखें →',
+
+                // Help
+                helpText: 'I = निर्देश | स्पेस = कूदें',
+
+                // Alerts
+                continueOnce: 'आप प्रति खेल केवल एक बार जारी रख सकते हैं!'
+            },
+            id: {
+                // Menu
+                subtitle: 'Gulirkan melalui 25 dunia unik',
+                play: 'MAIN',
+                howToPlay: 'CARA BERMAIN',
+                bestScore: 'Skor terbaik',
+                maxLevel: 'Level maks',
+
+                // HUD
+                level: 'Level',
+                score: 'Skor',
+
+                // Instructions
+                instructionsTitle: 'Cara Bermain',
+                instructionsNav: 'Arahkan bola melalui labirin ke pintu keluar.',
+                instructionsCoins: '🪙 Kumpulkan koin (+10 poin)',
+                instructionsEnemies: '👹 Hindari musuh!',
+                instructionsJump: '= Lompat (lompati musuh)',
+                instructionsPowerups: '💎 Power-up: kecepatan, perisai, poin',
+                instructionsHearts: '❤️ Hati memulihkan nyawa (maks 5)',
+                instructionsExit: 'Temukan <span style="color: #00ff88;">pintu keluar hijau</span>!',
+                gotIt: 'MENGERTI',
+
+                // Game Over
+                gameOver: 'GAME OVER',
+                levelReached: 'Level tercapai:',
+                watchAdContinue: '📺 TONTON IKLAN = LANJUT',
+                playAgain: 'MAIN LAGI',
+
+                // Level Complete
+                levelComplete: 'LEVEL SELESAI!',
+                bonus: 'Bonus:',
+                points: 'poin',
+                watchAd2x: '📺 IKLAN = 2x KOIN',
+                continue: 'LANJUT →',
+
+                // Help
+                helpText: 'Tekan I untuk instruksi | SPASI = Lompat',
+
+                // Alerts
+                continueOnce: 'Kamu hanya bisa melanjutkan sekali per permainan!'
+            }
+        };
+
+        // Language names for dropdown
+        var languageNames = {
+            en: 'English',
+            fr: 'Français',
+            it: 'Italiano',
+            de: 'Deutsch',
+            es: 'Español',
+            zh: '中文',
+            pt: 'Português',
+            ko: '한국어',
+            ja: '日本語',
+            ru: 'Русский',
+            tr: 'Türkçe',
+            ar: 'العربية',
+            hi: 'हिन्दी',
+            id: 'Indonesia'
+        };
+
+        // Get translation by key
+        function t(key) {
+            return translations[currentLanguage][key] || translations['en'][key] || key;
+        }
+
+        // Apply translations to all elements with data-i18n attribute
+        function applyTranslations() {
+            // Update all elements with data-i18n attribute
+            var elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(function(el) {
+                var key = el.getAttribute('data-i18n');
+                var translation = t(key);
+                if (el.getAttribute('data-i18n-html') === 'true') {
+                    el.innerHTML = translation;
+                } else {
+                    el.textContent = translation;
+                }
+            });
+
+            // Update dynamic elements
+            updateHUD();
+
+            console.log('Translations applied for language:', currentLanguage);
+        }
+
+        // Update HUD texts
+        function updateHUD() {
+            var style = getMazeStyle(level);
+            var levelEl = document.getElementById('level');
+            var scoreEl = document.getElementById('score');
+            var livesEl = document.getElementById('lives');
+            var timerEl = document.getElementById('timer');
+
+            if (levelEl) levelEl.textContent = t('level') + ' ' + level + ' - ' + style.name;
+            if (scoreEl) scoreEl.textContent = t('score') + ': ' + score;
+            if (livesEl) livesEl.innerHTML = '❤️'.repeat(Math.max(0, lives));
+
+            if (timerEl && startTime > 0) {
+                levelTime = Math.floor((Date.now() - startTime) / 1000);
+                var mins = Math.floor(levelTime / 60);
+                var secs = levelTime % 60;
+                timerEl.innerHTML = mins + ':' + (secs < 10 ? '0' : '') + secs;
+            }
+        }
+
+        // Change language
+        function changeLanguage(lang) {
+            if (translations[lang]) {
+                currentLanguage = lang;
+                applyTranslations();
+
+                // Update language buttons highlight
+                updateLanguageButtons();
+
+                // Notify GamePush about language change
+                if (window.gp) {
+                    try {
+                        window.gp.changeLanguage(lang);
+                    } catch(e) {
+                        console.log('Could not change GamePush language:', e);
+                    }
+                }
+
+                // Save preference
+                try {
+                    localStorage.setItem('spherix_language', lang);
+                } catch(e) {}
+            }
+        }
+
+        // Update language dropdown selection
+        function updateLanguageButtons() {
+            var langSelect = document.getElementById('lang-select');
+            if (langSelect) {
+                langSelect.value = currentLanguage;
+            }
+        }
+
+        // Detect and set language from GamePush or browser
+        function detectLanguage() {
+            var lang = 'en'; // Default
+
+            // Priority 1: Saved preference
+            try {
+                var savedLang = localStorage.getItem('spherix_language');
+                if (savedLang && translations[savedLang]) {
+                    lang = savedLang;
+                }
+            } catch(e) {}
+
+            // Priority 2: GamePush language (will override saved if available)
+            if (window.gp && window.gp.language) {
+                var gpLang = window.gp.language;
+                console.log('GamePush language detected:', gpLang);
+                if (translations[gpLang]) {
+                    lang = gpLang;
+                }
+            }
+
+            // Priority 3: Browser language (fallback if nothing else)
+            if (!window.gp) {
+                var browserLang = navigator.language || navigator.userLanguage;
+                if (browserLang) {
+                    browserLang = browserLang.substring(0, 2).toLowerCase();
+                    console.log('Browser language detected:', browserLang);
+                    if (translations[browserLang]) {
+                        lang = browserLang;
+                    }
+                }
+            }
+
+            currentLanguage = lang;
+            console.log('Language set to:', currentLanguage);
+            return lang;
+        }
+
+        // =====================================================
+        // ADS
+        // =====================================================
+
+        function showLevelAd(callback) {
+            if (window.gp) {
+                window.gp.ads.showFullscreen({
+                    onStart: function() {
+                        console.log('Fullscreen ad started');
+                    },
+                    onClose: function(success) {
+                        console.log('Fullscreen ad closed:', success);
+                        if (callback) setTimeout(callback, 100);
+                    }
+                });
+            } else {
+                if (callback) callback();
+            }
+        }
+
+        // =====================================================
+        // ANALYTICS
+        // =====================================================
+
+        function trackLevelStart(levelNum) {
+            if (window.gp) {
+                try {
+                    window.gp.analytics.goal('LEVEL_START', levelNum);
+                } catch(e) {}
+            }
+        }
+
+        function trackLevelComplete(levelNum) {
+            if (window.gp) {
+                try {
+                    window.gp.analytics.goal('LEVEL_COMPLETE', levelNum);
+                } catch(e) {}
+            }
+        }
+
+        // =====================================================
+        // REWARDED VIDEO (Fixed with async/await pattern)
+        // Uses correct GamePush SDK rewarded video API
+        // =====================================================
+
+        async function watchAdToContinue() {
+            if (!canContinueFromDeath) {
+                alert(t('continueOnce'));
+                return;
+            }
+
+            console.log('watchAdToContinue called');
+
+            if (window.gp && window.gp.ads) {
+                try {
+                    console.log('Showing rewarded video for continue...');
+                    // Use async/await pattern - returns true if reward was received
+                    var success = await window.gp.ads.showRewardedVideo();
+                    console.log('Rewarded video result:', success);
+
+                    if (success) {
+                        console.log('Continue reward received - giving 2 lives');
+                        lives = 2;
+                        canContinueFromDeath = false;
+                        document.getElementById('gameover-screen').style.display = 'none';
+                        gameState = 'play';
+                        isInvincible = true;
+                        invincibleTimer = 180;
+                        playSound('powerup');
+                        requestAnimationFrame(gameLoop);
+                    } else {
+                        console.log('Rewarded video not completed');
+                    }
+                } catch(e) {
+                    console.log('Rewarded video error:', e);
+                    // Fallback for testing without ads
+                    lives = 2;
+                    canContinueFromDeath = false;
+                    document.getElementById('gameover-screen').style.display = 'none';
+                    gameState = 'play';
+                    isInvincible = true;
+                    invincibleTimer = 180;
+                    requestAnimationFrame(gameLoop);
+                }
+            } else {
+                console.log('No GamePush - fallback continue');
+                lives = 2;
+                canContinueFromDeath = false;
+                document.getElementById('gameover-screen').style.display = 'none';
+                gameState = 'play';
+                isInvincible = true;
+                invincibleTimer = 180;
+                requestAnimationFrame(gameLoop);
+            }
+        }
+
+        async function watchAdForDoubleCoins() {
+            console.log('watchAdForDoubleCoins called, pending bonus:', pendingLevelBonus);
+
+            if (window.gp && window.gp.ads) {
+                try {
+                    console.log('Showing rewarded video for double coins...');
+                    var success = await window.gp.ads.showRewardedVideo();
+                    console.log('Rewarded video result:', success);
+
+                    if (success) {
+                        console.log('Double coins reward received - adding', pendingLevelBonus, 'points');
+                        score += pendingLevelBonus;
+                        document.getElementById('level-score').innerHTML = score;
+                        playSound('collect');
+                    }
+                    continueToNextLevel();
+                } catch(e) {
+                    console.log('Rewarded video error:', e);
+                    // Continue without bonus on error
+                    continueToNextLevel();
+                }
+            } else {
+                console.log('No GamePush - fallback double coins');
+                score += pendingLevelBonus;
+                continueToNextLevel();
+            }
+        }
+
+        var nextLevelStarted = false;
+
+        async function continueToNextLevel() {
+            console.log('continueToNextLevel called, current level:', level);
+            nextLevelStarted = false;
+
+            // Hide level complete screen
+            document.getElementById('levelcomplete-screen').style.display = 'none';
+
+            // Show fullscreen ad between levels
+            if (window.gp && window.gp.ads) {
+                try {
+                    console.log('Showing fullscreen ad...');
+                    await window.gp.ads.showFullscreen();
+                    console.log('Fullscreen ad closed');
+                } catch(e) {
+                    console.log('Fullscreen ad error:', e);
+                }
+            }
+
+            startNextLevel();
+        }
+
+        function startNextLevel() {
+            if (nextLevelStarted) return;
+            nextLevelStarted = true;
+            console.log('Starting next level');
+            gameState = 'fade out';
+            requestAnimationFrame(gameLoop);
+        }
+
+        async function watchAdForExtraLife() {
+            if (lives >= maxLives) {
+                console.log('Already at max lives');
+                document.getElementById('extra-life-btn').style.display = 'none';
+                return;
+            }
+
+            console.log('watchAdForExtraLife called, current lives:', lives);
+
+            if (window.gp && window.gp.ads) {
+                try {
+                    console.log('Showing rewarded video for extra life...');
+                    var success = await window.gp.ads.showRewardedVideo();
+                    console.log('Rewarded video result:', success);
+
+                    if (success) {
+                        console.log('Extra life reward received, adding 1 life');
+                        lives = Math.min(lives + 1, maxLives);
+                        console.log('Lives now:', lives);
+                        updateHUD();
+                        playSound('heart');
+
+                        // Hide button temporarily
+                        document.getElementById('extra-life-btn').style.display = 'none';
+
+                        // Show button again after 30 seconds if still not at max
+                        setTimeout(function() {
+                            if (lives < maxLives && (gameState === 'play' || gameState === 'fade in')) {
+                                document.getElementById('extra-life-btn').style.display = 'block';
+                            }
+                        }, 30000);
+                    }
+                } catch(e) {
+                    console.log('Rewarded video error:', e);
+                    // Show button again on error
+                    if (lives < maxLives) {
+                        document.getElementById('extra-life-btn').style.display = 'block';
+                    }
+                }
+            } else {
+                console.log('No GamePush - fallback extra life');
+                lives = Math.min(lives + 1, maxLives);
+                console.log('Lives now:', lives);
+                updateHUD();
+                playSound('heart');
+                document.getElementById('extra-life-btn').style.display = 'none';
+                // Show again after 30 seconds
+                setTimeout(function() {
+                    if (lives < maxLives && (gameState === 'play' || gameState === 'fade in')) {
+                        document.getElementById('extra-life-btn').style.display = 'block';
+                    }
+                }, 30000);
+            }
+        }
+
+        function showLevelCompleteScreen(bonus) {
+            pendingLevelBonus = bonus;
+            playSound('victory');
+            // Show completed level (level was already incremented, so show level-1)
+            document.getElementById('completed-level').innerHTML = (level - 1);
+            document.getElementById('level-score').innerHTML = score;
+            document.getElementById('level-bonus').innerHTML = bonus;
+            document.getElementById('levelcomplete-screen').style.display = 'flex';
+            gameState = 'levelcomplete';
+            saveProgress();
+        }
+
+        // =====================================================
+        // INITIALIZATION - Detect language on page load
+        // =====================================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Detect language early (will be updated when GamePush loads)
+            detectLanguage();
+            applyTranslations();
+            updateLanguageButtons();
+            console.log('Initial language detection complete:', currentLanguage);
+        });
+    </script>
+
+
+
+
+<canvas width="500" height="558" wg-game-orientation="wg-portrait-game"></canvas><div id="gs-gamedistribution"></div><div class="gs-global-loader" style="display: none;"><div class="gs-loader false">
+        <div class="gs-loader__outter"></div>
+        <div class="gs-loader__inner"></div>
+    </div></div><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"></body></html>
