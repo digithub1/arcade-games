@@ -1,0 +1,36 @@
+{
+	"name": "Speakerman Vs Skibidi Toilet",
+	"short_name": "Speakerman Vs Skibidi Toilet",
+	"description": "The game is set in a post-apocalyptic world where the Speakerman and the Skibidi Toilet are the two most powerful forces. The Speakerman is a giant robot with a powerful speaker that can emit destructive sound waves.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

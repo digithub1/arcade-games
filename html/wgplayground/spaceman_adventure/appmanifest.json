@@ -1,0 +1,36 @@
+{
+	"name": "Spaceman Adventure",
+	"short_name": "Spaceman Adventure",
+	"description": "Explore the universe in Spaceman Adventure, a free online game! Play as a spaceman and travel to different planets, avoiding obstacles and collecting power-ups. Spaceman Adventure is an online game that is free to play. It is a multiplayer game that allows players to experience an adventure in space.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Space Shooting",
+	"short_name": "Space Shooting",
+	"description": "Space Shooting Online Space Game is an exciting new game for space shooting enthusiasts. It offers an immersive and action-packed experience that is sure to appeal to gamers of all levels. Space Shooting is an online space game that allows players to experience the thrill of intergalactic combat.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

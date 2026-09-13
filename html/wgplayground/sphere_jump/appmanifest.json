@@ -1,0 +1,36 @@
+{
+	"name": "Sphere Jump",
+	"short_name": "Sphere Jump",
+	"description": "Sphere Jump Online is a new adventure game that will keep you on your toes! You'll need to use your quick reflexes to navigate your way through a variety of obstacles, and you'll need to be strategic to choose the right moments to make your jumps. With an online leaderboard, you can see how you stack up against other players from around the world. So what are you waiting for? Get into the action today and start your Sphere Jumping adventure!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
