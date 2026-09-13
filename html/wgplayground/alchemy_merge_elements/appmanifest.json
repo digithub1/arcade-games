@@ -1,0 +1,11 @@
+{
+	"name": "Алхимия - соединение элементов",
+	"short_name": "Алхимия - соединение элементов",
+	"description": "Alchemist elements",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [],
+	"screenshots": []
+}
