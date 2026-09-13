@@ -87,7 +87,36 @@ function poki_loadbar(ctx, width, height, total, current, loadingscreen) {
     ctx.fillRect(0, 0, width, height);
   }
 }
-function poki_init_raw() { return 1; }
+
+window.poki_init_raw = function() { return 1; };
+window.poki_loadbar = function(ctx, width, height, total, current, loadingscreen) {
+  if (ctx && ctx.fillStyle) {
+    ctx.fillStyle = "#000";
+    ctx.fillRect(0, 0, width, height);
+  }
+};
+window.poki_gameplay_start = function() {};
+window.poki_gameplay_stop = function() {};
+window.poki_commercial_break_raw = function(fn) { if (typeof fn === "function") fn(); };
+window.poki_rewarded_break_raw = function(fn) { if (typeof fn === "function") fn(1); };
+window.poki_happy_time = function() {};
+window.poki_is_mobile = function() { return 0; };
+window.poki_get_team_raw = function() { return ""; };
+window.poki_set_team_raw = function() {};
+window.poki_script_closure_raw = function(fn) { if (typeof fn === "function") fn(); };
+
+var poki_init_raw = window.poki_init_raw;
+var poki_loadbar = window.poki_loadbar;
+var poki_gameplay_start = window.poki_gameplay_start;
+var poki_gameplay_stop = window.poki_gameplay_stop;
+var poki_commercial_break_raw = window.poki_commercial_break_raw;
+var poki_rewarded_break_raw = window.poki_rewarded_break_raw;
+var poki_happy_time = window.poki_happy_time;
+var poki_is_mobile = window.poki_is_mobile;
+var poki_get_team_raw = window.poki_get_team_raw;
+var poki_set_team_raw = window.poki_set_team_raw;
+var poki_script_closure_raw = window.poki_script_closure_raw;
+
 function poki_gameplay_start() {}
 function poki_gameplay_stop() {}
 function poki_commercial_break_raw(fn) { if (typeof fn === "function") fn(); }
@@ -98,7 +127,7 @@ function poki_get_team_raw() { return ""; }
 function poki_set_team_raw() {}
 function poki_script_closure_raw(fn) { if (typeof fn === "function") fn(); }
 </script>
-        <script type="text/javascript" src="html5game/RetroBowl.js"></script>
+        <script type="text/javascript" src="html5game/RetroBowl.js?v=2"></script>
         <script>window.onload = GameMaker_Init;</script>
     </body>
 </html>
