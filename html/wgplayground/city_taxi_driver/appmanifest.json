@@ -1,0 +1,36 @@
+{
+	"name": "City Taxi Driver",
+	"short_name": "City Taxi Driver",
+	"description": "City Taxi Driver is a free online taxi game where you are a taxi driver in the city. Pick up passengers, earn money and upgrade your car.  City Taxi Driver Online Games is a very popular game where you can drive your cab in the city. City Taxi Driver is a great game for kids and adults alike. Drive your taxi through the city and earn money.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
