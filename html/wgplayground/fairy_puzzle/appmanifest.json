@@ -1,0 +1,12 @@
+{
+	"name": "Fairy puzzle",
+	"short_name": "Fairy puzzle",
+	"description": "$gs.projectDescription",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#77bfca",
+	"icons": [],
+	"screenshots": [],
+	"theme_color": "#77bfca"
+}
