@@ -1,0 +1,229 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Block Master Gem Puzzle">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/a38666373a894cdcfbe73abd9debf645/wgplayground/bgr_847e529c53e9cd97ecc1a4dfdaa19db9.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/a38666373a894cdcfbe73abd9debf645/wgplayground/df8eeef3be26662e4fc5ce264f92ede3.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/a38666373a894cdcfbe73abd9debf645">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/block-master-gem-puzzle">
+            <meta property="wgp:description" content="Block Master Gem Puzzle is a fun and addictive 8x8 block puzzle game with multiple exciting modes.Enjoy Classic mode for endless relaxing gameplay. Take on Diamond Quest to collect all diamonds and complete challenging levels. Or test your strategy in Clear the Board mode, where you must remove every block within limited moves.">
+            <meta property="wgp:instructions" content="- Drag and place blocks onto the 8x8 board. Complete full rows or columns to clear blocks and earn points.- Classic Mode: Play endlessly and beat your high score.- Diamond Quest: Clear blocks strategically to collect all diamonds and finish the level.- Clear the Board: Use limited moves wisely to remove every block on the board.Plan ahead, think carefully, and enjoy the satisfying puzzle challenge!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/a38666373a894cdcfbe73abd9debf645/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/a38666373a894cdcfbe73abd9debf645/wgplayground/8e15220322ae3e1b72089ae04dc075c6.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/a38666373a894cdcfbe73abd9debf645/wgplayground/92b85dc5bcbda72ebde6dbd673da7724.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXJkICYgQm9hcmQiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy53Z3BsYXlncm91bmQuY29tXC9nYW1lcy1jYXRhbG9ndWVcL2dlbnJlLTQ2In0seyJuYW1lIjoiQ2FzdWFsIiwibGluayI6Imh0dHBzOlwvXC93d3cud2dwbGF5Z3JvdW5kLmNvbVwvZ2FtZXMtY2F0YWxvZ3VlXC9nZW5yZS00OSJ9XSwiY2hhcmFjdGVycyI6W119">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/a38666373a894cdcfbe73abd9debf645">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+  <meta charset="utf-8">
+
+  <title>Cocos Creator | BlockPuzzle</title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1">
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="360-fullscreen" content="true">
+  
+  <!-- force screen orientation on some browser -->
+  <meta name="screen-orientation" content="">
+  <meta name="x5-orientation" content="">
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="stylesheet" type="text/css" href="style-mobile.25fc5.css">
+  <link rel="icon" href="favicon.8de18.ico">
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/a38666373a894cdcfbe73abd9debf645/wgplayground/df8eeef3be26662e4fc5ce264f92ede3.jpg">
+  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0" wg-game-orientation="wg-landscape-game"></canvas>
+  <div id="splash" style="display: block;">
+    <div class="progress-bar stripes">
+      <span style="width: 0%"></span>
+    </div>
+  </div>
+
+<script src="src/settings.e57a1.js" charset="utf-8"></script>
+
+<script src="main.af4cd.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+(function () {
+    // open web debugger console
+    if (typeof VConsole !== 'undefined') {
+        window.vConsole = new VConsole();
+    }
+
+    var debug = window._CCSettings.debug;
+    var splash = document.getElementById('splash');
+    splash.style.display = 'block';
+
+    function loadScript (moduleName, cb) {
+      function scriptLoaded () {
+          document.body.removeChild(domScript);
+          domScript.removeEventListener('load', scriptLoaded, false);
+          cb && cb();
+      };
+      var domScript = document.createElement('script');
+      domScript.async = true;
+      domScript.src = moduleName;
+      domScript.addEventListener('load', scriptLoaded, false);
+      document.body.appendChild(domScript);
+    }
+
+    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.b906f.js', function () {
+      if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+      }
+      else {
+        window.boot();
+      }
+    });
+})();
+</script><script async="" src="cocos2d-js-min.b906f.js"></script>
+
+
+
+
+</body></html>
