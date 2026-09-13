@@ -1,0 +1,36 @@
+{
+	"name": "Feed The Fox",
+	"short_name": "Feed The Fox",
+	"description": "Feed the Fox is a fun game to play. In this game, the main character is a hungry fox who needs to eat to survive. Help the fox to eat the little chicks that are coming down but be aware of the tiny bombs that coming down with the chicks as well. To continue playing the game keep your eyes on the bombs. Use the arrows on the screen or the keyboard arrows to play the game if you are playing on your computer.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

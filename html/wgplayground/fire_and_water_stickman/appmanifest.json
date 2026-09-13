@@ -1,0 +1,16 @@
+{
+	"name": "Fire and Water Stickman",
+	"short_name": "Fire and Water Stickman",
+	"description": "Fire and Water Stickman",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

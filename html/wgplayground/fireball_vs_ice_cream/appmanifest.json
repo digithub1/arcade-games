@@ -1,0 +1,36 @@
+{
+	"name": "Fireball Vs Ice Cream",
+	"short_name": "Fireball Vs Ice Cream",
+	"description": "Enjoy a new and exciting online game – Fireball Vs Ice Cream! This game is perfect for those who want to have fun and challenge themselves. Test your skills by jumping and escaping from the fireballs. Can you make it to the end? Play now and find out!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

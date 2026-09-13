@@ -1,0 +1,36 @@
+{
+	"name": "Fighter Tank",
+	"short_name": "Fighter Tank",
+	"description": "Fighter tank online games are a lot like war games. They're fast-paced and full of action, and they often require quick decisions. That's why product managers who are looking for a challenge should consider playing fighter tank online games. They're a great way to sharpen your decision-making skills and learn more about strategizing. Players can enter into the fray and battle it out with other players from around the world.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

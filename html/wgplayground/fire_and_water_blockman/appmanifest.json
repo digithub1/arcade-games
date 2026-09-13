@@ -1,0 +1,16 @@
+{
+	"name": "Fire and Water Blockman",
+	"short_name": "Fire and Water Blockman",
+	"description": "Fire and Water Blockman",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "200x200",
+			"type": "image/png"
+		}
+	]
+}
