@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+    <languages>
+        <language>en</language>
+        <language>de</language>
+        <language>fr</language>
+        <language>es</language>
+        <language>it</language>
+        <language>br</language>
+    </languages>
+    <strings>
+
+        <string id="2" index="1">
+            <en>ENABLE MUSIC?</en>
+            <es>¿PONER MÚSICA?</es>
+            <de>MUSIK EINSCHALTEN?</de>
+            <it>ACCENDERE SUONI?</it>
+            <fr>ACTIVER LES SONS?</fr>
+            <ru>ВКЛЮЧИТЬ МУЗЫКУ?</ru>
+            <br>LIGAR A MÚSICA?</br>
+            <nl>MUZIEK AAN?</nl>
+            <no>MUSIKK PÅ?</no>
+        </string>
+
+        <string id="3" index="2">
+            <en>YES</en>
+            <es>SÍ</es>
+            <de>JA</de>
+            <it>SÌ</it>
+            <fr>OUI</fr>
+            <ru>ДА</ru>
+            <br>SIM</br>
+            <nl>JA</nl>
+            <no>JA</no>
+        </string>
+
+        <string id="4" index="3">
+            <en>NO</en>
+            <es>NO</es>
+            <de>NEIN</de>
+            <it>NO</it>
+            <fr>NON</fr>
+            <ru>НЕТ</ru>
+            <br>NÃO</br>
+            <nl>NEE</nl>
+            <no>NEI</no>
+        </string>
+
+        <string id="MAINMENU_TEXT" index="4">
+            <en>MENU</en>
+            <es>MENÚ</es>
+            <de>MENÜ</de>
+            <it>MENU</it>
+            <fr>MENU</fr>
+            <ru>МЕНЮ</ru>
+            <br>MENU</br>
+            <nl>MENU</nl>
+            <no>MENY</no>
+        </string>
+
+        <string id="6" index="5">
+            <en>BACK</en>
+            <es>VOLVER</es>
+            <de>ZURÜCK</de>
+            <it>INDIETRO</it>
+            <fr>RETOUR</fr>
+            <ru>НАЗАД</ru>
+            <br>VOLTAR</br>
+            <nl>TERUG</nl>
+            <no>TILBAKE</no>
+        </string>
+
+        <string id="PLAY_TEXT" index="7">
+            <en>PLAY</en>
+            <es>JUGAR</es>
+            <de>SPIELEN</de>
+            <it>GIOCA</it>
+            <fr>JOUER</fr>
+            <ru>ИГРАТЬ</ru>
+            <br>JOGAR</br>
+            <nl>SPEEL</nl>
+            <no>SPILLE</no>
+        </string>
+
+        <string id="INSTRUCTIONS_TEXT" index="8">
+            <en>INSTRUCTIONS</en>
+            <es>INSTRUCCIONES</es>
+            <de>ANLEITUNG</de>
+            <it>ISTRUZIONI</it>
+            <fr>INSTRUCTIONS</fr>
+            <ru>ИНСТРУКЦИЯ</ru>
+            <br>INSTRUÇÕES</br>
+            <nl>INSTRUCTIES</nl>
+            <no>INSTRUKSJONER</no>
+        </string>
+
+        <string id="SOUND" index="9">
+            <en>SOUND</en>
+            <es>SONIDO</es>
+            <de>TON</de>
+            <it>SUONI</it>
+            <fr>SON</fr>
+            <ru>ЗВУК</ru>
+            <br>SOM</br>
+            <nl>GELUID</nl>
+            <no>LYD</no>
+        </string>
+
+        <string id="10" index="10">
+            <en>ABOUT</en>
+            <es>INFORMACIÓN</es>
+            <de>ÜBER SPIEL</de>
+            <it>INFO</it>
+            <fr>À PROPOS</fr>
+            <ru>ОБ ИГРЕ</ru>
+            <br>SOBRE O JOGO</br>
+            <tr/>
+            <nl>OVER DIT SPEL</nl>
+            <no>OM</no>
+        </string>
+
+        <string id="11" index="11">
+            <en>RESUME</en>
+            <es>RETOMAR</es>
+            <de>FORTSETZEN</de>
+            <it>RIPRENDI</it>
+            <fr>REPRENDRE</fr>
+            <ru>ПРОДОЛЖИТЬ</ru>
+            <br>RETOMAR</br>
+            <nl>DOORGAAN</nl>
+            <no>GJENOPPTA</no>
+        </string>
+
+        <string id="12" index="12">
+            <en>EXIT?</en>
+            <es>¿FINAL?</es>
+            <de>ENDE?</de>
+            <it>ESCI?</it>
+            <fr>QUITTER?</fr>
+            <ru>ВЫЙТИ?</ru>
+            <br>ACABAR?</br>
+            <nl>AFSLUITEN?</nl>
+            <no>FORLAT?</no>
+        </string>
+
+        <string id="13" index="13">
+            <en>QUIT TO MENU</en>
+            <es>SALIR AL MENÚ</es>
+            <de>ZUM MENÜ</de>
+            <it>USCIRE DI MENU</it>
+            <fr>RETOUR AU MENU</fr>
+            <ru>ВЕРНУТЬСЯ В МЕНЮ</ru>
+            <br>SAIR PARA O MENU</br>
+            <nl>AFSLUITEN EN NAAR MENU</nl>
+            <no>AVSLUTT TIL MENY</no>
+        </string>
+
+        <string id="14" index="14">
+            <en>QUIT TO MENU? YOUR CURRENT GAME PROGRESS WILL BE LOST.</en>
+            <es>¿SALIR AL MENÚ? LA PARTIDA ACTUAL SE CANCELARÁ.</es>
+            <de>ZUM MENÜ? DEIN AKTUELLER SPIELFORTSCHRITT WIRD GELÖSCHT.</de>
+            <it>USCIRE DI MENU? IL TUO GIOCO PROGRESS CORRENTE ANDRANNO PERSI.</it>
+            <fr>RETOUR AU MENU? VOTRE PROGRESSION ACTUELLE SERA PERDUE.</fr>
+            <ru>ВЫЙТИ В МЕНЮ? ВАШ ТЕКУЩИЙ ИГРОВОЙ ПРОГРЕСС БУДЕТ ПОТЕРЯН.</ru>
+            <br>SAIR PARA O MENU? O JOGO ATUAL SERÁ CANCELADO.</br>
+            <nl>AFSLUITEN EN NAAR MENU? JE HUIDIGE VOORTGANG ZAL VERLOREN GAAN.</nl>
+            <no>AVSLUTTE TIL MENY? FREMDRIFTEN DIN VIL BLI TAPT.</no>
+        </string>
+
+        <string id="ON_TEXT" index="15">
+            <en>ON</en>
+            <es>ON</es>
+            <de>AN</de>
+            <it>ACC.</it>
+            <fr>OUI</fr>
+            <ru>ВКЛ.</ru>
+            <br>LIG.</br>
+            <nl>AAN</nl>
+            <no>PÅ</no>
+        </string>
+
+        <string id="OFF_TEXT" index="16">
+            <en>OFF</en>
+            <es>OFF</es>
+            <de>AUS</de>
+            <it>CHIUD.</it>
+            <fr>NON</fr>
+            <ru>ВЫКЛ.</ru>
+            <br>DESLIG.</br>
+            <nl>UIT</nl>
+            <no>AV</no>
+        </string>
+
+        <string id="17" index="17">
+            <en>VERSION</en>
+            <es>VERSIÓN</es>
+            <de>VERSION</de>
+            <it>VERSIONE</it>
+            <fr>VERSION</fr>
+            <ru>ВЕРСИЯ</ru>
+            <br>VERSÃO</br>
+            <nl>VERSIE</nl>
+            <no>VERSJON</no>
+        </string>
+
+        <string id="18" index="18">
+            <en>THIS WILL EXIT THE APPLICATION. ARE YOU SURE?</en>
+            <es>ESO TERMINARÁ LA PARTIDA. ¿ESTÁS SEGURO?</es>
+            <de>DAS WIRD DIE ANWENDUNG BEENDEN. BIST DU SICHER?</de>
+            <it>QUESTO VOLONTÁ USCIRE DALL'APPLICAZIONE. SEI SICURO?</it>
+            <fr>L'APPLICATION SERA FERMÉE. CONFIRMER?</fr>
+            <ru>ВЫ ПОКИДАЕТЕ ИГРУ. УВЕРЕНЫ ЧТО ХОТИТЕ ВЫЙТИ?</ru>
+            <br>O JOGO VAI TERMINAR. VOCÊ TEM CERTEZA?</br>
+            <nl>JE VERLAAT ZO HET SPEL. WEET JE HET ZEKER?</nl>
+            <no>DETTE VIL AVSLUTTE APPEN. ER DU SIKKER?</no>
+        </string>
+
+        <string id="19" index="19">
+            <en>CONTINUE?</en>
+            <es>¿CONTINUAR?</es>
+            <de>WEITER?</de>
+            <it>CONTINUARE?</it>
+            <fr>CONTINUER?</fr>
+            <ru>ПРОДОЛЖИТЬ?</ru>
+            <br>CONTINUAR?</br>
+            <nl>DOORGAAN?</nl>
+            <no>FORTSETT?</no>
+        </string>
+
+        <string id="PAUSE_TEXT" index="21">
+            <en>PAUSE</en>
+            <es>PAUSA</es>
+            <de>PAUSE</de>
+            <it>PAUSA</it>
+            <fr>PAUSE</fr>
+            <ru>ПАУЗА</ru>
+            <br>PAUSE</br>
+            <nl>PAUZE</nl>
+            <no>PAUSE</no>
+        </string>
+
+        <string id="GAME_OVER_TEXT" index="22">
+            <en>GAME OVER</en>
+            <es>FINAL DE LA PARTIDA</es>
+            <de>SPIELENDE</de>
+            <it>FINE DEL GIOCO</it>
+            <fr>FIN DU JEU</fr>
+            <ru>ВЫ ПРОИГРАЛИ</ru>
+            <br>FIM DO JOGO</br>
+            <nl>GAME OVER</nl>
+            <no>SPILLET ER OVER</no>
+        </string>
+
+        <string id="SCORE_TEXT" index="23">
+            <en>SCORE</en>
+            <es>PUNTUACIÓN</es>
+            <de>PUNKTE</de>
+            <it>PUNTEGGIO</it>
+            <fr>SCORE</fr>
+            <ru>СЧЕТ</ru>
+            <br>PONTUAÇÃO</br>
+            <nl>SCORE</nl>
+            <no>POENG</no>
+        </string>
+
+        <string id="23" index="24">
+            <en>GREAT!</en>
+            <es>¡MAGNÍFICO!</es>
+            <de>TOLL!</de>
+            <it>GRANDE!</it>
+            <fr>GÉNIAL!</fr>
+            <ru>ОТЛИЧНО!</ru>
+            <br>ÓTIMO!</br>
+            <nl>TOP!</nl>
+            <no>FLOTT!</no>
+        </string>
+
+        <string id="RETRY_TEXT" index="25">
+            <en>RETRY</en>
+            <es>VOLVER A INTENTARLO</es>
+            <de>NEUER VERSUCH</de>
+            <it>RIPROVARE</it>
+            <fr>RÉESSAYER</fr>
+            <br>TENTAR NOVAMENTE</br>
+            <ru>ПОВТОРИТЬ</ru>
+            <nl>OPNIEUW PROBEREN</nl>
+            <no>PRØV IGJEN</no>
+        </string>
+
+        <string id="SETTINGS_TEXT" index="25">
+            <en>OPTIONS</en>
+            <es>AJUSTES</es>
+            <de>EINSTELLUNGEN</de>
+            <it>IMPOSTAZIONI</it>
+            <fr>OPTIONS</fr>
+            <br>DEFINIÇÕES</br>
+            <ru>НАСТРОЙКИ</ru>
+            <nl>OPTIES</nl>
+            <no>VALG</no>
+        </string>
+
+        <string id="25" index="26">
+            <en>HOW TO PLAY</en>
+            <es>CÓMO JUGAR</es>
+            <de>WIE ZU SPIELEN</de>
+            <it>COME GIOCARE</it>
+            <fr>COMMENT JOUER</fr>
+            <ru>КАК ИГРАТЬ</ru>
+            <br>COMO JOGAR</br>
+            <nl>SPELUITLEG</nl>
+            <no>HVORDAN SPILLE</no>
+        </string>
+
+        <string id="SELECT_TEXT" index="27">
+            <en>SELECT</en>
+            <es>SELECCIONAR</es>
+            <de>WÄHLEN</de>
+            <it>SELEZIONA</it>
+            <fr>SÉLECTIONNER</fr>
+            <ru>ВЫБРАТЬ</ru>
+            <br>SELECIONAR</br>
+            <nl>KIEZEN</nl>
+            <no>VELG</no>
+        </string>
+
+        <string id="26000" index="28">
+            <en>DRIVE</en>
+            <es>CONDUCIR</es>
+            <de>FAHREN</de>
+            <it>GUIDARE</it>
+            <fr>CONDUISER</fr>
+            <ru>ЕХАТЬ</ru>
+            <br>DIRIGIR</br>
+            <nl>RIJDEN</nl>
+            <no>KJØRE</no>
+        </string>
+
+        <string id="BUY_TEXT" index="29">
+            <en>BUY</en>
+            <es>COMPRAR</es>
+            <de>KAUFEN</de>
+            <it>ACQUISTARE</it>
+            <fr>ACHETER</fr>
+            <ru>КУПИТЬ</ru>
+            <br>COMPRAR</br>
+            <nl>KOPEN</nl>
+            <no>KJØP</no>
+        </string>
+
+        <string id="REWARD_TEXT" index="30">
+            <en>REWARD</en>
+            <es>RECOMPENSA</es>
+            <de>BELOHNUNG</de>
+            <it>RICOMPENSA</it>
+            <fr>RÉCOMPENSE</fr>
+            <ru>ВОЗНАГРАЖДЕНИЕ</ru>
+            <br>RECOMPENSA</br>
+            <nl>BELONING</nl>
+            <no>BELØNNING</no>
+        </string>
+
+        <string id="SPEED" index="31">
+            <en>SPEED</en>
+            <es>VELOCIDAD</es>
+            <de>TEMPO</de>
+            <it>VELOCITÀ</it>
+            <fr>VITESSE</fr>
+            <ru>СКОРОСТЬ</ru>
+            <br>VELOCIDADE</br>
+            <nl>SNELHEID</nl>
+            <no>FART</no>
+        </string>
+
+        <string id="HANDLING" index="32">
+            <en>HANDLING</en>
+            <es>MANEJO</es>
+            <de>KONTROLLE</de>
+            <it>MANOVRABILITÀ</it>
+            <fr>MANIABILITÉ</fr>
+            <ru>УПРАВЛЕНИЕ</ru>
+            <br>MANUSEIO</br>
+            <nl>BESTURING</nl>
+            <no>HÅNDTERING</no>
+        </string>
+
+        <string id="BRAKING" index="33">
+            <en>BRAKING</en>
+            <es>FRENADO</es>
+            <de>BREMSEN</de>
+            <it>FRENI</it>
+            <fr>FREINAGE</fr>
+            <ru>ТОРМОЖЕНИЕ</ru>
+            <br>FRENAGEM</br>
+            <nl>REMMEN</nl>
+            <no>BREMSING</no>
+        </string>
+
+        <string id="32" index="34">
+            <en>TOTAL</en>
+            <es>TOTAL</es>
+            <de>GESAMT</de>
+            <it>TOTALE</it>
+            <fr>TOTAL</fr>
+            <ru>ВСЕГО</ru>
+            <br>TOTAL</br>
+            <nl>TOTAAL</nl>
+            <no>TOTAL</no>
+        </string>
+
+        <string id="RESTART_TEXT" index="38">
+            <en>RESTART</en>
+            <es>REINICIO</es>
+            <de>NEUSTART</de>
+            <it>RIAVVIARE</it>
+            <fr>RECOMMENCER</fr>
+            <br>REINICIAR</br>
+            <ru>ЗАПУСТИТЬ СНОВА</ru>
+            <nl>OPNIEUW STARTEN</nl>
+            <no>OMSTART</no>
+        </string>
+
+        <string id="HIGH_SCORE" index="36">
+            <en>HIGH SCORE</en>
+            <es>RÉCORD DE PUNTUACIÓN</es>
+            <de>HIGHSCORE</de>
+            <it>PUNTEGGIO ALTO</it>
+            <fr>MEILLEUR SCORE</fr>
+            <ru>РЕКОРД</ru>
+            <br>PONTUAÇÃO ALTA</br>
+            <nl>TOPSCORE</nl>
+            <no>HØY POENGSUM</no>
+        </string>
+
+        <string id="INSTRUCTIONS_RULES_TEXT" index="38">
+            <en>RIDE AS LONG AND FAST AS YOU CAN WITHOUT CRASHING. OVERTAKE CARS CLOSELY AT HIGH SPEEDS TO GAIN EXTRA POINTS AND CASH. RIDING IN THE OPPOSITE DIRECTION ALSO GIVES MORE POINTS AND CASH. GET THE HIGHEST SCORE.</en>
+            <ru>ВЫ ДОЛЖНЫ ЕХАТЬ КАК МОЖНО ДОЛЬШЕ И БЫСТРЕЕ БЕЗ СТОЛКНОВЕНИЙ. ВЫБЕРИТЕ САМЫЙ БЫСТРЫЙ МОТОЦИКЛ И ЕДЬТЕ НА МАКСИМАЛЬНОЙ СКОРОСТИ, ЧТОБЫ ПОЛУЧИТЬ ДОПОЛНИТЕЛЬНЫЕ ОЧКИ И НАЛИЧНЫЕ. ЕЗДА ПО ВСТРЕЧНОЙ ПОЛЕСЕ ТАКЖЕ ПРИНОСИТ БОЛЬШЕ ОЧКОВ И НАЛИЧНЫХ. ПОЛУЧИТЕ КАК МОЖНО БОЛЬШЕ ОЧКОВ.</ru>
+            <es>CONDUCE A LA MAYOR VELOCIDAD Y DURANTE EL MAYOR TIEMPO QUE PUEDAS SIN CHOCARTE. ADELANTA A LOS DEMÁS COCHES A GRAN VELOCIDAD PASANDO MUY CERCA DE ELLOS Y CONSEGUIRÁS MÁS DINERO Y PUNTOS. EN EL MODO DE DOBLE SENTIDO, OBTENDRÁS MÁS DINERO Y PUNTOS. ¡CONSIGUE LA MEJOR PUNTUACIÓN!</es>
+            <de>FAHR SO LANG UND SCHNELL DU KANNST, OHNE EINEN UNFALL ZU BAUEN. STARTE ENGE ÜBERHOLMANÖVER IN HÖCHST- GESCHWINDIGKEIT, UM DIR ZUSÄTZLICHE PUNKTE UND NOCH MEHR GELD ZU VERDIENEN. WENN DU IM MODUS MIT GEGENVERKEHR ALS GEISTERFAHRER UNTERWEGS BIST, BRINGT DIR DAS DAS MEHR PUNKTE UND GELD. HOL DIR IN DER BESTENLISTE DEN HIGHSCORE.</de>
+            <it>GUIDA IL PIÙ A LUNGO E PIÙ VELOCEMENTE POSSIBILE SENZA SCHIANTARTI. SORPASSA LE AUTO DA VICINO AD ALTA VELOCITÀ PER GUADAGNARE DENARO E PUNTI EXTRA. GUIDANDO NELLA DIREZIONE OPPOSTA RICEVI ANCHE PIÙ PUNTI E PIÙ SOLDI. OTTIENI IL PUNTEGGIO PIÙ ALTO!</it>
+            <fr>CONDUISEZ AUSSI LOIN ET AUSSI VITE QUE VOUS LE POUVEZ SANS AVOIR D'ACCIDENT. DOUBLEZ LES VOITURES DE JUSTESSE EN ROULANT TRÈS VITE POUR GAGNER DES POINTS SUPPLÉMENTAIRES ET DE L'ARGENT. CONDUISEZ ÉGALEMENT EN SENS INVERSE POUR GAGNER ENCORE PLUS DE POINTS ET D'ARGENT. OBTENEZ LE MEILLEUR SCORE.</fr>
+            <br>DIRIJA O MÁXIMO QUE PUDER E RÁPIDO SEM COLIDIR. ULTRAPASSE CARROS BEM PRÓXIMOS EM VELOCIDADE ALTA PARA GANHAR PONTOS E DINHEIRO EXTRAS. DIRIGINDO NA DIREÇÃO OPOSTA NO MODO BIDIRECIONAL TAMBÉM DÁ MAIS PONTOS E DINHEIRO. OBTENHA A MAIOR PONTUAÇÃO NAS TABELAS DE CLASSIFICAÇÃO.</br>
+            <nl>RIJD ZO VER EN ZO HARD ALS JE KAN ZONDER TE VERONGELUKKEN. RIJD VLAK LANGS ANDERE AUTO'S OM ZE IN TE HALEN EN VERDIEN ZO EXTRA PUNTEN EN GELD. AAN DE VERKEERDE KANT RIJDEN LEVERT OOK MEER PUNTEN EN GELD OP. PROBEER EEN TOPSCORE TE BEHALEN.</nl>
+            <no>KJØR SÅ LENGE OG RASKT SOM MULIG UTEN Å KRASJE. KJØR FORBI BILER TETT OG I HØYE HASTIGHETER FOR Å FÅ EKSTRA POENG OG KONTANTER. Å KJØRE I MOTSATT RETNING GIR OGSÅ FLERE POENG OG PENGER. FÅ DEN HØYESTE POENGSUMMEN.</no>
+        </string>
+        <string id="INSTRUCTIONS_CONTROLS_TEXT" index="39">
+            <en>CONTROLS:\n\nTOUCH BRAKE ICON TO SLOW DOWN.\n\nTAP DIRECTIONAL ARROWS TO STEER THE CAR.</en>
+            <ru>ОРГАНЫ УПРАВЛЕНИЯ:\n\n НАЖМИТЕ НА ЗНАЧЕК ТОРМОЗА, ЧТОБЫ ЗАМЕДЛИТЬСЯ. \n\n С ПОМОЩЬЮ СТРЕЛОК НАПРАВЛЕНИЯ, ВЫ МОЖЕТЕ УПРАВЛЯТЬ АВТОМОБИЛЕМ.</ru>
+            <sk>controls touch</sk>
+            <es>CONTROLES:\n\nTOCA EL ICONO DEL FRENO PARA FRENAR.\n\nTOCA LAS FLECHAS DE DIRECCIÓN PARA DIRIGIR EL COCHE HACIA LOS LADOS.</es>
+            <de>STEUERUNG:\n\nZUM ABBREMSEN BREMS-SYMBOL BERÜHREN.\n\nZUM STEUERN DES WAGENS DIE RICHTUNGSTASTEN ANTIPPEN.</de>
+            <it>COMANDI:\n\nTOCCA L'ICONA DEI FRENI PER RALLENTARE.\n\nTOCCA LE FRECCE DIREZIONALI PER STERZARE.</it>
+            <fr>COMMANDES:\n\nTOUCHEZ L'ICÔNE FREIN POUR RALENTIR.\n\nTOUCHEZ LES FLÈCHES DIRECTIONNELLES À GAUCHE OU À DROITE POUR FAIRE TOURNER LA VOITURE.</fr>
+            <br>CONTROLES:\n\nTOQUE NO ÍCONE DA FREIO PARA DESACELERAR.\n\nTOQUE NAS SETAS DIRECIONAIS PARA DIRIGIR O CARRO.</br>
+            <nl>BESTURING:\n\nTIK HET REM ICOONTJE AAN OM AF TE REMMEN.\n\nTIK DE PIJLTJES AAN OM TE STUREN.</nl>
+            <no>KONTROLLER:\n\n RØR BREMSEIKONET FOR Å BREMSE.\n\n TRYKK PÅ RETNINGSPILER FOR Å STYRE BILEN.</no>
+        </string>
+        <string id="INSTRUCTIONS_CONTROLS_DESKTOP_TEXT" index="40">
+            <en>CONTROLS:\n\n8 OR NAVIGATION KEY DOWN - BRAKE\n\n4 OR NAVIGATION KEY LEFT - STEER LEFT\n\n6 OR NAVIGATION KEY RIGHT - STEER RIGHT</en>
+            <ru></ru>
+            <sk>controls keyboard</sk>
+            <es>CONTROLES:\n\n8 O BOTÓN DE NAVEGACIÓN HACIA ABAJO - FRENAR\n\n4 O BOTÓN DE NAVEGACIÓN HACIA LA IZQUIERDA - DESPLAZARSE HACIA LA IZQUIERDA\n\n6 O BOTÓN DE NAVEGACIÓN HACIA LA DERECHA - DESPLAZARSE HACIA LA DERECHA</es>
+            <de>STEUERUNG:\n\n8 ODER NAVIGATIONSTASTE NACH UNTEN - BREMSEN\n\n4 ODER NAVIGATIONSTASTE NACH LINKS - NACH LINKS FAHREN\n\n6 ODER NAVIGATIONSTASTE NACH RECHTS - NACH RECHTS FAHREN</de>
+            <it>COMANDI:\n\n8 O TASTO DI NAVIGAZIONE GIÙ - FRENA\n\n4 O TASTO DI NAVIGAZIONE SINISTRO - STERZA A SINISTRA\n\n6 O TASTO DI NAVIGAZIONE DESTRO - STERZA A DESTRA</it>
+            <fr>COMMANDES:\n\n8 OU TOUCHE DE NAVIGATION BASSE - FREINER\n\n4 OU TOUCHE DE NAVIGATION GAUCHE - TOURNER À GAUCHE\n\n6 OU TOUCHE DE NAVIGATION DROITE - TOURNER À DROITE</fr>
+            <br>CONTROLES:\n\n8 OU TECLA DE NAVEGAÇÃO PARA BAIXO - FREIO\n\n4 OU TECLA DE NAVEGAÇÃO ESQUERDA - DIRIGIR PARA A ESQUERDA\n\n6 OU TECLA DE NAVEGAÇÃO DIREITA - DIRIGIR PARA A DIREITA</br>
+            <nl>BESTURING:\n\n8 OF NAVIGATIE KEY DOWN - REM\n\n4 OF NAVIGATIEKNOP LINKS - LINKS STERKER\n\n6 OF NAVIGATIESLEUTOORRECHT - RECHTS VAN DE STEER</nl>
+            <no>KONTROLLER:\n\n8 ELLER NAVIGASJONS-TASTEN NED - BREMS\n\n4 ELLER NAVIGASJONS-TASTEN VENSTRE - SVING TIL VENSTRE\n\n6 ELLER NAVIGASJONS-TASTEN HØYRE - SVING TIL HØYRE</no>
+        </string>
+
+        <string id="COUNTRY" index="42">
+            <en>COUNTRY</en>
+            <es>CAMPO</es>
+            <de>LANDSCHAFT</de>
+            <it>CAMPAGNA</it>
+            <fr>CAMPAGNE</fr>
+            <br>CAMPO</br>
+            <ru>СТРАНА</ru>
+            <nl>LAND</nl>
+            <no>LAND</no>
+        </string>
+
+        <string id="39" index="43">
+            <en>CITY</en>
+            <es>CIUDAD</es>
+            <de>STADT</de>
+            <it>CITTÀ</it>
+            <fr>VILLE</fr>
+            <ru>ГОРОД</ru>
+            <br>CIDADE</br>
+            <nl>STAD</nl>
+            <no>BY</no>
+        </string>
+
+        <string id="40" index="44">
+            <en>DESERT</en>
+            <es>DESIERTO</es>
+            <de>WÜSTE</de>
+            <it>DESERTO</it>
+            <fr>DÉSERT</fr>
+            <ru>ПУСТЫНЯ</ru>
+            <br>DESERTO</br>
+            <nl>WOESTIJN</nl>
+            <no>ØRKEN</no>
+        </string>
+
+        <string id="41" index="45">
+            <en>SNOWY</en>
+            <es>NIEVE</es>
+            <de>SCHNEE</de>
+            <it>NEVE</it>
+            <fr>NEIGE</fr>
+            <ru>ЗАСНЕЖЕНО</ru>
+            <br>NEVE</br>
+            <nl>BESNEEUWD</nl>
+            <no>SNØ</no>
+        </string>
+
+        <string id="LANGUAGES_TEXT" index="50">
+            <en>LANGUAGE</en>
+            <es>IDIOMA</es>
+            <de>SPRACHE</de>
+            <it>LINGUA</it>
+            <fr>LANGUE</fr>
+            <br>LÍNGUA</br>
+            <ru>ЯЗЫК</ru>
+            <nl>TAAL</nl>
+            <no>SPRÅK</no>
+        </string>
+
+        <string id="BEST_TEXT" index="47">
+            <en>BEST</en>
+            <es>LO MEJOR</es>
+            <de>BESTLEISTUNG</de>
+            <it>MIGLIORE</it>
+            <fr>MEILLEUR</fr>
+            <br>MELHOR</br>
+            <ru>ЛУЧШИЙ</ru>
+            <nl>BESTE</nl>
+            <no>BESTE</no>
+        </string>
+
+    </strings>
+</stringresources>

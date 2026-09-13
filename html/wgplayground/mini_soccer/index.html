@@ -1,0 +1,236 @@
+<html style="--construct-scale: 0.6222222222222222;"><head>
+<!--  -->
+
+
+        <script src="https://gs.eponesh.com/sdk/gamepush.js?projectId=2887&amp;publicToken=lwyDBYatRYoLssLg5LBcmqDCgxIf0ZgX&amp;callback=onGPInit" async=""></script>
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Mini Soccer">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/cfc718504be4a1469526ae1ee1cd3671/wgplayground/a6d58e0764ea24464c3a6024a19d3a59.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/cfc718504be4a1469526ae1ee1cd3671/wgplayground/442eaabb40b181193dbea5edd0a4377d.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/cfc718504be4a1469526ae1ee1cd3671">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/onduck-games/mini-soccer">
+            <meta property="wgp:description" content="Mini Soccer is a fast-paced sports football game where you can challenge your friends or play with the CPU.Choose your favorite player and play against the CPU for the tournament or be the best of your friends in the versus mode. With players to choose from the best teams of the world, 3 game fields, and all the arcade fun in a single game.">
+            <meta property="wgp:instructions" content="Controls:- When playing against the computer:Right and left arrow keys: right, left: move.Up arrow key: jump.Z and X keys: hit.- When playing in the &quot;with a friend&quot; mode:Player 1: Arrows = move, Z/X = hit the ball.Player 2: WSAD = move, 1/2 = hit the ball.- On mobile (only sigle player): Use touch screen buttons.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/cfc718504be4a1469526ae1ee1cd3671/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="1280">
+            <meta property="wgp:height" content="720">
+            <meta property="wgp:rwidth" content="16">
+            <meta property="wgp:rheight" content="9">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="1.78">
+            <meta property="wgp:controls" content="eyImbGFycjsiOiJNb3ZlIGxlZnQiLCImZGFycjsiOiIiLCImcmFycjsiOiJNb3ZlIHJpZ2h0IiwiJnVhcnI7IjoiSnVtcCIsIloiOiJIaXQgdGhlIGJhbGwiLCJYIjoiSGl0IHRoZSBiYWxsIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUifSx7Im5hbWUiOiJTcG9ydHMifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="105/cfc718504be4a1469526ae1ee1cd3671">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+<meta charset="UTF-8">
+<title>Mini Soccer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta name="generator" content="Scirra Construct">
+	<meta name="author" content="InfinitGames">
+	<link rel="manifest" href="appmanifest.json">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><script type="module" src="https://play.wgplayground.com/game/cfc718504be4a1469526ae1ee1cd3671/scripts/c3runtime.js"></script><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style></head>
+<body class="wgNoLoader" style=""><img class="splash-bg fadein" src="https://static.wgplayground.com/cfc718504be4a1469526ae1ee1cd3671/wgplayground/442eaabb40b181193dbea5edd0a4377d.jpg">
+
+<script>
+if (location.protocol.substr(0, 4) === "file")
+{
+	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+}
+</script>
+	<script src="box2d.wasm.js"></script>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	<script src="scripts/register-sw.js" type="module"></script>
+
+
+
+
+<canvas width="1594" height="896" style="width: 797px; height: 448px; margin-left: 0px; margin-top: 55px;"></canvas><div class="c3-screen-reader-text" aria-live="polite"></div></body></html>

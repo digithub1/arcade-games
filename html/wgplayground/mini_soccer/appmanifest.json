@@ -1,0 +1,10 @@
+{
+	"name": "Mini Soccer",
+	"short_name": "Mini Soccer",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": []
+}
