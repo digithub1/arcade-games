@@ -1,0 +1,11 @@
+{
+	"name": "Block",
+	"short_name": "Block",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [],
+	"screenshots": []
+}
