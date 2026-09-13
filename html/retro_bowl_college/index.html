@@ -80,6 +80,24 @@
         </div>
 
         <!-- Run the game code -->
+        <script>
+function poki_loadbar(ctx, width, height, total, current, loadingscreen) {
+  if (ctx && ctx.fillStyle) {
+    ctx.fillStyle = "#000";
+    ctx.fillRect(0, 0, width, height);
+  }
+}
+function poki_init_raw() { return 1; }
+function poki_gameplay_start() {}
+function poki_gameplay_stop() {}
+function poki_commercial_break_raw(fn) { if (typeof fn === "function") fn(); }
+function poki_rewarded_break_raw(fn) { if (typeof fn === "function") fn(1); }
+function poki_happy_time() {}
+function poki_is_mobile() { return 0; }
+function poki_get_team_raw() { return ""; }
+function poki_set_team_raw() {}
+function poki_script_closure_raw(fn) { if (typeof fn === "function") fn(); }
+</script>
         <script type="text/javascript" src="html5game/RetroBowl.js"></script>
         <script>window.onload = GameMaker_Init;</script>
     </body>
