@@ -1,0 +1,271 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Princess Avatar">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/2a637d75733c495bbd99e7b2b2f99091/wgplayground/382ed1fe6e7430726ae51e1e781f703c.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/2a637d75733c495bbd99e7b2b2f99091/wgplayground/48f1cdd9e2bf3cde2b89cf28a1663c68.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/2a637d75733c495bbd99e7b2b2f99091">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/azalea-dolls/princess-avatar">
+            <meta property="wgp:description" content="Mix and match facial features and hairstyles to create new portraits of princess characters.">
+            <meta property="wgp:instructions" content="Browse through all the sections: facial features, hairstyles, clothes and accessories, in order to create your character.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/2a637d75733c495bbd99e7b2b2f99091/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="840">
+            <meta property="wgp:height" content="640">
+            <meta property="wgp:rwidth" content="21">
+            <meta property="wgp:rheight" content="16">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="1.31">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJCZWF1dHkifSx7Im5hbWUiOiJEcmVzcy11cCBhbmQgRmFzaGlvbiJ9XSwiY2hhcmFjdGVycyI6W119">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="53/2a637d75733c495bbd99e7b2b2f99091">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>PrincessAvatar</title>
+<!-- write your code here -->
+<style>
+  #animation_container, #_preload_div_ {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style>
+<script src="PrincessAvatar.js?1688330967701"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("2067821719B9C74C9C4873848F6EA30C");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	var preloaderDiv = document.getElementById("_preload_div_");
+	preloaderDiv.style.display = 'none';
+	canvas.style.display = 'block';
+	exportRoot = new lib.PrincessAvatar();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(true,'both',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+<style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+<body onload="init();" style="margin:0px;" class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/2a637d75733c495bbd99e7b2b2f99091/wgplayground/48f1cdd9e2bf3cde2b89cf28a1663c68.jpg">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:840px; height:640px">
+		<canvas id="canvas" width="840" height="640" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);" wg-game-orientation="wg-landscape-game"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:840px; height:640px; position: absolute; left: 0px; top: 0px; display: none;">
+		</div>
+	</div>
+    <div id="_preload_div_" style="position:absolute; top:0; left:0; display: inline-block; height:640px; width: 840px; text-align: center;">	<span style="display: inline-block; height: 100%; vertical-align: middle;"></span>	<img src="images/_preloader.gif?1688330967702" style="vertical-align: middle; max-height: 100%"></div>
+
+
+
+<img src="images/PrincessAvatar_atlas_P_.png?1688330965425" style="visibility: hidden;"></body></html>
