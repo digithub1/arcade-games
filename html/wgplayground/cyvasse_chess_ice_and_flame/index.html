@@ -1,0 +1,267 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Cyvasse: Chess ice and flame">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/e9f8cb16ee026db7cbc6e6f1b4e0c9c1/wgplayground/e0c8fb25b47300d02ff5d08741a03c39.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/e9f8cb16ee026db7cbc6e6f1b4e0c9c1/wgplayground/97ee0a2755929d4a1de30d45be84df4b.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/e9f8cb16ee026db7cbc6e6f1b4e0c9c1">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/kirlanik/cyvasse-chess-ice-and-flame">
+            <meta property="wgp:description" content="The game is between two players who take turns making their moves.The pieces cannot complete their movement on the field in which the mountain, their other piece, or the opponent's piece is located if it cannot be eaten. The figures, except for the bishop figure, can move through fields occupied by other figures of the same color - their own figures, but they cannot complete their movement on these fields. To capture an opponent's piece, a player follows the same rules as when making a normal move, except that he must move his piece in a straight path (i.e., in only one direction) and must complete his movement on the field occupied by a piece of his opponent's color, which is called the captured piece. In addition, the captured piece must be available for capture - it must not have numbers with the designation of armor. After the capture is completed, the captured piece is removed from the game board.">
+            <meta property="wgp:instructions" content="The game can be played with artificial intelligence, together with another person on the same device, or with a rival online in multiplayer mode.Basic conceptsAttack — the relative position of the pieces in a straight line, leading to a decrease in armor units.Armor is a characteristic of a figure that is reduced by an attack, the positive value of which prevents the enemy figure from capturing and eating the figure.Capture is an opportunity to move your piece into the field where the opponent's piece is located, which does not have armor.ArmorEach piece has an armor class and an attack range, which are determined by its type.An opponent's piece is considered to be attacked if there is a direct route to it and the distance to it is equal to or less than the capture range of the attacking piece. Attacking through the field where the mountain is located is not possible.Attacking a piece reduces the value of the piece's armor. Pieces without armor can be taken when an opponent's piece is moved onto them.The armor class of a piece determines how many enemy pieces must attack a piece in order for it to be captured: pieces with heavy armor must be attacked by at least two pieces, pieces with light armor by at least one, and unarmored pieces can be captured without attacking at all.A capture can also be made by a piece that does not attack if the captured piece has no armor left.Mountains and waterNo figure can stop in the fields where the mountains are located. Only a dragon can pass through the fields where the mountain is located. The catapult can make a shot through the mountains.Fields of water stop the movement of figures passing through these fields. A piece that enters a field of water can continue moving - it can only leave the water on the player's next turn.Completing the gameThe player loses if:- All the kings of this player have been captured;- all the pieces of this player are at the tower;Types of shapesThe ten types of shapes are listed below. The type of a figure determines its armor class, movement, and attack range. There are also special rules related to each type.Militia — Armor: 1, Move: 1, Attack: 1.Spearman — Armor: 1, Movement: 1, Attack: 1. The attack is carried out only two fields ahead. The opponent's pieces cannot pass through any field in front of the spearman in one turn. Only a dragon can fly over these fields in one turn.Rider — Armor: 1, Movement: 3, Attack: 1.Knight — Armor: 2, move: 2, Attack: 1.Elephant armor: 2, Move: 1, Attack: 2. Cannot move through fields containing its own shapes.Crossbowman — Armor: 0, Movement: 2, Attack: 3. Cannot capture enemy pieces.Trebuchet armor: 0, Move: 1, Capture/Attack: 4, minimum 2.Dragon Armor: 2, Move: 4, Attack: 2. Can move through fields with mountains.Armor tower: 2, does not move, friendly figures in neighboring fields become invulnerable.King — Armor: 1, Move: 1, Attack: 1.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/e9f8cb16ee026db7cbc6e6f1b4e0c9c1/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiIyUGxheWVycyJ9LHsibmFtZSI6IkNhcmQgJiBCb2FyZCJ9XSwiY2hhcmFjdGVycyI6W119">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="4wu3fovspuk9tl7k/e9f8cb16ee026db7cbc6e6f1b4e0c9c1">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>Kaywassa: Chess of ice and flame</title><script async="">!function(e){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src="https://universal.wgplayer.com/tag/?lh=play.wgplayground.com&wp=/game/testing-environment/&ws=",m.parentNode.insertBefore(a,m)}(document)</script><script>function _sendServer(e,o){try{const n={};n.app_id=window.objSettings.appId,n.store="WGPlayground",n.lang=(navigator.language??navigator.userLanguage??"en").substr(0,2),n.code=e,o&&(n.val=o),fetch("https://do-apps.com/log.php",{method:"POST",body:new URLSearchParams(n)})}catch(e){}}window.storeWGPlayground=!0,document.addEventListener("DOMContentLoaded",()=>{window.webReady=!0,document.dispatchEvent(new CustomEvent("webready")),document.addEventListener("show-interstitial-ads",()=>{((window.preroll??{}).config??{}).loaderObjectName&&(window.playSoundStop=!0,document.dispatchEvent(new CustomEvent("play-sound-stop")),window[window.preroll.config.loaderObjectName].refetchAd(()=>{window.playSoundStop=!1}))}),((window.preroll??{}).config??{}).loaderObjectName&&window[window.preroll.config.loaderObjectName].registerRewardCallbacks({onReady:()=>{window.openAds=!0},onSuccess:()=>{window.playSoundStop=!1,document.dispatchEvent(new CustomEvent("ads-rewarded-ok"))},onFail:()=>{window.playSoundStop=!1,document.dispatchEvent(new CustomEvent("ads-rewarded-ok"))}}),document.addEventListener("show-rewarded-ads",e=>{((window.preroll??{}).config??{}).loaderObjectName&&(window.playSoundStop=!0,document.dispatchEvent(new CustomEvent("play-sound-stop")),window[window.preroll.config.loaderObjectName].showRewardAd())}),this._sendServer("start"),document.addEventListener("report-event",e=>{const{code:o,val:n}=e.detail;this._sendServer(o,n)})})</script><meta name="version" content="3.26.6"><script defer="defer" src="./js/runtime-789a0d1e417ee20909d8.js"></script><script defer="defer" src="./js/vendors-e26c3d068c4a39009573.js"></script><script defer="defer" src="./js/main-91cb6a4cbc2340752199.js"></script><link href="./css/cfffa07ada7917e1c796.css" rel="stylesheet"><link href="./css/baf9aba9e66201116b0f.css" rel="stylesheet"><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head><body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/e9f8cb16ee026db7cbc6e6f1b4e0c9c1/wgplayground/97ee0a2755929d4a1de30d45be84df4b.jpg"><kirs-onboarding></kirs-onboarding><div id="game-board"><div id="btn-container-list-btn-first" class="btn-container-list-btn"><div id="btn-container-first" class="btn-container"><kirs-company-switch-map></kirs-company-switch-map><kirs-company-switch-group></kirs-company-switch-group><kirs-company-build></kirs-company-build><kirs-emoji-animation></kirs-emoji-animation><kirs-board-available-time></kirs-board-available-time><kirs-surrender></kirs-surrender><kirs-offer-draw-ai></kirs-offer-draw-ai><kirs-reload></kirs-reload><kirs-undo-move></kirs-undo-move><kirs-help-ai></kirs-help-ai><kirs-player1-player2></kirs-player1-player2><kirs-offer-draw></kirs-offer-draw><kirs-add-time></kirs-add-time><kirs-chat></kirs-chat><kirs-send-emoji></kirs-send-emoji><kirs-watch-user></kirs-watch-user><kirs-network-player></kirs-network-player></div></div><kirs-game-board></kirs-game-board><div id="btn-container-list-btn-second" class="btn-container-list-btn"><div id="btn-container-second" class="btn-container"><kirs-vk-menu></kirs-vk-menu><kirs-privacy-policy></kirs-privacy-policy><kirs-help></kirs-help><kirs-alarm-on></kirs-alarm-on><kirs-user-profile ismy="true"></kirs-user-profile><kirs-game-type-ai class="btn-mode-game-group-first"></kirs-game-type-ai><kirs-game-type-human class="btn-mode-game-group"></kirs-game-type-human><kirs-game-type-network class="btn-mode-game-group"></kirs-game-type-network><kirs-multiplayer-active-party class="btn-mode-game-group"></kirs-multiplayer-active-party><kirs-watch-game class="btn-mode-game-group-last"></kirs-watch-game><kirs-party-log></kirs-party-log><kirs-leader-board></kirs-leader-board><kirs-chat-history></kirs-chat-history><kirs-awards></kirs-awards><kirs-sound-volume></kirs-sound-volume><kirs-voice-message></kirs-voice-message><kirs-review></kirs-review><kirs-yandex-review></kirs-yandex-review><kirs-more-app></kirs-more-app><kirs-support></kirs-support><kirs-ya-review></kirs-ya-review><kirs-ya-add-to-home-screen></kirs-ya-add-to-home-screen><kirs-ok-show-rating-dialog></kirs-ok-show-rating-dialog><kirs-ok-join-group></kirs-ok-join-group><kirs-ok-request-desktop-icon></kirs-ok-request-desktop-icon><kirs-ok-show-invite></kirs-ok-show-invite></div></div></div><kirs-vk-start-menu></kirs-vk-start-menu>
+
+</body></html>
