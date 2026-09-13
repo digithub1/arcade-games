@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    background-color: black;
+    /* Remove scroll */
+    overflow: hidden;
+    /* Remove IOS long-tap */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* Background for aspect ratio. */
+    background-image: url("../background.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+img {
+    pointer-events: none;
+}
+
+#mirra-games-logo {
+    display: flex;
+    margin-top: -5px;
+}
+
+#mirra-games-logo-image {
+    display: inline-block;
+    width: 180px;
+    margin: auto;
+}
+
+#mirra-games-logo-gif {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-right: -25px;
+}
+
+canvas {
+    display: block;
+}
+
+canvas:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+#unity-container {
+    width: 100%;
+    height: 100%;
+}
+
+#unity-canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#loading-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#unity-loading-bar {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#unity-logo {
+    text-align: center;
+}
+
+#unity-logo img {
+    width: 256px;
+    height: 256px;
+    border-radius: 8px;
+    border: 1px solid white;
+    margin-bottom: 16px;
+}
+
+#unity-progress-bar-empty {
+    width: 256px;
+    height: 40px;
+    margin-bottom: 16px;
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+}
+
+.light #unity-progress-bar-empty {
+    border-color: black;
+}
+
+.light #unity-progress-bar-full {
+    background: black;
+}
+
+.spinner {
+    display: none;
+}
+
+@media (max-width: 400px), (max-height: 400px) {
+    #unity-logo img {
+        width: 135px;
+        height: 135px;
+        border-radius: 8px;
+        border: 1px solid white;
+        margin-bottom: 8px;
+    }
+    #unity-progress-bar-empty {
+        width: 135px;
+        height: 20px;
+        margin-bottom: 8px;
+        text-align: left;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 2px;
+    }
+    #mirra-games-logo {
+        display: flex;
+        margin-top: 0;
+    }
+    #mirra-games-logo-image {
+        display: inline-block;
+        width: 100px;
+        margin: auto;
+    }
+    #mirra-games-logo-gif {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        margin-right: -11px;
+    }
+}
