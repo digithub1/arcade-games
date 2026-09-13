@@ -1,0 +1,17 @@
+{
+	"name": "Football League",
+	"short_name": "Football League",
+	"description": "Football League is an intense, action-packed mobile football game that brings the excitement of the pitch to your fingertips! Dive into immersive gameplay, with smooth controls and realistic physics, as you lead your team to victory across competitive leagues. Choose your team, strategize your play, and score spectacular goals to climb the ranks. Customize your players, unlock power-ups, and challenge players from around the world to become the ultimate Football League champion! Perfect for football fans and casual gamers alike, Football League offers quick matches, tournament modes, and endless fun!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

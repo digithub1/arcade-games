@@ -1,0 +1,10 @@
+{
+	"name": "Frosty Connection Quest",
+	"short_name": "Frosty Connection Quest",
+	"description": "Super fun puzzle game.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}
