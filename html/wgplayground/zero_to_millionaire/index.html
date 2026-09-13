@@ -1,0 +1,518 @@
+<html lang="ru"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Zero to Millionaire!">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/a4d4f0aeb813081a7d62fcbfbf0c8471/wgplayground/656895cf1b3349768c585c0bb7cb90c7.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/a4d4f0aeb813081a7d62fcbfbf0c8471/wgplayground/01fb0eeba3bfcb48af1f8346c8b5fd05.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/a4d4f0aeb813081a7d62fcbfbf0c8471">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/zero-to-millionaire">
+            <meta property="wgp:description" content="&quot;Zero to Millionaire!&quot; is an immersive life simulator where you rise from poverty to wealth! Start with simple jobs, earn your first money, and work your way up: open businesses, buy luxury houses, sports cars, stylish clothes, and build romantic relationships. Upgrade your skills, make life choices, and build a career or entrepreneurial empire. Live the life you’ve always dreamed of!How far can you climb in Real Life?">
+            <meta property="wgp:instructions" content="Start the game with limited funds. Get a job, earn money, and spend wisely. Gradually invest in businesses, upgrade your home, buy vehicles, and develop your character.Tips:• Work regularly for stable income.• Balance work, rest, and relationships.• Invest in profitable businesses and upgrade often.• Build relationships, improve charisma and intelligence.• Aim for a better lifestyle and ultimate success.You control your destiny. Build your own path to wealth!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/a4d4f0aeb813081a7d62fcbfbf0c8471/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJTaW11bGF0aW9uIn0seyJuYW1lIjoiU3RyYXRlZ3kifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/a4d4f0aeb813081a7d62fcbfbf0c8471">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>IdleGuy</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+
+  <!-- Pause overlay styles -->
+  <style>
+    #pauseOverlay {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      z-index: 2147483647;
+      text-align: center;
+      padding: 24px;
+      font: 16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: pointer;
+    }
+
+    #pauseOverlay.visible {
+      display: flex;
+    }
+
+    #pauseOverlay .card {
+      max-width: min(90vw, 480px);
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    #pauseOverlay h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    #pauseOverlay p {
+      margin: 0 0 14px;
+      opacity: .95;
+    }
+
+    #pauseOverlay .hint {
+      opacity: .8;
+      font-size: 13px;
+    }
+
+    #pauseOverlay .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 1px solid #3a3a3a;
+      background: #1e1e1e;
+    }
+  </style>
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+
+<body class="dark wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/a4d4f0aeb813081a7d62fcbfbf0c8471/wgplayground/01fb0eeba3bfcb48af1f8346c8b5fd05.jpg">
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" wg-game-orientation="wg-portrait-game" style="width: 393px; height: 699px;"></canvas>
+  </div>
+
+  <div id="loading-cover" style="">
+    <div id="unity-loading-bar">
+      <div id="unity-logo"><img src="logo.png" alt="logo"></div>
+      <div id="unity-progress-bar-empty" style="display:none;">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <div id="unity-fullscreen-button" style="display:none;"></div>
+
+  <!-- Pause overlay -->
+  <div id="pauseOverlay" aria-hidden="true" role="button" tabindex="0" aria-label="Paused">
+    <div class="card">
+      <h1>Paused</h1>
+      <p>Click the screen to continue!</p>
+      <div class="hint">If the sound didn’t resume — tap/click again.</div>
+      <div class="btn" aria-label="Continue">Continue</div>
+    </div>
+  </div>
+
+  <script>
+    const hideFullScreenButton = "1";
+    const buildUrl = "Build";
+    const loaderUrl = buildUrl + "/BUILD.loader.js";
+    const config = {
+      dataUrl: buildUrl + "/BUILD.data.unityweb",
+      frameworkUrl: buildUrl + "/BUILD.framework.js.unityweb",
+      codeUrl: buildUrl + "/BUILD.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "LambGameDev",
+      productName: "IdleGuy",
+      productVersion: "0.0.0.3",
+    };
+
+    const container = document.querySelector("#unity-container");
+    const canvas = document.querySelector("#unity-canvas");
+    const loadingCover = document.querySelector("#loading-cover");
+    const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+    const progressBarFull = document.querySelector("#unity-progress-bar-full");
+    const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+    const spinner = document.querySelector(".spinner");
+    const pauseOverlay = document.getElementById("pauseOverlay");
+
+    (function initI18n() {
+      const SUPPORTED = ["ru", "en", "it", "tr", "de", "fr"];
+
+      function normLang(l) {
+        if (!l) return null;
+        const short = String(l).toLowerCase().split("-")[0];
+        return SUPPORTED.includes(short) ? short : null;
+      }
+
+      // 1) URL: _gp_lang (GamePush) → lang
+      const url = new URL(location.href);
+      const qp_gp = normLang(url.searchParams.get("_gp_lang"));
+      const qp_std = normLang(url.searchParams.get("lang"));
+      const qp = qp_gp || qp_std;
+
+      // 2) localStorage (оба ключа на всякий случай)
+      const stored_gp = normLang(localStorage.getItem("_gp_lang"));
+      const stored_std = normLang(localStorage.getItem("lang"));
+      const stored = stored_gp || stored_std;
+
+      // 3) язык браузера
+      const nav = normLang(navigator.language || navigator.userLanguage);
+
+      // Итоговый выбор по приоритету
+      const lang = qp || stored || nav || "en";
+
+      // Если в URL явный выбор — перезапишем хранилище (чтобы сразу сработало)
+      if (qp) {
+        localStorage.setItem("_gp_lang", lang);
+        localStorage.setItem("lang", lang);
+      } else if (!stored) {
+        // Если ещё не было сохранения — запомним автоопределённый
+        localStorage.setItem("_gp_lang", lang);
+        localStorage.setItem("lang", lang);
+      }
+
+      // Определим «tap/click» в зависимости от устройства
+      const isTouchPrimary = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+
+      const ACTION = {
+        ru: isTouchPrimary ? "Нажмите" : "Кликните",
+        en: isTouchPrimary ? "Tap" : "Click",
+        it: isTouchPrimary ? "Tocca" : "Fai clic",
+        tr: isTouchPrimary ? "Dokunun" : "Tıklayın",
+        de: isTouchPrimary ? "Tippe" : "Klicke",
+        fr: isTouchPrimary ? "Touchez" : "Cliquez"
+      };
+
+      const T = {
+        ru: {
+          title: "Пауза",
+          text: `${ACTION.ru} на экран, чтобы продолжить!`,
+          hint: "Если звук не возобновился — нажмите ещё раз.",
+          btn: "Продолжить",
+          titleTag: "Игра"
+        },
+        en: {
+          title: "Paused",
+          text: `${ACTION.en} the screen to continue!`,
+          hint: "If the sound didn’t resume — tap/click again.",
+          btn: "Continue",
+          titleTag: "Game"
+        },
+        it: {
+          title: "In pausa",
+          text: `${ACTION.it} sullo schermo per continuare!`,
+          hint: "Se l’audio non riprende, tocca/fai clic di nuovo.",
+          btn: "Continua",
+          titleTag: "Gioco"
+        },
+        tr: {
+          title: "Duraklatıldı",
+          text: `Devam etmek için ekrana ${isTouchPrimary ? "dokunun" : "tıklayın"}!`,
+          hint: "Ses devam etmediyse, tekrar deneyin.",
+          btn: "Devam et",
+          titleTag: "Oyun"
+        },
+        de: {
+          title: "Pausiert",
+          text: `${isTouchPrimary ? "Zum Fortfahren den Bildschirm berühren" : "Zum Fortfahren klicken"}!`,
+          hint: "Wenn der Ton nicht fortgesetzt wurde, erneut tippen/klicken.",
+          btn: "Weiter",
+          titleTag: "Spiel"
+        },
+        fr: {
+          title: "Pause",
+          text: `${ACTION.fr} l’écran pour continuer !`,
+          hint: "Si le son ne reprend pas, touchez/cliquez à nouveau.",
+          btn: "Continuer",
+          titleTag: "Jeu"
+        }
+      };
+
+      function apply() {
+        const dict = T[lang] || T.en;
+
+        const h1 = document.querySelector("#pauseOverlay h1");
+        const p = document.querySelector("#pauseOverlay p");
+        const hint = document.querySelector("#pauseOverlay .hint");
+        const btn = document.querySelector("#pauseOverlay .btn");
+        const titleTag = document.querySelector("title");
+
+        if (h1) h1.textContent = dict.title;
+        if (p) p.textContent = dict.text;
+        if (hint) hint.textContent = dict.hint;
+        if (btn) btn.textContent = dict.btn;
+
+        // Меняем <title>, если он пуст/плейсхолдер
+        if (titleTag && (!titleTag.textContent || !/\S/.test(titleTag.textContent))) {
+          titleTag.textContent = dict.titleTag;
+        }
+
+        // ARIA
+        const overlay = document.getElementById("pauseOverlay");
+        if (overlay) overlay.setAttribute("aria-label", dict.title);
+        if (btn) btn.setAttribute("aria-label", dict.btn);
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", apply, { once: true });
+      } else {
+        apply();
+      }
+    })();
+
+    // ----------- Фит 9:16 (портрет) -----------
+    function fit9x16() {
+      const vw = window.innerWidth, vh = window.innerHeight;
+      let h = vh;
+      let w = Math.round(vh * 9 / 16);
+      if (w > vw) { w = vw; h = Math.round(vw * 16 / 9); }
+      canvas.style.width = w + "px";
+      canvas.style.height = h + "px";
+    }
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+      config.devicePixelRatio = Math.min(2, window.devicePixelRatio || 1);
+    } else {
+      config.devicePixelRatio = Math.min(2, window.devicePixelRatio || 1);
+    }
+
+
+    loadingCover.style.display = "";
+    window.addEventListener("resize", fit9x16, { passive: true });
+    window.addEventListener("orientationchange", fit9x16, { passive: true });
+    fit9x16();
+
+    // ---- вспомогательные для паузы ----
+    function getUnityAudioContext() {
+      const ui = window.unityInstance;
+      return ui?.audioContext
+        || ui?.audio?.context
+        || ui?.Module?.SDL2?.audioContext
+        || null;
+    }
+    function showPauseOverlay() { pauseOverlay.classList.add("visible"); }
+    function hidePauseOverlay() { pauseOverlay.classList.remove("visible"); }
+
+    function resumeUnityIfNeeded() {
+      try {
+        const ui = window.unityInstance;
+        if (ui?.Module) {
+          if (typeof ui.Module.resumeMainLoop === "function") ui.Module.resumeMainLoop();
+          if (typeof ui.Module.setPause === "function") ui.Module.setPause(0);
+          if (typeof ui.Module.resume === "function") ui.Module.resume();
+        }
+        const ctx = getUnityAudioContext();
+        if (ctx && ctx.state === "suspended" && typeof ctx.resume === "function") {
+          ctx.resume().catch(() => { });
+        }
+      } catch (e) { }
+      hidePauseOverlay();
+    }
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) showPauseOverlay(); else resumeUnityIfNeeded();
+    });
+    window.addEventListener("focus", resumeUnityIfNeeded);
+    window.addEventListener("pageshow", resumeUnityIfNeeded);
+    window.addEventListener("blur", showPauseOverlay, { passive: true });
+
+    pauseOverlay.addEventListener("click", resumeUnityIfNeeded);
+    pauseOverlay.addEventListener("pointerdown", resumeUnityIfNeeded, { passive: true });
+
+    const unlockOnce = () => {
+      resumeUnityIfNeeded();
+      document.removeEventListener("pointerdown", unlockOnce);
+      document.removeEventListener("keydown", unlockOnce);
+    };
+    document.addEventListener("pointerdown", unlockOnce, { passive: true });
+    document.addEventListener("keydown", unlockOnce);
+
+    // ---------- Загрузка Unity loader ----------
+    const script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        spinner.style.display = "none";
+        progressBarEmpty.style.display = "";
+        progressBarFull.style.width = `${(progress * 100) | 0}%`;
+      }).then((unityInstance) => {
+        window.unityInstance = unityInstance;
+        loadingCover.style.display = "none";
+        fit9x16();
+        const canFullscreen = ["exitFullscreen", "webkitExitFullscreen", "mozCancelFullScreen", "msExitFullscreen"]
+          .some(k => k in document);
+        if (canFullscreen && !hideFullScreenButton) {
+          fullscreenButton.style.display = "";
+          fullscreenButton.onclick = () => unityInstance.SetFullscreen(1);
+        }
+        resumeUnityIfNeeded();
+      }).catch((msg) => alert(msg));
+    };
+    document.body.appendChild(script);
+  </script><script src="Build/BUILD.loader.js"></script>
+
+
+
+
+
+</body></html>
