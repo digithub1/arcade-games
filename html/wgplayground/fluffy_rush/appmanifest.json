@@ -1,0 +1,36 @@
+{
+	"name": "Fluffy Rush",
+	"short_name": "Fluffy Rush",
+	"description": "Fluffy Rush is an online game that you can play for free. It is a platformer game with cute graphics and simple controls. The objective of the game is to reach the end of each level as fast as possible. There are also secret areas to find and bonus items to collect. Can you beat all the levels and become the ultimate Fluffy Rush champion? Play now and find out!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

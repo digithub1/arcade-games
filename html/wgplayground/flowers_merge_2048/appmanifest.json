@@ -1,0 +1,11 @@
+{
+	"name": "Flowers Merge 2048",
+	"short_name": "Flowers Merge 2048",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

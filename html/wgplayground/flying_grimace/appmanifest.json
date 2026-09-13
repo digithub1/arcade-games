@@ -1,0 +1,36 @@
+{
+	"name": "Flying Grimace",
+	"short_name": "Flying Grimace",
+	"description": "Flying Grimace is a fast-paced arcade shooting game where players control a spaceship and shoot down waves of flying Grimaces. The game is set in a variety of colorful and challenging environments, and players must use their skills to dodge enemy fire and destroy as many Grimaces as possible. Flying Grimace is a challenging and addictive game that is sure to test players' skills. The game is perfect for fans of arcade shooting games and anyone who loves a good challenge.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

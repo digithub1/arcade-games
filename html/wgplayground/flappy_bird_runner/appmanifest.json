@@ -1,0 +1,36 @@
+{
+	"name": "Flappy Bird Runner",
+	"short_name": "Flappy Bird Runner",
+	"description": "Flappy Bird Runner is a fun and exciting arcade game. Play this cute and addictive game today. Flappy Bird Runner is one of the most popular arcade games on the planet, and now it's available on your mobile device! This cute and addictive game offers a new experience that's sure to keep you entertained for hours on end. With Flappy Bird Runner, you can now play for real, experiencing the excitement and excitement that comes with being a part of the Flappy Bird community. So what are you waiting for? download Flappy Bird Runner today!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Floppy Penguin",
+	"short_name": "Floppy Penguin",
+	"description": "Floppy Penguin is a free online game that is perfect for players of all ages. With its simple controls and easy-to-follow gameplay, Floppy Penguin is a great way to pass the time and have some fun. At Floppy Penguin, we pride ourselves on providing high-quality, family-friendly online gaming experiences. Our games are free to play, and we believe that gaming should be accessible to everyone. Whether you're a seasoned gamer or just getting started, we hope you'll give our games a try. Thank you for your interest in Floppy Penguin!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
