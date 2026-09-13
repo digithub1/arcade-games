@@ -1,0 +1,305 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="GT Drift Most Wanted">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/954e696c807d91f2af60e84997f7c933/wgplayground/048ea536143e7f513155a7309a60fe9a.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/954e696c807d91f2af60e84997f7c933/wgplayground/8109219d81bcd3890427c73eb0cffaa7.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/954e696c807d91f2af60e84997f7c933">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/breymantech/gt-drift-most-wanted">
+            <meta property="wgp:description" content="GT Drift Most Wanted is an intense drifting game where players take control of high-performance GT cars and slide through challenging tracks to become the ultimate drift king. Master precision drifting, execute smooth transitions, and rack up points with stylish maneuvers. Compete in thrilling races, evade relentless police chases, and unlock powerful new cars as you climb the ranks. With realistic car physics, dynamic environments, and high-speed action, GT Drift Most Wanted delivers the ultimate drift racing experience. Do you have what it takes to dominate the streets and become the most wanted drifter?">
+            <meta property="wgp:instructions" content="A/D or Arrow keys to move">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/954e696c807d91f2af60e84997f7c933/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="450">
+            <meta property="wgp:height" content="600">
+            <meta property="wgp:rwidth" content="3">
+            <meta property="wgp:rheight" content="4">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0.75">
+            <meta property="wgp:controls" content="eyJBIjoiIiwiRCI6IiIsIiZsYXJyOyI6IiIsIiZyYXJyOyI6IiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUifSx7Im5hbWUiOiJBZHZlbnR1cmUifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="kwzljbyzxpd4myzu/954e696c807d91f2af60e84997f7c933">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | GT DRift Most wanted</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+  <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><script src="gamepush.js"></script></head>
+  <body class="wgNoLoader">
+    <div id="unity-container">
+      <canvas id="unity-canvas" width="450" height="600" tabindex="-1"></canvas>
+      <div id="unity-loading-bar" style="display: block;">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("ServiceWorker.js");
+        }
+      });
+
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/html5.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/html5.data",
+        frameworkUrl: buildUrl + "/html5.framework.js",
+        codeUrl: buildUrl + "/html5.wasm",
+        symbolsUrl: buildUrl + "/html5.symbols.json",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "t",
+        productName: "GT DRift Most wanted",
+        productVersion: "1.0",
+        showBanner: unityShowBanner,
+      };
+
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+        }).catch((message) => {
+          console.log(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script><script src="Build/html5.loader.js"></script>
+  
+
+
+
+</body></html>

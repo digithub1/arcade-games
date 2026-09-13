@@ -1,0 +1,36 @@
+{
+	"name": "Halloween Circle",
+	"short_name": "Halloween Circle",
+	"description": "Come try your hand at our online Halloween game, Circle. See how high of a score you can get by jumping on the line with the circle. The Halloween Circle online game is a fun way to get into the Halloween spirit. In the game, you jump on a line with a circle and try to break the highest record.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
