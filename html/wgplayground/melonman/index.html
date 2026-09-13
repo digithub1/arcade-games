@@ -1,0 +1,225 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Melonman">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/3cb9a10c3253aefbb80b4459f8aa8367/wgplayground/aeaedb12649e087ddfed1ec754f7db39.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/3cb9a10c3253aefbb80b4459f8aa8367/wgplayground/cf1a326fcf8c2526de6b6d421649b5d4.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/3cb9a10c3253aefbb80b4459f8aa8367">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/melon-gaming/melonman">
+            <meta property="wgp:description" content="When you are so desperate trying to be fit but all your effort doesn't come into fruition.One brilliant idea strikes you, run for your life.Running for many many kilometers will surely turn your body into steel.">
+            <meta property="wgp:instructions" content="Use the mouse to navigate the game and jump the player.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/3cb9a10c3253aefbb80b4459f8aa8367/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/3cb9a10c3253aefbb80b4459f8aa8367/wgplayground/20ab4629712542b3dc67a3bb500328a6.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="1024">
+            <meta property="wgp:height" content="512">
+            <meta property="wgp:rwidth" content="2">
+            <meta property="wgp:rheight" content="1">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="2">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiVXNlIHRoZSBtb3VzZSB0byBuYXZpZ2F0ZSB0aGUgZ2FtZSBhbmQganVtcCB0aGUgcGxheWVyLiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUifSx7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="93/3cb9a10c3253aefbb80b4459f8aa8367">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+		<title>melonJS Game</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="index.css">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="full-screen" content="yes">
+		<meta name="screen-orientation" content="landscape">
+		<link rel="apple-touch-icon" href="icons/touch-icon-iphone-60x60.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad-76x76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152">
+		
+	<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><script src="gamepush.js"></script></head>
+	<body class="wgNoLoader">
+		<!-- Canvas placeholder -->
+		<div id="screen">
+			<img id="loading-game-logo" src="./data/logo.png" style="display: none;">
+		</div>
+
+		<!-- melonJS Library -->
+		<script type="text/javascript" src="lib/melonjs.js"></script>
+
+		<script type="text/javascript" src="js/game.js"></script>
+		<script type="text/javascript" src="js/resources.js"></script>
+		<script type="text/javascript" src="js/script/const.js"></script></body></html>
