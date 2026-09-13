@@ -1,0 +1,21 @@
+.joystick-container {
+  position: absolute;
+  /*top: 50vh;
+  transform: translateY(-50%);*/
+  bottom: 4vh;
+  left: 3vw;
+  width: 150px;
+    height: 150px;
+    border: 2px solid #00BBE5;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #004f60;
+  }
+
+  .joystick {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(0, 187, 229,0.5);
+    border-radius: 50%;
+    box-shadow:0 0 10px #00BBE5;
+  }
