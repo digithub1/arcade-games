@@ -1,0 +1,42 @@
+{
+	"name": "Tricky Castle",
+	"short_name": "Tricky Castle",
+	"description": "0.х.х это dev сборки\n1.х.х это prod сборки\n\n0.1.1 - первая сборка с первыми шагами в аналитике\n0.1.2 - вторая сборка с выражениями в аналитике \n0.1.3 - третья сборка с выражениями в аналитике \n1.0.0 - первая прод версия\n1.1.0 - вторая прод версия (после первой модерации)\n1.2.0 - третья прод версия (после второй модерации)\n\nGP_1.0.0 - первая версия, заливается первый раз на хостинг ГП",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/Иконка-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/Иконка-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
