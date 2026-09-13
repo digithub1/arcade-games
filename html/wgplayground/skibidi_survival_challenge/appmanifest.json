@@ -1,0 +1,36 @@
+{
+	"name": "Skibidi Survival Challenge",
+	"short_name": "Skibidi Survival Challenge",
+	"description": "Skibidi Survival Challenge is a fast-paced, endless roadrunner survival game. In this game, you must control a Skibidi dancer as they run down a never-ending road, dodging obstacles and collecting coins. The longer you survive, the more points you earn. But be careful! If you hit an obstacle or fall off the road, it's game over.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
