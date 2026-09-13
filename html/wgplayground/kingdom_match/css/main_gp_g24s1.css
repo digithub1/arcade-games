@@ -1,0 +1,47 @@
+html, body  {
+    height:100%;
+    width:100%;
+    background: url(../images/g24s1_main_bg.jpg) 100% 100% no-repeat;
+    background-size: cover;
+}
+body {
+    margin:0;
+    padding:0;
+    overflow:auto;
+    text-align:center;
+    background-color: #FFFFFF;
+}
+object:focus { outline:none; }
+
+.navBtn{
+    opacity: 0;
+    transition: 300ms;
+}
+.navBtn:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.gameContainer{
+    width: 100%;
+    margin:0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.gameFrameContainer{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.totalContainer{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
