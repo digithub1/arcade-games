@@ -1,0 +1,27 @@
+{
+  "name": "Halloween Matching Puzzles",
+  "short_name": "Halloween Matching Puzzles",
+  "description": "It is simple yet interesting game in which you slide the blocks towards another identical block to eliminate them from the board.",
+  "start_url": "index.html",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display": "fullscreen",
+  "orientation": "landscape",  
+  "icons": [
+  {
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}

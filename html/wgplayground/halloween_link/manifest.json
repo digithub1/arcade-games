@@ -1,0 +1,27 @@
+{
+  "name": "Halloween Link",
+  "short_name": "Halloween Link",
+  "description": "Connect similar items which can be connected with 3 or less connected lines.",
+  "start_url": "halloween_link.html",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display": "fullscreen",
+  "orientation": "landscape",  
+  "icons": [
+  {
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}

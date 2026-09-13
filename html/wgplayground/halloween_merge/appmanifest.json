@@ -1,0 +1,42 @@
+{
+	"name": "Halloween Merge",
+	"short_name": "Halloween Merge",
+	"description": "Merge spooky items, unlock haunted treasures, and celebrate Halloween in this addictive puzzle game. Get ready for a spooky adventure with Halloween Merge: Haunted Puzzle! Dive into a mysterious world filled with Halloween-themed puzzles, spooky items, and eerie challenges that will test your merging skills. Combine haunted artifacts like pumpkins, potions, and ghostly decorations to unlock chilling treasures and transform your haunted mansion.  Enjoy a unique merge game experience with Halloween vibes around every corner. Match and merge items to complete levels, reveal secrets, and win daily rewards! With hundreds of haunted levels, thrilling events, and limited-time challenges, Halloween Merge is the perfect game for fans of Halloween, puzzles, and merge mechanics. Unleash your inner wizard and celebrate the season with the ultimate Halloween merge game.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Halloween Jump",
+	"short_name": "Halloween Jump",
+	"description": "The \"Halloween Online Jump Adventure Game\" is a great way to get into the Halloween spirit! In this game, you help the little ghost character jump over obstacles and collect candy. The game is perfect for players of all ages and is a great way to get into the Halloween spirit!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
