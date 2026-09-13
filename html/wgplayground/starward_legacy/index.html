@@ -1,0 +1,295 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        <script async="" src="https://gamepush.com/sdk/game-score.js?projectId=28706&amp;publicToken=KzL4W4tVF3yJkQAAksQvCBJwK6Sj392F&amp;callback=onGPInit"></script>
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Starward Legacy">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/1ee8560b721a3c99fc4b794ab94b8739/wgplayground/1ff214f1afa409490161a232fe620bdb.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/1ee8560b721a3c99fc4b794ab94b8739/wgplayground/0ab393c1250f147f9ef8f276323b8e85.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/1ee8560b721a3c99fc4b794ab94b8739">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/starward-legacy">
+            <meta property="wgp:description" content="Starward Legacy is a fast, bullet-dodging vertical space shooter (shmup) with deep meta-progression. Fly through 5 chapters of a stellar war, weave through bullet storms, shred enemy waves and topple colossal bosses.Between battles opens an star map: jump between sectors, spend fuel wisely, find supply bases and rare rewards. Each difficulty is its own campaign.Features:• 6 ships + the story-ship AEGIS, assembled from 5 parts across the chapters">
+            <meta property="wgp:instructions" content="Dead-simple controls: drag your ship with a finger (or mouse) — it follows your touch. Fire is automatic, so focus on dodging.• Bomb — clears the screen in a pinch.• Switch weapons — tap a slot; the lock pins your active weapon so pickups don't swap it.• Time-warp — blast through slow stretches 1.5× faster.), dock at supply bases for a free upgrade and gear. Run out of fuel and that difficulty's campaign resets — watch your reserve.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/1ee8560b721a3c99fc4b794ab94b8739/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/1ee8560b721a3c99fc4b794ab94b8739/wgplayground/64f7f05e1de7ce2c5b53e007b1d10dc8.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/1ee8560b721a3c99fc4b794ab94b8739/wgplayground/4812521e9dff885464c1f0c5b4ced72b.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy53Z3BsYXlncm91bmQuY29tXC9nYW1lcy1jYXRhbG9ndWVcL2dlbnJlLTYifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="3">
+            <meta property="wgp:ads" content="97/1ee8560b721a3c99fc4b794ab94b8739">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Starward Legacy — Prototype</title>
+  <link rel="icon" type="image/png" href="promo/fav.png">
+  <link rel="apple-touch-icon" href="promo/icon_256.png">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- GamePush official embed (project 28706). Must live in HTML so the
+       dashboard "SDK connected" check sees projectId + publicToken. -->
+  <script>
+    window.onGPInit = async function (gp) {
+      window.gp = gp;
+      try { if (gp.player && gp.player.ready) await gp.player.ready; } catch (e) {}
+      // gameStart is called later from Platform.gameReady() once the menu is
+      // interactive — calling it here fails GamePush "GameStart on time".
+      try { console.info('[GamePush] SDK ready', { projectId: 28706, player: !!(gp && gp.player) }); } catch (e) {}
+    };
+    ((s,c,o,r,e)=>{var f=0,t={},p=0,m=r.length,w=[],j=u=>{if(f||t[u])return;f=1;t[u]=1;var d=c.createElement(o);d.async=1;d.src=u+e;d.onerror=()=>{f=0;n()};var a=c.getElementsByTagName(o)[0];a.parentNode.insertBefore(d,a)},n=()=>{for(var k=0;k<w.length;k++)if(!t[w[k]])return j(w[k])},q=()=>{++p>=m&&!f&&n()};r.forEach(u=>s.fetch(u,{method:"HEAD"}).then(x=>{x&&x.ok?(w.push(u),j(u)):q()}).catch(q));s.setTimeout(()=>{f||n()},5000)})(window,document,"script",atob("aHR0cHM6Ly9ncy5lcG9uZXNoLmNvbS9zZGsvZ2FtZS1zY29yZS5qcyxodHRwczovL3MzLmdhbWVwdXNoLmNvbS9maWxlcy9ncy9zZGsvZ2FtZS1zY29yZS5qcyxodHRwczovL3MzLWV1LmdhbWVwdXNoLmNvbS9zZGsvZ2FtZS1zY29yZS5qcyxodHRwczovL2dhbWVwdXNoLmNvbS9zZGsvZ2FtZS1zY29yZS5qcw==").split(","),"?projectId=28706&publicToken=KzL4W4tVF3yJkQAAksQvCBJwK6Sj392F&callback=onGPInit");
+  </script><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style>
+<style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/1ee8560b721a3c99fc4b794ab94b8739/wgplayground/0ab393c1250f147f9ef8f276323b8e85.jpg">
+  <div id="game-shell">
+   <div id="game-frame" class="fill" style="width: 335px; height: 558px; --hud-k: 0.698;">
+    <canvas id="game" width="480" height="800" wg-game-orientation="wg-portrait-game"></canvas>
+
+    <!-- HUD (ref: score plate · wave+pause chip · vertical shield / ordnance · weapon dock) -->
+    <div id="hud" class="hidden">
+      <div class="hud-top">
+        <div id="hud-score" class="hud-score-plate">
+          <span class="hud-score-lbl">СЧЁТ</span>
+          <span class="hud-score-val">0</span>
+        </div>
+        <div class="hud-wave-chip">
+          <span id="hud-wave">WAVE 1</span>
+          <button id="btn-pause" aria-label="Pause"><span data-ico="pause" data-ico-size="15"></span></button>
+        </div>
+      </div>
+
+      <!-- left: vertical shield -->
+      <div id="hud-shield" class="hud-vbar hud-shield-v" aria-label="Shield">
+        <span class="hud-vbar-ic" data-ico="shield"></span>
+        <div class="hud-vbar-track" id="hud-shield-track"></div>
+        <span class="hud-vbar-n" id="hud-shield-n">3</span>
+      </div>
+      <!-- module charge/reload chips (absolute; does not shift other HUD) -->
+      <div id="hud-modules" class="hud-modules hidden" aria-label="Modules"></div>
+
+      <!-- right: warp (separated) + vertical bomb/nuke -->
+      <div class="hud-right-stack">
+        <button id="hud-warp" class="hud-btn hud-warp" aria-label="Time warp">▶▶ 10</button>
+        <div class="hud-ord-col">
+          <!-- Only the hangar-equipped super is shown (others stay hidden) -->
+          <button id="hud-bombs" class="hud-btn hud-bomb hud-ord" aria-label="Bomb"><span class="hud-ord-ic" data-ico="bomb"></span><span class="hud-ord-cd" hidden=""></span><span class="hud-ord-n">×2</span><span class="hud-ord-pbar" aria-hidden="true"><i></i></span></button>
+          <button id="hud-nuke" class="hud-btn hud-ord hidden" aria-label="Nuke"><span class="hud-ord-ic" data-ico="radiation"></span><span class="hud-ord-cd" hidden=""></span><span class="hud-ord-n">×1</span><span class="hud-ord-pbar" aria-hidden="true"><i></i></span></button>
+          <button id="hud-barrier" class="hud-btn hud-ord hidden" aria-label="Barrier"><span class="hud-ord-ic" data-ico="barrier"></span><span class="hud-ord-cd" hidden=""></span><span class="hud-ord-n">×1</span><span class="hud-ord-pbar" aria-hidden="true"><i></i></span></button>
+          <button id="hud-sphere" class="hud-btn hud-ord hidden" aria-label="Sphere"><span class="hud-ord-ic" data-ico="sphere"></span><span class="hud-ord-cd" hidden=""></span><span class="hud-ord-n">×1</span><span class="hud-ord-pbar" aria-hidden="true"><i></i></span></button>
+        </div>
+      </div>
+
+      <div class="hud-bottom-block">
+        <div id="hud-fuse" class="hud-fuse hidden" aria-live="polite"></div>
+        <div id="hud-weapons" class="hud-weapons"></div>
+      </div>
+    </div>
+
+    <!-- Onboarding coach (non-blocking) -->
+    <div id="tutorial" class="hidden">
+      <span class="tut-text"></span>
+      <button id="tut-skip">Skip</button>
+    </div>
+
+    <!-- Story dialogue (built by story.js) -->
+    <div id="story" class="overlay hidden"></div>
+
+    <!-- Title / Menu (reference style: nebula bg + neon title + live voxel ship) -->
+    <div id="menu" class="overlay">
+      <canvas class="scene-bg" data-scene="menu"></canvas>
+      <div class="menu-inner">
+        <h1>STARWARD<span>LEGACY</span></h1>
+        <p class="sub">Vertical Shmup</p>
+        <canvas id="menu-ship" class="ship-anim" data-voxship="vanguard" width="260" height="200"></canvas>
+        <button id="btn-start" class="btn btn-cta">ENTER HANGAR</button>
+        <div class="menu-feats" id="menu-feats"></div>
+        <!-- Graphics tier, offered on every launch (built by game.js) -->
+        <div class="menu-qual" id="menu-qual"></div>
+      </div>
+    </div>
+
+    <!-- Home screen (built by hub.js) -->
+    <div id="hub" class="overlay hidden"></div>
+
+    <!-- Hangar: ships / upgrades / armory (built by hangar.js) -->
+    <div id="hangar" class="overlay hidden"></div>
+
+    <!-- Game Over / stage result (double ad · BP teaser · mini upgrades) -->
+    <div id="gameover" class="overlay hidden">
+      <div class="set-panel glass-panel go-panel ftl-card-anim">
+        <h2 class="set-title">SHIP DESTROYED</h2>
+        <div id="go-stats"></div>
+        <div id="go-bp" class="go-bp"></div>
+        <div id="go-reward" class="reward-row"></div>
+        <div id="go-mini" class="go-mini"></div>
+        <div id="go-social" class="social-row"></div>
+        <div class="btn-col go-actions">
+          <button id="btn-continue" class="btn btn-cta hidden">CONTINUE</button>
+          <button id="btn-retry" class="btn btn-cta">RELAUNCH</button>
+          <button id="btn-map" class="btn btn-ghost hidden">TO MAP</button>
+          <button id="btn-hangar" class="btn btn-ghost">HANGAR</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pause -->
+    <div id="pause" class="overlay hidden">
+      <div class="set-panel glass-panel pause-panel ftl-card-anim">
+        <h2 id="pause-title" class="set-title">PAUSED</h2>
+        <div class="btn-col">
+          <button id="pause-resume" class="btn btn-cta">RESUME</button>
+          <button id="pause-settings" class="btn btn-ghost">SETTINGS</button>
+          <button id="pause-map" class="btn btn-ghost hidden">TO MAP</button>
+          <button id="pause-quit" class="btn btn-ghost">TO MENU</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings (built by settings.js) -->
+    <div id="settings" class="overlay hidden"></div>
+
+    <!-- Shop (built by shop.js) -->
+    <div id="shop" class="overlay hidden"></div>
+
+    <!-- Campaign map (built by map.js) -->
+    <div id="campaignMap" class="overlay hidden"></div>
+
+    <!-- Daily rewards & missions (built by missions.js) -->
+    <div id="rewards" class="overlay hidden"></div>
+    <div id="contracts" class="overlay hidden"></div>
+
+    <!-- Battle pass season track (built by battlepass.js) -->
+    <div id="season" class="overlay hidden"></div>
+
+    <!-- Language curtain. Present in the markup (not created by JS) so it covers
+         the very first paint: the title screen renders with a synchronous guess
+         at the language, and the platform SDK corrects it a moment later. Without
+         this the player watches the UI flip from Russian to English. Dropped by
+         I18N once the language has settled. -->
+    <div id="lang-veil">
+      <div class="lv-mark"></div>
+      <div class="lv-brand" aria-hidden="true">PAR<span>GAME</span></div>
+    </div>
+   </div>
+  </div>
+
+  <script src="js/engine.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/i18n.js"></script></body></html>
