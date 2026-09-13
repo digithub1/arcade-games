@@ -1,0 +1,42 @@
+{
+	"name": "Cube Master",
+	"short_name": "Cube Master",
+	"description": "Cube Master is a thrilling, fast-paced puzzle game that challenges your spatial awareness and reaction skills! Stack, rotate, and match colorful cubes to complete levels and earn the title of Cube Master. With each level, new obstacles and power-ups appear, testing your logic and timing as you navigate through increasingly complex challenges. Whether you’re a casual gamer or a puzzle pro, Cube Master offers a satisfying experience with stunning graphics, engaging sound effects, and endless replayability. Hone your skills, beat your high scores, and show the world that you’re the ultimate Cube Master!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
