@@ -1,0 +1,31 @@
+{
+	"name": "Blocky Fish",
+	"short_name": "Blocky Fish",
+	"description": "Blocky Fish is a fun and addicting online game that you can play for free! The objective is simple- help the blocky fish swim through the water and avoid the obstacles. But be careful, the more you play, the more challenging the levels become! Can you make it to the end? Play now and find out!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

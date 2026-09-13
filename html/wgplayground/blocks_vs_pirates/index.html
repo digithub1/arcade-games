@@ -1,0 +1,381 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Blocks Vs Pirates">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/70801a2e1091b334241515792399b18f/wgplayground/38d9b2ae50f413cf77eceaed0165b8ff.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/70801a2e1091b334241515792399b18f/wgplayground/3403cb75d436d941a64f0c0e7655a406.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/70801a2e1091b334241515792399b18f">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/mapi-games/blocks-vs-pirates">
+            <meta property="wgp:description" content="Blocks Vs Pirates is an exciting sports game to play for all ages.Get in to this technical game that tests your aiming ability to make a goal.The challenge is simple yet thrilling: how long can you stay in the game? Your endurance is determined by how well you can aim.Calculate the right angle and degree of force and launch the Ninja through into the basket! In Blocks Vs Pirates, you need to master the art of precision.Each level presents new obstacles and challenges, ensuring that the game remains engaging and stimulating.">
+            <meta property="wgp:instructions" content="just one click to play!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/70801a2e1091b334241515792399b18f/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="1024">
+            <meta property="wgp:height" content="600">
+            <meta property="wgp:rwidth" content="128">
+            <meta property="wgp:rheight" content="75">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="1.71">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoibGF1bmNoIGJsb2NrcyJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJTcG9ydHMifSx7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="nckzwkbhgxvmfglc/70801a2e1091b334241515792399b18f">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GameSalad HTML5 Game</title>
+
+<!-- External CSS files for GameSalad styling -->
+<link rel="stylesheet" type="text/css" href="css/gse-style.css">
+<link rel="stylesheet" type="text/css" href="css/gse-style-loading.css">
+
+<style type="text/css">
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#gse-player {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gse-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gse-loading {
+    visibility: visible;
+}
+
+#gse-browser {
+    display: none;
+}
+
+#game-overlay {
+    display: none;
+}
+
+#gse-text, #gse-browser {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+}
+
+#gse-text-cancel, #gse-text-done {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+</style>
+
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="game/default/object.js" async=""></script><script src="game/default/assets.js" async=""></script><script src="game/default/scenes/1.js" async=""></script><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/70801a2e1091b334241515792399b18f/wgplayground/3403cb75d436d941a64f0c0e7655a406.jpg">
+
+<!-- Game Frame -->
+<div id="gse-player" class="gse-frame">
+    <div class="gse-overlay">
+        <div id="gse-text" class="gse-dialog">
+            <div>
+                <button id="gse-text-cancel">Cancel</button>
+                <button id="gse-text-done">Done</button>
+                <p id="gse-text-prompt"></p>
+            </div>
+            <div>
+                <textarea id="gse-text-input"></textarea>
+            </div>
+        </div>
+        
+        <!-- Browser Frame for the game -->
+        <div id="gse-browser" class="gse-dialog">
+            
+            <button id="gse-browser-close">✖</button>
+        </div>
+
+        <!-- Loading Animation -->
+        <div id="gse-loading">
+            <img src="images/gse-loading.png">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+(function(global) {
+    // This function is called after the engine script file has loaded
+    global.onEngineLoad = function() {
+        // The callback for gse.ready() will be invoked after the engine is ready
+        gse.ready(function(engine) {
+            const loadingElement = document.getElementById('gse-loading');
+            const playerDelegate = {
+                onLoadingBegin: function() {
+                    engine.showOverlay();
+                    loadingElement.style.visibility = 'visible';
+                },
+                onLoadingEnd: function() {
+                    loadingElement.style.visibility = 'hidden';
+                    engine.hideOverlay();
+                },
+                onWindowResize: function() {
+                    engine.relayout();
+                },
+                onSceneAboutToChange: function(sceneKey, sceneName, enableAdvertisement) {
+                    if (enableAdvertisement) {
+                        setTimeout(showAds, 1000);
+                    }
+                }
+            };
+
+            engine.appendDelegate(playerDelegate);
+            window.addEventListener('resize', playerDelegate.onWindowResize);
+
+            // Make sure the game is not paused when it starts
+            gse.unpause();  // Ensure game is unpaused as soon as it's ready
+
+            // Handle visibility change (pause the game when the window is hidden)
+            const handleVisibilityChange = function() {
+                const isHidden = document.hidden || document.mozHidden || document.webkitHidden || document.msHidden;
+                if (isHidden) {
+                    gse.pause(); // Pause the game if the page is hidden
+                } else {
+                    gse.unpause(); // Resume the game when the page is visible
+                }
+            };
+
+            // Listen for visibility changes (window hiding/unhiding)
+            document.addEventListener('visibilitychange', handleVisibilityChange);
+            document.addEventListener('mozvisibilitychange', handleVisibilityChange);
+            document.addEventListener('webkitvisibilitychange', handleVisibilityChange);
+            document.addEventListener('msvisibilitychange', handleVisibilityChange);
+
+            // Engine Initialization
+            engine.setRenderFrame('gse-player');
+            engine.setOptions({
+                'viewport-reference': 'window',
+                'viewport-fit': 'letterbox'
+            });
+            engine.loadOptionsFromURL();
+
+            // Start the game immediately after loading (no pause by default)
+            engine.play('game/default');
+        });
+    };
+})(window);
+
+// Function to show ads
+function showAds() {
+    pauseGame();
+    window[window.preroll.config.loaderObjectName].refetchAd(resumeGame);
+}
+
+// Pause game function
+function pauseGame() {
+    console.log("Game Paused");
+    gse.pause(); // Pause the game
+}
+
+// Resume game function
+function resumeGame() {
+    console.log("Game Resumed");
+    gse.unpause(); // Unpause the game
+}
+</script>
+
+<script type="text/javascript" src="js/gse/gse-export.js" async="" onload="onEngineLoad()"></script>
+
+<script type="text/javascript">
+    // This script loads the advertisement service asynchronously
+    !function(e,t){
+        a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,m.parentNode.insertBefore(a,m)
+    }(document,"https://universal.wgplayer.com/tag/?lh=play.wgplayground.com&wp=/game/testing-environment/&ws=");
+</script>
+
+
+
+
+
+</body></html>
