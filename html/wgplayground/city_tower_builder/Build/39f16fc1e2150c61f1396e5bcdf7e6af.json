@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "CitySimulator",
+"productVersion": "0.1",
+"dataUrl": "89d7c89c8a67f1020b5dac8d63b7e53e.unityweb",
+"wasmCodeUrl": "4186167f6a38866c26da089534bd412e.unityweb",
+"wasmFrameworkUrl": "f271dbbf621c960b8321dbd868459c8e.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
