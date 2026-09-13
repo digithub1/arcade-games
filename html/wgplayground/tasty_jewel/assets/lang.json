@@ -1,0 +1,552 @@
+{
+  "stringresources": {
+    "strings": {
+      "string": [
+        {
+          "-id": "1",
+          "en": "en",
+          "de": "de",
+          "es": "es",
+          "fr": "fr",
+          "it": "it",
+          "br": "br",
+          "ru": "ru"
+        },
+        {
+          "-id": "PlayKey",
+          "en": "PLAY",
+          "fr": "Jouer",
+          "de": "Spielen",
+          "es": "Jugar",
+          "br": "Jogar",
+          "it": "Gioca",
+          "ru": "ИГРАТЬ"
+        },
+        {
+          "-id": "TargetKey",
+          "en": "Target",
+          "fr": "But",
+          "de": "Ziel",
+          "es": "Objetivo",
+          "br": "Meta",
+          "it": "Obiettivo",
+          "ru": "Цель"
+        },
+        {
+          "-id": "MovesKey",
+          "en": "Moves",
+          "fr": "Mouvements",
+          "de": "Züge",
+          "es": "Movimientos",
+          "br": "Moves",
+          "it": "Mosse",
+          "ru": "Ходов"
+        },
+        {
+          "-id": "TimeKey",
+          "en": "Time",
+          "fr": "Temps",
+          "de": "Zeit",
+          "es": "Tiempo",
+          "br": "Hora",
+          "it": "Tempo",
+          "ru": "Время"
+        },
+        {
+          "-id": "ContinueKey",
+          "en": "Continue",
+          "fr": "Continuer",
+          "de": "Fortsetzen",
+          "es": "Continuar",
+          "br": "Continuar",
+          "it": "Continua",
+          "ru": "Продолжить"
+        },
+        {
+          "-id": "QuitLevelKey",
+          "en": "Quit level",
+          "fr": "Quitter le niveau",
+          "de": "Level beenden",
+          "es": "Salir del nivel",
+          "br": "Sair do nível",
+          "it": "Esci dal livello",
+          "ru": "Покинуть уровень"
+        },
+        {
+          "-id": "InstructionsTitleKey",
+          "en": "Instructions",
+          "fr": "Instructions",
+          "de": "Anleitung",
+          "es": "Instrucciones",
+          "br": "Instruções",
+          "it": "Istruzioni",
+          "ru": "Инструкция"
+        },
+        {
+          "-id": "LevelFailedKey",
+          "en": "You have failed",
+          "fr": "Vous avez échoué",
+          "de": "Du bist gescheitert",
+          "es": "Has fracasado",
+          "br": "Você não",
+          "it": "Non ce l'hai fatta",
+          "ru": "Вы проиграли"
+        },
+        {
+          "-id": "YourScoreKey",
+          "en": "Your score",
+          "fr": "Votre score",
+          "de": "Deine Punktzahl",
+          "es": "Tu puntuación",
+          "br": "Sua pontuação",
+          "it": "Il tuo punteggio",
+          "ru": "Ваш счет"
+        },
+        {
+          "-id": "RetryKey",
+          "en": "Retry",
+          "fr": "Réessayer",
+          "de": "Neuer\nVersuch",
+          "es": "Volver\na intentar",
+          "br": "Tentar\nnovamente",
+          "it": "Riprova",
+          "ru": "Повторить"
+        },
+        {
+          "-id": "NextKey",
+          "en": "Next",
+          "fr": "Suivant",
+          "de": "Weiter",
+          "es": "Siguiente",
+          "br": "Avançar",
+          "it": "Avanti",
+          "ru": "Следующий"
+        },
+        {
+          "-id": "CongratulationsKey",
+          "en": "Congratulations",
+          "fr": "Félicitations",
+          "de": "Glückwünsch",
+          "es": "Enhorabuena",
+          "br": "Parabéns",
+          "it": "Complimenti",
+          "ru": "Поздравляем"
+        },
+        {
+          "-id": "AboutTitleKey",
+          "en": "About",
+          "de": "Info",
+          "fr": "À propos",
+          "br": "Sobre",
+          "es": "Información",
+          "it": "Info",
+          "ru": "Об игре"
+        },
+        {
+          "-id": "RestartKey",
+          "en": "Restart",
+          "de": "Neustart",
+          "fr": "Recommencer",
+          "br": "Reiniciar",
+          "es": "Reiniciar",
+          "it": "Riavvia",
+          "ru": "Запустить снова"
+        },
+        {
+          "-id": "LevelKey",
+          "en": "Level",
+          "fr": "Niveau",
+          "de": "Stufe",
+          "es": "Nivel",
+          "br": "Nível",
+          "it": "Livello",
+          "ru": "Уровень"
+        },
+        {
+          "-id": "ScoreKey",
+          "en": "Score",
+          "de": "Punkte",
+          "fr": "Score",
+          "br": "Pontuação",
+          "es": "Puntuación",
+          "it": "Punteggio",
+          "ru": "Счет"
+        },
+        {
+          "-id": "BestKey",
+          "en": "Your best:",
+          "de": "Deine Bestleistung:",
+          "fr": "Votre meilleur score:",
+          "br": "O teu melhor:",
+          "es": "Tu mejor puntuación:",
+          "it": "Record:",
+          "ru": "Ваш лучший счет:"
+        },
+        {
+          "-id": "GET",
+          "en": "Get",
+          "de": "Erreiche",
+          "es": "Consigue",
+          "fr": "Obtenez",
+          "it": "Ottieni",
+          "br": "Obter",
+          "ru": "Получить"
+        },
+        {
+          "-id": "BRING",
+          "en": "Bring",
+          "de": "Bringe",
+          "es": "Haz descender",
+          "fr": "Faire descendre",
+          "it": "Abbatti",
+          "br": "Traga",
+          "ru": "Опустить"
+        },
+        {
+          "-id": "CATCH",
+          "en": "Catch",
+          "de": "Fange",
+          "es": "Coge",
+          "fr": "Attraper",
+          "it": "Prendi",
+          "br": "Pegue",
+          "ru": "Поймать"
+        },
+        {
+          "-id": "POINTS",
+          "en": "points",
+          "de": "punkte",
+          "es": "puntos",
+          "fr": "points",
+          "it": "punti",
+          "br": "pontos",
+          "ru": "очков"
+        },
+        {
+          "-id": "GOAL_BLOCK",
+          "en": "Break all the blocks",
+          "de": "Platze alle blöcke",
+          "es": "Estalla todos los bloques",
+          "fr": "Briser tous les blocs",
+          "it": "Rompi tutti i blocchi",
+          "br": "Quebrar todos os blocos",
+          "ru": "Разбейте все блоки"
+        },
+        {
+          "-id": "DownfallDownKey",
+          "en": "steel cubes down",
+          "de": "Stahlwürfel auf den Boden",
+          "es": "cubos de acero.",
+          "fr": "cubes en acier",
+          "it": "cubi d'acciaio",
+          "br": "cubos de aço para baixo",
+          "ru": "опустить стальные кубики"
+        },
+        {
+          "-id": "EscKey",
+          "en": "colourful cubes",
+          "de": "bunte würfel",
+          "es": "cubos de colores",
+          "fr": "cubes colorés",
+          "it": "cubi colorati",
+          "br": "cubos coloridos",
+          "ru": "цветные кубики"
+        },
+        {
+          "-id": "WithinKey",
+          "en": "within",
+          "fr": "en",
+          "de": "und das in",
+          "es": "dentro de",
+          "it": "entro",
+          "br": "em",
+          "ru": "за"
+        },
+        {
+          "-id": "SecondsKey",
+          "en": "seconds",
+          "fr": "secondes",
+          "de": "sekunden",
+          "es": "segundos",
+          "it": "secondi",
+          "br": "segundos",
+          "ru": "секунд"
+        },
+        {
+          "-id": "PauseKey",
+          "en": "Pause",
+          "fr": "Pause",
+          "de": "Pause",
+          "es": "Pausado",
+          "it": "Pausa",
+          "br": "Pausa",
+          "ru": "Пауза"
+        },
+
+        {
+          "-id": "AimKey",
+          "en": "Aim:",
+          "de": "Ziel:",
+          "es": "Objetivo:",
+          "fr": "Objectif:",
+          "it": "Obiettivo:",
+          "br": "Objetivo:",
+          "ru": "Цель:"
+        },
+        {
+          "-id": "Aim2Key",
+          "en": "Swap and match the jewel sweets to form a chain of 3 or more of the same colour. You will be rewarded with explosive power-ups if you match 4 or more.",
+          "de": "Verschiebe die süBen Juwelen und verbinde 3 oder mehr gleichfarbige Juwelen zu einer Reihe. Wenn du 4 oder mehr zusammenführst, erhältst du explosive Boosts.",
+          "es": "Intercambia de sitio y combina las golosinas con forma de joyas para crear cadenas de 3 o más del mismo color. Si consigues combinar 4 o más, se te recompensará con potenciadores explosivos.",
+          "fr": "Permutez et associez les joyaux en bonbon pour former une chaîne de 3 ou plus de même couleur. Vous recevrez des bonus explosifs si vous en associez 4 ou plus.",
+          "it": "Scambia e abbina i dolcetti preziosi per formare una catena di 3 o più caramelle dello stesso colore. Se ne abbini 4 o di più, riceverai potenziamenti esplosivi come ricompensa.",
+          "br": "Alterne e corresponda os doces de joias para forma uma cadeia de 3 ou mais da mesma cor. Se corresponder 4 ou mais, sua recompensa será power-ups explosivos.",
+          "ru": "Поменяйте местами сладости и соберите цепочку из 3 или более одинакового цвета. Вы будете вознаграждены взрывным усилением, если вы соберете 4 или более."
+        },
+        {
+          "-id": "ControlsKey",
+          "en": "Controls:",
+          "de": "Steuerung:",
+          "es": "Controles:",
+          "fr": "Commandes:",
+          "it": "Comandi:",
+          "br": "Controles:",
+          "ru": "Как управлять:"
+        },
+        {
+          "-id": "Controls2Key",
+          "en": "To select, tap the desired candy and swipe towards the one you want to swap it with. Tap other onscreen icons for corresponding action (play, pause, hint...).",
+          "de": "Tippe ein süBes Juwel an, um es auszuwählen, und wische in die Richtung des Juwels, mit dem du es tauschen möchtest. Tippe andere Symbole auf dem Bildschirm an, um die entsprechende Aktion auszuführen (Spielen, Pause, Hinweis ...).",
+          "es": "Para seleccionar, toca la golosina que desees y desliza el dedo hacia la golosina con la que la quieras intercambiar. Toca los iconos en pantalla para realizar la acción correspondiente (jugar, pausa, pista, etc.).",
+          "fr": "Pour sélectionner, touchez le bonbon désiré et faites glisser votre doigt vers celui avec lequel vous voulez le permuter. Touchez les icônes à l'écran pour réaliser l'action correspondante (jouer, pause, indice...).",
+          "it": "Per selezionare, tocca la caramella desiderata e scorri verso quella con cui vuoi scambiarla. Tocca le altre icone sullo schermo per eseguire l'azione corrispondente (gioca, pausa, suggerimento...).",
+          "br": "Para selecionar, toque no doce desejado e deslize em direção àquela com o qual quer trocar. Toque nos ícones da tela para ter a aç±ao correspondente (jogar, pausar, dica...).",
+          "ru": "Чтобы переместить, нажмите на нужную сладость и проведите пальцем по направлению к той, с которой вы хотите поменять ее. Используйте другие значки на экране для выполнения соответствующего действия (воспроизведение, пауза, подсказка ...). "
+        },
+        {
+          "-id": "BoostExtraMoveKey",
+          "en": "Extra Swap",
+          "de": "Extratausch",
+          "es": "Intercambio\nadicional",
+          "fr": "Échange\nsupplémentaire",
+          "it": "Scambio extra",
+          "br": "Permuta extra",
+          "ru": "Дополнительное\nдвижение"
+        },
+        {
+          "-id": "BoostExtraMove2Key",
+          "en": "Swap any two objects without losing a move.",
+          "de": "Tausche zwei beliebige Objekte, ohne einen Zug zu verlieren.",
+          "es": "Intercambia dos objetos sin perder un movimiento.",
+          "fr": "Échangez deux objets de votre choix sans perdre de coup.",
+          "it": "Scambia tutti e due gli oggetti senza sprecare una mossa.",
+          "br": "Troque dois objetos sem perder um movimento.",
+          "ru": "Поменяйте местами любые два объекта, не теряя ход."
+        },
+        {
+          "-id": "BoostPinKey",
+          "en": "Lollipop",
+          "de": "Lutscher",
+          "es": "Piruleta",
+          "fr": "Sucette",
+          "it": "Lecca-lecca",
+          "br": "Pirulito",
+          "ru": "Леденец"
+        },
+        {
+          "-id": "BoostPin2Key",
+          "en": "Removes any candy, including the block beneath.",
+          "de": "Entfernt eine beliebige Süßigkeit, einschließlich des Blocks darunter.",
+          "es": "Elimina los dulces y los bloques de debajo.",
+          "fr": "Enlève n'importe quel bonbon, y compris le bloc en-dessous.",
+          "it": "Rimuove una caramella, incluso il blocco sottostante.",
+          "br": "Remove qualquer doce, incluindo o bloco abaixo.",
+          "ru": "Удаляет любую конфету, включая блок под ним."
+        },
+        {
+          "-id": "BoostSlingKey",
+          "en": "Candy Canes",
+          "de": "Zuckerstangen",
+          "es": "Bastones\ndulces",
+          "fr": "Sucre d'orge",
+          "it": "Bastoncini\ndi zucchero",
+          "br": "Bastões\nde doces",
+          "ru": "Сладкие\nпалочки"
+        },
+        {
+          "-id": "BoostSling2Key",
+          "en": "The canes target and remove a few random candies.",
+          "de": "Die Zuckerstangen entfernen ein paar zufällige Süßigkeiten.",
+          "es": "Los bastones eliminan unos cuantos dulces al azar.",
+          "fr": "Le sucre d'orge cible et retire quelques bonbons aléatoires.",
+          "it": "I bastoncini mirano e rimuovono delle caramelle casuali.",
+          "br": "O estilingue alveja e estala alguns balões aleatórios.",
+          "ru": "Палочки случайно ударят и уберут несколько сладостей."
+        },
+
+        {
+          "-id": "RewardKey",
+          "en": "Reward",
+          "fr": "Récompense",
+          "de": "Belohnung",
+          "es": "Recompensa",
+          "it": "Ricompensa",
+          "br": "Recompensa",
+          "ru": "НАГРАДА"
+        },
+        {
+          "-id": "NewRecordKey",
+          "en": "New Record",
+          "fr": "Nouveau Record",
+          "de": "Neuer Rekord",
+          "es": "Nuevo Récord",
+          "it": "Nuovo Record",
+          "br": "Novo recorde!",
+          "ru": "Новый рекорд"
+        },
+
+        {
+          "-id": "QuitGameKey",
+          "en": "Quit game?",
+          "fr": "Quitter le jeu ?",
+          "de": "Spiel beenden?",
+          "es": "¿Salir del juego?",
+          "it": "Uscire dal gioco?",
+          "br": "Sair do jogo?",
+          "ru": "Покинуть игру?"
+        },
+        {
+          "-id": "YesQuitKey",
+          "en": "Yes, Quit",
+          "fr": "Oui, quitter",
+          "de": "Ja, aufgeben",
+          "es": "Sí, salir",
+          "it": "Sì, voglio uscire",
+          "br": "Sim, sair",
+          "ru": "Да, выйти"
+        },
+        {
+          "-id": "KeepPlayingKey",
+          "en": "Keep Playing",
+          "fr": "Continuer à jouer",
+          "de": "Weiterspielen",
+          "es": "Seguir jugando",
+          "it": "Continua a giocare",
+          "br": "Continuar jogando",
+          "ru": "Продолжить играть"
+        },
+
+        {
+          "-id": "LevelsKey",
+          "en": "Levels",
+          "fr": "Niveaux",
+          "de": "Levels",
+          "es": "Niveles",
+          "it": "Livelli",
+          "br": "Níveis",
+          "ru": "Уровни"
+        },
+        {
+          "-id": "GoalKey",
+          "en": "Goal",
+          "fr": "But",
+          "de": "Ziel",
+          "es": "Objetivo",
+          "it": "Scopo",
+          "br": "Objectivo",
+          "ru": "Цель"
+        },
+        {
+          "-id": "RulesTitleKey",
+          "en": "The Rules of\nthe Game:",
+          "de": "Spielregeln:",
+          "es": "Reglas del juego:",
+          "fr": "Règles du jeu:",
+          "it": "Regole del gioco:",
+          "br": "As regras do jogo:",
+          "ru": "Правила игры"
+        },
+        {
+          "-id": "RulesMovesKey",
+          "en": "Swap adjacent candies to form chains of 3 or more of the same colour. Build your hi score and get special jewels!",
+          "de": "Vertausche nebeneinanderliegende Juwelen, um Reihen aus 3 oder mehr Juwelen zu bilden. Verbessere deinen High Score und erhalte besondere Juwelen!",
+          "es": "Intercambia golosinas adyacentes para formar cadenas de 3 o más del mismo color. ¡Amasa puntos y obtén joyas especiales!",
+          "fr": "Permutez les bonbons voisins pour former des chaînes de 3 ou plus de même couleur. Marquez un score élevé et recevez des joyaux spéciaux!",
+          "it": "Scambia le caramelle adiacenti per formare catene di 3 o più caramelle dello stesso colore. Realizza il tuo record e ottieni gioielli speciali!",
+          "br": "Alterne os doces próximos para formar cadeias de 3 ou mais da mesma cor. Aumente sua pontuação para ganhar joias especiais!",
+          "ru": "Меняйте местами соседние сладости, чтобы сформировать цепочки из 3 или более одинакового цвета. Получите самый высокий балл и получите специальные драгоценности!"
+        },
+        {
+          "-id": "RulesTimeKey",
+          "en": "Time is running out! You have to reach your goal before it does!",
+          "de": "Die Zeit läuft ab! Du musst vorher dein Ziel erreichen!",
+          "es": "¡Se está acabando el tiempo! ¡Tienes que alcanzar el objetivo antes de que se termine!",
+          "fr": "Vous disposez d'un temps limité! Vous devez réaliser votre objectif avant la fin du temps imparti!",
+          "it": "Il tempo sta scadendo! Devi raggiungere l'obiettivo prima che finisca!",
+          "br": "O tempo está acabando! Você precisa alcançar sua meta antes disso!",
+          "ru": "Заканчивается время! Вы должны выполнить все цели, прежде чем закончиться время!"
+        },
+        {
+          "-id": "RulesBlocksKey",
+          "en": "Blocks crack when candies inside them are matched. Some blocks are tougher than others!",
+          "de": "Blöcke zerbrechen, wenn du die süBen Juwelen darin zusammenführst. Bei einigen geht es schwerer als bei anderen.",
+          "es": "Los bloques se rompen cuando se combinan las golosinas de su interior. ¡Algunos bloques son más resistentes que otros!",
+          "fr": "Les blocs se fissurent quand les bonbons qu'ils contiennent sont associés. Certains blocs sont plus solides que d'autres!",
+          "it": "I blocchi si rompono quando vengono abbinate le caramelle al loro interno. Alcuni blocchi sono più resistenti di altri!",
+          "br": "Os blocos desintegram quando os doces dentros são correspondidos. Alguns blocos são mais duros que outros!",
+          "ru": "Блоки трескаются, когда сладости внутри собираются в цепочку. Некоторые блоки крепче, чем другие! "
+        },
+        {
+          "-id": "RulesDownfallKey",
+          "en": "Steel cubes do not match. Your goal is to bring them to the bottom.",
+          "de": "Die Stahlwürfel lassen sich nicht verbinden. Dein Ziel ist es, sie auf den Boden zu bringen.",
+          "es": "Los cubos de acero no se combinan. Debes conseguir llevarlos hasta la parte inferior del tablero.",
+          "fr": "Les cubes en acier ne peuvent pas être associés. Vous devez les faire descendre.",
+          "it": "I cubi d'acciaio non s  abbinano. Il tuo obiettivo è portarli sul fondo.",
+          "br": "Cubos de aço não correspondem. Sua meta é levá-los para o fundo.",
+          "ru": "Стальные кубики не разбиваются. Ваша цель - опустить их на дно. "
+        },
+        {
+          "-id": "RulesEscapeKey",
+          "en": "Watch out for colourful cubes floating up! Match them before they reach the top!",
+          "de": "Achte auf die bunten, aufsteigenden Würfel! Verbinde sie, bevor sie oben ankommen!",
+          "es": "¡Cuidado con los cubos de colores flotantes! ¡Combínalos antes de que lleguen a lo más alto del tablero!",
+          "fr": "Attention aux cubes colorés qui remontent! Associez-les avant qu'ils n'atteignent le sommet!",
+          "it": "Fai attenzione ai cubi colorati galleggianti! Abbinali prima che raggiungano la cima!",
+          "br": "Preste atenção nos cubos coloridos flutuantes. Corresponda-os antes que cheguem ao topo!",
+          "ru": "Следите за цветными кубиками, они поднимаются вверх! Разбейте их, прежде чем они достигнут самого верха! "
+        },
+        {
+          "-id": "TimeisupKey",
+          "en": "Out of time!",
+          "de": "Die Zeit ist\nabgelaufen!",
+          "es": "¡Se acabó\nel tiempo!",
+          "fr": "À court\nde temps!",
+          "it": "Tempo scaduto!",
+          "br": "Acabou o tempo!",
+          "ru": "Закончилось время!"
+        },
+        {
+          "-id": "NoMoreMovesKey",
+          "en": "Out of\nmoves!",
+          "de": "Keine Züge\nmehr!",
+          "es": "¡Te has quedado\nsin movimientos!",
+          "fr": "À court de\ndéplacements!",
+          "it": "Hai esaurito\nle mosse!",
+          "br": "Acabaram-se\nos movimentos!",
+          "ru": "Закончились\nходы!"
+        },
+        {
+          "-id": "MORE_GAMES",
+          "en": "MORE GAMES",
+          "de": "MEHR SPIELE",
+          "es": "MÁS JUEGOS",
+          "fr": "PLUS DE JEUX",
+          "it": "ALTRI GIOCHI",
+          "br": "MAIS JOGOS",
+          "ru": "MORE GAMES"
+        }
+      ]
+    }
+  }
+}

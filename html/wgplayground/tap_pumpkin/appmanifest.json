@@ -1,0 +1,16 @@
+{
+	"name": "Tap Pumpkin",
+	"short_name": "Tap Pumpkin",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/splash.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	]
+}

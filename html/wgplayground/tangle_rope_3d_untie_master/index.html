@@ -1,0 +1,321 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Tangle Rope 3D: Untie Master">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/c5b0bfb393b4986978c02b63e5a54c49/wgplayground/89acd714299715d12981024e779d84bf.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/c5b0bfb393b4986978c02b63e5a54c49/wgplayground/3ba510dec21e7b5df782553e93dfe0bb.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/c5b0bfb393b4986978c02b63e5a54c49">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamesmunch/tangle-rope-3d-untie-master">
+            <meta property="wgp:description" content="A brand-new puzzle game that will challenge your skill to solve problems is called Tangle Rope 3D: Untie Master. This 3D game will have you hooked in no time because of its easy but difficult gameplay.It's time to take care of your brain by playing puzzle games to enhance your IQ. Tangle Rope 3D: Untie Master is a brainteaser puzzle game that will challenge you and keep you interested as you try to solve puzzles with ropes and lines. Even though this game seems easy, it's quite challenging!">
+            <meta property="wgp:instructions" content="How to play Tangle Rope 3D: Untie Master:- Chose the rope carefully to not make more knots- Tap the rope to move and place it in the right places to unlock all knots- Sort the ropes in the right order- Think fast and strategize as you move the ropes to unravel the knots- Unknots all the ropes and win">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/c5b0bfb393b4986978c02b63e5a54c49/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/c5b0bfb393b4986978c02b63e5a54c49/wgplayground/66eedd7bef20200902b7e70a3eaa7973.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/c5b0bfb393b4986978c02b63e5a54c49/wgplayground/3db11a9c78affd6a22bb4907c8b95727.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="1080">
+            <meta property="wgp:height" content="1920">
+            <meta property="wgp:rwidth" content="9">
+            <meta property="wgp:rheight" content="16">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0.56">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJQdXp6bGVzIn0seyJuYW1lIjoiU3RyYXRlZ3kifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="dsdwrftbl1cabrag/c5b0bfb393b4986978c02b63e5a54c49">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+ 
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Rope Tangle Puzzle</title>
+<link rel="stylesheet" href="TemplateData/style.css">
+	<style>
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;500&display=swap');	
+      @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;500&family=MuseoModerno:wght@600&display=swap');
+
+		html,
+		body {
+			background: black;
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			padding: 0;
+			margin: 0;
+		}
+
+		div#gameContainer {
+			background: transparent !important;
+			position: absolute;
+		}
+
+		div#gameContainer canvas {
+			position: absolute;
+		}
+
+		div#gameContainer canvas[data-pixel-art="true"] {
+			position: absolute;
+			image-rendering: optimizeSpeed;
+			image-rendering: -webkit-crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -o-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: optimize-contrast;
+			image-rendering: pixelated;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
+	</style>
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/c5b0bfb393b4986978c02b63e5a54c49/wgplayground/3ba510dec21e7b5df782553e93dfe0bb.jpg">
+	<div id="gameContainer" style="width: 314px; height: 558px; top: 0px; left: 241px;">
+		<canvas id="unity-canvas" data-pixel-art="" wg-game-orientation="wg-portrait-game" style="background: linear-gradient(to right, white, white 0%, transparent 0%, transparent) center center / 100% 1rem no-repeat; width: 314px; height: 558px;"></canvas>
+
+<table width="100%" height="70%"> 
+    <tbody><tr>
+        <td class="height" style="text-align: center; vertical-align: middle;">
+            <img src="logo.png" width="250" height="50">
+    <br><p id="loading-txt" style="text-align: center; font-family: 'MuseoModerno', cursive;color: white;font-size: 40px;margin-top: 0px;margin-bottom: 0px;">Loading...</p>	<br>
+        </td>
+
+    </tr>
+</tbody></table>
+		<script src="Build/Rope Tangle Puzzle ARTER.loader.js"></script>
+			
+             
+		<script>
+			var canvas = document.querySelector("#unity-canvas");
+			var config = {
+				dataUrl: "Build/Rope Tangle Puzzle ARTER.data",
+				frameworkUrl: "Build/Rope Tangle Puzzle ARTER.framework.js",
+				codeUrl: "Build/Rope Tangle Puzzle ARTER.wasm",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "Gamesmunch.com",
+				productName: "Rope Tangle Puzzle",
+				productVersion: "0.1",
+			};
+			var scaleToFit;
+			try {
+				scaleToFit = !!JSON.parse("");
+			} catch (e) {
+				scaleToFit = true;
+			}
+			function progressHandler(progress) {
+				var percent = progress * 100 + '%';
+				canvas.style.background = 'linear-gradient(to right, white, white ' + percent + ', transparent ' + percent + ', transparent) no-repeat center';
+				canvas.style.backgroundSize = '100% 1rem';
+			}
+			function onResize() {
+				var container = canvas.parentElement;
+				var w;
+				var h;
+
+				if (scaleToFit) {
+					w = window.innerWidth;
+					h = window.innerHeight;
+
+					var r = 1920 / 1080;
+
+					if (w * r > window.innerHeight) {
+						w = Math.min(w, Math.ceil(h / r));
+					}
+					h = Math.floor(w * r);
+				} else {
+					w = 1080;
+					h = 1920;
+				}
+
+				container.style.width = canvas.style.width = w + "px";
+				container.style.height = canvas.style.height = h + "px";
+				container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
+				container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
+			}
+			createUnityInstance(canvas, config, progressHandler).then(function (instance) {
+				canvas = instance.Module.canvas;
+				onResize();
+			});
+			window.addEventListener('resize', onResize);
+			onResize();
+		</script>
+	</div><script src="Build/Rope Tangle Puzzle ARTER.framework.js"></script>
+
+
+
+
+
+</body></html>
