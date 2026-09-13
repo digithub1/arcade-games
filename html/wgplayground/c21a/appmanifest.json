@@ -1,0 +1,11 @@
+{
+	"name": "Collect 21 Again!",
+	"short_name": "Collect 21 Again!",
+	"description": "Blackjack",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#aeff9e",
+	"icons": [],
+	"screenshots": []
+}

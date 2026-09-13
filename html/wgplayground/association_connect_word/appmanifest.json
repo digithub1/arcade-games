@@ -1,0 +1,11 @@
+{
+	"name": "Association - Connect Word",
+	"short_name": "Association - Connect Word",
+	"description": "Association - Connect Word",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}
