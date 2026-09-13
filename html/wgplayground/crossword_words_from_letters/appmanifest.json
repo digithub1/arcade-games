@@ -1,0 +1,11 @@
+{
+	"name": "Кроссворд - Слова из букв",
+	"short_name": "Кроссворд - Слова из букв",
+	"description": "Кроссворд - Слова из букв",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

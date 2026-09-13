@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "RavenField",
+"productVersion": "1.0",
+"dataUrl": "bdba15ff86c4b743c9c230af34267d31.unityweb",
+"wasmCodeUrl": "fe85e463a187381f54d0de5916baceb1.unityweb",
+"wasmFrameworkUrl": "76686b23525ef00ff24261aa9a949be5.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
