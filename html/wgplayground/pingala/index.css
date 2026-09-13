@@ -1,0 +1,121 @@
+html {
+    background-color: #000;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    height: 100%;
+    width: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    -webkit-touch-callout: none !important;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    overscroll-behavior: none;
+    height: 100%;
+    width: 100%;
+    /* cursor: none; */
+}
+h1 {
+    opacity: 0.5;
+    color: #232;
+    -moz-transition: opacity 1.2s;
+    -webkit-transition: opacity 1.2s;
+    -o-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+}
+.dom_loaded h1 {
+    opacity: 1;
+    color: #cfc;
+}
+#loader_first_text {
+    opacity: 0;
+    -moz-transition: opacity 1.2s;
+    -webkit-transition: opacity 1.2s;
+    -o-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+}
+.dom_loaded #loader_first_text {
+    opacity: 0.9;
+}
+#loader_text {
+    color: #f24;
+}
+.init_container {
+    padding: 10px 45px;
+    color: #cfc;
+    font-size: 1.3em;
+    font-family: monospace;
+    /* background-image: url('img/background/stars_background.png'); */
+}
+.error {
+    color: red;
+}
+#load_error div, #error_container div{
+    font-size: 18px;
+    padding: 5px 0;
+}
+#error_container div {padding: 10px 10px}
+.hidden{
+    display: none;
+}
+* {
+    touch-action: none;
+}
+#run_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-user-select: none !important;
+    outline: none;
+    /*background-color: #111;*/
+    /*background-color: silver;*/
+}
+#run_canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none !important;
+}
+
+.yandex_rtb_sticky {
+    height: 50px; 
+    width: 100%
+}
+
+@media screen and (min-width: 900px) {
+    .yandex_rtb_sticky {
+        height: 150px; 
+    }
+}
+/*@media screen and (max-width: 900px) {
+    .yandex_rtb_sticky {
+        height: 80px; 
+        width: 100%
+    }
+}*/
+
+/* BrickCombo styles */
+.brick-combo {
+    position: absolute;
+    transform-origin: center;
+    will-change: transform, opacity, left, top;
+    font-family: 'Arial Black', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    pointer-events: none;
+    transition: opacity 0.05s linear, transform 0.3s ease-out;
+}
+

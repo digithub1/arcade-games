@@ -1,0 +1,40 @@
+<!-- Popup завершения уровня -->
+<div id="level_complete_popup" class="level_complete_popup hidden">
+    <div class="popup_overlay"></div>
+    <div class="popup_container">
+        <div class="popup_header">
+            <h2 class="popup_title popup_title_victory" id="popup_title_victory"></h2>
+            <div class="special_congrats_message hidden" id="all_levels_completed_message"></div>
+            <div class="special_congrats_message hidden" id="all_stars_completed_message"></div>
+        </div>
+        <div class="popup_content">
+            <div class="stats_row">
+                <span class="stats_label" id="popup_broken_bricks_label"></span>
+                <span class="stats_value" id="popup_broken_bricks">0</span>
+            </div>
+            <div class="stats_row">
+                <span class="stats_label" id="popup_max_combo_label"></span>
+                <span class="stats_value" id="popup_max_combo">0</span>
+            </div>
+            <div class="stats_row">
+                <span class="stats_label" id="popup_score_label"></span>
+                <span class="stats_value" id="popup_score">0</span>
+            </div>
+            <div class="stars_wrapper">
+                <div class="stars_progress_bg">
+                    <div class="stars_progress_fill" id="stars_progress_fill"></div>
+                </div>
+                <div class="stars_container">
+                    <span class="star" id="star_1">☆</span>
+                    <span class="star" id="star_2">☆</span>
+                    <span class="star" id="star_3">☆</span>
+                </div>
+                <div class="stars_message" id="stars_message"></div>
+            </div>
+        </div>
+        <div class="popup_footer popup_footer_two_buttons">
+            <button class="popup_button" id="levels_button"><img class="icon-img" src="img/level_btn_32.png" alt=""> <span id="levels_button_text"></span></button>
+            <button class="popup_button" id="restart_button"><img class="icon-img" src="img/restart_btn_32.png" alt=""> <span id="restart_button_text"></span></button>
+        </div>
+    </div>
+</div>

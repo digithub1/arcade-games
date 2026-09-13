@@ -1,0 +1,42 @@
+<!-- Popup выбора уровней -->
+<div id="level_selector_popup" class="level_selector_popup hidden">
+    <div class="popup_overlay"></div>
+    <div class="popup_container level_selector_container">
+        <div class="popup_header">
+            <h2 class="popup_title" id="level_selector_title"></h2>
+        </div>
+        <div class="popup_content">
+            <div class="levels_grid" id="levels_grid"></div>
+            <div class="level_selector_stats">
+                <div class="progress_row">
+                    <span class="progress_label" id="levels_completed_label"></span>
+                    <div class="progress_bar_container">
+                        <div class="progress_bar" id="levels_completed_bar"></div>
+                    </div>
+                    <span class="progress_value" id="levels_completed_value">0/0</span>
+                </div>
+                <div class="progress_row">
+                    <span class="progress_label" id="stars_earned_label"></span>
+                    <div class="progress_bar_container">
+                        <div class="progress_bar stars_bar" id="stars_earned_bar"></div>
+                    </div>
+                    <span class="progress_value" id="stars_earned_value">0/0</span>
+                </div>
+            </div>
+            <div class="leaderboard_stats_row" id="leaderboard_stats_row">
+                <span class="leaderboard_record_label"><span id="leaderboard_record_label_text"></span><span id="leaderboard_record_value">0</span></span>
+                <button class="leaderboard_mini_button" id="leaderboard_mini_button">
+                    <span id="leaderboard_mini_button_text"></span>
+                </button>
+            </div>
+            <div class="level_selector_navigation">
+                <button class="popup_button nav_button" id="prev_page_button">◀</button>
+                <span class="page_info" id="page_info">1 / 1</span>
+                <button class="popup_button nav_button" id="next_page_button">▶</button>
+            </div>
+        </div>
+        <div class="popup_footer">
+            <button class="popup_button" id="close_level_selector"><span id="close_level_selector_text"></span></button>
+        </div>
+    </div>
+</div>

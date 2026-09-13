@@ -1,0 +1,505 @@
+/* === КНОПКА НАСТРОЕК (теперь использует общий класс .game_action_button) === */
+
+    /* Скан-линии */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 247, 255, 0.03) 2px,
+        rgba(0, 247, 255, 0.03) 4px
+    );
+    pointer-events: none;
+    animation: scanlines 8s linear infinite;
+    z-index: 2;
+}
+
+.settings_button:focus {
+    outline: none;
+    border-color: #5affff;
+    box-shadow: 
+        0 0 25px rgba(0, 247, 255, 0.5),
+        0 0 50px rgba(0, 247, 255, 0.25),
+        inset 0 0 20px rgba(0, 247, 255, 0.15),
+        0 0 0 3px rgba(0, 247, 255, 0.3);
+}
+
+.settings_button:hover {
+    transform: scale(1.03);
+    border-color: #5affff;
+    background: linear-gradient(180deg, rgba(42, 26, 78, 0.9) 0%, rgba(77, 43, 110, 0.9) 50%, rgba(42, 26, 78, 0.9) 100%);
+    box-shadow: 
+        0 0 35px rgba(0, 247, 255, 0.5),
+        0 0 70px rgba(0, 247, 255, 0.25),
+        inset 0 0 30px rgba(0, 247, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.settings_button:active {
+    transform: scale(0.98);
+    border-color: #5affff;
+    box-shadow: 
+        0 0 15px rgba(0, 247, 255, 0.4),
+        0 0 30px rgba(0, 247, 255, 0.2),
+        inset 0 0 25px rgba(0, 247, 255, 0.2);
+}
+
+/* Popup настроек */
+.settings_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.425);
+    backdrop-filter: blur(10px);
+}
+
+.settings_popup.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.settings_popup:not(.hidden) {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Строка настройки */
+.settings_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.settings_label {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+/* === КОНТРОЛЫ ГРОМКОСТИ (КОСМИЧЕСКИЙ СТИЛЬ) === */
+.volume_controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume_button {
+    /* Космический стиль - полупрозрачная тёмно-фиолетовая капсула */
+    background: linear-gradient(180deg, rgba(26, 10, 46, 0.8) 0%, rgba(45, 27, 78, 0.8) 50%, rgba(26, 10, 46, 0.8) 100%);
+    color: #00f7ff;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00f7ff;
+    border-radius: 50%;
+    cursor: pointer;
+    text-shadow: 0 0 8px rgba(0, 247, 255, 0.8);
+    box-shadow: 
+        0 0 15px rgba(0, 247, 255, 0.3),
+        inset 0 0 10px rgba(0, 247, 255, 0.1);
+    transition: all 0.25s ease;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Скан-линии */
+.volume_button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 247, 255, 0.03) 1px,
+        rgba(0, 247, 255, 0.03) 2px
+    );
+    pointer-events: none;
+    animation: scanlines 8s linear infinite;
+    z-index: 2;
+}
+
+.volume_button:hover {
+    transform: scale(1.08);
+    border-color: #5affff;
+    text-shadow: 0 0 12px rgba(0, 247, 255, 1);
+    background: linear-gradient(180deg, rgba(42, 26, 78, 0.9) 0%, rgba(77, 43, 110, 0.9) 50%, rgba(42, 26, 78, 0.9) 100%);
+    box-shadow: 
+        0 0 25px rgba(0, 247, 255, 0.5),
+        inset 0 0 15px rgba(0, 247, 255, 0.15);
+}
+
+.volume_button:active {
+    transform: scale(0.95);
+    box-shadow: 
+        0 0 10px rgba(0, 247, 255, 0.4),
+        inset 0 0 15px rgba(0, 247, 255, 0.2);
+}
+
+.volume_display {
+    color: #50c850;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background: rgba(80, 200, 80, 0.1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(80, 200, 80, 0.3);
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+}
+
+/* === КОНТРОЛЫ ВЫБОРА ЯЗЫКА (КОСМИЧЕСКИЙ СТИЛЬ) === */
+.language_controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang_button {
+    /* Космический стиль - полупрозрачная тёмно-фиолетовая капсула */
+    background: linear-gradient(180deg, rgba(26, 10, 46, 0.7) 0%, rgba(45, 27, 78, 0.7) 100%);
+    color: rgba(0, 247, 255, 0.7);
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid rgba(0, 247, 255, 0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0 0 6px rgba(0, 247, 255, 0.5);
+    transition: all 0.25s ease;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Скан-линии */
+.lang_button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 247, 255, 0.02) 1px,
+        rgba(0, 247, 255, 0.02) 2px
+    );
+    pointer-events: none;
+    animation: scanlines 10s linear infinite;
+    z-index: 2;
+}
+
+.lang_button:hover {
+    background: linear-gradient(180deg, rgba(42, 26, 78, 0.8) 0%, rgba(61, 43, 94, 0.8) 100%);
+    border-color: #00f7ff;
+    color: #00f7ff;
+    text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+    transform: scale(1.03);
+}
+
+.lang_button.active {
+    background: linear-gradient(180deg, rgba(42, 26, 78, 0.9) 0%, rgba(77, 43, 110, 0.9) 100%);
+    color: #00f7ff;
+    border-color: #00f7ff;
+    text-shadow: 0 0 12px rgba(0, 247, 255, 1);
+    box-shadow: 
+        0 0 20px rgba(0, 247, 255, 0.4),
+        inset 0 0 10px rgba(0, 247, 255, 0.1);
+}
+
+.lang_button:active {
+    transform: scale(0.97);
+}
+
+/* === ПЕРЕКЛЮЧАТЕЛИ (TOGGLE) (КОСМИЧЕСКИЙ СТИЛЬ) === */
+.toggle_controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle_button {
+    /* Космический стиль - полупрозрачная тёмно-фиолетовая капсула */
+    background: linear-gradient(180deg, rgba(26, 10, 46, 0.7) 0%, rgba(45, 27, 78, 0.7) 100%);
+    color: rgba(0, 247, 255, 0.6);
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid rgba(0, 247, 255, 0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0 0 6px rgba(0, 247, 255, 0.5);
+    transition: all 0.25s ease;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    min-width: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Скан-линии */
+.toggle_button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 247, 255, 0.02) 1px,
+        rgba(0, 247, 255, 0.02) 2px
+    );
+    pointer-events: none;
+    animation: scanlines 10s linear infinite;
+    z-index: 2;
+}
+
+.toggle_button:hover {
+    background: linear-gradient(180deg, rgba(42, 26, 78, 0.8) 0%, rgba(61, 43, 94, 0.8) 100%);
+    border-color: #00f7ff;
+    color: #00f7ff;
+    text-shadow: 0 0 10px rgba(0, 247, 255, 0.8);
+    transform: scale(1.03);
+}
+
+.toggle_button.active {
+    background: linear-gradient(180deg, rgba(42, 26, 78, 0.9) 0%, rgba(77, 43, 110, 0.9) 100%);
+    color: #00f7ff;
+    border-color: #00f7ff;
+    text-shadow: 0 0 12px rgba(0, 247, 255, 1);
+    box-shadow: 
+        0 0 20px rgba(0, 247, 255, 0.4),
+        inset 0 0 10px rgba(0, 247, 255, 0.1);
+}
+
+.toggle_button:active {
+    transform: scale(0.97);
+}
+
+/* === КНОПКА ПОКУПКИ (ОТКЛЮЧЕНИЕ РЕКЛАМЫ) === */
+.purchase_button {
+    background: linear-gradient(180deg, rgba(46, 20, 14, 0.9) 0%, rgba(139, 69, 19, 0.9) 50%, rgba(46, 20, 14, 0.9) 100%);
+    color: #ffd700;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    box-shadow: 
+        0 0 15px rgba(255, 215, 0, 0.3),
+        inset 0 0 10px rgba(255, 215, 0, 0.1);
+    transition: all 0.25s ease;
+    outline: none;
+    user-select: none;
+    min-width: 140px;
+}
+
+.purchase_button:hover:not(:disabled) {
+    background: linear-gradient(180deg, rgba(139, 69, 19, 0.95) 0%, rgba(205, 133, 63, 0.95) 50%, rgba(139, 69, 19, 0.95) 100%);
+    border-color: #ffe066;
+    color: #ffe066;
+    transform: translateY(-2px);
+}
+
+.purchase_button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Успешная покупка - галочка */
+#ads_disabled_success {
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    height: 36px;
+    padding: 0 12px;
+    margin-left: 10px;
+    background: linear-gradient(180deg, rgba(20, 46, 20, 0.9) 0%, rgba(34, 139, 34, 0.9) 50%, rgba(20, 46, 20, 0.9) 100%);
+    border: 2px solid #50c850;
+    border-radius: 6px;
+    color: #50c850;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(80, 200, 80, 0.5);
+}
+
+#ads_disabled_success.hidden {
+    display: none !important;
+}
+
+#ads_disabled_success.purchased {
+    display: inline-flex !important;
+    animation: purchaseSuccessPop 0.4s ease-out;
+}
+
+#ads_disabled_success.already_purchased {
+    display: inline-flex !important;
+}
+
+#ads_disabled_success.purchased .checkmark {
+    margin-right: 8px;
+}
+
+@keyframes purchaseSuccessPop {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.settings_popup #exit_button {
+    margin-right: 10px;
+}
+
+/* Респонсивность для popup настроек */
+@media (max-width: 768px) {
+    .settings_container {
+        min-width: 90vw;
+        max-width: 95vw;
+        width: 90vw;
+        max-height: 85vh;
+    }
+
+    .settings_popup .popup_content {
+        max-height: calc(85vh - 100px);
+        overflow-y: auto;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .settings_row {
+        padding: 10px 12px;
+        margin-bottom: 8px;
+    }
+
+    .settings_label {
+        font-size: 13px;
+    }
+
+    .volume_button {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .volume_display {
+        font-size: 14px;
+        padding: 4px 8px;
+        min-width: 30px;
+    }
+
+    .lang_button {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .language_controls {
+        gap: 8px;
+    }
+
+    .toggle_button {
+        font-size: 11px;
+        padding: 5px 10px;
+        min-width: 55px;
+    }
+
+    .settings_popup .popup_header {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .settings_popup .popup_title {
+        font-size: 18px;
+    }
+
+    .settings_popup .popup_footer {
+        padding: 8px;
+    }
+
+    .settings_popup .popup_button {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+}
+
+/* === ОТКЛЮЧЕНИЕ АНИМАЦИЙ ПРИ prefers-reduced-motion === */
+@media (prefers-reduced-motion: reduce) {
+    .settings_button,
+    .settings_button::before,
+    .popup_container,
+    .popup_container::before,
+    .volume_button,
+    .volume_button::before,
+    .lang_button,
+    .lang_button::before,
+    .toggle_button,
+    .toggle_button::before {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .settings_button:hover,
+    .volume_button:hover,
+    .lang_button:hover,
+    .toggle_button:hover {
+        transform: none !important;
+    }
+}

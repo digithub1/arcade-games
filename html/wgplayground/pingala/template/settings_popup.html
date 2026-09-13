@@ -1,0 +1,53 @@
+<!-- Popup настроек -->
+<div id="settings_popup" class="settings_popup hidden">
+    <div class="popup_overlay"></div>
+    <div class="popup_container">
+        <div class="popup_header">
+            <h2 class="popup_title" id="settings_title"></h2>
+        </div>
+        <div class="popup_content">
+            <div class="settings_version" id="settings_version"></div>
+            <div class="settings_row">
+                <span class="settings_label" id="sound_volume_label"></span>
+                <div class="volume_controls">
+                    <button class="volume_button" id="sound_volume_minus">−</button>
+                    <span class="volume_display" id="sound_volume_display"></span>
+                    <button class="volume_button" id="sound_volume_plus">+</button>
+                </div>
+            </div>
+            <div class="settings_row">
+                <span class="settings_label" id="music_volume_label"></span>
+                <div class="volume_controls">
+                    <button class="volume_button" id="music_volume_minus">−</button>
+                    <span class="volume_display" id="music_volume_display"></span>
+                    <button class="volume_button" id="music_volume_plus">+</button>
+                </div>
+            </div>
+            <div class="settings_row" id="language_row">
+                <span class="settings_label" id="language_label"></span>
+                <div class="language_controls">
+                    <button class="lang_button" id="lang_ru" data-lang="ru">русский</button>
+                    <button class="lang_button" id="lang_en" data-lang="en">english</button>
+                </div>
+            </div>
+            <div class="settings_row" id="fullscreen_row">
+                <span class="settings_label" id="fullscreen_label"></span>
+                <div class="toggle_controls">
+                    <button class="toggle_button" id="fullscreen_toggle"></button>
+                </div>
+            </div>
+            <div class="settings_row" id="ads_disabled_row">
+                <span class="settings_label" id="ads_disabled_label"></span>
+                <button class="purchase_button" id="ads_disabled_button"></button>
+                <span id="ads_disabled_success">
+                    <span class="checkmark">✓</span>
+                    <span class="purchased_text" id="ads_disabled_purchased_text"></span>
+                </span>
+            </div>
+        </div>
+        <div class="popup_footer">
+            <button class="popup_button exit_button hidden" id="exit_button"><span id="exit_button_text"></span></button>
+            <button class="popup_button" id="settings_close_button"><span id="settings_close_button_text"></span></button>
+        </div>
+    </div>
+</div>
