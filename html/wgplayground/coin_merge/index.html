@@ -1,0 +1,457 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Coin Merge">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/ee713c756d2ca371d268edca8d19b9d0/wgplayground/bgr_b8685a5fe56b89dbae3f1c8022466eeb.jpg">
+            <meta property="wgp:image" content="https://static.wgplayground.com/ee713c756d2ca371d268edca8d19b9d0/wgplayground/3c8ad17b5773e896565ada8f6fed12e4.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/ee713c756d2ca371d268edca8d19b9d0">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/coin-merge">
+            <meta property="wgp:description" content="Drop and merge coins in a fun physics puzzle! Adapt to unique jar shapes, use powerful boosters, and reach the final Star Coin.">
+            <meta property="wgp:instructions" content="Click on the screen to drop a coin into the jar. Matching coins merge into a higher-level coin when they collide. Higher-level coins are more valuable. Watch the height of the stack: if the coins rise too high, the level is lost. The goal of every level is to create the Star Coin, the final coin in the chain. Each level has a different jar shape, so coins may roll, slide, get stuck, or spread in new ways.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/ee713c756d2ca371d268edca8d19b9d0/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/ee713c756d2ca371d268edca8d19b9d0/wgplayground/7ccc4a090b38b34e8e653cc6eba8e622.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/ee713c756d2ca371d268edca8d19b9d0/wgplayground/e2f63d9ecb31a1c31449fab923773855.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXN1YWwifSx7Im5hbWUiOiJQdXp6bGVzIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/ee713c756d2ca371d268edca8d19b9d0">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Coin Merge</title>
+    <style>
+      /* Оригинальный шрифт игры — Nunito (BK / EB). */
+      @font-face {
+        font-family: "Nunito";
+        src: url("assets/Fonts/Nunito_BK.ttf") format("truetype");
+        font-weight: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Nunito EB";
+        src: url("assets/Fonts/Nunito_EB.ttf") format("truetype");
+        font-weight: 800;
+        font-display: swap;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1a1a1a;
+        overflow: hidden;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: none;
+        overscroll-behavior: none;
+        font-family: "Segoe UI", sans-serif;
+      }
+      /* Sticky-banner reserve: the bottom padding is set by window.cmStickyReserve()
+         (0 by default → identical to no-banner layout). border-box makes the padding
+         eat into the body height so #game shrinks and Phaser Scale.FIT refits above. */
+      body {
+        box-sizing: border-box;
+        padding-bottom: 0;
+      }
+      * {
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* Common full-screen background behind the vertical game canvas — appears after PLAY. */
+      body.game-visible {
+        background-image: url("assets/Levels/Background.png");
+        cursor: url("assets/Levels/Cursor_Web.png") 8 4, pointer;
+      }
+      /* Наш курсор ВСЕГДА, даже когда Phaser ставит hand-cursor на кнопках (inline
+         style перебивается через !important). */
+      body.game-visible #game canvas {
+        cursor: url("assets/Levels/Cursor_Web.png") 8 4, pointer !important;
+      }
+      #game {
+        width: 100%;
+        height: 100%;
+      }
+      #game canvas {
+        display: block;
+      }
+
+      #splash {
+        position: absolute;
+        inset: 0;
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      #splash-content {
+        position: relative;
+        width: min(100vw, 56.25vh);
+        height: min(100vh, 177.7778vw);
+        max-width: 1080px;
+        max-height: 1920px;
+        overflow: hidden;
+      }
+      #cm-logo {
+        position: absolute;
+        left: 50%;
+        top: 28.5%;
+        width: 62%;
+        height: auto;
+        object-fit: contain;
+        filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.45));
+        transform: translate(-50%, -50%);
+      }
+      #cm-interaction {
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        width: 28%;
+        height: 4.9%;
+        transform: translate(-50%, -50%);
+      }
+      #cm-progress-box,
+      #cm-start-box {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+      }
+      #cm-start-box {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      #cm-interaction.ready #cm-progress-box {
+        opacity: 0;
+        visibility: hidden;
+      }
+      #cm-interaction.ready #cm-start-box {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+      #cm-progress-container {
+        width: 100%;
+        height: max(6px, 5.2%);
+        background-color: #333;
+        border-radius: 999px;
+        overflow: hidden;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+      }
+      #cm-bar {
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, #fdd835, #ffb300);
+        transition: width 0.2s ease-out;
+      }
+      #cm-status {
+        color: #777;
+        margin-top: 0.9rem;
+        font-size: clamp(0.65rem, 1.8vmin, 0.95rem);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        min-height: 1.1rem;
+      }
+      #cm-play {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        cursor: pointer;
+        border-radius: clamp(12px, 2.2vmin, 24px);
+        border: none;
+        font-family: "Segoe UI", sans-serif;
+        font-size: clamp(0.9rem, 2.25vmin, 1.5rem);
+        font-weight: 800;
+        color: #1a1a1a;
+        letter-spacing: 1px;
+        background: linear-gradient(to bottom, #ffeb3b 0%, #fdd835 45%, #f9a825 100%);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+        animation: cm-pulse 2.5s infinite ease-in-out;
+        transition: transform 0.1s ease-out;
+      }
+      #cm-play:active {
+        transform: scale(0.96);
+      }
+      #cm-studio {
+        position: absolute;
+        left: 50%;
+        top: 64.5%;
+        transform: translate(-50%, -50%);
+        font-family: "Cinzel", Georgia, serif;
+        color: #fff38a;
+        font-size: clamp(0.85rem, 2.55vmin, 1.55rem);
+        font-weight: 400;
+        line-height: 1.58;
+        letter-spacing: clamp(3px, 0.78vmin, 8px);
+        text-align: center;
+        text-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+        white-space: nowrap;
+      }
+      @keyframes cm-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.03);
+        }
+      }
+    </style>
+    <script type="module" crossorigin="" src="./assets/index-CIFWjCWC.js"></script>
+  <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style><style>.gp-gamedistribution-sticky{display:flex;justify-content:center;position:fixed;left:50%;transform:translateX(-50%);z-index:100;max-height:90px;max-width:728px;overflow:hidden}.gp-gamedistribution-sticky__creative{position:relative;height:90px;width:728px;max-width:100vw}.gp-gamedistribution-sticky_top{top:0}.gp-gamedistribution-sticky_bottom{bottom:0}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202609080101/gpt" rel="compression-dictionary"><script esp-signal="true" src="https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js"></script></head>
+  <body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/ee713c756d2ca371d268edca8d19b9d0/wgplayground/3c8ad17b5773e896565ada8f6fed12e4.jpg">
+    <div id="game"><canvas width="1080" height="1920" style="width: 393.188px; height: 699px; margin-left: 523px; margin-top: 0px; aspect-ratio: 2.06009 / 1;"></canvas></div>
+
+    <div id="splash">
+      <div id="splash-content">
+        <img id="cm-logo" src="assets/Menu/Logo.png" alt="">
+        <div id="cm-interaction">
+          <div id="cm-progress-box">
+            <div id="cm-progress-container"><div id="cm-bar" style="width: 41.3793%;"></div></div>
+            <div id="cm-status">LOADING...</div>
+          </div>
+          <div id="cm-start-box"><button id="cm-play">PLAY</button></div>
+        </div>
+        <div id="cm-studio"><div>STORYTIME</div><div>GAMES</div></div>
+      </div>
+    </div>
+
+    <script>
+      // Sticky-banner reserve — platformBridge calls this with the GamePush sticky
+      // height on render/refresh and 0 on close. We set body padding-bottom (border-box,
+      // see CSS) so the #game box shrinks and Phaser Scale.FIT refits the canvas ABOVE
+      // the banner. px=0 → padding 0 → layout identical to no-banner.
+      window.cmStickyReserve = function (px) {
+        var h = Number(px);
+        if (!isFinite(h) || h < 0) h = 0;
+        document.body.style.paddingBottom = h + "px";
+      };
+
+      // Splash bridge — PreloadScene drives progress/ready; PLAY is the first user
+      // gesture that unlocks WebAudio (onStart) and reveals the page background.
+      window.CoinMergeSplash = {
+        onStart: null,
+        _lang: "en",
+        _t: { en: { loading: "LOADING...", play: "PLAY" }, ru: { loading: "ЗАГРУЗКА...", play: "ИГРАТЬ" } },
+        _apply() {
+          const t = this._t[this._lang];
+          const s = document.getElementById("cm-status");
+          if (s) s.textContent = t.loading;
+          const b = document.getElementById("cm-play");
+          if (b) b.textContent = t.play;
+        },
+        setLanguage(lang) {
+          this._lang = lang && String(lang).toLowerCase().startsWith("ru") ? "ru" : "en";
+          document.documentElement.lang = this._lang;
+          this._apply();
+        },
+        setProgress(pct) {
+          const bar = document.getElementById("cm-bar");
+          if (bar) bar.style.width = Math.max(0, Math.min(100, pct)) + "%";
+        },
+        ready() {
+          document.getElementById("cm-interaction")?.classList.add("ready");
+        },
+        start() {
+          document.body.classList.add("game-visible");
+          if (this.onStart) this.onStart();
+          const sp = document.getElementById("splash");
+          if (sp) {
+            sp.style.opacity = "0";
+            setTimeout(() => (sp.style.display = "none"), 800);
+          }
+        },
+      };
+      document.getElementById("cm-play").addEventListener("click", () => window.CoinMergeSplash.start());
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+    </script>
+
+  
+
+
+
+<script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=28604&amp;publicToken=NzM1Dw9dsMDCAlFpAiho4d6Cjm4lY0Kr&amp;callback=onGPInit"></script><div id="gs-gamedistribution"></div><div class="gs-global-loader" style="display: none;"><div class="gs-loader false">
+        <div class="gs-loader__outter"></div>
+        <div class="gs-loader__inner"></div>
+    </div></div><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"><div class="ad_top_2 home-ad-container ad-contain-top block-adsense content-ad-side" style="width: 1px; height: 1px; position: absolute; left: -10000px; top: -9996px;"></div></body></html>

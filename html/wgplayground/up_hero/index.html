@@ -1,0 +1,228 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Up Hero">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/f7af86b4a0ab9f00e5d04689bdd7e236/wgplayground/bd826624343bb4b735830d382d1c70ba.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/f7af86b4a0ab9f00e5d04689bdd7e236/wgplayground/1f07b4041f4f639720ff7e3c447847dc.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/f7af86b4a0ab9f00e5d04689bdd7e236">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/up-hero">
+            <meta property="wgp:description" content="Ready to challenge endless hordes of monsters? Up Hero is an action-packed RPG where you level up and power up your character right on the battlefield. Wipe out waves of enemies and prove that you are the ultimate hero!What awaits you in Up Hero:Horde Battles: Fight your way through crowds of monsters!Vast Arsenal &amp; Epic Skills: Mix and match swords, firearms, and magic!Dangerous Worlds: Explore unique locations, each with its own monsters and bosses!">
+            <meta property="wgp:instructions" content="Controls: On PC, move your hero using WASD or arrow keys. On mobile, simply drag your finger anywhere on the screen (virtual joystick).Auto-Combat: No need to mash attack buttons! Your character automatically strikes monsters as soon as they get close. Just maneuver through the crowd and dodge threats.Gather Resources &amp; Cargo: Explore locations, chop wood, mine stone, deliver valuable cargo, and collect gold dropped by defeated enemies.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/f7af86b4a0ab9f00e5d04689bdd7e236/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/f7af86b4a0ab9f00e5d04689bdd7e236/wgplayground/8331ce972c4459c1aee11f1e56e2c41b.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/f7af86b4a0ab9f00e5d04689bdd7e236/wgplayground/82d4caf1f56bda238d72377cb30db1e5.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJBIjoiIiwiVyI6IiIsIlMiOiIiLCJEIjoiIiwiTGVmdCBNb3VzZSI6IiJ9">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXN1YWwifSx7Im5hbWUiOiJSb2xlLVBsYXlpbmcgKFJQRykifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="3">
+            <meta property="wgp:ads" content="97/f7af86b4a0ab9f00e5d04689bdd7e236">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- GamePush SDK -->
+    <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style>
+
+    <style>
+        canvas:focus {
+            outline: none;
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            overscroll-behavior: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            height: 100%;
+        }
+    </style>
+
+    <!-- Additional head modules -->
+
+<style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="https://gs.eponesh.com/sdk/gamepush.js?projectId=28404&amp;publicToken=UCzoblgEMO2pf4Rnmcym4Hg8RUBkjWDK"></script><style>.gs-global-loader{position:fixed;z-index:99999;top:8px;right:8px;width:48px;height:48px}@media only screen and (min-width: 1024px){.gs-global-loader{top:inherit;right:16px;bottom:16px}}.gs-loader{position:relative;width:40px;height:40px;border-radius:50%;display:flex}.gs-loader__outter{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-left-color:transparent;width:100%;height:100%;border-radius:50%;-webkit-animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}.gs-loader__inner{box-sizing:border-box;position:absolute;border:4px solid #f50057;border-radius:50%;width:20px;height:20px;left:calc(50% - 10px);top:calc(50% - 10px);border-top-color:transparent;-webkit-animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;animation:loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite}@keyframes loader-outter{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loader-inner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}}.gs-loader-hidden{display:none}</style><style>.gp-gamedistribution-sticky{display:flex;justify-content:center;position:fixed;left:50%;transform:translateX(-50%);z-index:100;max-height:90px;max-width:728px;overflow:hidden}.gp-gamedistribution-sticky__creative{position:relative;height:90px;width:728px;max-width:100vw}.gp-gamedistribution-sticky_top{top:0}.gp-gamedistribution-sticky_bottom{bottom:0}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202609080101/gpt" rel="compression-dictionary"><script esp-signal="true" src="https://cdn.fusion-platform.com/static/js/novatiq_gam_integration.min.js"></script></head>
+<body class="dark wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/f7af86b4a0ab9f00e5d04689bdd7e236/wgplayground/1f07b4041f4f639720ff7e3c447847dc.jpg">
+
+    <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" tabindex="-1" wg-game-orientation="wg-portrait-game" width="1049" height="1398" style="aspect-ratio: 2.06009 / 1; cursor: default;"></canvas>
+    </div>
+    <div id="loading-cover" style="display: none;">
+        <div id="unity-loading-bar">
+            <div id="unity-logo"><img src="./logo.png"></div>
+            <div id="unity-progress-bar-empty" style="">
+                <div id="unity-progress-bar-full" style="width: 100%;"></div>
+            </div>
+            <div class="spinner" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Additional body modules -->
+
+    <script>
+        const hideFullScreenButton = "";
+        const buildUrl = "Build";
+        const loaderUrl = buildUrl + "/533e69e917b9769330aea20eb03f0c1d.loader.js";
+        const config = {
+            dataUrl: buildUrl + "/3ccd1976a0d81e2665efea6677497193.data.unityweb",
+            frameworkUrl: buildUrl + "/9cbfb22eb7175edebd5ce9aa5c6ff190.framework.js.unityweb",
+            codeUrl: buildUrl + "/c86b66d7e9459154a2b6a91430b269dd.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+            companyName: "DefaultCompany",
+            productName: "XHero",
+            productVersion: "0.2.26"
+        };
+
+        const container = document.querySelector("#unity-container");
+        const canvas = document.querySelector("#unity-canvas");
+        const loadingCover = document.querySelector("#loading-cover");
+        const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+        const progressBarFull = document.querySelector("#unity-progress-bar-full");
+        const spinner = document.querySelector('.spinner');
+
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            container.className = "unity-mobile";
+        }
+
+        // The background image when loading the game.
+        loadingCover.style.background = "none center / cover";
+        loadingCover.style.display = "";
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        const oRequestPointerLock = Element.prototype.requestPointerLock;
+        Element.prototype.requestPointerLock = async function hkRequestPointerLock(...args) {
+            try {
+                (args[0] ||= {}).unadjustedMovement = true;
+                await oRequestPointerLock.apply(this, args);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+
+        function FocusGame() {
+            if (!canvas) return;
+            requestAnimationFrame(() => {
+                const active = document.activeElement;
+                if (active && (active.tagName === 'INPUT' ||
+                    active.tagName === 'TEXTAREA' ||
+                    active.isContentEditable
+                )) {
+                    return;
+                }
+                canvas.focus({ preventScroll: true });
+            });
+        }
+
+        const script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+                spinner.style.display = "none";
+                progressBarEmpty.style.display = "";
+                const adjustedProgress = Math.max(progress, 0.05);
+                progressBarFull.style.width = `${100 * adjustedProgress}%`;
+            }).then((unityInstance) => {
+                loadingCover.style.background = "";
+                loadingCover.style.display = "none";
+                FocusGame();
+            }).catch((message) => {
+                console.error(message);
+            });
+        };
+
+        document.body.appendChild(script);
+    </script><script src="Build/533e69e917b9769330aea20eb03f0c1d.loader.js"></script>
+
+
+
+
+<script src="blob:https://play.wgplayground.com/4831652d-4fff-4fe8-9d6e-a3ff86821bc7"></script><div id="gs-gamedistribution"></div><div class="gs-global-loader" style="display: none;"><div class="gs-loader false">
+        <div class="gs-loader__outter"></div>
+        <div class="gs-loader__inner"></div>
+    </div></div><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"><input type="file" id="gp-file-input" tabindex="-1" style="position: fixed; top: -999px; left: -999px; z-index: 0;"></body></html>
