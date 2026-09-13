@@ -1,0 +1,17 @@
+# Disable delta compression for large or pre-compressed assets
+*.wasm -delta
+*.data -delta
+*.unityweb -delta
+*.wasm.unityweb -delta
+*.data.unityweb -delta
+*.br -delta
+*.gz -delta
+*.png -delta
+*.jpg -delta
+*.jpeg -delta
+*.webp -delta
+*.mp3 -delta
+*.ogg -delta
+*.wav -delta
+*.bin -delta
+*.bundle -delta
