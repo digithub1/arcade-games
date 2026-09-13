@@ -1,0 +1,324 @@
+<html lang="ru" data-theme="light" style="--app-bg-color: #F5F5F5; --app-bg-pattern: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px); --app-bg-size: 20px 20px; --color-text-body: #1f2933; --color-text-primary: #0f172a; --color-text-secondary: rgba(71, 85, 105, 0.85); --color-text-subtle: #6b7280; --color-text-inverse: #e2e8f0; --color-accent: #3b82f6; --color-accent-strong: #1d4ed8; --color-accent-soft: #60A5FA; --color-border-soft: rgba(59, 130, 246, 0.2); --color-border-medium: rgba(59, 130, 246, 0.35); --color-border-strong: rgba(59, 130, 246, 0.6); --color-border-stronger: rgba(59, 130, 246, 0.7); --color-border-ultra: rgba(59, 130, 246, 0.8); --color-border-focus: rgba(59, 130, 246, 0.55); --shadow-primary-weak: rgba(59, 130, 246, 0.1); --shadow-primary-medium: rgba(59, 130, 246, 0.15); --shadow-primary-strong: rgba(59, 130, 246, 0.2); --shadow-primary-ultra: rgba(59, 130, 246, 0.3); --shadow-neutral-medium: rgba(0, 0, 0, 0.15); --shadow-neutral-light: rgba(0, 0, 0, 0.08); --shadow-danger: rgba(248, 113, 113, 0.3); --color-border-neutral: rgba(0, 0, 0, 0.15); --overlay-backdrop: rgba(15, 23, 42, 0.3); --gradient-header-glass: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%); --gradient-surface-card: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%); --gradient-surface-card-hover: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(239,246,255,1) 100%); --gradient-surface-card-strong: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(239,246,255,0.95) 100%); --gradient-settings-dialog: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(241,245,249,0.98) 100%); --gradient-control-surface: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%); --gradient-control-hover: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(239,246,255,1) 100%); --gradient-pill: linear-gradient(135deg, rgba(239,246,255,1) 0%, rgba(219,234,254,1) 100%); --gradient-danger-surface: linear-gradient(135deg, rgba(248,113,113,0.15) 0%, rgba(248,113,113,0.3) 100%); --gradient-danger-hover: linear-gradient(135deg, rgba(248,113,113,0.35) 0%, rgba(248,113,113,0.55) 100%); --gradient-success: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%); --gradient-surface-active: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%); --gradient-level-hover: linear-gradient(135deg, #FFEDD5 0%, #FED7AA 100%); --gradient-bottom-nav: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.9) 100%); --color-surface-muted: rgba(248, 250, 252, 0.9); --color-surface-muted-strong: rgba(239, 246, 255, 0.95); --color-surface-highlight: rgba(254, 226, 226, 0.9); --color-surface-plain: #ffffff; --color-danger: #b91c1c; --color-danger-border: rgba(248, 113, 113, 0.7); --color-success-border: rgba(34, 197, 94, 0.6); --shadow-success: rgba(34, 197, 94, 0.2); --color-danger-hover: #ff6b6b; --color-danger-foreground: #ffffff; --color-level-hover-border: rgba(251, 146, 60, 0.6); --shadow-level-hover: rgba(251, 146, 60, 0.25); --color-border-preview: rgba(255, 255, 255, 0.7); --color-border-active: rgba(0, 0, 0, 0.25); --color-scrollbar: rgba(148, 163, 184, 0.4); --color-scrollbar-track: transparent; --color-progress-track: rgba(255, 255, 255, 0.1); --color-progress-text: #ffffff; --gradient-level-card: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.95) 100%); --gradient-level-card-hover: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(239,246,255,1) 100%); --color-level-card-border: rgba(0, 0, 0, 0.15); --color-level-card-border-hover: rgba(251, 146, 60, 0.6); --shadow-level-card: rgba(0, 0, 0, 0.08); --shadow-level-card-hover: rgba(251, 146, 60, 0.25); --color-level-card-surface: #ffffff; --color-base-fill: #ffffff;"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Vibe Colouring">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/87363a4f266e2271b746ec69c16738bf/wgplayground/d5cbe8a4ae7cbb18a6db954d2b4f59dc.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/87363a4f266e2271b746ec69c16738bf/wgplayground/c27404fa363ce794fc09f7da1dfad167.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/87363a4f266e2271b746ec69c16738bf">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/vibe-colouring">
+            <meta property="wgp:description" content="Relax with your favorite color by number game! Paint hundreds of pictures — from funny memes to calm landscapes. Every drawing is a little story that comes to life with your colors. Over 100 levels already in the game, and the library keeps growing. All pictures are open and free — no limits or waiting. Hints will show you where uncolored areas are hiding. Check the leaderboard to see who colored the most areas.">
+            <meta property="wgp:instructions" content="1. Choose a level. Open the list of coloring pages and pick any — meme, landscape, or mystery level. 2. Pick a color. Tap a color from the palette at the bottom to activate it. 3. Color the areas. Find the matching numbered areas and tap to fill them. Watch your picture come to life! 4. Use the magnifier. Can’t find a spot? Tap the magnifier — it helps you quickly zoom in on the right area.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/87363a4f266e2271b746ec69c16738bf/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/87363a4f266e2271b746ec69c16738bf/wgplayground/296751cb8acab08fae8ef7f714851740.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/87363a4f266e2271b746ec69c16738bf">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <!-- Отключение жестов браузера -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="apple-mobile-web-app-title" content="Vibe Drawing">
+    <meta name="application-name" content="Vibe Drawing">
+    <meta name="description" content="Vibe Drawing - Creative coloring game">
+    <title>Vibe Drawing — Раскраска SVG</title>
+    <!-- Structured Data для Yandex Games -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Game",
+      "name": "Vibe Drawing",
+      "description": "Creative coloring game",
+      "applicationCategory": "Game"
+    }
+    </script>
+    <script src="./config.js"></script>
+    <script type="module" crossorigin="" src="./assets/index-BfkhXp3C.js"></script>
+    <link rel="stylesheet" crossorigin="" href="./assets/index-Ct_MtpLc.css">
+  <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style></head>
+  <body class="wgNoLoader" data-theme="light" style="touch-action: manipulation; user-select: none;"><img class="splash-bg fadein" src="https://static.wgplayground.com/87363a4f266e2271b746ec69c16738bf/wgplayground/c27404fa363ce794fc09f7da1dfad167.jpg">
+    <div id="root"><div class="loading-screen"><div class="loading-screen__content"><div class="loading-screen__logo-container"><svg class="loading-screen__progress-circle" width="280" height="280"><circle cx="140" cy="140" r="120" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="8"></circle><circle cx="140" cy="140" r="120" fill="none" stroke="url(#progressGradient)" stroke-width="8" stroke-linecap="round" stroke-dasharray="753.9822368615503" stroke-dashoffset="678.5840131753953" transform="rotate(-90 140 140)" class="loading-screen__progress-stroke"></circle><defs><linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"></stop><stop offset="100%" stop-color="#60A5FA"></stop></linearGradient></defs></svg><div class="loading-screen__logo"><svg viewBox="0 0 500 500" class="loading-screen__logo-svg" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M 209.67 409.85
+                   Q 209.61 409.87 209.43 409.98
+                   A 0.07 0.07 0.0 0 1 209.38 410.00
+                   L 130.94 410.00
+                   A 0.94 0.93 -90.0 0 1 130.01 409.06
+                   Q 129.99 363.37 130.01 250.25
+                   C 130.03 167.69 211.15 109.59 289.54 136.69
+                   A 0.35 0.34 9.7 0 0 290.00 136.37
+                   L 290.00 90.77
+                   A 0.77 0.77 0.0 0 1 290.77 90.00
+                   L 369.12 90.00
+                   A 0.91 0.91 0.0 0 1 370.03 90.91
+                   Q 369.95 210.45 370.07 230.04
+                   Q 370.23 257.90 368.69 267.90
+                   C 357.26 342.06 282.21 387.72 210.45 363.31
+                   A 0.34 0.34 0.0 0 0 210.00 363.63
+                   L 210.00 409.34
+                   A 0.56 0.56 0.0 0 1 209.67 409.85
+                   Z
+                   M 289.99 250.00
+                   A 39.99 39.99 0.0 0 0 250.00 210.01
+                   A 39.99 39.99 0.0 0 0 210.01 250.00
+                   A 39.99 39.99 0.0 0 0 250.00 289.99
+                   A 39.99 39.99 0.0 0 0 289.99 250.00
+                   Z"></path><circle fill="#000000" cx="250.00" cy="250.00" r="39.99"></circle></svg></div></div></div></div></div>
+  
+
+
+
+<script async="" src="https://gamepush.com/sdk/gamepush.js?projectId=24873&amp;publicToken=tN8Gp5fdR2Ac4gscOaWVnY8FSgvwpiNX&amp;callback=onGPInit"></script></body></html>
