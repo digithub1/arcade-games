@@ -1,0 +1,36 @@
+{
+	"name": "Bear Diver",
+	"short_name": "Bear Diver",
+	"description": "Bear Diver is an online jump adventure game that challenges players to navigate through a series of obstacles. Bear Diver is an online adventure game that challenges you to help a bear survive in the wilderness. You must use your quick reflexes to guide the bear through a series of jumps and avoiding obstacles. Can you help the bear make it to safety?",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

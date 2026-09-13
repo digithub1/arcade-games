@@ -1,0 +1,36 @@
+{
+	"name": "Barbie’s Sketch",
+	"short_name": "Barbie’s Sketch",
+	"description": "Barbie's Sketchboarding Platformer Game is a fun and challenging game where you help Barbie explore the world of her imagination. Use your creativity to sketch new platforms and obstacles, and help Barbie reach the end of each level. Along the way, you'll collect items, solve puzzles, and meet new friends.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"name": "Banana Quest",
+	"short_name": "Banana Quest",
+	"description": "Banana Quest is a fun and adventurous puzzle game where players guide a playful monkey through challenging levels to collect bananas. Solve tricky obstacles, avoid traps, and unlock hidden paths in a colorful jungle world. With engaging mechanics and exciting power-ups, Banana Quest offers a thrilling experience for players of all ages. Can you help the monkey complete its ultimate banana collection?",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#b3dfff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": [],
+	"theme_color": "#db8026"
+}
