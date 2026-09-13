@@ -1,0 +1,11 @@
+{
+	"name": "Draw the Bridge",
+	"short_name": "Draw the Bridge",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

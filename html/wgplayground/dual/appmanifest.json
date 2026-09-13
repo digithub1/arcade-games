@@ -1,0 +1,10 @@
+{
+	"name": "Dual",
+	"short_name": "Dual",
+	"description": "ДУЭТ",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

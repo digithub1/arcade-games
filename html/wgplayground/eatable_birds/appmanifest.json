@@ -1,0 +1,36 @@
+{
+	"name": "Eatable Birds",
+	"short_name": "Eatable Birds",
+	"description": "Eatable Birds is a number one choice for every bird loving gamer! It’s full of adventure and unexpected ending! Join the Eatable Birds online Birds Survival Games. See how long you can last as you dodge eagles, birds and angry bees! Play as a bird from your PC or Phone. ",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
