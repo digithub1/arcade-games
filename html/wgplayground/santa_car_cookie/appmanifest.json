@@ -1,0 +1,17 @@
+{
+	"name": "Santa Car Cookie",
+	"short_name": "Santa Car Cookie",
+	"description": "Santa Car Cookie",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
