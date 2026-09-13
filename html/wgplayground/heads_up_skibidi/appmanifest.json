@@ -1,0 +1,36 @@
+{
+	"name": "Heads Up Skibidi",
+	"short_name": "Heads Up Skibidi",
+	"description": "Heads Up Skibidi is a Head ball game where one player is the skibidi head and poo picker. The skibidi head wears a blindfold and tries to head the ball into the poo picker's mouth. The poo picker tries to dodge the ball and pick up as much poo as possible.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

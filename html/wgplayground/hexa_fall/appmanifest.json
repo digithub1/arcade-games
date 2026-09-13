@@ -1,0 +1,41 @@
+{
+	"name": "Hexa Fall",
+	"short_name": "Hexa Fall",
+	"description": "Destroy towers of blocks while keeping the hexagon centered or at least on the tower. Be careful as sometimes removing the wrong block will cause the hexagon to tumble into the abyss. The game is a combination of geometric logic, puzzle and strategy. You can relax and plan carefully which blocks to remove, but sometimes you'll have to react quickly to keep the hexagon on the tower.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

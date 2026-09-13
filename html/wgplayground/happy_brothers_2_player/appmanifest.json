@@ -1,0 +1,17 @@
+{
+	"name": "Happy Brothers 2 Player",
+	"short_name": "Happy Brothers 2 Player",
+	"description": "Happy Brothers 2 Player",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

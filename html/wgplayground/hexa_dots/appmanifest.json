@@ -1,0 +1,37 @@
+{
+	"name": "HEXA DOTS",
+	"short_name": "HEXA DOTS",
+	"description": "Match colorful dots in this addictive hexagonal puzzle game. Challenge your mind with Hexa Dots! Dive into the vibrant world of Hexa Dots: Color Match Puzzle, the ultimate color-matching challenge designed to test your brain and keep you entertained for hours! Arrange and match colorful hexagonal dots to solve intricate puzzles and unlock new levels. With smooth gameplay, stunning graphics, and hundreds of levels, Hexa Dots is the perfect game to sharpen your strategic skills and unwind.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
