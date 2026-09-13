@@ -1,0 +1,42 @@
+{
+	"name": "Pair Up Shapes",
+	"short_name": "Pair Up Shapes",
+	"description": "Pair Up Shapes is a fun and educational puzzle game where players match identical shapes to clear the board. With colorful visuals and simple drag-and-drop controls, this game is perfect for kids and adults alike. Sharpen your memory, boost your focus, and enjoy endless matching fun across multiple levels!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

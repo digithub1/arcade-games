@@ -1,0 +1,10 @@
+{
+	"name": "Panda Journey",
+	"short_name": "Panda Journey",
+	"description": "Panda Journey is a platformer made with pixel art. \n\nYou are a little panda bear seeking for love. How will you find love? What is needed? Maybe it will be a good start to buy flowers! But you are out of money. You need to buy flowers! What you are waiting? Your love is waiting!\nCollect all coins through 20 levels and you will be able to buy flowers for your girl panda!  Get love in this beautiful adventure.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}
