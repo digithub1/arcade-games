@@ -1,0 +1,36 @@
+{
+	"name": "Hungry Lion",
+	"short_name": "Hungry Lion",
+	"description": "The Hungry Lion online platformer is an endless runner game in which you play as a lion who is very hungry. The goal of the game is to eat as much food as possible while avoiding obstacles.  The Hungry Lion Online Platformer Endless Runner game is a fast paced, exciting game that will keep you on your toes. You will need to use your quick reflexes and agility to avoid the various obstacles in your way and make it to the end of the level.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
