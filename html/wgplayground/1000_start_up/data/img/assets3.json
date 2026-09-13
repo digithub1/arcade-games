@@ -1,0 +1,165 @@
+{"frames": [
+
+{
+	"filename": "awan 1",
+	"frame": {"x":830,"y":229,"w":362,"h":224},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":362,"h":224},
+	"sourceSize": {"w":362,"h":224},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "awan 2",
+	"frame": {"x":830,"y":1,"w":356,"h":226},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":356,"h":226},
+	"sourceSize": {"w":356,"h":226},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "base",
+	"frame": {"x":1,"y":1,"w":827,"h":631},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":827,"h":631},
+	"sourceSize": {"w":827,"h":631},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "bayangan orang",
+	"frame": {"x":1,"y":986,"w":120,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":36},
+	"sourceSize": {"w":120,"h":36},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "block1",
+	"frame": {"x":123,"y":956,"w":108,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":58},
+	"sourceSize": {"w":108,"h":58},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "button menu",
+	"frame": {"x":1,"y":884,"w":104,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":104,"h":100},
+	"sourceSize": {"w":109,"h":100},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "button select left",
+	"frame": {"x":185,"y":884,"w":58,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":70},
+	"sourceSize": {"w":58,"h":70},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "button select midlle",
+	"frame": {"x":1,"y":634,"w":252,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":252,"h":248},
+	"sourceSize": {"w":266,"h":248},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "button select right",
+	"frame": {"x":245,"y":884,"w":58,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":70},
+	"sourceSize": {"w":58,"h":70},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "button start",
+	"frame": {"x":255,"y":634,"w":252,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":252,"h":248},
+	"sourceSize": {"w":266,"h":248},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "button turn",
+	"frame": {"x":509,"y":634,"w":252,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":252,"h":248},
+	"sourceSize": {"w":266,"h":248},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "continue button",
+	"frame": {"x":1188,"y":1,"w":203,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":203,"h":200},
+	"sourceSize": {"w":217,"h":200},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "garis putih",
+	"frame": {"x":123,"y":1016,"w":900,"h":2},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":900,"h":2},
+	"sourceSize": {"w":900,"h":2},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "lampu",
+	"frame": {"x":763,"y":634,"w":162,"h":240},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":240},
+	"sourceSize": {"w":162,"h":240},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "logo altermyth",
+	"frame": {"x":107,"y":884,"w":76,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":70},
+	"sourceSize": {"w":76,"h":70},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "retry button",
+	"frame": {"x":927,"y":455,"w":203,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":203,"h":200},
+	"sourceSize": {"w":217,"h":200},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "share button",
+	"frame": {"x":927,"y":657,"w":203,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":203,"h":200},
+	"sourceSize": {"w":217,"h":200},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "assets3.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:34e624f867b30485caf1ddb2ee1e7680:ff06fe03a5a67a4cc02043d34f543a63:6de5b0d75fdab8d8079104bcd69ed43a$"
+}
+}

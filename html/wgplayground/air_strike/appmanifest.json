@@ -1,0 +1,10 @@
+{
+	"name": "Air Strike",
+	"short_name": "Air Strike",
+	"description": "Become the one of the legendary Air Wolves and change the outcome of the First World War in the sky.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

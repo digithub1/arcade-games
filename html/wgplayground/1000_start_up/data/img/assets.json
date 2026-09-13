@@ -1,0 +1,120 @@
+{"frames": [
+
+{
+	"filename": "fall_hipster",
+	"frame": {"x":1,"y":346,"w":287,"h":343},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":287,"h":343},
+	"sourceSize": {"w":287,"h":343},
+	"pivot": {"x":0.369338,"y":0.962099}
+},
+{
+	"filename": "fall_mark",
+	"frame": {"x":290,"y":346,"w":278,"h":340},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":3,"w":278,"h":340},
+	"sourceSize": {"w":287,"h":343},
+	"pivot": {"x":0.362369,"y":0.962099}
+},
+{
+	"filename": "fall_salaryman",
+	"frame": {"x":334,"y":1,"w":270,"h":341},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":2,"w":270,"h":341},
+	"sourceSize": {"w":287,"h":343},
+	"pivot": {"x":0.337979,"y":0.965015}
+},
+{
+	"filename": "fall_steve",
+	"frame": {"x":1,"y":1,"w":331,"h":343},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":0,"w":331,"h":343},
+	"sourceSize": {"w":400,"h":343},
+	"pivot": {"x":0.385,"y":0.965015}
+},
+{
+	"filename": "jump_hipster",
+	"frame": {"x":570,"y":344,"w":215,"h":295},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":215,"h":295},
+	"sourceSize": {"w":215,"h":301},
+	"pivot": {"x":0.465116,"y":0.960133}
+},
+{
+	"filename": "jump_mark",
+	"frame": {"x":494,"y":688,"w":240,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":13,"w":240,"h":288},
+	"sourceSize": {"w":240,"h":301},
+	"pivot": {"x":0.396648,"y":0.960714}
+},
+{
+	"filename": "jump_salaryman",
+	"frame": {"x":251,"y":691,"w":241,"h":291},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":10,"w":241,"h":291},
+	"sourceSize": {"w":241,"h":301},
+	"pivot": {"x":0.396648,"y":0.960714}
+},
+{
+	"filename": "jump_steve",
+	"frame": {"x":1,"y":691,"w":248,"h":294},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":248,"h":294},
+	"sourceSize": {"w":248,"h":301},
+	"pivot": {"x":0.540323,"y":0.963455}
+},
+{
+	"filename": "stand_hipster",
+	"frame": {"x":773,"y":1,"w":166,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":166,"h":307},
+	"sourceSize": {"w":166,"h":307},
+	"pivot": {"x":0.578313,"y":0.970684}
+},
+{
+	"filename": "stand_mark",
+	"frame": {"x":787,"y":310,"w":179,"h":280},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":179,"h":280},
+	"sourceSize": {"w":179,"h":280},
+	"pivot": {"x":0.396648,"y":0.960714}
+},
+{
+	"filename": "stand_salaryman",
+	"frame": {"x":606,"y":1,"w":165,"h":309},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":165,"h":309},
+	"sourceSize": {"w":170,"h":310},
+	"pivot": {"x":0.488235,"y":0.96129}
+},
+{
+	"filename": "stand_steve",
+	"frame": {"x":736,"y":641,"w":189,"h":280},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":189,"h":280},
+	"sourceSize": {"w":189,"h":280},
+	"pivot": {"x":0.624339,"y":0.960714}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "assets.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6a3f158b7c11a6e5385600271a574621:b5a790c0eef75ab06f19496cd18f88fc:a759b6bbc8381ac9c472b28f589ad0d6$"
+}
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Adventure of Elf",
+	"short_name": "Adventure of Elf",
+	"description": "The Elf Jungle Jumping Online Game is an adventure game that provides players with an exciting and challenging experience. The objective of the game is to help the elf character reach the end of the level by avoiding obstacles and traps. The game is suitable for all ages and can be played by anyone who enjoys a good challenge.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

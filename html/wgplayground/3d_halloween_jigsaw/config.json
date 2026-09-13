@@ -1,0 +1,137 @@
+{
+  "general": {
+    "defaultCategory": 0,
+    "useHelpPanel": true,
+    "useCreditPanel": true,
+    "useBackgroundMusic": true,
+    "boardTextures": [
+      "wood1.jpg",
+      "wood2.jpg",
+      "wood3.jpg",
+      "wood4.jpg",
+      "wood5.jpg"
+    ],
+    "paddingPatterns": [
+      "pad1.jpg",
+      "pad2.jpg",
+      "pad3.jpg",
+      "pad4.jpg"
+    ]
+  },
+  "strings": {
+    "APP_TITLE": "3D Halloween Jigsaw",
+    "APP_INFO": "Classic 3D puzzle game",
+    "NEW_GAME": "NEW GAME",
+    "HELP": "HELP",
+    "HELP_TEXT": "Help text",
+    "SETTING": "SETTING",
+    "CREDIT": "MORE GAMES",
+    "CREDIT_TEXT": "Music and sound effects from opengameart.org"
+  },
+  "data": {
+    "level": {
+      "halloween": [
+        {
+          "id": 1,
+          "board": "3x3",
+          "path": "data/ha_1.jpg"
+        },
+        {
+          "id": 2,
+          "board": "2x3",
+          "path": "data/ha_2.jpg"
+        },
+        {
+          "id": 3,
+          "board": "2x3",
+          "path": "data/ha_3.jpg"
+        },
+        {
+          "id": 4,
+          "board": "3x3",
+          "path": "data/ha_4.jpg"
+        },
+        {
+          "id": 5,
+          "board": "2x3",
+          "path": "data/ha_5.jpg"
+        },
+        {
+          "id": 6,
+          "board": "3x3",
+          "path": "data/ha_6.jpg"
+        },
+        {
+          "id": 7,
+          "board": "3x3",
+          "path": "data/ha_7.jpg"
+        },
+        {
+          "id": 8,
+          "board": "2x3",
+          "path": "data/ha_8.jpg"
+        },
+        {
+          "id": 9,
+          "board": "3x3",
+          "path": "data/ha_9.jpg"
+        },
+        {
+          "id": 10,
+          "board": "2x3",
+          "path": "data/ha_10.jpg"
+        },
+        {
+          "id": 11,
+          "board": "2x3",
+          "path": "data/ha_11.jpg"
+        },
+        {
+          "id": 12,
+          "board": "3x3",
+          "path": "data/ha_12.jpg"
+        },
+        {
+          "id": 13,
+          "board": "3x3",
+          "path": "data/ha_13.jpg"
+        },
+        {
+          "id": 14,
+          "board": "2x3",
+          "path": "data/ha_14.jpg"
+        },
+        {
+          "id": 15,
+          "board": "2x3",
+          "path": "data/ha_15.jpg"
+        },
+        {
+          "id": 16,
+          "board": "2x3",
+          "path": "data/ha_16.jpg"
+        },
+        {
+          "id": 17,
+          "board": "2x3",
+          "path": "data/ha_17.jpg"
+        },
+        {
+          "id": 18,
+          "board": "2x3",
+          "path": "data/ha_18.jpg"
+        },
+        {
+          "id": 19,
+          "board": "2x3",
+          "path": "data/ha_19.jpg"
+        },
+        {
+          "id": 20,
+          "board": "2x3",
+          "path": "data/ha_20.jpg"
+        }
+      ]
+    }
+  }
+}

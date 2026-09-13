@@ -1,0 +1,16 @@
+{
+	"name": "Adventure To The İce Kingdom",
+	"short_name": "Adventure To The İce Kingdom",
+	"description": "Adventure To The İce Kingdom",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "200x200",
+			"type": "image/png"
+		}
+	]
+}

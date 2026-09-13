@@ -1,0 +1,36 @@
+{
+	"name": "Agent Action",
+	"short_name": "Agent Action",
+	"description": "Agent Action is an online shooting game that is fast-paced and offers multiple levels of shooting mayhem. In Agent Action, you'll never find yourself bored or without something to do. There are multiple levels of action-packed shooting gameplay, and you can dive right into the fray whenever you want. Plus, there's always a new target to shoot at, so you'll never get tired of taking down the same bad Robots.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
