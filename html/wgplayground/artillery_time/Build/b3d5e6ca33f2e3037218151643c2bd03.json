@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "CanonStrike",
+"productVersion": "0.1",
+"dataUrl": "52f8f630293faab31c497fa480725433.unityweb",
+"wasmCodeUrl": "2e21d29ab4c2e06e4d4c30e0bdb68648.unityweb",
+"wasmFrameworkUrl": "e5f98f51e4e6ac31c5ff16f5cbe5e6d3.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}

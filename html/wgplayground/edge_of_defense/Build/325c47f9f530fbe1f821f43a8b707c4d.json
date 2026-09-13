@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "MineDefence",
+"productVersion": "0.1",
+"dataUrl": "b96f4b7273c1ea3c37981c044d3ec9ee.unityweb",
+"wasmCodeUrl": "8ff4c8e83411e1439e0675a67a9eac18.unityweb",
+"wasmFrameworkUrl": "5fa36e0e0cad10e6a357c02d76f8d013.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
