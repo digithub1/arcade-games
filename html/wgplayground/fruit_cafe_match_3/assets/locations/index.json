@@ -1,0 +1,57 @@
+{
+  "locations": [
+    {
+      "id": "loc_1",
+      "name": "Пекарня Бобра Бориса"
+    },
+    {
+      "id": "loc_2",
+      "name": "Кофейня Енота Эмиля",
+      "unlock": {
+        "requires": "loc_1"
+      }
+    },
+    {
+      "id": "loc_3",
+      "name": "Цветочный магазин Ежихи Евы",
+      "unlock": {
+        "requires": "loc_2"
+      }
+    },
+    {
+      "id": "loc_4",
+      "name": "Книжный магазин Совы Софии",
+      "unlock": {
+        "requires": "loc_3"
+      }
+    },
+    {
+      "id": "loc_5",
+      "name": "Музыкальная лавка Попугая Пабло",
+      "unlock": {
+        "requires": "loc_4"
+      }
+    },
+    {
+      "id": "loc_6",
+      "name": "Барбершоп Лиса Феликса",
+      "unlock": {
+        "requires": "loc_5"
+      }
+    },
+    {
+      "id": "loc_7",
+      "name": "Ателье Кошки Клэр",
+      "unlock": {
+        "requires": "loc_6"
+      }
+    },
+    {
+      "id": "loc_8",
+      "name": "Ресторан Медведя Михала",
+      "unlock": {
+        "requires": "loc_7"
+      }
+    }
+  ]
+}

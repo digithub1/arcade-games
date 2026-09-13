@@ -1,0 +1,1 @@
+import{c6 as n}from"./index-NEMOMxXu.js";const e=new Map;function t(t,o){n()&&e.set(t,o)}function o(n){e.delete(n)}function s(n){return!!n&&!1!==n.active&&null!=n.scene}function c(){const n=[];for(const[t,o]of e)s(o)?n.push(t):e.delete(t);return n}function u(n){const t=e.get(n);return s(t)?t:(e.delete(n),null)}export{u as g,c as l,t as r,o as u};
