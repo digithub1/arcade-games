@@ -1,0 +1,17 @@
+{
+	"name": "Sprunki Happy Easter 2Player",
+	"short_name": "Sprunki Happy Easter 2Player",
+	"description": "Sprunki Happy Easter 2Player",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

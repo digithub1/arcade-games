@@ -1,0 +1,20 @@
+body, canvas, #canvas {
+-webkit-tap-highlight-color: transparent;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-webkit-text-size-adjust: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+overflow: hidden;
+}
+.gp-overlay-toasts {
+    pointer-events: none;
+}
+
+
+
+.gp-leaderboard__friends.gp-leaderboard__friends_single .gp-platform-button {
+  display: none;
+}

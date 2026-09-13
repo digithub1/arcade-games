@@ -1,0 +1,27 @@
+{
+  "name": "Spot Unique Animal",
+  "short_name": "Spot Unique Animal",
+  "description": "Test your observation skills in Spot Unique Animal! Find the one animal without a duplicate among a group of wild creatures.",
+  "start_url": "index.html",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display": "fullscreen",
+  "orientation": "landscape",  
+  "icons": [
+  {
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}

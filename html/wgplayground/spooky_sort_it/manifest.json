@@ -1,0 +1,27 @@
+{
+  "name": "Spooky Sort It",
+  "short_name": "Spooky Sort It",
+  "description": "Spooky Sort It! is a mind-sharpening brain puzzle that challenges you to sort a variety of haunting balls into the right tubes.",
+  "start_url": "index.html",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display": "fullscreen",
+  "orientation": "landscape",  
+  "icons": [
+  {
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}
