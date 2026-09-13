@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "car crash ch",
+"productVersion": "1.0",
+"dataUrl": "5ac8084e88a10788577ac05030490a31.unityweb",
+"wasmCodeUrl": "542fff3a243a26673d951f4090a8922b.unityweb",
+"wasmFrameworkUrl": "3fb66a876d6973a5970c50bf8a51657b.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
