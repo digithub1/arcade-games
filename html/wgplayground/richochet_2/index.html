@@ -1,0 +1,263 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Richochet 2">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/5eef3849612642079d707af71dbfcdbb/wgplayground/b763b0afde0b2423eb67a1bddd606703.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/5eef3849612642079d707af71dbfcdbb/wgplayground/8f3b17de804d6bcbc6b6929acb651a8a.gif" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/5eef3849612642079d707af71dbfcdbb">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/ubeezy/richochet-2">
+            <meta property="wgp:description" content="RICOCHET 2 — Game DescriptionRICOCHET 2 is a precision-based arcade puzzle game where every shot counts. Fire projectiles into a maze of walls, obstacles, and moving hazards, using ricochets and precise angles to reach and destroy the glowing target.With 100 challenging levels, different obstacle types, increasing difficulty, and multiple bullet types with unique abilities, players must plan their shots rather than simply fire directly at the target.Features:???? 100 levels???? Ricochet-based physics and obstacles???? Multiple bullet types with unique abilities⚡ Moving and rotating obstacles???? Score and bounce tracking⭐ Level progression and unlocks???? PC and mobile controls???? Arcade-style sound effectsGoal: Calculate the angle, fire the shot, use the environment to your advantage, and destroy the target with as few shots and bounces as possible.">
+            <meta property="wgp:instructions" content="PC InstructionsAim: Move your mouse to choose the shooting direction.Left Click: Fire the projectile.Use the walls: Bounce shots off surfaces to reach targets from difficult angles.Avoid obstacles: Time your shots around moving and rotating hazards.Use special bullets: Choose the right bullet type when a level requires a different approach.Complete the level: Hit/destroy the target to advance.Save your shots: Try to finish levels with fewer shots and bounces for a better score.Pause: Use the in-game pause button whenever needed.Goal: Master the ricochets and clear all 100 levels.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/5eef3849612642079d707af71dbfcdbb/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/5eef3849612642079d707af71dbfcdbb/wgplayground/dc10fb6e9377d766c9e27778d3a477a5.m3u8" ar="portrait">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/5eef3849612642079d707af71dbfcdbb/wgplayground/48f3a7a7c14122d05f72c78c2465cfdb.m3u8" ar="portrait">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiTW91c2UgQ29udHJvbHMgIE1vdmUgTW91c2U6IEFpbSB0aGUgcHJvamVjdGlsZS4gIExlZnQgTW91c2UgQnV0dG9uOiBTaG9vdC4gIE1vdXNlIFdoZWVsOiBTZWxlY3QgYnVsbGV0IHR5cGUsIGlmIGF2YWlsYWJsZS4gIENsaWNrIFBhdXNlOiBQYXVzZSB0aGUgZ2FtZS4gIENsaWNrIFJlc3RhcnQ6IFJlc3RhcnQgdGhlIGN1cnJlbnQgbGV2ZWwuIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy53Z3BsYXlncm91bmQuY29tXC9nYW1lcy1jYXRhbG9ndWVcL2dlbnJlLTYifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="xqhmemvtsqpfxrfq/5eef3849612642079d707af71dbfcdbb">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+<meta charset="UTF-8">
+<meta name="description" content="RICOCHET 2 is a neon precision arcade game about bouncing shots through obstacles to hit glowing targets.">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>RICOCHET 2</title>
+<link rel="stylesheet" href="style.css">
+
+
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/5eef3849612642079d707af71dbfcdbb/wgplayground/8f3b17de804d6bcbc6b6929acb651a8a.gif">
+<div id="app">
+  <div id="stage">
+    <canvas id="game" width="992" height="620" style="aspect-ratio: 0.896057 / 1; width: 496px; height: 310px;" wg-game-orientation="wg-landscape-game"></canvas>
+
+    <!-- HUD -->
+    <div id="hud">
+      <div class="hud-top">
+        <div class="hud-level">LEVEL <span id="hudLevel">01</span></div>
+        <div class="hud-shots" id="hudShots"></div>
+      </div>
+      <div class="hud-score">SCORE <span id="hudScore">0</span></div>
+      <div class="hud-bullet-btn" id="bulletBtn"><span class="swatch" id="bulletSwatch" style="background:#ffe14d;color:#ffe14d;"></span><span id="bulletBtnLabel">STANDARD</span></div>
+      <div class="hud-pause-btn" id="pauseBtn">❚❚</div>
+      <div class="hud-bottom">BOUNCES: <span id="hudBounces">0</span></div>
+      <div class="hint-toast" id="hintToast">HIT THE TARGET</div>
+    </div>
+
+    <!-- Intro -->
+    <div id="intro">
+      <div class="intro-particles" id="introParticles"><div class="ip" style="left: 26.2867%; top: 51.5927%; animation-delay: 0.167234s; animation-duration: 2.4072s;"></div><div class="ip" style="left: 19.9239%; top: 41.9841%; animation-delay: 1.6221s; animation-duration: 2.90803s;"></div><div class="ip" style="left: 17.343%; top: 30.9967%; animation-delay: 0.581552s; animation-duration: 3.76746s;"></div><div class="ip" style="left: 9.143%; top: 86.0084%; animation-delay: 2.14512s; animation-duration: 3.02389s;"></div><div class="ip" style="left: 79.9396%; top: 39.9995%; animation-delay: 2.23954s; animation-duration: 2.48301s;"></div><div class="ip" style="left: 24.1236%; top: 76.0739%; animation-delay: 1.13543s; animation-duration: 2.92121s;"></div><div class="ip" style="left: 91.5349%; top: 53.0934%; animation-delay: 0.453727s; animation-duration: 2.40805s;"></div><div class="ip" style="left: 34.3763%; top: 70.4802%; animation-delay: 0.656363s; animation-duration: 2.48609s;"></div><div class="ip" style="left: 37.2039%; top: 43.5994%; animation-delay: 0.730178s; animation-duration: 3.50973s;"></div><div class="ip" style="left: 10.726%; top: 47.103%; animation-delay: 0.763331s; animation-duration: 2.42484s;"></div><div class="ip" style="left: 9.27616%; top: 64.2683%; animation-delay: 0.358595s; animation-duration: 2.87959s;"></div><div class="ip" style="left: 15.2095%; top: 88.7373%; animation-delay: 2.28474s; animation-duration: 3.63793s;"></div><div class="ip" style="left: 34.6441%; top: 87.0425%; animation-delay: 0.468634s; animation-duration: 3.36545s;"></div><div class="ip" style="left: 63.2259%; top: 45.3124%; animation-delay: 1.60607s; animation-duration: 2.77774s;"></div><div class="ip" style="left: 9.98634%; top: 53.4222%; animation-delay: 1.19947s; animation-duration: 2.55455s;"></div><div class="ip" style="left: 31.9605%; top: 84.7208%; animation-delay: 1.38315s; animation-duration: 2.57354s;"></div><div class="ip" style="left: 54.1185%; top: 30.6953%; animation-delay: 0.850864s; animation-duration: 3.27611s;"></div><div class="ip" style="left: 48.6094%; top: 71.7584%; animation-delay: 2.39862s; animation-duration: 3.33667s;"></div></div>
+      <div id="introTitleWrap">
+        <div id="introTitle" style="transition: opacity 0.35s, transform 0.35s; opacity: 1;">RICOCHET</div>
+        <div id="introTwo" style="transition: opacity 0.3s, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); opacity: 1; transform: scale(1);">2</div>
+      </div>
+      <div id="introTagline" style="transition: opacity 0.4s; opacity: 1;">EVERY SHOT CHANGES EVERYTHING.</div>
+      <div class="skip-hint">TAP TO SKIP</div>
+    </div>
+
+    <!-- Main Menu -->
+    <div class="overlay" id="menuScreen">
+      <h1 class="title-xl">RICOCHET 2</h1>
+      <div class="subtitle">EVERY SHOT CHANGES EVERYTHING.</div>
+      <div class="best-counter">BEST: <span id="bestScore">000</span></div>
+      <div class="menu-buttons">
+        <button class="btn primary" data-go="playGame">PLAY</button>
+        <button class="btn" data-go="levelSelect">LEVEL SELECT</button>
+        <button class="btn" data-go="howto">HOW TO PLAY</button>
+        <button class="btn" data-go="challengeMenu">CHALLENGE</button>
+        <button class="btn" data-go="settings">SETTINGS</button>
+      </div>
+    </div>
+
+    <!-- How To Play -->
+    <div class="overlay" id="howtoScreen">
+      <div class="panel-heading">HOW TO PLAY</div>
+      <canvas id="howtoCanvas" width="260" height="120"></canvas>
+      <div class="howto-box">
+        <div class="howto-row"><div class="howto-tag">AIM</div><div class="howto-desc">Drag from the player to aim your shot.</div></div>
+        <div class="howto-row"><div class="howto-tag">SHOOT</div><div class="howto-desc">Release to fire the bullet.</div></div>
+        <div class="howto-row"><div class="howto-tag">RICOCHET</div><div class="howto-desc">Bullets bounce off walls and obstacles at equal angles.</div></div>
+        <div class="howto-row"><div class="howto-tag">WIN</div><div class="howto-desc">Hit the glowing target to clear the level.</div></div>
+        <div class="howto-row"><div class="howto-tag">BULLETS</div><div class="howto-desc">Tap SWITCH BULLET during play to change your projectile type.</div></div>
+      </div>
+      <button class="btn primary" data-go="menu" style="margin-top:6px; width:min(200px,70vw);">GOT IT</button>
+    </div>
+
+    <!-- Level Select -->
+    <div class="overlay" id="levelSelectScreen">
+      <div class="panel-heading">LEVELS</div>
+      <div class="panel-sub" id="levelSelectSub">100 LEVELS · 1 UNLOCKED</div>
+      <div class="level-grid" id="levelGrid"></div>
+      <div class="menu-buttons" style="margin-top:18px;"><button class="btn" data-go="menu">BACK</button></div>
+    </div>
+
+    <!-- Settings -->
+    <div class="overlay" id="settingsScreen">
+      <div class="panel-heading">SETTINGS</div>
+      <div class="settings-row">SOUND <div class="toggle on" id="toggleSound"></div></div>
+      <div class="settings-row">MUSIC <div class="toggle" id="toggleMusic"></div></div>
+      <div class="settings-row">VIBRATION <div class="toggle on" id="toggleVibration"></div></div>
+      <div class="settings-row">SCREEN SHAKE <div class="toggle on" id="toggleShake"></div></div>
+      <div class="menu-buttons" style="margin-top:22px;"><button class="btn" data-go="menu">BACK</button></div>
+    </div>
+
+    <!-- Pause -->
+    <div class="overlay" id="pauseScreen">
+      <div class="panel-heading">PAUSED</div>
+      <div class="menu-buttons">
+        <button class="btn primary" data-go="resume">RESUME</button>
+        <button class="btn" data-go="restartLevel">RESTART</button>
+        <div class="btn-row">
+          <button class="btn small" data-go="levelSelect">LEVELS</button>
+          <button class="btn small" data-go="challengeMenu">CHALLENGE</button>
+          <button class="btn small" data-go="settings">SETTINGS</button>
+        </div>
+        <button class="btn danger" data-go="menu">MAIN MENU</button>
+      </div>
+    </div>
+
+    <!-- Win -->
+    <div class="overlay" id="winScreen">
+      <div class="panel-heading" style="color:var(--yellow);">TARGET DESTROYED</div>
+      <div class="stars-big" id="winStars">★★★</div>
+      <div class="stat-line"><span>SCORE</span><b id="winScore">0</b></div>
+      <div class="stat-line"><span>BOUNCES</span><b id="winBounces">0</b></div>
+      <div class="stat-line"><span>SHOTS USED</span><b id="winShots">0</b></div>
+      <div class="unlock-row" id="winUnlockRow" style="display:none;"></div>
+      <div class="menu-buttons" style="margin-top:20px;">
+        <button class="btn primary" data-go="nextLevel">NEXT LEVEL</button>
+        <div class="btn-row">
+          <button class="btn small" data-go="restartLevel">RETRY</button>
+          <button class="btn small" data-go="levelSelect">LEVEL SELECT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Between-level celebration -->
+    <div class="overlay level-transition" id="levelTransitionScreen">
+      <div class="transition-kicker">LEVEL CLEAR</div>
+      <div class="transition-title" id="transitionTitle">LEVEL 02</div>
+      <div class="transition-stars" id="transitionStars">★★★</div>
+      <div class="transition-sub" id="transitionSub">NEXT SHOT LOADING</div>
+    </div>
+
+    <!-- Game Over -->
+    <div class="overlay" id="gameOverScreen">
+      <div class="panel-heading" style="color:var(--magenta);">OUT OF SHOTS</div>
+      <div class="stat-line"><span>SCORE</span><b id="loseScore">0</b></div>
+      <div class="menu-buttons" style="margin-top:16px;">
+        <button class="btn primary" id="watchAdBtn">WATCH AD +2 SHOTS</button>
+        <div class="btn-row">
+          <button class="btn small" data-go="restartLevel">RETRY</button>
+          <button class="btn small" data-go="levelSelect">LEVEL SELECT</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Challenge Menu -->
+    <div class="overlay" id="challengeMenuScreen">
+      <div class="panel-heading">CHALLENGE</div>
+      <div class="panel-sub" id="challengeSub">PROCEDURAL ARENAS</div>
+      <div class="menu-buttons">
+        <button class="btn primary" data-go="dailyChallenge">DAILY CHALLENGE</button>
+        <button class="btn" data-go="newChallenge">NEW CHALLENGE</button>
+        <button class="btn" data-go="menu">BACK</button>
+      </div>
+    </div>
+
+    <!-- Bullet Select Popup -->
+    <div class="overlay" id="bulletPopup">
+      <div class="panel-heading">SWITCH BULLET</div>
+      <div class="panel-sub">CHOOSE YOUR PROJECTILE</div>
+      <div class="bullet-list" id="bulletList"></div>
+      <div class="menu-buttons" style="margin-top:16px;"><button class="btn" id="bulletPopupClose">CLOSE</button></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="wgplayground.js" defer=""></script>
+<script src="game.js" defer=""></script>
+
+
+
+
+
+</body></html>
