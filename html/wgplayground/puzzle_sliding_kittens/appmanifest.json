@@ -1,0 +1,10 @@
+{
+	"name": "Puzzle Sliding - Kittens",
+	"short_name": "Puzzle Sliding - Kittens",
+	"description": "Puzzle Sliding - Anime Girls is a classic 15 puzzle game featuring cute anime girls.\nYou have to slide the tiles to reassemble a picture, by touching the block you want to move.\n\nYou can choose the size of the board between 3x3, 4x4 and even 6x6 blocks for more challenge!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": []
+}

@@ -1,0 +1,147 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Puzzle Box">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/a7cc6d03bbf97dfdce091a12afd42d79/wgplayground/71b51668b9546f2b4f7b7234f6802c5c.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/a7cc6d03bbf97dfdce091a12afd42d79/wgplayground/f755be8742e6f206c06a010fd448f248.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/a7cc6d03bbf97dfdce091a12afd42d79">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/zorlex/puzzle-box">
+            <meta property="wgp:description" content="Puzzle Box is a match 3 game where you need to solve various puzzles. Complete game tasks to win and collect colored blocks. Explore this fantastic world to unlock new places and levels">
+            <meta property="wgp:instructions" content="Tap On Screen">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/a7cc6d03bbf97dfdce091a12afd42d79/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="1080">
+            <meta property="wgp:height" content="1980">
+            <meta property="wgp:rwidth" content="6">
+            <meta property="wgp:rheight" content="11">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0.55">
+            <meta property="wgp:controls" content="eyJSaWdodCBNb3VzZSI6IiIsIkxlZnQgTW91c2UiOiIifQ==">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJQdXp6bGVzIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="dmzew3p2kgenybud/a7cc6d03bbf97dfdce091a12afd42d79">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity Web Player | My project</title>
+  <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;" class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/a7cc6d03bbf97dfdce091a12afd42d79/wgplayground/f755be8742e6f206c06a010fd448f248.jpg">
+    <canvas id="unity-canvas" width="600" height="900" tabindex="-1" style="width: 600px; height: 900px; background: #231F20" wg-game-orientation="wg-portrait-game"></canvas>
+    <script src="Build/New folder (14).loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.position = "fixed";
+
+        document.body.style.textAlign = "left";
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        arguments: [],
+        dataUrl: "Build/New folder (14).data.unityweb",
+        frameworkUrl: "Build/New folder (14).framework.js.unityweb",
+        codeUrl: "Build/New folder (14).wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "My project",
+        productVersion: "2.6.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  
+
+
+
+</body></html>

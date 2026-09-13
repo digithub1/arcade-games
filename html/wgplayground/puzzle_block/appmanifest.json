@@ -1,0 +1,10 @@
+{
+	"name": "Puzzle Block",
+	"short_name": "Puzzle Block",
+	"description": "game by RedFoc",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": []
+}

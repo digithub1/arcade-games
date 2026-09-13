@@ -1,0 +1,17 @@
+{
+	"name": "Pumpking vs Mummy",
+	"short_name": "Pumpking vs Mummy",
+	"description": "Pumpking vs Mummy",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
