@@ -1,0 +1,36 @@
+{
+	"name": "Legend of The Witcher",
+	"short_name": "Legend of The Witcher",
+	"description": "The Legend of The Witcher is an action-packed platformer game that will keep you on your toes as you battle your way through hordes of enemies. With stunning graphics and an immersive gameplay experience, this game is one that you won't want to miss.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

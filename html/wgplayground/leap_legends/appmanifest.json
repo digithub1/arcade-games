@@ -1,0 +1,11 @@
+{
+	"name": "Leap Legends",
+	"short_name": "Leap Legends",
+	"description": "Embark on a thrilling jungle adventure with Leap Legends! In this action-packed game, you play as an agile monkey, leaping up and down across treacherous platforms, dense forests, and towering trees to collect delicious fruits. Dodge obstacles, time your jumps perfectly, and explore vibrant jungle landscapes while gathering bananas, apples, and more to power up your monkey.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}
