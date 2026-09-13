@@ -1,0 +1,106 @@
+body{
+	padding : 0;
+	margin 	: 0;
+	overflow: hidden;
+	transform: "scale(1)";
+}
+
+#app{
+    position: fixed;
+	overflow : hidden;
+    inset: 0;
+}
+
+#gamefield,
+#screen-rotation-hint{
+	position : absolute;
+	left 	: 0px;
+	height 	: 100%;
+	top 	: 0px;
+	width 	: 100%;
+}
+
+#screen-rotation-hint{
+	align-items: center !important;
+	justify-content: center !important;
+	flex-direction: column !important;
+}
+
+@media screen and (orientation: portrait) {
+	#gamefield {
+		display : none;
+	}
+
+	#screen-rotation-hint{
+		display: flex;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	#gamefield {
+		display : block;
+	}
+
+	#screen-rotation-hint{
+		display : none;
+	}
+}
+
+
+.webp #app{
+	background 	: url("https://9ss6vm205j.a.trbcdn.net/public/images/yan_game_background.webp") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.no-webp #app{
+	background 	: url("https://9ss6vm205j.a.trbcdn.net/public/images/yan_game_background.png") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#gamefield{
+    position : relative;
+    top 	 : 0px;
+    left 	 : 0px;
+    inset: 0;
+    z-index  : 1;
+}
+
+#gamefield.hidden{
+	top : -653px;
+}
+
+#loading-screen.hidden{
+	display : none;
+}
+
+#loading-screen .progressbar {
+	background-image 	: url("https://9ss6vm205j.a.trbcdn.net/public/images/progress_bar_bg.png");
+	background-position : 0px 0px;
+	background-repeat 	: no-repeat;
+	position 			: absolute;
+	top 				: calc(50% - 21px);
+	left 				: calc(50% - 215px);
+	width 				: 430px;
+	height 				: 43px;
+	margin 				: 0;
+	padding 			: 0;
+}
+
+#loading-screen .progressbar .fill{
+	background-image 	: url("https://9ss6vm205j.a.trbcdn.net/public/images/progress_bar.png");
+	background-position : 0px 0px;
+	background-repeat 	: no-repeat;
+	height 				: 36px;
+	left 				: 5px;
+	margin 				: 0;
+	padding 			: 0;
+	position 			: absolute;
+	top 				: 4px;
+	width 				: 0px;
+}
