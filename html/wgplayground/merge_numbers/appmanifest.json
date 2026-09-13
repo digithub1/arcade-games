@@ -1,0 +1,41 @@
+{
+	"name": "Merge Numbers",
+	"short_name": "Merge Numbers",
+	"description": "Here at merge numbers, we pride ourselves in providing a free and fun online game that anyone can enjoy. We know that there are a lot of people out there who love playing games, and we want to make sure that our game is one that everyone can enjoy. That's why we've made it so easy to play, and we hope that you'll take a few minutes to check us out and see for yourself how much fun you can have.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
