@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Kong | Modern Arcade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-container">
+        <!-- Main Menu -->
+        <section id="main-menu" class="screen active">
+            <h1 class="glitch-text">NEON KONG</h1>
+            <div class="menu-options">
+                <button id="start-btn" class="neon-btn">START GAME</button>
+                <button id="instructions-btn" class="neon-btn">INSTRUCTIONS</button>
+                <div class="toggle-container">
+                    <span>SOUND</span>
+                    <label class="switch">
+                        <input type="checkbox" id="sound-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions -->
+        <section id="instructions" class="screen">
+            <h2>CONTROLS</h2>
+            <div class="control-grid">
+                <div class="control-item"><span>WASD / ARROWS</span> - MOVE / CLIMB</div>
+                <div class="control-item"><span>SPACE</span> - JUMP</div>
+                <div class="control-item"><span>P</span> - PAUSE</div>
+            </div>
+            <p>Reach the top to rescue the princess!</p>
+            <button id="back-to-menu-btn" class="neon-btn smaller">BACK</button>
+        </section>
+
+        <!-- Game Screen -->
+        <section id="game-screen" class="screen">
+            <div id="hud">
+                <div class="hud-item">SCORE: <span id="score-val">0000</span></div>
+                <div class="hud-item">LIVES: <span id="lives-val">3</span></div>
+                <div class="hud-item">LEVEL: <span id="level-val">1</span></div>
+                <button id="pause-btn">||</button>
+            </div>
+            <canvas id="game-canvas"></canvas>
+        </section>
+
+        <!-- Game Over / Victory -->
+        <section id="game-over" class="screen">
+            <h2 id="end-status">GAME OVER</h2>
+            <div class="final-stats">
+                <div>FINAL SCORE: <span id="final-score-val">0</span></div>
+            </div>
+            <div class="menu-options">
+                <button id="restart-btn" class="neon-btn">REPLAY</button>
+                <button id="main-menu-btn" class="neon-btn">MAIN MENU</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="javascript/game.js" type="module"></script>
+</body>
+
+</html>
