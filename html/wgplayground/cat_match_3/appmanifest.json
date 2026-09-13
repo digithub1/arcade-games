@@ -1,0 +1,11 @@
+{
+	"name": "Cat Match3",
+	"short_name": "Cat Match3",
+	"description": "match 3 game",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

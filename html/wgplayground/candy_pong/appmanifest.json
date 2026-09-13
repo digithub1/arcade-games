@@ -1,0 +1,36 @@
+{
+	"name": "Candy Pong",
+	"short_name": "Candy Pong",
+	"description": "Online Candy Pong is free to play. Use your mouse to move the ball, and click on the candies to drop them in the hole on the other side of the board.Play Candy Pong Online, the best free online arcade game, on your mobile or tablet. Candy Pong is the classic arcade game that everyone loves! Play this addictive and fun game of pong against your friends or the computer.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
