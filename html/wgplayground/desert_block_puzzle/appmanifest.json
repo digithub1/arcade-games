@@ -1,0 +1,36 @@
+{
+	"name": "Desert Block Puzzle",
+	"short_name": "Desert Block Puzzle",
+	"description": "Desert Block Puzzle is an online game that challenges you to put together blocks in a specific order. This game is free to play, and it's a great way to spend some time when you're looking for a mental challenge. Looking for a fun and challenging online puzzle game? Look no further than Desert Block Puzzle! This free game will keep you entertained for hours as you try to fit the right blocks together to complete the puzzle. With multiple levels of difficulty, there is something for everyone. So what are you waiting for? Start playing Desert Block Puzzle today!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+	<strings>
+		<string id="NULL">
+			<en></en>
+			<de></de>
+			<es></es>
+			<fr></fr>
+			<it></it>
+			<pt></pt>
+			<ru></ru>
+			<tr/>
+		</string>		
+		<string id="DRAW">
+			<en>Draw</en>
+			<de>Ziehen</de>
+			<es>Sacar</es>
+			<fr>Piocher</fr>
+			<it>Trarre</it>
+			<pt>Empate</pt>
+			<ru>Домино</ru>
+			<no>Uavgjort</no>
+			<nl>Gelijkspel</nl>
+            <id>Tarik</id>
+            <vi>Rút</vi>
+            <ar>سحب</ar>
+            <fa>مساوی</fa>
+            <hi>ड्रा करें</hi>
+            <zh>抽牌</zh>
+            <ja>引く</ja>
+		</string>
+		<string id="BLOCK">
+			<en>Block</en>
+			<de>Block</de>
+			<es>Bloquero</es>
+			<fr>Bloquer</fr>
+			<it>Block</it>
+			<pt>Bloqueio</pt>
+			<ru>Блок</ru>
+			<no>Blokkere</no>
+			<nl>Blokkeren</nl>
+            <id>Balok</id>
+            <vi>Khối</vi>
+            <ar>كتلة</ar>
+            <fa>مسدود کردن</fa>
+            <hi>ब्लॉक</hi>
+            <zh>锁定</zh>
+               <ja>ブロック</ja>
+		</string>		
+		<string id="ROUND">
+			<en>Round</en>
+			<de>Runde</de>
+			<es>Ronda</es>
+			<fr>Round</fr>
+			<it>Round</it>
+			<pt>Rodada</pt>
+			<ru>Раунд</ru>
+			<no>Rund</no>
+			<nl>Ronde</nl>
+            <id>Ronde</id>
+            <vi>Ván</vi>
+            <ar>الدورة</ar>
+            <fa>دور</fa>
+            <hi>राउंड</hi>
+            <zh>回合</zh>
+               <ja>ラウンド</ja>
+		</string>		
+		<string id="BACKGROUND">
+			<en>Background</en>
+			<de>Hintergrund</de>
+			<es>Fondo</es>
+			<fr>Fond</fr>
+			<it>Sottofondo</it>
+			<pt>Fundo</pt>
+			<ru>Фон</ru>
+			<no>Bakgrunn</no>
+			<nl>Achtergrond</nl>
+            <id>Latar Belakang</id>
+            <vi>Nền</vi>
+            <ar>الخلفية</ar>
+            <fa>پس‌زمینه</fa>
+            <hi>बैकग्राउंड</hi>
+            <zh>背景</zh>
+            <ja>背景</ja>
+		</string>		
+		<string id="INSTRUCTIONS">
+			<en>Instructions</en>
+			<de>Anweisungen</de>
+			<es>Instrucciones</es>
+			<fr>Instructions</fr>
+			<it>Istruzioni</it>
+			<pt>Instruções</pt>
+			<ru>Инструкция</ru>
+			<no>Instruksjoner</no>
+			<nl>Instructies</nl>
+            <id>Instruksi</id>
+            <vi>Chỉ dẫn</vi>
+            <ar>التعليمات</ar>
+            <fa>دستورالعمل‌ها</fa>
+            <hi>निर्देश</hi>
+            <zh>教程</zh>
+            <ja>手順</ja>
+		</string>		
+		<string id="ROUND">
+			<en>Round</en>
+			<de>Runde</de>
+			<es>Ronda</es>
+			<fr>Round</fr>
+			<it>Round</it>
+			<pt>Rodada</pt>
+			<ru>Раунд</ru>
+			<nl>Ronde</nl>
+            <id>Ronde</id>
+            <vi>Ván</vi>
+            <ar>الدورة</ar>
+            <fa>دور</fa>
+            <hi>राउंड</hi>
+            <zh>回合</zh>
+            <ja>ラウンド</ja>
+
+		</string>	
+		<string id="OPPONENT">
+			<en>Opponent</en>
+			<de>Gegner</de>
+			<es>Rival</es>
+			<fr>Adversaire</fr>
+			<it>Avversario</it>
+			<pt>Oponente</pt>
+			<ru>Противник</ru>
+			<no>Motstander</no>
+			<nl>Tegenstanders</nl>
+            <id>Lawan</id>
+            <vi>Đối thủ</vi>
+            <ar>الخصم</ar>
+            <fa>حریف</fa>
+            <hi>दुश्मन</hi>
+            <zh>对手</zh>
+            <ja>対戦相手</ja>
+		</string>	
+		<string id="YOU">
+			<en>You</en>
+			<de>Du</de>
+			<es>Si</es>
+			<fr>Vous</fr>
+			<it>Tu</it>
+			<pt>Você</pt>
+			<ru>Вы</ru>
+			<no>Du</no>
+			<nl>Jij</nl>
+            <id>Anda</id>
+            <vi>Bạn</vi>
+            <ar>أنت</ar>
+            <fa>شما</fa>
+            <hi>आप</hi>
+            <zh>你</zh>
+            <ja>自分</ja>
+		</string>			
+		<string id="UNLOCKED">
+			<en>unlocked</en>
+			<de>freigeschaltet</de>
+			<es>desbloqueado</es>
+			<fr>déverrouillé</fr>
+			<it>sbloccato</it>
+			<pt>desbloqueado</pt>
+			<ru>pазблокировано</ru>
+			<no>ulåst</no>
+			<nl>ontgrendeld</nl>
+            <id>terbuka</id>
+            <vi>đã mở khóa</vi>
+            <ar>إلغاء القفل</ar>
+            <fa>بدون قفل</fa>
+            <hi>अनलॉक किया गया</hi>
+            <zh>解锁</zh>
+            <ja>アンロックしました</ja>
+		</string>
+		<string id="NO_MORE_MOVES_OPPONENT">
+			<en>Opponent has to draw from the boneyard.</en>
+			<de>Gegner muss vom Steinstapel ziehen.</de>
+			<es>El rival tiene que sacar del cementerio.</es>
+			<fr>L'adversaire doit piocher.</fr>
+			<it>L'avversario deve pescare dallo stock.</it>
+			<pt>O adversário tem que tirar do cemitério.</pt>
+			<ru>Противник должен взять кость из банка</ru>
+			<no>Motstanderen må trekke fra bunken.</no>
+			<nl>Tegenstander moet van de stapel pakken.</nl>
+            <id>Lawan harus menarik dari boneyard.</id>
+            <vi>Đối thủ phải rút từ bộ.</vi>
+            <ar>يجب أن يسحب الخصم أحجارًا من البونيارد (الاحتياطي).</ar>
+            <fa>حریف باید از قبرستان کنار بکشد.</fa>
+            <hi>दुश्मन को बोनयार्ड से ड्रा करना पड़ता है.</hi>
+            <zh>对手必须从墓地抽牌。</zh>
+            <ja>対戦相手は墓場から引く必要があります。</ja>
+		</string>
+		<string id="NO_MORE_MOVES_PLAYER">
+			<en>No more moves. Draw from the boneyard.</en>
+			<de>Keine Züge mehr. Ziehe vom Steinstapel.</de>
+			<es>No quedan movimientos. Saca ficha del cementerio.</es>
+			<fr>Plus aucun coup possible. Vous devez piocher.</fr>
+			<it>Non puoi fare altre mosse. Pesca dallo stock.</it>
+			<pt>Acabaram-se os movimentos Tire do cemitério.</pt>
+			<ru>Нет больше ходов. Возьмите кость из банка</ru>
+			<no>Ingen flere trekk. Trekk fra bunken.</no>
+			<nl>Geen zetten meer. Pak van de stapel.</nl>
+            <id>Tidak ada gerakan lagi. Tarik dari boneyard.</id>
+            <vi>Không còn nước đi nào nữa. Rút từ bộ.</vi>
+            <ar>لا توجد حركات أخرى. اسحب من البونيارد (الاحتياطي).</ar>
+            <fa>حرکت دیگری وجود ندارد. از قبرستان کنار بکشید.</fa>
+            <hi>और अधिक चाल नहीं चल सकते. बोनयार्ड से ड्रा करें.</hi>
+            <zh>无可用步数。从墓地抽牌。</zh>
+            <ja>ムーブ数がなくなりました。墓場から引いてください。</ja>
+		</string>
+		<string id="PASS_OPPONENT">
+			<en>Your opponent must pass.</en>
+			<de>Dein Gegner muss passen.</de>
+			<es>Tu rival tiene que pasar.</es>
+			<fr>Votre adversaire doit passer son tour.</fr>
+			<it>Il tuo avversario deve passare.</it>
+			<pt>Seu oponente deve passar.</pt>
+			<ru>Ваш противник должен пропустить ход</ru>
+			<no>Din motstander må gå forbi.</no>
+			<nl>Je tegenstander moet passen.</nl>
+            <id>Lawan Anda harus melewatkan giliran.</id>
+            <vi>Đối thủ của bạn phải chuyển.</vi>
+            <ar>يجب أن يجتاز خصمك.</ar>
+            <fa>حریف شما باید عبور کند.</fa>
+            <hi>आपके दुश्मन को पास करना होगा.</hi>
+            <zh>对手必须跳过。</zh>
+            <ja>対戦相手はパスする必要があります。</ja>
+		</string>
+		<string id="PASS_PLAYER">
+			<en>You must pass.</en>
+			<de>Du musst passen.</de>
+			<es>Tienes que pasar.</es>
+			<fr>Vous devez passer votre tour.</fr>
+			<it>Devi passare.</it>
+			<pt>Você deve passar.</pt>
+			<ru>Вы должны пропустить ход</ru>
+			<no>Du må gå forbi.</no>
+			<nl>Je moet passen.</nl>
+            <id>Anda harus melewatkan giliran.</id>
+            <vi>Bạn phải chuyển.</vi>
+            <ar>يجب أن تجتاز.</ar>
+            <fa>شما باید عبور کنید.</fa>
+            <hi>आपको पास करना होगा.</hi>
+            <zh>你必须跳过。</zh>
+            <ja>パスしてください。</ja>
+		</string>
+		<string id="DOMINO_WON">
+			<en>Domino! You won this round.</en>
+			<de>Domino! Du hast diese Runde gewonnen.</de>
+			<es>¡Domino! Ganas esta ronda.</es>
+			<fr>Domino ! Vous avez gagné ce round.</fr>
+			<it>Domino! Hai vinto questo turno.</it>
+			<pt>Dominó! Você ganhou esta rodada.</pt>
+			<ru>Домино! Вы выиграли в этом раунде.</ru>
+			<no>Domino! Du vant denne runden.</no>
+			<nl>Domino! Je hebt deze ronde gewonnen.</nl>
+            <id>Domino! Anda memenangi ronde ini.</id>
+            <vi>Domino! Bạn đã thắng ván này.</vi>
+            <ar>أحجار الدومينو! لقد اجتزت هذه الجولة.</ar>
+            <fa>دومینو! این دور را بردید.</fa>
+            <hi>डोमिनो! आप यह राउंड जीत गए हैं.</hi>
+            <zh>多米诺！你赢下了这一回合。</zh>
+            <ja>ドミノ！このラウンドに勝利しました。</ja>
+		</string>
+		<string id="DOMINO_LOST">
+			<en>Domino! You lost this round.</en>
+			<de>Domino! Du hast diese Runde verloren.</de>
+			<es>¡Domino! Pierdes esta ronda.</es>
+			<fr>Domino ! Vous avez perdu ce round.</fr>
+			<it>Domino! Hai perso questo turno.</it>
+			<pt>Dominó! Você perdeu essa rodada.</pt>
+			<ru>Домино! Вы проиграли в этом раунде.</ru>
+			<no>Domino! Du tapte denne runden.</no>
+			<nl>Domino! Je hebt deze ronde verloren.</nl>
+            <id>Domino! Anda kalah di ronde ini.</id>
+            <vi>Domino! Bạn đã thua ván này.</vi>
+            <ar>أحجار الدومينو! لقد خسرت هذه الدورة.</ar>
+            <fa>دومینو! این دور را باختید.</fa>
+            <hi>डोमिनो! आप यह राउंड हार गए हैं.</hi>
+            <zh>多米诺！你输掉了这一回合。</zh>
+            <ja>ドミノ！このラウンドに敗北しました。</ja>
+		</string>
+		<string id="NEXT_ROUND">
+			<en>Next Round</en>
+			<de>Nächste Runde</de>
+			<es>Siguiente ronda</es>
+			<fr>Round suivant</fr>
+			<it>Round successivo</it>
+			<pt>Próxima rodada</pt>
+			<ru>Следующий раунд</ru>
+			<no>Neste Runde</no>
+			<nl>Volgende ronde</nl>
+            <id>Ronde Berikutnya</id>
+            <vi>Ván tiếp theo</vi>
+            <ar>الجولة التالية</ar>
+            <fa>دور بعدی</fa>
+            <hi>अगला राउंड</hi>
+            <zh>下一轮</zh>
+            <ja>次のラウンド</ja>
+		</string>
+		<string id="FIRST_PLAYER">
+			<en>The Player who scores 100 wins</en>
+			<de>Der Spieler mit 100 Punkten gewinnt</de>
+			<es>El jugador que consiga 100 puntos gana</es>
+			<fr>Le joueur qui marque 100 points gagne</fr>
+			<it>Vince il giocatore che segna 100 punti</it>
+			<pt>O jogador que pontuar 100 vence</pt>
+			<ru>Игрок, который набрал 100, победил</ru>
+			<no>Spilleren som får 100 vinner</no>
+			<nl>De speler die 100 scoort, wint</nl>
+            <id>Pemain yang meraih skor 100 menang</id>
+            <vi>Người chơi ghi điểm 100 sẽ thắng</vi>
+            <ar>لقد فاز اللاعب الذي سجل 100 نقطة</ar>
+            <fa>بازیکنی که به امتیاز 100 برسد برنده می‌شود</fa>
+            <hi>खिलाड़ी जो 100 जीत दर्ज करता है</hi>
+            <zh>先获得100分的玩家获胜</zh>
+            <ja>100 勝したプレイヤー</ja>
+		</string>					
+		<string id="BONUS100">
+			<en>Winning 100:0 nets you 1000</en>
+			<de>100:0 zu gewinnen, bringt dir 1000 ein</de>
+			<es>Si ganas 100:0, obtendrás 1000</es>
+			<fr>Gagner 100:0 vous rapporte 1000</fr>
+			<it>Vincendo 100:0 ottieni 1000</it>
+			<pt>Ganhar 100:0 lhe dá 1000</pt>
+			<ru>Победа 100:0 приносит вам 1000</ru>
+			<no>Gevinst 100:0 gir deg 1000</no>
+			<nl>Met 100:0 winnen levert je 1000 op</nl>
+            <id>Memenangi 100:0 memberimu 1000</id>
+            <vi>Thắng 100:0 bạn được 1000</vi>
+            <ar>إن الفوز بمائة نقطه مقابل لا شئ 100:0، يعني حصولك على 1000 نقطة</ar>
+            <fa>برد 100 به 0 باعث امتیاز خالص 1000 می‌شود</fa>
+            <hi>100:0 जीतें आपको 1000 नेट देता है</hi>
+            <zh>以100:0获胜，你就能赚得1000分</zh>
+            <ja>100:0 で勝利することで 1000 獲得します</ja>
+		</string>			
+		<string id="INSTR_COMMON">
+			<en>A round of domino is played until one player places all of their tiles or until the game is blocked and neither player can make a move. At the beginning the players receive 7 tiles and the one with higher double begins the game. If neither player got a double, then the player with the highest tile begins. The player who earns 100 points first wins.</en>
+			<de>Eine Runde Domino wird gespielt, bis ein Spieler alle seine Steine angelegt hat oder bis das Spiel einen Zustand erreicht, bei dem kein Spieler mehr anlegen kann. Am Spielbeginn erhalten die Spieler 7 Steine und der Spieler mit dem höchsten Doppelstein beginnt das Spiel. Falls kein Spieler einen Doppelstein hat, beginnt der Spieler mit dem höchsten Stein. Es gewinnt der Spieler, der als Erster 100 Punkte gesammelt hat.</de>
+			<es>La ronda de dominó dura hasta que un jugador coloque todas las fichas o hasta que el juego quede bloqueado y ningún jugador pueda realizar ningún movimiento. Al comienzo de la partida, cada jugador obtiene 7 fichas. El que tenga el doble más alto comienza la partida. Si ninguno tiene un doble, comienza el jugador con la ficha más alta. El jugador que consiga 100 puntos primero, gana.</es>
+			<fr>Un round de domino dure jusqu'à ce qu'un joueur place toutes ses tuiles ou jusqu'à ce que la partie soit bloquée et qu'aucun joueur ne puisse jouer. Au début, les joueurs reçoivent 7 tuiles et celui avec le double le plus élevé commence la partie. Si aucun joueur n'a de double, alors le joueur avec la tuile la plus haute commence. Le joueur qui marque 100 points en premier gagne.</fr>
+			<it>Un round di domino termina quando un giocatore piazza tutte le tessere o quando il gioco è in stallo e nessuno può fare una mossa. All'inizio i giocatori ricevono 7 tessere e quello con il doppio più alto inizia. Se nessun giocatore ha un doppio, inizia il giocatore con la tessera di valore più alto. Vince il giocatore che per primo raggiunge 100 punti.</it>
+			<pt>Uma rodada de dominó é jogada até que um jogador coloque todas as suas peças ou até que o jogo seja bloqueado e nenhum jogador possa fazer um movimento. No começo, os jogadores recebem 7 peças e quem tiver a maior dupla começa o jogo. Se nenhum dos jogadores tiver uma dupla o jogador com a peça de número mais alto começa. O jogador que ganhar 100 pontos primeiro vence.</pt>
+			<ru>Партия в домино играется до тех пор, пока один игрок не выложит все свои кости или пока игра не будет заблокирована, и ни один из игроков не сможет сделать ход. Сначала игроки получают по 7 костей и игра начинается с самого высокого дубля. Если  у игроков нет дублей, начинает игрок с самой высокой кости. Игрок, который зарабатывает 100 очков первым, выигрывает.</ru>
+			<no>En runde Domino spilles til en spiller plasserer alle brikker eller til spillet er blokkert og ingen av spillerne kan gjøre et trekk. I begynnelsen mottar spillerne 7 brikker og den med høyere dobbel begynner spillet. Hvis ingen av spillerne fikk en dobbel, begynner spilleren med den høyeste brikken. Spilleren som får 100 poeng først vinner.</no>
+			<nl>Er wordt een ronde domino gespeeld totdat een speler alle stenen bezit of totdat het spel geblokkeerd is en geen enkele speler meer een zet kan doen. In het begin ontvangen de spelers elk 7 stenen en degene met de hoogste dubbele begint het spel. Als geen enkele speler een dubbele krijgt, dan begint de speler met de hoogste steen. De speler die als eerste 100 punten heeft verdiend, wint.</nl>
+            <id>Satu ronde domino dimainkan sampai salah satu pemain menghabiskan balok yang dimilikinya atau sampai permainan terhenti dan kedua pemain tidak bisa meletakkan balok lagi. Pada awal permainan, pemain diberi 7 balok dan pemain dengan angka ganda lebih tinggi yang bermain lebih dahulu. Jika tidak ada yang punya angka ganda, pemain dengan balok bernilai tertinggi yang memulai. Pemain yang meraih skor 100 lebih dahulu yang menang.</id>
+            <vi>Một ván domino được chơi cho đến khi một người chơi đặt hết tất cả các quân của họ hoặc đến khi trò chơi bị chặn và không người chơi nào còn nước đi. Khi bắt đầu, người chơi nhận được 7 quân và người nào có đôi cao hơn sẽ bắt đầu trò chơi. Nếu không người chơi nào có đôi thì người chơi có quân cao nhất sẽ bắt đầu. Người chơi nào kiếm được 100 điểm đầu tiên sẽ thắng.</vi>
+            <ar>يتم بدء لعب جولة من الدومينو بأن يضع لاعب واحد كل الأحجار الخاصة به أو حتى يتم حجب اللعبة ولا يمكن لأي لاعب القيام بأي حركة. يحصل كل لاعب في البداية على 7 أحجار، ويبدأ الجولة اللاعب الذي يملك حجر الدّبل الأعلى. إذا لم يحصل أي من اللاعبين على حجر الدّبل، فيبدأ الجولة اللاعب الذي يملك الحجر الأعلى. إن اللاعب الذي يحصل على 100 نقطة أولًا، يفوز باللعبة.</ar>
+            <fa>یک دور دومینو تا زمانی بازی می‌شود که یکی از بازیکن‌ها تمام کاشی‌های خود را قرار دهد یا بازی مسدود شود هیچ‌کدام از بازیکن‌ها نتوانند حرکتی انجام دهند. در ابتدا، بازیکن‌ها 7 کاشی دریافت می‌کنند و بازیکنی که کاشی دوتایی بالاتری داشته باشد، بازی را شروع می‌کند. اگر هیچ‌کدام از بازیکن‌ها کاشی دوتایی نداشته باشند، بازیکنی که بالاترین کاشی را دارد، بازی را شروع می‌کند. اولین بازیکنی که به امتیاز 100 برسد، برنده می‌شود.</fa>
+            <hi>डोमिनो का एक राउंड तब तक खेला जाता है जब तक एक खिलाड़ी अपनी सभी टाइलें नहीं रख देता या जब तक गेम ब्लॉक न हो जाए या कोई भी खिलाड़ी कोई चाल न चले. शुरुआत में खिलाडियों को 7 टाइलें मिलती हैं साथ ही और भी दोगुनी तेज़ी से शुरुआत करते हैं. अगर कोई खिलाड़ी डबल प्राप्त नहीं करता है, तो उच्चतम टाइल वाला खिलाड़ी शुरू करता है. जो खिलाड़ी पहले 100 पॉइंट प्राप्त करता है वो जीतता है.</hi>
+            <zh>一轮多米诺骨牌游戏， 直到有一方把所有的牌放好， 或游戏被锁定之前， 双方都不能行动。 开始时， 玩家会收到7张牌， 偶数牌较多者先手。 如果双方都没有得到偶数的牌， 那么拥有最大牌的一方开始。 先获得100分的一方胜利。</zh>
+            <ja>ドミノのラウンドは、 1 人のプレイヤーが全てのタイルを配置する、 ゲームがブロックされる、 どちらのプレイヤーも手詰まりになるという条件のいずれかを満たすまで続きます。 開始する時点で、 プレイヤーは 7 つのタイルを持っており、 一番高いペアを持っているプレイヤーからゲームを始めます。 どちらのプレイヤーもペアを持っていない場合は、 一番高いタイルを持っている方が始めます。 先に 100 ポイント獲得した方が勝ちです。</ja>
+		</string>	
+		<string id="INSTR_DRAW">
+			<en>If a player cannot make a move, they need to pick tiles from boneyard until they pick a suitable tile with which they can play further.</en>
+			<de>Falls ein Spieler keinen Stein anlegen kann, muss er Steine vom Steinstapel nehmen, bis er einen Stein findet, den er anlegen kann.</de>
+			<es>Si un jugador no puede realizar ningún movimiento, tendrá que coger fichas del cementerio hasta que salga una con la que pueda jugar.</es>
+			<fr>Si un joueur ne peut pas jouer, il doit piocher des tuiles jusqu'à ce qu'il obtienne une tuile appropriée avec laquelle il pourra continuer à jouer.</fr>
+			<it>Se un giocatore non può fare una mossa, deve pescare le tessere dall'ossario fino a trovarne una con cui proseguire.</it>
+			<pt>Se um jogador não pode fazer um movimento, ele precisa pegar as pedras do banco de peças até achar uma peça adequada com a qual possa jogar mais.</pt>
+			<ru>Если игрок не может сделать ход, ему нужно выбрать кость с базара, пока не найдёт подходящую кость, с которой можно продолжить игру дальше.</ru>
+			<no>Hvis en spiller ikke kan gjøre et trekk, må de plukke brikker fra bunken til de plukker en passende brikke de kan spille videre med.</no>
+			<nl>Als een speler geen zet kan doen, moet deze stenen van de stapel pakken totdat er een geschikte steen is om verder mee te spelen.</nl>
+            <id>Jika seorang pemain tidak bisa meletakkan balok, pemain harus mengambil balok dari boneyard sampai mendapat balok yang cocok sehingga dapat melanjutkan permainan.</id>
+            <vi>Nếu người chơi không còn nước đi, họ cần lấy các quân từ bộ cho đến khi lấy được một quân phù hợp để có thể chơi tiếp.</vi>
+            <ar>إذا لم يتمكن اللاعب من عمل أي حركة، فهذا يعني أنه بحاجة إلى سحب أحجار من البونيارد (الاحتياطي) إلى أن يقوم بسحب الحجر المناسب الذي يمكنه من المزيد من اللعب.</ar>
+            <fa>اگر بازیکنی قادر به حرکت نباشد، باید تا زمان برداشتن کاشی مناسب که بتواند با آن بازی را ادامه دهد، کاشی‌ها را از قبرستان بردارد.</fa>
+            <hi>अगर कोई खिलाड़ी चाल नहीं चल पाता है, तो उन्हें बोनयार्ड से टाइल लने की ज़रूरत होती है जब तक कि वे एक उपयुक्त टाइल नहीं चुनते जिसके साथ वे आगे खेल सकते हैं.</hi>
+            <zh>如果玩家无法行动， 他必须从墓地中选出一张牌， 直到他选出能够继续游戏的牌。</zh>
+            <ja>プレイヤーが手詰まりになった場合、 プレイできるタイルを見つけるまで墓場から引く必要があります。</ja>
+		</string>
+		<string id="INSTR_BLOCK">
+			<en>If a player cannot make a move, they have to pass the turn to the other player. If neither can make a move, the numbers on the tiles in each player´s hands add up and the one with smaller number wins the round</en>
+			<de>Falls ein Spieler keinen Stein anlegen kann, übergibt er den Zug an den anderen Spieler. Falls kein Spieler mehr einen Stein anlegen kann, werden die Zahlen auf den Steinen in den Händen der Spieler addiert und der Spieler mit der kleineren Summe gewinnt die Runde.</de>
+			<es>Si un jugador no puede realizar ningún movimiento, el turno pasa al otro jugador. Si ninguno de los dos puede realizar ningún movimiento, los valores de las fichas de las manos de cada jugador se suman y el que tenga la cifra más baja gana la ronda.</es>
+			<fr>Si un joueur ne peut pas jouer, il doit passer son tour. Si aucun joueur ne peut jouer, les nombres des tuiles que les joueurs ont en main sont additionnés et celui qui a le plus petit nombre gagne la partie.</fr>
+			<it>Se un giocatore non può fare una mossa, deve passare il turno all'altro giocatore. Se nessuno può fare una mossa, i numeri sulle tessere in mano a ogni giocatore si sommano e quello con il totale più basso vince la partita.</it>
+			<pt>Se um jogador não pode fazer um movimento, ele tem que passar a vez para o outro jogador. Se nenhum dos dois puder fazer um movimento, os números nas peças nas mãos de cada jogador serão somados e aquele com número menor ganhará a rodada.</pt>
+			<ru>Если у игрока нет кости для хода, он должен передать ход другому игроку. Если ни один из них не может сделать ход, то числа на костях, которые на руках каждого игрока складываются, и игрок с меньшим счётом выигрывает раунд</ru>
+			<no>Hvis en spiller ikke kan gjøre et trekk, er det den andre spillerens tur. Hvis ingen kan gjøre et trekk, legges tallene på brikkene i hver spillers hender sammen og den spiller med mindre antall vinner runden</no>
+			<nl>Als een speler geen zet kan doen, moet deze de beurt doorgeven aan de andere speler. Als geen ervan een zet kan doen, worden de cijfers op de stenen in de handen van alle spelers opgeteld en degene met het kleinste totaal wint de ronde</nl>
+            <id>Jika seorang pemain tidak bisa meletakkan balok, pemain harus memberikan gilirannya ke pemain lain. Jika tidak ada yang bisa meletakkan balok, ronde permainan dimenangi oleh pemain dengan jumlah angka balok yang lebih kecil</id>
+            <vi>Nếu một người chơi không thể thực hiện nước đi, họ phải chuyển lượt cho người chơi khác. Nếu không người nào còn nước đi thì sẽ cộng số trên các quân trong tay của mỗi người chơi và người có số nhỏ hơn sẽ thắng ván đó</vi>
+            <ar>إذا لم يتمكن اللاعب من القيام بخطوة ، فيجب عليه تمرير الدور إلى اللاعب الآخر إذا لم يتمكن أي من اللاعبين من القيام بحركة، يتم جمع الأرقام الموجودة على الأحجار التي في أيدي كل لاعب، ويعدّ اللّاعب الذي مجموع نقاط أحجاره المتبقية أقلّ فائزًا في الجولة.</ar>
+            <fa>اگر بازیکنی قادر به حرکت نباشد، باید نوبت را به بازیکن دیگر بدهد. اگر هیچ‌کدام قادر به حرکت نباشند، اعداد روی کاشی‌ها در دست‌های هر بازیکن جمع می‌شود و بازیکنی که عدد کمتری دارد برندۀ دور خواهد بود</fa>
+            <hi>अगर कोई खिलाड़ी चाल नहीं चलता है तो उन्हें दूसरे खिलाड़ी की बारी आगे देनी होगी. अगर कोई चाल नहीं चलता है, तो हर एक खिलाड़ी के हैंड पर टाइलों पर नंबर जुड़ जाते हैं और जिस खिलाड़ी की संख्या सबसे कम होती है वो खिलाड़ी राउंड जीत जाता है</hi>
+            <zh>如果玩家无法行动， 他必须把这个回合交给其他玩家。 如果都无法行动， 每个玩家手中的牌上的数字相加， 数字小的一方获胜</zh>
+            <ja>プレイヤーが手詰まりになった場合、 パスをして次のプレイヤーに順番を回す必要があります。 どちらのプレイヤーも手詰まりになった場合、 各プレイヤーの手元にあるタイルの数字の合計が低い方がラウンドに勝利します</ja>
+		</string>		
+
+		<string id="WIN">
+			<en>Win</en>
+			<de>Gewonnen</de>
+			<es>Victoria</es>
+			<fr>Victoire</fr>
+			<it>Vittoria</it>
+			<pt>Vitória</pt>
+			<ru>Победа</ru>
+			<no>Vinne</no>
+			<nl>Winnen</nl>
+            <id>Menang</id>
+            <vi>Thắng</vi>
+            <ar>الفوز</ar>
+            <fa>برد</fa>
+            <hi>जीत</hi>
+            <zh>胜利</zh>
+            <ja>勝利</ja>
+		</string>
+		<string id="YOU_WIN">
+			<en>You win</en>
+			<de>Gewonnen</de>
+			<es>Ganas</es>
+			<fr>Vous avez gagné</fr>
+			<it>Hai vinto</it>
+			<pt>Você vence</pt>
+			<ru>Ты победил</ru>
+			<no>Du vant!</no>
+			<nl>Jij wint</nl>
+            <id>Anda menang</id>
+            <vi>Bạn thắng</vi>
+            <ar>لقد فزت</ar>
+            <fa>برنده شدید</fa>
+            <hi>आप जीते</hi>
+            <zh>你赢了</zh>
+            <ja>勝利しました</ja>
+		</string>	
+		<string id="YOU_LOSE">
+			<en>You Lose</en>
+			<de>Du hast verloren</de>
+			<es>Pierdes</es>
+			<fr>Vous avez perdu</fr>
+			<it>Hai perso</it>
+			<pt>Você perde</pt>
+			<ru>Ты проиграл</ru>
+			<no>Du tapte</no>
+			<nl>Jij verliest</nl>
+            <id>Anda Kalah</id>
+            <vi>Bạn thua</vi>
+            <ar>لقد خسرت</ar>
+            <fa>باختید</fa>
+            <hi>आप हार गए</hi>
+            <zh>你输了</zh>
+            <ja>敗北しました</ja>
+		</string>	
+		<string id="BONUS">
+			<en>Bonus</en>
+			<de>Bonus</de>
+			<es>Bonificación</es>
+			<fr>Bonus</fr>
+			<it>Bonus</it>
+			<pt>Bônus</pt>
+			<ru>Бонус</ru>
+			<no>Bonus</no>
+			<nl>Bonus</nl>
+            <id>Bonus</id>
+            <vi>Thưởng</vi>
+            <ar>مكافأة</ar>
+            <fa>پاداش</fa>
+            <hi>बोनस</hi>
+            <zh>奖励</zh>
+            <ja>ボーナス</ja>
+		</string>		
+		<string id="SCORE">
+			<en>Score</en>
+			<de>Punkte</de>
+			<es>Puntuación</es>
+			<fr>Score</fr>
+			<it>Punteggio</it>
+			<pt>Pontuação</pt>
+			<ru>Cчет</ru>
+			<no>Poeng</no>
+			<nl>Score</nl>
+            <id>Skor</id>
+            <vi>Điểm số</vi>
+            <ar>النتيجة</ar>
+            <fa>امتیاز</fa>
+            <hi>स्कोर</hi>
+            <zh>分数</zh>
+            <ja>スコア</ja>
+		</string>	
+		<string id="CONTINUE">
+			<en>Continue</en>
+			<de>Weiter</de>
+			<es>Continuar</es>
+			<fr>Continuer</fr>
+			<it>Continuare</it>
+			<pt>Continuar</pt>
+			<ru>Продолжить</ru>
+			<no>Fortsett</no>
+			<nl>Doorgaan</nl>
+            <id>Lanjutkan</id>
+            <vi>Tiếp tục</vi>
+            <ar>متابعة</ar>
+            <fa>ادامه</fa>
+            <hi>जारी रखें</hi>
+            <zh>继续</zh>
+            <ja>続ける</ja>
+		</string>
+		<string id="MENU">
+			<en>Menu</en>
+			<de>Menü</de>
+			<es>Menú</es>
+			<fr>Menu</fr>
+			<it>Menu</it>
+			<pt>Menu</pt>
+			<ru>Mеню</ru>
+			<no>Meny</no>
+			<nl>Menu</nl>
+            <id>Menu</id>
+            <vi>Menu</vi>
+            <ar>القائمة</ar>
+            <fa>منو</fa>
+            <hi>मेन्यू</hi>
+            <zh>菜单</zh>
+            <ja>メニュー</ja>
+		</string>
+		<string id="RESTART">
+			<en>Restart</en>
+			<de>Neustarten</de>
+			<es>Reiniciar</es>
+			<fr>Recommencer</fr>
+			<it>Riavvia</it>
+			<pt>Reiniciar</pt>
+			<ru>Запустить снова</ru>
+			<no>Omstart</no>
+			<nl>Opnieuw starten</nl>
+            <id>Mulai ulang</id>
+            <vi>Khởi động lại</vi>
+            <ar>إعادة البدء</ar>
+            <fa>شروع مجدد</fa>
+            <hi>रीस्टार्ट करें</hi>
+            <zh>重新开始</zh>
+            <ja>リスタート</ja>
+		</string>		
+		<string id="YES">
+			<en>Yes</en>
+			<de>Ja</de>
+			<es>Sí</es>
+			<fr>Oui</fr>
+			<it>Sì</it>
+			<pt>Sim</pt>
+			<ru>Да</ru>
+			<no>Ja</no>
+			<nl>Ja</nl>
+            <id>Ya</id>
+            <vi>Có</vi>
+            <ar>نعم</ar>
+            <fa>بله</fa>
+            <hi>हां</hi>
+            <zh>是</zh>
+            <ja>はい</ja>
+		</string>		
+		<string id="NO">
+			<en>No</en>
+			<de>Nein</de>
+			<es>No</es>
+			<fr>Non</fr>
+			<it>No</it>
+			<pt>Não</pt>
+			<ru>Нет</ru>
+			<no>Nei</no>
+			<nl>Nee</nl>
+            <id>Tidak</id>
+            <vi>Không</vi>
+            <ar>لا</ar>
+            <fa>خیر</fa>
+            <hi>नहीं</hi>
+            <zh>否</zh>
+            <ja>いいえ</ja>
+		</string>				
+		<string id="UNLOCKED">
+			<en>unlocked</en>
+			<de>freigeschaltet</de>
+			<es>desbloqueado</es>
+			<fr>déverrouillé</fr>
+			<it>sbloccato</it>
+			<pt>desbloqueada</pt>
+			<ru>pазблокировано</ru>
+			<nl>ontgrendeld</nl>
+            <id>terbuka</id>
+            <vi>đã mở khóa</vi>
+            <ar>إلغاء القفل</ar>
+            <fa>بدون قفل</fa>
+            <hi>अनलॉक किया गया</hi>
+            <zh>解锁</zh>
+            <ja>アンロックしました</ja>
+
+		</string>	
+		<string id="ARE_YOU_SURE">
+			<en>Are you sure?</en>
+			<de>Sicher?</de>
+			<es>¿Seguro?</es>
+			<fr>Vous êtes sûr(e)?</fr>
+			<it>Confermi?</it>
+			<pt>Tem certeza?</pt>
+			<ru>Уверены ли вы?</ru>
+			<no>Er du sikker?</no>
+			<nl>Weet je het zeker?</nl>
+            <id>Yakin?</id>
+            <vi>Bạn có chắc không?</vi>
+            <ar>هل أنت متأكد؟</ar>
+            <fa>مطمئن هستید؟</fa>
+            <hi>क्या आप सुनिश्चित हैं?</hi>
+            <zh>你确定吗？</zh>
+            <ja>本当によろしいですか？</ja>
+		</string>
+		<string id="RESTART_ARE_YOU_SURE">
+			<en>THIS WILL ERASE ALL\nYOUR PROGRESS.\n\nARE YOU SURE?</en>
+			<de>DEIN GESAMTER FORTSCHRITT\nWIRD GELÖSCHT.\n\nBIST DU SICHER?</de>
+			<es>SE BORRARÁ TODO\nTU PROGRESO.\n\n¿SEGURO?</es>
+			<fr>CELA EFFACERA TOUTE VOTRE\n PROGRESSION DANS LE JEU.\n\nCONFIRMER?</fr>
+			<it>TUTTI I TUOI PROGRESSI\nSARANNO CANCELLATI.\n\nSEI SICURO?</it>
+			<pt>ISTO APAGARÁ TODO\nO SEU PROGRESSO.\n\nTEM CERTEZA?</pt>
+			<ru>ВЫ УДАЛИТЕ ПОЛНОСТЬЮ\nВАШ ПРОГРЕСС.\nВЫ УВЕРЕНЫ?</ru>
+			<no>DETTE VIL SLETTE HELE\nDIN FREMDRIFT.\n\nER DU SIKKER?</no>
+		    <nl>DIT ZAL JE HELE\nVOORTGANG WISSEN.\n\nWEET JE HET ZEKER?</nl>
+            <id>INI AKAN MENGHAPUS SEMUA\nKEMAJUANMU.\n\nYAKIN?</id>
+            <vi>VIỆC NÀY SẼ XÓA TẤT CẢ\nTIẾN TRÌNH CỦA BẠN.\n\nBẠN CÓ CHẮC CHẮN KHÔNG?</vi>
+            <ar>سيؤدي ذلك إلى\nحذف ما حققته من تقدم.\n\nهل أنت متأكد من ذلك؟</ar>
+            <fa>این اقدام باعث پاک شدن همه\nپیشرفت شما می‌شود.\n\nمطمئن هستید؟</fa>
+            <hi>इससे\nआपकी सभी प्रोग्रेस खत्म हो जाएगी।\n\nक्या आप सुनिश्चित हैं?</hi>
+            <zh>这会消除\n你的所有游戏进程。\n\n你确定吗？</zh>
+            <ja>進行がすべて\n削除されます。\n\n本当によろしいですか？</ja>
+		</string>
+		<string id="NEW_GAME">
+			<en>New game</en>
+			<de>Neues Spiel</de>
+			<es>Nueva partida</es>
+			<fr>Nouvelle partie</fr>
+			<it>Nuova partita</it>
+			<pt>Novo jogo</pt>
+			<ru>Новая игра</ru>
+			<no>Nytt spill</no>
+			<nl>Nieuw spel</nl>
+            <id>Permainan baru</id>
+            <vi>Trò chơi mới</vi>
+            <ar>لعبة جديدة</ar>
+            <fa>بازی جدید</fa>
+            <hi>नया गेम</hi>
+            <zh>新游戏</zh>
+            <ja>新しいゲーム</ja>
+		</string>
+		<string id="CONTINUE_SAVED">
+			<en>Continue with your\nprevious game</en>
+			<de>Spiel fortsetzen</de>
+			<es>Continuar con la\npartida anterior</es>
+			<fr>Reprendre votre\npartie précédente</fr>
+			<it>Continuare l\npartita precedente</it>
+			<pt>Continuar com\njogo anterior</pt>
+			<ru>Продолжить\nпредыдущую игру</ru>
+			<no>Fortsett ditt\n forrige spill</no>
+			<nl>Doorgaan met je\nvorige spel</nl>
+            <id>Lanjutkan\npermainan sebelumnya</id>
+            <vi>Tiếp tục với\ntrò chơi trước đó của bạn</vi>
+            <ar>تابع بـ\nلعبتك السابقة</ar>
+            <fa>ادامه با\nبازی قبلی</fa>
+            <hi>अपने\nपिछले गेम को जारी रखें</hi>
+            <zh>继续\n上一次游戏</zh>
+            <ja>前のゲームで\n続ける</ja>
+		</string>
+	</strings>
+</stringresources>
