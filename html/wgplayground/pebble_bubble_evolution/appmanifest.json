@@ -1,0 +1,11 @@
+{
+	"name": "Pebble",
+	"short_name": "Pebble",
+	"description": "Pebble stone throw",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#f20202",
+	"icons": [],
+	"screenshots": []
+}

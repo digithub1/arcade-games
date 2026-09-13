@@ -1,0 +1,10 @@
+{
+	"name": "Physics Box",
+	"short_name": "Physics Box",
+	"description": "Click to shoot the impulses from the box to get it to the flag. 30 levels to complete.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": []
+}
