@@ -1,0 +1,302 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Makeup Kit - Makeup Game">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/a2ccc9d94481281458aa5166ce9777a4/wgplayground/3c9b6e7b97d2a4a673625e9455fb3c47.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/a2ccc9d94481281458aa5166ce9777a4/wgplayground/f0d400dc4cace96eb04b7dc63011af96.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/a2ccc9d94481281458aa5166ce9777a4">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamesmunch/makeup-kit-makeup-game">
+            <meta property="wgp:description" content="Makeup Kit - Makeup Game is a type of casual game where players can create their own makeup looks on a virtual model. The game typically includes a wide variety of makeup options, such as foundation, concealer, eyeshadow, eyeliner, mascara, blush, bronzer, and lipstick. Players can also choose from a variety of different hairstyles and accessories.Makeup kit games are often popular with players who enjoy experimenting with different makeup looks and who want to learn more about makeup application. The games can also be a fun way to relax and de-stress.">
+            <meta property="wgp:instructions" content="???? Princess Dress-Up &amp; DIY Makeup Kits: Brace yourself for a princess dress-up extravaganza and craft your very own makeup kits. Learn to make blush, eyeshadow, lipstick, nail polish, and more in our girl games makeup workshop.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/a2ccc9d94481281458aa5166ce9777a4/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="960">
+            <meta property="wgp:height" content="640">
+            <meta property="wgp:rwidth" content="3">
+            <meta property="wgp:rheight" content="2">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="1.5">
+            <meta property="wgp:controls" content="W10=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJCZWF1dHkifSx7Im5hbWUiOiJBcnQifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="dsdwrftbl1cabrag/a2ccc9d94481281458aa5166ce9777a4">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+
+    <meta charset="utf-8">
+    <title>Makeup Kit Factory</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        background: #444;
+      }
+      #gameContainer {
+        width: 100vw;
+        height: 100vh;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      /* try to handle mobile dialog */
+      canvas + * {
+        z-index: 2;
+      }
+      .logo {
+          display: block;
+          width: max-width: 100vw;
+          height: max-height: 70vh;
+      }
+
+      .progress {
+          margin: 1.5em;
+          border: 1px solid white;
+          width: 50vw;
+          display: none;
+      }
+      .progress .full {
+          margin: 2px;
+          background: white;
+          height: 1em;
+          transform-origin: top left;
+      }
+
+      #loader {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .spinner,
+      .spinner:after {
+        border-radius: 50%;
+        width: 5em;
+        height: 5em;
+      }
+      .spinner {
+        margin: 10px;
+        font-size: 10px;
+        position: relative;
+        text-indent: -9999em;
+        border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-left: 1.1em solid #ffffff;
+        transform: translateZ(0);
+        animation: spinner-spin 1.1s infinite linear;
+      }
+      @keyframes spinner-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+  <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+
+  <body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/a2ccc9d94481281458aa5166ce9777a4/wgplayground/f0d400dc4cace96eb04b7dc63011af96.jpg">
+    <div id="gameContainer"></div>
+    <div id="loader">
+      <img class="logo" src="logo.png" width="250" height="50">
+      <div class="spinner"></div>
+      <div class="progress"><div class="full"></div></div>
+    </div>
+  
+
+
+
+  <script src="Build/UnityLoader.js"></script></body></html>
