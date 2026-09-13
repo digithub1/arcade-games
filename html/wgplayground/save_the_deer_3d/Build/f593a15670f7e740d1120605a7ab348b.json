@@ -1,0 +1,16 @@
+{
+"companyName": "ElezthemGames",
+"productName": "SaveOlen",
+"productVersion": "1.0.0.0",
+"dataUrl": "a3bf0911e244a0d97534bef15980d3d6.unityweb",
+"wasmCodeUrl": "ca778011f970b384ae112bfdd7c1d56d.unityweb",
+"wasmFrameworkUrl": "4018fc2ba352438012e92ef3b84889bf.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
