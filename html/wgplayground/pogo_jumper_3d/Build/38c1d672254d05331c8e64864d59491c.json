@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "TestPhisic",
+"productVersion": "0.1",
+"dataUrl": "e0e6e8a42cc75e701e4df9de1df5b3c3.unityweb",
+"wasmCodeUrl": "5b7feca838d2a36c9697d581911edc7b.unityweb",
+"wasmFrameworkUrl": "1d1a89caf5d995147f85dbac1e4f29c3.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
