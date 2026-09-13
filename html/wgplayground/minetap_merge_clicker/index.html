@@ -1,0 +1,253 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+        
+            <meta property="wgp:title" content="Minetap Merge Clicker">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/b455aba4cc8c575f694ab0e865b5be3a/wgplayground/5e590522b76a72194a02fc6f82fec1f4.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/b455aba4cc8c575f694ab0e865b5be3a/wgplayground/364053ee8154cad4927363455e45e3f6.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/b455aba4cc8c575f694ab0e865b5be3a">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/mirra-games/minetap-merge-clicker">
+            <meta property="wgp:description" content="You have to combine the same resources, create complex materials at the workbench and in the forge, going from processing stone and ore to precious gems.  Manage resources, create and select equipment, speed up your progress with boosters, and soon all the riches of the earth will be yours.  Peculiarities:  - Loot chests and find various resources. - Combine identical blocks to obtain valuable materials. - Speed ​​up your progress by purchasing blocks with in-game gold. - Create planks on a workbench, smelt ore in a furnace, craft equipment and armor. - Complete tasks and advance to difficult quests. - Try your luck in the treasure mine and get daily rewards hidden in the stone.">
+            <meta property="wgp:instructions" content="The goal of the game is to combine identical resources using merge mechanics, create more complex materials at the workbench and in the forge, complete tasks and get treasures.  You must manage resources, craft equipment and use boosters to speed up your progress to ultimately reach the most valuable resources and maximum level of development.  Control: left mouse button/touch.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/b455aba4cc8c575f694ab0e865b5be3a/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/b455aba4cc8c575f694ab0e865b5be3a/wgplayground/ab148816ce80dc2fc678541e3e9213bc.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/b455aba4cc8c575f694ab0e865b5be3a/wgplayground/05c6d4d0dfb625138ed9d51cf9ee2316.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="720">
+            <meta property="wgp:height" content="1280">
+            <meta property="wgp:rwidth" content="9">
+            <meta property="wgp:rheight" content="16">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0.56">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiY2hvb3NlIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJDYXN1YWwifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="2">
+            <meta property="wgp:ads" content="110/b455aba4cc8c575f694ab0e865b5be3a">
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <!-- Page configuration. -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <title></title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="json/manifest.webmanifest">
+    <!-- Application base modules. -->
+    <script type="text/javascript" src="lib/runtimeData.js"></script><style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style>
+    <script type="text/javascript">
+        window.onload = () => {
+            document.title = runtimeData.productName;
+            if (runtimeData.debugMode == true) {
+                let erudaScript = document.createElement("script");
+                erudaScript.src = "lib/eruda.js";
+                erudaScript.onload = () => {
+                    eruda.init();
+                };
+                document.body.appendChild(erudaScript);
+            }
+        }
+    </script>
+<script src="gamepush.js"></script></head>
+<body class="wgNoLoader" style="background-image: url(&quot;img/download.png&quot;);">
+    <!-- Game canvas. -->
+    <div id="unity-container">
+        <canvas id="unity-canvas" tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+            <div id="version-container">
+                <img src="img/version_product_32.png">
+                <div id="version-product">2.5.3</div>
+                <div id="version-separator"></div>
+                <img src="img/version_sdk_32.png">
+                <div id="version-sdk">3.17.13</div>
+            </div>
+            <div id="unity-logo" style="background-image: url(&quot;img/icon-workspace-pig.png&quot;);"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+            <div id="three-canvas"></div>
+        </div>
+    </div>
+    <!-- Banner advertisement. -->
+    <div id="banner-container"></div>
+    <!-- Version labels. -->
+    <script type="text/javascript">
+        document.body.style.backgroundImage = "url('img/" + runtimeData.backgroundTextureName + "')";
+        document.getElementById("unity-logo").style.backgroundImage = "url('img/" + runtimeData.iconTextureName + "')";
+        document.getElementById("version-product").innerHTML = runtimeData.productVersion;
+        document.getElementById("version-sdk").innerHTML = runtimeData.sdkVersion;
+    </script>
+    <!-- Company logo. -->
+    <script type="text/javascript" src="lib/threeImport.js"></script></body></html>
