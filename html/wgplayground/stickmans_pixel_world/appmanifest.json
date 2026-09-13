@@ -1,0 +1,16 @@
+{
+	"name": "Stickmen Pixel World",
+	"short_name": "Stickmen Pixel World",
+	"description": "Stickmen Pixel World",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Stickman Blockworld Parkour 2",
+	"short_name": "Stickman Blockworld Parkour 2",
+	"description": "Stickman Blockworld Parkour 2",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
