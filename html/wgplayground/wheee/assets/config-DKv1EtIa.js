@@ -1,0 +1,1 @@
+var e=typeof location<`u`&&location.hostname.endsWith(`.discordsays.com`)?`${location.origin}/gameapi`:`https://api.wheee.io`,t=e.replace(/^http(s?)/,`ws$1`)+`/ws`;export{t as n,e as t};
