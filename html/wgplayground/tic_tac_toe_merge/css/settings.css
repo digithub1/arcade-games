@@ -1,0 +1,130 @@
+/* Settings modal styles — uses skin CSS variables for theming */
+
+.settings-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: none; /* hidden by default, shown when opened */
+  align-items: center;
+  justify-content: center;
+  background: var(--modal-overlay-bg, rgba(0,0,0,0.6));
+  z-index: 10050;
+}
+
+.settings-modal-overlay.active { display: flex; }
+
+.settings-modal {
+  background: var(--modal-bg-solid, var(--modal-bg, #1a1a24));
+  color: var(--modal-text, #e8e8e8);
+  border: 1px solid var(--modal-border, rgba(255,255,255,0.08));
+  padding: 20px;
+  border-radius: 14px;
+  min-width: 320px;
+  max-width: 92vw;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
+}
+
+.settings-header .modal-close-x {
+  position: static;
+  margin: 0;
+}
+
+.settings-title {
+  font-family: var(--font-title, 'Unbounded', sans-serif);
+  font-size: 1.25rem;
+  color: var(--modal-text, #e8e8e8);
+}
+
+.settings-body {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 18px;
+  align-items: center;
+}
+
+.setting-row { display: flex; align-items: center; gap: 12px; }
+.settings-body .setting-label {
+  justify-self: start;
+  color: var(--modal-text, #e8e8e8);
+}
+.settings-body .setting-control { justify-self: start; display: flex; align-items: center; gap: 8px; }
+
+/* Language selector dropdown */
+.lang-select {
+  width: 100%;
+  max-width: 220px;
+  text-align: left;
+  background: var(--modal-bg-solid, var(--modal-bg, #1a1a24));
+  color: var(--modal-text, #e8e8e8);
+  border: 1px solid var(--modal-border, rgba(255,255,255,0.08));
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-family: var(--font-ui, system-ui, sans-serif);
+  cursor: pointer;
+}
+
+.lang-select:focus {
+  outline: none;
+  border-color: var(--modal-border, rgba(255,255,255,0.25));
+}
+
+.lang-list { display: flex; gap: 8px; }
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--modal-border, rgba(255,255,255,0.03));
+  color: var(--modal-text, #e8e8e8);
+}
+
+.lang-item.selected {
+  outline: 2px solid var(--modal-border, rgba(255,255,255,0.06));
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.lang-emoji { font-size: 1.25rem; }
+.lang-name {
+  font-size: 0.95rem;
+  color: var(--modal-text, #e8e8e8);
+}
+
+/* Volume sliders */
+.vol-slider {
+  flex: 1;
+  min-width: 80px;
+  opacity: 0.85;
+  accent-color: var(--btn-primary-text, #667eea);
+  transition: opacity 0.15s;
+}
+.vol-slider--muted {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* Mute toggle buttons (SFX / Music) */
+.mute-toggle {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--modal-border, rgba(255,255,255,0.15));
+  background: rgba(255,255,255,0.07);
+  color: var(--modal-text, #e8e8e8);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+  line-height: 1;
+}
+.mute-toggle:hover { background: rgba(255,255,255,0.13); }
+.mute-toggle.muted { opacity: 0.4; }

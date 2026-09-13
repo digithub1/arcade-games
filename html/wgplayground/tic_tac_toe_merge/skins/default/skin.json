@@ -1,0 +1,69 @@
+{
+  "id": "default",
+  "name": "Default",
+  "description": "Base visual style",
+  "preview": "preview.png",
+  "assets": {
+    "xImage": "x.png",
+    "oImage": "o.png",
+    "boardBg": "board_bg.png",
+    "button": "button.png",
+    "leftBottom": "left-bottom.png",
+    "rightBottom": "right-bottom.png"
+  },
+  "colors": {
+    "appBg": "#0a0a0f",
+    "canvasBg": "#12121a",
+    "panelBg": "rgba(255,255,255,0.03)",
+    "panelBorder": "rgba(255,255,255,0.08)",
+      "handSlotBg": "rgba(255,255,255,0.05)",
+      "handSlotBorder": "rgba(255,255,255,0.15)",
+      "xColor": "#ff6b6b",
+      "xLight": "#ff8e8e",
+      "oColor": "#48dbfb",
+      "oLight": "#7be8ff",
+      "btnPrimaryBg": "linear-gradient(135deg,#667eea,#764ba2)",
+    "btnPrimaryText": "#ffffff",
+    "btnHoverGlow": "0 8px 20px rgba(0,0,0,0.35)",
+    "playerXColor": "#ff6b6b",
+    "playerOColor": "#48dbfb",
+    "playerXProgress": "linear-gradient(90deg,#ff6b6b,#ff8e8e)",
+    "playerOProgress": "linear-gradient(90deg,#48dbfb,#7be8ff)",
+    "handHoverBorderX": "#ff6b6b",
+    "handHoverBorderO": "#48dbfb",
+    "handPieceBorderX": "rgba(255, 107, 107, 0.3)",
+    "handPieceBorderO": "rgba(72, 219, 251, 0.3)",
+    "handOuterGlowX": "0 18px 48px rgba(255,107,107,0.12)",
+    "handOuterGlowO": "0 18px 48px rgba(72,219,251,0.12)",
+    "levelBadgeTextX": "#ff8e8e",
+    "levelBadgeTextO": "#7be8ff",
+    "levelBadgeBgX": "#12121a",
+    "levelBadgeBgO": "#12121a",
+    "turnXColor": "#ff6b6b",
+    "turnOColor": "#48dbfb",
+      "btnHoverGlow": "0 8px 20px rgba(0,0,0,0.35)",
+      "popupBg": "rgba(255,255,255,0.02)",
+      "popupBgSolid": "#1a1a24",
+      "popupBorder": "rgba(255,255,255,0.06)",
+      "modalOverlay": "rgba(0,0,0,0.5)",
+      "tooltipBg": "linear-gradient(180deg,#0f0f12,#1b1b24)",
+      "scoreBarBg": "rgba(255,255,255,0.1)",
+    "titleText": "linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3)"
+    },
+  "menu": {
+    "overlay": "linear-gradient(180deg, rgba(10, 10, 15, 0.85), rgba(15, 15, 25, 0.85))"
+  },
+  "flags": {
+    "price": 0,
+    "requiresPurchase": false,
+    "rewardable": true
+  }
+  ,
+  "fonts": {
+    "title": "'Unbounded', sans-serif",
+    "ui": "'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Unbounded:wght@400;700;900&display=swap"
+    ]
+  }
+}
