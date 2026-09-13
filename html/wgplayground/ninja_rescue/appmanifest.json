@@ -1,0 +1,10 @@
+{
+	"name": "Ninja Rescue",
+	"short_name": "Ninja Rescue",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

@@ -1,0 +1,37 @@
+{
+	"name": "Mushroom Match Master",
+	"short_name": "Mushroom Match Master",
+	"description": "Match colorful mushrooms in Mushroom Match Master! A fun puzzle game with brain-boosting challenges and levels. Play free on mobile or desktop",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x15",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x31",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x113",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x127",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x255",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
