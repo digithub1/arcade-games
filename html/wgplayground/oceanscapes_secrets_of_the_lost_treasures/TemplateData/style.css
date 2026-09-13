@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+canvas {
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+#unity-container {
+    width: 100%;
+    height: 100%;
+}
+
+#unity-canvas {
+    width: 100%;
+    height: 100%;
+    background: #252525;
+}
+
+#loading-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#unity-loading-bar {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#unity-logo {
+    text-align: center;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+#unity-progress-bar-empty {
+    width: 250px;
+    height: 25px;
+    text-align: left;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    max-width: 250px;
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 100%;
+    background: #ffae00;
+    border-radius: 2px;
+}
+
+.light #unity-progress-bar-empty {
+    border-color: black;
+}
+
+.light #unity-progress-bar-full {
+    background: black;
+}

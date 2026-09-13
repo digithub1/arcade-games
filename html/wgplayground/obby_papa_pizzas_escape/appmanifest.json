@@ -1,0 +1,16 @@
+{
+	"name": "Obby Papa Pizzas Escape",
+	"short_name": "Obby Papa Pizzas Escape",
+	"description": "Obby Pizza Papa Escape",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
