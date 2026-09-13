@@ -1,0 +1,18 @@
+/**
+ * hold all game specific data
+ */
+var game = {
+
+	/**
+	 * object where to store game global scole
+	 */
+	var : {
+	},
+
+	collisionTypes : {},
+	// a reference to the texture atals
+	texture : null,
+	util : {}
+};
+
+export default game;
