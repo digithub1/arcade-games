@@ -1,7 +1,7 @@
 {
-	"name": "Mahjong Solitaire  World Tour",
-	"short_name": "Mahjong Solitaire  World Tour",
-	"description": "",
+	"name": "Mahjong Solitaire World Tour",
+	"short_name": "Mahjong Solitaire World Tour",
+	"description": "Play mahjong games",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "any",
