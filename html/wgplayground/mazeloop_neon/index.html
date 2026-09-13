@@ -1,0 +1,784 @@
+<html><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="MazeLoop NEON">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/8d8b666148b824c1a7b07725412920e2/wgplayground/fd35a6468891a8d7cadfa42381b89080.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/8d8b666148b824c1a7b07725412920e2/wgplayground/1c9a5c3e8ba93ee284f5021c7daeb3b3.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/8d8b666148b824c1a7b07725412920e2">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/ugrgames/mazeloop-neon">
+            <meta property="wgp:description" content="MazeLoop is a fast, glowing neon-style maze runner where your reflexes decide everything.Navigate through an endless series of twisting neon pathways, avoid dead ends, and find the correct route before time runs out.With smooth controls, vibrant colors, and a futuristic atmosphere, MazeLoop offers a simple but addictive puzzle-runner experience that keeps you coming back for “one more try.”">
+            <meta property="wgp:instructions" content="How to PlayStart the game and a neon maze will appear.Swipe (mobile) or use arrow keys / mouse (desktop) to move through the maze.Find the correct path that leads you toward the glowing exit.Avoid dead ends—if you hit one, you must turn back quickly.The maze becomes faster and more complex as you advance.Continue navigating to keep your score increasing.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/8d8b666148b824c1a7b07725412920e2/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="" ar="">
+            <meta property="wgp:trailer" content="" ar="">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyImdWFycjsiOiJNb3ZlIEZvcndhcmQiLCImbGFycjsiOiJNb3ZlIExlZnQiLCImZGFycjsiOiJNb3ZlIEJhY2t3YXJkIiwiJnJhcnI7IjoiTW92ZSBSaWdodCIsIlciOiIiLCJBIjoiIiwiUyI6IiIsIkQiOiIiLCJMZWZ0IE1vdXNlIjoiU2VsZWN0IGJ1dHRvbnMgXC8gUmVzdGFydCIsIlNwYWNlIjoiUGF1c2UgXC8gUmVzdW1lIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBY3Rpb24ifSx7Im5hbWUiOiJQdXp6bGVzIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="tmf7ra1cj14zsn12/8d8b666148b824c1a7b07725412920e2">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <style>
+        :root{
+            --bg:#05060a;
+            --panel:rgba(20,25,30,0.55);
+            --neon1:#00f6ff;
+            --neon2:#ff3af4;
+            --accent:#7cff6b;
+        }
+
+        body{
+            margin:0;
+            background:radial-gradient(900px 400px at 10% 10%, #071025 0%, var(--bg) 20%, #000 100%);
+            font-family:Inter,Arial,Helvetica,sans-serif;
+            color:#fff;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            overflow:hidden;
+        }
+
+        .game-wrapper{
+            display:flex;
+            gap:12px;
+            align-items:flex-start;
+            justify-content:center;
+            width:100%;
+            max-width:980px;
+            padding:20px;
+            box-sizing:border-box;
+        }
+
+        .left-area{ display:flex; flex-direction:column; gap:10px; align-items:center; width:100%; }
+
+        .hud{
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            padding:4px 6px;
+            box-sizing:border-box;
+            align-items:center;
+        }
+
+        .title{
+            font-size:18px;
+            font-weight:900;
+            letter-spacing:1px;
+            display:flex;
+            gap:8px;
+            align-items:center;
+        }
+        .badge{
+            background:linear-gradient(90deg,var(--neon1),var(--neon2));
+            -webkit-background-clip:text;
+            color:transparent;
+            font-weight:900;
+        }
+
+        .status-group{ display:flex; gap:8px; align-items:center; }
+        .status{
+            background:rgba(255,255,255,0.04);
+            padding:6px 10px;
+            border-radius:8px;
+            font-size:13px;
+            font-weight:700;
+            display:flex;
+            gap:8px;
+            align-items:center;
+        }
+
+        .maze-box{
+            width:360px;
+            max-width:100%;
+            aspect-ratio:1/1;
+            background:#02030a;
+            border-radius:12px;
+            box-shadow:0 18px 40px rgba(0,0,0,0.5);
+            overflow:hidden;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:relative;
+        }
+        @media(min-width:900px){
+            .maze-box{ width:520px; }
+        }
+
+        canvas{ width:100%; height:100%; border-radius:12px; display:block; }
+
+        /* Sidebar */
+        .sidebar{
+            width:140px;
+            min-width:120px;
+            height:calc(100% - 40px);
+            max-height:720px;
+            border-radius:14px;
+            background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            border:1px solid rgba(255,255,255,0.04);
+            box-shadow:0 12px 40px rgba(0,0,0,0.35);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding:14px 10px;
+            box-sizing:border-box;
+            gap:14px;
+        }
+
+        .btn{
+            width:100%;
+            background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.005));
+            border:none;
+            padding:10px 0;
+            border-radius:8px;
+            font-weight:800;
+            color:#fff;
+            cursor:pointer;
+            box-shadow:0 6px 18px rgba(0,0,0,0.3);
+            transition:transform .08s ease;
+        }
+        .btn:active{ transform:translateY(2px); }
+
+        .small-note{
+            font-size:12px;
+            opacity:0.7;
+            text-align:center;
+            margin-top:8px;
+            color:rgba(255,255,255,0.65);
+        }
+
+        /* simple overlay for messages */
+        .temp-msg{
+            position:absolute;
+            left:50%;
+            transform:translateX(-50%);
+            bottom:14%;
+            background:rgba(0,0,0,0.6);
+            padding:8px 12px;
+            border-radius:10px;
+            border:1px solid rgba(255,255,255,0.04);
+            pointer-events:none;
+            z-index:999;
+            color:#fff;
+            font-weight:700;
+        }
+    </style>
+
+
+
+    <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head><body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/8d8b666148b824c1a7b07725412920e2/wgplayground/1c9a5c3e8ba93ee284f5021c7daeb3b3.jpg"><div class="game-wrapper">
+
+        <!-- Left side -->
+        <div class="left-area">
+
+            <div class="hud">
+                <div class="title">MazeLoop <span class="badge">NEON</span></div>
+                <div class="status-group">
+                    <div class="status"><span style="opacity:0.8">Time</span> <span id="timer">00:05</span></div>
+                    <div class="status"><span style="opacity:0.8">Best</span> <span id="best">--:--</span></div>
+                    <div class="status">
+                        <span style="width:14px;height:14px;background:linear-gradient(90deg,var(--neon2),var(--accent));border-radius:50%;display:inline-block"></span>
+                        <span id="coins">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="maze-box" id="mazeBox">
+                <canvas id="game" width="360" height="360" style="width: 100%; height: 100%; aspect-ratio: 1.45381 / 1;"></canvas>
+                <!-- temporary message container -->
+                <div id="tempMsgHolder" style="position:absolute;inset:auto;pointer-events:none;"></div>
+            </div>
+
+            <div class="small-note">Tap left/right on canvas • Arrow keys work • D-pad removed</div>
+
+        </div>
+
+        <!-- Sidebar (D-pad was removed) -->
+        <div class="sidebar" id="sidebar">
+            <button id="autoBtn" class="btn">AUTO: OFF</button>
+            <button id="restartBtn" class="btn">RESTART</button>
+            <button id="soundBtn" class="btn">SOUND: ON</button>
+        </div>
+
+    </div>
+
+    <script>
+        /* Full working game JS (D-pad html & listeners removed) */
+        /* Based on your MazeLoopneon upload — D-pad removed but all logic retained. */
+
+        /* DOM */
+        const canvas = document.getElementById('game');
+        const ctx = canvas.getContext('2d', { alpha: false });
+        const mazeBox = document.getElementById('mazeBox');
+        const timerEl = document.getElementById('timer');
+        const bestEl = document.getElementById('best');
+        const coinsEl = document.getElementById('coins');
+        const autoBtn = document.getElementById('autoBtn');
+        const restartBtn = document.getElementById('restartBtn');
+        const soundBtn = document.getElementById('soundBtn');
+        const tempMsgHolder = document.getElementById('tempMsgHolder');
+
+        /* Game variables */
+        let cols = 15, rows = 15;
+        let tile = 28;
+        let wall = 4;
+        let scale = 1;
+        let maze = [], visited = [];
+        let player = { x:0, y:0 };
+        let enemies = [];
+        let coins = [];
+        let coinCount = 0;
+        let maxCoins = 6;
+        let autoMode = false;
+        let soundOn = true;
+
+        /* timer / score */
+        let startAt = 0;
+        let tickTimer = null;
+        let elapsed = 0;
+        const bestKey = 'mazeloop_neon_best_v3';
+        let bestTime = parseFloat(localStorage.getItem(bestKey) || 0) || 0;
+        if (bestTime > 0) bestEl.textContent = formatTime(bestTime);
+
+        /* audio */
+        let audioCtx = null;
+        function ensureAudio(){ if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+        function playBeep(freq=440, dur=0.09, type='sine', g=0.05){
+            if (!soundOn) return;
+            try {
+                ensureAudio();
+                const o = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                o.type = type; o.frequency.value = freq;
+                gain.gain.value = g;
+                o.connect(gain); gain.connect(audioCtx.destination);
+                o.start();
+                o.stop(audioCtx.currentTime + dur);
+            } catch(e){}
+        }
+        function playCoin(){ playBeep(1100,0.12,'sine',0.06); }
+        function playHit(){ playBeep(160,0.18,'sawtooth',0.08); }
+        function playWin(){ playBeep(1200,0.12,'triangle',0.08); playBeep(1700,0.07,'sine',0.05); }
+
+        /* responsive fit */
+        function fitCanvas(){
+            wall = Math.max(2, Math.floor(tile * 0.14));
+            const gridW = cols * (tile + wall) + wall;
+            const gridH = rows * (tile + wall) + wall;
+
+            const parentRect = mazeBox.getBoundingClientRect();
+            const availableW = parentRect.width;
+            const availableH = parentRect.height;
+
+            const sW = availableW / gridW;
+            const sH = availableH / gridH;
+            scale = Math.min(1, Math.min(sW, sH));
+
+            const canvasW = Math.max(Math.round(gridW * scale), 200);
+            const canvasH = Math.max(Math.round(gridH * scale), 200);
+
+            canvas.width = canvasW;
+            canvas.height = canvasH;
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            ctx.setTransform(scale, 0, 0, scale, 0, 0);
+        }
+
+        /* maze generation */
+        function createGrid(){
+            maze = []; visited = [];
+            for (let y=0;y<rows;y++){
+                maze[y]=[]; visited[y]=[];
+                for (let x=0;x<cols;x++){
+                    maze[y][x] = { top:true, bottom:true, left:true, right:true };
+                    visited[y][x] = false;
+                }
+            }
+        }
+        function generateMaze(sx=0, sy=0){
+            visited[sy][sx] = true;
+            const dirs = ['top','right','bottom','left'].sort(()=>Math.random()-0.5);
+            for (const d of dirs){
+                let nx = sx, ny = sy;
+                if (d === 'top') ny--;
+                if (d === 'bottom') ny++;
+                if (d === 'left') nx--;
+                if (d === 'right') nx++;
+                if (nx>=0 && nx<cols && ny>=0 && ny<rows && !visited[ny][nx]){
+                    maze[sy][sx][d] = false;
+                    if (d==='top') maze[ny][nx].bottom = false;
+                    if (d==='bottom') maze[ny][nx].top = false;
+                    if (d==='left') maze[ny][nx].right = false;
+                    if (d==='right') maze[ny][nx].left = false;
+                    generateMaze(nx,ny);
+                }
+            }
+        }
+
+        /* drawing helpers */
+        function toCenterPx(x,y){
+            const px = x * (tile + wall) + wall + tile/2;
+            const py = y * (tile + wall) + wall + tile/2;
+            return { px, py };
+        }
+
+        function drawPlayer(){
+            const {px,py} = toCenterPx(player.x, player.y);
+            ctx.beginPath();
+            ctx.fillStyle = 'rgba(0,246,255,0.06)';
+            ctx.arc(px,py,tile*0.9,0,Math.PI*2); ctx.fill();
+            const g = ctx.createRadialGradient(px,py,0,px,py,tile*0.9);
+            g.addColorStop(0,'#00f6ff'); g.addColorStop(1,'rgba(0,246,255,0.02)');
+            ctx.fillStyle = g; ctx.beginPath(); ctx.arc(px,py,tile*0.58,0,Math.PI*2); ctx.fill();
+            ctx.fillStyle = '#001820'; ctx.beginPath(); ctx.arc(px,py,tile*0.16,0,Math.PI*2); ctx.fill();
+        }
+
+        function drawCoin(x,y){
+            const {px,py} = toCenterPx(x,y);
+            ctx.beginPath(); ctx.fillStyle = 'rgba(255,58,244,0.06)'; ctx.arc(px,py,tile*0.45,0,Math.PI*2); ctx.fill();
+            const g = ctx.createLinearGradient(px-tile*0.3,py-tile*0.3,px+tile*0.3,py+tile*0.3);
+            g.addColorStop(0,'#ff3af4'); g.addColorStop(1,'#ffd36b');
+            ctx.fillStyle = g; ctx.beginPath(); ctx.arc(px,py,tile*0.36,0,Math.PI*2); ctx.fill();
+            ctx.fillStyle = 'rgba(255,255,255,0.55)'; ctx.beginPath(); ctx.arc(px - tile*0.12, py - tile*0.18, tile*0.08,0,Math.PI*2); ctx.fill();
+        }
+
+        function drawEnemy(e){
+            const {px,py} = toCenterPx(e.x,e.y);
+            ctx.beginPath(); ctx.fillStyle = 'rgba(0,0,0,0.45)'; ctx.arc(px,py,tile*0.5,0,Math.PI*2); ctx.fill();
+            const grad = ctx.createRadialGradient(px,py,0,px,py,tile*0.8);
+            if (e.type==='chaser'){ grad.addColorStop(0,'#ff3af4'); grad.addColorStop(1,'rgba(255,58,244,0.06)'); }
+            else { grad.addColorStop(0,'#7cff6b'); grad.addColorStop(1,'rgba(124,255,107,0.06)'); }
+            ctx.fillStyle = grad; ctx.beginPath(); ctx.arc(px,py,tile*0.44,0,Math.PI*2); ctx.fill();
+            ctx.fillStyle = '#001820'; ctx.beginPath(); ctx.arc(px - tile*0.12, py - tile*0.06, tile*0.07,0,Math.PI*2); ctx.arc(px + tile*0.12, py - tile*0.06, tile*0.07,0,Math.PI*2); ctx.fill();
+        }
+
+        function draw(){
+            const gridW = cols * (tile + wall) + wall;
+            const gridH = rows * (tile + wall) + wall;
+            ctx.fillStyle = '#02030a';
+            ctx.fillRect(0,0,gridW,gridH);
+
+            // walls
+            for (let y=0;y<rows;y++){
+                for (let x=0;x<cols;x++){
+                    const cell = maze[y][x];
+                    const px = x * (tile + wall) + wall/2;
+                    const py = y * (tile + wall) + wall/2;
+                    ctx.lineWidth = wall;
+                    ctx.strokeStyle = 'rgba(0,246,255,0.95)';
+                    ctx.beginPath();
+                    if (cell.top){ ctx.moveTo(px,py); ctx.lineTo(px+tile,py); }
+                    if (cell.left){ ctx.moveTo(px,py); ctx.lineTo(px,py+tile); }
+                    if (cell.right){ ctx.moveTo(px+tile,py); ctx.lineTo(px+tile,py+tile); }
+                    if (cell.bottom){ ctx.moveTo(px,py+tile); ctx.lineTo(px+tile,py+tile); }
+                    ctx.stroke();
+
+                    ctx.strokeStyle = 'rgba(124,255,107,0.06)';
+                    ctx.lineWidth = wall*3;
+                    ctx.beginPath();
+                    if (cell.top){ ctx.moveTo(px,py); ctx.lineTo(px+tile,py); }
+                    if (cell.left){ ctx.moveTo(px,py); ctx.lineTo(px,py+tile); }
+                    if (cell.right){ ctx.moveTo(px+tile,py); ctx.lineTo(px+tile,py+tile); }
+                    if (cell.bottom){ ctx.moveTo(px,py+tile); ctx.lineTo(px+tile,py+tile); }
+                    ctx.stroke();
+                }
+            }
+
+            for (const c of coins) drawCoin(c.x,c.y);
+            for (const e of enemies) drawEnemy(e);
+            drawPlayer();
+        }
+
+        /* game logic (coins/enemies/pathfind) */
+        function placeCoins(){
+            coins = [];
+            const spots = [];
+            for (let y=0;y<rows;y++) for (let x=0;x<cols;x++){
+                if ((x===0 && y===0) || (x===cols-1 && y===rows-1)) continue;
+                spots.push({x,y});
+            }
+            shuffle(spots);
+            for (let i=0;i<Math.min(maxCoins, spots.length); i++) coins.push(spots[i]);
+            coinCount = 0; updateCoinsUI();
+        }
+        function spawnEnemies(){
+            enemies = [];
+            enemies.push({ x: Math.max(0, cols-2), y: Math.max(0, rows-2), type:'chaser', cooldown:0 });
+            const pcount = Math.min(3, Math.floor((cols*rows)/90)+1);
+            let attempts=0;
+            while (enemies.length < 1 + pcount && attempts < 300){
+                attempts++;
+                const rx = Math.floor(Math.random()*cols);
+                const ry = Math.floor(Math.random()*rows);
+                if ((rx===0 && ry===0) || (rx===player.x && ry===player.y)) continue;
+                enemies.push({ x:rx, y:ry, type:'patrol', dir:randDir(), cooldown:0 });
+            }
+        }
+        function randDir(){ return ['up','down','left','right'][Math.floor(Math.random()*4)]; }
+        function collectCoin(x,y){
+            for (let i=0;i<coins.length;i++){
+                if (coins[i].x===x && coins[i].y===y){
+                    coins.splice(i,1);
+                    coinCount++;
+                    updateCoinsUI();
+                    playCoin();
+                    return true;
+                }
+            }
+            return false;
+        }
+        function updateCoinsUI(){ coinsEl.textContent = coinCount; }
+
+        function neighbors(x,y){
+            const n=[];
+            const c = maze[y][x];
+            if (!c.top && y>0) n.push({x:x,y:y-1,dir:'up'});
+            if (!c.right && x<cols-1) n.push({x:x+1,y:y,dir:'right'});
+            if (!c.bottom && y<rows-1) n.push({x:x,y:y+1,dir:'down'});
+            if (!c.left && x>0) n.push({x:x-1,y:y,dir:'left'});
+            return n;
+        }
+        function findPath(sx,sy,tx,ty){
+            const q=[{x:sx,y:sy}];
+            const came={}; came[`${sx},${sy}`]=null;
+            let idx=0;
+            while(idx<q.length){
+                const cur=q[idx++];
+                if (cur.x===tx && cur.y===ty) break;
+                for (const nb of neighbors(cur.x,cur.y)){
+                    const key=`${nb.x},${nb.y}`;
+                    if (!(key in came)){ came[key] = {from:`${cur.x},${cur.y}`, dir:nb.dir}; q.push({x:nb.x,y:nb.y}); }
+                }
+            }
+            const path=[];
+            let curKey = `${tx},${ty}`;
+            if (!came[curKey]) return null;
+            while(curKey){
+                const parts = curKey.split(',').map(Number);
+                path.push({x:parts[0], y:parts[1]});
+                curKey = came[curKey] ? came[curKey].from : null;
+            }
+            path.reverse();
+            return path;
+        }
+
+        /* tick & AI */
+        let lastTick = 0;
+        function tick(now){
+            if (!lastTick) lastTick = now;
+            const dt = now - lastTick;
+            if (dt > 160){
+                lastTick = now;
+                for (const e of enemies){
+                    if (e.cooldown > 0){ e.cooldown--; continue; }
+                    if (e.type === 'chaser'){
+                        const path = findPath(e.x,e.y, player.x, player.y);
+                        if (path && path.length>1){ e.x = path[1].x; e.y = path[1].y; }
+                        else {
+                            const n = neighbors(e.x,e.y);
+                            if (n.length){ const p = n[Math.floor(Math.random()*n.length)]; e.x=p.x; e.y=p.y; }
+                        }
+                        e.cooldown = 1;
+                    } else {
+                        let moved=false;
+                        if (Math.random()<0.6){
+                            const n = neighbors(e.x,e.y);
+                            if (n.length){
+                                const prefer = n.find(nn=>nn.dir===e.dir);
+                                const pick = prefer || n[Math.floor(Math.random()*n.length)];
+                                e.x=pick.x; e.y=pick.y; e.dir = pick.dir; moved=true;
+                            }
+                        }
+                        if (!moved){
+                            const n = neighbors(e.x,e.y);
+                            if (n.length){ const pick = n[Math.floor(Math.random()*n.length)]; e.x=pick.x; e.y=pick.y; e.dir=pick.dir; }
+                        }
+                        e.cooldown = 1;
+                    }
+                }
+
+                if (autoMode){
+                    const path = findPath(player.x,player.y, cols-1, rows-1);
+                    if (path && path.length>1){
+                        player.x = path[1].x; player.y = path[1].y; collectCoin(player.x, player.y);
+                    }
+                }
+
+                collectCoin(player.x, player.y);
+                for (const e of enemies){
+                    if (e.x===player.x && e.y===player.y){
+                        playHit(); showTempMessage('Caught! Restarting...');
+                        setTimeout(()=> startGame(), 700);
+                        return;
+                    }
+                }
+
+                if (player.x===cols-1 && player.y===rows-1){
+                    stopTimer(); playWin(); updateBest();
+                    showOverlay('ESCAPED', 'You escaped in ' + formatTime(elapsed));
+                    return;
+                }
+            }
+
+            draw();
+            requestAnimationFrame(tick);
+        }
+
+        /* controls */
+        function tryMove(dx,dy){
+            const c = maze[player.y][player.x];
+            if (dx===1 && !c.right) player.x++;
+            if (dx===-1 && !c.left) player.x--;
+            if (dy===1 && !c.bottom) player.y++;
+            if (dy===-1 && !c.top) player.y--;
+            collectCoin(player.x, player.y);
+            playBeep(650,0.06,'sine',0.03);
+        }
+
+        document.addEventListener('keydown', (e)=>{
+            if (e.key==='ArrowUp') tryMove(0,-1);
+            if (e.key==='ArrowDown') tryMove(0,1);
+            if (e.key==='ArrowLeft') tryMove(-1,0);
+            if (e.key==='ArrowRight') tryMove(1,0);
+            if (e.key===' ') { autoMode = !autoMode; updateAutoBtn(); }
+        });
+
+        /* canvas tap: left/right/center mapping */
+        canvas.addEventListener('pointerdown', (ev)=>{
+            try { if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume(); } catch(e){}
+            const rect = canvas.getBoundingClientRect();
+            const cx = ev.clientX - rect.left;
+            if (cx < rect.width*0.40) tryMove(-1,0);
+            else if (cx > rect.width*0.6) tryMove(1,0);
+            else tryMove(0,1);
+        });
+
+        /* UI buttons */
+        autoBtn.addEventListener('click', ()=>{ autoMode = !autoMode; updateAutoBtn(); showTempMessage('Auto ' + (autoMode? 'ON' : 'OFF')); });
+        restartBtn.addEventListener('click', ()=>{ showTempMessage('Restarting...'); setTimeout(()=> startGame(), 120); });
+        soundBtn.addEventListener('click', ()=>{ soundOn = !soundOn; updateSoundBtn(); showTempMessage('Sound ' + (soundOn? 'ON' : 'OFF')); });
+
+        function updateAutoBtn(){ autoBtn.textContent = 'AUTO: ' + (autoMode? 'ON':'OFF'); }
+        function updateSoundBtn(){ soundBtn.textContent = 'SOUND: ' + (soundOn? 'ON':'OFF'); }
+
+        /* timer */
+        function startTimer(){
+            startAt = performance.now();
+            if (tickTimer) clearInterval(tickTimer);
+            tickTimer = setInterval(()=>{
+                elapsed = (performance.now() - startAt) / 1000;
+                timerEl.textContent = formatTime(elapsed);
+            }, 250);
+        }
+        function stopTimer(){ if (tickTimer) clearInterval(tickTimer); elapsed = (performance.now() - startAt) / 1000; timerEl.textContent = formatTime(elapsed); }
+        function updateBest(){
+            if (!bestTime || elapsed < bestTime){
+                bestTime = elapsed;
+                try { localStorage.setItem(bestKey, String(bestTime)); } catch(e){}
+                bestEl.textContent = formatTime(bestTime);
+                showTempMessage('New Best: ' + formatTime(bestTime));
+            }
+        }
+
+        /* overlays & toast */
+        let overlayElem = null;
+        function showOverlay(title, sub){
+            if (overlayElem) overlayElem.remove();
+            overlayElem = document.createElement('div');
+            overlayElem.style.position = 'absolute';
+            overlayElem.style.inset = '0';
+            overlayElem.style.display = 'flex';
+            overlayElem.style.alignItems = 'center';
+            overlayElem.style.justifyContent = 'center';
+            overlayElem.style.background = 'linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.55))';
+            overlayElem.style.pointerEvents = 'auto';
+            overlayElem.style.zIndex = '999';
+            overlayElem.innerHTML = `<div style="text-align:center;color:#fff;pointer-events:none">
+    <div style="font-weight:900;font-size:20px;color:var(--neon1);margin-bottom:6px">${title}</div>
+    <div style="opacity:0.9;margin-bottom:12px;font-weight:700">${sub}</div>
+    <div style="height:10px"></div>
+    <button id="playAgainBtn" class="btn" style="pointer-events:auto">PLAY AGAIN</button>
+  </div>`;
+            mazeBox.appendChild(overlayElem);
+            const btn = document.getElementById('playAgainBtn');
+            if (btn) btn.addEventListener('click', ()=>{ if (overlayElem) overlayElem.remove(); startGame(); });
+        }
+
+        function showTempMessage(text, ms=900){
+            const t = document.createElement('div');
+            t.className = 'temp-msg';
+            t.textContent = text;
+            tempMsgHolder.appendChild(t);
+            setTimeout(()=>{ t.style.transition='opacity .28s'; t.style.opacity='0'; setTimeout(()=>t.remove(),300); }, ms);
+        }
+
+        /* utils */
+        function formatTime(s){
+            if (s === undefined || s === null) return '--:--';
+            const t = Math.floor(s);
+            const mm = Math.floor(t/60).toString().padStart(2,'0');
+            const ss = (t%60).toString().padStart(2,'0');
+            return mm + ':' + ss;
+        }
+        function shuffle(a){ for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } }
+
+        /* lifecycle */
+        function startGame(){
+            try {
+                const parentW = (window.frameElement && window.frameElement.clientWidth) ? window.frameElement.clientWidth : window.innerWidth;
+                if (parentW < 380) { cols = rows = Math.max(10, Math.min(14, cols)); tile = 22; maxCoins = 4; }
+                else { cols = rows = 15; tile = 28; maxCoins = 6; }
+            } catch(e){ cols = rows = 15; tile = 28; maxCoins = 6; }
+
+            createGrid(); generateMaze(0,0);
+            player = { x:0, y:0 };
+            placeCoins(); spawnEnemies();
+            fitCanvas(); draw();
+            coinCount = 0; updateCoinsUI();
+            startTimer();
+            lastTick = 0;
+            requestAnimationFrame(tick);
+            updateAutoBtn(); updateSoundBtn();
+            showTempMessage('Go!', 700);
+        }
+
+        /* initialize audio on first gesture */
+        document.addEventListener('pointerdown', function initAudioOnce(){
+            try { ensureAudio(); if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume(); } catch(e){}
+            document.removeEventListener('pointerdown', initAudioOnce);
+        });
+
+        /* start */
+        startGame();
+
+        /* keep responsive */
+        window.addEventListener('resize', ()=>{ fitCanvas(); draw(); });
+
+    </script>
+
+
+
+
+
+
+
+</body></html>

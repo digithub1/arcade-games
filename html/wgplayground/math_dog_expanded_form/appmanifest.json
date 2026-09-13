@@ -1,0 +1,37 @@
+{
+	"name": "Math Dog Expanded Form",
+	"short_name": "Math Dog Expanded Form",
+	"description": "Help MathPup find the cat burglar by finding the standard form of the number at top shown in expanded form.  Choose to play using Expanded Notation Form, Expanded Factors Form or Expanded Exponential Form.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "17x17",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x31",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x112",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x126",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x252",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#ffffff"
+}

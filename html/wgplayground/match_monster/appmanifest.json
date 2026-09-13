@@ -1,0 +1,37 @@
+{
+	"name": "Match Monster",
+	"short_name": "Match Monster",
+	"description": "Match Monster is a Free Online Match 3 Puzzle Game! Match 3 or more monsters to make them disappear but be careful not to let them reach the top! Match Monster is a fun and addicting match 3, bubble shooter, puzzle game. Play now for free! Match Monster is the best place to find flash games to play online. We have a great collection of puzzle games, bubble shooter games, matching games, board games, and many more. Play now!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}
