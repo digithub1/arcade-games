@@ -1,0 +1,27 @@
+{
+  "name": "Hexa Tile Trio",
+  "short_name": "Hexa Tile Trio",
+  "description": "Hexa Tile Trio is a tile sorting and matching game where Your goal is to clear the board by sorting hex tiles into groups of three.",
+  "start_url": "index.html",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display": "fullscreen",
+  "orientation": "landscape",  
+  "icons": [
+  {
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}
