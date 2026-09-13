@@ -1,0 +1,16 @@
+{
+	"name": "Alex and Steve Adventures Saves",
+	"short_name": "Alex and Steve Adventures Saves",
+	"description": "Alex and Steve Nether",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "200x200",
+			"type": "image/png"
+		}
+	]
+}

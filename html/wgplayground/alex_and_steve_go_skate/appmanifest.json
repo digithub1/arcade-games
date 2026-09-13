@@ -1,0 +1,16 @@
+{
+	"name": "Alex and Steve Go Skate",
+	"short_name": "Alex and Steve Go Skate",
+	"description": "Alex and Steve Go Skate",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

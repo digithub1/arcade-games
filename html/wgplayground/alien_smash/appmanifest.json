@@ -1,0 +1,36 @@
+{
+	"name": "Alien Smash",
+	"short_name": "Alien Smash",
+	"description": "Alien Smash! Online Game is an action packed, thrilling game that involves lots of fun. It gives your brain an engaging way to learn some fun lessons and maybe get a little better at math while playing the game against other players from all across the world. The more you play this game, the better you get . If we are talking about the subject “online games\", then Alien Smash! Online Game is one of the well-known names in the Match Games category.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

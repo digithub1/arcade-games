@@ -1,0 +1,36 @@
+{
+	"name": "Alien War",
+	"short_name": "Alien War",
+	"description": "Action shooting Alien War is an online game that will keep you on the edge of your seat! With exciting gameplay and fast-paced action, you won't want to stop playing. Looking for an online game that will keep you on the edge of your seat? Look no further than Alien War, the action-packed shooting game that will have you blasting aliens all day long! With amazing graphics and fast-paced gameplay, this is one game you won't want to miss. So suit up and get ready to take on the aliens today!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}

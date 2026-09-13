@@ -1,0 +1,16 @@
+{
+	"name": "Angry Flappy Birds",
+	"short_name": "Angry Flappy Birds",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Alien Jump",
+	"short_name": "Alien Jump",
+	"description": "Jump across the galaxy with a cute space monster!\n\nGet the coins, avoid the obstacles. Reach as high as you can!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": []
+}
