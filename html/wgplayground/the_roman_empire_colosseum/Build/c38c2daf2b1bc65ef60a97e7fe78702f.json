@@ -1,0 +1,16 @@
+{
+"companyName": "ElezthemGames",
+"productName": "Epic Battle Simulator",
+"productVersion": "1.0",
+"dataUrl": "45a0984a67a5b84fff49c6d2cc6cf4d2.unityweb",
+"wasmCodeUrl": "9be7b10faaf82a8972cd968790fbd345.unityweb",
+"wasmFrameworkUrl": "7c6f60960b2d0b2199b340ba0c0d7617.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
