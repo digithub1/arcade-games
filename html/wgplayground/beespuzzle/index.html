@@ -1,0 +1,271 @@
+<html lang="en-us"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="BeesPuzzle">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/cd4b197e6a62ea1e7d4d90e6cec8ceb8/wgplayground/0e36a7eb68a08351cb430ea5c23bef35.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/cd4b197e6a62ea1e7d4d90e6cec8ceb8/wgplayground/b25d4e45a1435dbfca9c88432c88de12.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/cd4b197e6a62ea1e7d4d90e6cec8ceb8">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/gamepush/beespuzzle">
+            <meta property="wgp:description" content="Welcome to the cozy world of little bees! BeesPuzzle is a casual puzzle, where every level is a new mini-puzzle with vibrant, colorful artwork.Drag the hives across the field and help the bees collect tiles. The further you go, the trickier it gets.The perfect game to unwind in the evening, take a break, or pass the time on the go. No stress, no timers — just warm buzzing and sweet honey.">
+            <meta property="wgp:instructions" content="Goal — fill all the slots on the board and collect all the tiles.Controls:• Tap a hive of the desired color — the bees will fly out to collect the tiles.• Objects connected by a rope move together. Drag any one — the rest will follow.• Unlock hives that are currently unavailable.• The speed-up button at the bottom of the screen makes the bees fly faster when you don't feel like waiting.Enjoy the game!">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/cd4b197e6a62ea1e7d4d90e6cec8ceb8/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/cd4b197e6a62ea1e7d4d90e6cec8ceb8/wgplayground/2fce2b357259667fcfb77746252bc3db.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/cd4b197e6a62ea1e7d4d90e6cec8ceb8/wgplayground/aefc769bfd8975579a39f5d85ca993de.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJQdXp6bGVzIn0seyJuYW1lIjoiQ2FzdWFsIn1dLCJjaGFyYWN0ZXJzIjpbXX0=">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="97/cd4b197e6a62ea1e7d4d90e6cec8ceb8">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>BeesPuzzle</title>
+  <link rel="stylesheet" href="TemplateData/style.css">
+
+  <script>
+    const overlayBackgroundColor = "";
+    const progressBarFillColor = "";
+    const progressBarBackgroundColor = "";
+    const progressBarBorderColor = "";
+    const backgroundFileName = "";
+  </script>
+
+<style>
+  /* Убираем выделение по нажатию клавиш */
+  canvas:focus {
+      outline: none;
+  }
+
+  html, body {
+      /* Убираем отступы */
+      padding: 0;
+      margin: 0;
+      /* Отключаем скролл и лонгтап на IOS */
+      overflow: hidden;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      /* Ставим высоту на 100% */
+      height: 100%;
+  }
+</style>
+
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+
+<body class="dark wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/cd4b197e6a62ea1e7d4d90e6cec8ceb8/wgplayground/b25d4e45a1435dbfca9c88432c88de12.jpg">
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" wg-game-orientation="wg-portrait-game" style="aspect-ratio: 0.896057 / 1;"></canvas>
+  </div>
+  <div id="loading-cover" style="">
+    <div id="unity-loading-bar">
+      <div id="unity-logo"><img src="logo.png"></div>
+      <div id="unity-progress-bar-empty" style="">
+        <div id="unity-progress-bar-full" style="width: 0%;"></div>
+      </div>
+      <div class="spinner" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script>
+    const buildUrl = "Build";
+    const loaderUrl = buildUrl + "/GamePush_v1.0_20260828_0559.loader.js";
+    const config = {
+      dataUrl: buildUrl + "/GamePush_v1.0_20260828_0559.data.unityweb",
+      workerUrl: buildUrl + "/GamePush_v1.0_20260828_0559.data.unityweb",
+      frameworkUrl: buildUrl + "/GamePush_v1.0_20260828_0559.framework.js.unityweb",
+      codeUrl: buildUrl + "/GamePush_v1.0_20260828_0559.wasm.unityweb",
+      // #if MEMORY_FILENAME
+      //   memoryUrl: buildUrl + "/",
+      // #endif
+      // #if SYMBOLS_FILENAME
+      //   symbolsUrl: buildUrl + "/",
+      // #endif
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "qwestom",
+      productName: "BeesPuzzle",
+      productVersion: "1.0",
+    };
+
+    const container = document.querySelector("#unity-container");
+    const canvas = document.querySelector("#unity-canvas");
+    const loadingCover = document.querySelector("#loading-cover");
+    const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+    const progressBarFull = document.querySelector("#unity-progress-bar-full");
+    const spinner = document.querySelector('.spinner');
+
+    if (overlayBackgroundColor !== " " && overlayBackgroundColor !== ""){
+      canvas.style.background = overlayBackgroundColor;
+    }
+
+    if (progressBarFillColor !== " " && progressBarFillColor !== ""){
+      progressBarFull.style.background = progressBarFillColor;
+    }
+
+    if (progressBarBackgroundColor !== " " && progressBarBackgroundColor !== ""){
+      progressBarEmpty.style.background = progressBarBackgroundColor;
+    }
+
+    if (progressBarBorderColor !== " " && progressBarBorderColor !== ""){
+      progressBarEmpty.style.border.color = progressBarBorderColor;
+    }
+
+    if (backgroundFileName !== " " && backgroundFileName !== ""){
+      canvas.style.background = "url('" + backgroundFileName + "') center / cover";
+    }
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+    }
+
+    // #if BACKGROUND_FILENAME
+    // canvas.style.background = "url('" + buildUrl + "/') center / cover";
+    // #endif
+
+    loadingCover.style.display = "";
+
+        // Выключаем появление меню при правом клике мыши
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Возвращаем фокус, если кликнули по экрану
+        function FocusGame() {
+            window.focus();
+            canvas.focus();
+        }
+
+        window.addEventListener('pointerdown', () => {
+            FocusGame();
+        });
+        window.addEventListener('touchstart', () => {
+            FocusGame();
+        });
+
+    const unityLoader = document.createElement("script");
+    unityLoader.src = loaderUrl;
+    unityLoader.onload = async () => {
+      createUnityInstance(canvas, config, (progress) => {
+        spinner.style.display = "none";
+        progressBarEmpty.style.display = "";
+        progressBarFull.style.width = `${100 * progress}%`;
+      }).then((unityInstance) => {
+        window.unityInstance = unityInstance;
+        loadingCover.style.display = "none";
+      }).catch((message) => {
+        console.log(message);
+      });
+    };
+    document.body.appendChild(unityLoader);
+
+    document.addEventListener("pointerdown", () => {
+      container.focus();
+      window.focus();
+      canvas.focus();
+    });
+
+    // Audio pause — превентивный JS-хендлер на случай если Unity OnApplicationFocus
+    // не срабатывает (мобильный iframe/WebView с активной внешней обёрткой). Шлём на
+    // CloudSaveManager (DontDestroyOnLoad, живёт на всех сценах). Метод
+    // OnPageVisibilityChanged → AudioPauseController.SetPause. Дублирование с
+    // Unity-событием безопасно (двойной SetPause не ломает).
+    function _setUnityMute(mute) {
+      if (!window.unityInstance) return;
+      try {
+        window.unityInstance.SendMessage('CloudSaveManager', 'OnPageVisibilityChanged', mute ? 'hidden' : 'visible');
+      } catch (e) { /* ignore */ }
+    }
+    document.addEventListener('visibilitychange', function () {
+      _setUnityMute(document.visibilityState === 'hidden');
+    });
+    window.addEventListener('pagehide', function () { _setUnityMute(true); });
+    window.addEventListener('blur',     function () { _setUnityMute(true); });
+    window.addEventListener('focus',    function () { _setUnityMute(false); });
+
+  </script><script src="Build/GamePush_v1.0_20260828_0559.loader.js"></script>
+
+
+
+
+
+</body></html>

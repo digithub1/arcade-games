@@ -1,0 +1,509 @@
+:root {
+  /* "Abyss Stage" — matches the in-game 3-layer ladder (see js/config.js THEME).
+     Chrome stays dark and low-chroma so it never competes with gameplay. */
+  --neon: #69e8ff;   /* cyan — player signature light */
+  --warm: #ff8a3d;   /* coral — danger accent */
+  --gold: #ffc857;   /* golden amber — reward accent (stars, best time) */
+  --ink: #081521;    /* dark abyss base, matches the background band */
+  --panel: rgba(10, 26, 38, 0.88);
+  --text: #e8f2f6;
+  --muted: #8aa8b6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; overflow: hidden; background: var(--ink); }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  -webkit-user-select: none; user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+/* Browsers default <button> to the UA "buttontext" color (effectively black), which
+   silently overrides the inherited light body color on any button that doesn't set its
+   own `color`. This is why the level-number text was rendering black. Never let a button
+   fall back to that default anywhere in the app. */
+button { font: inherit; color: inherit; background: none; border: none; }
+
+#app { position: fixed; inset: 0; overflow: hidden; }
+#game { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+/* Screens */
+.screen {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center; padding: 24px;
+  z-index: 5;
+}
+.screen.overlay {
+  background: radial-gradient(120% 80% at 50% 40%, rgba(4,18,31,0.55), rgba(2,9,16,0.9));
+  backdrop-filter: blur(2px); z-index: 8;
+  justify-content: flex-end; padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+}
+.hidden { display: none !important; }
+
+.eyebrow { letter-spacing: 0.32em; font-size: 12px; color: var(--neon); font-weight: 700; }
+.eyebrow.danger { color: #ff5a7a; }
+.eyebrow.good { color: var(--warm); }
+.title { font-size: clamp(34px, 9vw, 64px); font-weight: 800; letter-spacing: 0.06em; margin: 6px 0 2px;
+  text-shadow: 0 0 18px rgba(105,232,255,0.35); }
+.tagline { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+.sub-line { color: var(--muted); margin: 4px 0 16px; }
+
+/* Buttons — one primary per screen, everything else visibly secondary.
+   Transitions stay under the 200ms interaction budget. */
+.btn {
+  /* Sized to its actual container (100%, capped at 320px), not the viewport. The old
+     `min(320px, 78vw)` was tuned against the full-screen menu and overflowed past the
+     right edge of any narrower container (the settings modal, and to a lesser extent
+     every .card) once the button became wider than the container's padding box. */
+  display: block; width: 100%; max-width: 320px; min-height: 48px; margin: 8px auto; padding: 14px 20px;
+  border-radius: 14px; font-size: 15px; font-weight: 700; letter-spacing: 0.08em;
+  cursor: pointer; text-transform: uppercase;
+  background: rgba(105,232,255,0.05); color: var(--text);
+  border: 1px solid rgba(120,200,215,0.28); box-shadow: none;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+.btn:hover { background: rgba(105,232,255,0.11); border-color: rgba(105,232,255,0.5); }
+.btn.primary {
+  border: 1px solid transparent; color: var(--ink); min-height: 56px; font-size: 17px;
+  letter-spacing: 0.1em;
+  background: linear-gradient(180deg, #7defff, #2aa8ff);
+  box-shadow: 0 8px 24px rgba(42,168,255,0.34), inset 0 1px 0 rgba(255,255,255,0.4);
+}
+.btn.primary:hover { background: linear-gradient(180deg, #96f4ff, #3fb4ff); }
+.btn.small { width: auto; min-height: auto; padding: 8px 14px; font-size: 13px; margin: 0; }
+.btn:active { transform: translateY(1px) scale(0.995); }
+
+.card {
+  background: linear-gradient(180deg, rgba(19,48,67,0.92), rgba(8,21,33,0.94));
+  border: 1px solid rgba(120,200,215,0.2); border-radius: 22px;
+  padding: 26px 22px; width: min(380px, 88vw);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.55), inset 0 1px 0 rgba(150,220,240,0.09);
+}
+
+/* Pause / win — same visual language as the main menu (big glowing circular primary
+   action, small pill secondary actions below), just centered instead of bottom-anchored
+   since these are modal dialogs rather than the home screen. */
+/* ID + .pause-overlay beats the .screen.overlay class-pair's specificity — without this,
+   flex-end from .screen.overlay silently won and the "center" here never actually applied. */
+#screen-pause.pause-overlay,
+#screen-win.pause-overlay {
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.pause-panel { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.pause-fab-wrap { margin: 4px 0; }
+.pause-actions { display: flex; gap: 12px; width: min(320px, 78vw); }
+.pause-pill {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  min-height: 46px; padding: 10px 14px; border-radius: 999px;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  cursor: pointer; color: var(--text);
+  background: rgba(120,200,215,0.06); border: 1px solid rgba(120,200,215,0.28);
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+.pause-pill:hover { background: rgba(105,232,255,0.12); border-color: rgba(105,232,255,0.5); }
+.pause-pill:active { transform: translateY(1px) scale(0.98); }
+
+/* Win stats sit in the same centered stack as the pause panel — no card chrome. */
+.win-panel { gap: 16px; }
+.win-panel .stars.big { margin: 0; }
+.win-panel .eyebrow.good { color: var(--gold); }
+.win-stats {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  min-width: min(280px, 72vw);
+}
+.win-sub { margin: 0; }
+
+/* Death message — fast, non-blocking, no darkened backdrop: the frozen last frame of
+   the crash stays fully visible behind it. Auto-restarts on its own (js/main.js); tapping
+   it skips straight to the restart, matching "transitions fast and skippable by tapping". */
+.death-toast {
+  position: absolute; top: 40%; left: 50%; z-index: 7; text-align: center; cursor: pointer;
+  transform: translate(-50%, -50%) scale(0.85); opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.death-toast.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.death-toast-title {
+  font-size: 22px; font-weight: 800; letter-spacing: 0.14em; color: #ff5a7a;
+  text-shadow: 0 0 20px rgba(255,90,122,0.55);
+}
+.death-toast-sub { margin-top: 5px; font-size: 13px; letter-spacing: 0.05em; color: var(--muted); }
+
+/* Deliberately NO backdrop-filter here: the pause button sits over the live canvas during
+   play, and a backdrop blur would force a composite pass every frame (see PERFORMANCE.md). */
+.icon-btn {
+  position: absolute; z-index: 9; width: 44px; height: 44px; border-radius: 13px;
+  border: 1px solid rgba(120,200,215,0.22); background: #0d2231; color: var(--text);
+  font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.icon-btn:hover { border-color: rgba(105,232,255,0.5); background: rgba(16,38,54,0.9); }
+.icon-btn:active { transform: translateY(1px); }
+.icon-btn.settings { top: 12px; right: 12px; }
+.icon-btn.help { top: 12px; left: 12px; }
+.icon-btn.back { top: 12px; left: 12px; }
+.icon-btn.pause { top: 12px; left: 50%; transform: translateX(-50%); font-size: 13px; }
+.icon-btn.pause:active { transform: translateX(-50%) translateY(1px); }
+
+/* Settings modal — opened from the main menu, closes back to it without navigating */
+.modal-backdrop { position: absolute; inset: 0; z-index: 20; display: flex;
+  align-items: center; justify-content: center; padding: 24px;
+  background: rgba(2,9,16,0.72); backdrop-filter: blur(2px); }
+.modal-card { background: var(--panel); border: 1px solid rgba(120,200,215,0.18); border-radius: 20px;
+  padding: 24px 22px; width: min(340px, 86vw); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.modal-card .eyebrow { display: block; margin-bottom: 12px; }
+
+/* Music / SFX rows — icon, label, and an ON/OFF status pill that also carries the
+   on/off color so the state reads without having to read the word. */
+.settings-row {
+  display: flex; align-items: center; gap: 12px; width: 100%; min-height: 48px;
+  margin: 8px 0; padding: 10px 14px; border-radius: 12px; cursor: pointer;
+  background: rgba(120,200,215,0.05); border: 1px solid rgba(120,200,215,0.2);
+  color: var(--text); transition: background 0.15s ease, border-color 0.15s ease;
+}
+.settings-row:hover { background: rgba(105,232,255,0.1); border-color: rgba(105,232,255,0.45); }
+.settings-row-icon { display: flex; color: var(--neon); flex: none; }
+.settings-row-label { flex: 1; text-align: left; font-size: 14px; font-weight: 700; letter-spacing: 0.08em; }
+.settings-row-status {
+  font-size: 12px; font-weight: 800; letter-spacing: 0.08em; padding: 3px 10px;
+  border-radius: 999px; background: rgba(105,232,255,0.16); color: var(--neon);
+}
+.settings-row.is-off .settings-row-icon { color: var(--muted); }
+.settings-row.is-off .settings-row-status { background: rgba(140,180,190,0.14); color: var(--muted); }
+
+.settings-version { margin-top: 14px; text-align: center; font-size: 11px; letter-spacing: 0.12em; color: var(--muted); }
+
+/* HUD */
+.hud { position: absolute; top: 0; left: 0; right: 0; z-index: 6;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 10px 12px; pointer-events: none; }
+.hud-cell { display: flex; flex-direction: column; background: var(--panel); border-radius: 10px; padding: 6px 12px; min-width: 74px; }
+.hud-cell.level { min-width: 0; max-width: 46vw; }
+.hud-cell.level .hud-value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hud-cell.right { align-items: flex-end; }
+.hud-label { font-size: 10px; letter-spacing: 0.2em; color: var(--muted); }
+.hud-value { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+.tutorial-layer { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
+.tutorial-prompt {
+  position: absolute; left: 50%; top: 40%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; width: min(420px, 86vw);
+  padding: 8px 12px; color: var(--text); text-align: center;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.tutorial-layer.prompt-hidden .tutorial-prompt { opacity: 0; transform: translate(-50%, -8px); }
+.tutorial-kicker {
+  color: var(--neon); font-size: 10px; font-weight: 800; letter-spacing: 0.25em;
+  text-shadow: 0 0 14px rgba(105,232,255,0.62), 0 2px 5px rgba(0,0,0,0.95);
+}
+.tutorial-message {
+  margin-top: 3px; font-size: 15px; font-weight: 800; letter-spacing: 0.1em;
+  text-shadow: 0 2px 6px rgba(0,0,0,1), 0 0 18px rgba(105,232,255,0.24);
+}
+.tutorial-hint {
+  margin-top: 4px; color: #a9c1cc; font-size: 11px; letter-spacing: 0.05em;
+  text-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+.tutorial-controls { position: absolute; inset: 0; display: flex; }
+.tutorial-zone {
+  position: relative; flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: flex-end; gap: 7px; padding-bottom: max(15vh, 90px);
+  color: rgba(190,243,255,0.88); font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
+  background: linear-gradient(180deg, transparent 45%, rgba(105,232,255,0.055));
+}
+.tutorial-zone + .tutorial-zone { border-left: 1px solid rgba(105,232,255,0.16); }
+.tutorial-zone::after {
+  content: ''; position: absolute; bottom: max(11vh, 62px); width: 72px; height: 72px;
+  border: 2px solid rgba(105,232,255,0.38); border-radius: 50%; animation: tutorialSonar 1.8s ease-out infinite;
+}
+.tutorial-zone-right::after { animation-delay: 0.9s; }
+.tutorial-zone-key {
+  display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px;
+  border: 1px solid rgba(105,232,255,0.45); background: rgba(8,30,43,0.88);
+  font-size: 22px; box-shadow: 0 0 20px rgba(105,232,255,0.13);
+}
+@keyframes tutorialSonar { from { transform: scale(0.65); opacity: 0.75; } to { transform: scale(1.35); opacity: 0; } }
+
+/* How to Play uses the menu's abyss frame, cyan guidance, warm danger, and gold reward
+   accents. It stays a single scrollable briefing rather than a carousel of app-like cards. */
+.howto-screen { justify-content: flex-start; padding: 58px 18px 24px; overflow: hidden; }
+.howto-scroll { width: min(520px, 94vw); overflow-y: auto; padding: 0 4px 32px; scrollbar-width: thin; }
+.howto-scroll::-webkit-scrollbar { width: 6px; }
+.howto-scroll::-webkit-scrollbar-track { background: transparent; }
+.howto-scroll::-webkit-scrollbar-thumb { background: rgba(105,232,255,0.28); border-radius: 999px; }
+.howto-head { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.howto-lead { color: var(--muted); font-size: 13px; }
+.howto-demo {
+  position: relative; display: grid; grid-template-columns: 1fr 72px 1fr; align-items: center;
+  min-height: 92px; margin: 18px 0; border: 1px solid rgba(105,232,255,0.18);
+  border-radius: 18px; overflow: hidden; background: rgba(8,28,40,0.62);
+}
+.howto-zone { align-self: stretch; display: grid; place-items: center; color: var(--neon);
+  font-size: 10px; font-weight: 800; letter-spacing: 0.16em; background: rgba(105,232,255,0.035); }
+.howto-zone.left { border-right: 1px solid rgba(105,232,255,0.12); }
+.howto-zone.right { border-left: 1px solid rgba(105,232,255,0.12); }
+.howto-sub { color: #e8f2f6; font-size: 32px; transform: rotate(45deg); text-shadow: 0 0 18px var(--neon); }
+.howto-list { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+.howto-item {
+  display: grid; grid-template-columns: 38px 1fr; gap: 12px; padding: 14px;
+  border-left: 2px solid var(--neon); border-radius: 0 14px 14px 0; background: rgba(10,30,43,0.64);
+}
+.howto-item.danger { border-left-color: var(--warm); }
+.howto-item.reward { border-left-color: var(--gold); }
+.howto-item.madness { border-left-color: #b884ff; }
+.howto-number { color: var(--neon); font-size: 12px; font-weight: 800; letter-spacing: 0.1em; }
+.howto-item.danger .howto-number { color: var(--warm); }
+.howto-item.reward .howto-number { color: var(--gold); }
+.howto-item.madness .howto-number { color: #b884ff; }
+.howto-item h2 { color: var(--text); font-size: 12px; letter-spacing: 0.16em; }
+.howto-item p { margin-top: 4px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.howto-replay { margin-top: 18px; }
+.input-touch .input-keyboard-copy, .input-keyboard .input-touch-copy { display: none; }
+.win-guidance { color: var(--neon); font-size: 11px; font-weight: 800; letter-spacing: 0.12em; }
+
+@media (max-height: 620px) {
+  .tutorial-prompt { top: 34%; }
+  .tutorial-zone { padding-bottom: 50px; }
+  .tutorial-zone::after { bottom: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tutorial-zone::after { animation: none; opacity: 0.35; }
+}
+
+/* Deep-water backdrop shared by the menu and levels screens — matches the in-game
+   3-layer ladder (zone1 top/bottom, see js/config.js THEME) instead of flat black. */
+.deep-bg {
+  background: radial-gradient(140% 100% at 50% -10%, #17394C 0%, #0C2030 45%, var(--ink) 100%);
+}
+
+/* Main menu — one dominant primary action (Play), one clearly secondary (Marathon).
+   Grouped and vertically centered as a tight cluster instead of stretched full-height
+   with a title pinned to the top and actions pinned to the bottom: that "space-between"
+   layout was the biggest single contributor to the old "mobile app form" screen reading
+   as empty rather than composed. */
+#screen-menu { justify-content: center; gap: 30px; padding: 64px 24px 48px; overflow: hidden; }
+
+.menu-head { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.menu-stats {
+  margin-top: 10px; font-size: 12px; letter-spacing: 0.16em; color: var(--gold);
+  opacity: 0.9;
+}
+.menu-stats-gold { margin-top: 4px; }
+.menu-stats:empty { display: none; }
+
+/* Ambient underwater life behind the menu content — bubbles drifting up, two faint
+   light-ray shafts. Pure CSS keyframe animation (compositor-driven transform/opacity),
+   no canvas, no rAF: the game's own render loop is not running on this screen at all
+   (see js/main.js stopLoop()), so this costs nothing against the frame budget. */
+.menu-ambient { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.light-ray {
+  position: absolute; top: -10%; width: 26%; height: 120%;
+  background: linear-gradient(180deg, rgba(150,190,210,0.10), rgba(150,190,210,0));
+  transform: rotate(8deg); animation: rayDrift 9s ease-in-out infinite;
+}
+.light-ray:nth-child(9) { left: 8%; animation-delay: 0s; }
+.light-ray:nth-child(10) { left: 62%; transform: rotate(-6deg); animation-delay: -4.5s; }
+@keyframes rayDrift { 0%, 100% { opacity: 0.5; } 50% { opacity: 0.9; } }
+
+.bubble {
+  position: absolute; bottom: -8%; left: var(--x, 50%); width: var(--s, 8px); height: var(--s, 8px);
+  border-radius: 50%; background: rgba(190,236,250,0.16); border: 1px solid rgba(190,236,250,0.22);
+  animation: bubbleRise var(--dur, 12s) linear infinite; animation-delay: var(--delay, 0s);
+}
+.bubble:nth-child(1) { --x: 8%;  --s: 7px;  --dur: 11s; --delay: -1s; }
+.bubble:nth-child(2) { --x: 20%; --s: 11px; --dur: 14s; --delay: -6s; }
+.bubble:nth-child(3) { --x: 34%; --s: 6px;  --dur: 10s; --delay: -3s; }
+.bubble:nth-child(4) { --x: 48%; --s: 9px;  --dur: 13s; --delay: -8s; }
+.bubble:nth-child(5) { --x: 62%; --s: 13px; --dur: 15s; --delay: -2s; }
+.bubble:nth-child(6) { --x: 74%; --s: 7px;  --dur: 11.5s; --delay: -9s; }
+.bubble:nth-child(7) { --x: 86%; --s: 10px; --dur: 12.5s; --delay: -5s; }
+.bubble:nth-child(8) { --x: 94%; --s: 5px;  --dur: 9.5s; --delay: -7s; }
+@keyframes bubbleRise {
+  0%   { transform: translate(0, 0) translateX(0); opacity: 0; }
+  8%   { opacity: 0.9; }
+  92%  { opacity: 0.5; }
+  100% { transform: translate(0, -112vh) translateX(14px); opacity: 0; }
+}
+
+.menu-play-wrap { position: relative; z-index: 1; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 34px; }
+
+/* The single focal point of the screen: a large glowing circular Play button with a
+   continuous soft "breathing" scale and an expanding sonar-ping ring (a deliberate
+   callback to the submarine/sonar theme, not a generic UI pulse). */
+.play-fab-wrap { position: relative; width: 132px; height: 132px; }
+.play-fab-wrap::before, .play-fab-wrap::after {
+  content: ''; position: absolute; inset: 0; border-radius: 50%; pointer-events: none;
+  border: 2px solid rgba(105,232,255,0.45);
+  animation: sonarPing 2.8s ease-out infinite;
+}
+.play-fab-wrap::after { animation-delay: 1.4s; }
+@keyframes sonarPing {
+  0%   { transform: scale(0.94); opacity: 0.55; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+.play-fab {
+  position: relative; z-index: 2; width: 100%; height: 100%; border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 1px; cursor: pointer; color: var(--ink);
+  background: radial-gradient(circle at 34% 28%, #baf3ff, #4fc3ff 55%, #1c7fd6 100%);
+  box-shadow: 0 22px 46px rgba(42,168,255,0.45), inset 0 2px 10px rgba(255,255,255,0.55),
+    inset 0 -14px 22px rgba(8,40,60,0.28);
+  animation: playBreathe 2.6s ease-in-out infinite;
+  transition: transform 0.1s ease;
+}
+.play-fab:active { transform: scale(0.97); }
+.play-fab svg { filter: drop-shadow(0 2px 3px rgba(4,18,31,0.35)); }
+@keyframes playBreathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .play-fab, .play-fab-wrap::before, .play-fab-wrap::after, .bubble, .light-ray { animation: none; }
+}
+
+/* Infinite Madness — same circular-fab language as Play (never a flat pill), including its
+   own expanding sonar-ping rings, but smaller and in the gold reward hue so it clearly
+   reads as the secondary action. */
+.marathon-fab-wrap { position: relative; width: 132px; height: 132px; }
+.marathon-fab-wrap::before, .marathon-fab-wrap::after {
+  content: ''; position: absolute; inset: 0; border-radius: 50%; pointer-events: none;
+  border: 2px solid rgba(255,200,87,0.45);
+  animation: sonarPing 2.8s ease-out infinite;
+}
+.marathon-fab-wrap::after { animation-delay: 1.4s; }
+@media (prefers-reduced-motion: reduce) {
+  .marathon-fab-wrap::before, .marathon-fab-wrap::after { animation: none; }
+}
+.marathon-fab {
+  position: relative; z-index: 2; width: 100%; height: 100%; border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 1px; cursor: pointer; color: var(--ink);
+  background: radial-gradient(circle at 34% 28%, #ffe9b8, #ffc857 55%, #d9911f 100%);
+  box-shadow: 0 16px 34px rgba(255,183,77,0.35), inset 0 2px 8px rgba(255,255,255,0.5),
+    inset 0 -10px 16px rgba(90,54,0,0.28);
+  transition: transform 0.1s ease;
+}
+.marathon-fab:active { transform: scale(0.97); }
+.marathon-fab svg { filter: drop-shadow(0 1px 2px rgba(60,32,0,0.3)); }
+.play-fab .mf-line, .marathon-fab .mf-line {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.09em; line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Level select */
+#screen-select { justify-content: flex-start; padding-top: 56px; overflow-y: auto; }
+.select-head { margin-bottom: 14px; }
+.select-title { font-size: 20px; font-weight: 800; letter-spacing: 0.12em; color: var(--text); }
+
+.level-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 8px; width: min(760px, 94vw); padding-bottom: 40px; }
+.level-card { background: var(--panel); border: 1px solid rgba(120,200,215,0.18); border-radius: 12px;
+  padding: 10px 4px; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  cursor: pointer; transition: border-color 0.15s, transform 0.1s; position: relative; }
+.level-card:active { transform: scale(0.98); }
+.level-card:hover { border-color: rgba(105,232,255,0.5); }
+.level-card:disabled, .level-card-locked, .level-card-incomplete {
+  cursor: not-allowed;
+  transform: none;
+}
+.level-card:disabled:hover, .level-card-locked:hover, .level-card-incomplete:hover {
+  border-color: rgba(120,200,215,0.18);
+  transform: none;
+}
+.level-card-locked .lc-num { opacity: 0.35; }
+.level-card-incomplete {
+  border-style: dashed;
+  border-color: rgba(120,200,215,0.12);
+  background: rgba(4, 18, 28, 0.35);
+}
+.level-card-incomplete .lc-num { opacity: 0.4; }
+.lc-num { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--text); }
+.lc-sub { display: flex; gap: 3px; justify-content: center; min-height: 10px; }
+.lc-pearl { font-size: 9px; color: var(--gold); }
+.lc-pearl.dim { color: rgba(140,180,190,0.3); }
+.lc-difficulty { display: inline-flex; align-items: center; gap: 3px; color: var(--muted); }
+.lc-difficulty span {
+  width: 6px; height: 6px; border-radius: 50%; background: currentColor;
+  box-shadow: 0 0 6px color-mix(in srgb, currentColor 55%, transparent);
+}
+.difficulty-tutorial { color: #63d9ff; }
+.difficulty-easy { color: #57d68d; }
+.difficulty-medium { color: #ffad42; }
+.difficulty-hard { color: #ff5d68; }
+.difficulty-expert { color: #b884ff; }
+.level-card-locked .lc-difficulty { opacity: 0.48; }
+.lc-lock { position: absolute; top: 4px; left: 5px; display: inline-flex; opacity: 0.55; color: var(--muted); }
+.lc-incomplete {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.08em;
+  color: var(--muted); opacity: 0.7;
+}
+
+/* Completed is its own signal, independent of star count — a card must read as "done" even
+   when 0 pearls were collected that run, not look identical to a never-played level. */
+.level-card-completed {
+  border-color: rgba(105,232,255,0.4);
+  background: rgba(20,60,72,0.32);
+}
+.lc-check {
+  position: absolute; top: 4px; right: 5px;
+  color: #6be8c8; display: inline-flex; opacity: 0.9;
+}
+.lc-tries {
+  position: absolute; bottom: 3px; right: 6px;
+  font-size: 8px; font-weight: 700; letter-spacing: 0.02em;
+  color: var(--muted); opacity: 0.65; font-variant-numeric: tabular-nums;
+}
+
+.stars.big { display: flex; gap: 8px; justify-content: center; font-size: 22px; margin: 4px 0 10px; }
+.stars.big .lc-pearl { font-size: 22px; }
+
+.win-time, .win-best {
+  color: var(--muted); margin: 0;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.win-time span, .win-best span { color: var(--text); font-weight: 800; letter-spacing: 0.04em; }
+
+/* Test bar */
+.test-bar { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); z-index: 9;
+  display: flex; align-items: center; gap: 12px; background: var(--panel);
+  border: 1px solid rgba(255,138,61,0.4); border-radius: 12px; padding: 8px 12px;
+  font-size: 12px; letter-spacing: 0.14em; color: var(--warm); }
+
+/* ?debug=1 vehicle tuning. This is deliberately distinct from the player HUD. */
+.debug-panel {
+  position: absolute; z-index: 10; top: 64px; right: 12px; width: min(290px, calc(100vw - 24px));
+  padding: 14px; border: 1px solid rgba(105,232,255,0.32); border-radius: 14px;
+  background: rgba(3,17,27,0.94); box-shadow: 0 18px 50px rgba(0,0,0,0.5);
+  color: var(--text); font-size: 12px; backdrop-filter: blur(8px);
+}
+.debug-title { color: var(--neon); font-weight: 800; letter-spacing: 0.16em; }
+.debug-note { margin: 4px 0 12px; color: var(--warm); font-size: 9px; line-height: 1.4; letter-spacing: 0.08em; }
+.debug-subtitle { margin: 13px 0 7px; color: var(--muted); font-size: 10px; letter-spacing: 0.14em; }
+
+/* Each tuning group (VEHICLE / WATER PHYSICS / EDGE BEHAVIOR) is a clearly separated,
+   headed section — never mixed rows. Matches the panel's existing slider/row style. */
+.debug-section { margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(120,200,215,0.16); }
+.debug-section:first-of-type { margin-top: 10px; padding-top: 0; border-top: none; }
+.debug-section-title {
+  margin: 0 0 8px; color: var(--muted); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+}
+
+.debug-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 8px; }
+.debug-section .debug-row:first-of-type { margin-top: 0; }
+.debug-row output { color: var(--neon); font-variant-numeric: tabular-nums; }
+.debug-panel input[type="range"] { width: 100%; accent-color: var(--neon); }
+.debug-panel input[type="color"] { width: 100%; height: 30px; padding: 2px; border: 1px solid rgba(120,200,215,0.3); background: transparent; }
+.debug-panel input[type="checkbox"] { accent-color: var(--neon); }
+.debug-panel select {
+  width: 100%; background: rgba(6,26,36,0.9); color: var(--text);
+  border: 1px solid rgba(120,200,215,0.3); border-radius: 8px; padding: 6px 8px; font-size: 12px;
+}
+.debug-panel .debug-reset { margin-top: 14px; width: 100%; }
+
+/* Loader */
+.loader-ring { width: 42px; height: 42px; border-radius: 50%;
+  border: 3px solid rgba(120,200,215,0.2); border-top-color: var(--neon); animation: spin 0.9s linear infinite; }
+.loading-text { margin-top: 14px; letter-spacing: 0.24em; color: var(--muted); font-size: 13px; }
+@keyframes spin { to { transform: rotate(360deg); } }
