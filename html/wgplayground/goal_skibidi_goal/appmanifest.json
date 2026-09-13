@@ -1,0 +1,31 @@
+{
+	"name": "Goal Skibidi Goal",
+	"short_name": "Goal Skibidi Goal",
+	"description": "Goal Skibidi Goal is a fast-paced, physics-based soccer game where you control a little character with your head. The goal is to score more goals than your opponent by heading the ball into their net. You can jump, duck, and slide to control the ball, and you can also use power-ups to give yourself an edge.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		}
+	]
+}

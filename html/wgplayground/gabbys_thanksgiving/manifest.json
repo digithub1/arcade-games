@@ -1,0 +1,14 @@
+{
+    "name": "Gabby's Thanksgiving",
+	"short_name": "Gabby's Thanksgiving",
+	"description": "Description of the game.",
+    "icons": [{
+        "src": "library/icons/icon_128_128.png",
+        "sizes": "128x128",
+		"type": "image/png"
+    }],
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#000000",
+	"theme_color": "#000000"
+}

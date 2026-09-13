@@ -1,0 +1,16 @@
+{
+	"name": "Ghost Night",
+	"short_name": "Ghost Night",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/splash.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	]
+}

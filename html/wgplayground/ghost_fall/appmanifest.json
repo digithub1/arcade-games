@@ -1,0 +1,16 @@
+{
+	"name": "Ghost Fall",
+	"short_name": "Ghost Fall",
+	"description": "A Falling Game",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/splash.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	]
+}

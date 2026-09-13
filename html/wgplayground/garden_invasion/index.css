@@ -1,0 +1,121 @@
+body {
+    background-color: #000;
+    color: #fff;
+
+    /* Allow mouse dragging. */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    /* disable touch panning/zooming */
+    -ms-touch-action: none;
+    touch-action: none;
+
+    /* Allow canvas to hit the edges of the browser viewport. */
+    margin: 0;
+}
+
+#screen canvas {
+    margin: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    /* Hide the gap for font descenders. */
+    display: block;
+
+    /* disable scaling interpolation */
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+/*.div1 {
+    position: fixed;
+    top : 0;
+    left: 0;
+    margin: 0 20px;
+    margin-top: 50%;
+}
+
+#profile-picture{
+    max-width: 150px;
+}
+
+.image {
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+img {
+    height: 23vw;
+    width: 23vw;
+}
+
+.input-name {
+    position: absolute;
+    top: 19%;
+    right:7%;
+    width: 50vw;
+    height: 6vw;
+}
+
+.button-confirm {
+    position: absolute;
+    top : 50%;
+    right: 6%;
+    width: 150px;
+    height: 60px;
+
+}
+
+.background-image{
+    height: auto;
+    width: 100%;
+    margin-left: 0 !important;
+}
+
+.div-pp {
+
+}
+
+#profile-picture{
+    max-width: 150px;
+}
+
+.form-container .row {
+    margin-bottom: 1rem;
+    margin-left: -15px;
+    width: 100%;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label * {
+    pointer-events: none;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.form-row {
+    margin-right: 0px;
+    margin-left: 0px;
+}*/

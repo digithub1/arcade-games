@@ -1,0 +1,17 @@
+{
+	"name": "Ghost Miner",
+	"short_name": "Ghost Miner",
+	"description": "Ghost Miner",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

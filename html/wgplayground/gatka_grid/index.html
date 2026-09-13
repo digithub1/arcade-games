@@ -1,0 +1,432 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Gatka Grid">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/23367588c366b869df5a9013bb866a83/wgplayground/ec67ea40bdf41aaf9f9a395f46c713ad.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/23367588c366b869df5a9013bb866a83/wgplayground/448769aaf1288a34d549bcb3702de757.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/23367588c366b869df5a9013bb866a83">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/palash/gatka-grid">
+            <meta property="wgp:description" content="Gatka Grid is a fast-paced 2.5D isometric HTML5 micro-RTS swarm arena! Choose from 6 unique martial arts factions, command your unit squads across an isometric battleground, and capture tactical map nodes -Heart nodes for +10% HP/s unit healing and Spawn nodes for +30% reinforcement speed. Fill your Gatka Flow Kill Meter by defeating 10 enemies to unleash 10 seconds of devastating +50% speed and 2x attack power!">
+            <meta property="wgp:instructions" content="• Drag-Select: Click and drag a selection box to select your fighters.• Move / Target: Left-click on the grid or an enemy unit to issue move and attack commands.• Map Nodes: Stand inside nodes to capture them. Heart (+10% HP/s) heals your units, while Spawn (+30%) speeds up unit spawns.• Gatka Flow Meter: Defeat 10 enemy units to fill the meter and click the activate button for 10s of +50% speed and 2x attack rate!• Camera Controls: Pan using WASD / Arrow keys or right-click drag. Mouse wheel to zoom.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/23367588c366b869df5a9013bb866a83/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/23367588c366b869df5a9013bb866a83/wgplayground/17ca4fca7688d3c47b101d06e735d6d4.m3u8" ar="landscape">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/23367588c366b869df5a9013bb866a83/wgplayground/1cf755b846496a5e1c291ab623acdb03.m3u8" ar="landscape">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="landscape">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyJMZWZ0IE1vdXNlIjoiU2VsZWN0IFVuaXRzIFwvIElzc3VlIE1vdmUgJmFtcDsgQXR0YWNrIENvbW1hbmQiLCJNb3VzZSBXaGVlbCI6Ilpvb20gQ2FtZXJhIEluIFwvIE91dCIsIlJpZ2h0IE1vdXNlIjoiUGFuIENhbWVyYSBhY3Jvc3MgbWFwIn0=">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBY3Rpb24iLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy53Z3BsYXlncm91bmQuY29tXC9nYW1lcy1jYXRhbG9ndWVcL2dlbnJlLTQifSx7Im5hbWUiOiJTdHJhdGVneSIsImxpbmsiOiJodHRwczpcL1wvd3d3LndncGxheWdyb3VuZC5jb21cL2dhbWVzLWNhdGFsb2d1ZVwvZ2VucmUtNDQifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="oyk8hanwd3oj3jem/23367588c366b869df5a9013bb866a83">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Gatka Grid - 2.5D Web Micro-RTS</title>
+  <meta name="description" content="A fast-paced 2.5D isometric HTML5 canvas micro-RTS featuring 6 factions, capturable map nodes, and Gatka Flow kill-chains.">
+  
+  
+  <style type="text/css">@font-face {font-family:'Outfit';font-style:normal;font-weight:400;src:url(/cf-fonts/v/outfit/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Outfit';font-style:normal;font-weight:400;src:url(/cf-fonts/v/outfit/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Outfit';font-style:normal;font-weight:600;src:url(/cf-fonts/v/outfit/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Outfit';font-style:normal;font-weight:600;src:url(/cf-fonts/v/outfit/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Outfit';font-style:normal;font-weight:800;src:url(/cf-fonts/v/outfit/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Outfit';font-style:normal;font-weight:800;src:url(/cf-fonts/v/outfit/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Outfit';font-style:normal;font-weight:900;src:url(/cf-fonts/v/outfit/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Outfit';font-style:normal;font-weight:900;src:url(/cf-fonts/v/outfit/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Press Start 2P';font-style:normal;font-weight:400;src:url(/cf-fonts/s/press-start-2p/5.2.7/greek/400/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Press Start 2P';font-style:normal;font-weight:400;src:url(/cf-fonts/s/press-start-2p/5.2.7/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Press Start 2P';font-style:normal;font-weight:400;src:url(/cf-fonts/s/press-start-2p/5.2.7/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Press Start 2P';font-style:normal;font-weight:400;src:url(/cf-fonts/s/press-start-2p/5.2.7/latin-ext/400/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Press Start 2P';font-style:normal;font-weight:400;src:url(/cf-fonts/s/press-start-2p/5.2.7/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+  <script type="module" crossorigin="" src="./assets/index-B63M0w1g.js"></script>
+  <link rel="stylesheet" crossorigin="" href="./assets/index-Ce5_ijfF.css">
+<style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202609080101/gpt" rel="compression-dictionary"><script src="gamepush.js"></script></head>
+<body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/23367588c366b869df5a9013bb866a83/wgplayground/448769aaf1288a34d549bcb3702de757.jpg">
+  <!-- Main Game Canvas Container -->
+  <div id="gameContainer">
+    <canvas id="gameCanvas" width="897" height="617" wg-game-orientation="wg-landscape-game"></canvas>
+
+    <!-- Top Left HUD: Faction / Match Status -->
+    <div id="hudTopLeft" class="hud-panel hidden">
+      <div class="hud-header">
+        <span class="hud-title">GATKA GRID</span>
+        <span id="matchTimer">00:00</span>
+      </div>
+      <div id="factionScores" class="faction-scores-list">
+        <!-- Dynamic faction score rows inserted here -->
+      </div>
+    </div>
+
+    <!-- Gatka Flow Kill Meter & Popping Activate Button HUD -->
+    <div id="gatkaMeterContainer" class="gatka-meter-box hidden">
+      <div class="gatka-meter-header">⚡ GATKA FLOW METER</div>
+      <div class="gatka-meter-bg">
+        <div id="gatkaMeterFill" class="gatka-meter-fill" style="width: 0%;"></div>
+        <span id="gatkaMeterText" class="gatka-meter-text">0 / 10 Kills</span>
+      </div>
+      <button id="btnActivateGatka" class="btn-gatka-activate hidden">⚡ ACTIVATE GATKA FLOW! (10s) ⚡</button>
+      <button id="btnRewardGatka" class="btn-reward-ad">🎬 WATCH AD: INSTANT GATKA FLOW! 🎬</button>
+    </div>
+
+    <!-- Top Right HUD: Controls, Audio, Help & Credits Buttons -->
+    <div id="hudTopRight" class="hud-panel hidden">
+      <button id="btnSound" class="hud-btn" title="Toggle Sound">🔊</button>
+      <button id="btnPause" class="hud-btn" title="Pause Game">⏸</button>
+      <button id="btnHelp" class="hud-btn" title="Game Info">❓</button>
+      <button id="btnCredits" class="hud-btn" title="Game Credits">📜</button>
+    </div>
+
+    <!-- Gatka Flow Active Banner Notification -->
+    <div id="gatkaBanner" class="gatka-banner hidden">
+      ⚡ GATKA FLOW ACTIVATED! ⚡
+    </div>
+
+    <!-- Bottom Right Minimap HUD -->
+    <div id="minimapContainer" class="minimap-box hidden">
+      <canvas id="minimapCanvas" width="220" height="130"></canvas>
+      <div class="minimap-label">MINIMAP</div>
+    </div>
+
+    <!-- Start / Faction Selection Screen -->
+    <div id="startScreen" class="overlay-screen">
+      <div class="modal-card">
+        <div class="game-logo">
+          <h1 class="logo-title">GATKA GRID</h1>
+          <p class="logo-subtitle">2.5D Micro-RTS Swarm Arena</p>
+        </div>
+
+        <div class="section-title">CHOOSE YOUR FACTION</div>
+
+        <div class="faction-grid" id="factionGrid"><div class="faction-card" data-id="BLUE">
+        <div class="faction-badge">
+          <span class="faction-name" style="color: #2563eb">Blue Brawler</span>
+          <img src="./assets/toon-characters/Male person/PNG/Poses HD/character_malePerson_idle.png" class="faction-avatar-img" alt="Blue Brawler">
+        </div>
+        <div class="faction-desc">Balanced HP, Damage, and Spawn Rate.</div>
+        <div class="faction-stats">
+          <span>HP: 220</span>
+          <span>Dmg: 7.5</span>
+          <span>Cap: 16</span>
+        </div>
+      </div><div class="faction-card" data-id="GREEN">
+        <div class="faction-badge">
+          <span class="faction-name" style="color: #16a34a">Green Zombie</span>
+          <img src="./assets/toon-characters/Zombie/PNG/Poses HD/character_zombie_idle.png" class="faction-avatar-img" alt="Green Zombie">
+        </div>
+        <div class="faction-desc">Spawns 40% faster, 20 unit cap, fast swarm.</div>
+        <div class="faction-stats">
+          <span>HP: 170</span>
+          <span>Dmg: 6</span>
+          <span>Cap: 20</span>
+        </div>
+      </div><div class="faction-card" data-id="PURPLE">
+        <div class="faction-badge">
+          <span class="faction-name" style="color: #9333ea">Purple Adventurer</span>
+          <img src="./assets/toon-characters/Male adventurer/PNG/Poses HD/character_maleAdventurer_idle.png" class="faction-avatar-img" alt="Purple Adventurer">
+        </div>
+        <div class="faction-desc">Heavy armor tank (+64% HP), 13 cap, slower spawn.</div>
+        <div class="faction-stats">
+          <span>HP: 360</span>
+          <span>Dmg: 8.5</span>
+          <span>Cap: 13</span>
+        </div>
+      </div><div class="faction-card" data-id="RED">
+        <div class="faction-badge">
+          <span class="faction-name" style="color: #dc2626">Red Adventurer</span>
+          <img src="./assets/toon-characters/Female adventurer/PNG/Poses HD/character_femaleAdventurer_idle.png" class="faction-avatar-img" alt="Red Adventurer">
+        </div>
+        <div class="faction-desc">Moves faster, hits hard, burst striker.</div>
+        <div class="faction-stats">
+          <span>HP: 180</span>
+          <span>Dmg: 9</span>
+          <span>Cap: 16</span>
+        </div>
+      </div><div class="faction-card" data-id="YELLOW">
+        <div class="faction-badge">
+          <span class="faction-name" style="color: #facc15">Yellow Fighter</span>
+          <img src="./assets/toon-characters/Female person/PNG/Poses HD/character_femalePerson_idle.png" class="faction-avatar-img" alt="Yellow Fighter">
+        </div>
+        <div class="faction-desc">Average stats, heals 15% damage dealt on punch.</div>
+        <div class="faction-stats">
+          <span>HP: 210</span>
+          <span>Dmg: 7.5</span>
+          <span>Cap: 16</span>
+        </div>
+      </div><div class="faction-card" data-id="CYAN">
+        <div class="faction-badge">
+          <span class="faction-name" style="color: #0891b2">Cyan Robot</span>
+          <img src="./assets/toon-characters/Robot/PNG/Poses HD/character_robot_idle.png" class="faction-avatar-img" alt="Cyan Robot">
+        </div>
+        <div class="faction-desc">Average stats, takes 40% less damage when still.</div>
+        <div class="faction-stats">
+          <span>HP: 220</span>
+          <span>Dmg: 7.5</span>
+          <span>Cap: 16</span>
+        </div>
+      </div></div>
+
+        <div class="selection-footer">
+          <div class="selected-faction-info" id="selectedFactionInfo">
+            Click a faction above to view stats &amp; abilities!
+          </div>
+          <button id="btnStartGame" class="btn-primary" disabled="">START BATTLE</button>
+        </div>
+
+        <div class="start-credits-link">
+          <button id="btnOpenCreditsStart" class="btn-link">📜 Asset &amp; Game Credits</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Controls / Help Modal -->
+    <div id="helpModal" class="overlay-screen hidden">
+      <div class="modal-card help-card">
+        <h2>HOW TO PLAY</h2>
+        <div class="help-content">
+          <div class="help-row">
+            <span class="help-icon">🖱️</span>
+            <div><strong>Drag-Select:</strong> Click and drag box to select your fighters (white ring outline).</div>
+          </div>
+          <div class="help-row">
+            <span class="help-icon">🎯</span>
+            <div><strong>Move / Target:</strong> Left-click on grid or enemy to issue command. Selection auto-clears!</div>
+          </div>
+          <div class="help-row">
+            <span class="help-icon">⌨️</span>
+            <div><strong>Camera:</strong> Use WASD or Arrow Keys to pan camera, Mouse Wheel to zoom.</div>
+          </div>
+          <div class="help-row">
+            <span class="help-icon">⚡</span>
+            <div><strong>Gatka Flow Meter:</strong> Reach 10 kills to fill the meter and unlock the popping <strong>⚡ ACTIVATE GATKA FLOW</strong> button for 10s of +50% speed and 2x attack rate!</div>
+          </div>
+          <div class="help-row">
+            <span class="help-icon">➕ / ⬆️</span>
+            <div><strong>Map Nodes:</strong> Stand inside to capture. <strong>Heart (+)</strong> heals +10% HP/s. <strong>Spawn (▲)</strong> increases base spawn rate by 30%!</div>
+          </div>
+          <div class="help-row">
+            <span class="help-icon">👥</span>
+            <div><strong>Population Cap:</strong> Tailored max active fighters per faction.</div>
+          </div>
+        </div>
+        <button id="btnCloseHelp" class="btn-secondary">CLOSE</button>
+      </div>
+    </div>
+
+    <!-- Credits Modal -->
+    <div id="creditsModal" class="overlay-screen hidden">
+      <div class="modal-card help-card">
+        <h2>📜 GAME CREDITS &amp; ATTRIBUTION</h2>
+        <div class="help-content">
+          <div class="help-row">
+            <span class="help-icon">🎨</span>
+            <div>
+              <strong>Character Art &amp; Sprites:</strong><br>
+              <em>"Toon Characters"</em> created by <strong>Kenney (KenneyNL)</strong><br>
+              Website: <a href="https://www.kenney.nl" target="_blank" rel="noopener">www.kenney.nl</a><br>
+              License: Creative Commons Zero (CC0 Public Domain)
+            </div>
+          </div>
+          <div class="help-row">
+            <span class="help-icon">🕹️</span>
+            <div>
+              <strong>Game Design &amp; Concept:</strong><br>
+              Inspired by the classic Flash game <em>School Wars</em> (by GameDesign.jp), re-imagined with martial arts mechanics and capturable grid nodes.
+            </div>
+          </div>
+          <div class="help-row">
+            <span class="help-icon">🎵</span>
+            <div>
+              <strong>Audio &amp; Engine:</strong><br>
+              Procedural Web Audio API sound synthesizer and custom 2.5D Isometric HTML5 Canvas Engine.
+            </div>
+          </div>
+        </div>
+        <button id="btnCloseCredits" class="btn-secondary">CLOSE CREDITS</button>
+      </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen" class="overlay-screen hidden">
+      <div class="modal-card result-card">
+        <div id="resultBanner" class="result-banner">VICTORY</div>
+        <h2 id="resultTitle">YOUR FACTION DOMINATED THE GRID!</h2>
+        
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="stat-value" id="statKills">0</span>
+            <span class="stat-label">Enemies Defeated</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statGatka">0</span>
+            <span class="stat-label">Gatka Flow Bursts</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statNodes">0</span>
+            <span class="stat-label">Nodes Captured</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statTime">00:00</span>
+            <span class="stat-label">Battle Duration</span>
+          </div>
+        </div>
+
+        <button id="btnRestart" class="btn-primary">PLAY AGAIN</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body></html>

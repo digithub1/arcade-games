@@ -1,0 +1,36 @@
+{
+	"name": "Goblin Clan",
+	"short_name": "Goblin Clan",
+	"description": "Goblin Clan is a free online fantasy game in which goblins must help each other escape the king and queen’s imprisonment while plundering loot and avoiding the wrath of a sorceress. Join us as we explore your captivating world! This free online game is a perfect way to pass the time and get to know the exciting world of goblins! In this virtual world you'll face many challenges and overcome them all successfully. Learn lots of new things with every mistake you make on your journey through Goblin Town, which will grant you experience points, money, and other items that can help you unlock future games.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
