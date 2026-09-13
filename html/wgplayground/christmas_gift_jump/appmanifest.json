@@ -1,0 +1,17 @@
+{
+	"name": "Christmas Gift Jump",
+	"short_name": "Christmas Gift Jump",
+	"description": "Christmas Gift Jump is a delightful holiday-themed arcade game where players guide a cheerful gift box on a thrilling upward journey. Dodge obstacles, collect festive power-ups, and aim for the highest score as you leap toward the stars! With colorful Christmas visuals, cheerful music, and endless fun, Christmas Gift Jump is the perfect game to get into the holiday spirit. Can you master the jumps and reach the top?",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

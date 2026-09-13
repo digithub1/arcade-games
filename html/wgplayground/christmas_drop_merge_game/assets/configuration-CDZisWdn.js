@@ -1,0 +1,1 @@
+const t={containerWidth:2e3,get blockWidth(){return this.containerHeight/8},get blockHeight(){return this.blockWidth/.839},blockScaing:1.03,get containerHeight(){return this.containerWidth*1.2},blockPositionRatio:.1,fillRatio:.3,get wallWidth(){return this.containerWidth/10},gravity:2,widthHeightRatio:.839,get blockVelocity(){return this.gravity*15}};export{t as configuration};

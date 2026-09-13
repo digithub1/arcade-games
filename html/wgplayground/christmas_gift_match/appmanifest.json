@@ -1,0 +1,17 @@
+{
+	"name": "Christmas Gift Match",
+	"short_name": "Christmas Gift Match",
+	"description": "Celebrate the joy of the season with Christmas Gift Match! In this festive puzzle game, match Christmas gifts by pairing them with their correct shadows. With delightful holiday-themed graphics and engaging gameplay, challenge yourself to think fast and make accurate matches before time runs out. Perfect for players of all ages, this game will fill your holiday with fun and cheer. Test your memory and observation skills while spreading the Christmas spirit!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Christmas Block Challenge",
+  "short_name": "Christmas Block Challenge",
+  "description": "Christmas Block Challenge: Strategically place festive blocks on a 10x10 grid, completing rows or columns of 10 to collect all Xmas Collectibles within them. The objective is to gather all the collectibles on the board."",
+  "start_url": "index.html",
+  "background_color": "#000000",
+  "theme_color": "#0f4a73",
+  "display": "fullscreen",
+  "orientation": "landscape",  
+  "icons": [
+  {
+    "src": "icon-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+	"src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Christmas Candy Cane",
+	"short_name": "Christmas Candy Cane",
+	"description": "Christmas Candy Cane is an online jump action game that will keep you entertained for hours. The objective of the game is to help the candy cane jump over obstacles and reach the end of the level. There are numerous levels to play, each with its own unique challenges. With its simple yet addictive gameplay, Christmas Candy Cane is a great game for all ages.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
