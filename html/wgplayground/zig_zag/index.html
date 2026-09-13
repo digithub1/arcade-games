@@ -1,0 +1,1380 @@
+<html lang="en"><head>
+<!--  -->
+
+
+        
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                position:fixed;
+            }   
+        </style>
+        <script>
+        window.addEventListener("keydown", function(e) { if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+        </script>
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            <meta property="wgp:title" content="Zig Zag">
+            <meta property="wgp:logo" content="https://static.wgplayground.com/a8a41a51c776a4c99ae58af285b6d445/wgplayground/70eab9d9f73283b929f0332fd0ec57c9.png">
+            <meta property="wgp:image" content="https://static.wgplayground.com/a8a41a51c776a4c99ae58af285b6d445/wgplayground/66d59a9033fd5aab3675d581a70743fe.jpg" gravity="center center">
+            <meta property="wgp:url" content="https://play.wgplayground.com/game/a8a41a51c776a4c99ae58af285b6d445">
+            <meta property="wgp:site_url" content="https://www.wgplayground.com/game/ubeezy/zig-zag">
+            <meta property="wgp:description" content="ZigZag is a fast-paced tapping game where the player controls a ball moving along a narrow, winding path. The ball moves continuously, and each tap changes its direction at the right moment. The goal is to stay on the path for as long as possible without falling off.As the game progresses, the movement becomes faster and more challenging, requiring quick timing and precise taps. Each successful turn or section increases the player's score. If the ball misses the path, the game ends, and the player can restart to try for a higher score.The gameplay is simple, minimal, and addictive, with easy one-tap controls but increasingly difficult timing.">
+            <meta property="wgp:instructions" content="How to PlayWait 3 seconds for the game to begin.Tap anywhere on the screen to change the ball’s direction.Time your taps carefully to keep the ball on the zigzag path.Don’t fall off the edge!The longer you survive, the higher your score.If you fall, tap to restart and try again.">
+            <meta property="wgp:keyboard" content="https://static.wgplayground.com/a8a41a51c776a4c99ae58af285b6d445/wgplayground/keyboard.svg">
+            <meta property="wgp:walkthrough" content="https://static.wgplayground.com/a8a41a51c776a4c99ae58af285b6d445/wgplayground/cb5a77eee6595919b18569e06868c816.m3u8" ar="portrait">
+            <meta property="wgp:trailer" content="https://static.wgplayground.com/a8a41a51c776a4c99ae58af285b6d445/wgplayground/41415e7244de2c4d1eeb2b79f0084b13.m3u8" ar="portrait">
+            
+            <meta property="wgp:width" content="0">
+            <meta property="wgp:height" content="0">
+            <meta property="wgp:rwidth" content="">
+            <meta property="wgp:rheight" content="">
+            <meta property="wgp:orientation" content="portrait">
+            <meta property="wgp:aspect_ratio" content="0">
+            <meta property="wgp:controls" content="eyImdWFycjsiOiIiLCImbGFycjsiOiIiLCImZGFycjsiOiIiLCImcmFycjsiOiIiLCJTcGFjZSI6IiIsIkxlZnQgTW91c2UiOiIifQ==">
+            <meta property="wgp:info" content="eyJlbmRvcnNlbWVudCI6IiIsInRhZ3MiOlt7Im5hbWUiOiJBcmNhZGUiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy53Z3BsYXlncm91bmQuY29tXC9nYW1lcy1jYXRhbG9ndWVcL2dlbnJlLTYifV0sImNoYXJhY3RlcnMiOltdfQ==">
+            <meta property="wgp:pegi" content="1">
+            <meta property="wgp:ads" content="xqhmemvtsqpfxrfq/a8a41a51c776a4c99ae58af285b6d445">
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+
+
+
+        
+        
+        
+        
+                        <script>
+                        window.onload = function(){
+                            try{
+                                const wgh = window.innerHeight;
+                                const wgw = window.innerWidth;
+                                const wgr = wgw/wgh;
+                                document.querySelector("canvas").style.aspectRatio = wgr;
+                            }catch(e){}
+                        }
+                        </script>
+                        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>ZIGZAG</title>
+    <meta name="description" content="A minimalist one-tap arcade game where you guide a ball along an endless procedural zigzag path.">
+    <meta property="og:title" content="ZIGZAG">
+    <meta property="og:description" content="A minimalist one-tap arcade game where you guide a ball along an endless procedural zigzag path.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #f7f9f8;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        touch-action: none;
+        color: #18181b;
+      }
+
+      #game-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        cursor: pointer;
+      }
+
+      /* Sound Toggle Button */
+      #sound-toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 50;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+        transition: transform 0.15s ease, background-color 0.15s ease;
+      }
+
+      #sound-toggle:hover {
+        background-color: #ffffff;
+        transform: scale(1.06);
+      }
+
+      #sound-toggle:active {
+        transform: scale(0.94);
+      }
+
+      #sound-toggle svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: #18181b;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+
+      /* In-Game HUD: Score */
+      #hud {
+        position: absolute;
+        top: 28px;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 20;
+        transition: opacity 0.25s ease;
+      }
+
+      #score-display {
+        font-size: 68px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        color: #18181b;
+        line-height: 1;
+        transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      #score-display.bump {
+        transform: scale(1.18);
+      }
+
+      #hud-best {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #71717a;
+        margin-top: 4px;
+        text-transform: uppercase;
+      }
+
+      /* Fullscreen UI Overlays */
+      .ui-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 30;
+        pointer-events: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        padding: 24px;
+      }
+
+      .ui-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* Menu Screen */
+      #menu-screen {
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .menu-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 380px;
+        width: 100%;
+        pointer-events: none;
+      }
+
+      .game-title {
+        font-size: 64px;
+        font-weight: 900;
+        letter-spacing: 6px;
+        color: #18181b;
+        line-height: 1;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+
+      .menu-subtitle {
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 3.5px;
+        color: #16a34a;
+        text-transform: uppercase;
+        animation: pulseText 1.8s ease-in-out infinite;
+      }
+
+      @keyframes pulseText {
+        0%, 100% { opacity: 0.95; transform: scale(1); }
+        50% { opacity: 0.55; transform: scale(0.98); }
+      }
+
+      .menu-preview-spacer {
+        width: 100%;
+        height: 140px;
+        margin: 16px 0;
+      }
+
+      .menu-best {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #52525b;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 8px 20px;
+        border-radius: 9999px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      }
+
+      .tap-hint {
+        font-size: 12px;
+        font-weight: 600;
+        color: #a1a1aa;
+        letter-spacing: 1.2px;
+        margin-top: 24px;
+        text-transform: uppercase;
+      }
+
+      /* Game Over Screen */
+      #game-over-screen {
+        background: rgba(247, 249, 248, 0.88);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .modal-card {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 32px 28px;
+        max-width: 360px;
+        width: 100%;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.03);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(14px);
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .ui-overlay.active .modal-card {
+        transform: translateY(0);
+      }
+
+      .modal-title {
+        font-size: 28px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #18181b;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .score-summary {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 22px;
+        padding: 16px 0;
+        background: #f8fafc;
+        border-radius: 16px;
+        border: 1px solid #f1f5f9;
+      }
+
+      .score-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+      }
+
+      .score-box:first-child {
+        border-right: 1px solid #e2e8f0;
+      }
+
+      .score-box-label {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #64748b;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+
+      .score-box-val {
+        font-size: 34px;
+        font-weight: 800;
+        color: #0f172a;
+        line-height: 1.1;
+      }
+
+      .new-badge {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 800;
+        color: #16a34a;
+        background: #dcfce7;
+        padding: 2px 8px;
+        border-radius: 9999px;
+        margin-top: 4px;
+        letter-spacing: 0.5px;
+      }
+
+      .btn {
+        width: 100%;
+        height: 52px;
+        border-radius: 14px;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+        text-transform: uppercase;
+      }
+
+      .btn:active {
+        transform: scale(0.97);
+      }
+
+      .btn-primary {
+        background: #18181b;
+        color: #ffffff;
+        box-shadow: 0 4px 14px rgba(24, 24, 27, 0.2);
+        margin-bottom: 8px;
+      }
+
+      .btn-primary:hover {
+        background: #27272a;
+      }
+    </style>
+
+    <!-- WGPlayer Universal Tag -->
+    
+  <style type="text/css">body{overflow:hidden!important}body:not(.wgIsMidroll) [data-wgplayer]~.wgLoadingAnim{display:none!important}[data-wgplayer]:before{display:none!important}[data-wgplayer]{background:none!important}</style><style>.fadein{animation: 3s linear 0s fadein;}.splash-bg {visibility:hidden;object-fit: contain;position: absolute;left: 0;top: 0;filter: blur(3px) opacity(0.9);transform: scale(2.5) translate(-50%, -50%); top:50%; left:50%; z-index:-1;} .splash-bg.fadein{visibility:visible}canvas, iframe[data-src*="wgplayground.com"] {box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 30px;}@keyframes fadein {from {opacity:0;}to {opacity:1;}}</style><script src="gamepush.js"></script></head>
+  <body class="wgNoLoader"><img class="splash-bg fadein" src="https://static.wgplayground.com/a8a41a51c776a4c99ae58af285b6d445/wgplayground/66d59a9033fd5aab3675d581a70743fe.jpg">
+    <div id="game-container">
+      <!-- Main Canvas -->
+      <canvas id="gameCanvas" width="1000" height="1116" style="aspect-ratio: 0.896057 / 1;" wg-game-orientation="wg-portrait-game"></canvas>
+
+
+      <!-- Sound Toggle -->
+      <button id="sound-toggle" aria-label="Toggle Sound" title="Toggle Sound">
+        <svg id="sound-icon-on" viewBox="0 0 24 24" style="display: block;">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+        <svg id="sound-icon-off" viewBox="0 0 24 24" style="display: none;">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+      </button>
+
+      <!-- In-Game HUD: Score -->
+      <div id="hud">
+        <div id="score-display">0</div>
+        <div id="hud-best">BEST: 0</div>
+      </div>
+
+      <!-- Menu Screen Overlay -->
+      <div id="menu-screen" class="ui-overlay active">
+        <div class="menu-content">
+          <h1 class="game-title">ZIGZAG</h1>
+          <div class="menu-subtitle">TAP TO PLAY</div>
+          <div class="menu-preview-spacer" id="menu-spacer"></div>
+          <div class="menu-best" id="menu-best-text">BEST: 0</div>
+          <div class="tap-hint">Tap / Click / Space to turn</div>
+        </div>
+      </div>
+
+      <!-- Game Over Screen Overlay -->
+      <div id="game-over-screen" class="ui-overlay">
+        <div class="modal-card">
+          <h2 class="modal-title">GAME OVER</h2>
+          <div class="score-summary">
+            <div class="score-box">
+              <span class="score-box-label">Score</span>
+              <span class="score-box-val" id="final-score-val">0</span>
+            </div>
+            <div class="score-box">
+              <span class="score-box-label">Best</span>
+              <span class="score-box-val" id="final-best-val">0</span>
+              <span class="new-badge" id="new-best-badge" style="display: none;">NEW BEST!</span>
+            </div>
+          </div>
+
+          <button id="btn-try-again" class="btn btn-primary">TRY AGAIN</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        'use strict';
+
+        // ----------------------------------------------------
+        // AUDIO SYNTHESIZER (Web Audio API - Zero External Dependencies)
+        // ----------------------------------------------------
+        let audioCtx = null;
+        let isMuted = localStorage.getItem('zigzag_muted') === 'true';
+        let isAdAudioMuted = false;
+
+        function initAudio() {
+          if (!audioCtx) {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (AudioContextClass) {
+              audioCtx = new AudioContextClass();
+            }
+          }
+          if (audioCtx && audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+        }
+
+        function playSound(type, param) {
+          if (isMuted || isAdAudioMuted) return;
+          initAudio();
+          if (!audioCtx) return;
+
+          const now = audioCtx.currentTime;
+
+          if (type === 'turn') {
+            // Snappy direction change pop
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(440, now);
+            osc.frequency.exponentialRampToValueAtTime(180, now + 0.045);
+            gain.gain.setValueAtTime(0.22, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.045);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 0.05);
+          } else if (type === 'score') {
+            // Harmonic melodic chime
+            const scale = [523.25, 587.33, 659.25, 783.99, 880.00, 1046.50];
+            const pitchIndex = (param || 0) % scale.length;
+            const freq = scale[pitchIndex];
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, now);
+            gain.gain.setValueAtTime(0.18, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 0.17);
+          } else if (type === 'fall') {
+            // Deep falling drop tone
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(220, now);
+            osc.frequency.exponentialRampToValueAtTime(55, now + 0.38);
+            gain.gain.setValueAtTime(0.25, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.38);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 0.4);
+          } else if (type === 'reward') {
+            // Upbeat reward confirmation flourish
+            const notes = [440, 659.25, 880];
+            notes.forEach((f, idx) => {
+              const noteTime = now + idx * 0.08;
+              const osc = audioCtx.createOscillator();
+              const gain = audioCtx.createGain();
+              osc.type = 'sine';
+              osc.frequency.setValueAtTime(f, noteTime);
+              gain.gain.setValueAtTime(0.2, noteTime);
+              gain.gain.exponentialRampToValueAtTime(0.001, noteTime + 0.12);
+              osc.connect(gain);
+              gain.connect(audioCtx.destination);
+              osc.start(noteTime);
+              osc.stop(noteTime + 0.14);
+            });
+          } else if (type === 'beep') {
+            const freq = param ? 880 : 440;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, now);
+            gain.gain.setValueAtTime(0.2, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 0.09);
+          }
+        }
+
+        // ----------------------------------------------------
+        // DOM ELEMENTS & HIGH SCORE PERSISTENCE
+        // ----------------------------------------------------
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const hud = document.getElementById('hud');
+        const scoreDisplay = document.getElementById('score-display');
+        const hudBest = document.getElementById('hud-best');
+
+        const menuScreen = document.getElementById('menu-screen');
+        const menuBestText = document.getElementById('menu-best-text');
+        const menuSpacer = document.getElementById('menu-spacer');
+
+        const gameOverScreen = document.getElementById('game-over-screen');
+        const finalScoreVal = document.getElementById('final-score-val');
+        const finalBestVal = document.getElementById('final-best-val');
+        const newBestBadge = document.getElementById('new-best-badge');
+        const btnTryAgain = document.getElementById('btn-try-again');
+
+        const soundToggle = document.getElementById('sound-toggle');
+        const soundIconOn = document.getElementById('sound-icon-on');
+        const soundIconOff = document.getElementById('sound-icon-off');
+
+        let highScore = parseInt(localStorage.getItem('zigzag_high_score') || '0', 10);
+        function updateBestDisplays() {
+          hudBest.textContent = `BEST: ${highScore}`;
+          menuBestText.textContent = `BEST: ${highScore}`;
+        }
+        updateBestDisplays();
+
+        function updateSoundUI() {
+          if (isMuted) {
+            soundIconOn.style.display = 'none';
+            soundIconOff.style.display = 'block';
+          } else {
+            soundIconOn.style.display = 'block';
+            soundIconOff.style.display = 'none';
+          }
+        }
+        updateSoundUI();
+
+        soundToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          isMuted = !isMuted;
+          localStorage.setItem('zigzag_muted', isMuted ? 'true' : 'false');
+          updateSoundUI();
+          if (!isMuted) {
+            initAudio();
+            playSound('turn');
+          }
+        });
+
+        // ----------------------------------------------------
+        // GAME STATES & CONFIGURATION
+        // ----------------------------------------------------
+        const STATE = {
+          MENU: 'MENU',
+          PLAYING: 'PLAYING',
+          FALLING: 'FALLING',
+          GAME_OVER: 'GAME_OVER',
+          AD_PAUSED: 'AD_PAUSED',
+        };
+
+        let currentState = STATE.MENU;
+        let score = 0;
+
+        // Viewport dimensions
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+
+        function resizeCanvas() {
+          width = window.innerWidth;
+          height = window.innerHeight;
+          dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+          canvas.width = Math.floor(width * dpr);
+          canvas.height = Math.floor(height * dpr);
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // ----------------------------------------------------
+        // GEOMETRY & PROCEDURAL ZIGZAG PATH
+        // ----------------------------------------------------
+        // Diagonal 45-degree steps:
+        // RIGHT: dx = +0.7071, dy = -0.7071
+        // LEFT:  dx = -0.7071, dy = -0.7071
+        const DIAG = 0.70710678;
+
+        let pathVertices = [];
+        let nextVertexIndex = 0;
+        let lastScoredIndex = 0;
+
+        function getPathWidth(currentScore) {
+          // Starts wide (62px) and gently tapers to 48px
+          return Math.max(48, 62 - Math.min(14, currentScore * 0.25));
+        }
+
+        function getSpeed(currentScore) {
+          // Starts at 225 px/s, gradually scales to 365 px/s
+          return Math.min(365, 225 + currentScore * 2.8);
+        }
+
+        // Camera
+        const camera = {
+          x: 0,
+          y: 0,
+        };
+
+        // Player Ball
+        const ball = {
+          x: 0,
+          y: 0,
+          vx: 0,
+          vy: 0,
+          dir: 1, // +1 for RIGHT, -1 for LEFT
+          radius: 10.5,
+          scale: 1,
+          squashTime: 0,
+          falling: false,
+          fallTime: 0,
+          fallRot: 0,
+        };
+
+        // Checkpoint Particle System
+        let particles = [];
+
+        function spawnCheckpointParticles(x, y) {
+          for (let i = 0; i < 7; i++) {
+            const angle = Math.random() * Math.PI * 2;
+            const spd = 40 + Math.random() * 80;
+            particles.push({
+              x: x,
+              y: y,
+              vx: Math.cos(angle) * spd,
+              vy: Math.sin(angle) * spd,
+              size: 2.5 + Math.random() * 2.5,
+              alpha: 1,
+              life: 0.35 + Math.random() * 0.15,
+            });
+          }
+        }
+
+        // Path generator
+        function initPath() {
+          pathVertices = [];
+          nextVertexIndex = 0;
+          lastScoredIndex = 0;
+
+          const startX = width / 2;
+          const startY = height * 0.72;
+
+          // Vertex 0: start origin
+          pathVertices.push({
+            x: startX,
+            y: startY,
+            dir: 1,
+            len: 0,
+            index: nextVertexIndex++,
+          });
+
+          // First runway segment going RIGHT
+          const firstLen = 175;
+          const v1x = startX + DIAG * firstLen;
+          const v1y = startY - DIAG * firstLen;
+          pathVertices.push({
+            x: v1x,
+            y: v1y,
+            dir: 1,
+            len: firstLen,
+            index: nextVertexIndex++,
+          });
+
+          generateAhead();
+        }
+
+        function generateAhead() {
+          const aheadDist = 1800;
+          let head = pathVertices[pathVertices.length - 1];
+
+          // Center corridor limit: ensures comfortable mobile/desktop framing
+          const maxLateral = Math.min(width * 0.38, 175);
+          const centerX = width / 2;
+
+          while (head.y > camera.y - aheadDist) {
+            const prevDir = head.dir;
+            let nextDir = -prevDir;
+
+            if (head.x > centerX + maxLateral) {
+              nextDir = -1; // Force LEFT
+            } else if (head.x < centerX - maxLateral) {
+              nextDir = 1;  // Force RIGHT
+            }
+
+            // Dynamic segment length variation
+            let baseLen = 185;
+            let variation = 50;
+            if (score > 10) {
+              variation = 70;
+            }
+
+            const randFactor = (Math.sin(nextVertexIndex * 12.9898) + 1) * 0.5;
+            let len = Math.round(baseLen - variation * 0.5 + randFactor * variation);
+            len = Math.max(115, Math.min(255, len));
+
+            const nextX = head.x + (nextDir > 0 ? DIAG : -DIAG) * len;
+            const nextY = head.y - DIAG * len;
+
+            head = {
+              x: nextX,
+              y: nextY,
+              dir: nextDir,
+              len: len,
+              index: nextVertexIndex++,
+            };
+            pathVertices.push(head);
+          }
+
+          // Cull old path segments far behind camera
+          const cullThreshold = camera.y + height * 0.95;
+          while (pathVertices.length > 4 && pathVertices[1].y > cullThreshold) {
+            pathVertices.shift();
+          }
+        }
+
+        // ----------------------------------------------------
+        // COLLISION DETECTION (Point-To-Segment + Vertex Margin)
+        // ----------------------------------------------------
+        function distToSegment(px, py, x1, y1, x2, y2) {
+          const dx = x2 - x1;
+          const dy = y2 - y1;
+          const l2 = dx * dx + dy * dy;
+          if (l2 === 0) return Math.hypot(px - x1, py - y1);
+          let t = ((px - x1) * dx + (py - y1) * dy) / l2;
+          t = Math.max(0, Math.min(1, t));
+          const projX = x1 + t * dx;
+          const projY = y1 + t * dy;
+          return Math.hypot(px - projX, py - projY);
+        }
+
+        function checkBallOnPlatform() {
+          const currentWidth = getPathWidth(score);
+          const allowedDist = (currentWidth / 2) + 5; // 5px grace margin
+
+          let minDist = Infinity;
+          for (let i = 0; i < pathVertices.length - 1; i++) {
+            const v1 = pathVertices[i];
+            const v2 = pathVertices[i + 1];
+
+            const minY = Math.min(v1.y, v2.y) - 35;
+            const maxY = Math.max(v1.y, v2.y) + 35;
+            if (ball.y >= minY && ball.y <= maxY) {
+              const d = distToSegment(ball.x, ball.y, v1.x, v1.y, v2.x, v2.y);
+              if (d < minDist) {
+                minDist = d;
+              }
+            }
+          }
+
+          return minDist <= allowedDist;
+        }
+
+        // ----------------------------------------------------
+        // WGPLAYER MIDROLL INTEGRATION
+        // ----------------------------------------------------
+        // The game is endless, so call onLevelComplete() only from a real
+        // natural pause/checkpoint that you decide to use. It safely pauses
+        // gameplay while WGPlayer loads and resumes when the ad closes.
+        let stateBeforeAdPause = null;
+
+        function resumeGame() {
+          isAdAudioMuted = false;
+          if (currentState === STATE.AD_PAUSED) {
+            currentState = stateBeforeAdPause || STATE.PLAYING;
+          }
+          stateBeforeAdPause = null;
+        }
+
+        window.game = window.game || {};
+        window.game.pause = function () {
+          if (currentState === STATE.PLAYING) {
+            stateBeforeAdPause = currentState;
+            currentState = STATE.AD_PAUSED;
+          }
+        };
+
+        window.audio = window.audio || {};
+        window.audio.mute = function () {
+          isAdAudioMuted = true;
+        };
+        window.audio.unmute = function () {
+          isAdAudioMuted = false;
+        };
+
+        // WGPlayer callback. The callback is a function reference, not a string.
+        window.onLevelComplete = function onLevelComplete() {
+          window.game.pause();
+          window.audio.mute();
+
+          const prerollConfig = window.preroll && window.preroll.config;
+          const loaderObjectName = prerollConfig && prerollConfig.loaderObjectName;
+          const wgPlayer = loaderObjectName && window[loaderObjectName];
+
+          if (wgPlayer && typeof wgPlayer.refetchAd === 'function') {
+            wgPlayer.refetchAd(resumeGame);
+          } else {
+            // Keep the game playable if the ad loader is unavailable.
+            resumeGame();
+          }
+        };
+
+        // ----------------------------------------------------
+        // GAME LIFECYCLE
+        // ----------------------------------------------------
+        function startNewGame() {
+          initAudio();
+          score = 0;
+          scoreDisplay.textContent = '0';
+          updateBestDisplays();
+
+          initPath();
+
+          ball.x = pathVertices[0].x;
+          ball.y = pathVertices[0].y;
+          ball.dir = 1;
+          ball.scale = 1;
+          ball.squashTime = 0;
+          ball.falling = false;
+          ball.fallTime = 0;
+          ball.fallRot = 0;
+
+          camera.x = ball.x;
+          camera.y = ball.y - height * 0.45;
+
+          particles = [];
+
+          currentState = STATE.PLAYING;
+          menuScreen.classList.remove('active');
+          gameOverScreen.classList.remove('active');
+          hud.style.opacity = '1';
+
+          playSound('turn');
+        }
+
+        function triggerDirectionSwitch() {
+          if (currentState !== STATE.PLAYING) return;
+
+          ball.dir = -ball.dir;
+          ball.squashTime = 0.12;
+
+          playSound('turn');
+        }
+
+        function triggerFall() {
+          currentState = STATE.FALLING;
+          ball.falling = true;
+          ball.fallTime = 0;
+          ball.fallRot = 0;
+
+          const currentSpeed = getSpeed(score);
+          ball.vx = (ball.dir > 0 ? DIAG : -DIAG) * currentSpeed * 0.35;
+          ball.vy = -DIAG * currentSpeed * 0.2;
+
+          playSound('fall');
+        }
+
+        function showGameOverScreen() {
+          currentState = STATE.GAME_OVER;
+          hud.style.opacity = '0.5';
+
+          let isNewBest = false;
+          if (score > highScore) {
+            highScore = score;
+            localStorage.setItem('zigzag_high_score', highScore.toString());
+            isNewBest = true;
+          }
+          updateBestDisplays();
+
+          finalScoreVal.textContent = score.toString();
+          finalBestVal.textContent = highScore.toString();
+          newBestBadge.style.display = isNewBest && score > 0 ? 'inline-block' : 'none';
+
+          gameOverScreen.classList.add('active');
+        }
+
+        // ----------------------------------------------------
+        // UNIFIED INPUT HANDLING
+        // ----------------------------------------------------
+        function handleGlobalInput(e) {
+          if (e && e.target && e.target.closest('button')) {
+            return;
+          }
+
+          if (currentState === STATE.MENU) {
+            startNewGame();
+          } else if (currentState === STATE.PLAYING) {
+            triggerDirectionSwitch();
+          }
+        }
+
+        window.addEventListener('pointerdown', function (e) {
+          if (e.target && e.target.closest('#sound-toggle')) return;
+          if (e.target && e.target.closest('.modal-card')) return;
+
+          handleGlobalInput(e);
+        });
+
+        window.addEventListener('keydown', function (e) {
+          if (e.code === 'Space' || e.code === 'Enter') {
+            e.preventDefault();
+            if (currentState === STATE.GAME_OVER) {
+              startNewGame();
+            } else {
+              handleGlobalInput(e);
+            }
+          }
+        });
+
+        btnTryAgain.addEventListener('click', function (e) {
+          e.stopPropagation();
+          startNewGame();
+        });
+
+        // ----------------------------------------------------
+        // UPDATE PHYSICS LOOP
+        // ----------------------------------------------------
+        let lastFrameTime = performance.now();
+
+        function update(dt) {
+          dt = Math.min(dt, 0.05);
+
+          if (currentState === STATE.PLAYING) {
+            const currentSpeed = getSpeed(score);
+
+            const vx = (ball.dir > 0 ? DIAG : -DIAG) * currentSpeed;
+            const vy = -DIAG * currentSpeed;
+
+            ball.x += vx * dt;
+            ball.y += vy * dt;
+
+            // Smooth camera lerp
+            const targetCamY = ball.y - height * 0.45;
+            camera.y += (targetCamY - camera.y) * 0.12;
+            camera.x += (ball.x - camera.x) * 0.08;
+
+            // Collision check
+            const onPlatform = checkBallOnPlatform();
+            if (!onPlatform) {
+              triggerFall();
+              return;
+            }
+
+            // Scoring check
+            for (let i = 0; i < pathVertices.length; i++) {
+              const v = pathVertices[i];
+              if (v.index > lastScoredIndex && ball.y <= v.y) {
+                lastScoredIndex = v.index;
+                score += 1;
+                scoreDisplay.textContent = score.toString();
+                scoreDisplay.classList.add('bump');
+                setTimeout(() => scoreDisplay.classList.remove('bump'), 140);
+
+                playSound('score', score);
+                spawnCheckpointParticles(v.x, v.y);
+                break;
+              }
+            }
+
+            generateAhead();
+
+          } else if (currentState === STATE.FALLING) {
+            ball.fallTime += dt;
+            ball.fallRot += dt * 8;
+
+            ball.vy += 1400 * dt;
+            ball.x += ball.vx * dt;
+            ball.y += ball.vy * dt;
+
+            ball.scale = Math.max(0.1, 1 - ball.fallTime * 1.5);
+            camera.y += (ball.y - height * 0.45 - camera.y) * 0.04;
+
+            if (ball.fallTime >= 0.65) {
+              showGameOverScreen();
+            }
+          } else if (currentState === STATE.MENU) {
+            camera.x = width / 2;
+            camera.y = height * 0.72 - height * 0.45;
+          }
+
+          if (ball.squashTime > 0) {
+            ball.squashTime -= dt;
+          }
+
+          // Particles update
+          for (let i = particles.length - 1; i >= 0; i--) {
+            const p = particles[i];
+            p.x += p.vx * dt;
+            p.y += p.vy * dt;
+            p.alpha -= dt / p.life;
+            if (p.alpha <= 0) {
+              particles.splice(i, 1);
+            }
+          }
+        }
+
+        // ----------------------------------------------------
+        // CANVAS 2D RENDERING
+        // ----------------------------------------------------
+        function drawPlatform() {
+          if (pathVertices.length < 2) return;
+
+          const currentWidth = getPathWidth(score);
+          const depthOffset = 11; // 3D side edge thickness
+
+          ctx.lineCap = 'round';
+          ctx.lineJoin = 'round';
+
+          // 1. DIMENSIONAL DROP EDGE / 3D SIDE (#15803d)
+          ctx.save();
+          ctx.translate(0, depthOffset);
+          ctx.beginPath();
+          ctx.strokeStyle = '#15803d';
+          ctx.lineWidth = currentWidth;
+
+          for (let i = 0; i < pathVertices.length; i++) {
+            const v = pathVertices[i];
+            const screenX = v.x - camera.x + width / 2;
+            const screenY = v.y - camera.y;
+
+            if (i === 0) {
+              ctx.moveTo(screenX, screenY);
+            } else {
+              ctx.lineTo(screenX, screenY);
+            }
+          }
+          ctx.stroke();
+          ctx.restore();
+
+          // 2. MAIN PLATFORM SURFACE (#22c55e)
+          ctx.beginPath();
+          ctx.strokeStyle = '#22c55e';
+          ctx.lineWidth = currentWidth;
+
+          for (let i = 0; i < pathVertices.length; i++) {
+            const v = pathVertices[i];
+            const screenX = v.x - camera.x + width / 2;
+            const screenY = v.y - camera.y;
+
+            if (i === 0) {
+              ctx.moveTo(screenX, screenY);
+            } else {
+              ctx.lineTo(screenX, screenY);
+            }
+          }
+          ctx.stroke();
+
+          // 3. SUBTLE CENTER GUIDE LINE
+          ctx.beginPath();
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.16)';
+          ctx.lineWidth = 2.5;
+
+          for (let i = 0; i < pathVertices.length; i++) {
+            const v = pathVertices[i];
+            const screenX = v.x - camera.x + width / 2;
+            const screenY = v.y - camera.y;
+
+            if (i === 0) {
+              ctx.moveTo(screenX, screenY);
+            } else {
+              ctx.lineTo(screenX, screenY);
+            }
+          }
+          ctx.stroke();
+        }
+
+        function drawBall() {
+          const screenX = ball.x - camera.x + width / 2;
+          const screenY = ball.y - camera.y;
+
+          let scaleX = ball.scale;
+          let scaleY = ball.scale;
+          if (ball.squashTime > 0 && !ball.falling) {
+            const factor = 1 + Math.sin(ball.squashTime * 30) * 0.16;
+            scaleX *= factor;
+            scaleY *= (2 - factor);
+          }
+
+          // 1. Ball Contact Shadow
+          if (!ball.falling || ball.fallTime < 0.25) {
+            const shadowAlpha = Math.max(0, 0.16 * (1 - ball.fallTime * 3));
+            ctx.save();
+            ctx.beginPath();
+            ctx.fillStyle = `rgba(15, 23, 42, ${shadowAlpha})`;
+            ctx.ellipse(screenX, screenY + ball.radius * 0.65, ball.radius * 0.95 * scaleX, ball.radius * 0.45 * scaleY, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+          }
+
+          // 2. Solid Black Circular Player Ball
+          ctx.save();
+          ctx.translate(screenX, screenY);
+          if (ball.falling) {
+            ctx.rotate(ball.fallRot);
+          }
+          ctx.scale(scaleX, scaleY);
+
+          ctx.beginPath();
+          ctx.arc(0, 0, ball.radius, 0, Math.PI * 2);
+          ctx.fillStyle = '#18181b';
+          ctx.fill();
+
+          // Subtle specular sheen
+          ctx.beginPath();
+          ctx.arc(-ball.radius * 0.25, -ball.radius * 0.3, ball.radius * 0.35, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.18)';
+          ctx.fill();
+
+          ctx.restore();
+        }
+
+        function drawParticles() {
+          ctx.save();
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            const screenX = p.x - camera.x + width / 2;
+            const screenY = p.y - camera.y;
+
+            ctx.beginPath();
+            ctx.arc(screenX, screenY, p.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(34, 197, 94, ${p.alpha * 0.9})`;
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+
+        // Start Screen Miniature Animated Preview
+        let menuPreviewTime = 0;
+        function drawMenuPreview(dt) {
+          menuPreviewTime += dt * 1.5;
+
+          const rect = menuSpacer.getBoundingClientRect();
+          const previewCenterX = rect.left + rect.width / 2;
+          const previewCenterY = rect.top + rect.height / 2;
+          const previewWidth = 44;
+          const span = 56;
+
+          const pts = [
+            { x: previewCenterX - span, y: previewCenterY + 42 },
+            { x: previewCenterX, y: previewCenterY },
+            { x: previewCenterX + span, y: previewCenterY - 42 },
+            { x: previewCenterX, y: previewCenterY - 84 },
+          ];
+
+          // 3D side edge
+          ctx.save();
+          ctx.translate(0, 7);
+          ctx.beginPath();
+          ctx.strokeStyle = '#15803d';
+          ctx.lineWidth = previewWidth;
+          ctx.lineCap = 'round';
+          ctx.lineJoin = 'round';
+          pts.forEach((pt, idx) => {
+            if (idx === 0) ctx.moveTo(pt.x, pt.y);
+            else ctx.lineTo(pt.x, pt.y);
+          });
+          ctx.stroke();
+          ctx.restore();
+
+          // Top platform
+          ctx.beginPath();
+          ctx.strokeStyle = '#22c55e';
+          ctx.lineWidth = previewWidth;
+          ctx.lineCap = 'round';
+          ctx.lineJoin = 'round';
+          pts.forEach((pt, idx) => {
+            if (idx === 0) ctx.moveTo(pt.x, pt.y);
+            else ctx.lineTo(pt.x, pt.y);
+          });
+          ctx.stroke();
+
+          // Animated ball glide
+          const progress = (Math.sin(menuPreviewTime) + 1) * 0.5;
+          let ballPreviewX, ballPreviewY;
+          if (progress < 0.5) {
+            const segT = progress / 0.5;
+            ballPreviewX = pts[1].x + segT * (pts[2].x - pts[1].x);
+            ballPreviewY = pts[1].y + segT * (pts[2].y - pts[1].y);
+          } else {
+            const segT = (progress - 0.5) / 0.5;
+            ballPreviewX = pts[2].x + segT * (pts[3].x - pts[2].x);
+            ballPreviewY = pts[2].y + segT * (pts[3].y - pts[2].y);
+          }
+
+          ctx.beginPath();
+          ctx.fillStyle = 'rgba(0, 0, 0, 0.14)';
+          ctx.ellipse(ballPreviewX, ballPreviewY + 6, 8, 4, 0, 0, Math.PI * 2);
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.arc(ballPreviewX, ballPreviewY, 9, 0, Math.PI * 2);
+          ctx.fillStyle = '#18181b';
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.arc(ballPreviewX - 2, ballPreviewY - 2, 3, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+          ctx.fill();
+        }
+
+        // ----------------------------------------------------
+        // MAIN ANIMATION LOOP
+        // ----------------------------------------------------
+        function render(now) {
+          const dt = (now - lastFrameTime) / 1000;
+          lastFrameTime = now;
+
+          ctx.fillStyle = '#f7f9f8';
+          ctx.fillRect(0, 0, width, height);
+
+          update(dt);
+
+          if (currentState === STATE.MENU) {
+            drawMenuPreview(dt);
+          } else {
+            drawPlatform();
+            drawParticles();
+            drawBall();
+          }
+
+          requestAnimationFrame(render);
+        }
+
+        requestAnimationFrame((now) => {
+          lastFrameTime = now;
+          render(now);
+        });
+
+      })();
+    </script>
+  
+
+
+
+</body></html>
