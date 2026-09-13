@@ -1,0 +1,37 @@
+{
+	"name": "Jump and Fly",
+	"short_name": "Jump and Fly",
+	"description": "Jump and fly through the sky! Dodge obstacles and reach new heights in this endless fun. Ready for an epic sky-high adventure? In Jump & Fly: Endless Sky Adventure, you’ll jump, soar, and navigate through thrilling challenges! Master the art of timing and precision as you dodge obstacles, collect power-ups, and unlock exciting new levels. Whether you're flying through vibrant landscapes or bouncing off platforms, every level presents a unique challenge.  Perfect for casual gamers and thrill-seekers, this game offers endless fun and addictive gameplay. Test your skills, reach new heights, and compete on the global leaderboards. Download now and embark on a sky-high journey! Jump, fly, and conquer the skies in this action-packed adventure!",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

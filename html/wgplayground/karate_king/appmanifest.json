@@ -1,0 +1,36 @@
+{
+	"name": "Karate king",
+	"short_name": "Karate king",
+	"description": "Karate King Online is a free online game where you can fight your way through the jungle and defeat the evil Karate King. It's easy to play and fun to master!  Karate King Online is a free online game with a real time strategy twist. It's a great game for those who love to build and battle your way through the world.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
