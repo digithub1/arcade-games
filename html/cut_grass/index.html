@@ -17,69 +17,155 @@
       background-color: #0b0d14;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
-    #loading-overlay {
+    #unity-container {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0b0d14;
+    }
+    #unity-canvas {
+      width: 100% !important;
+      height: 100% !important;
+      outline: none;
+      display: block;
+    }
+    #unity-loading-container {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      background: radial-gradient(circle at center, #151923 0%, #0b0d14 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: #0b0d14;
-      color: #fff;
+      gap: 24px;
       z-index: 10;
       transition: opacity 0.5s ease;
     }
-    .spinner {
-      width: 48px;
-      height: 48px;
-      border: 4px solid rgba(255, 255, 255, 0.1);
-      border-top-color: #3b82f6;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 16px;
+    .logo {
+      max-width: 280px;
+      height: auto;
+      filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.6));
     }
-    .loading-title {
-      font-size: 1.25rem;
+    #loading-percentage {
+      color: #94a3b8;
+      font-size: 1.1rem;
       font-weight: 600;
-      letter-spacing: 0.5px;
-      color: #e2e8f0;
+      font-variant-numeric: tabular-nums;
     }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
+    #unity-loading-bar {
+      width: 260px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      overflow: hidden;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
     }
-    #game-frame {
-      width: 100%;
+    #unity-loading-bar-inner {
+      width: 0%;
       height: 100%;
-      border: 0;
-      display: block;
+      background: linear-gradient(90deg, #10b981, #34d399);
+      border-radius: 9999px;
+      transition: width 0.15s ease-out;
     }
   </style>
+  <script>
+    // 100% Ad-Free SDK Mock for Legion / Unity Games
+    window.ENABLE_ADS = false;
+    window.ADS_DEBUG = false;
+    window.bannerMapping = {};
+
+    window.SDK = {
+      _isInitialized: true,
+      _bannerAds: {},
+      _pendingBannerQueue: [],
+      loadingStart() {},
+      loadingEnd() {},
+      gameplayStart() {},
+      gameplayEnd() {},
+      SetBanner(type, pos) {
+        // Ads completely neutralized
+      },
+      showMidroll() {
+        if (typeof unityInstance !== 'undefined' && unityInstance) {
+          unityInstance.SendMessage("SDKManager", "OnVideoAdEnded", "true");
+        }
+      },
+      showRewarded() {
+        if (typeof unityInstance !== 'undefined' && unityInstance) {
+          unityInstance.SendMessage("SDKManager", "OnVideoAdEnded", "true");
+        }
+      },
+      getBuildURL() { return "Build"; },
+      getStreamingAssetsUrl() { return "StreamingAssets"; },
+      getStaticResolutionScaleMulti() { return 1.0; }
+    };
+  </script>
 </head>
 <body>
-  <div id="loading-overlay">
-    <div class="spinner"></div>
-    <div class="loading-title">Loading Cut Grass...</div>
+  <div id="unity-container">
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
   </div>
-  <iframe
-    id="game-frame"
-    src="https://takebrainrots.io/"
-    allow="autoplay; fullscreen; pointer-lock; camera; microphone; clipboard-read; clipboard-write; web-share"
-    allowfullscreen>
-  </iframe>
+
+  <div id="unity-loading-container">
+    <img src="logo.webp" class="logo" alt="Cut Grass Logo" />
+    <div id="loading-percentage">0%</div>
+    <div id="unity-loading-bar">
+      <div id="unity-loading-bar-inner"></div>
+    </div>
+  </div>
+
+  <script src="Build/loader.js"></script>
   <script>
-    const frame = document.getElementById('game-frame');
-    const overlay = document.getElementById('loading-overlay');
-    frame.onload = function() {
-      setTimeout(() => {
-        overlay.style.opacity = '0';
-        setTimeout(() => overlay.style.display = 'none', 500);
-      }, 400);
+    const canvas = document.querySelector("#unity-canvas");
+    const loadingContainer = document.querySelector("#unity-loading-container");
+    const loadingBar = document.querySelector("#unity-loading-bar-inner");
+    const loadingPercentage = document.querySelector("#loading-percentage");
+
+    const config = {
+      dataUrl: "Build/data.unityweb",
+      frameworkUrl: "Build/framework.js",
+      codeUrl: "Build/wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "LEGiON Platforms",
+      productName: "Takebrainrots.io",
+      productVersion: "10z85205952",
+      autoSyncPersistentDataPath: true,
+      devicePixelRatio: window.devicePixelRatio || 1.0,
+      showBanner: function(msg, type) {
+        console.log("[Unity Banner]", type, msg);
+      }
     };
-    window.addEventListener('click', () => {
-      frame.focus();
+
+    createUnityInstance(canvas, config, function(progress) {
+      const pct = Math.min(100, Math.round(progress * 100));
+      loadingBar.style.width = pct + "%";
+      loadingPercentage.textContent = pct + "%";
+    }).then(function(instance) {
+      window.unityInstance = instance;
+      loadingBar.style.width = "100%";
+      loadingPercentage.textContent = "100%";
+      setTimeout(function() {
+        loadingContainer.style.opacity = "0";
+        setTimeout(function() {
+          loadingContainer.style.display = "none";
+          canvas.focus();
+        }, 500);
+      }, 300);
+    }).catch(function(err) {
+      console.error("Failed to load Cut Grass:", err);
+      loadingPercentage.textContent = "Failed to load game: " + err.message;
+    });
+
+    window.addEventListener("click", function() {
+      canvas.focus();
     });
   </script>
 </body>
